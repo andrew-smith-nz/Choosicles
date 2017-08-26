@@ -29,7 +29,7 @@ const Navigator = StackNavigator({
   },
   {
     headerMode:'none',
-    cardStyle:{backgroundColor:'white', margin:0, padding:0}
+    cardStyle:{ backgroundColor:'white', margin:0, padding:0 }
   }
 );
 
