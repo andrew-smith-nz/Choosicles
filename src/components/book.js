@@ -17,13 +17,9 @@ export default class Book extends Component
 
     navigateToPage(id, addToHistory)
     {
-        //console.log(id);
-        console.log(this.state.pageHistory);
         if (addToHistory) 
             this.state.pageHistory.push(id);
         this.setState({pageData: this.state.bookData.pages.filter((p) => p.id === id)[0]});
-        
-        //this.forceUpdate();
     }
 
     return()
@@ -31,7 +27,6 @@ export default class Book extends Component
         this.state.pageHistory.pop(); 
         if (this.state.pageHistory.length > 0)
         {
-            console.log(this.state.pageHistory);
             this.navigateToPage(this.state.pageHistory[this.state.pageHistory.length - 1], false);
         }
         else
@@ -43,7 +38,7 @@ export default class Book extends Component
     render()
     {
         return  <View style={{flex:1}}>
-                    <Page pageData={this.state.pageData} 
+                    <Page 
                         choose={(id) => this.navigateToPage(id, true)} 
                         return={() => this.return() }  />
                 </View>;

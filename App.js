@@ -1,8 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
-import Book from './src/components/book.js';
+import Page from './src/components/page.js';
 import { StackNavigator } from 'react-navigation';
+import { compose, createStore, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import { changePage, changeName } from './src/reducers/book.js'
+
+let store = createStore(combineReducers({changePage, changeName}));
 
 export default class App extends React.Component {
 
@@ -12,9 +17,11 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <View style={{flex:1}}>
-        <Navigator />
-      </View>
+      <Provider store={store}>
+        <View style={{flex:1}}>
+          <Navigator />
+        </View>
+      </Provider>
     );
   }
 }
@@ -23,8 +30,8 @@ const Navigator = StackNavigator({
     MainMenu: {
       screen: MainMenu
     },
-    Book: {
-      screen: Book
+    Page: {
+      screen: Page
     }
   },
   {

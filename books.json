@@ -15,6 +15,7 @@
 					"id": "dc86ea51-081d-4528-b77c-0788a1fd61ec",
 					"imageUri": "",
 					"soundEffect": "",
+					"tier": 0,
 					"texts":
 					[
 						{
@@ -58,6 +59,7 @@
 					"id": "40d5fa6c-f426-2581-4d02-a0c5bd42fcf1",
 					"imageUri": "",
 					"soundEffect": "",
+					"tier": 1,
 					"texts":
 					[
 						{
@@ -101,6 +103,7 @@
 					"id": "68823aa1-7f15-82b6-41fc-12380386a29e",
 					"imageUri": "",
 					"soundEffect": "",
+					"tier": 1,
 					"texts":
 					[
 						{

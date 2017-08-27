@@ -2,10 +2,26 @@ import React, { Component } from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import style from '../../style/style.js';
 import BookCover from './bookCover.js';
+import { connect } from 'react-redux';
+import { changePage } from '../actions/book.js';
 
 const bookData = require('../../books.json');
 
-export default class MainMenu extends Component
+function mapStateToProps(state) {
+    return { 
+        pageId: state.pageId,
+        pageData: state.pageData
+    }
+}
+
+function mapDispatchToProps(dispatch)
+{
+    return { 
+        startBook: (pageId) => dispatch(changePage(pageId)) 
+    };
+}
+
+class MainMenu extends Component
 {
     constructor(props)
     {
@@ -15,7 +31,8 @@ export default class MainMenu extends Component
 
     selectBook(book)
     {
-        this.props.navigation.navigate("Book", { bookId: book.id });
+        this.props.startBook(book.pages[0].id);
+        this.props.navigation.navigate("Page");
     }
 
     render()
@@ -23,7 +40,7 @@ export default class MainMenu extends Component
         let books = ["x", "2", "3", "4", "5", "6", "7", "8", "9"]
 
         return  <View style={style.mainMenuView}>
-                    <Text style={style.h1}>Choosicles: Your Very Own...</Text>
+                    <Text style={[style.h1, {height:'20%'}]}>Choosicles: Your Very Own...</Text>
                     <ScrollView style={{height:'80%'}}>
                     <View style={style.bookList}>
                         {bookData.books.map((book) => 
@@ -36,3 +53,5 @@ export default class MainMenu extends Component
                 </View>;
     }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(MainMenu);
