@@ -3,16 +3,18 @@ import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, 
 import style from '../../style/style.js';
 import {Audio} from 'expo';
 import { getImageForPage, getSoundEffectForPage, getReadingForPage } from './resourceManager.js'
-import { backtrack, changePage, clearHistory } from '../actions/book.js';
+import { backtrack, changePage, clearHistory, incrementPageCounter } from '../actions/book.js';
 import { connect } from 'react-redux';
 import NameMonster from './nameMonster.js';
+import ShadowText from './shadowText.js';
 
 function mapStateToProps(state) {
     return { 
         pageData: state.changePage.pageData,
         pageHistory: state.changePage.pageHistory,
         name: state.changeName.name,
-        panDirection: state.changePage.direction
+        panDirection: state.changePage.direction,
+        pageCounters: state.pageCounters.pageCounters
     }
 }
 
@@ -21,7 +23,8 @@ function mapDispatchToProps(dispatch)
     return { 
         backtrack: () => dispatch(backtrack()),
         clearHistory: () => dispatch(clearHistory()),
-        choose: (pageId) => dispatch(changePage(pageId)) 
+        choose: (pageId) => dispatch(changePage(pageId)),
+        incrementPageCounter: (pageId) => dispatch(incrementPageCounter(pageId))
     };
 }
 
@@ -34,6 +37,7 @@ class Page extends Component
         this.animateIn = this.animateIn.bind(this);
         this.fadeInText = this.fadeInText.bind(this);
         this.getPageText = this.getPageText.bind(this);
+        this.getPageCount = this.getPageCount.bind(this);
         this.state = { 
             currentText: 0, 
             speaker: false, 
@@ -50,7 +54,7 @@ class Page extends Component
         this.setState({ 
                 currentText: 0, 
                 speaker: false, 
-                slideX: new Animated.Value((newProps.panDirection == "forward" ? 1 : -1) * Dimensions.get('window').width) 
+                slideX: new Animated.Value  ((newProps.panDirection == "forward" ? 1 : -1) * Dimensions.get('window').width) 
             },
             () => this.animateIn());   
     }
@@ -163,9 +167,15 @@ class Page extends Component
         }
     }
 
+    getPageCount(pageId)
+    {
+        var count = this.props.pageCounters.filter(c => c.pageId === pageId)[0]
+        return count ? count.count : 0;
+    }
+
     render()
     {
-        let hasDecision = (this.state.currentText == (this.props.pageData.texts.length - 1)) || this.state.tabletMode;
+        let hasDecision = (this.state.currentText == (this.props.pageData.texts.length - 1) && this.props.pageData.navigationLinks.length > 0) || this.state.tabletMode;
         //let footerHeight = hasDecision ? '20%': '10%';
         return (
                 <Animated.View style={[style.pageView, {transform: [
@@ -220,17 +230,21 @@ class Page extends Component
                                 </TouchableOpacity> 
                             </View>
                             <View style={{position:'absolute', bottom:10, left:'10%', alignItems:'center', justifyContent:'center', width:'80%'}}>
-                                <Animated.Text style={{opacity:this.state.textFadeOpacity, textAlign:'center', borderColor:'black', borderWidth:0.5, padding:10, backgroundColor:'white'}}>
+                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, fontWeight:'bold', backgroundColor:'rgba(255,255,255,0.5)'}}>
                                     {this.getPageText()}
                                 </Animated.Text>
                                 {hasDecision ? 
                                     <View style={{marginTop: 10, marginBottom:10, flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
                                         {this.props.pageData.navigationLinks.map((nav) => 
-                                        <TouchableOpacity key={nav.id} onPress={() => this.props.choose(nav.targetPageId)}>
-                                            <Animated.Text key={nav.id} style={{opacity:this.state.textFadeOpacity, textAlign:'center', borderColor:'black', borderWidth:0.5, padding:10, marginLeft: 10, marginRight:10, backgroundColor:'white'}}>
+                                        <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
+                                            <Animated.Text key={nav.id} style={{opacity:this.state.textFadeOpacity, textAlign:'center', borderColor:'black', borderWidth:0.5, borderRadius:50, width:50, height:50, padding:10, marginLeft: 10, marginRight:10, backgroundColor:'white'}}>
                                                 {nav.text}
                                             </Animated.Text>
-                                        </TouchableOpacity>)}
+                                            <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
+                                                <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
+                                            </View>
+                                        </TouchableOpacity>
+                                        )}
                                     </View>
                                 : null}
                             </View>      

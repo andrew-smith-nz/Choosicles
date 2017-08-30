@@ -40,8 +40,8 @@ class MainMenu extends Component
         let books = ["x", "2", "3", "4", "5", "6", "7", "8", "9"]
 
         return  <View style={style.mainMenuView}>
-                    <Text style={[style.h1, {height:'20%'}]}>Choosicles: Your Very Own...</Text>
-                    <ScrollView style={{height:'80%'}}>
+                    <Text style={[style.h1, {height:'20%'}]}>Choosicles</Text>
+                    <ScrollView style={{height:'80%'}} horizontal={true}>
                     <View style={style.bookList}>
                         {bookData.books.map((book) => 
                             <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>

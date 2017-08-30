@@ -1,0 +1,149 @@
+{ "books":
+	[
+		{
+			"id": "dd3188af-b523-4746-bf21-a892861ac004",
+			"title": "Pet Monster",
+			"coverImage": "",
+			"author": "Meg Price",
+			"illustrator": "Sophie Wood",
+			"datePublished": "2017",
+			"recommendedAgeRange": "2 - 6 years",
+			"description": "Some descriptive text about this book goes here",
+			"pages":
+			[
+				{
+					"id": "dc86ea51-081d-4528-b77c-0788a1fd61ec",
+					"imageUri": "",
+					"soundEffect": "",
+					"tier": 0,
+					"texts":
+					[
+						{
+							"id": "f7b26e80-f381-4c9d-a6a3-4b4ad71a8368",
+							"text": "You have a pet monster, a lovely friendly pet monster. Even though it’s your pet, it doesn’t live in your house. It lives outside.",
+							"order": "1",				
+							"audioTrack": ""
+						},
+						{
+							"id": "ece617f2-4731-4f17-b1c2-526ba6afa0bc",
+							"text": "You love doing fun things when you’re spending time with your pet monster. But all monsters are different.",
+							"order": "2",				
+							"audioTrack": ""
+						},
+						{
+							"id": "4f7e2230-d261-4de9-a77b-8c5d53d269c3",
+							"text": "Tell me about your pet monster. Does it have wings or does it have big sharp claws?",
+							"order": "3",				
+							"audioTrack": ""
+						}
+					],
+					"navigationLinks":
+					[
+						{
+							"id": "354122e7-d26e-4209-a4e2-b5a563ac65b3",
+							"order": "1",
+							"imageUri": "",
+							"text": "Wings",
+							"targetPageId": "40d5fa6c-f426-2581-4d02-a0c5bd42fcf1"
+						},
+						{
+							"id": "eb8aac07-2752-01ba-42da-77ea2e449e16",
+							"order": "2",
+							"imageUri": "",
+							"text": "Claws",
+							"targetPageId": "68823aa1-7f15-82b6-41fc-12380386a29e"
+						}
+					]
+				},
+				{
+					"id": "40d5fa6c-f426-2581-4d02-a0c5bd42fcf1",
+					"imageUri": "",
+					"soundEffect": "",
+					"tier": 1,
+					"texts":
+					[
+						{
+							"id": "a9d6da50-b4de-d6b6-4b9c-30fd1b843af2",
+							"text": "Your pet monster has wings! It can fly high above buildings and trees. It can do swooping loops and looping swoops high in the air.",
+							"order": "1",				
+							"audioTrack": ""
+						},
+						{
+							"id": "c65f3777-0521-c9ae-4e7c-8956653249d1",
+							"text": "Watching your pet monster fly around is a lot of fun. But where does it rest?",
+							"order": "2",				
+							"audioTrack": ""
+						},
+						{
+							"id": "79fda734-ca59-3391-41ac-b4b979565296",
+							"text": "Tell me about your pet monster. Does it live in the very top of the trees in a beautiful forest or does it live on top of buildings in a big noisy city?",
+							"order": "3",				
+							"audioTrack": ""
+						}
+					],
+					"navigationLinks":
+					[
+						{
+							"id": "c78b5087-c187-e18c-4839-17d08cf7ded3",
+							"order": "1",
+							"imageUri": "",
+							"text": "In the tops of trees",
+							"targetPageId": ""
+						},
+						{
+							"id": "d99f33e7-c3fa-2785-47e9-626f3aac7090",
+							"order": "2",
+							"imageUri": "",
+							"text": "On the tops of buildings",
+							"targetPageId": ""
+						}
+					]
+				},
+				{
+					"id": "68823aa1-7f15-82b6-41fc-12380386a29e",
+					"imageUri": "",
+					"soundEffect": "",
+					"tier": 1,
+					"texts":
+					[
+						{
+							"id": "9f7c8dcc-30a5-7787-466f-3e01b9a7460b",
+							"text": "Your pet monster has big sharp claws! I bet that your pet monster looks scary to people who don’t know it.",
+							"order": "1",				
+							"audioTrack": ""
+						},
+						{
+							"id": "58f179a4-9727-48b4-4632-bbebeab6d818",
+							"text": "But you know that it is a nice monster, fun and happy. Its claws are very useful for all sorts of things like making a place for it to sleep. But where is that, where does your pet monster live?",
+							"order": "2",				
+							"audioTrack": ""
+						},
+						{
+							"id": "10898e5b-7419-daa6-478c-f0de5f5abfb3",
+							"text": "Tell me about your pet monster. Does it live burrowed underground like a mole or does it live inside a cave?",
+							"order": "3",				
+							"audioTrack": ""
+						}
+					],
+					"navigationLinks":
+					[
+						{
+							"id": "7d598384-4b15-09ab-401b-9845e55234e8",
+							"order": "1",
+							"imageUri": "",
+							"text": "Underground",
+							"targetPageId": ""
+						},
+						{
+							"id": "b6712ff9-d105-2cae-455e-6eaadaacdb3b",
+							"order": "2",
+							"imageUri": "",
+							"text": "Inside a cave",
+							"targetPageId": ""
+						}
+					]
+				}
+			]
+		}
+	]
+}

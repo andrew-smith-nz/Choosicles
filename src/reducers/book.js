@@ -1,6 +1,35 @@
-import { CHANGE_PAGE, BACKTRACK, CLEAR_HISTORY, CHANGE_NAME } from '../actions/book.js'
+import { CHANGE_PAGE, BACKTRACK, CLEAR_HISTORY, CHANGE_NAME, INCREMENT_PAGE_COUNTER, RESET_PAGE_COUNTERS } from '../actions/book.js'
 
 const bookData = require('../../books.json');
+
+export function pageCounters(state = { pageCounters: [] }, action)
+{
+    switch (action.type)
+    {
+        case INCREMENT_PAGE_COUNTER:
+        {
+            var pageCounters = [];
+            var found = false;
+            for (i = 0; i < state.pageCounters.length; i++)
+            {
+                if (state.pageCounters[i].pageId === action.pageId)
+                {
+                    state.pageCounters[i].count++;
+                    found = true;
+                }
+                pageCounters.push(state.pageCounters[i]);
+            }
+            if (!found)
+                pageCounters.push({ pageId: action.pageId, count: 1 });
+            return { pageCounters };
+        }
+        case RESET_PAGE_COUNTERS:
+        {
+            return { pageCounters: [] };
+        }
+        default: return state;
+    }
+}
 
 export function changeName(state = { name: "fart" }, action)
 {
