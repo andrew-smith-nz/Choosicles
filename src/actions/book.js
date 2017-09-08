@@ -5,6 +5,7 @@ export const CHANGE_NAME = "CHANGE_NAME";
 export const INCREMENT_PAGE_COUNTER = "INCREMENT_PAGE_COUNTER";
 export const RESET_PAGE_COUNTERS = "RESET_PAGE_COUNTERS";
 
+
 export function changePage(pageId)
 {
     return {
@@ -44,10 +45,10 @@ export function incrementPageCounter(pageId)
     }
 }
 
-export function resetPageCounters(bookId)
+export function resetPageCounters(pages)
 {
     return {
         type: RESET_PAGE_COUNTERS,
-        bookId
+        pages
     }
 }

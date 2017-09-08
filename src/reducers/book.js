@@ -4,6 +4,7 @@ const bookData = require('../../books.json');
 
 export function pageCounters(state = { pageCounters: [] }, action)
 {
+    console.log(state);
     switch (action.type)
     {
         case INCREMENT_PAGE_COUNTER:
@@ -21,11 +22,17 @@ export function pageCounters(state = { pageCounters: [] }, action)
             }
             if (!found)
                 pageCounters.push({ pageId: action.pageId, count: 1 });
-            return { pageCounters };
+            return { pageCounters: pageCounters };
         }
         case RESET_PAGE_COUNTERS:
         {
-            return { pageCounters: [] };
+            var pageCounters = [];
+            for (i = 0; i < state.pageCounters.length; i++)
+            {
+                if (action.pages.filter(p => p.id === state.pageCounters[i].pageId).length === 0)
+                pageCounters.push(state.pageCounters[i]);
+            }
+            return { pageCounters: pageCounters };
         }
         default: return state;
     }

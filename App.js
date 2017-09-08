@@ -2,13 +2,16 @@ import React from 'react';
 import { StyleSheet, Text, View, AsyncStorage } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
 import Page from './src/components/page.js';
+import Settings from './src/components/settings.js';
+import Store from './src/components/store.js';
 import { StackNavigator } from 'react-navigation';
 import { compose, createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { changePage, changeName, pageCounters } from './src/reducers/book.js'
+import { changeSettings } from './src/reducers/settings.js'
 import { persistStore, autoRehydrate, applyMiddleware } from 'redux-persist';
 
-let store = createStore(combineReducers({changePage, changeName, pageCounters}), compose(autoRehydrate({log:true})));
+let store = createStore(combineReducers({changePage, changeName, pageCounters, changeSettings}), compose(autoRehydrate({log:true})));
 
 export default class App extends React.Component {
 
@@ -19,7 +22,7 @@ export default class App extends React.Component {
 
   componentWillMount()
   {
-    const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters']}, () => { this.setState({ rehydrated: true })});
+    const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
   }
 
   render() {
@@ -39,6 +42,12 @@ const Navigator = StackNavigator({
     },
     Page: {
       screen: Page
+    },
+    Settings: {
+      screen: Settings
+    },
+    Store: {
+      screen: Store
     }
   },
   {

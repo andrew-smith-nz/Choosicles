@@ -14,7 +14,8 @@ function mapStateToProps(state) {
         pageHistory: state.changePage.pageHistory,
         name: state.changeName.name,
         panDirection: state.changePage.direction,
-        pageCounters: state.pageCounters.pageCounters
+        pageCounters: state.pageCounters.pageCounters,
+        showChoiceCounters: state.changeSettings.showChoiceCounters
     }
 }
 
@@ -67,7 +68,7 @@ class Page extends Component
                 toValue: 0,
                 duration: 150,            // Make it take a while
             }
-        ).start();   
+        ).start();
     }
 
     componentDidMount()
@@ -186,7 +187,7 @@ class Page extends Component
                     <Modal animationType={"slide"} transparent={true} visible={this.state.nameMonsterVisible} onRequestClose={() => this.setState({ nameMonsterVisible:false })}>
                         <TouchableOpacity style={{flex:1}} onPress={() => this.setState({ nameMonsterVisible:false })} >
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
-                                <TouchableOpacity onPress={null} style={{height:'40%', width:'40%', alignItems: 'center', justifyContent:'center'}}>
+                                <TouchableOpacity onPress={null} style={{height:'40%', width:'45%', alignItems: 'center', justifyContent:'center'}}>
                                         <NameMonster callback={() => this.setState({ nameMonsterVisible:false })} />
                                 </TouchableOpacity>
                             </View>
@@ -240,9 +241,9 @@ class Page extends Component
                                             <Animated.Text key={nav.id} style={{opacity:this.state.textFadeOpacity, textAlign:'center', borderColor:'black', borderWidth:0.5, borderRadius:50, width:50, height:50, padding:10, marginLeft: 10, marginRight:10, backgroundColor:'white'}}>
                                                 {nav.text}
                                             </Animated.Text>
-                                            <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
+                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
                                                 <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
-                                            </View>
+                                            </View> : null }
                                         </TouchableOpacity>
                                         )}
                                     </View>
