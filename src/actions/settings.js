@@ -1,5 +1,5 @@
 export const TOGGLE_DISPLAY_CHOICE_COUNTERS = "TOGGLE_DISPLAY_CHOICE_COUNTERS";
-export const RESET_CHOICE_COUNTERS = "RESET_CHOICE_COUNTERS";
+export const SET_DISPLAY_MODE = "SET_DISPLAY_MODE";
 
 export function toggleDisplayChoiceCounters()
 {
@@ -8,9 +8,10 @@ export function toggleDisplayChoiceCounters()
         };
 }
 
-export function resetChoiceCounters()
+export function setDisplayMode(mode)
 {
     return {
-            type: RESET_CHOICE_COUNTERS
+            type: SET_DISPLAY_MODE,
+            mode
         };
 }

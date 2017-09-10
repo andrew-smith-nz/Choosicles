@@ -15,7 +15,8 @@ function mapStateToProps(state) {
         name: state.changeName.name,
         panDirection: state.changePage.direction,
         pageCounters: state.pageCounters.pageCounters,
-        showChoiceCounters: state.changeSettings.showChoiceCounters
+        showChoiceCounters: state.changeSettings.showChoiceCounters,
+        displayMode: state.changeSettings.displayMode
     }
 }
 
@@ -45,7 +46,7 @@ class Page extends Component
             slideX: new Animated.Value(Dimensions.get('window').width), 
             textFadeOpacity: new Animated.Value(0),
             nameMonsterVisible: false,
-            tabletMode: false
+            tabletMode: props.displayMode === "tablet"
         };
         this._slideProgress = new Animated.Value(0);
     }
@@ -176,7 +177,7 @@ class Page extends Component
 
     render()
     {
-        let hasDecision = (this.state.currentText == (this.props.pageData.texts.length - 1) && this.props.pageData.navigationLinks.length > 0) || this.state.tabletMode;
+        let hasDecision = (this.state.currentText == (this.props.pageData.texts.length - 1) || this.state.tabletMode) && this.props.pageData.navigationLinks.length > 0;
         //let footerHeight = hasDecision ? '20%': '10%';
         return (
                 <Animated.View style={[style.pageView, {transform: [
@@ -231,17 +232,20 @@ class Page extends Component
                                 </TouchableOpacity> 
                             </View>
                             <View style={{position:'absolute', bottom:10, left:'10%', alignItems:'center', justifyContent:'center', width:'80%'}}>
-                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, fontWeight:'bold', backgroundColor:'rgba(255,255,255,0.5)'}}>
+                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, fontWeight:'bold', 
+                                backgroundColor:'rgba(255,255,255,0.5)', fontSize: this.state.tabletMode ? 10 : 12 }}>
                                     {this.getPageText()}
                                 </Animated.Text>
                                 {hasDecision ? 
                                     <View style={{marginTop: 10, marginBottom:10, flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
                                         {this.props.pageData.navigationLinks.map((nav) => 
                                         <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
-                                            <Animated.Text key={nav.id} style={{opacity:this.state.textFadeOpacity, textAlign:'center', borderColor:'black', borderWidth:0.5, borderRadius:50, width:50, height:50, padding:10, marginLeft: 10, marginRight:10, backgroundColor:'white'}}>
+                                            <Animated.Text key={nav.id} style={{opacity:this.state.textFadeOpacity, textAlign:'center', borderColor:'black', 
+                                                    borderWidth:0.5, borderRadius:50, width:50, height:50, padding:10, marginLeft: 10, marginRight:10, 
+                                                    backgroundColor:'white'}}>
                                                 {nav.text}
                                             </Animated.Text>
-                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
+                                            {this.props.showChoiceCounters ? <View stylie={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
                                                 <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
                                             </View> : null }
                                         </TouchableOpacity>
