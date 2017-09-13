@@ -1,18 +1,34 @@
-// requiring images needs hardcoded paths, no dynamic generation of URIs.  So we need to manually map every page to it's images and sound effects
-
+// requiring images needs hardcoded paths, no dynamic generation of URIs.  So we need to manually map every page to its images and sound effects
+_resourcesByBook = [
+    {
+        bookId:'b86a34c8-1103-450d-a3dc-1b18da529f5b',
+        coverImage: require("../../img/pages/b86a34c8-1103-450d-a3dc-1b18da529f5b/cover.png"),
+        endImage: require("../../img/pages/b86a34c8-1103-450d-a3dc-1b18da529f5b/cover.png"),
+    }
+]
 
 _resourcesByPage = [
             {
             pageId: '6793f021-e7d5-403b-a1be-9dc91e159cae', 
             image: require('../../img/pages/b86a34c8-1103-450d-a3dc-1b18da529f5b/6793f021-e7d5-403b-a1be-9dc91e159cae/main.png'),
             soundEffect: require('../../audio/fart.mp3'),
-            reading: require('../../audio/reading2.mp3')
+            readings: [
+                    { 
+                        part: 1,
+                        audio: require('../../audio/pages/b86a34c8-1103-450d-a3dc-1b18da529f5b/6793f021-e7d5-403b-a1be-9dc91e159cae/reading1.mp3')
+                    }
+                ] 
             },
             {
             pageId: '248de2a8-0cc8-4153-9585-3872ba50d96c', 
             image: require('../../img/pages/b86a34c8-1103-450d-a3dc-1b18da529f5b/248de2a8-0cc8-4153-9585-3872ba50d96c/main.png'),
             soundEffect: require('../../audio/fart.mp3'),
-            reading: require('../../audio/reading2.mp3')
+            readings: [
+                    { 
+                        part: 1,
+                        audio: require('../../audio/pages/b86a34c8-1103-450d-a3dc-1b18da529f5b/248de2a8-0cc8-4153-9585-3872ba50d96c/reading1.mp3')
+                    }
+                ] 
             },
             {
             pageId: 'b30f8401-b35e-43a2-8b56-8ff070be9e91', 
@@ -200,7 +216,12 @@ export function getSoundEffectForPage(pageId)
     return _resourcesByPage.filter(p => p.pageId === pageId)[0].soundEffect;
 }
 
-export function getReadingForPage(pageId)
+export function getReadingForPage(pageId, partId)
 {
-    return _resourcesByPage.filter(p => p.pageId === pageId)[0].reading;
+    return _resourcesByPage.filter(p => p.pageId === pageId)[0].readings[partId].audio;
+}
+
+export function getCoverForBook(bookId)
+{
+    return _resourcesByBook.filter(b => b.bookId === bookId)[0].coverImage;
 }

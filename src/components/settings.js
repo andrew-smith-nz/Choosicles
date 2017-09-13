@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView } from 'react-native';
 import style from '../../style/style.js';
-import { toggleDisplayChoiceCounters, setDisplayMode } from '../actions/settings.js';
+import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
 import { connect } from 'react-redux';
 
@@ -12,6 +12,8 @@ function mapStateToProps(state) {
         countersEnabled: state.changeSettings.showChoiceCounters,
         pageCounters: state.pageCounters.pageCounters,
         displayMode: state.changeSettings.displayMode,
+        enableSoundEffects: state.changeSettings.enableSoundEffects,
+        enableReadAloud: state.changeSettings.enableReadAloud,
     }
 }
 
@@ -19,6 +21,8 @@ function mapDispatchToProps(dispatch)
 {
     return { 
         setDisplayMode: (mode) => dispatch(setDisplayMode(mode)),
+        setEnableSoundEffects: (enabled) => dispatch(setEnableSoundEffects(enabled)),
+        setEnableReadAloud: (enabled) => dispatch(setEnableReadAloud(enabled)),
         toggleDisplayChoiceCounters: () => dispatch(toggleDisplayChoiceCounters()),
         resetPageCounters: (pages) => dispatch(resetPageCounters(pages))
     };
@@ -69,11 +73,11 @@ class Settings extends Component
                                 <GroupBox title="Audio">
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
                                         <Text style={{marginRight:10}}>Enable Read Aloud</Text>
-                                        <Switch onValueChange={() => {}} value={this.props.countersEnabled} />
+                                        <Switch onValueChange={(value) => {this.props.setEnableReadAloud(value)}} value={this.props.enableReadAloud} />
                                     </View>
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
                                         <Text style={{marginRight:10}}>Enable Sound Effects</Text>
-                                        <Switch onValueChange={() => {}} value={this.props.countersEnabled} />
+                                        <Switch onValueChange={(value) => {this.props.setEnableSoundEffects(value)}} value={this.props.enableSoundEffects} />
                                     </View>
                                 </GroupBox>
                             </View>

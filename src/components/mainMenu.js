@@ -3,7 +3,7 @@ import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
 import style from '../../style/style.js';
 import BookCover from './bookCover.js';
 import { connect } from 'react-redux';
-import { changePage } from '../actions/book.js';
+import { changePage, setActiveBook } from '../actions/book.js';
 
 const bookData = require('../../books.json');
 
@@ -17,7 +17,8 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch)
 {
     return { 
-        startBook: (pageId) => dispatch(changePage(pageId)) 
+        changePage: (pageId) => dispatch(changePage(pageId)),
+        setActiveBook: (book) => dispatch(setActiveBook(book))
     };
 }
 
@@ -31,8 +32,9 @@ class MainMenu extends Component
 
     selectBook(book)
     {
-        this.props.startBook(book.pages[0].id);
-        this.props.navigation.navigate("Page");
+        this.props.setActiveBook(book);
+        this.props.changePage(book.pages[0].id);
+        this.props.navigation.navigate("TitlePage");
     }
 
     settings()

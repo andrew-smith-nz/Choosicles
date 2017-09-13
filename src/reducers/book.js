@@ -1,4 +1,4 @@
-import { CHANGE_PAGE, BACKTRACK, CLEAR_HISTORY, CHANGE_NAME, INCREMENT_PAGE_COUNTER, RESET_PAGE_COUNTERS } from '../actions/book.js'
+import { CHANGE_PAGE, BACKTRACK, CLEAR_HISTORY, CHANGE_NAME, INCREMENT_PAGE_COUNTER, RESET_PAGE_COUNTERS, SET_ACTIVE_BOOK } from '../actions/book.js'
 
 const bookData = require('../../books.json');
 
@@ -49,18 +49,24 @@ export function changeName(state = { name: "fart" }, action)
     }
 }
 
-export function changePage(state = { pageData: null, pageHistory:[], direction: 'forward' }, action)
+export function changePage(state = { activeBookId: null, pageData: null, pageHistory:[], direction: 'forward' }, action)
 {
     switch(action.type)
     {
+        case SET_ACTIVE_BOOK:
+        {
+            return { ...state, activeBook: action.book }
+        }
         case CHANGE_PAGE: 
         {
             let pageData = getPageData(action.pageId);
             if (pageData)
             {
-                let history = state.pageHistory.slice();
+                let history = [];
+                if (state.pageHistory)
+                    history = state.pageHistory.slice();
                 history.push(pageData);
-                return { pageData: pageData, pageHistory: history, direction: 'forward' };  
+                return { ...state, pageData: pageData, pageHistory: history, direction: 'forward' };  
             }
             else
             {
@@ -73,17 +79,17 @@ export function changePage(state = { pageData: null, pageHistory:[], direction: 
             if (history.length > 0)
             {
                 history.pop();
-                return { pageData: history[history.length - 1], pageHistory: history, direction: 'backward' };  
+                return { ...state, pageData: history[history.length - 1], pageHistory: history, direction: 'backward' };  
             }
             else
             {
                 //this.props.navigation.navigate("MainMenu");
-                return { pageData: null, pageHistory: [], direction: 'backward' };
+                return { ...state, pageData: null, pageHistory: [], direction: 'backward' };
             }            
         }
         case CLEAR_HISTORY:
         {
-            return {pageData: state.pageData, pageHistory: [], direction: 'forward'};
+            return {...state, pageData: state.pageData, pageHistory: [], direction: 'forward'};
         }
         default:
             return state;

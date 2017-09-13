@@ -1,9 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, AsyncStorage } from 'react-native';
+import { StyleSheet, Text, View, AsyncStorage, Image } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
 import Page from './src/components/page.js';
 import Settings from './src/components/settings.js';
 import Store from './src/components/store.js';
+import TitlePage from './src/components/titlePage.js';
+import EndPage from './src/components/endPage.js';
 import { StackNavigator } from 'react-navigation';
 import { compose, createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
@@ -17,19 +19,23 @@ export default class App extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = { rehydrated: false }
+    this.state = { rehydrated: false, showSplash:true }
   }
 
   componentWillMount()
   {
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
+    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 500);
   }
 
   render() {
     return (
       <Provider store={store}>
         <View style={{flex:1}}>
-          <Navigator />
+          {this.state.showSplash ? <Image source={require("./img/splash.png")} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
+            <Text style={{fontSize:48}}>Choosicles</Text>
+            </Image>
+            : <Navigator /> }
         </View>
       </Provider>
     );
@@ -48,6 +54,12 @@ const Navigator = StackNavigator({
     },
     Store: {
       screen: Store
+    },
+    TitlePage: {
+      screen: TitlePage
+    },
+    EndPage: {
+      screen: EndPage
     }
   },
   {

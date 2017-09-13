@@ -16,7 +16,9 @@ function mapStateToProps(state) {
         panDirection: state.changePage.direction,
         pageCounters: state.pageCounters.pageCounters,
         showChoiceCounters: state.changeSettings.showChoiceCounters,
-        displayMode: state.changeSettings.displayMode
+        displayMode: state.changeSettings.displayMode,
+        enableSoundEffects: state.changeSettings.enableSoundEffects,
+        enableReadAloud: state.changeSettings.enableReadAloud,
     }
 }
 
@@ -91,7 +93,14 @@ class Page extends Component
 
     forward()
     {
-        this.setState({currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());        
+        if (this.props.pageData.navigationLinks.length == 0)
+        {
+            this.props.navigation.navigate("EndPage");
+        }
+        else
+        {
+            this.setState({currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());       
+        } 
     }
     
     back()
@@ -131,7 +140,7 @@ class Page extends Component
         }
         if (status)
         {
-            await sound.loadAsync(getReadingForPage(this.props.pageData.id));
+            await sound.loadAsync(getReadingForPage(this.props.pageData.id, this.state.currentText));
             await sound.playAsync();
         }
         else
@@ -154,8 +163,8 @@ class Page extends Component
         }
         if (this.props.name)
         {
-            originalText = originalText.replace('your pet monster', this.props.name);
-            originalText = originalText.replace('Your pet monster', this.props.name.substring(0,1).toUpperCase() + this.props.name.substring(1));
+            originalText = originalText.replace(new RegExp("your pet monster", "g"), this.props.name);
+            originalText = originalText.replace(new RegExp("Your pet monster", "g"), this.props.name.substring(0,1).toUpperCase() + this.props.name.substring(1));
         }
         return originalText;
     }
@@ -217,7 +226,7 @@ class Page extends Component
                             </View>
                             <View style={{width:'80%'}} />
                             <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
-                                {(this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode ? 
+                                {(this.props.pageData.navigationLinks.length == 0) || ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode) ? 
                                 <TouchableOpacity onPress={() => this.forward()}>
                                     <Image source={require('../../img/arrow_forward.png')} />
                                 </TouchableOpacity>
@@ -225,12 +234,12 @@ class Page extends Component
                             </View>
                         </View>
                         <View style={style.pageFooterView}>
-                            <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
+                            {this.props.enableReadAloud ? <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
                                 <TouchableOpacity onPress={() => { this.toggleReading(!this.state.speaker); this.setState({speaker: !this.state.speaker});  }}>
                                     {this.state.speaker ? <Image source={require('../../img/speaker_off.png')} style={{width:30, height:30}} /> 
                                                         : <Image source={require('../../img/speaker_on.png')} style={{width:30, height:30}} />}
                                 </TouchableOpacity> 
-                            </View>
+                            </View> : null}
                             <View style={{position:'absolute', bottom:10, left:'10%', alignItems:'center', justifyContent:'center', width:'80%'}}>
                                 <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, fontWeight:'bold', 
                                 backgroundColor:'rgba(255,255,255,0.5)', fontSize: this.state.tabletMode ? 10 : 12 }}>
@@ -245,7 +254,7 @@ class Page extends Component
                                                     backgroundColor:'white'}}>
                                                 {nav.text}
                                             </Animated.Text>
-                                            {this.props.showChoiceCounters ? <View stylie={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
+                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
                                                 <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
                                             </View> : null }
                                         </TouchableOpacity>
@@ -253,11 +262,11 @@ class Page extends Component
                                     </View>
                                 : null}
                             </View>      
-                            <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
+                            {this.props.enableSoundEffects ? <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
                                 <TouchableOpacity onPress={() => this.playSound()}>
                                     <Image source={require('../../img/sound_effect.png')} style={{width:30, height:30}} />
                                 </TouchableOpacity>
-                            </View>              
+                            </View> : null}        
                         </View>
                     </Image>
                 </Animated.View>
