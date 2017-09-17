@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal } from 'react-native';
 import style from '../../style/style.js';
-import {Audio} from 'expo';
+import { Sound } from 'react-native-sound';
 import { getImageForPage, getSoundEffectForPage, getReadingForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter } from '../actions/book.js';
 import { connect } from 'react-redux';
 import NameMonster from './nameMonster.js';
 import ShadowText from './shadowText.js';
+import Reactotron from 'reactotron-react-native';
 
 function mapStateToProps(state) {
     return { 
@@ -42,6 +43,7 @@ class Page extends Component
         this.fadeInText = this.fadeInText.bind(this);
         this.getPageText = this.getPageText.bind(this);
         this.getPageCount = this.getPageCount.bind(this);
+        this.loadReadingAudio = this.loadReadingAudio.bind(this);
         this.state = { 
             currentText: 0, 
             speaker: false, 
@@ -53,6 +55,24 @@ class Page extends Component
         this._slideProgress = new Animated.Value(0);
     }
 
+    loadReadingAudio(props, partId){
+        var reading = getReadingForPage(props.pageData.id, partId);
+        Reactotron.log(reading);
+        if (!reading) 
+            return;
+
+        var Sound = require('react-native-sound');
+        var sound = new Sound(reading, Sound.MAIN_BUNDLE, (error) => {
+            Reactotron.log('changed sound');
+            this.setState({playingSound: sound});
+        });
+    }
+
+    componentWillMount()
+    {
+        this.loadReadingAudio(this.props, 0);
+    }
+
     componentWillReceiveProps(newProps)
     {
         this.setState({ 
@@ -61,6 +81,8 @@ class Page extends Component
                 slideX: new Animated.Value  ((newProps.panDirection == "forward" ? 1 : -1) * Dimensions.get('window').width) 
             },
             () => this.animateIn());   
+
+        this.loadReadingAudio(newProps, 0);
     }
 
     animateIn()
@@ -99,13 +121,17 @@ class Page extends Component
         }
         else
         {
-            this.setState({currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());       
+            this.setState({currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
+            this.toggleReading(false);
+            this.loadReadingAudio(this.props, this.state.currentText + 1);      
         } 
     }
     
     back()
     {
         this.setState({currentText: this.state.currentText - 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());
+        this.toggleReading(false);
+        this.loadReadingAudio(this.props, this.state.currentText - 1);
     }
 
     backtrack()
@@ -121,32 +147,36 @@ class Page extends Component
         }
     }
 
-    async playSound()
+    playSound()
     {
-        Audio.setIsEnabledAsync(true);
-        let sound = new Audio.Sound();
-        await sound.loadAsync(getSoundEffectForPage(this.props.pageData.id));
-        await sound.playAsync();
+        var Sound = require('react-native-sound');
+        var s = new Sound(getSoundEffectForPage(this.props.pageData.id), Sound.MAIN_BUNDLE, (error) => {
+            Reactotron.log("done");
+            s.play((success) => {
+                if (success) {
+                    Reactotron.log('successfully finished playing');
+                } else {
+                    Reactotron.log('playback failed due to audio decoding errors');
+                    // reset the player to its uninitialized state (android only)
+                    // this is the only option to recover after an error occured and use the player again
+                    //whoosh.reset();
+                }
+            });
+        });
     }
 
-    async toggleReading(status)
+    toggleReading(status)
     {
-        Audio.setIsEnabledAsync(true);
-        let sound = this.state.playingSound;
-        if (!sound)
-        {
-            sound = new Audio.Sound();
-            this.setState({playingSound: sound});
-        }
+        if (status == null)
+            status = !this.state.speaker;
+        this.setState({speaker: status});
         if (status)
         {
-            await sound.loadAsync(getReadingForPage(this.props.pageData.id, this.state.currentText));
-            await sound.playAsync();
+            this.state.playingSound.play();
         }
         else
         {
-            await sound.stopAsync();
-            this.setState({playingSound: null});
+            this.state.playingSound.stop();
         }
     }
 
@@ -235,7 +265,7 @@ class Page extends Component
                         </View>
                         <View style={style.pageFooterView}>
                             {this.props.enableReadAloud ? <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
-                                <TouchableOpacity onPress={() => { this.toggleReading(!this.state.speaker); this.setState({speaker: !this.state.speaker});  }}>
+                                <TouchableOpacity onPress={() => { this.toggleReading(); }}>
                                     {this.state.speaker ? <Image source={require('../../img/speaker_off.png')} style={{width:30, height:30}} /> 
                                                         : <Image source={require('../../img/speaker_on.png')} style={{width:30, height:30}} />}
                                 </TouchableOpacity> 

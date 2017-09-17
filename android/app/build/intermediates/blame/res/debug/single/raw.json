@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw\\reading1.mp3",
+        "source": "C:\\Dev\\Apps\\Choosicles\\android\\app\\src\\main\\res\\raw\\reading1.mp3"
+    },
+    {
+        "merged": "C:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw\\fart.mp3",
+        "source": "C:\\Dev\\Apps\\Choosicles\\android\\app\\src\\main\\res\\raw\\fart.mp3"
+    },
+    {
+        "merged": "C:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\res\\merged\\debug\\raw\\reading2.mp3",
+        "source": "C:\\Dev\\Apps\\Choosicles\\android\\app\\src\\main\\res\\raw\\reading2.mp3"
+    }
+]

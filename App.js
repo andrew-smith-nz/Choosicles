@@ -12,6 +12,8 @@ import { Provider } from 'react-redux';
 import { changePage, changeName, pageCounters } from './src/reducers/book.js'
 import { changeSettings } from './src/reducers/settings.js'
 import { persistStore, autoRehydrate, applyMiddleware } from 'redux-persist';
+import './reactotronConfig'
+import Orientation from 'react-native-orientation';
 
 let store = createStore(combineReducers({changePage, changeName, pageCounters, changeSettings}), compose(autoRehydrate({log:true})));
 
@@ -26,6 +28,11 @@ export default class App extends React.Component {
   {
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
     setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 500);
+  }
+
+  componentDidMount()
+  {
+    Orientation.lockToLandscape();
   }
 
   render() {
