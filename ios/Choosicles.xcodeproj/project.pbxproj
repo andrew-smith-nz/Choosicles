@@ -37,6 +37,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		376E05CD32374811B19CDF11 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 836DB0A611CF4866A7DF1A9E /* libRNSound.a */; };
 		B5168802BC8E44F085D7137F /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CAEC9560B432DAFC657BE /* libRCTOrientation.a */; };
+		AD90BDB09596402E9293632E /* Summer Joy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9764F731B81E4DFB9D161940 /* Summer Joy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +261,7 @@
 		836DB0A611CF4866A7DF1A9E /* libRNSound.a */ = {isa = PBXFileReference; name = "libRNSound.a"; path = "libRNSound.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		53DFF62F63114EF2A69C9EAB /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; name = "RCTOrientation.xcodeproj"; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		877CAEC9560B432DAFC657BE /* libRCTOrientation.a */ = {isa = PBXFileReference; name = "libRCTOrientation.a"; path = "libRCTOrientation.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		9764F731B81E4DFB9D161940 /* Summer Joy.ttf */ = {isa = PBXFileReference; name = "Summer Joy.ttf"; path = "../fonts/Summer Joy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,6 +478,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ChoosiclesTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				3C85547ACC0D4F1CAD476BE3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -491,6 +494,15 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		3C85547ACC0D4F1CAD476BE3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9764F731B81E4DFB9D161940 /* Summer Joy.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -850,6 +862,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				AD90BDB09596402E9293632E /* Summer Joy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

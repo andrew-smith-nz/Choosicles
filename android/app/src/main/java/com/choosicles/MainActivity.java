@@ -22,4 +22,10 @@ public class MainActivity extends ReactActivity {
         intent.putExtra("newConfig", newConfig);
         this.sendBroadcast(intent);
     }
+
+    // public void onCreate()
+    // {
+    //     super.onCreate();
+    //     this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+    // }
 }

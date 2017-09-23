@@ -246,22 +246,24 @@ class Page extends Component
                                 <Image source={require('../../img/pencil.png')} style={{width:50, height:50}} />
                             </TouchableOpacity> 
                         </View> : null}
-                        <View style={{flexDirection:'row', width:'100%', height:'80%', alignItems:'center'}}>
-                            <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
-                                {this.state.currentText > 0 && !this.state.tabletMode ? 
-                                    <TouchableOpacity onPress={() => this.back()}>
-                                        <Image source={require('../../img/arrow_back.png')} />
-                                    </TouchableOpacity> 
-                                : null }
-                            </View>
-                            <View style={{width:'80%'}} />
-                            <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
-                                {(this.props.pageData.navigationLinks.length == 0) || ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode) ? 
+                        <View style={{position:'absolute', left:5, top:0, width:50, height:'100%', alignItems:'center', justifyContent:'center'}}>
+                            {this.state.currentText > 0 && !this.state.tabletMode ? 
+                                <TouchableOpacity onPress={() => this.back()}>
+                                    <Image source={require('../../img/arrow_back.png')} />
+                                </TouchableOpacity> 
+                            : null }
+                        </View>
+                        <View style={{position:'absolute', right:5, top:0, width:50, height:'100%', alignItems:'center', justifyContent:'center'}}>
+                            {(this.props.pageData.navigationLinks.length == 0) || ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode) ? 
                                 <TouchableOpacity onPress={() => this.forward()}>
                                     <Image source={require('../../img/arrow_forward.png')} />
                                 </TouchableOpacity>
                                 : null }
-                            </View>
+                        </View>
+
+
+                        <View style={{flexDirection:'row', width:'100%', height:'80%', alignItems:'center'}}>
+                            
                         </View>
                         <View style={style.pageFooterView}>
                             {this.props.enableReadAloud ? <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
@@ -271,8 +273,8 @@ class Page extends Component
                                 </TouchableOpacity> 
                             </View> : null}
                             <View style={{position:'absolute', bottom:10, left:'10%', alignItems:'center', justifyContent:'center', width:'80%'}}>
-                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, fontWeight:'bold', 
-                                backgroundColor:'rgba(255,255,255,0.5)', fontSize: this.state.tabletMode ? 10 : 12 }}>
+                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, 
+                                backgroundColor:'rgba(255,255,255,0.5)', fontSize: this.state.tabletMode ? 14 : 16, fontFamily:'berrylicious', lineHeight:20 }}>
                                     {this.getPageText()}
                                 </Animated.Text>
                                 {hasDecision ? 

@@ -49,10 +49,8 @@ class MainMenu extends Component
 
     render()
     {
-        let books = ["x", "2", "3", "4", "5", "6", "7", "8", "9"]
-
-        return  <View style={style.mainMenuView}>
-                    <Text style={[style.h1, {height:'20%'}]}>Choosicles</Text>
+        return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%' } ]}>
+                    <Image source={require("../../img/header.png")} resizeMode='contain' style={{height:'20%'}} />
                     <ScrollView style={{height:'80%'}} horizontal={true}>
                     <View style={style.bookList}>
                         {bookData.books.map((book) => 
@@ -61,17 +59,17 @@ class MainMenu extends Component
                             </TouchableOpacity>)}
                             <TouchableOpacity onPress={() => this.store()}>
                                 <View style={{borderWidth:0.5, borderColor:'black', borderStyle:"dotted", width:150, height:200, alignItems:'center', justifyContent:'center'}}>
-                                    <Text>Get More Books</Text>
+                                    <Text style={{fontFamily:'summer_joy'}}>Get More Books</Text>
                                 </View>
                             </TouchableOpacity>
                     </View>
                     </ScrollView>
                     <View style={{position:'absolute', right: 10, bottom:10}}>
                         <TouchableOpacity onPress={() => this.settings()}>
-                            <Image source={require('../../img/cog.png')} style={{width:20, height:20}} />
+                            <Image source={require('../../img/cogwheel.png')} />
                         </TouchableOpacity>
                     </View>
-                </View>;
+                </Image>;
     }
 }
 

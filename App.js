@@ -32,7 +32,7 @@ export default class App extends React.Component {
 
   componentDidMount()
   {
-    Orientation.lockToLandscape();
+    Orientation.lockToLandscape();    
   }
 
   render() {
