@@ -28,8 +28,10 @@ export default StyleSheet.create({
     ,boldText14: { fontSize:14, fontFamily: 'berrylicious_bold' }
     ,text16: { fontSize:16, fontFamily: 'berrylicious' }
     ,boldText16: { fontSize:16, fontFamily: 'berrylicious_bold' }
+    ,boldText24: { fontSize:24, fontFamily: 'berrylicious_bold' }
     ,centeredText: { textAlign:'center' }
     ,italic: { fontStyle:'italic' }
     
     ,blackBorder: {borderWidth:0.5, borderColor:'black'}
+    ,centeredContent: {alignItems:'center', justifyContent:'center'}
 });

@@ -17,6 +17,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "white",
                     "texts": [
                         {
                             "id": "1d18d3cb-9e65-469c-ba9f-bc8bad8fbced",
@@ -60,6 +61,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "bd33f995-fc15-447b-9aac-42a851bcfd07",
@@ -103,6 +105,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "bf0fc24e-b390-4613-b81f-2f4061a309e4",
@@ -146,6 +149,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "6184b034-66f3-4162-baf7-d8c911179926",
@@ -189,6 +193,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "3ce3bd1d-8611-43b2-9297-5b4fd1f44ed6",
@@ -232,6 +237,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "f5546212-728d-4330-aa4c-1f3075b90ae8",
@@ -275,6 +281,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "864a8479-c105-4ca3-8f2a-05472edf4b6a",
@@ -318,6 +325,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "715b2925-fde3-41d6-9989-6b955b522854",
@@ -361,6 +369,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "6e61cc26-7351-4749-8afa-f64b003734d0",
@@ -404,6 +413,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "ca7300ea-103d-4e31-b47d-3372394e2654",
@@ -447,6 +457,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "03f6f3c4-582c-4157-b5ec-506e960a8a5e",
@@ -490,6 +501,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "0414a045-48b1-42f8-81e8-3bff64e5298d",
@@ -533,6 +545,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "65753ae0-3726-4092-9854-ffc2c73c45d5",
@@ -576,6 +589,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "150b33b4-8099-4f41-ac87-e3de3089449e",
@@ -619,6 +633,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
@@ -662,6 +677,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
@@ -696,6 +712,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "db128fd8-a649-4223-84ef-67c1a8886d48",
@@ -730,6 +747,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
@@ -770,6 +788,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "4f1c5178-67e6-4455-a632-bf7765076984",
@@ -804,6 +823,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "c1fc38dd-2a22-4b23-8afc-e8e696a893ca",
@@ -838,6 +858,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "2b0216e1-d942-4ccc-845c-42a2ce4101ff",
@@ -872,6 +893,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
@@ -912,6 +934,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "09aef51f-55fd-4cff-80c4-83f576c1d215",
@@ -946,6 +969,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "7a723379-6975-4dfc-8424-2d319082ea8a",
@@ -980,6 +1004,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "37c91963-76fd-4594-9653-1e3e66163119",
@@ -1014,6 +1039,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "4597b993-e21d-4bbd-a356-50e0ef1aad3d",
@@ -1048,6 +1074,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "9ad07932-c9cf-4123-a1be-4f869c3ba525",
@@ -1082,6 +1109,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "d83fdd28-f8c1-4eb0-ac86-16113797ae70",
@@ -1116,6 +1144,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "3d092c81-3b9a-42f8-a9d4-3d637577b76f",
@@ -1156,6 +1185,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "68d48745-3122-4874-b8f1-ea471ba4bfbf",
@@ -1190,6 +1220,7 @@
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
+                    "textColor": "black",
                     "texts": [
                         {
                             "id": "5a08da89-9e74-42e1-8de0-2982d77b610a",

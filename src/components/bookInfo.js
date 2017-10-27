@@ -13,23 +13,41 @@ export default class BookInfo extends Component
 
     render()
     {
-        return  <View style={{flexDirection:'row', alignItems:'stretch', justifyContent:'space-between', padding: 10, backgroundColor:'white', height:'100%', width:'100%'}}>
-                    <Image source={require("../../img/book_monster.png")} style={{width:'40%', height:'100%'}} resizeMode='contain' />
-                    <View style={{flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between', width:'60%', height:'100%'}}>
-                        <View style={{flexDirection:'column', alignItems:'flex-start', justifyContent:'flex-start', padding:10}}>
-                            <Text style={style.h4}>Your Very Own: Pet Monster!</Text>
-                            <Text style={style.text}>Written by Meg Price</Text>
-                            <Text style={style.text}>Illustrated by Sophie Wood</Text>
-                            <Text style={style.text}>For ages 2 to 6</Text>
-                            <Text style={style.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
-                                Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
-                                Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor. </Text>
+        return  <View style={[style.blackBorder, {flex:1 ,flexDirection:'row', alignItems:'stretch', justifyContent:'space-between', padding: 10, backgroundColor:'#F7E19E'}]}>
+                    <Image style={{flex:7}} source={require("../../img/book_monster.png")} resizeMode='contain' />
+                    <View style={{flex:13, flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between'}}>
+                        <View style={{flex:5, flexDirection:'column', alignItems:'flex-start', justifyContent:'flex-start', padding:10}}>
+                                <Text style={style.h4}>Your Very Own: Pet Monster!</Text>
+                            <ScrollView style={{flex:1}}>
+                                <Text style={style.text12}>Written by Meg Price</Text>
+                                <Text style={style.text12}>Illustrated by Sophie Wood</Text>
+                                <Text style={style.text12}>For ages 2 to 6</Text>
+                                <Text style={style.text10}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
+                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
+                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
+                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
+                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
+                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
+                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
+                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
+                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor.</Text>
+                            </ScrollView>
                         </View>
-                        <View style={{width:'100%', height:'100%', alignItems:'center'}}>
-                        <TouchableOpacity style={{width:'50%', height:'15%', padding:10, borderWidth:0.5, borderColor:'black', alignItems:'center', justifyContent:'center'}}
-                                            onPress={() => this.props.callback()}>
-                            <Text>Buy now for $5.99</Text>
-                        </TouchableOpacity>
+                        <View style={{flex:2, width:'100%'}}>
+                            <View style={{flex:1, flexDirection:'row', justifyContent:'space-between', paddingLeft:20, paddingRight:20}}>
+                                <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center'}}
+                                                    onPress={() => this.props.callback()}>
+                                    <Image style={{width:'100%', alignItems:'center', justifyContent:'center'}} source={require('../../img/tall_button.png')} resizeMode="contain">
+                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25} ]}>Buy now $5.99</Text>
+                                    </Image>
+                                </TouchableOpacity>
+                                <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center'}}
+                                                    onPress={() => this.props.cancelCallback()}>
+                                    <Image style={{width:'100%', alignItems:'center', justifyContent:'center'}} source={require('../../img/tall_button.png')} resizeMode="contain">
+                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25} ]}>Close</Text>
+                                    </Image>
+                                </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </View>;

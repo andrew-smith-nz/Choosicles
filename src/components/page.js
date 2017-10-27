@@ -124,16 +124,16 @@ class Page extends Component
 
     forward()
     {
-        if (this.props.pageData.navigationLinks.length == 0)
-        {
-            this.props.navigation.navigate("EndPage");
-        }
-        else
-        {
+        if ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode)
+        {            
             this.setState({currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
             this.toggleReading(false);
             this.loadReadingAudio(this.props, this.state.currentText + 1);      
-        } 
+        }
+        else
+        {
+            this.props.navigation.navigate("EndPage");
+        }
     }
     
     back()
@@ -234,68 +234,24 @@ class Page extends Component
     render()
     {
         let hasDecision = (this.state.currentText == (this.props.pageData.texts.length - 1) || this.state.tabletMode) && this.props.pageData.navigationLinks.length > 0;
-        //let footerHeight = hasDecision ? '20%': '10%';
         return (
                 <Animated.View style={[style.pageView, {transform: [
                     {
                     translateX: this.state.slideX
                     }
                 ]}]}>
-                    <Modal animationType={"slide"} transparent={true} visible={this.state.nameMonsterVisible} onRequestClose={() => this.setState({ nameMonsterVisible:false })}>
-                        <TouchableOpacity style={{flex:1}} onPress={() => this.setState({ nameMonsterVisible:false })} >
-                            <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
-                                <TouchableOpacity onPress={null} style={{height:'40%', width:'45%', alignItems: 'center', justifyContent:'center'}}>
-                                        <NameMonster callback={() => this.setState({ nameMonsterVisible:false })} />
-                                </TouchableOpacity>
-                            </View>
-                        </TouchableOpacity>
-                    </Modal>
-                    <Image style={{flex:1, width:"100%", height:"100%"}} 
-                        source={getImageForPage(this.props.pageData.id)} 
-                        resizeMode={"cover"}>
-                        <View style={{position:'absolute', left:5, top:5, width:50, height:50}}>
-                            <TouchableOpacity onPress={() => this.backtrack()}>
-                                <Image source={require('../../img/back.png')} style={{width:50, height:50}} />
-                            </TouchableOpacity> 
-                        </View>
-                        {/* {(this.props.pageData.tier === 0) ? <View style={{position:'absolute', right:5, top:5, width:50, height:50}}>
-                            <TouchableOpacity onPress={() => this.setState({nameMonsterVisible: true})}>
-                                <Image source={require('../../img/pencil.png')} style={{width:50, height:50}} />
-                            </TouchableOpacity> 
-                        </View> : null} */}
-                        <View style={{position:'absolute', left:5, top:0, width:50, height:'100%', alignItems:'center', justifyContent:'center'}}>
-                            {this.state.currentText > 0 && !this.state.tabletMode ? 
-                                <TouchableOpacity onPress={() => this.back()}>
-                                    <Image source={require('../../img/arrow_back.png')} />
-                                </TouchableOpacity> 
-                            : null }
-                        </View>
-                        <View style={{position:'absolute', right:5, top:0, width:50, height:'100%', alignItems:'center', justifyContent:'center'}}>
-                            {(this.props.pageData.navigationLinks.length == 0) || ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode) ? 
-                                <TouchableOpacity onPress={() => this.forward()}>
-                                    <Image source={require('../../img/arrow_forward.png')} />
-                                </TouchableOpacity>
-                                : null }
-                        </View>
+                    <Image style={{flex:1, width:"100%", height:"100%"}} source={getImageForPage(this.props.pageData.id)} resizeMode={"cover"}>
 
+                        <View style={{height:'80%'}} />
 
-                        <View style={{flexDirection:'row', width:'100%', height:'80%', alignItems:'center'}}>
-                            
-                        </View>
                         <View style={style.pageFooterView}>
-                            {this.props.enableReadAloud ? <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
-                                <TouchableOpacity onPress={() => { this.toggleReading(); }}>
-                                    {this.state.speaker ? <Image source={require('../../img/speaker_off.png')} style={{width:30, height:30}} /> 
-                                                        : <Image source={require('../../img/speaker_on.png')} style={{width:30, height:30}} />}
-                                </TouchableOpacity> 
-                            </View> : null}
-                            <View style={{position:'absolute', bottom:5, left:'10%', alignItems:'center', justifyContent:'center', width:'80%'}}>
-                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, 
-                                backgroundColor:'rgba(255,255,255,0)', fontSize: this.state.tabletMode ? 14 : 16, fontFamily:'berrylicious_bold', lineHeight:20 }}>
+                            <View style={[style.centeredContent, {position:'absolute', bottom:5, left:'10%', width:'80%'}]}>
+                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor, textAlign:'center', padding:10, 
+                                backgroundColor:'rgba(255,255,255,0)', fontSize: this.state.tabletMode ? 16 : 24, fontFamily:'berrylicious_bold', lineHeight:30 }}>
                                     {this.getPageText()}
                                 </Animated.Text>
                                 {hasDecision ? 
-                                    <View style={{marginTop: 5, marginBottom:5, flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
+                                    <View style={[style.centeredContent, {flexDirection:'row', marginTop: 5, marginBottom:5}]}>
                                         {this.props.pageData.navigationLinks.map((nav) => 
                                         <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
                                             <Image source={getChoiceImageForPage(this.props.pageData.id, nav.targetPageId)} style={{height:58, width:74}} />
@@ -307,12 +263,44 @@ class Page extends Component
                                     </View>
                                 : null}
                             </View>      
-                            {this.props.enableSoundEffects ? <View style={{width:'10%', height:'100%', alignItems:'center', justifyContent:'center'}}>
-                                <TouchableOpacity onPress={() => this.playSound()}>
-                                    <Image source={require('../../img/sound_effect.png')} style={{width:30, height:30}} />
-                                </TouchableOpacity>
-                            </View> : null}        
                         </View>
+
+                        <View style={{position:'absolute', right:10, top:10, width:50, height:50}}>
+                            <Text style={{fontSize:20, color:'white'}}>{this.props.pageData.pageNumber}</Text>
+                        </View>
+
+                        <View style={{position:'absolute', left:10, top:10, width:50, height:50}}>
+                            <TouchableOpacity onPress={() => this.backtrack()}>
+                                <Image source={require('../../img/back.png')} style={{width:50, height:50}} />
+                            </TouchableOpacity> 
+                        </View>
+                        <View style={[style.centeredContent, {position:'absolute', left:10, top:0, height:'100%'}]}>
+                            {this.state.currentText > 0 && !this.state.tabletMode ? 
+                                <TouchableOpacity onPress={() => this.back()}>
+                                    <Image source={require('../../img/arrow_back.png')} style={{width:50, height:50}} />
+                                </TouchableOpacity> 
+                            : null }
+                        </View>
+                        <View style={[style.centeredContent, {position:'absolute', right:10, top:0, height:'100%'}]}>
+                            {(this.props.pageData.navigationLinks.length == 0) || ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode) ? 
+                                <TouchableOpacity onPress={() => this.forward()}>
+                                    <Image source={require('../../img/arrow_forward.png')} style={{width:50, height:50}} />
+                                </TouchableOpacity>
+                                : null }
+                        </View>
+                        {this.props.enableSoundEffects ? 
+                            <View style={{position:'absolute', right:10, bottom:10}}>
+                            <TouchableOpacity onPress={() => this.playSound()}>
+                                <Image source={require('../../img/sound_effect.png')} style={{width:50, height:50}} />
+                            </TouchableOpacity>
+                        </View> : null}        
+                        {this.props.enableReadAloud ? 
+                            <View style={{position:'absolute', left:10, bottom:10}}>
+                                <TouchableOpacity onPress={() => { this.toggleReading(); }}>
+                                    {this.state.speaker ? <Image source={require('../../img/speaker_off.png')} style={{width:50, height:50}} /> 
+                                                        : <Image source={require('../../img/speaker_on.png')} style={{width:50, height:50}} />}
+                                </TouchableOpacity> 
+                            </View> : null}
                     </Image>
                 </Animated.View>
         );

@@ -13,6 +13,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch)
 {
     return { 
+        backtrack: () => dispatch(backtrack()),
     };
 }
 
@@ -21,6 +22,11 @@ class EndPage extends Component
     constructor(props)
     {
         super();
+    }
+    
+    backtrack()
+    {
+        this.props.navigation.navigate("Page");
     }
 
     render()
@@ -33,6 +39,11 @@ class EndPage extends Component
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("MainMenu")}>
                             <Image source={require('../../img/home_large.png')} style={{width:100, height:100}} />
                         </TouchableOpacity>
+                    </View>
+                    <View style={{position:'absolute', left:10, top:10, width:50, height:50}}>
+                        <TouchableOpacity onPress={() => this.backtrack()}>
+                            <Image source={require('../../img/back.png')} style={{width:50, height:50}} />
+                        </TouchableOpacity> 
                     </View>
                 </View>);
     }
