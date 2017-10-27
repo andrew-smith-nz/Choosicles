@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView } from 'react-native';
+import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler } from 'react-native';
 import style from '../../style/style.js';
 import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
@@ -34,6 +34,7 @@ class Settings extends Component
     {
         super();
         this.state = { resetCountersModalVisible:false }
+        BackHandler.addEventListener('hardwareBackPress', () => this.props.navigation.navigate("MainMenu"));
     }
 
     getTotalChoicesForBook(bookId)
@@ -51,20 +52,20 @@ class Settings extends Component
     render()
     {
         return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
-                    <Image source={require("../../img/settings.png")} resizeMode='contain' style={{height:'20%'}} />
+                    <Image source={require("../../img/settings.png")} resizeMode='contain' style={{height:'15%', marginBottom:10}} />
                     <View style={{height:'80%', flexDirection:'row'}}>
                         <View style={{flex:1, flexDirection:'column'}}>
                             <View style={{padding:10}}>
                                 <GroupBox title="Display Mode">
-                                    <Text style={[style.smallPlainText]}>Tablet mode displays the entire page.  Phone mode breaks page text into sections to minimise blocking the illustrations.</Text>
+                                    <Text style={[style.smallPlainText]}>Tablet mode displays the entire text of the page on one screen.  Phone mode breaks page text into sections to minimise blocking the illustrations on smaller screens.</Text>
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-around', marginTop:10}}>
                                         <TouchableOpacity style={{borderWidth: this.props.displayMode === 'tablet' ? 1 : 0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
                                                             onPress={() => this.props.setDisplayMode("tablet")}>
-                                            <Text style={{fontWeight: this.props.displayMode === 'tablet' ? 'bold' : 'normal'}}>Tablet</Text>
+                                            <Text style={{fontFamily: this.props.displayMode === 'tablet' ? 'berrylicious_bold' : 'berrylicious'}}>Tablet</Text>
                                         </TouchableOpacity>
                                         <TouchableOpacity style={{borderWidth: this.props.displayMode === 'phone' ? 1 : 0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
                                                             onPress={() => this.props.setDisplayMode("phone")}>
-                                            <Text style={{fontWeight: this.props.displayMode === 'phone' ? 'bold' : 'normal'}}>Phone</Text>
+                                            <Text style={{fontFamily: this.props.displayMode === 'phone' ? 'berrylicious_bold' : 'berrylicious'}}>Phone</Text>
                                         </TouchableOpacity>
                                     </View>
                                 </GroupBox>
@@ -72,11 +73,11 @@ class Settings extends Component
                             <View style={{padding:10}}>
                                 <GroupBox title="Audio">
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={{marginRight:10}}>Enable Read Aloud</Text>
+                                        <Text style={[style.boldText16, {marginRight:10}]}>Enable Read Aloud</Text>
                                         <Switch onValueChange={(value) => {this.props.setEnableReadAloud(value)}} value={this.props.enableReadAloud} />
                                     </View>
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={{marginRight:10}}>Enable Sound Effects</Text>
+                                        <Text style={[style.boldText16, {marginRight:10}]}>Enable Sound Effects</Text>
                                         <Switch onValueChange={(value) => {this.props.setEnableSoundEffects(value)}} value={this.props.enableSoundEffects} />
                                     </View>
                                 </GroupBox>
@@ -87,13 +88,13 @@ class Settings extends Component
                                 <GroupBox title="Choice Tracking">
                                     <Text style={{fontSize:10, fontStyle:'italic'}}>Records the choices made at each branch of the story and displays how many times each one has been chosen.</Text>
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={{marginRight:10}}>Display Choice Counters</Text>
+                                        <Text style={[style.boldText14, {marginRight:10}]}>Display Choice Counters</Text>
                                         <Switch onValueChange={() => this.props.toggleDisplayChoiceCounters()} value={this.props.countersEnabled} />
                                     </View>
                                     <View style={{alignItems:'center', width:'100%', marginTop:10}}>
-                                        <TouchableOpacity style={{borderWidth:0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
+                                        <TouchableOpacity style={[style.blackBorder, {padding:10, backgroundColor: '#FBC61E'}]} 
                                                             onPress={() => this.setState({ resetCountersModalVisible:true })}>
-                                            <Text>Reset Choice Counters</Text>
+                                            <Text style={style.boldText14}>Reset Choice Counters</Text>
                                         </TouchableOpacity>
                                     </View>
                                 </GroupBox>
@@ -105,9 +106,9 @@ class Settings extends Component
                             <TouchableOpacity style={{flex:1}} onPress={() => this.setState({ resetCountersModalVisible:false })} >
                                 <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                     <TouchableOpacity onPress={null} style={{height:'80%', width:'50%', alignItems: 'center', justifyContent:'center'}} activeOpacity={1}>
-                                            <View style={{flex:1, flexDirection:'column', width:'100%', height:'100%', padding:20, backgroundColor:'white', borderColor:'black', borderWidth:0.5, borderRadius:10, alignItems:'center', justifyContent:'space-between'}}>
-                                                <Text>Reset Choice Counters for:</Text>
-                                                <ScrollView style={{paddingTop:10, width:'100%'}} contentContainerStyle={{alignItems:'center'}}>
+                                            <View style={{flex:1, flexDirection:'column', width:'100%', height:'100%', padding:20, backgroundColor:'#F7E19E', borderColor:'black', borderWidth:0.5, borderRadius:10, alignItems:'center', justifyContent:'space-between'}}>
+                                                <Text style={[style.boldText, {fontSize:16}]}>Reset Choice Counters for:</Text>
+                                                <ScrollView style={{paddingTop:10, width:'100%', backgroundColor:'#F7E19E'}} contentContainerStyle={{alignItems:'center'}}>
                                                     <BookSelect key="All" title="All Books" callback={() => this.props.resetPageCounters([])} />
                                                     {bookData.books.map((book) => 
                                                     <BookSelect key={book.id} 
@@ -123,7 +124,7 @@ class Settings extends Component
                     </View>
                     <View style={{position:'absolute', right:10, top:10, zIndex: 0, alignItems:'center', justifyContent:'center'}}>
                         <TouchableOpacity style={{padding:5}} onPress={() => this.props.navigation.navigate("MainMenu")}>
-                            <Image source={require('../../img/home.png')} style={{width:50, height:50}} />
+                            <Image source={require('../../img/home.png')} style={{width:40, height:40}} />
                         </TouchableOpacity>
                     </View>
                 </Image>;
@@ -134,27 +135,25 @@ class BookSelect extends Component
 {
     render() {
         return (
-        <View style={{borderWidth:0.5, borderColor:'black', padding:5, margin:5, width:'80%'}}>
-            <TouchableOpacity onPress={() => this.props.callback()} style={{width:'100%'}}>
-                <Text style={{fontWeight:'bold', fontSize:14, width:'100%'}}>{this.props.title}</Text>
+            <TouchableOpacity onPress={() => this.props.callback()} style={[style.blackBorder, {width:'80%', backgroundColor:'#FBC61E', alignItems:'center'}]}>
+                <Text style={style.boldText14}>{this.props.title}</Text>
                 {this.props.totalChoices > 0 ?
-                <Text style={{fontSize:10}}>{this.props.totalChoices} choice{this.props.totalChoices != 1 ? 's' : ''} made.</Text>
+                <Text style={style.boldText10}>{this.props.totalChoices} choice{this.props.totalChoices != 1 ? 's' : ''} made.</Text>
                 : null }
             </TouchableOpacity>
-        </View>
         );
     }
 }
 
-class GroupBox extends Component
+export class GroupBox extends Component
 {
     render() {
         return (
             <View>
-                <View style={{borderWidth:0.5, borderColor:'black', padding:10, paddingTop: 20, width:'100%', backgroundColor:'#F7E19E'}}>
+                <View style={[style.blackBorder, {padding:10, paddingTop: 20, backgroundColor:'#F7E19E'}]}>
                     {this.props.children}
                 </View>
-                <Text style={[style.text, {position:'absolute', left: 10, top: -10, backgroundColor: '#FBC61E', borderWidth:0.5, borderColor:'black', paddingLeft:5, paddingRight:5}]}>{this.props.title}</Text>
+                <Text style={[style.boldText16, style.blackBorder, {paddingLeft:5, paddingRight:5, position:'absolute', left: 10, top: -10, backgroundColor: '#FBC61E'}]}>{this.props.title}</Text>
             </View>
         );
     }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler } from 'react-native';
 import style from '../../style/style.js';
 import { Sound } from 'react-native-sound';
-import { getImageForPage, getSoundEffectForPage, getReadingForPage } from './resourceManager.js'
+import { getImageForPage, getSoundEffectForPage, getReadingForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter } from '../actions/book.js';
 import { connect } from 'react-redux';
 import NameMonster from './nameMonster.js';
@@ -39,6 +39,7 @@ class Page extends Component
     {
         super();
         this.backtrack = this.backtrack.bind(this);
+        this.backHandler = this.backHandler.bind(this);
         this.animateIn = this.animateIn.bind(this);
         this.fadeInText = this.fadeInText.bind(this);
         this.getPageText = this.getPageText.bind(this);
@@ -58,6 +59,7 @@ class Page extends Component
     loadReadingAudio(props, partId){
         var reading = getReadingForPage(props.pageData.id, partId);
         Reactotron.log(reading);
+        console.log(reading);
         if (!reading) 
             return;
 
@@ -75,6 +77,7 @@ class Page extends Component
 
     componentWillReceiveProps(newProps)
     {
+        console.log('test');
         this.setState({ 
                 currentText: 0, 
                 speaker: false, 
@@ -100,6 +103,12 @@ class Page extends Component
     {
         this.fadeInText();
         this.animateIn();
+        BackHandler.addEventListener('hardwareBackPress', () => this.backHandler());
+    }
+
+    backHandler()
+    {
+        this.backtrack(); return true; 
     }
 
     fadeInText()
@@ -138,8 +147,8 @@ class Page extends Component
     {
         if (this.props.pageHistory.length == 1)
         {
-            this.props.clearHistory();
-            this.props.navigation.navigate("MainMenu");
+            BackHandler.removeEventListener('hardwareBackPress', () => this.backHandler());
+            this.props.navigation.navigate("TitlePage");
         }
         else
         {            
@@ -149,7 +158,11 @@ class Page extends Component
 
     playSound()
     {
+        Reactotron.log("play sound");
         var Sound = require('react-native-sound');
+        Sound.setCategory('Playback');
+
+        // doesn't work with Require - possibly only a dev mode problem?  Need to test with production apk.
         var s = new Sound(getSoundEffectForPage(this.props.pageData.id), Sound.MAIN_BUNDLE, (error) => {
             Reactotron.log("done");
             s.play((success) => {
@@ -163,6 +176,7 @@ class Page extends Component
                 }
             });
         });
+        Reactotron.log(s);
     }
 
     toggleReading(status)
@@ -170,13 +184,16 @@ class Page extends Component
         if (status == null)
             status = !this.state.speaker;
         this.setState({speaker: status});
-        if (status)
+        if (this.state.playingSound)
         {
-            this.state.playingSound.play();
-        }
-        else
-        {
-            this.state.playingSound.stop();
+            if (status)
+            {
+                this.state.playingSound.play();
+            }
+            else
+            {
+                this.state.playingSound.stop();
+            }
         }
     }
 
@@ -235,17 +252,17 @@ class Page extends Component
                     </Modal>
                     <Image style={{flex:1, width:"100%", height:"100%"}} 
                         source={getImageForPage(this.props.pageData.id)} 
-                        resizeMode={"contain"}>
+                        resizeMode={"cover"}>
                         <View style={{position:'absolute', left:5, top:5, width:50, height:50}}>
                             <TouchableOpacity onPress={() => this.backtrack()}>
                                 <Image source={require('../../img/back.png')} style={{width:50, height:50}} />
                             </TouchableOpacity> 
                         </View>
-                        {(this.props.pageData.tier === 0) ? <View style={{position:'absolute', right:5, top:5, width:50, height:50}}>
+                        {/* {(this.props.pageData.tier === 0) ? <View style={{position:'absolute', right:5, top:5, width:50, height:50}}>
                             <TouchableOpacity onPress={() => this.setState({nameMonsterVisible: true})}>
                                 <Image source={require('../../img/pencil.png')} style={{width:50, height:50}} />
                             </TouchableOpacity> 
-                        </View> : null}
+                        </View> : null} */}
                         <View style={{position:'absolute', left:5, top:0, width:50, height:'100%', alignItems:'center', justifyContent:'center'}}>
                             {this.state.currentText > 0 && !this.state.tabletMode ? 
                                 <TouchableOpacity onPress={() => this.back()}>
@@ -272,21 +289,17 @@ class Page extends Component
                                                         : <Image source={require('../../img/speaker_on.png')} style={{width:30, height:30}} />}
                                 </TouchableOpacity> 
                             </View> : null}
-                            <View style={{position:'absolute', bottom:10, left:'10%', alignItems:'center', justifyContent:'center', width:'80%'}}>
+                            <View style={{position:'absolute', bottom:5, left:'10%', alignItems:'center', justifyContent:'center', width:'80%'}}>
                                 <Animated.Text style={{opacity:this.state.textFadeOpacity, color:'black', textAlign:'center', padding:10, 
-                                backgroundColor:'rgba(255,255,255,0.5)', fontSize: this.state.tabletMode ? 14 : 16, fontFamily:'berrylicious', lineHeight:20 }}>
+                                backgroundColor:'rgba(255,255,255,0)', fontSize: this.state.tabletMode ? 14 : 16, fontFamily:'berrylicious_bold', lineHeight:20 }}>
                                     {this.getPageText()}
                                 </Animated.Text>
                                 {hasDecision ? 
-                                    <View style={{marginTop: 10, marginBottom:10, flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
+                                    <View style={{marginTop: 5, marginBottom:5, flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
                                         {this.props.pageData.navigationLinks.map((nav) => 
                                         <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
-                                            <Animated.Text key={nav.id} style={{opacity:this.state.textFadeOpacity, textAlign:'center', borderColor:'black', 
-                                                    borderWidth:0.5, borderRadius:50, width:50, height:50, padding:10, marginLeft: 10, marginRight:10, 
-                                                    backgroundColor:'white'}}>
-                                                {nav.text}
-                                            </Animated.Text>
-                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, padding:1, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
+                                            <Image source={getChoiceImageForPage(this.props.pageData.id, nav.targetPageId)} style={{height:58, width:74}} />
+                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, borderRadius:15, padding:2, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
                                                 <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
                                             </View> : null }
                                         </TouchableOpacity>

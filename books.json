@@ -1,8 +1,8 @@
 {
     "books":
-        [        
+        [       
             {
-            "id": "b86a34c8-1103-450d-a3dc-1b18da529f5b",
+            "id": "c08310da-aa1e-4c28-a29d-510ef4b44d97",
             "title": "Your Very Own:\r\nPet Monster!",
             "coverImage": null,
             "author": "Meg Price",
@@ -11,67 +11,70 @@
             "recommendedAgeRange": "2-6 years",
             "description": "Some descriptive text about this book goes here",
             "pages": [
-                {"id":"6793f021-e7d5-403b-a1be-9dc91e159cae",
-                    "imageUri":null,
-                    "soundEffect":null,
-                    "tier":0,
-                    "texts":[
-                                {
-                                    "id":"c35dc501-7d0a-089f-44ca-288fbda1deb7",
-                                    "text":"You have a pet monster, a lovely friendly pet monster. Even though it’s your pet, it doesn’t live in your house. It lives outside.",
-                                    "order":1,
-                                    "audioTrack":null
-                                },
-                                {
-                                    "id":"7fb1d083-96f1-4e56-8730-fb02a50cf9bf",
-                                    "text":"You love doing fun things when you're spending time with your pet monster. But all monsters are different.",
-                                    "order":2,
-                                    "audioTrack":null
-                                },
-                                {
-                                    "id":"1b0753d1-27a1-4038-bb25-2f01741cbc82",
-                                    "text":"Tell me about your pet monster.  Does it have wings or does it have big sharp claws?",
-                                    "order":3,
-                                    "audioTrack":null
-                                }
-                            ],
-                    "navigationLinks":[
-                                {
-                                    "id":"a43b7e6b-5144-4a27-bb51-bef93439e90d",
-                                    "order":1,
-                                    "text":null,
-                                    "imageUri":null,
-                                    "targetPageId":"248de2a8-0cc8-4153-9585-3872ba50d96c"
-                                },
-                                {
-                                    "id":"6a356aac-19a3-4986-a1e7-4b1619f9b5a9",
-                                    "order":2,
-                                    "text":null,
-                                    "imageUri":null,
-                                    "targetPageId":"b30f8401-b35e-43a2-8b56-8ff070be9e91"
-                                }
-                            ]
-                    },
                 {
-                    "id": "248de2a8-0cc8-4153-9585-3872ba50d96c",
+                    "id": "b09b639d-6e09-4d58-96e3-44b810df4170",
+                    "pageNumber": 1,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "074d96de-963f-4548-ba65-7a19dc4e9011",
+                            "id": "1d18d3cb-9e65-469c-ba9f-bc8bad8fbced",
+                            "text": "You have a pet monster, a lovely friendly pet monster. Even though it's your pet, it doesn't live in your house. It lives outside.",
+                            "order": 1,
+                            "audioTrack": null
+                        },
+                        {
+                            "id": "bb751b70-2eec-44bb-8572-dd51ee04b585",
+                            "text": "You love doing fun things when you're spending time with your pet monster. But all monsters are different.",
+                            "order": 2,
+                            "audioTrack": null
+                        },
+                        {
+                            "id": "1d1a5a86-3332-4975-9110-0606b30614f4",
+                            "text": "Tell me about your pet monster.  Does it have wings or does it have big sharp claws?",
+                            "order": 3,
+                            "audioTrack": null
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "9a414150-05a9-4998-a119-b1dd3c458996",
+                            "order": 1,
+                            "text": null,
+                            "imageUri": null,
+                            "targetPageId": "7ff0aa4d-0c52-4b2b-b563-50e0e3764431"
+                        },
+                        {
+                            "id": "be5c5ff4-a4ea-4e78-ae1e-193a9c4bba16",
+                            "order": 2,
+                            "text": null,
+                            "imageUri": null,
+                            "targetPageId": "66ccb95d-0084-44a7-a2f1-b0e20db47f33"
+                        }
+                    ]
+                },
+                {
+                    "id": "7ff0aa4d-0c52-4b2b-b563-50e0e3764431",
+                    "pageNumber": 2,
+                    "imageUri": null,
+                    "soundEffect": null,
+                    "tier": 0,
+                    "texts": [
+                        {
+                            "id": "bd33f995-fc15-447b-9aac-42a851bcfd07",
                             "text": "Your pet monster has wings! It can fly high above buildings and trees. It can do swooping loops and looping swoops high in the air.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "a11d34cb-f18a-40c1-bb3d-c3273a33b6a4",
+                            "id": "6e230fc1-840a-441b-8e35-e0a1eb21a4ae",
                             "text": "Watching your pet monster fly around is a lot of fun. But where does it rest?",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "d88025dc-550a-4ca4-b4b0-1977c8c386f5",
+                            "id": "06a6c121-c080-400c-b926-5334e1f59908",
                             "text": "Tell me about your pet monster. Does it live in the very top of the trees in a beautiful forest or does it live on top of buildings in a big noisy city?",
                             "order": 3,
                             "audioTrack": null
@@ -79,41 +82,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "3d3ff390-fc4b-4a4a-86a3-d5b63a0b473f",
+                            "id": "848d3a2d-bb63-40ee-b19d-9e7fad1b63f6",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "ade170f5-e83d-44db-9fae-d36b3b8b26cd"
+                            "targetPageId": "a06eb728-03c6-4810-8d5d-55b28e37e67e"
                         },
                         {
-                            "id": "6de4fdc0-426a-40d0-ac3f-7ac6ffc11ae0",
+                            "id": "05b409f5-3f10-4dc3-ae9e-7da1ba37152c",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "9bb94da1-3d8a-46c1-bd31-85ed8c1ecfa7"
+                            "targetPageId": "7e55b594-e38b-4ac5-bb16-91e60376fbe0"
                         }
                     ]
                 },
                 {
-                    "id": "b30f8401-b35e-43a2-8b56-8ff070be9e91",
+                    "id": "66ccb95d-0084-44a7-a2f1-b0e20db47f33",
+                    "pageNumber": 3,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "18f5dd76-005d-43b6-9c53-527ba43ab9a9",
+                            "id": "bf0fc24e-b390-4613-b81f-2f4061a309e4",
                             "text": "Your pet monster has big sharp claws! I bet that your pet monster looks scary to people who don't know it. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "00bc5fac-7f20-46b2-a6f0-20cd59d92cf1",
+                            "id": "20adc15b-3d7e-4560-be68-2b8e5118c756",
                             "text": "But you know that it is a nice monster, fun and happy. Its claws are very useful for all sorts of things like making a place for it to sleep. But where is that, where does your pet monster live? ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "8358a208-d62d-4db8-8fa6-c695d86de06b",
+                            "id": "de8e18ba-b92d-4a20-87cc-ca728b0b71d2",
                             "text": "Tell me about your pet monster. Does it live burrowed underground like a mole or does it live inside a cave?",
                             "order": 3,
                             "audioTrack": null
@@ -121,41 +125,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "21f07bce-031b-484b-a70e-58bfba6c8a68",
+                            "id": "71204434-5ee0-4e38-baee-dc73ef1c806c",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "15e5431f-c33c-4a83-be74-cd226d668b43"
+                            "targetPageId": "ceeeec56-3455-4d41-89ba-2ca5930b6fec"
                         },
                         {
-                            "id": "378ed2e5-6007-4337-92bc-e298cb644f45",
+                            "id": "aec46899-d4f8-4041-97cf-4c93cbbba1c3",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "671e0ead-d421-4827-9c18-fd434936da0c"
+                            "targetPageId": "b0758b8d-51e2-4d36-a328-215ce1271d9a"
                         }
                     ]
                 },
                 {
-                    "id": "ade170f5-e83d-44db-9fae-d36b3b8b26cd",
+                    "id": "a06eb728-03c6-4810-8d5d-55b28e37e67e",
+                    "pageNumber": 4,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "a46d4e14-96f7-4f26-83f5-3082d368d81d",
+                            "id": "6184b034-66f3-4162-baf7-d8c911179926",
                             "text": "Your pet monster lives very high off the ground at the tippy top of the beautiful trees. It eats flying bugs from the air and crawling bugs off the tree branches, snatching them up with its little fingers.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "86da2ccd-c93c-4e41-bbd1-db818e41afb6",
+                            "id": "d3a239e2-18e9-4316-8a4b-2bf01f772a86",
                             "text": "When your pet monster isn't snuggled in its tree branches, what does it do for fun?",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "10dc6f22-5dec-4cb2-b225-2df7b991a306",
+                            "id": "f10bb303-15ab-464b-8341-3e91aaace49c",
                             "text": "Tell me about your pet monster. Does it like to play tennis, or is it a wonderful acrobat full of tricks?",
                             "order": 3,
                             "audioTrack": null
@@ -163,41 +168,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "caf496c5-a5d9-476d-8e2f-751547e75b68",
+                            "id": "45864074-fd47-4241-b442-3e5c8e30d6d6",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "ed7957c6-bf9c-4ea4-93f0-0e93c89e8e22"
+                            "targetPageId": "59b292a4-b3ef-45ca-86b9-ad77e022c500"
                         },
                         {
-                            "id": "bdbd513d-27e1-4812-83ff-19a988b9613d",
+                            "id": "ae4aafaa-4d50-42f0-979c-1b1f4d15493b",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "ee0fce11-5ffd-44e4-9843-2e2b3c40d313"
+                            "targetPageId": "b5e108e0-baee-49ed-aca6-2d5bf707ebfc"
                         }
                     ]
                 },
                 {
-                    "id": "9bb94da1-3d8a-46c1-bd31-85ed8c1ecfa7",
+                    "id": "7e55b594-e38b-4ac5-bb16-91e60376fbe0",
+                    "pageNumber": 5,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "541361d6-1d08-4bc7-8c76-42312202495c",
+                            "id": "3ce3bd1d-8611-43b2-9297-5b4fd1f44ed6",
                             "text": "Your pet monster lives in the city, up on the roofs of the buildings. Sometimes it's naughty because it eats bits of plastic and metal that it bites off rain gutters and aerials. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "a1e9d7b9-52e4-4e3a-88bc-966cce5d8676",
+                            "id": "40a70169-ac59-429e-bd51-deb4b9555914",
                             "text": "Whenever someone's television goes a bit funny, it's probably because your pet monster has taken a bite from the aerial on their roof!  When your pet monster is behaving, what does it do for fun?",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "aa41ca1e-fea0-45c3-a6a8-419ac79104ed",
+                            "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
                             "text": "Tell me about your pet monster. Does it like visiting playgrounds and sliding down the slide or does it like being indoors reading and colouring pictures?",
                             "order": 3,
                             "audioTrack": null
@@ -205,41 +211,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "bed690f8-84ed-4b73-b58d-483b2acebec7",
+                            "id": "5eafb343-638a-4885-8a12-4c446d776e21",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "5d5cb88c-b5b7-464f-b83d-42915a1e7c7f"
+                            "targetPageId": "3ed66707-225a-4e1f-be4d-c3aa5cf1ec96"
                         },
                         {
-                            "id": "dda899e9-0359-460f-86d7-1428ed78a04d",
+                            "id": "d51c4f55-8cd0-4447-bb0f-d6e6485ee419",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "f8addf78-57fd-44bf-9a7b-ab5a6bf7e235"
+                            "targetPageId": "3023dad3-b9eb-4475-a1e4-2c0a81e76709"
                         }
                     ]
                 },
                 {
-                    "id": "15e5431f-c33c-4a83-be74-cd226d668b43",
+                    "id": "ceeeec56-3455-4d41-89ba-2ca5930b6fec",
+                    "pageNumber": 6,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "3a536de4-7d49-4c0e-b270-8602abb31701",
+                            "id": "f5546212-728d-4330-aa4c-1f3075b90ae8",
                             "text": "Your pet monster lives underground. It uses its big sharp claws to dig down into the dirt to make a snuggly hole to sleep in. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "2b561d0b-8964-4ce6-9e94-311ade6e639b",
+                            "id": "61da30af-bef1-42f6-874a-231527f95e37",
                             "text": "But your pet monster doesn't sleep very much, it has lots of energy and loves to play. Your pet monster especially likes to play when you're around.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "43909fcb-6647-4eef-9b33-61e068b7f211",
+                            "id": "157afa0e-e885-4db2-bc2a-9c655c9fadac",
                             "text": "Tell me about your pet monster. Does it like speeding along in running races or does it prefer to build mud castles for fun?",
                             "order": 3,
                             "audioTrack": null
@@ -247,41 +254,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "fb8c5d14-e02f-4848-a1af-9353b5021a67",
+                            "id": "5122b92f-754c-418e-8c9b-75319c1daede",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "8fc52880-7863-4d1a-9e72-c09513e0e403"
+                            "targetPageId": "aa8dcae6-265b-4999-a4b2-c595ddb01155"
                         },
                         {
-                            "id": "0a805e8b-dc2f-44f9-9525-61b14d1b231e",
+                            "id": "85746df1-5bf5-4f6e-b3e4-cd5452038add",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "7f1a5955-3167-476b-9361-0f57addccde1"
+                            "targetPageId": "b2569004-eb36-48ff-b393-c910a0a6e8f9"
                         }
                     ]
                 },
                 {
-                    "id": "671e0ead-d421-4827-9c18-fd434936da0c",
+                    "id": "b0758b8d-51e2-4d36-a328-215ce1271d9a",
+                    "pageNumber": 7,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "e42e5bf5-c11f-4185-8325-01c56f844ab9",
+                            "id": "864a8479-c105-4ca3-8f2a-05472edf4b6a",
                             "text": "Your pet monster lives inside a cave. When it can't find a good cave to move into, all it needs is a big rock because your pet monster can use its big sharp claws to dig out a new cave!",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "e2702390-7573-4292-9e50-34d0a999cdad",
+                            "id": "d3105689-6436-4d84-9d1d-3d992676037d",
                             "text": "Creating a new cave makes a bit of mess, but it's okay because your pet monster likes to eat rocks and keeps its cave tidy by eating all of the mess.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "3c6d6a08-f9b5-4234-a3e8-c1e9eea70ccb",
+                            "id": "62617d57-ee5c-4be3-8d10-695634fbf5be",
                             "text": "Tell me about your pet monster. Does it love to carve things out of rock and wood or does it spend most of its time sleeping?",
                             "order": 3,
                             "audioTrack": null
@@ -289,41 +297,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "4db9989a-ed00-4295-9793-f1d7cfcfd17f",
+                            "id": "093d310a-6db6-436c-a7c3-25fe01dee5c2",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "8e25f984-ab00-4ceb-a65e-f00294db619f"
+                            "targetPageId": "e7c17ef5-d792-423f-9fb4-a22f671ffffb"
                         },
                         {
-                            "id": "dedaea66-ad76-4d68-81fd-b2269b3c7e6c",
+                            "id": "960df619-6211-4efb-8fba-1b71231b2aed",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "3329cd70-dd94-4732-9faf-0ba81f220199"
+                            "targetPageId": "185df49d-fd58-4167-bc84-64586f06ddcb"
                         }
                     ]
                 },
                 {
-                    "id": "ed7957c6-bf9c-4ea4-93f0-0e93c89e8e22",
+                    "id": "59b292a4-b3ef-45ca-86b9-ad77e022c500",
+                    "pageNumber": 8,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "469d1960-11b6-4fc6-9d19-c1f83b445201",
+                            "id": "715b2925-fde3-41d6-9989-6b955b522854",
                             "text": "Your pet monster loves ball sports, especially tennis. It is tiny, even smaller than a tennis ball. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "7a596f6a-775b-4791-99bc-8cad36ff4dff",
+                            "id": "ef70bcbc-90c7-4d30-9895-ae84db061088",
                             "text": "When you're hitting a ball around, your pet monster can hang onto the brightly coloured fuzz of a tennis ball and ride it like a horse! It's your pet monster's favourite game. But what does your tiny pet monster look like?",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "31916372-6099-4c91-9503-4d5b5af357c6",
+                            "id": "9d37a454-d4a1-49dd-b9df-95116583a1c1",
                             "text": "Tell me about your pet monster. Does it have feathers or is it fluffy?",
                             "order": 3,
                             "audioTrack": null
@@ -331,41 +340,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "5d457a50-de33-4142-ae49-2d9e41e4038e",
+                            "id": "09eb8663-f4a2-4ff9-8498-77a08df2baf4",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "ecc190ec-1b47-41f3-a79c-8f3337582147"
+                            "targetPageId": "cab50beb-063b-4ccf-8648-179345f6769c"
                         },
                         {
-                            "id": "02faa41c-ef9a-4408-9b02-d96a6761ab3e",
+                            "id": "fe2dde9f-5bd8-4a1d-9bc9-14d605924a9a",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "24f7b424-1ac2-4fb7-a506-33d4acc228bf"
+                            "targetPageId": "bb43f739-6936-4ac9-ab74-ff492fc0473e"
                         }
                     ]
                 },
                 {
-                    "id": "ee0fce11-5ffd-44e4-9843-2e2b3c40d313",
+                    "id": "b5e108e0-baee-49ed-aca6-2d5bf707ebfc",
+                    "pageNumber": 9,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "a44ddd52-9335-42ac-962d-bc856f177241",
+                            "id": "6e61cc26-7351-4749-8afa-f64b003734d0",
                             "text": "Your pet monster is a fantastic acrobat. If monsters could join the circus your pet monster would be the best acrobat ever! It hangs from branches with one hand, one foot, and even one wing! ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "54ce6248-b568-4f2b-aa67-5f20deb83a14",
+                            "id": "fc4b2f82-3047-4306-8222-fd8de1c00cb7",
                             "text": "It swings and twirls and balances. The best part is, you never have to worry about your pet monster falling accidentally, because it can fly! ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "34840635-a950-4cbc-b044-5a16ca4cb5a4",
+                            "id": "ba0c6794-6ab0-4f73-a86c-9b70fc3942e0",
                             "text": "Tell me about your pet monster. Does it have big googly eyes or no eyes at all?",
                             "order": 3,
                             "audioTrack": null
@@ -373,41 +383,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "235c4fec-69c0-4a6b-a35a-5a87cfa1ad9b",
+                            "id": "6ac02e48-444e-43ad-a340-08182b9da719",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "9dde0665-5813-4260-a557-9f991f77fb1a"
+                            "targetPageId": "93abeebb-e4a2-4266-845f-debc2e09f4d0"
                         },
                         {
-                            "id": "d95fef0a-4c9a-4312-a322-8364b88c5ad8",
+                            "id": "07c42063-2135-4fe6-bd06-9186333bfdb2",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "16d60b2f-5135-47fe-a0e1-1752149fd5d7"
+                            "targetPageId": "5048456f-4cdf-42d6-bd1c-a7aead85ec10"
                         }
                     ]
                 },
                 {
-                    "id": "5d5cb88c-b5b7-464f-b83d-42915a1e7c7f",
+                    "id": "3ed66707-225a-4e1f-be4d-c3aa5cf1ec96",
+                    "pageNumber": 10,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "3f9dbd11-bc4d-420e-9c64-81034cf2efe9",
+                            "id": "ca7300ea-103d-4e31-b47d-3372394e2654",
                             "text": "Your pet monster loves visiting playgrounds, especially those with slides. It doesn't need to climb the ladder to get to the top of the slide, it can fly. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "cd50f819-f6e0-4299-aa42-b07512ba0807",
+                            "id": "b152c088-d4fe-4c10-9e18-2db50403f77d",
                             "text": "Sometimes your pet monster is naughty and doesn't wait for its turn - while you're climbing the ladder to the top of the slide for your turn, your cheeky monster flies over your head and pushes in front! ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "ce7a5c26-0275-482b-a1d9-c50fcd669068",
+                            "id": "feeadb24-f124-403e-b788-64463849ba3a",
                             "text": "Tell me about your pet monster. Does it make weird grunting noises or does it like whistling a musical tune?",
                             "order": 3,
                             "audioTrack": null
@@ -415,41 +426,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "8fd65aa2-69f1-47ac-bed1-7d43e1f5bcdd",
+                            "id": "0a9c37a1-27f2-417e-b714-e0d838301c6d",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "7855b386-6839-4082-96ac-bac2509ae4fb"
+                            "targetPageId": "78beb6a0-796f-41af-9239-71d6ecffcf54"
                         },
                         {
-                            "id": "35c49b16-cb78-4165-a74c-d54c1385d009",
+                            "id": "987cb7de-0a0d-431c-85d3-1b5ce23656bc",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "a322ecf6-e9cf-4c00-98c4-0b422beec059"
+                            "targetPageId": "6203007a-5fe6-4e5b-84d9-f7a64062ee77"
                         }
                     ]
                 },
                 {
-                    "id": "f8addf78-57fd-44bf-9a7b-ab5a6bf7e235",
+                    "id": "3023dad3-b9eb-4475-a1e4-2c0a81e76709",
+                    "pageNumber": 11,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "770acc98-6550-4540-b34d-55abb4b657f7",
+                            "id": "03f6f3c4-582c-4157-b5ec-506e960a8a5e",
                             "text": "Your pet monster is always very calm. Its favourite thing to do is snuggle on the floor and listen while you read books out loud. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "df1b95b3-2397-4701-afd8-e22822e99ba3",
+                            "id": "b1e44e21-5342-45a9-828d-6ec4212e4823",
                             "text": "When it has energy, your pet monster loves to draw and paint. It's a bit unfortunate though because your pet monster is very messy!",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "3ef9148e-f0ca-4b42-b40c-18ab7cf00648",
+                            "id": "71a898b7-d25b-4391-b237-7296e58706be",
                             "text": "Tell me about your pet monster. Is it terribly gassy and farty or does it have long soft hair that it likes being brushed?",
                             "order": 3,
                             "audioTrack": null
@@ -457,41 +469,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "cae11b0b-d444-478d-b726-f8b466dd6c9f",
+                            "id": "13678635-338f-4125-9647-ec638fee0fbc",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "1e9bbcfe-b91f-444a-8be6-ea708d1e2d4d"
+                            "targetPageId": "3f0fec4a-34e5-41cf-ae93-b7eaf177beb5"
                         },
                         {
-                            "id": "c26e56b4-3d94-45ce-89e7-7e9bcb55fd22",
+                            "id": "fdadbd4a-ebc1-480b-b0fa-8d6d87d663de",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "5593473b-b016-492a-8c25-c6d6c47a26be"
+                            "targetPageId": "163f38d8-7149-4e4f-b896-85a405b1ca0f"
                         }
                     ]
                 },
                 {
-                    "id": "8fc52880-7863-4d1a-9e72-c09513e0e403",
+                    "id": "aa8dcae6-265b-4999-a4b2-c595ddb01155",
+                    "pageNumber": 12,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "ac266806-cf37-4e02-845c-28f86bbef353",
+                            "id": "0414a045-48b1-42f8-81e8-3bff64e5298d",
                             "text": "Your pet monster loves having running races, it can use its sharp claws to grip the ground as it runs like the wind. It's just like having spikes on your boots when you play sports on a field. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "8395489b-b37a-4cf9-a1b4-1799f779f038",
+                            "id": "b4a2d14d-5e7f-4b97-91e4-76c633f376f5",
                             "text": "Unfortunately, your pet monster is a terrible loser and sulks when you beat it. But it's an even more terrible winner and dances and brags every time it wins! What a silly monster.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "924859f0-1184-487d-9a1c-543686dc5a19",
+                            "id": "1f22fd2d-dda5-40a6-bc61-e0ed46fdd159",
                             "text": "Tell me about your pet monster. Is it always getting splinters in its feet making you play nurse to get them out or is it very clumsy and often tumbles over when it's running?",
                             "order": 3,
                             "audioTrack": null
@@ -499,41 +512,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "f713b8bb-33b0-4ab9-a26a-7a45b25b4dde",
+                            "id": "b75f8376-ee48-4026-bf66-e8a93e259ef9",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "e43a2a13-da3a-44ef-8350-2a2ff8eeedcf"
+                            "targetPageId": "85521619-d50e-4e01-9e29-60295839751e"
                         },
                         {
-                            "id": "a8319af6-4f85-40de-bf49-5257d3e1863e",
+                            "id": "2e010b74-fd55-4a0c-832f-e5dde6c6ed65",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "417bb9f2-553a-42f2-801b-02cd0850cb5f"
+                            "targetPageId": "a9ef6aea-3eae-471d-9eb4-854ba2fc4af3"
                         }
                     ]
                 },
                 {
-                    "id": "7f1a5955-3167-476b-9361-0f57addccde1",
+                    "id": "b2569004-eb36-48ff-b393-c910a0a6e8f9",
+                    "pageNumber": 13,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "b55c35ce-d5f0-4334-b91d-8a3bf9247f00",
+                            "id": "65753ae0-3726-4092-9854-ffc2c73c45d5",
                             "text": "Your pet monster loves getting dirty. It loves being dirty so much, that it spends a lot of its time building dirt and mud castles.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "c75d7473-a24d-4a25-8ccb-7228f6827ec6",
+                            "id": "f51644c5-6a58-4ee6-a0f6-0f2812541999",
                             "text": "It turns out that building dirt castles is just as much fun as building sand castles! You can make towers and moats and use stones, leaves and twigs for decoration. It's a very fun way to spend an afternoon together.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "ad9e3731-af75-4784-b43a-45b54066bbc7",
+                            "id": "b99e5d59-2b56-4fd3-b521-a91f18692ce6",
                             "text": "Tell me about your pet monster. Does it love to have its photo taken or is it an expert at building mud slides?",
                             "order": 3,
                             "audioTrack": null
@@ -541,41 +555,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "9df973bc-023e-4237-bfc5-5b6121636333",
+                            "id": "ee860c11-4837-43ac-88a1-52c425d5191b",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "296eb7f7-5d55-431f-a44d-5dc4432b7fc6"
+                            "targetPageId": "bde692a3-13ab-4718-ae8a-9ceed77e34c5"
                         },
                         {
-                            "id": "0c2a0f78-19b4-4cb3-9105-3f51b87e73bb",
+                            "id": "56790092-913b-4b68-bf8c-f99bed6671e1",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "c3e68367-543d-4b14-a312-325303c0a370"
+                            "targetPageId": "1d5444e3-be7b-4f46-b0e4-d2509f8b7dbd"
                         }
                     ]
                 },
                 {
-                    "id": "8e25f984-ab00-4ceb-a65e-f00294db619f",
+                    "id": "e7c17ef5-d792-423f-9fb4-a22f671ffffb",
+                    "pageNumber": 14,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "5ecfe227-02d8-40c4-b17d-90a911292965",
+                            "id": "150b33b4-8099-4f41-ac87-e3de3089449e",
                             "text": "Your pet monster loves to make things out of rocks and wood, it is an expert at carving with its big giant claws.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "dc94768f-4b84-45d4-b208-fcecb3b2ac0c",
+                            "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
                             "text": "It makes figurines of people, animals and even other monsters! Your pet monster is very nice and likes to give its wonderful creations to you as a gift.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "6ba1bacf-b048-4446-9c36-5e91b7ac760f",
+                            "id": "3c6544ef-0323-458e-b534-7c3e9d141c74",
                             "text": "Tell me about your pet monster. Does it like being the centre of attention and putting on performances for you to watch or is it very fussy and doesn't like being dirty?",
                             "order": 3,
                             "audioTrack": null
@@ -583,41 +598,42 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "51adc249-366c-410f-80d5-d14183420be1",
+                            "id": "25dde654-85dc-41f7-9df5-131995fdd39a",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "27736e64-a577-44d4-b06e-808ed51a5405"
+                            "targetPageId": "d7dbe138-f2b6-4b18-b918-afd60040c54b"
                         },
                         {
-                            "id": "c6e5e47c-cbab-4b78-8fd9-3257ce1bac54",
+                            "id": "7bd61cd9-b3ab-492d-9a1d-05762a1e5346",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "eaf3a694-b757-4647-b4cb-6bbe5163e2ef"
+                            "targetPageId": "941432ec-54ca-4685-8315-6459a2642144"
                         }
                     ]
                 },
                 {
-                    "id": "3329cd70-dd94-4732-9faf-0ba81f220199",
+                    "id": "185df49d-fd58-4167-bc84-64586f06ddcb",
+                    "pageNumber": 15,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "81f899a3-b46b-4802-a583-e8413c69127c",
+                            "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
                             "text": "Your pet monster is as big as a beach ball but much, much heavier! It's always cold and spends most of its day sleeping. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "fdc47704-59ca-4dd1-890c-319f00dd4c00",
+                            "id": "dfc20654-6412-4f3a-abf6-675cc28c6eb8",
                             "text": "Whenever you visit your pet monster, it's best to take a book because you're never sure if your pet monster is going to be awake or not. But you don't mind, you like to let it sleep.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "039c2925-7e89-4b3b-9fc0-d64acd7e698a",
+                            "id": "f952f04d-299a-4179-ac24-ad5da07028fe",
                             "text": "Tell me about your pet monster. Does it always have a runny nose full of boogers or does it sleep with its tongue hanging out like a dog?",
                             "order": 3,
                             "audioTrack": null
@@ -625,47 +641,48 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "b23845f5-71dc-48f8-aee1-743580362f0e",
+                            "id": "4a619fbc-fbfc-4f03-a734-7ca3bed4899f",
                             "order": 1,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "aba69c50-bcc8-4a88-ac36-45467e435d35"
+                            "targetPageId": "88034f26-fd28-4ba7-8da4-8b864839ac01"
                         },
                         {
-                            "id": "9771ff60-c6b0-432d-9bd6-f89de48dfb33",
+                            "id": "11ed8d6a-ef93-4fe2-b358-02b1dfe610d8",
                             "order": 2,
                             "text": null,
                             "imageUri": null,
-                            "targetPageId": "72d96371-1116-4866-8491-437d3e5f3f86"
+                            "targetPageId": "df8c6c19-33d9-4014-a5a8-873054150d0b"
                         }
                     ]
                 },
                 {
-                    "id": "ecc190ec-1b47-41f3-a79c-8f3337582147",
+                    "id": "cab50beb-063b-4ccf-8648-179345f6769c",
+                    "pageNumber": 16,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "bd66b615-7176-41cd-9dca-2a16243f418b",
+                            "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
                             "text": "Your pet monster is covered in feathers! But it's not a bird, it doesn't look anything like a bird. It has a big wide grin full of little teeth for chomping on insects. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "2e1534f9-789f-4c62-ac74-4c752c6afecd",
+                            "id": "593b3b3f-1b82-4a67-9e26-6f409a799c0d",
                             "text": "You found your pet monster while out walking in the trees, it had been holding onto a pinecone when the pinecone fell to the ground.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "3b9841aa-5f59-437a-bba3-6c1e5b397fa4",
+                            "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
                             "text": "It was lucky you were there to pick your poor pet monster up to brush off its feathers. You thought it was a baby bird at first, but when you held it in your hand and saw that it had two arms and two legs as well as two wings, you just knew it had to be a monster!",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "eb197820-d8d3-43ac-9696-46d14e6954cd",
+                            "id": "d5244959-b91f-4653-9b06-9d5f8f2577b1",
                             "text": "Now it's your very own pet monster that you visit outside as often as you can.",
                             "order": 4,
                             "audioTrack": null
@@ -674,31 +691,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "24f7b424-1ac2-4fb7-a506-33d4acc228bf",
+                    "id": "bb43f739-6936-4ac9-ab74-ff492fc0473e",
+                    "pageNumber": 17,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "75b986ae-6bd5-4360-9349-11fa2dff9095",
+                            "id": "db128fd8-a649-4223-84ef-67c1a8886d48",
                             "text": "Your pet monster is wonderfully fluffy and cuddly. When it's asleep you can put your fluffy pet monster in your hand like a soft, tickly little marble. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "a8ba3080-d300-4ce9-b882-3f9361f34bfe",
+                            "id": "474afb0a-4b9d-4e3a-83ce-6fbec975ccf3",
                             "text": "When you first saw your pet monster, it was tucked up like a tiny fuzzy ball on the branch of a tree. When you poked it, your pet monster jumped to its tiny feet thinking it was in danger! Luckily, you had snacks that you could share with the tiny monster so that it knew you were friendly.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "8cc03ad0-b930-4937-a3f9-3e9b65b8b869",
+                            "id": "8eb94fce-3201-4921-b3ab-76d0159510af",
                             "text": "Your pet monster reminds you of a turtle because whenever it gets cold or scared, it wraps its fluffy wings around its body and curls into a tiny fuzzy ball to hide and keep warm.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "6d562958-d689-4401-a6a1-47058f813cae",
+                            "id": "9fc4621e-a4f3-494d-b298-57a81fb1ff18",
                             "text": "It's never scared of you though, you're its best friend! ",
                             "order": 4,
                             "audioTrack": null
@@ -707,37 +725,38 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "9dde0665-5813-4260-a557-9f991f77fb1a",
+                    "id": "93abeebb-e4a2-4266-845f-debc2e09f4d0",
+                    "pageNumber": 18,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "550aeccd-f4d4-4dc8-b805-7a33d4504427",
+                            "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
                             "text": "Your pet monster has big googly eyes. Its eyes are almost the same size as its head and makes it look very strange. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "2e7eacc2-98b7-4d00-b2af-38772a8cbb7f",
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
                             "text": "Your pet monster didn't used to be a wonderful acrobat, you were the one who showed it how to swing on branches. ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "055a6c93-df60-46e5-b0c2-3e04c284bb0d",
+                            "id": "6bf521fa-e5c8-4338-a197-33173cd88d8b",
                             "text": "It loved the game so much that it started swinging around on branches even when you weren't around. Soon it was as good as a circus acrobat and it loves to show off any new tricks it learns. ",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "c47e4bd0-b376-4208-b8a9-db7154dcd486",
+                            "id": "a1b6b34a-9817-44cb-a9f9-e3a8ef2fc64d",
                             "text": "Its big googly eyes can see very well. So well in fact that when it's swinging from one high branch to another, it's able to see the tiniest bugs that are flying around so that it can snatch them up for its dinner. Yummy! ",
                             "order": 4,
                             "audioTrack": null
                         },
                         {
-                            "id": "bff00a3e-7438-4b75-983c-ea1189c58323",
+                            "id": "636762c6-8d4b-423f-a118-48d166e59f4d",
                             "text": "All of the flying and swinging looks like so much fun that sometimes you wish that you had wings too!",
                             "order": 5,
                             "audioTrack": null
@@ -746,31 +765,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "16d60b2f-5135-47fe-a0e1-1752149fd5d7",
+                    "id": "5048456f-4cdf-42d6-bd1c-a7aead85ec10",
+                    "pageNumber": 19,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "c9212e4d-54a2-4ed5-9537-8564ef5e1d0a",
+                            "id": "4f1c5178-67e6-4455-a632-bf7765076984",
                             "text": "Your pet monster isn't just blind, it doesn't have eyes at all! Not all monsters have eyes like people, some monsters have lots and other monsters don't have any.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "7464eb8c-bef6-4132-b63e-785a27a1ef14",
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
                             "text": "Your pet monster has perfect hearing and listens for the rustling of leaves on branches so it knows where to swing to while its doing its amazing acrobat tricks.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "c75f99bb-82c1-4d7f-ac9c-74956f3402ac",
+                            "id": "a3fe0e4e-610d-4797-a07b-bb7249c988dc",
                             "text": "Watching your pet monster is simply amazing! It uses its nose to sniff out bugs for its dinner and its wings to keep balance as it sits in the trees to eat. ",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "f2f5e73e-1f0f-495d-9cdb-809f5520e47c",
+                            "id": "85201dba-6553-47b3-912f-27e6981e2a33",
                             "text": "Your pet monster has been teaching you how to do cartwheels and handstands which is a lot of fun. In return, you have been teaching your pet monster how to do somersaults and log rolls. Your pet monster thinks that rolling in the leaves on the ground and getting dirty is very funny.",
                             "order": 4,
                             "audioTrack": null
@@ -779,31 +799,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "7855b386-6839-4082-96ac-bac2509ae4fb",
+                    "id": "78beb6a0-796f-41af-9239-71d6ecffcf54",
+                    "pageNumber": 20,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "2875a464-f3a8-4c27-a5c1-7c5f71a557a9",
+                            "id": "c1fc38dd-2a22-4b23-8afc-e8e696a893ca",
                             "text": "Your pet monster is always making weird grunting noises when it moves around. It's not very sneaky because you can always hear it coming!",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "53e7137e-5b6d-49ff-91a6-297f02c39391",
+                            "id": "ddbb503c-e63e-4a5a-933a-7f1fb98b0ba0",
                             "text": "You first met your pet monster when it flew right in your window. One of your neighbours had heard a strange grunting sound on the roof the building and they had gone upstairs with a big broom to see what all the noise was. ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "b47ff236-f08e-4ce8-a604-ea74235a2412",
+                            "id": "beb24ea5-e65a-46dc-8638-370634a598f2",
                             "text": ". Your pet monster got such a fright when your neighbour found it that it flew off the roof and in your window. You could see that it was scared so you talked softly to the poor monster and soon it was happy. You've been best friends ever since. ",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "6b48d322-324a-49c0-8227-0026bf3cb59a",
+                            "id": "07511351-f6e9-4391-b803-efa420aea2df",
                             "text": "Sometimes you and your pet monster spend all day together talking in nothing but grunts!",
                             "order": 4,
                             "audioTrack": null
@@ -812,31 +833,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "a322ecf6-e9cf-4c00-98c4-0b422beec059",
+                    "id": "6203007a-5fe6-4e5b-84d9-f7a64062ee77",
+                    "pageNumber": 21,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "486a3214-50b6-4557-a6bc-4c1b020056c1",
+                            "id": "2b0216e1-d942-4ccc-845c-42a2ce4101ff",
                             "text": "Your pet monster loves to whistle a musical tune. It uses its funny puckered lips to blow air and make melodies. Sometimes the whistling is beautiful but other times it just sounds terrible!",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "76a257a9-907b-4ade-b99a-e2d18f8192e3",
+                            "id": "9b351093-742d-4b11-9343-a32ec9fa43ef",
                             "text": "Sometimes you wish your pet monster could talk but it really doesn't need to because you can always tell what it's thinking by listening to its whistling.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "108b1f75-5196-4ebf-b5d9-2325eb0bb3fd",
+                            "id": "ff035dce-37b1-4c77-8893-6b6ea1e6c815",
                             "text": "Your pet monster is trying to teach you how to whistle but it's very difficult. You have to pucker your lips just right and blow out air slowly. You practice together every time you go to the playground.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "82158d9a-cbc9-4744-85de-a64084ca429f",
+                            "id": "ca394226-bba0-43df-b103-15ab418966c5",
                             "text": "Slipping down the slide, your pet monster makes a funny whistling tune that always makes you laugh. Your pet monster loves to make you laugh.",
                             "order": 4,
                             "audioTrack": null
@@ -845,37 +867,38 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "1e9bbcfe-b91f-444a-8be6-ea708d1e2d4d",
+                    "id": "3f0fec4a-34e5-41cf-ae93-b7eaf177beb5",
+                    "pageNumber": 22,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "52bf3177-7a4d-4a7c-996d-1e58417bd80b",
+                            "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
                             "text": "Your pet monster is so gassy! When you're reading or drawing, your pet monster is always giving you a fright by letting out loud farts. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "ce2dad66-6ff1-4e84-9228-64b3f9022eb8",
+                            "id": "1985ce22-3331-4897-b10d-399376fd6946",
                             "text": "You've tried explaining to your pet monster that it has to go outside before it farts but it never listens. ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "5778130d-6113-40a1-a2d9-4b5b1ca98170",
+                            "id": "62d6db0d-7fcd-4853-b2a0-014772418990",
                             "text": "It's not so bad in the summer when you can leave the windows wide open. But during the winter when it's cold and all the windows need to stay shut, it's terribly stinky.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "6612dfcd-c256-4552-93b9-13eb8389dcb7",
+                            "id": "33944d41-051e-484a-a30c-de6c03970c37",
                             "text": "No one in your house likes coming into your room when your pet monster is visiting, pee-yew!",
                             "order": 4,
                             "audioTrack": null
                         },
                         {
-                            "id": "000ddfdc-2c95-4e61-a711-8cafa369c549",
+                            "id": "6a20cf6a-b1fd-4203-b46e-efa2dec192db",
                             "text": "Maybe you should tell your pet monster to not eat so many bits of plastic and metal, it must make your monster's tummy very upset.",
                             "order": 5,
                             "audioTrack": null
@@ -884,31 +907,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "5593473b-b016-492a-8c25-c6d6c47a26be",
+                    "id": "163f38d8-7149-4e4f-b896-85a405b1ca0f",
+                    "pageNumber": 23,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "4e48c5ab-5fe2-4261-a272-601a62022c5a",
+                            "id": "09aef51f-55fd-4cff-80c4-83f576c1d215",
                             "text": "Your pet monster has long beautiful hair and its favourite thing in the world is to listen to a story while you brush its hair. It sighs happily and stretches its wings to get you to brush the hair all over.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "6c082c97-f85c-4014-8f28-076f639b607d",
+                            "id": "1ad76f1c-0b0e-41ce-a901-8c84f8c66e4d",
                             "text": "It used to be a noisy grumpy monster before you found out that it likes having its hair brushed. Now you know that any time your pet monster is being cranky or noisy, the best way to calm it down is by getting out the brush that you keep specially for it. ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "4a76c160-119d-4f84-82b7-9ad1c76854e8",
+                            "id": "b1f355b3-ea2d-4378-ab42-221c92583634",
                             "text": "Your pet monster will calm right down and settle in while you brush it softly and smoothly.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "5a473a0d-da4d-494d-95d2-61e8923872b4",
+                            "id": "b141d174-332c-4d50-a28c-077ed0d424f7",
                             "text": "It likes being brushed so much that you use it as a treat for when you pet monster is behaving well. It loves being brushed even more than it likes eating bits of plastic!",
                             "order": 4,
                             "audioTrack": null
@@ -917,31 +941,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "e43a2a13-da3a-44ef-8350-2a2ff8eeedcf",
+                    "id": "85521619-d50e-4e01-9e29-60295839751e",
+                    "pageNumber": 24,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "d4f3bbe6-4d86-4514-bb31-81d66c266cc1",
+                            "id": "7a723379-6975-4dfc-8424-2d319082ea8a",
                             "text": "Your pet monster has very soft feet despite its long claws. Whenever you run around outside, it's always getting splinters and thorns stuck in them which makes it cry. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "a1a474d8-dffb-456f-9201-19ad7eca6410",
+                            "id": "ba978ff7-b9a2-4116-bfab-7b5148b8b3ee",
                             "text": "Luckily, you know how to use tweezers and you can pluck out all of the prickly bits just like a nurse. If it wasn't for its long claws, you would find it some small shoes to wear, but the claws make wearing normal shoes impossible!",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "592869e1-c122-4023-9176-f644c91a8636",
+                            "id": "3e0f672b-12ad-4852-9124-6e8e736cc036",
                             "text": "You and your pet monster have tried making shoes out of all sorts of things like mud, leaves and tree bark. But they would always fall off. ",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "d8024cd4-8473-4d1d-8908-d7b4e8c73c22",
+                            "id": "ddf49217-ba48-4229-8f9e-8a035992b86c",
                             "text": "So now you know that every time you visit your pet monster outside, you need to take a pair of tweezers with you for all of the prickles that your poor pet monster gets in its feet.",
                             "order": 4,
                             "audioTrack": null
@@ -950,31 +975,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "417bb9f2-553a-42f2-801b-02cd0850cb5f",
+                    "id": "a9ef6aea-3eae-471d-9eb4-854ba2fc4af3",
+                    "pageNumber": 25,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "7964ba41-39af-488e-af61-0b72eeb6e843",
+                            "id": "37c91963-76fd-4594-9653-1e3e66163119",
                             "text": "Your pet monster is very excitable but also very clumsy. Whenever you're running around it always manages to trip over its own feet. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "e8148af2-632a-4838-8f50-c1b90ca85c3c",
+                            "id": "2c03a901-5ac1-40ef-9975-5ec7f0e91bf6",
                             "text": "Sometimes your pet monster trips over when its running its very fastest and when that happens your pet monster ends up doing somersaults, rolling over and over until it's dizzy.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "90744827-3cf7-4393-9855-a4b1a3b71ebe",
+                            "id": "53d47300-fcae-470e-9887-64e74e537013",
                             "text": "Sometimes when your pet monster falls over it gets very upset but you know how to cheer it up. You drop down to your knees and do a somersault too! It makes your pet monster think that it's a game and soon it's so busy doing more somersaults that it forgets to be upset that it fell over.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "5bb1b718-3560-422c-a0ed-7ac59bc27907",
+                            "id": "d886b789-9823-4452-a348-a65832084b80",
                             "text": "It doesn't take long for both of you to get very dizzy doing somersaults together. Then you both flop onto the ground and wait for everything to stop spinning!",
                             "order": 4,
                             "audioTrack": null
@@ -983,31 +1009,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "296eb7f7-5d55-431f-a44d-5dc4432b7fc6",
+                    "id": "bde692a3-13ab-4718-ae8a-9ceed77e34c5",
+                    "pageNumber": 26,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "cffdf59b-7965-4f89-9a32-3e642ee53e68",
+                            "id": "4597b993-e21d-4bbd-a356-50e0ef1aad3d",
                             "text": "One day when you were spending time with your pet monster outside, there was a grown-up with a phone. Your pet monster was very confused when it saw pictures on the screen and you had to explain to it that the pictures were a photo.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "80deb9e7-d31a-44b2-9540-12f1f19dd4b4",
+                            "id": "ebdb120b-bff6-4bf8-9342-a66c5b0170d0",
                             "text": "Ever since you explained about photos, your pet monster just loves having its photo taken. It especially likes having its photo taken with its newest mud castle creation. ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "9e73ba30-d07a-4c0b-b218-63aee396d214",
+                            "id": "8d98dc21-547d-4014-bd58-5300ba44e2b3",
                             "text": "You have an entire collection of photos of your pet monster standing beside its artwork. Your pet monster is always covered in mud and dirt in the photos which always looks very funny.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "65523309-0bd6-44ce-872c-8a5f428c8c3e",
+                            "id": "2f2f598e-1b36-4cc0-bad1-1b5a23618d99",
                             "text": "Your pet monster sometimes asks if it can take a picture but you have to say no because its big sharp claws might scratch the phone screen!",
                             "order": 4,
                             "audioTrack": null
@@ -1016,31 +1043,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "c3e68367-543d-4b14-a312-325303c0a370",
+                    "id": "1d5444e3-be7b-4f46-b0e4-d2509f8b7dbd",
+                    "pageNumber": 27,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "de8d8f37-5569-4b1e-975e-b0150eefd904",
+                            "id": "9ad07932-c9cf-4123-a1be-4f869c3ba525",
                             "text": "Because your pet monster likes to get dirty, when it's not building mud castles it's building something else. Your pet monster has discovered that the best way to get dirty is to build a mudslide!",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "75e00921-f6e3-4cb0-be7c-d0a15afb5b26",
+                            "id": "8c450315-eba0-44f6-b8c3-4cdaf56c5502",
                             "text": "All it needs is a slight hill outside and some water. It uses its sharp claws to dig away a smooth slide in the hill before pouring water down it. Then it can slide from the top of the mudslide all the way to the bottom.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "0da84fb3-8d13-4faa-a324-fecde3e9cd5d",
+                            "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
                             "text": "It's even more fun when your pet monster builds a mud castle at the bottom of the mudslide so it can crash into it in one big muddy explosion. Then it will rebuild its mud castle just to knock it over again on the next slide down.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "efb84221-3dd9-4643-96eb-b00af9c6fb37",
+                            "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
                             "text": "You need to make sure you stand back when your pet monster crashes through its mud castle, otherwise you'll get covered in mud from head to toe too!",
                             "order": 4,
                             "audioTrack": null
@@ -1049,31 +1077,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "27736e64-a577-44d4-b06e-808ed51a5405",
+                    "id": "d7dbe138-f2b6-4b18-b918-afd60040c54b",
+                    "pageNumber": 28,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "075cc3d2-6296-4f91-8d6e-bdcbe35d03cd",
+                            "id": "d83fdd28-f8c1-4eb0-ac86-16113797ae70",
                             "text": "Your pet monster loves being the centre of attention. It likes to use its carved figurines made out of rocks and wood to put on puppet shows for you to watch.",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "16745b17-59c8-4bc0-aaa8-e890f5e9b15c",
+                            "id": "74d901da-49f5-4a98-a7b9-7494378fdee9",
                             "text": "Sometimes the shows are easy for you to follow, but most of the time because your pet monster doesn't speak, you have no idea what is going on! Your pet monster will stand up in front of you and grunt and whistle, putting on a show with its figurines.",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "a9193dde-05a9-4cd1-9ea8-923d94203c38",
+                            "id": "a27cc549-f47e-4d5a-98f7-612159e1699e",
                             "text": "Your favourite shows are the ones when your pet monster lets you be in the show too. You get to move the figurines around like dolls and help create the story.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "dd520db8-9513-4d1a-93c7-f16aa8031ba6",
+                            "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
                             "text": "It would be easier if you spoke monster language with grunts and whistles or your pet monster spoke English, but together you always manage to work it out and have fun.",
                             "order": 4,
                             "audioTrack": null
@@ -1082,37 +1111,38 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "eaf3a694-b757-4647-b4cb-6bbe5163e2ef",
+                    "id": "941432ec-54ca-4685-8315-6459a2642144",
+                    "pageNumber": 29,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "ecae2343-f090-4826-bf62-8c17597b2c44",
+                            "id": "3d092c81-3b9a-42f8-a9d4-3d637577b76f",
                             "text": "Your pet monster just hates being dirty. It only likes living in caves that are near water such as a river, stream, lake or the beach. This way it can wash its claws after making a new figurine. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "df103d4f-7703-436f-98b8-1e313a41ae10",
+                            "id": "317037c8-f513-46ef-a120-79fc213cb42f",
                             "text": "When it was your pet monster's birthday, you gave it the best present ever. It was a water squirting toy that looked exactly like a rock!",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "1ae15fcf-cb9e-4aad-9cb8-d6b9672ee1aa",
+                            "id": "d670a84b-ef99-48d4-b824-01b8b1ff6732",
                             "text": "Now your pet monster can fill up its squirty toy before starts a new carving, then afterwards it can squirt the water out to clean its claws.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "38cb1b4c-e125-4875-8484-1e6912e658cf",
+                            "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
                             "text": "Your pet monster loves its new toy. Because the squirty toy is shaped like a rock, your pet monster can leave it on the ground and other outdoor creatures wont accidentally take it because they think it's just a normal rock. That was very good thinking of you. ",
                             "order": 4,
                             "audioTrack": null
                         },
                         {
-                            "id": "15a781cf-cd84-40ce-aa2b-ad2bd28fdca4",
+                            "id": "7ec666a5-a0fd-4f23-83fc-643bda88d481",
                             "text": "If your pet monster is feeling a bit cheeky, sometimes it uses its toy to squirt you!",
                             "order": 5,
                             "audioTrack": null
@@ -1121,31 +1151,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "aba69c50-bcc8-4a88-ac36-45467e435d35",
+                    "id": "88034f26-fd28-4ba7-8da4-8b864839ac01",
+                    "pageNumber": 30,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "f6de03e6-bc34-4057-adae-0b47a68744d7",
+                            "id": "68d48745-3122-4874-b8f1-ea471ba4bfbf",
                             "text": "Your pet monster is not pretty when it sleeps because it always has a runny nose full of boogers!",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "99b34270-634b-43fe-8eaa-ee82a553eb7d",
+                            "id": "0f3a7ca9-fe79-45f4-bc20-6b3611cd39a5",
                             "text": "In fact, that was how you first found your pet monster. You were walking outside and you thought it was just a pile of rocks. But when you got closer the pile of rocks blew a snot bubble out of its nose, gross! ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "88c78e9b-399e-496d-ab17-c1707a526703",
+                            "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
                             "text": "You realised it wasn't a pile of rocks at all and when you yelled out, your pet monster woke up and you've been best friends ever since.",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "f376bde8-67a7-4b70-a59d-e84c207a9969",
+                            "id": "0ea6a82d-5e13-491f-98e4-374849c6c24f",
                             "text": "You spend a lot of time trying to teach your pet monster how to wipe its nose with leaves, but it finds wiping its nose very difficult with its long sharp claws. It also can't wipe its nose while it's sleeping so whenever you visit, you just have to put up with the gross boogers and giant snot bubbles!",
                             "order": 4,
                             "audioTrack": null
@@ -1154,31 +1185,32 @@
                     "navigationLinks": []
                 },
                 {
-                    "id": "72d96371-1116-4866-8491-437d3e5f3f86",
+                    "id": "df8c6c19-33d9-4014-a5a8-873054150d0b",
+                    "pageNumber": 31,
                     "imageUri": null,
                     "soundEffect": null,
                     "tier": 0,
                     "texts": [
                         {
-                            "id": "b62ad2ba-8f83-4fa5-871d-80442f06fdb1",
+                            "id": "5a08da89-9e74-42e1-8de0-2982d77b610a",
                             "text": "Your pet monster has a long tongue and when it's sleeping, which is nearly all of the time, its tongue hangs out like a dog's. ",
                             "order": 1,
                             "audioTrack": null
                         },
                         {
-                            "id": "a5e47983-3f5a-4a86-888b-ca37210c24c1",
+                            "id": "137becab-86d8-4f8a-980a-3a19ff2ad3b3",
                             "text": "Sometimes that's a problem because your pet monster will roll over onto its tummy while it's sleeping and it will flop its tongue right into the dirt! ",
                             "order": 2,
                             "audioTrack": null
                         },
                         {
-                            "id": "2223bef2-3158-4da7-8fd1-7a3388f17e74",
+                            "id": "fd7ec425-6e6a-49aa-b38a-5dd050842589",
                             "text": "Because your pet monster looks a bit like a dog when it sleeps with its tongue hanging out, you decided to try and teach it to play fetch. You explained the game to your pet monster when it was awake and then you threw a stick for it to go and find and bring back. ",
                             "order": 3,
                             "audioTrack": null
                         },
                         {
-                            "id": "16c4b14c-f2ad-43ca-bfca-4084a24ca69e",
+                            "id": "b9917fc9-d82c-4753-b0c9-78d22f2720fe",
                             "text": "Unfortunately, your pet monster thinks that fetch is a silly game and it doesn't want to go walking everywhere to pick up sticks while you get to stand in one place. So now you need to think of a new game that you can play together when it's awake!",
                             "order": 4,
                             "audioTrack": null

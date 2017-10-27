@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, BackHandler } from 'react-native';
 import style from '../../style/style.js';
 import BookCover from './bookCover.js';
 import { connect } from 'react-redux';
-import { changePage, setActiveBook } from '../actions/book.js';
+import { changePage, setActiveBook, clearHistory } from '../actions/book.js';
+import { GroupBox } from './settings.js';
 
 const bookData = require('../../books.json');
 
@@ -17,6 +18,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch)
 {
     return { 
+        clearHistory: () => dispatch(clearHistory()),
         changePage: (pageId) => dispatch(changePage(pageId)),
         setActiveBook: (book) => dispatch(setActiveBook(book))
     };
@@ -28,10 +30,12 @@ class MainMenu extends Component
     {
         super();
         this.selectBook = this.selectBook.bind(this);
+        BackHandler.addEventListener('hardwareBackPress', () => BackHandler.exitApp());
     }
 
     selectBook(book)
     {
+        this.props.clearHistory();
         this.props.setActiveBook(book);
         this.props.changePage(book.pages[0].id);
         this.props.navigation.navigate("TitlePage");
@@ -50,23 +54,44 @@ class MainMenu extends Component
     render()
     {
         return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%' } ]}>
-                    <Image source={require("../../img/header.png")} resizeMode='contain' style={{height:'20%'}} />
-                    <ScrollView style={{height:'80%'}} horizontal={true}>
-                    <View style={style.bookList}>
-                        {bookData.books.map((book) => 
-                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>
-                                <BookCover key={book.id} bookInfo={book} />
-                            </TouchableOpacity>)}
-                            <TouchableOpacity onPress={() => this.store()}>
-                                <View style={{borderWidth:0.5, borderColor:'black', borderStyle:"dotted", width:150, height:200, alignItems:'center', justifyContent:'center'}}>
-                                    <Text style={{fontFamily:'summer_joy'}}>Get More Books</Text>
-                                </View>
-                            </TouchableOpacity>
+                    <Image source={require("../../img/choosicles_logo.png")} resizeMode="contain" style={{flex:1, marginTop:15}} />
+                    <View style={{flexDirection:'row', flex:4, margin:20}}>
+                        <View style={{flexDirection:'column', flex:32, alignItems:'center', marginTop:20}}>
+                            <Image style={{height:25, marginBottom:-15}} resizeMode='contain' source={require('../../img/your_books.png')} />                      
+                            <View style={{flexDirection:'row', flex:1, justifyContent:'center', alignItems:'center'}}>                  
+                                <Image source={require('../../img/arrow_back.png')} />
+                                <View style={{flex:1}}>
+                                    <View style={[style.bookList, {flex:1}]}>
+                                        {bookData.books.map((book) => 
+                                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>
+                                                <BookCover key={book.id} bookInfo={book} />
+                                            </TouchableOpacity>)}
+                                        {bookData.books.map((book) => 
+                                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>
+                                                <BookCover key={book.id} bookInfo={book} />
+                                            </TouchableOpacity>)}
+                                        {bookData.books.map((book) => 
+                                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>
+                                                <BookCover key={book.id} bookInfo={book} />
+                                            </TouchableOpacity>)}
+                                        {bookData.books.map((book) => 
+                                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>
+                                                <BookCover key={book.id} bookInfo={book} />
+                                            </TouchableOpacity>)}
+                                    </View>
+                                </View>                                        
+                                <Image source={require('../../img/arrow_forward.png')} />
+                            </View>
+                        </View>
+                        <View style={{flex:8, alignItems:'center', justifyContent: 'center', marginTop:'-10%', paddingLeft:'5%'}}>
+                                <TouchableOpacity onPress={() => this.store()}>
+                                    <Image source={require('../../img/buy_books.png')} resizeMode='contain' style={{width:110, height:70}}/>
+                                </TouchableOpacity>
+                        </View>
                     </View>
-                    </ScrollView>
-                    <View style={{position:'absolute', right: 10, bottom:10}}>
+                    <View style={{position:'absolute', right: 10, top:20}}>
                         <TouchableOpacity onPress={() => this.settings()}>
-                            <Image source={require('../../img/cogwheel.png')} />
+                            <Image source={require('../../img/cogwheel.png')} style={{height:40, width:42}} />
                         </TouchableOpacity>
                     </View>
                 </Image>;

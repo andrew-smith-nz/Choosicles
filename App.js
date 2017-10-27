@@ -1,3 +1,4 @@
+import './reactotronConfig';
 import React from 'react';
 import { StyleSheet, Text, View, AsyncStorage, Image } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
@@ -12,7 +13,6 @@ import { Provider } from 'react-redux';
 import { changePage, changeName, pageCounters } from './src/reducers/book.js'
 import { changeSettings } from './src/reducers/settings.js'
 import { persistStore, autoRehydrate, applyMiddleware } from 'redux-persist';
-import './reactotronConfig'
 import Orientation from 'react-native-orientation';
 
 let store = createStore(combineReducers({changePage, changeName, pageCounters, changeSettings}), compose(autoRehydrate({log:true})));
@@ -40,7 +40,7 @@ export default class App extends React.Component {
       <Provider store={store}>
         <View style={{flex:1}}>
           {this.state.showSplash ? <Image source={require("./img/splash.png")} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
-            <Text style={{fontSize:48}}>Choosicles</Text>
+            <Image source={require("./img/choosicles_logo.png")} resizeMode='contain' style={{height:'20%'}} />
             </Image>
             : <Navigator /> }
         </View>

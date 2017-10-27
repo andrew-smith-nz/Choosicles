@@ -28,6 +28,8 @@
     "redux-persist": "^4.9.1"
   },
   "rnpm": {
-    "assets": ["./fonts"]
- }
+    "assets": [
+      "./fonts"
+    ]
+  }
 }

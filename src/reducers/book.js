@@ -37,7 +37,7 @@ export function pageCounters(state = { pageCounters: [] }, action)
     }
 }
 
-export function changeName(state = { name: "fart" }, action)
+export function changeName(state = { name: "" }, action)
 {
     switch(action.type)
     {

@@ -14,7 +14,7 @@ export default class BookCover extends Component
     render()
     {
         return  <View style={style.bookCoverView}>
-                    <Image source={require("../../img/book_monster.png")} style={{width:'100%', height:'100%'}} resizeMode='contain' />
+                    <Image source={require("../../img/book_monster.png")} style={{width:'100%', height:'80%'}} resizeMode='contain' />
                 </View>;
     }
 }
