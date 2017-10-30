@@ -33,11 +33,10 @@ class EndPage extends Component
     {
         return  (<View style={{flex:1}}>
                     <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
-                        <Text style={{fontWeight:'bold', fontSize:48, textAlign:'center', color:'black', backgroundColor:'rgba(221, 221, 221, 0.7)'}}>The End</Text>
                     </Image>
-                    <View style={{position:'absolute', left:0, bottom:20, width:'100%', zIndex: 0, alignItems:'center', justifyContent:'center'}}>
+                    <View style={{position:'absolute', right:10, top:10, width:50, height:50}}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("MainMenu")}>
-                            <Image source={require('../../img/home_large.png')} style={{width:100, height:100}} />
+                            <Image source={require('../../img/home_large.png')} style={{width:50, height:50}} />
                         </TouchableOpacity>
                     </View>
                     <View style={{position:'absolute', left:10, top:10, width:50, height:50}}>

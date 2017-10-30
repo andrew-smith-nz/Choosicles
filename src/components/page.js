@@ -251,11 +251,11 @@ class Page extends Component
                                     {this.getPageText()}
                                 </Animated.Text>
                                 {hasDecision ? 
-                                    <View style={[style.centeredContent, {flexDirection:'row', marginTop: 5, marginBottom:5}]}>
+                                    <View style={[style.centeredContent, {flexDirection:'row', justifyContent:'space-between', marginTop: 5, marginBottom:5, width:180}]}>
                                         {this.props.pageData.navigationLinks.map((nav) => 
                                         <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
-                                            <Image source={getChoiceImageForPage(this.props.pageData.id, nav.targetPageId)} style={{height:58, width:74}} />
-                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, borderRadius:15, padding:2, right:10, top:2, backgroundColor:'white', zIndex: 0}}>
+                                            <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={{height:40, width:73}} />
+                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, borderRadius:15, padding:2, right:3, top:0, backgroundColor:'white', zIndex: 0}}>
                                                 <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
                                             </View> : null }
                                         </TouchableOpacity>

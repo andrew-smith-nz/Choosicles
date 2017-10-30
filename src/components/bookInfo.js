@@ -17,20 +17,12 @@ export default class BookInfo extends Component
                     <Image style={{flex:7}} source={require("../../img/book_monster.png")} resizeMode='contain' />
                     <View style={{flex:13, flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between'}}>
                         <View style={{flex:5, flexDirection:'column', alignItems:'flex-start', justifyContent:'flex-start', padding:10}}>
-                                <Text style={style.h4}>Your Very Own: Pet Monster!</Text>
+                                <Text style={style.h4}>{this.props.bookInfo.title}</Text>
                             <ScrollView style={{flex:1}}>
-                                <Text style={style.text12}>Written by Meg Price</Text>
-                                <Text style={style.text12}>Illustrated by Sophie Wood</Text>
-                                <Text style={style.text12}>For ages 2 to 6</Text>
-                                <Text style={style.text10}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
-                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
-                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
-                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
-                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
-                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
-                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero nisi, quis laoreet est dapibus a. Curabitur sollicitudin finibus dignissim. 
-                                    Pellentesque eget pretium sem. Nunc imperdiet, diam at tincidunt condimentum, lacus quam consectetur erat, nec condimentum ipsum sem eu leo. 
-                                    Morbi elementum in ante vitae ullamcorper. Donec sed est nec est ultricies faucibus in egestas nisl. Morbi congue interdum tempor.</Text>
+                                <Text style={style.text12}>Written by {this.props.bookInfo.author}</Text>
+                                <Text style={style.text12}>Illustrated by {this.props.bookInfo.illustrator}</Text>
+                                <Text style={style.text12}>For ages {this.props.bookInfo.recommendedAgeRange}</Text>
+                                <Text style={style.text10}>{this.props.bookInfo.description}</Text>
                             </ScrollView>
                         </View>
                         <View style={{flex:2, width:'100%'}}>

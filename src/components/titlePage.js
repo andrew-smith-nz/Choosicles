@@ -43,8 +43,7 @@ class TitlePage extends Component
     render()
     {
         return  (<View style={{flex:1}}>
-                    <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='contain'>
-                        <Text style={{fontWeight:'bold', fontSize:48, textAlign:'center', color:'black', backgroundColor:'rgba(221, 221, 221, 0.7)'}}>{this.props.book.title}</Text>
+                    <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
                     </Image>
                     <View style={{position:'absolute', left:5, top:5, width:50, height:50}}>
                         <TouchableOpacity onPress={() => this.backtrack()}>

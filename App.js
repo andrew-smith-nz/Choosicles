@@ -1,6 +1,6 @@
 import './reactotronConfig';
 import React from 'react';
-import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar, AppState } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
 import Page from './src/components/page.js';
 import Settings from './src/components/settings.js';
@@ -27,10 +27,15 @@ export default class App extends React.Component {
   componentWillMount()
   {
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
-    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 500);
+    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 2000);
   }
 
   componentDidMount()
+  {
+    AppState.addEventListener('change', this.setLandscape);
+  }
+
+  setLandscape()
   {
     Orientation.lockToLandscape();    
   }
