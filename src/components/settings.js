@@ -61,11 +61,11 @@ class Settings extends Component
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-around', marginTop:10}}>
                                         <TouchableOpacity style={{borderWidth: this.props.displayMode === 'tablet' ? 1 : 0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
                                                             onPress={() => this.props.setDisplayMode("tablet")}>
-                                            <Text style={{fontFamily: this.props.displayMode === 'tablet' ? 'berrylicious_bold' : 'berrylicious'}}>Tablet</Text>
+                                            <Text style={this.props.displayMode === 'tablet' ? style.boldText12 : style.text12}>Tablet</Text>
                                         </TouchableOpacity>
                                         <TouchableOpacity style={{borderWidth: this.props.displayMode === 'phone' ? 1 : 0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
                                                             onPress={() => this.props.setDisplayMode("phone")}>
-                                            <Text style={{fontFamily: this.props.displayMode === 'phone' ? 'berrylicious_bold' : 'berrylicious'}}>Phone</Text>
+                                            <Text style={this.props.displayMode === 'phone' ? style.boldText12 : style.text12}>Phone</Text>
                                         </TouchableOpacity>
                                     </View>
                                 </GroupBox>
