@@ -27,15 +27,15 @@ export default StyleSheet.create({
                     summerJoy: {fontFamily: 'Summer Joy' }
                     ,plainText: { fontSize:12, fontFamily: 'sans-serif' }
                     ,smallPlainText: { fontSize:10, fontFamily: 'sans-serif' }
-                    ,text10: { fontSize:10, fontFamily: 'berrylicious' }
-                    ,boldText10: { fontSize:10, fontFamily:'berrylicious', fontWeight:'bold' }
-                    ,text12: { fontSize:12, fontFamily: 'berrylicious' }
-                    ,boldText12: { fontSize:12, fontFamily: 'berrylicious', fontWeight:'bold' }
-                    ,text14: { fontSize:14, fontFamily: 'berrylicious' }
-                    ,boldText14: { fontSize:14, fontFamily: 'berrylicious', fontWeight:'bold' }
-                    ,text16: { fontSize:16, fontFamily: 'berrylicious' }
-                    ,boldText16: { fontSize:16, fontFamily: 'berrylicious', fontWeight:'bold' }
-                    ,boldText24: { fontSize:24, fontFamily: 'berrylicious', fontWeight:'bold' }
+                    ,text10: { fontSize:10, fontFamily: 'Berrylicious' }
+                    ,boldText10: { fontSize:10, fontFamily:'Berrylicious', fontWeight:'bold' }
+                    ,text12: { fontSize:12, fontFamily: 'Berrylicious' }
+                    ,boldText12: { fontSize:12, fontFamily: 'Berrylicious', fontWeight:'bold' }
+                    ,text14: { fontSize:14, fontFamily: 'Berrylicious' }
+                    ,boldText14: { fontSize:14, fontFamily: 'Berrylicious', fontWeight:'bold' }
+                    ,text16: { fontSize:16, fontFamily: 'Berrylicious' }
+                    ,boldText16: { fontSize:16, fontFamily: 'Berrylicious', fontWeight:'bold' }
+                    ,boldText24: { fontSize:24, fontFamily: 'Berrylicious', fontWeight:'bold' }
                 },
                 android: {
                     summerJoy: {fontFamily: 'summer_joy' }
