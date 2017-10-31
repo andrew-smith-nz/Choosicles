@@ -163,7 +163,7 @@ class Page extends Component
         Sound.setCategory('Playback');
 
         // doesn't work with Require - possibly only a dev mode problem?  Need to test with production apk.
-        var s = new Sound(getSoundEffectForPage(this.props.pageData.id), Sound.MAIN_BUNDLE, (error) => {
+        var s = new Sound(getSoundEffectForPage(this.props.pageData.id), Sound.MAIN_BUNDLE, function (error) {
             Reactotron.log("done");
             s.play((success) => {
                 if (success) {
@@ -266,7 +266,7 @@ class Page extends Component
                         </View>
 
                         <View style={{position:'absolute', right:10, top:10, width:50, height:50}}>
-                            <Text style={{fontSize:20, color:'white'}}>{this.props.pageData.pageNumber}</Text>
+                            <Text style={{fontSize:20, color:'white', backgroundColor:'transparent'}}>{this.props.pageData.pageNumber}</Text>
                         </View>
 
                         <View style={{position:'absolute', left:10, top:10, width:50, height:50}}>
