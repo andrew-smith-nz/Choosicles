@@ -162,20 +162,10 @@ class Page extends Component
         var Sound = require('react-native-sound');
         Sound.setCategory('Playback');
 
+        const play = (error, sound) => sound.play()
+        
         // doesn't work with Require - possibly only a dev mode problem?  Need to test with production apk.
-        var s = new Sound(getSoundEffectForPage(this.props.pageData.id), Sound.MAIN_BUNDLE, function (error) {
-            Reactotron.log("done");
-            s.play((success) => {
-                if (success) {
-                    Reactotron.log('successfully finished playing');
-                } else {
-                    Reactotron.log('playback failed due to audio decoding errors');
-                    // reset the player to its uninitialized state (android only)
-                    // this is the only option to recover after an error occured and use the player again
-                    //whoosh.reset();
-                }
-            });
-        });
+        var s = new Sound(getSoundEffectForPage(this.props.pageData.id), Sound.MAIN_BUNDLE, (error) => play(error, sound));
         Reactotron.log(s);
     }
 
