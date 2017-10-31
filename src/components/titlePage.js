@@ -52,7 +52,7 @@ class TitlePage extends Component
                     </View>
                     <View style={{position:'absolute', left:0, bottom:20, width:'100%', zIndex: 0, alignItems:'center', justifyContent:'center'}}>
                         <TouchableOpacity style={{borderWidth:0.5, borderColor:'black', padding:5, backgroundColor:'white'}} onPress={() => this.props.navigation.navigate("Page")}>
-                            <Text style={{fontWeight:'bold', fontSize:24, padding:10}}>Start</Text>
+                            <Text style={[style.boldText24, {padding:10}]}>Start</Text>
                         </TouchableOpacity>
                     </View>
                 </View>);
