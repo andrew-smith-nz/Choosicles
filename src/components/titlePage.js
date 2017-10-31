@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Image, BackHandler } from 'react-native';
+import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getCoverForBook } from './resourceManager.js';
 import { backtrack, clearHistory } from '../actions/book.js';
