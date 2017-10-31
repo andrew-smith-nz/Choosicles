@@ -37,6 +37,37 @@
 		376E05CD32374811B19CDF11 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 836DB0A611CF4866A7DF1A9E /* libRNSound.a */; };
 		49960E1F1FA8CA5200183D0F /* berrylicious.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49960DFF1FA8CA5200183D0F /* berrylicious.ttf */; };
 		49960E211FA8CA5F00183D0F /* summer_joy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49960E201FA8CA5E00183D0F /* summer_joy.ttf */; };
+		49FEC2801FA9309600BCBF02 /* monster_9_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2421FA9309200BCBF02 /* monster_9_soundeffect.mp3 */; };
+		49FEC2811FA9309600BCBF02 /* monster_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2621FA9309200BCBF02 /* monster_2_soundeffect.mp3 */; };
+		49FEC2821FA9309600BCBF02 /* monster_28_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2631FA9309200BCBF02 /* monster_28_soundeffect.mp3 */; };
+		49FEC2831FA9309600BCBF02 /* monster_19_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2641FA9309200BCBF02 /* monster_19_soundeffect.mp3 */; };
+		49FEC2841FA9309600BCBF02 /* monster_4_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2651FA9309200BCBF02 /* monster_4_soundeffect.mp3 */; };
+		49FEC2851FA9309600BCBF02 /* monster_6_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2661FA9309200BCBF02 /* monster_6_soundeffect.mp3 */; };
+		49FEC2861FA9309600BCBF02 /* monster_15_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2671FA9309200BCBF02 /* monster_15_soundeffect.mp3 */; };
+		49FEC2871FA9309600BCBF02 /* monster_23_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2681FA9309300BCBF02 /* monster_23_soundeffect.mp3 */; };
+		49FEC2881FA9309600BCBF02 /* monster_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2691FA9309300BCBF02 /* monster_3_soundeffect.mp3 */; };
+		49FEC2891FA9309600BCBF02 /* monster_24_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC26A1FA9309300BCBF02 /* monster_24_soundeffect.mp3 */; };
+		49FEC28A1FA9309600BCBF02 /* monster_30_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC26B1FA9309300BCBF02 /* monster_30_soundeffect.mp3 */; };
+		49FEC28B1FA9309600BCBF02 /* monster_31_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC26C1FA9309300BCBF02 /* monster_31_soundeffect.mp3 */; };
+		49FEC28C1FA9309600BCBF02 /* monster_20__soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC26D1FA9309300BCBF02 /* monster_20__soundeffect.mp3 */; };
+		49FEC28D1FA9309600BCBF02 /* monster_8_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC26E1FA9309300BCBF02 /* monster_8_soundeffect.mp3 */; };
+		49FEC28E1FA9309600BCBF02 /* monster_14_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC26F1FA9309300BCBF02 /* monster_14_soundeffect.mp3 */; };
+		49FEC28F1FA9309600BCBF02 /* monster_22_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2701FA9309300BCBF02 /* monster_22_soundeffect.mp3 */; };
+		49FEC2901FA9309600BCBF02 /* monster_17_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2711FA9309400BCBF02 /* monster_17_soundeffect.mp3 */; };
+		49FEC2911FA9309600BCBF02 /* monster_26_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2721FA9309400BCBF02 /* monster_26_soundeffect.mp3 */; };
+		49FEC2921FA9309600BCBF02 /* monster_21_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2731FA9309400BCBF02 /* monster_21_soundeffect.mp3 */; };
+		49FEC2931FA9309600BCBF02 /* monster_16_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2741FA9309400BCBF02 /* monster_16_soundeffect.mp3 */; };
+		49FEC2941FA9309600BCBF02 /* monster_25_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2751FA9309400BCBF02 /* monster_25_soundeffect.mp3 */; };
+		49FEC2951FA9309600BCBF02 /* monster_27_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2761FA9309400BCBF02 /* monster_27_soundeffect.mp3 */; };
+		49FEC2961FA9309600BCBF02 /* monster_5_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2771FA9309400BCBF02 /* monster_5_soundeffect.mp3 */; };
+		49FEC2971FA9309600BCBF02 /* monster_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2781FA9309500BCBF02 /* monster_1_soundeffect.mp3 */; };
+		49FEC2981FA9309600BCBF02 /* monster_18_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC2791FA9309500BCBF02 /* monster_18_soundeffect.mp3 */; };
+		49FEC2991FA9309600BCBF02 /* monster_10_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC27A1FA9309500BCBF02 /* monster_10_soundeffect.mp3 */; };
+		49FEC29A1FA9309600BCBF02 /* monster_29_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC27B1FA9309500BCBF02 /* monster_29_soundeffect.mp3 */; };
+		49FEC29B1FA9309600BCBF02 /* monster_7_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC27C1FA9309500BCBF02 /* monster_7_soundeffect.mp3 */; };
+		49FEC29C1FA9309600BCBF02 /* monster_12_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC27D1FA9309500BCBF02 /* monster_12_soundeffect.mp3 */; };
+		49FEC29D1FA9309600BCBF02 /* monster_11_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC27E1FA9309500BCBF02 /* monster_11_soundeffect.mp3 */; };
+		49FEC29E1FA9309600BCBF02 /* monster_13_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FEC27F1FA9309600BCBF02 /* monster_13_soundeffect.mp3 */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		B5168802BC8E44F085D7137F /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 877CAEC9560B432DAFC657BE /* libRCTOrientation.a */; };
@@ -300,6 +331,37 @@
 		2D02E4901E0B4A5D006451C7 /* Choosicles-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Choosicles-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49960DFF1FA8CA5200183D0F /* berrylicious.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = berrylicious.ttf; path = ../fonts/berrylicious.ttf; sourceTree = "<group>"; };
 		49960E201FA8CA5E00183D0F /* summer_joy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = summer_joy.ttf; path = ../fonts/summer_joy.ttf; sourceTree = "<group>"; };
+		49FEC2421FA9309200BCBF02 /* monster_9_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_9_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_9_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2621FA9309200BCBF02 /* monster_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_2_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2631FA9309200BCBF02 /* monster_28_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_28_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_28_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2641FA9309200BCBF02 /* monster_19_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_19_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_19_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2651FA9309200BCBF02 /* monster_4_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_4_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_4_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2661FA9309200BCBF02 /* monster_6_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_6_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_6_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2671FA9309200BCBF02 /* monster_15_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_15_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_15_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2681FA9309300BCBF02 /* monster_23_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_23_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_23_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2691FA9309300BCBF02 /* monster_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_3_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC26A1FA9309300BCBF02 /* monster_24_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_24_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_24_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC26B1FA9309300BCBF02 /* monster_30_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_30_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_30_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC26C1FA9309300BCBF02 /* monster_31_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_31_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_31_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC26D1FA9309300BCBF02 /* monster_20__soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_20__soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_20__soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC26E1FA9309300BCBF02 /* monster_8_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_8_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_8_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC26F1FA9309300BCBF02 /* monster_14_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_14_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_14_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2701FA9309300BCBF02 /* monster_22_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_22_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_22_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2711FA9309400BCBF02 /* monster_17_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_17_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_17_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2721FA9309400BCBF02 /* monster_26_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_26_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_26_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2731FA9309400BCBF02 /* monster_21_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_21_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_21_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2741FA9309400BCBF02 /* monster_16_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_16_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_16_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2751FA9309400BCBF02 /* monster_25_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_25_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_25_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2761FA9309400BCBF02 /* monster_27_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_27_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_27_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2771FA9309400BCBF02 /* monster_5_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_5_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_5_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2781FA9309500BCBF02 /* monster_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_1_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC2791FA9309500BCBF02 /* monster_18_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_18_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_18_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC27A1FA9309500BCBF02 /* monster_10_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_10_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_10_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC27B1FA9309500BCBF02 /* monster_29_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_29_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_29_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC27C1FA9309500BCBF02 /* monster_7_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_7_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_7_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC27D1FA9309500BCBF02 /* monster_12_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_12_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_12_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC27E1FA9309500BCBF02 /* monster_11_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_11_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_11_soundeffect.mp3; sourceTree = "<group>"; };
+		49FEC27F1FA9309600BCBF02 /* monster_13_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_13_soundeffect.mp3; path = ../android/app/src/main/res/raw/monster_13_soundeffect.mp3; sourceTree = "<group>"; };
 		53DFF62F63114EF2A69C9EAB /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTOrientation.xcodeproj; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -476,6 +538,37 @@
 		3C85547ACC0D4F1CAD476BE3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				49FEC2781FA9309500BCBF02 /* monster_1_soundeffect.mp3 */,
+				49FEC2621FA9309200BCBF02 /* monster_2_soundeffect.mp3 */,
+				49FEC2691FA9309300BCBF02 /* monster_3_soundeffect.mp3 */,
+				49FEC2651FA9309200BCBF02 /* monster_4_soundeffect.mp3 */,
+				49FEC2771FA9309400BCBF02 /* monster_5_soundeffect.mp3 */,
+				49FEC2661FA9309200BCBF02 /* monster_6_soundeffect.mp3 */,
+				49FEC27C1FA9309500BCBF02 /* monster_7_soundeffect.mp3 */,
+				49FEC26E1FA9309300BCBF02 /* monster_8_soundeffect.mp3 */,
+				49FEC2421FA9309200BCBF02 /* monster_9_soundeffect.mp3 */,
+				49FEC27A1FA9309500BCBF02 /* monster_10_soundeffect.mp3 */,
+				49FEC27E1FA9309500BCBF02 /* monster_11_soundeffect.mp3 */,
+				49FEC27D1FA9309500BCBF02 /* monster_12_soundeffect.mp3 */,
+				49FEC27F1FA9309600BCBF02 /* monster_13_soundeffect.mp3 */,
+				49FEC26F1FA9309300BCBF02 /* monster_14_soundeffect.mp3 */,
+				49FEC2671FA9309200BCBF02 /* monster_15_soundeffect.mp3 */,
+				49FEC2741FA9309400BCBF02 /* monster_16_soundeffect.mp3 */,
+				49FEC2711FA9309400BCBF02 /* monster_17_soundeffect.mp3 */,
+				49FEC2791FA9309500BCBF02 /* monster_18_soundeffect.mp3 */,
+				49FEC2641FA9309200BCBF02 /* monster_19_soundeffect.mp3 */,
+				49FEC26D1FA9309300BCBF02 /* monster_20__soundeffect.mp3 */,
+				49FEC2731FA9309400BCBF02 /* monster_21_soundeffect.mp3 */,
+				49FEC2701FA9309300BCBF02 /* monster_22_soundeffect.mp3 */,
+				49FEC2681FA9309300BCBF02 /* monster_23_soundeffect.mp3 */,
+				49FEC26A1FA9309300BCBF02 /* monster_24_soundeffect.mp3 */,
+				49FEC2751FA9309400BCBF02 /* monster_25_soundeffect.mp3 */,
+				49FEC2721FA9309400BCBF02 /* monster_26_soundeffect.mp3 */,
+				49FEC2761FA9309400BCBF02 /* monster_27_soundeffect.mp3 */,
+				49FEC2631FA9309200BCBF02 /* monster_28_soundeffect.mp3 */,
+				49FEC27B1FA9309500BCBF02 /* monster_29_soundeffect.mp3 */,
+				49FEC26B1FA9309300BCBF02 /* monster_30_soundeffect.mp3 */,
+				49FEC26C1FA9309300BCBF02 /* monster_31_soundeffect.mp3 */,
 				49960E201FA8CA5E00183D0F /* summer_joy.ttf */,
 				49960DFF1FA8CA5200183D0F /* berrylicious.ttf */,
 			);
@@ -986,9 +1079,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				49960E211FA8CA5F00183D0F /* summer_joy.ttf in Resources */,
+				49FEC2801FA9309600BCBF02 /* monster_9_soundeffect.mp3 in Resources */,
+				49FEC2901FA9309600BCBF02 /* monster_17_soundeffect.mp3 in Resources */,
+				49FEC2891FA9309600BCBF02 /* monster_24_soundeffect.mp3 in Resources */,
+				49FEC2861FA9309600BCBF02 /* monster_15_soundeffect.mp3 in Resources */,
+				49FEC2821FA9309600BCBF02 /* monster_28_soundeffect.mp3 in Resources */,
+				49FEC2851FA9309600BCBF02 /* monster_6_soundeffect.mp3 in Resources */,
+				49FEC29A1FA9309600BCBF02 /* monster_29_soundeffect.mp3 in Resources */,
+				49FEC2941FA9309600BCBF02 /* monster_25_soundeffect.mp3 in Resources */,
+				49FEC29C1FA9309600BCBF02 /* monster_12_soundeffect.mp3 in Resources */,
+				49FEC2981FA9309600BCBF02 /* monster_18_soundeffect.mp3 in Resources */,
+				49FEC29B1FA9309600BCBF02 /* monster_7_soundeffect.mp3 in Resources */,
+				49FEC28A1FA9309600BCBF02 /* monster_30_soundeffect.mp3 in Resources */,
+				49FEC28C1FA9309600BCBF02 /* monster_20__soundeffect.mp3 in Resources */,
+				49FEC28F1FA9309600BCBF02 /* monster_22_soundeffect.mp3 in Resources */,
+				49FEC2871FA9309600BCBF02 /* monster_23_soundeffect.mp3 in Resources */,
+				49FEC2921FA9309600BCBF02 /* monster_21_soundeffect.mp3 in Resources */,
+				49FEC2951FA9309600BCBF02 /* monster_27_soundeffect.mp3 in Resources */,
+				49FEC28B1FA9309600BCBF02 /* monster_31_soundeffect.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				49FEC29D1FA9309600BCBF02 /* monster_11_soundeffect.mp3 in Resources */,
 				49960E1F1FA8CA5200183D0F /* berrylicious.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				49FEC2881FA9309600BCBF02 /* monster_3_soundeffect.mp3 in Resources */,
+				49FEC28E1FA9309600BCBF02 /* monster_14_soundeffect.mp3 in Resources */,
+				49FEC2831FA9309600BCBF02 /* monster_19_soundeffect.mp3 in Resources */,
+				49FEC2931FA9309600BCBF02 /* monster_16_soundeffect.mp3 in Resources */,
+				49FEC2961FA9309600BCBF02 /* monster_5_soundeffect.mp3 in Resources */,
+				49FEC29E1FA9309600BCBF02 /* monster_13_soundeffect.mp3 in Resources */,
+				49FEC2841FA9309600BCBF02 /* monster_4_soundeffect.mp3 in Resources */,
+				49FEC2971FA9309600BCBF02 /* monster_1_soundeffect.mp3 in Resources */,
+				49FEC2811FA9309600BCBF02 /* monster_2_soundeffect.mp3 in Resources */,
+				49FEC2911FA9309600BCBF02 /* monster_26_soundeffect.mp3 in Resources */,
+				49FEC28D1FA9309600BCBF02 /* monster_8_soundeffect.mp3 in Resources */,
+				49FEC2991FA9309600BCBF02 /* monster_10_soundeffect.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
