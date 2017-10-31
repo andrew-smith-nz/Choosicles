@@ -844,7 +844,8 @@ export function getChoiceImageForPage(pageId, index)
 
 export function getSoundEffectForPage(pageId)
 {
-    return _resourcesByPage.filter(p => p.pageId === pageId)[0].soundEffect;
+    //return _resourcesByPage.filter(p => p.pageId === pageId)[0].soundEffect;
+    return 'Sound effect page ' + _resourcesByPage.filter(p => p.pageId === pageId)[0].pageNumber + '.mp3';
 }
 
 export function getReadingForPage(pageId, partId)

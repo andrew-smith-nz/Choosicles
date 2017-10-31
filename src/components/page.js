@@ -163,7 +163,7 @@ class Page extends Component
         Sound.setCategory('Playback');
         const play = (error, sound) => sound.play()
         // doesn't work with Require - possibly only a dev mode problem?  Need to test with production apk.
-        var s = new Sound("fart.mp3", Sound.MAIN_BUNDLE, (error) => play(error, s));
+        var s = new Sound(this.props.pageData.assetCode + '_soundeffect.mp3', Sound.MAIN_BUNDLE, (error) => play(error, s));
         Reactotron.log(s);
     }
 

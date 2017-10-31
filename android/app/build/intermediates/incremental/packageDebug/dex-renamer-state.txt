@@ -1,4 +1,4 @@
-#Sun Oct 29 14:29:09 CST 2017
+#Tue Oct 31 16:09:22 CST 2017
 base.0=C\:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

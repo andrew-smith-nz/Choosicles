@@ -1806,7 +1806,8 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f02003b;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f02003c;
         public static final int abc_textfield_search_material=0x7f02003d;
-        public static final int notification_template_icon_bg=0x7f02003e;
+        public static final int choice2=0x7f02003e;
+        public static final int notification_template_icon_bg=0x7f02003f;
     }
     public static final class id {
         public static final int action0=0x7f0e0058;
@@ -1976,9 +1977,37 @@ containing a value of this type.
         public static final int ic_launcher=0x7f030000;
     }
     public static final class raw {
-        public static final int fart=0x7f070000;
-        public static final int reading1=0x7f070001;
-        public static final int reading2=0x7f070002;
+        public static final int monster_10_soundeffect=0x7f070000;
+        public static final int monster_11_soundeffect=0x7f070001;
+        public static final int monster_12_soundeffect=0x7f070002;
+        public static final int monster_13_soundeffect=0x7f070003;
+        public static final int monster_14_soundeffect=0x7f070004;
+        public static final int monster_15_soundeffect=0x7f070005;
+        public static final int monster_16_soundeffect=0x7f070006;
+        public static final int monster_17_soundeffect=0x7f070007;
+        public static final int monster_18_soundeffect=0x7f070008;
+        public static final int monster_19_soundeffect=0x7f070009;
+        public static final int monster_1_soundeffect=0x7f07000a;
+        public static final int monster_20__soundeffect=0x7f07000b;
+        public static final int monster_21_soundeffect=0x7f07000c;
+        public static final int monster_22_soundeffect=0x7f07000d;
+        public static final int monster_23_soundeffect=0x7f07000e;
+        public static final int monster_24_soundeffect=0x7f07000f;
+        public static final int monster_25_soundeffect=0x7f070010;
+        public static final int monster_26_soundeffect=0x7f070011;
+        public static final int monster_27_soundeffect=0x7f070012;
+        public static final int monster_28_soundeffect=0x7f070013;
+        public static final int monster_29_soundeffect=0x7f070014;
+        public static final int monster_2_soundeffect=0x7f070015;
+        public static final int monster_30_soundeffect=0x7f070016;
+        public static final int monster_31_soundeffect=0x7f070017;
+        public static final int monster_3_soundeffect=0x7f070018;
+        public static final int monster_4_soundeffect=0x7f070019;
+        public static final int monster_5_soundeffect=0x7f07001a;
+        public static final int monster_6_soundeffect=0x7f07001b;
+        public static final int monster_7_soundeffect=0x7f07001c;
+        public static final int monster_8_soundeffect=0x7f07001d;
+        public static final int monster_9_soundeffect=0x7f07001e;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f080000;

@@ -72,6 +72,10 @@
         "source": "C:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "C:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\choice2.png",
+        "source": "C:\\Dev\\Apps\\Choosicles\\android\\app\\src\\main\\res\\drawable\\choice2.png"
+    },
+    {
         "merged": "C:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Dev\\Apps\\Choosicles\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_btn_radio_material.xml"
     },
