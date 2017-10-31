@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Image, BackHandler } from 'react-native';
-import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getCoverForBook } from './resourceManager.js';
 import { backtrack, clearHistory } from '../actions/book.js';
@@ -43,17 +42,17 @@ class TitlePage extends Component
 
     render()
     {
-        return  (<View style={{flex:1, backgroundColor:'transparent'}}>
-                    <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center', backgroundColor:'transparent'}} resizeMode='stretch'>
-                    </Image>
+        return  (<View style={{flex:1}}>
+                    {/* <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
+                    </Image> */}
                     <View style={{position:'absolute', left:5, top:5, width:50, height:50}}>
                         <TouchableOpacity onPress={() => this.backtrack()}>
                             <Image source={require('../../img/back.png')} style={{width:50, height:50}} />
                         </TouchableOpacity>
                     </View>
-                    <View style={{position:'absolute', left:0, bottom:20, width:'100%', zIndex: 0, alignItems:'center', justifyContent:'center', backgroundColor:'transparent'}}>
-                        <TouchableOpacity style={{borderWidth:0.5, borderColor:'black', padding:5, backgroundColor:'transparent'}} onPress={() => this.props.navigation.navigate("Page")}>
-                            <Text style={[style.boldText24, {padding:10}]}>Start</Text>
+                    <View style={{position:'absolute', left:0, bottom:20, width:'100%', zIndex: 0, alignItems:'center', justifyContent:'center'}}>
+                        <TouchableOpacity style={{borderWidth:0.5, borderColor:'black', padding:5, backgroundColor:'white'}} onPress={() => this.props.navigation.navigate("Page")}>
+                            <Text style={{fontWeight:'bold', fontSize:24, padding:10}}>Start</Text>
                         </TouchableOpacity>
                     </View>
                 </View>);
