@@ -53,12 +53,12 @@ class Settings extends Component
     {
         return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
                     <Image source={require("../../img/settings.png")} resizeMode='contain' style={{height:'15%', marginBottom:10}} />
-                    <View style={{height:'80%', flexDirection:'row'}}>
-                        <View style={{flex:1, flexDirection:'column'}}>
-                            <View style={{padding:10}}>
+                    <View style={{height:'80%', flexDirection:'row', backgroundColor:'transparent'}}>
+                        <View style={{flex:1, flexDirection:'column', backgroundColor:'transparent'}}>
+                            <View style={{padding:10, backgroundColor:'transparent'}}>
                                 <GroupBox title="Display Mode">
                                     <Text style={[style.smallPlainText]}>Tablet mode displays the entire text of the page on one screen.  Phone mode breaks page text into sections to minimise blocking the illustrations on smaller screens.</Text>
-                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-around', marginTop:10}}>
+                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-around', marginTop:10, backgroundColor:'transparent'}}>
                                         <TouchableOpacity style={{borderWidth: this.props.displayMode === 'tablet' ? 1 : 0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
                                                             onPress={() => this.props.setDisplayMode("tablet")}>
                                             <Text style={this.props.displayMode === 'tablet' ? style.boldText12 : style.text12}>Tablet</Text>
