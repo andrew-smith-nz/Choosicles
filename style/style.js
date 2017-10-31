@@ -25,8 +25,8 @@ export default StyleSheet.create({
                     ,h3: { fontSize:24, fontFamily: 'SummerJoy' }
                     ,h4: { fontSize:16, fontFamily: 'SummerJoy' }
                     ,title: { fontSize:48, fontFamily: 'SummerJoy' }
-                    ,plainText: { fontSize:12, fontFamily: 'sans-serif' }
-                    ,smallPlainText: { fontSize:10, fontFamily: 'sans-serif' }
+                    ,plainText: { fontSize:12, fontFamily: 'Helvetica' }
+                    ,smallPlainText: { fontSize:10, fontFamily: 'Helvetica' }
                     ,text10: { fontSize:10, fontFamily: 'Berrylicious' }
                     ,boldText10: { fontSize:10, fontFamily:'Berrylicious', fontWeight:'bold' }
                     ,text12: { fontSize:12, fontFamily: 'Berrylicious' }
