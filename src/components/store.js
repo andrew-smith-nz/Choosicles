@@ -44,25 +44,25 @@ class Store extends Component
                             <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
                                               onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
                                 <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center', fontFamily:'berrylicious_bold'}]}>$5.99</Text>
+                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
                             </TouchableOpacity>)}
                     {bookData.books.map((book) => 
                             <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
                                               onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
                                 <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center', fontFamily:'berrylicious_bold'}]}>$5.99</Text>
+                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
                             </TouchableOpacity>)}
                     {bookData.books.map((book) => 
                             <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
                                               onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
                                 <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center', fontFamily:'berrylicious_bold'}]}>$5.99</Text>
+                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
                             </TouchableOpacity>)}
                     {bookData.books.map((book) => 
                             <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
                                               onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
                                 <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center', fontFamily:'berrylicious_bold'}]}>$5.99</Text>
+                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
                             </TouchableOpacity>)}
                     </View>
                     <View style={{flex:3}}>                        

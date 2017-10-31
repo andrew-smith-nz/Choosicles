@@ -246,8 +246,8 @@ class Page extends Component
 
                         <View style={style.pageFooterView}>
                             <View style={[style.centeredContent, {position:'absolute', bottom:5, left:'10%', width:'80%'}]}>
-                                <Animated.Text style={{opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor, textAlign:'center', padding:10, 
-                                backgroundColor:'rgba(255,255,255,0)', fontSize: this.state.tabletMode ? 16 : 24, fontFamily:'berrylicious_bold', lineHeight:30 }}>
+                                <Animated.Text style={[ this.state.tabletMode ? style.boldText16 : style.boldText24, {opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor, textAlign:'center', padding:10, 
+                                backgroundColor:'rgba(255,255,255,0)', lineHeight:30 }]}>
                                     {this.getPageText()}
                                 </Animated.Text>
                                 {hasDecision ? 
