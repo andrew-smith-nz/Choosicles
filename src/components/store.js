@@ -79,14 +79,14 @@ class Store extends Component
                             <Image source={require('../../img/home.png')} style={{width:40, height:40}} />
                         </TouchableOpacity>
                     </View>
-                    <Modal transparent={true} visible={this.state.bookInfoVisible} onRequestClose={() => this.setState({ bookInfoVisible:false, book:null })} supportedOrientations={['Landscape']}>
+                    <Modal transparent={true} visible={this.state.bookInfoVisible} onRequestClose={() => this.setState({ bookInfoVisible:false, book:null })} supportedOrientations={['landscape-left', 'landscape-right']}>
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                 <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>
                                         <BookInfo bookInfo={this.state.book} callback={() => this.selectBook()} cancelCallback={() => this.setState({ bookInfoVisible:false, book:null })} />
                                 </View>
                             </View>
                     </Modal>                    
-                    <Modal transparent={true} visible={this.state.codeEntryVisible} onRequestClose={() => this.setState({ codeEntryVisible:false })} supportedOrientations={['Landscape']}>
+                    <Modal transparent={true} visible={this.state.codeEntryVisible} onRequestClose={() => this.setState({ codeEntryVisible:false })} supportedOrientations={['landscape-left', 'landscape-right']}>
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                 <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>
                                         <CodeEntry cancelCallback={() => this.setState({ codeEntryVisible:false })} />
