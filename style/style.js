@@ -4,11 +4,6 @@ export default StyleSheet.create({
     
     mainMenuView: { flex:1, flexDirection: 'column', alignItems:'center', backgroundColor:'white' }
     ,pageView: { flex:1, backgroundColor:'#FAFAFA', flexDirection:'column' }
-    ,h1: { fontSize:36, fontFamily: 'summer_joy' }
-    ,h2: { fontSize:30, fontFamily: 'summer_joy' }
-    ,h3: { fontSize:24, fontFamily: 'summer_joy' }
-    ,h4: { fontSize:16, fontFamily: 'summer_joy' }
-    ,title: { fontSize:48, fontFamily: 'summer_joy' }
 
     ,bookCoverView: { alignItems:'center', justifyContent:'center', width:110, height:200, margin:0 }
     ,pageFooterView: { alignItems: 'center', justifyContent:'space-between', flexDirection:'row', width:'100%', height:'20%'}
@@ -25,6 +20,11 @@ export default StyleSheet.create({
                 ios:
                 {
                     summerJoy: {fontFamily: 'Summer Joy' }
+                    ,h1: { fontSize:36, fontFamily: 'Summer Joy' }
+                    ,h2: { fontSize:30, fontFamily: 'Summer Joy' }
+                    ,h3: { fontSize:24, fontFamily: 'Summer Joy' }
+                    ,h4: { fontSize:16, fontFamily: 'Summer Joy' }
+                    ,title: { fontSize:48, fontFamily: 'Summer Joy' }
                     ,plainText: { fontSize:12, fontFamily: 'sans-serif' }
                     ,smallPlainText: { fontSize:10, fontFamily: 'sans-serif' }
                     ,text10: { fontSize:10, fontFamily: 'Berrylicious' }
@@ -39,6 +39,11 @@ export default StyleSheet.create({
                 },
                 android: {
                     summerJoy: {fontFamily: 'summer_joy' }
+                    ,h1: { fontSize:36, fontFamily: 'summer_joy' }
+                    ,h2: { fontSize:30, fontFamily: 'summer_joy' }
+                    ,h3: { fontSize:24, fontFamily: 'summer_joy' }
+                    ,h4: { fontSize:16, fontFamily: 'summer_joy' }
+                    ,title: { fontSize:48, fontFamily: 'summer_joy' }
                     ,plainText: { fontSize:12, fontFamily: 'sans-serif' }
                     ,smallPlainText: { fontSize:10, fontFamily: 'sans-serif' }
                     ,text10: { fontSize:10, fontFamily: 'berrylicious' }
