@@ -19,23 +19,23 @@ export default StyleSheet.create({
     ,...Platform.select({
                 ios:
                 {
-                    summerJoy: {fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,h1: { fontSize:36, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,h2: { fontSize:30, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,h3: { fontSize:24, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,h4: { fontSize:16, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,title: { fontSize:48, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,plainText: { fontSize:12, fontFamily: 'Helvetica', backgroundColor:'transparent' }
-                    ,smallPlainText: { fontSize:10, fontFamily: 'Helvetica', backgroundColor:'transparent' }
-                    ,text10: { fontSize:10, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
-                    ,boldText10: { fontSize:10, fontFamily:'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
-                    ,text12: { fontSize:12, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
-                    ,boldText12: { fontSize:12, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
-                    ,text14: { fontSize:14, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
-                    ,boldText14: { fontSize:14, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
-                    ,text16: { fontSize:16, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
-                    ,boldText16: { fontSize:16, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
-                    ,boldText24: { fontSize:24, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
+                    summerJoy: {fontFamily: 'SummerJoy' }
+                    ,h1: { fontSize:36, fontFamily: 'SummerJoy' }
+                    ,h2: { fontSize:30, fontFamily: 'SummerJoy' }
+                    ,h3: { fontSize:24, fontFamily: 'SummerJoy' }
+                    ,h4: { fontSize:16, fontFamily: 'SummerJoy' }
+                    ,title: { fontSize:48, fontFamily: 'SummerJoy' }
+                    ,plainText: { fontSize:12, fontFamily: 'Helvetica' }
+                    ,smallPlainText: { fontSize:10, fontFamily: 'Helvetica' }
+                    ,text10: { fontSize:10, fontFamily: 'Berrylicious' }
+                    ,boldText10: { fontSize:10, fontFamily:'Berrylicious', fontWeight:'bold' }
+                    ,text12: { fontSize:12, fontFamily: 'Berrylicious' }
+                    ,boldText12: { fontSize:12, fontFamily: 'Berrylicious', fontWeight:'bold' }
+                    ,text14: { fontSize:14, fontFamily: 'Berrylicious' }
+                    ,boldText14: { fontSize:14, fontFamily: 'Berrylicious', fontWeight:'bold' }
+                    ,text16: { fontSize:16, fontFamily: 'Berrylicious' }
+                    ,boldText16: { fontSize:16, fontFamily: 'Berrylicious', fontWeight:'bold' }
+                    ,boldText24: { fontSize:24, fontFamily: 'Berrylicious', fontWeight:'bold' }
                 },
                 android: {
                     summerJoy: {fontFamily: 'summer_joy' }
