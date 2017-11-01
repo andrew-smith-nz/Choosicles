@@ -59,7 +59,8 @@ export function changePage(state = { activeBookId: null, pageData: null, pageHis
         }
         case CHANGE_PAGE: 
         {
-            let pageData = getPageData(action.pageId);
+            //let pageData = getPageData(action.pageId);
+            let pageData = getPageByNumber(20);
             if (pageData)
             {
                 let history = [];
@@ -103,6 +104,21 @@ function getPageData(pageId)
         for (j = 0; j < bookData.books[i].pages.length; j++)
         {
             if (bookData.books[i].pages[j].id === pageId)
+            {
+                return bookData.books[i].pages[j];
+            }
+        }
+    }
+    return null;
+}
+
+function getPageByNumber(pageNumber)
+{
+    for (i = 0; i < bookData.books.length; i++)
+    {
+        for (j = 0; j < bookData.books[i].pages.length; j++)
+        {
+            if (bookData.books[i].pages[j].pageNumber === pageNumber)
             {
                 return bookData.books[i].pages[j];
             }

@@ -149,7 +149,7 @@ export class GroupBox extends Component
 {
     render() {
         return (
-            <View style={{ backgroundColor:'transparent' }}>
+            <View>
                 <View style={[style.blackBorder, {padding:10, paddingTop: 20, backgroundColor:'#F7E19E'}]}>
                     {this.props.children}
                 </View>

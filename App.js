@@ -27,7 +27,7 @@ export default class App extends React.Component {
   componentWillMount()
   {
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
-    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 2000);
+    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 200);
   }
 
   componentDidMount()

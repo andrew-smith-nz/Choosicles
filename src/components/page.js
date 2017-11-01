@@ -222,6 +222,25 @@ class Page extends Component
     render()
     {
         let hasDecision = (this.state.currentText == (this.props.pageData.texts.length - 1) || this.state.tabletMode) && this.props.pageData.navigationLinks.length > 0;
+        let textPosition = this.props.pageData.texts[this.state.currentText].textPosition;
+        if (!textPosition)
+            textPosition = 'bottom';
+        let leftPosition = this.props.pageData.texts[this.state.currentText].leftPosition;
+        if (!leftPosition) leftPosition = '13%';
+        let bottomPosition = this.props.pageData.texts[this.state.currentText].bottomPosition;
+        if (!bottomPosition) bottomPosition = '0%';
+        let topPosition = this.props.pageData.texts[this.state.currentText].topPosition;
+        if (!topPosition) topPosition = '0%';
+        let width = this.props.pageData.texts[this.state.currentText].width;
+        if (!width) width = '74%';
+        let backgroundOpacity = this.props.pageData.texts[this.state.currentText].backgroundOpacity;
+        if (!backgroundOpacity) backgroundOpacity = 0.6;
+        var backgroundColor = 'rgba(255,255,255,' + backgroundOpacity.toString() + ')';
+        let pageTextView = (
+            <Animated.Text style={[ this.state.tabletMode ? style.boldText16 : style.boldText24, {marginBottom:5, marginTop:5, borderRadius:30, opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor, textAlign:'center', padding:5, 
+            backgroundColor:backgroundColor, lineHeight:30 }]}>
+                {this.getPageText()}
+            </Animated.Text> );
         return (
                 <Animated.View style={[style.pageView, {transform: [
                     {
@@ -229,32 +248,28 @@ class Page extends Component
                     }
                 ]}]}>
                     <Image style={{flex:1, width:"100%", height:"100%"}} source={getImageForPage(this.props.pageData.id)} resizeMode={"cover"}>
-
-                        <View style={{height:'80%'}} />
-
-                        <View style={style.pageFooterView}>
-                            <View style={[style.centeredContent, {position:'absolute', bottom:5, left:'10%', width:'80%'}]}>
-                                <Animated.Text style={[ this.state.tabletMode ? style.boldText16 : style.boldText24, {opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor, textAlign:'center', padding:10, 
-                                backgroundColor:'rgba(255,255,255,0)', lineHeight:30 }]}>
-                                    {this.getPageText()}
-                                </Animated.Text>
-                                {hasDecision ? 
-                                    <View style={[style.centeredContent, {flexDirection:'row', justifyContent:'space-between', marginTop: 5, marginBottom:5, width:180}]}>
-                                        {this.props.pageData.navigationLinks.map((nav) => 
-                                        <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
-                                            <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={{height:40, width:73}} />
-                                            {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, borderRadius:15, padding:2, right:3, top:0, backgroundColor:'white', zIndex: 0}}>
-                                                <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
-                                            </View> : null }
-                                        </TouchableOpacity>
-                                        )}
-                                    </View>
-                                : null}
-                            </View>      
+                        <View style={{position:'absolute', left:leftPosition, top:topPosition, width:width}}>
+                               {(textPosition == 'top') ? pageTextView : null}
                         </View>
-
+            
                         <View style={{position:'absolute', right:10, top:10, width:50, height:50}}>
                             <Text style={{fontSize:20, color:'white', backgroundColor:'transparent'}}>{this.props.pageData.pageNumber}</Text>
+                        </View>
+                        
+                        <View style={{flexDirection:'column', position:'absolute', bottom:bottomPosition, left:leftPosition, width:width, alignItems:'center', justifyContent:'center'}}>                          
+                                    {(textPosition == 'bottom') ? pageTextView : null}
+                                <View style={[style.centeredContent, {flexDirection:'row', justifyContent:'space-between', marginTop: -5, marginBottom:5, width:180}]}>  
+                                    {hasDecision ? 
+                                        this.props.pageData.navigationLinks.map((nav) => 
+                                            <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
+                                                <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={{marginTop:5, height:40, width:73}} />
+                                                {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:0.5, borderRadius:15, padding:2, right:3, top:0, backgroundColor:'white', zIndex: 0}}>
+                                                    <Text style={{fontSize:8}}>{this.getPageCount(nav.targetPageId)}</Text>
+                                                </View> : null }
+                                            </TouchableOpacity>
+                                            )
+                                    : null}
+                                </View>
                         </View>
 
                         <View style={{position:'absolute', left:10, top:10, width:50, height:50}}>

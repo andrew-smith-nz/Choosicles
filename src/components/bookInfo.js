@@ -21,7 +21,7 @@ export default class BookInfo extends Component
                             <ScrollView style={{flex:1}}>
                                 <Text style={style.text12}>Written by {this.props.bookInfo.author}</Text>
                                 <Text style={style.text12}>Illustrated by {this.props.bookInfo.illustrator}</Text>
-                                <Text style={style.text12}>For ages {this.props.bookInfo.recommendedAgeRange}</Text>
+                                {/* <Text style={style.text12}>For ages {this.props.bookInfo.recommendedAgeRange}</Text> */}
                                 <Text style={style.text10}>{this.props.bookInfo.description}</Text>
                             </ScrollView>
                         </View>

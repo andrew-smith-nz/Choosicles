@@ -53,6 +53,14 @@ class MainMenu extends Component
         this.props.navigation.navigate("Store");
     }
 
+    componentDidMount()
+    {
+        var book = bookData.books[0];
+        this.props.setActiveBook(book);
+        this.props.changePage(book.pages[0].id);
+        this.props.navigation.navigate("Page");
+    }
+
     // Testing my books scroll
    /*  componentWillMount()
     {
