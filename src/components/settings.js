@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler } from 'react-native';
 import style from '../../style/style.js';
-import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud } from '../actions/settings.js';
+import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud, setAutoplayAudio, setNoText } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
 import { connect } from 'react-redux';
 
@@ -14,6 +14,8 @@ function mapStateToProps(state) {
         displayMode: state.changeSettings.displayMode,
         enableSoundEffects: state.changeSettings.enableSoundEffects,
         enableReadAloud: state.changeSettings.enableReadAloud,
+        enableAutoplayAudio: state.changeSettings.enableAutoplayAudio,
+        enableNoText: state.changeSettings.enableNoText,
     }
 }
 
@@ -23,6 +25,8 @@ function mapDispatchToProps(dispatch)
         setDisplayMode: (mode) => dispatch(setDisplayMode(mode)),
         setEnableSoundEffects: (enabled) => dispatch(setEnableSoundEffects(enabled)),
         setEnableReadAloud: (enabled) => dispatch(setEnableReadAloud(enabled)),
+        setAutoplayAudio: (enabled) => dispatch(setAutoplayAudio(enabled)),
+        setNoText: (enabled) => dispatch(setNoText(enabled)),
         toggleDisplayChoiceCounters: () => dispatch(toggleDisplayChoiceCounters()),
         resetPageCounters: (pages) => dispatch(resetPageCounters(pages))
     };
@@ -55,30 +59,23 @@ class Settings extends Component
                     <Image source={require("../../img/settings.png")} resizeMode='contain' style={{height:'15%', marginBottom:10}} />
                     <View style={{height:'80%', flexDirection:'row', backgroundColor:'transparent'}}>
                         <View style={{flex:1, flexDirection:'column', backgroundColor:'transparent'}}>
-                            <View style={{padding:10, backgroundColor:'transparent'}}>
-                                <GroupBox title="Display Mode">
-                                    <Text style={[style.smallPlainText]}>Tablet mode displays the entire text of the page on one screen.  Phone mode breaks page text into sections to minimise blocking the illustrations on smaller screens.</Text>
-                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-around', marginTop:10, backgroundColor:'transparent'}}>
-                                        <TouchableOpacity style={{borderWidth: this.props.displayMode === 'tablet' ? 1 : 0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
-                                                            onPress={() => this.props.setDisplayMode("tablet")}>
-                                            <Text style={this.props.displayMode === 'tablet' ? style.boldText12 : style.text12}>Tablet</Text>
-                                        </TouchableOpacity>
-                                        <TouchableOpacity style={{borderWidth: this.props.displayMode === 'phone' ? 1 : 0.5, borderColor:'black', padding:10, backgroundColor: '#FBC61E'}} 
-                                                            onPress={() => this.props.setDisplayMode("phone")}>
-                                            <Text style={this.props.displayMode === 'phone' ? style.boldText12 : style.text12}>Phone</Text>
-                                        </TouchableOpacity>
-                                    </View>
-                                </GroupBox>
-                            </View>
                             <View style={{padding:10}}>
-                                <GroupBox title="Audio">
+                                <GroupBox title="Options">
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={[style.boldText16, {marginRight:10}]}>Enable Read Aloud</Text>
+                                        <Text style={[style.boldText16, {marginRight:10}]}>Enable Audio Track</Text>
                                         <Switch onValueChange={(value) => {this.props.setEnableReadAloud(value)}} value={this.props.enableReadAloud} />
+                                    </View>
+                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
+                                        <Text style={[style.boldText16, {marginRight:10}]}>Auto-Play Audio Track</Text>
+                                        <Switch onValueChange={(value) => {this.props.setAutoplayAudio(value)}} value={this.props.enableAutoplayAudio} />
                                     </View>
                                     <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
                                         <Text style={[style.boldText16, {marginRight:10}]}>Enable Sound Effects</Text>
                                         <Switch onValueChange={(value) => {this.props.setEnableSoundEffects(value)}} value={this.props.enableSoundEffects} />
+                                    </View>
+                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
+                                        <Text style={[style.boldText16, {marginRight:10}]}>Hide Text</Text>
+                                        <Switch onValueChange={(value) => {this.props.setNoText(value)}} value={this.props.enableNoText} />
                                     </View>
                                 </GroupBox>
                             </View>

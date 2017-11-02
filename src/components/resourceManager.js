@@ -850,10 +850,7 @@ export function getSoundEffectForPage(pageId)
 
 export function getReadingForPage(pageId, partId)
 {
-    var readings = _resourcesByPage.filter(p => p.pageId === pageId)[0].readings;
-    if (!readings) return null;
-    var reading = readings.filter(r => r.part == partId)[0];
-    return reading ? reading.audio : null;
+  return 'Sound effect page ' + _resourcesByPage.filter(p => p.pageId === pageId)[0].pageNumber + '.mp3';
 }
 
 export function getCoverForBook(bookId)

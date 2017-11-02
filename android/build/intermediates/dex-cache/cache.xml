@@ -75,6 +75,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\Choosicles\react-native-audio-toolkit\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67ebccccbf5d32f2f0b9a3d5c847052b43d2b6cc">
+        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\Choosicles-react-native-audio-toolkit-unspecified_36925ea9da2b436f55703758a68559113b99f2da.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Andrew\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
@@ -90,15 +99,6 @@
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
         <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f9a7262ed6d8401ba8cdbcd09f86f8f64392f454.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\Choosicles\react-native-sound\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="7928ca2aee98dbdd5120ff66393d67402b5b719c">
-        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\Choosicles-react-native-sound-unspecified_001c07a67bde9e587a20d56e82ed2c15cc30271f.jar" />
     </item>
     <item
         is-multidex="false"

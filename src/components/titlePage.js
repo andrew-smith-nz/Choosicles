@@ -55,6 +55,11 @@ class TitlePage extends Component
                         <TouchableOpacity style={{borderWidth:0.5, borderColor:'black', padding:5, backgroundColor:'white'}} onPress={() => this.props.navigation.navigate("Page")}>
                             <Text style={[style.boldText24, {padding:10}]}>Start</Text>
                         </TouchableOpacity>
+                    </View>                            
+                    <View style={{position:'absolute', right:10, top:10, zIndex: 0, alignItems:'center', justifyContent:'center'}}>
+                        <TouchableOpacity style={{padding:5}} onPress={() => this.props.navigation.navigate("MainMenu")}>
+                            <Image source={require('../../img/home.png')} style={{width:50, height:50}} />
+                        </TouchableOpacity>
                     </View>
                 </View>);
     }

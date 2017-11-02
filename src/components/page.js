@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler } from 'react-native';
 import style from '../../style/style.js';
-import { Sound } from 'react-native-sound';
 import { getImageForPage, getSoundEffectForPage, getReadingForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter } from '../actions/book.js';
 import { connect } from 'react-redux';
 import NameMonster from './nameMonster.js';
 import ShadowText from './shadowText.js';
 import Reactotron from 'reactotron-react-native';
+import { Player } from 'react-native-audio-toolkit';
 
 function mapStateToProps(state) {
     return { 
@@ -20,6 +20,8 @@ function mapStateToProps(state) {
         displayMode: state.changeSettings.displayMode,
         enableSoundEffects: state.changeSettings.enableSoundEffects,
         enableReadAloud: state.changeSettings.enableReadAloud,
+        enableNoText: state.changeSettings.enableNoText,
+        enableAutoplayAudio: state.changeSettings.enableAutoplayAudio
     }
 }
 
@@ -51,28 +53,93 @@ class Page extends Component
             slideX: new Animated.Value(Dimensions.get('window').width), 
             textFadeOpacity: new Animated.Value(0),
             nameMonsterVisible: false,
-            tabletMode: props.displayMode === "tablet"
+            tabletMode: false
         };
         this._slideProgress = new Animated.Value(0);
     }
 
-    loadReadingAudio(props, partId){
-        var reading = getReadingForPage(props.pageData.id, partId);
-        Reactotron.log(reading);
-        console.log(reading);
-        if (!reading) 
-            return;
+    loadReadingAudio(props, partId){    
+        this.setState({playingSound: []})
+        var numToLoad = props.pageData.texts.length;
+        var numLoaded = 0;
+        if (this.props.enableNoText)
+        {
+            var players = [];
+            for (i = 1; i <= props.pageData.texts.length; i++)
+            {                
+                var player = new Player(props.pageData.assetCode + '_' + i + '_audio.mp3', { autoDestroy:false });
+                players.push(player);
+                player.prepare(() => {numLoaded++; if (props.enableAutoplayAudio && numLoaded === numToLoad) { this.startAudio() }});
+            }
+            this.setState({playingSound: players})
+        }
+        else
+        {            
+            var player = new Player(props.pageData.assetCode + '_' + (partId + 1) + '_audio.mp3', { autoDestroy:false });
+            players.push(player);
+            player.prepare(() => {if (props.enableAutoplayAudio) { this.startAudio() }});
+        }
+    }    
 
-        var Sound = require('react-native-sound');
-        var sound = new Sound(reading, Sound.MAIN_BUNDLE, (error) => {
-            Reactotron.log('changed sound');
-            this.setState({playingSound: sound});
-        });
+    startAudio()
+    {
+        this.toggleReading(true);
+    }
+    
+    loadSoundEffect(newProps){                
+        var player = new Player(newProps.pageData.assetCode + '_soundeffect.mp3', { autoDestroy:false });
+        player.prepare(() => {this.setState({soundEffect: player})});
+    }   
+    
+    playSound()
+    {
+        if (this.state.soundEffect)
+        {
+            this.state.soundEffect.play();
+        }
+    } 
+
+    playReading(i)
+    {
+        if ((i + 1) < this.state.playingSound.length)
+        {
+            Reactotron.log("with following");
+            this.state.playingSound[i].play().on('ended', () => this.playReading(i + 1));
+        }
+        else
+        {
+            Reactotron.log("last one");
+            this.state.playingSound[i].play().on('ended', () =>  this.setState({speaker: false}));
+        }
+    }
+
+    toggleReading(status)
+    {
+        if (status == null)
+            status = !this.state.speaker;
+        this.setState({speaker: status});
+        if (this.state.playingSound)
+        {
+            if (status)
+            {
+                Reactotron.log(this.state.playingSound);
+                this.playReading(0);
+            }
+            else
+            {
+                // can it, son
+                for (i = 0; i < this.state.playingSound.length; i++)
+                {
+                    this.state.playingSound[i].stop();
+                }
+            }
+        }
     }
 
     componentWillMount()
     {
         this.loadReadingAudio(this.props, 0);
+        this.loadSoundEffect(this.props);
     }
 
     componentWillReceiveProps(newProps)
@@ -86,6 +153,7 @@ class Page extends Component
             () => this.animateIn());   
 
         this.loadReadingAudio(newProps, 0);
+        this.loadSoundEffect(newProps);
     }
 
     animateIn()
@@ -124,7 +192,7 @@ class Page extends Component
 
     forward()
     {
-        if ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode)
+        if ((this.state.currentText < this.props.pageData.texts.length - 1))
         {            
             this.setState({currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
             this.toggleReading(false);
@@ -156,52 +224,9 @@ class Page extends Component
         }
     }
 
-    playSound()
-    {
-        Reactotron.log("play sound");
-        var Sound = require('react-native-sound');
-        Sound.setCategory('Playback');
-        const play = (error, sound) => sound.play()
-        // doesn't work with Require - possibly only a dev mode problem?  Need to test with production apk.
-        var s = new Sound(this.props.pageData.assetCode + '_soundeffect.mp3', Sound.MAIN_BUNDLE, (error) => play(error, s));
-        Reactotron.log(s);
-    }
-
-    toggleReading(status)
-    {
-        if (status == null)
-            status = !this.state.speaker;
-        this.setState({speaker: status});
-        if (this.state.playingSound)
-        {
-            if (status)
-            {
-                this.state.playingSound.play();
-            }
-            else
-            {
-                this.state.playingSound.stop();
-            }
-        }
-    }
-
     getPageText()
     {
-        let originalText = "";
-        if (this.state.tabletMode)
-        {
-            originalText = this.props.pageData.texts.map(t => t.text).join(" ");
-        }
-        else
-        {
-            originalText = this.props.pageData.texts[this.state.currentText].text;
-        }
-        if (this.props.name)
-        {
-            originalText = originalText.replace(new RegExp("your pet monster", "g"), this.props.name);
-            originalText = originalText.replace(new RegExp("Your pet monster", "g"), this.props.name.substring(0,1).toUpperCase() + this.props.name.substring(1));
-        }
-        return originalText;
+        return this.props.pageData.texts[this.state.currentText].text;
     }
 
     componentWillUpdate()
@@ -221,7 +246,7 @@ class Page extends Component
 
     render()
     {
-        let hasDecision = (this.state.currentText == (this.props.pageData.texts.length - 1) || this.state.tabletMode) && this.props.pageData.navigationLinks.length > 0;
+        let hasDecision = this.props.enableNoText || (this.state.currentText == (this.props.pageData.texts.length - 1) && this.props.pageData.navigationLinks.length > 0);
         let textPosition = this.props.pageData.texts[this.state.currentText].textPosition;
         if (!textPosition)
             textPosition = 'bottom';
@@ -236,9 +261,9 @@ class Page extends Component
         let backgroundOpacity = this.props.pageData.texts[this.state.currentText].backgroundOpacity;
         if (!backgroundOpacity) backgroundOpacity = 0.6;
         var backgroundColor = 'rgba(255,255,255,' + backgroundOpacity.toString() + ')';
-        let pageTextView = (
-            <Animated.Text style={[ this.state.tabletMode ? style.boldText16 : style.boldText24, {marginBottom:5, marginTop:5, borderRadius:30, opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor, textAlign:'center', padding:5, 
-            backgroundColor:backgroundColor, lineHeight:30 }]}>
+        let pageTextView = this.props.enableNoText ? null : ( 
+            <Animated.Text style={[ style.boldText24, {marginBottom:5, marginTop:5, borderRadius:30, opacity:this.state.textFadeOpacity, 
+                color:this.props.pageData.textColor, textAlign:'center', padding:5, paddingBottom:5, backgroundColor:backgroundColor }]}>
                 {this.getPageText()}
             </Animated.Text> );
         return (
@@ -251,14 +276,10 @@ class Page extends Component
                         <View style={{position:'absolute', left:leftPosition, top:topPosition, width:width}}>
                                {(textPosition == 'top') ? pageTextView : null}
                         </View>
-            
-                        <View style={{position:'absolute', right:10, top:10, width:50, height:50}}>
-                            <Text style={{fontSize:20, color:'white', backgroundColor:'transparent'}}>{this.props.pageData.pageNumber}</Text>
-                        </View>
-                        
-                        <View style={{flexDirection:'column', position:'absolute', bottom:bottomPosition, left:leftPosition, width:width, alignItems:'center', justifyContent:'center'}}>                          
+                                    
+                        <View style={{flexDirection:'column', position:'absolute', bottom:bottomPosition, left:leftPosition, width:width, padding:5, alignItems:'center', justifyContent:'center'}}>                          
                                     {(textPosition == 'bottom') ? pageTextView : null}
-                                <View style={[style.centeredContent, {flexDirection:'row', justifyContent:'space-between', marginTop: -5, marginBottom:5, width:180}]}>  
+                                <View style={[style.centeredContent, {flexDirection:'row', justifyContent:'space-between', marginBottom:5, width:180}]}>  
                                     {hasDecision ? 
                                         this.props.pageData.navigationLinks.map((nav) => 
                                             <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
@@ -278,14 +299,14 @@ class Page extends Component
                             </TouchableOpacity> 
                         </View>
                         <View style={[style.centeredContent, {position:'absolute', left:10, top:0, height:'100%'}]}>
-                            {this.state.currentText > 0 && !this.state.tabletMode ? 
+                            {!this.props.enableNoText && this.state.currentText > 0 ?
                                 <TouchableOpacity onPress={() => this.back()}>
                                     <Image source={require('../../img/arrow_back.png')} style={{width:50, height:50}} />
                                 </TouchableOpacity> 
                             : null }
                         </View>
                         <View style={[style.centeredContent, {position:'absolute', right:10, top:0, height:'100%'}]}>
-                            {(this.props.pageData.navigationLinks.length == 0) || ((this.state.currentText < this.props.pageData.texts.length - 1) && !this.state.tabletMode) ? 
+                            {!this.props.enableNoText && ((this.props.pageData.navigationLinks.length == 0) || (this.state.currentText < this.props.pageData.texts.length - 1)) ? 
                                 <TouchableOpacity onPress={() => this.forward()}>
                                     <Image source={require('../../img/arrow_forward.png')} style={{width:50, height:50}} />
                                 </TouchableOpacity>
@@ -303,7 +324,12 @@ class Page extends Component
                                     {this.state.speaker ? <Image source={require('../../img/speaker_off.png')} style={{width:50, height:50}} /> 
                                                         : <Image source={require('../../img/speaker_on.png')} style={{width:50, height:50}} />}
                                 </TouchableOpacity> 
-                            </View> : null}
+                            </View> : null}                            
+                        <View style={{position:'absolute', right:10, top:10, zIndex: 0, alignItems:'center', justifyContent:'center'}}>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate("MainMenu")}>
+                                <Image source={require('../../img/home.png')} style={{width:50, height:50}} />
+                            </TouchableOpacity>
+                        </View>
                     </Image>
                 </Animated.View>
         );

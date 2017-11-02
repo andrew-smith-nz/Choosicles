@@ -7,6 +7,7 @@ import { changePage, setActiveBook, clearHistory } from '../actions/book.js';
 import { GroupBox } from './settings.js';
 import Reactotron from 'reactotron-react-native';
 
+
 const bookData = require('../../books.json');
 
 function mapStateToProps(state) {
@@ -55,10 +56,11 @@ class MainMenu extends Component
 
     componentDidMount()
     {
-        var book = bookData.books[0];
-        this.props.setActiveBook(book);
-        this.props.changePage(book.pages[0].id);
-        this.props.navigation.navigate("Page");
+        // var book = bookData.books[0];
+        // this.props.setActiveBook(book);
+        // this.props.changePage(book.pages[0].id);
+        // this.props.navigation.navigate("Page");
+
     }
 
     // Testing my books scroll
