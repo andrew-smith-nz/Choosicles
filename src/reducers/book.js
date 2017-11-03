@@ -1,5 +1,7 @@
 import { CHANGE_PAGE, BACKTRACK, CLEAR_HISTORY, CHANGE_NAME, INCREMENT_PAGE_COUNTER, RESET_PAGE_COUNTERS, SET_ACTIVE_BOOK } from '../actions/book.js'
 
+import Reactotron from 'reactotron-react-native';
+
 const bookData = require('../../books.json');
 
 export function pageCounters(state = { pageCounters: [] }, action)
@@ -66,7 +68,8 @@ export function changePage(state = { activeBookId: null, pageData: null, pageHis
                 let history = [];
                 if (state.pageHistory)
                     history = state.pageHistory.slice();
-                history.push(pageData);
+                if (history.length === 0 || history[history.length - 1].id != action.pageId)
+                    history.push(pageData);
                 return { ...state, pageData: pageData, pageHistory: history, direction: 'forward' };  
             }
             else

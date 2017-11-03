@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler } from 'react-native';
+import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler, PixelRatio, Alert } from 'react-native';
 import style from '../../style/style.js';
 import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud, setAutoplayAudio, setNoText } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
@@ -56,42 +56,42 @@ class Settings extends Component
     render()
     {
         return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
-                    <Image source={require("../../img/settings.png")} resizeMode='contain' style={{height:'15%', marginBottom:10}} />
+                    <Image source={require("../../img/settings.png")} resizeMode='contain' style={style.topText} />
                     <View style={{height:'80%', flexDirection:'row', backgroundColor:'transparent'}}>
                         <View style={{flex:1, flexDirection:'column', backgroundColor:'transparent'}}>
-                            <View style={{padding:10}}>
+                            <View style={style.padding10}>
                                 <GroupBox title="Options">
-                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={[style.boldText16, {marginRight:10}]}>Enable Audio Track</Text>
-                                        <Switch onValueChange={(value) => {this.props.setEnableReadAloud(value)}} value={this.props.enableReadAloud} />
+                                    <View style={style.switchView}>
+                                        <Text style={style.boldText16}>Enable Audio Track</Text>
+                                        <Switch onValueChange={(value) => {this.props.setEnableReadAloud(value)}} value={this.props.enableReadAloud} style={style.switch} />
                                     </View>
-                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={[style.boldText16, {marginRight:10}]}>Auto-Play Audio Track</Text>
-                                        <Switch onValueChange={(value) => {this.props.setAutoplayAudio(value)}} value={this.props.enableAutoplayAudio} />
+                                    <View style={style.switchView}>
+                                        <Text style={style.boldText16}>Auto-Play Audio Track</Text>
+                                        <Switch onValueChange={(value) => {this.props.setAutoplayAudio(value)}} value={this.props.enableAutoplayAudio} style={style.switch} disabled={this.props.enableNoText} />
                                     </View>
-                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={[style.boldText16, {marginRight:10}]}>Enable Sound Effects</Text>
-                                        <Switch onValueChange={(value) => {this.props.setEnableSoundEffects(value)}} value={this.props.enableSoundEffects} />
+                                    <View style={style.switchView}>
+                                        <Text style={style.boldText16}>Enable Sound Effects</Text>
+                                        <Switch onValueChange={(value) => {this.props.setEnableSoundEffects(value)}} value={this.props.enableSoundEffects} style={style.switch} />
                                     </View>
-                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={[style.boldText16, {marginRight:10}]}>Hide Text</Text>
-                                        <Switch onValueChange={(value) => {this.props.setNoText(value)}} value={this.props.enableNoText} />
+                                    <View style={style.switchView}>
+                                        <Text style={style.boldText16}>Hide Text</Text>
+                                        <Switch onValueChange={(value) => {this.props.setNoText(value)}} value={this.props.enableNoText} style={style.switch} />
                                     </View>
                                 </GroupBox>
                             </View>
                         </View>
                         <View style={{flex:1, flexDirection:'column'}}>
-                            <View style={{padding:10}}>
+                            <View style={style.padding10}>
                                 <GroupBox title="Choice Tracking">
-                                    <Text style={{fontSize:10, fontStyle:'italic'}}>Records the choices made at each branch of the story and displays how many times each one has been chosen.</Text>
-                                    <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5}}>
-                                        <Text style={[style.boldText14, {marginRight:10}]}>Display Choice Counters</Text>
-                                        <Switch onValueChange={() => this.props.toggleDisplayChoiceCounters()} value={this.props.countersEnabled} />
+                                    <Text style={style.text10}>Records the choices made at each branch of the story and displays how many times each one has been chosen.</Text>
+                                    <View style={style.switchView}>
+                                        <Text style={style.boldText16}>Display Choice Counters</Text>
+                                        <Switch onValueChange={() => this.props.toggleDisplayChoiceCounters()} value={this.props.countersEnabled} style={style.switch} />
                                     </View>
-                                    <View style={{alignItems:'center', width:'100%', marginTop:10}}>
-                                        <TouchableOpacity style={[style.blackBorder, {padding:10, backgroundColor: '#FBC61E'}]} 
+                                    <View style={[style.marginTop10, {alignItems:'center', width:'100%'}]}>
+                                        <TouchableOpacity style={[style.blackBorder, style.padding10, {backgroundColor: '#FBC61E'}]} 
                                                             onPress={() => this.setState({ resetCountersModalVisible:true })}>
-                                            <Text style={style.boldText14}>Reset Choice Counters</Text>
+                                            <Text style={style.boldText16}>Reset Choice Counters</Text>
                                         </TouchableOpacity>
                                     </View>
                                 </GroupBox>
@@ -103,15 +103,16 @@ class Settings extends Component
                             <TouchableOpacity style={{flex:1}} onPress={() => this.setState({ resetCountersModalVisible:false })} >
                                 <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                     <TouchableOpacity onPress={null} style={{height:'80%', width:'50%', alignItems: 'center', justifyContent:'center'}} activeOpacity={1}>
-                                            <View style={{flex:1, flexDirection:'column', width:'100%', height:'100%', padding:20, backgroundColor:'#F7E19E', borderColor:'black', borderWidth:0.5, borderRadius:10, alignItems:'center', justifyContent:'space-between'}}>
-                                                <Text style={[style.boldText, {fontSize:16}]}>Reset Choice Counters for:</Text>
-                                                <ScrollView style={{paddingTop:10, width:'100%', backgroundColor:'#F7E19E'}} contentContainerStyle={{alignItems:'center'}}>
-                                                    <BookSelect key="All" title="All Books" callback={() => this.props.resetPageCounters([])} />
+                                            <View style={[style.fill, style.padding20, style.blackBorder, {flex:1, flexDirection:'column', backgroundColor:'#F7E19E', 
+                                                    alignItems:'center', justifyContent:'space-between'}]}>
+                                                <Text style={style.boldText16}>Reset Choice Counters for:</Text>
+                                                <ScrollView style={[style.padding10, {width:'100%', backgroundColor:'#F7E19E'}]} contentContainerStyle={{alignItems:'center'}}>
+                                                    <BookSelect key="All" title="All Books" callback={() => { this.props.resetPageCounters([]); }} />
                                                     {bookData.books.map((book) => 
                                                     <BookSelect key={book.id} 
                                                                 title={book.title.replace("\r\n", " ")} 
                                                                 totalChoices={this.getTotalChoicesForBook(book.id)} 
-                                                                callback={() => this.props.resetPageCounters(book.pages)} />)}
+                                                                callback={() => { this.props.resetPageCounters(book.pages); }} />)}
                                                 </ScrollView>
                                             </View>
                                     </TouchableOpacity>
@@ -119,11 +120,10 @@ class Settings extends Component
                             </TouchableOpacity>
                         </Modal>
                     </View>
-                    <View style={{position:'absolute', right:10, top:10, zIndex: 0, alignItems:'center', justifyContent:'center'}}>
-                        <TouchableOpacity style={{padding:5}} onPress={() => this.props.navigation.navigate("MainMenu")}>
-                            <Image source={require('../../img/home.png')} style={{width:40, height:40}} />
-                        </TouchableOpacity>
-                    </View>
+                    <TouchableOpacity style={{position:'absolute', height:'9%', width:'6%', right:'2%', top:'2%'}} 
+                                        onPress={() => this.props.navigation.navigate("MainMenu")}>
+                        <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                    </TouchableOpacity>
                 </Image>;
     }
 }
@@ -132,11 +132,9 @@ class BookSelect extends Component
 {
     render() {
         return (
-            <TouchableOpacity onPress={() => this.props.callback()} style={[style.blackBorder, {width:'80%', backgroundColor:'#FBC61E', alignItems:'center'}]}>
+            <TouchableOpacity onPress={() => this.props.callback()} style={style.bookSelectItem}>
                 <Text style={style.boldText14}>{this.props.title}</Text>
-                {this.props.totalChoices > 0 ?
-                <Text style={style.boldText10}>{this.props.totalChoices} choice{this.props.totalChoices != 1 ? 's' : ''} made.</Text>
-                : null }
+                <Text style={style.boldText10}>{this.props.totalChoices || 0} choice{this.props.totalChoices != 1 ? 's' : ''} made.</Text>
             </TouchableOpacity>
         );
     }
@@ -147,10 +145,10 @@ export class GroupBox extends Component
     render() {
         return (
             <View>
-                <View style={[style.blackBorder, {padding:10, paddingTop: 20, backgroundColor:'#F7E19E'}]}>
+                <View style={style.groupBoxContainer}>
                     {this.props.children}
                 </View>
-                <Text style={[style.boldText16, style.blackBorder, {paddingLeft:5, paddingRight:5, position:'absolute', left: 10, top: -10, backgroundColor: '#FBC61E'}]}>{this.props.title}</Text>
+                <Text style={[style.boldText16, style.blackBorder, style.groupBoxHeader]}>{this.props.title}</Text>
             </View>
         );
     }

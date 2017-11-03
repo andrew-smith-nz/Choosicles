@@ -1,6 +1,6 @@
 import './reactotronConfig';
 import React from 'react';
-import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar, AppState } from 'react-native';
+import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar, AppState, PixelRatio, Dimensions } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
 import Page from './src/components/page.js';
 import Settings from './src/components/settings.js';
@@ -14,6 +14,7 @@ import { changePage, changeName, pageCounters } from './src/reducers/book.js'
 import { changeSettings } from './src/reducers/settings.js'
 import { persistStore, autoRehydrate, applyMiddleware } from 'redux-persist';
 import Orientation from 'react-native-orientation';
+import Reactotron from 'reactotron-react-native';
 
 let store = createStore(combineReducers({changePage, changeName, pageCounters, changeSettings}), compose(autoRehydrate({log:true})));
 
@@ -22,10 +23,14 @@ export default class App extends React.Component {
   constructor(props){
     super(props);
     this.state = { rehydrated: false, showSplash:true }
+
+    global.WIDTH_RATIO = Dimensions.get('window').width  / 640;
+    global.HEIGHT_RATIO = Dimensions.get('window').height  / 360;
   }
 
   componentWillMount()
   {
+    Orientation.lockToLandscape();    
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
     setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 200);
   }
@@ -33,6 +38,11 @@ export default class App extends React.Component {
   componentDidMount()
   {
     AppState.addEventListener('change', this.setLandscape);
+    Reactotron.log("WIDTH_RATIO = " + WIDTH_RATIO);
+    Reactotron.log("HEIGHT_RATIO = " + HEIGHT_RATIO);
+    Reactotron.log("Pixel Ratio = " + PixelRatio.get());
+    Reactotron.log("Screen width = " + Dimensions.get('window').width);
+    Reactotron.log("Screen height = " + Dimensions.get('window').height);
   }
 
   setLandscape()

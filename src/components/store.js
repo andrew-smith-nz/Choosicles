@@ -27,58 +27,37 @@ class Store extends Component
         super();
         this.state = { codeEntryVisible:false, bookInfoVisible: false, book: null };
         BackHandler.addEventListener('hardwareBackPress', () => this.props.navigation.navigate("MainMenu"));
+        //bookData.books.push(bookData.books.slice());
     }
 
     selectBook()
     {
         // Call out to Google Play API
-        Alert.alert("Buying book ... " + this.state.book.id);
+        Alert.alert("Thanks for buying " + this.state.book.title + "!");
     }
 
     render()
     {
         return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
-                    <Image source={require("../../img/buy_more_books.png")} resizeMode='contain' style={{marginTop: 20, flex:1}} />
-                    <View style={{flexDirection:'row', flex:5, alignItems:'center', justifyContent:'center'}}>
-                    {bookData.books.map((book) => 
-                            <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
+                    <Image source={require("../../img/buy_more_books.png")} resizeMode='contain' style={style.topText} />
+                    <View style={{flexDirection:'row', flex:5, alignItems:'center', justifyContent:'center', margin:'5%'}}>
+                        {bookData.books.map((book) => 
+                        <View style={[style.bookCoverView, {flex:1, flexDirection:'row'}]} key={book.id} >
+                            <TouchableOpacity style={{flex:1, flexDirection:'column'}} key={book.id} 
                                               onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
                                 <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
-                            </TouchableOpacity>)}
-                    {bookData.books.map((book) => 
-                            <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
-                                              onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
-                                <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
-                            </TouchableOpacity>)}
-                    {bookData.books.map((book) => 
-                            <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
-                                              onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
-                                <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
-                            </TouchableOpacity>)}
-                    {bookData.books.map((book) => 
-                            <TouchableOpacity style={{flexDirection:'column', width:130, alignItems:'center'}} key={book.id} 
-                                              onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
-                                <BookCover key={book.id} bookInfo={book} />
-                                <Text style={[style.boldText24, {textAlign:'center'}]}>$5.99</Text>
-                            </TouchableOpacity>)}
-                    </View>
-                    <View style={{flex:3}}>                        
-                        <TouchableOpacity style={{width:'40%', alignItems:'center', justifyContent:'center'}}
-                                            onPress={() => this.setState({ codeEntryVisible:true })}>
-                            <Image style={{width:100, alignItems:'center', justifyContent:'center'}} source={require('../../img/tall_button.png')} resizeMode="contain">
-                                <Text style={[style.boldText16, { textAlign:"center", lineHeight: 20} ]}>Redeem a</Text>
-                                <Text style={[style.boldText16, { textAlign:"center", lineHeight: 20} ]}>Gift Code</Text>
-                            </Image>
-                        </TouchableOpacity>
-                    </View>
-                    <View style={{position:'absolute', right:10, top:20, zIndex: 0, alignItems:'center', justifyContent:'center'}}>
-                        <TouchableOpacity style={{padding:5}} onPress={() => this.props.navigation.navigate("MainMenu")}>
-                            <Image source={require('../../img/home.png')} style={{width:40, height:40}} />
-                        </TouchableOpacity>
-                    </View>
+                                <Text style={[style.boldText24, {color:'transparent', textAlign:'center'}]}>$5.99</Text>
+                            </TouchableOpacity>
+                        </View>)}
+                    </View>      
+                    <View style={{flex:3}} />            
+                    <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.setState({ codeEntryVisible:true })}>
+                        <Image style={style.fill} source={require('../../img/giftcode_button.png')} resizeMode="contain">
+                        </Image>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
+                        <Image source={require('../../img/home.png')} resizeMode="contain" style={style.fill} />
+                    </TouchableOpacity>
                     <Modal transparent={true} visible={this.state.bookInfoVisible} onRequestClose={() => this.setState({ bookInfoVisible:false, book:null })} supportedOrientations={['landscape-left', 'landscape-right']}>
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                 <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>

@@ -26,7 +26,7 @@ export function changeSettings(state = { showChoiceCounters: true, displayMode: 
         }
         case SET_NO_TEXT:
         {
-            return { ...state, enableNoText: action.enabled };
+            return { ...state, enableNoText: action.enabled, enableAutoplayAudio: action.enabled || state.enableAutoplayAudio };
         }
         default: 
         {

@@ -5,8 +5,8 @@ import Reactotron from 'reactotron-react-native';
 _resourcesByBook = [
     {
         bookId:'c08310da-aa1e-4c28-a29d-510ef4b44d97',
-        coverImage: require("../../img/pages/monster/cover.jpg"),
-        endImage: require("../../img/pages/monster/end.jpg"),
+        coverImage: require("../../img/pages/monster/cover.png"),
+        endImage: require("../../img/pages/monster/end.png"),
     }
 ]
 

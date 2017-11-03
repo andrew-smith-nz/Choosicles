@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
+import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getCoverForBook } from './resourceManager.js'
 
@@ -32,18 +33,13 @@ class EndPage extends Component
     render()
     {
         return  (<View style={{flex:1}}>
-                    <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
-                    </Image>
-                    <View style={{position:'absolute', right:10, top:10, width:50, height:50}}>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate("MainMenu")}>
-                            <Image source={require('../../img/home_large.png')} style={{width:50, height:50}} />
-                        </TouchableOpacity>
-                    </View>
-                    <View style={{position:'absolute', left:10, top:10, width:50, height:50}}>
-                        <TouchableOpacity onPress={() => this.backtrack()}>
-                            <Image source={require('../../img/back.png')} style={{width:50, height:50}} />
-                        </TouchableOpacity> 
-                    </View>
+                    <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
+                    <TouchableOpacity style={style.topLeftButton} onPress={() => this.backtrack()}>
+                        <Image source={require('../../img/back.png')} resizeMode="contain" style={{width:'100%', height:'100%'}}  />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
+                        <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                    </TouchableOpacity>
                 </View>);
     }
 }

@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { changePage, setActiveBook, clearHistory } from '../actions/book.js';
 import { GroupBox } from './settings.js';
 import Reactotron from 'reactotron-react-native';
+import global from '../../global.js'
 
 
 const bookData = require('../../books.json');
@@ -88,43 +89,42 @@ class MainMenu extends Component
     
     render()
     {
-        return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%' } ]}>
-                    <Image source={require("../../img/choosicles_logo.png")} resizeMode="contain" style={{flex:1, marginTop:15}} />
-                    <View style={{flexDirection:'row', flex:4, margin:20}}>
-                        <View style={{flexDirection:'column', flex:32, alignItems:'center', marginTop:20}}>
-                            <Image style={{height:25, marginBottom:-15}} resizeMode='contain' source={require('../../img/your_books.png')} />                      
-                            <View style={{flexDirection:'row', flex:1, justifyContent:'center', alignItems:'center'}}>  
-                                <View style={{width:50}}> 
-                                    {(bookData.books.length > 3 && (this.state.myBooksIndex > 0)) ? <TouchableOpacity onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex - 1})}>               
-                                        <Image source={require('../../img/arrow_back.png')} />
+        return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={style.mainMenuView}>
+                    <Image source={require("../../img/choosicles_logo.png")} resizeMode="contain" style={{flex:1, marginTop:15 * global.HEIGHT_RATIO, marginBottom:20 * global.HEIGHT_RATIO}} />
+                    <View style={{flexDirection:'row', flex:4, margin:20 * global.HEIGHT_RATIO}}>
+                        <View style={{flexDirection:'column', flex:32, alignItems:'center'}}>
+                            <Image style={{flex:1}} resizeMode='contain' source={require('../../img/your_books.png')} />                      
+                            <View style={{flexDirection:'row', flex:9, justifyContent:'center', alignItems:'center'}}>  
+                                <View style={{flex:2, flexDirection:'row'}}> 
+                                    {(bookData.books.length > 3 && (this.state.myBooksIndex > 0)) ? 
+                                    <TouchableOpacity style={{flex:1}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex - 1})}>               
+                                        <Image source={require('../../img/arrow_back.png')} resizeMode="contain" style={{width:'100%', height:'100%', padding:5}} />
                                     </TouchableOpacity> : null }
                                 </View>
-                                <View style={{flex:1}}>
-                                    <View style={[style.bookList, {flex:1}]}>
+                                <View style={{flex:16, flexDirection:"row", justifyContent:'center'}}>
+                                    <View style={[style.bookList, {flex:1, flexDirection:"row"}]}>
                                         {bookData.books.slice(this.state.myBooksIndex, this.state.myBooksIndex + 3).map((book) => 
-                                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)} style={{backgroundColor:book.backgroundColor}}>
+                                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>
                                                 <BookCover key={book.id} bookInfo={book} />
                                             </TouchableOpacity>)}
                                     </View>
                                 </View>               
-                                <View style={{width:50}}> 
-                                    {(bookData.books.length > 3 && (this.state.myBooksIndex < bookData.books.length - 3)) ? <TouchableOpacity onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex + 1})}>
-                                        <Image source={require('../../img/arrow_forward.png')} />
+                                <View style={{flex:2, flexDirection:'row'}}> 
+                                    {(bookData.books.length > 3 && (this.state.myBooksIndex < bookData.books.length - 3)) ? 
+                                    <TouchableOpacity style={{flex:1}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex + 1})}>
+                                        <Image source={require('../../img/arrow_forward.png')} resizeMode="contain" style={[style.fill, { padding:5 }]} />
                                     </TouchableOpacity> : null }
                                 </View>
                             </View>
                         </View>
-                        <View style={{flex:8, alignItems:'center', justifyContent: 'center', marginTop:'-10%', paddingLeft:'5%'}}>
-                            <TouchableOpacity onPress={() => this.store()}>                         
-                                <Image source={require('../../img/buy_books.png')} resizeMode='contain' style={{width:110, height:70}}/>
-                            </TouchableOpacity>
-                        </View>
+                        <View style={{flex:8}} />
                     </View>
-                    <View style={{position:'absolute', right: 10, top:20}}>
-                        <TouchableOpacity onPress={() => this.settings()}>
-                            <Image source={require('../../img/cogwheel.png')} style={{height:40, width:42}} />
-                        </TouchableOpacity>
-                    </View>
+                    <TouchableOpacity onPress={() => this.settings()} style={style.topRightButton} >
+                        <Image source={require('../../img/cogwheel.png')} resizeMode="contain" style={style.fill} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={style.centerRightLargeButton} onPress={() => this.store()}>            
+                        <Image source={require('../../img/buy_books.png')} resizeMode='contain' style={style.fill}/>
+                    </TouchableOpacity>
                 </Image>;
     }
 }

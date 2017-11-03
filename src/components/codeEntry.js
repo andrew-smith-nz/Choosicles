@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity, TextInput, Picker, Alert } from 'react-native';
+import { View, Text, Image, TouchableOpacity, TextInput, Picker, Alert, PixelRatio } from 'react-native';
 import style from '../../style/style.js';
 import Reactotron from 'reactotron-react-native';
 
@@ -12,7 +12,7 @@ export default class CodeEntry extends Component
         super();
         this.tryRedeemCode = this.tryRedeemCode.bind(this);
         this.buildBookPicker = this.buildBookPicker.bind(this);
-        this.state = { giftCode: "4ECB", responseText:"", chooseABook:false, codeValid:false }
+        this.state = { giftCode: "", responseText:"", chooseABook:false, codeValid:false }
     }
 
     tryRedeemCode()
@@ -25,7 +25,6 @@ export default class CodeEntry extends Component
         fetch(url)
             .then(function(data) { return data.json(); })
             .then(function(actualData) {
-                Reactotron.log(actualData);
                 if (!actualData.Valid)
                 {
                     var  responseText="Sorry, that does not appear to be a valid gift code.  If you believe the code should be valid, please contact support at techmonster@choosicles.com and we will investigate.";
@@ -85,46 +84,46 @@ export default class CodeEntry extends Component
 
     render()
     {
-        Reactotron.log(this.state);
         return  <View style={[style.blackBorder, {flex:1 ,flexDirection:'row', alignItems:'stretch', justifyContent:'space-between', padding: 10, backgroundColor:'#F7E19E'}]}>
                     <View style={{flex:1, flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between'}}>
                         <View style={{flex:5, width:'100%', flexDirection:'column', alignItems:'flex-start', justifyContent:'flex-start', padding:10}}>
                             <View style={{flex:1, flexDirection:'row', justifyContent:'center', alignItems:'center'}}>
                                 <Text style={[style.boldText24, {flex:1}]}>Enter your Gift Code</Text>
-                                <TextInput underlineColorAndroid='transparent' style={{flex:1, height:40, margin:5, padding:5, borderColor:'black', borderWidth:0.5, borderRadius:5}}
+                                <TextInput underlineColorAndroid='transparent' style={[style.boldText24, style.textInput]}
                                  onChangeText={(text) => { this.setState({giftCode: text })}} value={this.state.giftCode}></TextInput>
                             </View>
                             <View style={{flex:2, width:'100%', flexDirection:'column'}}>
                             <Text style={[style.boldText16, {flex:1, width:'100%'}]}>{this.state.responseText}</Text>
                                 <View style={{flex:1, flexDirection:'row', alignItems:'center', justifyContent:'center'}}>
                                     {(this.state.chooseABook) ? <Picker style={{flex:2, height:'100%'}}>{this.buildBookPicker()}</Picker> : null}
-                                    {(this.state.codeValid) ? 
-                                    <TouchableOpacity style={{flex:1, height:'100%', alignItems:'center', justifyContent:'center'}} onPress={() => this.confirmCode()}>
-                                        <Image style={{width:100, alignItems:'center', justifyContent:'center'}} 
-                                                source={require('../../img/button.png')}
-                                                resizeMode="contain">
-                                            <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25} ]}>Confirm</Text>
-                                        </Image>
-                                    </TouchableOpacity> : null}
                                 </View>
                             </View>
                         </View>
                         <View style={{flex:2, width:'100%'}}>
                             <View style={{flex:1, flexDirection:'row', justifyContent:'space-between', paddingLeft:20, paddingRight:20}}>
-                                <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center'}}
+                                {(this.state.codeValid) ? 
+                                    <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center'}} onPress={() => this.confirmCode()}>
+                                        <Image style={{width:'70%', alignItems:'center', justifyContent:'center'}} 
+                                                source={require('../../img/button.png')}
+                                                resizeMode="contain">
+                                            <Text style={[style.boldText16, { textAlign:"center"} ]}>Confirm</Text>
+                                        </Image>
+                                    </TouchableOpacity> : null}
+                                {(!this.state.codeValid) ? 
+                                    <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center'}}
                                                     onPress={() => this.tryRedeemCode()} disabled={this.state.giftCode.length == 0}>
                                     <Image style={{width:'70%', alignItems:'center', justifyContent:'center'}} 
                                             source={(this.state.giftCode.length > 0) ? require('../../img/tall_button.png') : require('../../img/tall_button_disabled.png')} 
                                             resizeMode="contain">
-                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25} ]}>Redeem</Text>
+                                        <Text style={[style.boldText16, { textAlign:"center"} ]}>Redeem</Text>
                                     </Image>
-                                </TouchableOpacity>
+                                </TouchableOpacity> : null }
                                 <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center'}}
                                                     onPress={() => this.props.cancelCallback()}>
                                     <Image style={{width:'70%', alignItems:'center', justifyContent:'center'}} 
                                             source={require('../../img/tall_button.png')}
                                             resizeMode="contain">
-                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25} ]}>Close</Text>
+                                        <Text style={[style.boldText16, { textAlign:"center"} ]}>{(!this.state.codeValid) ? "Close" : "Cancel"}</Text>
                                     </Image>
                                 </TouchableOpacity>
                             </View>
