@@ -65,18 +65,20 @@ class MainMenu extends Component
     }
 
     // Testing my books scroll
-   /*  componentWillMount()
+     componentWillMount()
     {
-        var colors = ['red', 'green', 'blue', 'yellow', 'purple', 'gray'];
-        for (i = 0; i < 6; i++)
-        {
+        //for (i = 0; i < 6; i++)
+        //{
             var book = JSON.parse(JSON.stringify(bookData.books[0]));
-            book.backgroundColor = colors[i];
-            book.id = i + this.guid().substr(1);
+            book.owned = false;
             bookData.books.push(book);
-        }
+            book = JSON.parse(JSON.stringify(bookData.books[0]));
+            book.owned = false;
+            book.comingSoon = true;
+            bookData.books.push(book);
+        //}
     }
-
+/*
     guid() {
         function s4() {
           return Math.floor((1 + Math.random()) * 0x10000)
@@ -89,41 +91,54 @@ class MainMenu extends Component
     
     render()
     {
+        var book = bookData.books[this.state.myBooksIndex];
+        var prevBook = (this.state.myBooksIndex > 0) ? bookData.books[this.state.myBooksIndex - 1] : null;        
+        var nextBook = (this.state.myBooksIndex < bookData.books.length - 1) ? bookData.books[this.state.myBooksIndex + 1] : null;
+
         return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={style.mainMenuView}>
-                    <Image source={require("../../img/choosicles_logo.png")} resizeMode="contain" style={{flex:1, marginTop:15 * global.HEIGHT_RATIO, marginBottom:20 * global.HEIGHT_RATIO}} />
-                    <View style={{flexDirection:'row', flex:4, margin:20 * global.HEIGHT_RATIO}}>
-                        <View style={{flexDirection:'column', flex:32, alignItems:'center'}}>
-                            <Image style={{flex:1}} resizeMode='contain' source={require('../../img/your_books.png')} />                      
-                            <View style={{flexDirection:'row', flex:9, justifyContent:'center', alignItems:'center'}}>  
-                                <View style={{flex:2, flexDirection:'row'}}> 
-                                    {(bookData.books.length > 3 && (this.state.myBooksIndex > 0)) ? 
-                                    <TouchableOpacity style={{flex:1}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex - 1})}>               
+                    <Image source={require("../../img/choosicles_logo.png")} resizeMode="contain" style={{flex:2, marginTop:15 * global.HEIGHT_RATIO}} />
+                    <View style={{flexDirection:'row', flex:12, margin:10 * global.HEIGHT_RATIO}}>
+                        <View style={{flexDirection:'column', flex:32, alignItems:'center', padding:10, backgroundColor:'rgba(255,255,255,0.4)', borderRadius:30}}>                 
+                            <Image style={{flex:1}} resizeMode='contain' source={require('../../img/your_books.png')} />     
+                            <View style={{flexDirection:'row', flex:7, justifyContent:'center', alignItems:'center'}}>  
+                                <View style={{width:50 * global.WIDTH_RATIO, flexDirection:'row', height:'100%', alignItems:'center', marginTop:-25 * global.HEIGHT_RATIO}}> 
+                                    {(this.state.myBooksIndex > 0) ? 
+                                    <TouchableOpacity style={{width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex - 1})}>               
                                         <Image source={require('../../img/arrow_back.png')} resizeMode="contain" style={{width:'100%', height:'100%', padding:5}} />
                                     </TouchableOpacity> : null }
                                 </View>
                                 <View style={{flex:16, flexDirection:"row", justifyContent:'center'}}>
-                                    <View style={[style.bookList, {flex:1, flexDirection:"row"}]}>
-                                        {bookData.books.slice(this.state.myBooksIndex, this.state.myBooksIndex + 3).map((book) => 
-                                            <TouchableOpacity key={book.id} onPress={() => this.selectBook(book)}>
-                                                <BookCover key={book.id} bookInfo={book} />
-                                            </TouchableOpacity>)}
+                                    <View style={[style.bookList, {flex:1, flexDirection:"column"}]}>
+                                        {this.state.myBooksIndex > 0 ?
+                                            <BookCover key={prevBook.id} bookInfo={prevBook} offset={-1} />
+                                        : null}
+                                    </View>
+                                    <View style={[style.bookList, {flex:2, flexDirection:"column"}]}>
+                                        <TouchableOpacity key={bookData.books[this.state.myBooksIndex].id} onPress={() => this.selectBook(bookData.books[this.state.myBooksIndex])}>
+                                            <BookCover key={book.id} bookInfo={book} offset={0} owned={book.owned} />
+                                        </TouchableOpacity>
+                                    </View>
+                                    <View style={[style.bookList, {flex:1, flexDirection:"column"}]}>
+                                        {this.state.myBooksIndex < bookData.books.length - 1 ?
+                                        <BookCover key={nextBook} bookInfo={nextBook} offset={1} />
+                                        : null}
                                     </View>
                                 </View>               
-                                <View style={{flex:2, flexDirection:'row'}}> 
-                                    {(bookData.books.length > 3 && (this.state.myBooksIndex < bookData.books.length - 3)) ? 
-                                    <TouchableOpacity style={{flex:1}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex + 1})}>
+                                <View style={{width:50 * global.WIDTH_RATIO, flexDirection:'row', height:'100%', alignItems:'center', marginTop:-25 * global.HEIGHT_RATIO}}> 
+                                    {this.state.myBooksIndex < bookData.books.length - 1 ? 
+                                     <TouchableOpacity style={{width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex + 1})}>
                                         <Image source={require('../../img/arrow_forward.png')} resizeMode="contain" style={[style.fill, { padding:5 }]} />
                                     </TouchableOpacity> : null }
                                 </View>
                             </View>
                         </View>
-                        <View style={{flex:8}} />
                     </View>
+                    <View style={{height:65 * global.HEIGHT_RATIO}} />
                     <TouchableOpacity onPress={() => this.settings()} style={style.topRightButton} >
                         <Image source={require('../../img/cogwheel.png')} resizeMode="contain" style={style.fill} />
                     </TouchableOpacity>
-                    <TouchableOpacity style={style.centerRightLargeButton} onPress={() => this.store()}>            
-                        <Image source={require('../../img/buy_books.png')} resizeMode='contain' style={style.fill}/>
+                    <TouchableOpacity style={style.centerBottomLongButton} onPress={() => this.store()}>            
+                        <Image source={require('../../img/buybooks_long.png')} resizeMode='contain' style={style.fill}/>
                     </TouchableOpacity>
                 </Image>;
     }

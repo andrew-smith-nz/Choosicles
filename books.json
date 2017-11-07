@@ -3,6 +3,8 @@
         [       
             {
             "id": "c08310da-aa1e-4c28-a29d-510ef4b44d97",
+            "owned": true,
+            "comingSoon": false,
             "title": "Your Very Own Pet Monster",
             "coverImage": null,
             "author": "Meg Price",

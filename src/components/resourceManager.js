@@ -5,8 +5,12 @@ import Reactotron from 'reactotron-react-native';
 _resourcesByBook = [
     {
         bookId:'c08310da-aa1e-4c28-a29d-510ef4b44d97',
-        coverImage: require("../../img/pages/monster/cover.png"),
-        endImage: require("../../img/pages/monster/end.png"),
+        coverImageLarge: require("../../img/pages/monster/cover_large.png"),
+        coverImageSmall: require("../../img/pages/monster/cover_small.png"),
+        coverImageSmallUnowned: require("../../img/pages/monster/cover_small_unowned.png"),
+        coverImageRightHalf: require("../../img/pages/monster/cover_small_righthalf.png"),
+        coverImageLeftHalf: require("../../img/pages/monster/cover_small_lefthalf.png"),
+        endImage: require("../../img/pages/monster/cover_large.png"),
     }
 ]
 
@@ -850,10 +854,21 @@ export function getSoundEffectForPage(pageId)
 
 export function getReadingForPage(pageId, partId)
 {
-  return 'Sound effect page ' + _resourcesByPage.filter(p => p.pageId === pageId)[0].pageNumber + '.mp3';
+    return 'Sound effect page ' + _resourcesByPage.filter(p => p.pageId === pageId)[0].pageNumber + '.mp3';
 }
 
-export function getCoverForBook(bookId)
+export function getCoverForBook(bookId, large)
 {
-    return _resourcesByBook.filter(b => b.bookId === bookId)[0].coverImage;
+    var book = _resourcesByBook.filter(b => b.bookId === bookId)[0]
+    return large? book.coverImageLarge : book.coverImageSmall;
+}
+export function getHalfCoverForBook(bookId, left)
+{
+    var book = _resourcesByBook.filter(b => b.bookId === bookId)[0]
+    return left ? book.coverImageLeftHalf : book.coverImageRightHalf;
+}
+export function getUnownedCoverForBook(bookId)
+{
+    var book = _resourcesByBook.filter(b => b.bookId === bookId)[0]
+    return book.coverImageSmallUnowned;
 }
