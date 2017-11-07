@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler, PixelRatio, Alert } from 'react-native';
+import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler, Alert } from 'react-native';
 import style from '../../style/style.js';
 import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud, setAutoplayAudio, setNoText } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
@@ -38,7 +38,7 @@ class Settings extends Component
     {
         super();
         this.state = { resetCountersModalVisible:false }
-        BackHandler.addEventListener('hardwareBackPress', () => this.props.navigation.navigate("MainMenu"));
+        BackHandler.addEventListener('hardwareBackPress', () => this.props.navigation.goBack());
     }
 
     getTotalChoicesForBook(bookId)
@@ -120,8 +120,7 @@ class Settings extends Component
                             </TouchableOpacity>
                         </Modal>
                     </View>
-                    <TouchableOpacity style={{position:'absolute', height:'9%', width:'6%', right:'2%', top:'2%'}} 
-                                        onPress={() => this.props.navigation.navigate("MainMenu")}>
+                    <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                     </TouchableOpacity>
                 </Image>;

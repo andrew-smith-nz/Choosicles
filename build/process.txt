@@ -1,0 +1,5 @@
+As per https://facebook.github.io/react-native/docs/signed-apk-android.html
+
+1.  Generate a key file
+
+C:\Program Files\Java\jdk1.8.0_121\bin\keytool.exe -genkey -v -keystore choosicles_release.keystore -alias choosicles -keyalg RSA -keysize 2048 -validity 10000

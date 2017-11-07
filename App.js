@@ -1,6 +1,6 @@
 import './reactotronConfig';
 import React from 'react';
-import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar, AppState, PixelRatio, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar, AppState, Dimensions } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
 import Page from './src/components/page.js';
 import Settings from './src/components/settings.js';
@@ -32,17 +32,17 @@ export default class App extends React.Component {
   {
     Orientation.lockToLandscape();    
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
-    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 200);
+    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 2000);
   }
 
   componentDidMount()
   {
     AppState.addEventListener('change', this.setLandscape);
-    Reactotron.log("WIDTH_RATIO = " + WIDTH_RATIO);
-    Reactotron.log("HEIGHT_RATIO = " + HEIGHT_RATIO);
-    Reactotron.log("Pixel Ratio = " + PixelRatio.get());
-    Reactotron.log("Screen width = " + Dimensions.get('window').width);
-    Reactotron.log("Screen height = " + Dimensions.get('window').height);
+    // Reactotron.log("WIDTH_RATIO = " + WIDTH_RATIO);
+    // Reactotron.log("HEIGHT_RATIO = " + HEIGHT_RATIO);
+    // Reactotron.log("Pixel Ratio = " + PixelRatio.get());
+    // Reactotron.log("Screen width = " + Dimensions.get('window').width);
+    // Reactotron.log("Screen height = " + Dimensions.get('window').height);
   }
 
   setLandscape()
@@ -55,7 +55,7 @@ export default class App extends React.Component {
       <Provider store={store}>
         <View style={{flex:1}}>
         <StatusBar hidden={true}/>
-          {this.state.showSplash ? <Image source={require("./img/splash.png")} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
+          {this.state.showSplash ? <Image source={require("./img/wallpaper.png")} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
             <Image source={require("./img/choosicles_logo.png")} resizeMode='contain' style={{height:'20%'}} />
             </Image>
             : <Navigator /> }

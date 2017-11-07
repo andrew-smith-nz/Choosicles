@@ -33,7 +33,7 @@ class EndPage extends Component
     render()
     {
         return  (<View style={{flex:1}}>
-                    <Image source={getCoverForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
+                    <Image source={getCoverForBook(this.props.book.id, true)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
                     <TouchableOpacity style={style.topLeftButton} onPress={() => this.backtrack()}>
                         <Image source={require('../../img/back.png')} resizeMode="contain" style={{width:'100%', height:'100%'}}  />
                     </TouchableOpacity>

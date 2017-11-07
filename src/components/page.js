@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler, PixelRatio } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler } from 'react-native';
 import style from '../../style/style.js';
 import { getImageForPage, getSoundEffectForPage, getReadingForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter } from '../actions/book.js';
@@ -53,11 +53,11 @@ class Page extends Component
             slideX: new Animated.Value(Dimensions.get('window').width), 
             textFadeOpacity: new Animated.Value(0),
             nameMonsterVisible: false,
-            tabletMode: false
+            tabletMode: false,
+            paused: false,
+            currentPlayingSoundIndex: 0            
         };
         this._slideProgress = new Animated.Value(0);
-        Reactotron.log(WIDTH_RATIO);
-        Reactotron.log(HEIGHT_RATIO);
     }
 
     loadReadingAudio(props, partId){    
@@ -103,13 +103,39 @@ class Page extends Component
 
     playReading(i)
     {
+        this.setState({currentPlayingSoundIndex: i});
         if ((i + 1) < this.state.playingSound.length)
         {
             this.state.playingSound[i].play().on('ended', () => this.playReading(i + 1));
         }
         else
         {
-            this.state.playingSound[i].play().on('ended', () =>  this.setState({speaker: false}));
+            this.state.playingSound[i].play().on('ended', () => this.setState({speaker: false, currentPlayingSoundIndex: 0}));
+        }
+    }
+
+    restartReading()
+    {
+        if (this.state.playingSound)
+        {
+            for (i = 0; i < this.state.playingSound.length; i++)
+            {
+                this.state.playingSound[i].seek(0);
+            }
+            this.setState({paused: false, speaker: true});
+            this.playReading(0);
+        }
+    }
+
+    stopReading()
+    {        
+        this.setState({paused:false, speaker:false});
+        if (this.state.playingSound)
+        {
+            for (i = 0; i < this.state.playingSound.length; i++)
+            {
+                this.state.playingSound[this.state.currentPlayingSoundIndex].stop();
+            }
         }
     }
 
@@ -118,18 +144,26 @@ class Page extends Component
         if (status == null)
             status = !this.state.speaker;
         this.setState({speaker: status});
+        var restarted = false;
         if (this.state.playingSound)
         {
             if (status)
             {
-                this.playReading(0);
+                this.setState({paused: false});
+                for (i = 0; i < this.state.playingSound.length; i++)
+                {
+                    this.playReading(this.state.currentPlayingSoundIndex);
+                    restarted = true;
+                }
+                if (!restarted)
+                    this.restartReading();
             }
             else
             {
-                // can it, son
+                this.setState({paused: true});
                 for (i = 0; i < this.state.playingSound.length; i++)
                 {
-                    this.state.playingSound[i].stop();
+                    this.state.playingSound[this.state.currentPlayingSoundIndex].pause();
                 }
             }
         }
@@ -149,6 +183,7 @@ class Page extends Component
     componentWillReceiveProps(newProps)
     {
         this.setState({ 
+                paused:false,
                 currentText: 0, 
                 speaker: false, 
                 slideX: new Animated.Value  ((newProps.panDirection == "forward" ? 1 : -1) * Dimensions.get('window').width) 
@@ -157,7 +192,7 @@ class Page extends Component
         if (newProps.pageData.id != this.props.pageData.id)
         {
             // we've navigated to a fresh page, load the audio
-            this.toggleReading(false);
+            this.stopReading();
             this.loadReadingAudio(newProps, 0);
             this.loadSoundEffect(newProps);
         }
@@ -201,8 +236,8 @@ class Page extends Component
     {
         if ((this.state.currentText < this.props.pageData.texts.length - 1))
         {            
-            this.setState({currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
-            this.toggleReading(false);
+            this.setState({ paused: false, currentText: this.state.currentText + 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
+            this.stopReading();
             this.loadReadingAudio(this.props, this.state.currentText + 1);      
         }
         else
@@ -213,8 +248,8 @@ class Page extends Component
     
     back()
     {
-        this.setState({currentText: this.state.currentText - 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());
-        this.toggleReading(false);
+        this.setState({paused: false, currentText: this.state.currentText - 1, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());
+        this.stopReading();
         this.loadReadingAudio(this.props, this.state.currentText - 1);
     }
 
@@ -222,12 +257,13 @@ class Page extends Component
     {
         if (this.props.pageHistory.length == 1)
         {
-            this.toggleReading(false);
+            this.stopReading();
             BackHandler.removeEventListener('hardwareBackPress', () => this.backHandler());
             this.props.navigation.navigate("TitlePage");
         }
         else
         {            
+            this.stopReading();
             this.props.backtrack();
         }
     }
@@ -288,14 +324,16 @@ class Page extends Component
                                     
                         <View style={{flexDirection:'column', position:'absolute', bottom:bottomPosition, left:leftPosition, width:width, padding:5, alignItems:'center', justifyContent:'center'}}>                          
                                     {(textPosition == 'bottom') ? pageTextView : null}
-                                <View style={[style.centeredContent, {flexDirection:'row', justifyContent:'space-between', marginBottom:20 / PixelRatio.get(), width:720 / PixelRatio.get()}]}>  
+                                <View style={[style.centeredContent, style.choiceButtonView]}>  
                                     {hasDecision ? 
                                         this.props.pageData.navigationLinks.map((nav) => 
                                             <TouchableOpacity key={nav.id} onPress={() => { this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
-                                                <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={{marginTop:20 / PixelRatio.get(), height:240 / PixelRatio.get(), width:320 / PixelRatio.get()}} />
-                                                {this.props.showChoiceCounters ? <View style={{position:'absolute', borderColor:'black', borderWidth:2 / PixelRatio.get(), borderRadius:60 / PixelRatio.get(), padding:8 / PixelRatio.get(), right:12 / PixelRatio.get(), top:36 / PixelRatio.get(), backgroundColor:'white', zIndex: 0}}>
-                                                    <Text style={{fontSize:32 / PixelRatio.get()}}>{this.getPageCount(nav.targetPageId)}</Text>
-                                                </View> : null }
+                                                <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={style.choiceButton} />
+                                                {this.props.showChoiceCounters ? 
+                                                    <View style={style.choiceCounterView}>
+                                                        <Text style={style.text10}>{this.getPageCount(nav.targetPageId)}</Text>
+                                                    </View> 
+                                                : null }
                                             </TouchableOpacity>
                                             )
                                     : null}
@@ -330,11 +368,19 @@ class Page extends Component
                         {this.props.enableReadAloud ? 
                             <View style={style.bottomLeftButton}>
                                 <TouchableOpacity onPress={() => { this.toggleReading(); }}>
-                                    {this.state.speaker ? <Image source={require('../../img/speaker_off.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
-                                                        : <Image source={require('../../img/speaker_on.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />}
+                                    {this.state.speaker ? <Image source={require('../../img/pause.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
+                                                        : <Image source={require('../../img/play.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />}
                                 </TouchableOpacity> 
-                            </View> : null}                            
-                            <View style={style.topRightButton}>
+                            </View> 
+                        : null}   
+                        {this.props.enableReadAloud && this.state.paused ? 
+                            <View style={style.bottomLeftUpButton}>
+                                <TouchableOpacity onPress={() => { this.restartReading(); }}>
+                                    <Image source={require('../../img/restart.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
+                                </TouchableOpacity> 
+                            </View> 
+                        : null}                            
+                        <View style={style.topRightButton}>
                             <TouchableOpacity onPress={() => this.home()}>
                                 <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                             </TouchableOpacity>

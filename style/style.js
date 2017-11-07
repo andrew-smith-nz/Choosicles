@@ -1,19 +1,15 @@
 
 import React from 'react';
-import {StyleSheet, Platform, PixelRatio, Dimensions} from 'react-native';
+import {StyleSheet, Platform, Dimensions} from 'react-native';
 import global from '../global.js'
-
-// export class Ratios {
-//     const Width = Dimensions.get('window').width) * PixelRatio;
-//     const Height = Dimensions.get('window').height) * PixelRatio;
-// )
 
 export default StyleSheet.create({
     
     mainMenuView: { flex:1, flexDirection: 'column', alignItems:'center', backgroundColor:'white', width:'100%', height:'100%' }
     ,pageView: { flex:1, backgroundColor:'#FAFAFA', flexDirection:'column' }
 
-    ,bookCoverView: { alignItems:'center', justifyContent:'center', margin:10 * global.WIDTH_RATIO, width: 175 * global.WIDTH_RATIO, height: 125 * global.HEIGHT_RATIO}
+    ,bookCoverView: { alignItems:'center', justifyContent:'center', margin:10 * global.WIDTH_RATIO, width: 250 * global.WIDTH_RATIO, height: 150 * global.HEIGHT_RATIO}
+    ,bookCoverHalfView: { alignItems:'center', justifyContent:'center', margin:10 * global.WIDTH_RATIO, width: 80 * global.WIDTH_RATIO, height: 120 * global.HEIGHT_RATIO}
     ,pageFooterView: { alignItems: 'center', justifyContent:'space-between', flexDirection:'row', width:'100%', height:'20%'}
 
     ,bookList: { flexDirection: 'row', flexWrap:'wrap', alignItems:'center', justifyContent:'space-around' }
@@ -29,7 +25,10 @@ export default StyleSheet.create({
     ,groupBoxHeader: {position:'absolute', paddingLeft:5 * global.WIDTH_RATIO, paddingRight:5 * global.WIDTH_RATIO, left: 10 * global.WIDTH_RATIO, top: -10 * global.WIDTH_RATIO, 
             backgroundColor: '#FBC61E'}
 
-
+    ,choiceButtonView: { flexDirection:'row', justifyContent:'space-between', marginBottom:5 * global.HEIGHT_RATIO, width:180 * global.WIDTH_RATIO }
+    ,choiceButton: { marginTop:5 * global.HEIGHT_RATIO, height:60 * global.HEIGHT_RATIO, width:80 * global.WIDTH_RATIO }
+    ,choiceCounterView: {position:'absolute', borderColor:'black', borderWidth:0.5 * global.WIDTH_RATIO, borderRadius:15 * global.WIDTH_RATIO, padding:2 * global.WIDTH_RATIO, 
+            right:3 * global.WIDTH_RATIO, top:12  * global.WIDTH_RATIO, backgroundColor:'white', zIndex: 0 }
 
     ,topText: { marginTop: 20 * global.HEIGHT_RATIO, height: 40 * global.HEIGHT_RATIO, width: '100%', marginBottom: 10 * global.HEIGHT_RATIO }
     ,textInput: { flex:1, height: 40 * global.HEIGHT_RATIO, margin:5 * global.HEIGHT_RATIO, padding:5 * global.HEIGHT_RATIO, borderColor:'black', borderWidth:0.5 * global.HEIGHT_RATIO, borderRadius:5 * global.HEIGHT_RATIO }
@@ -49,12 +48,14 @@ export default StyleSheet.create({
     ,topLeftButton: {position:'absolute', left:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,topRightButton: {position:'absolute', right:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,bottomLeftButton: {position:'absolute', left:5 * global.WIDTH_RATIO, bottom:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
+    ,bottomLeftUpButton: {position:'absolute', left:5 * global.WIDTH_RATIO, bottom:60 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,bottomRightButton: {position:'absolute', right:5 * global.WIDTH_RATIO, bottom:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,middleLeftButton: {position:'absolute', left:5 * global.WIDTH_RATIO, top:155 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,middleRightButton: {position:'absolute', right:5 * global.WIDTH_RATIO, top:155 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
 
-    ,centerRightLargeButton: {position:'absolute', width:120 * global.WIDTH_RATIO, height:100 * global.HEIGHT_RATIO, top: 130 * global.HEIGHT_RATIO, right: 32 * global.WIDTH_RATIO}
-    ,centerBottomLargeButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, top: 280 * global.HEIGHT_RATIO, right: 250 * global.WIDTH_RATIO}
+    ,centerRightLargeButton: {position:'absolute', width:120 * global.WIDTH_RATIO, height:100 * global.HEIGHT_RATIO, top: 130 * global.HEIGHT_RATIO, right: 16 * global.WIDTH_RATIO}
+    ,centerBottomLargeButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 250 * global.WIDTH_RATIO}
+    ,centerBottomLongButton: {position:'absolute', width:150 * global.WIDTH_RATIO, height:45 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 245 * global.WIDTH_RATIO}
                                  
     ,...Platform.select({
                 ios:

@@ -45,7 +45,7 @@ class Store extends Component
                         <View style={[style.bookCoverView, {flex:1, flexDirection:'row'}]} key={book.id} >
                             <TouchableOpacity style={{flex:1, flexDirection:'column'}} key={book.id} 
                                               onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
-                                <BookCover key={book.id} bookInfo={book} />
+                                <BookCover key={book.id} bookInfo={book} offset={0} />
                                 <Text style={[style.boldText24, {color:'transparent', textAlign:'center'}]}>$5.99</Text>
                             </TouchableOpacity>
                         </View>)}

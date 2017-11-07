@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity, TextInput, Picker, Alert, PixelRatio } from 'react-native';
+import { View, Text, Image, TouchableOpacity, TextInput, Picker, Alert } from 'react-native';
 import style from '../../style/style.js';
 import Reactotron from 'reactotron-react-native';
 
