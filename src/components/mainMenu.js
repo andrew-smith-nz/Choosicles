@@ -69,13 +69,13 @@ class MainMenu extends Component
     {
         //for (i = 0; i < 6; i++)
         //{
-            var book = JSON.parse(JSON.stringify(bookData.books[0]));
-            book.owned = false;
-            bookData.books.push(book);
-            book = JSON.parse(JSON.stringify(bookData.books[0]));
-            book.owned = false;
-            book.comingSoon = true;
-            bookData.books.push(book);
+            // var book = JSON.parse(JSON.stringify(bookData.books[0]));
+            // book.owned = false;
+            // bookData.books.push(book);
+            // book = JSON.parse(JSON.stringify(bookData.books[0]));
+            // book.owned = false;
+            // book.comingSoon = true;
+            // bookData.books.push(book);
         //}
     }
 /*
@@ -114,8 +114,8 @@ class MainMenu extends Component
                                         : null}
                                     </View>
                                     <View style={[style.bookList, {flex:2, flexDirection:"column"}]}>
-                                        <TouchableOpacity key={bookData.books[this.state.myBooksIndex].id} onPress={() => this.selectBook(bookData.books[this.state.myBooksIndex])}>
-                                            <BookCover key={book.id} bookInfo={book} offset={0} owned={book.owned} />
+                                        <TouchableOpacity key={book.id} onPress={() => { if (book.owned) this.selectBook(bookData.books[this.state.myBooksIndex]) }}>
+                                            <BookCover key={book.id} bookInfo={book} offset={0} owned={book.owned} mode="menu" />
                                         </TouchableOpacity>
                                     </View>
                                     <View style={[style.bookList, {flex:1, flexDirection:"column"}]}>

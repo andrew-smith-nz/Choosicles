@@ -9,7 +9,7 @@ export default StyleSheet.create({
     ,pageView: { flex:1, backgroundColor:'#FAFAFA', flexDirection:'column' }
 
     ,bookCoverView: { alignItems:'center', justifyContent:'center', margin:10 * global.WIDTH_RATIO, width: 250 * global.WIDTH_RATIO, height: 150 * global.HEIGHT_RATIO}
-    ,bookCoverHalfView: { alignItems:'center', justifyContent:'center', margin:10 * global.WIDTH_RATIO, width: 80 * global.WIDTH_RATIO, height: 120 * global.HEIGHT_RATIO}
+    ,bookCoverHalfView: { alignItems:'flex-start', justifyContent:'flex-start', margin:10 * global.WIDTH_RATIO, width: 80 * global.WIDTH_RATIO, height: 120 * global.HEIGHT_RATIO}
     ,pageFooterView: { alignItems: 'center', justifyContent:'space-between', flexDirection:'row', width:'100%', height:'20%'}
 
     ,bookList: { flexDirection: 'row', flexWrap:'wrap', alignItems:'center', justifyContent:'space-around' }
