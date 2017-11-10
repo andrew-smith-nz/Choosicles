@@ -1,14 +1,23 @@
 package com.choosicles;
 
 import android.app.Application;
+import android.app.ActivityManager;
+import android.content.Context;
+import android.os.Build;
 
 import com.facebook.react.ReactApplication;
 import com.github.yamill.orientation.OrientationPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
+import com.facebook.react.shell.MainPackageConfig;
 import com.facebook.soloader.SoLoader;
-import com.futurice.rctaudiotoolkit.AudioPackage; 
+import com.zmxv.RNSound.RNSoundPackage;
+import com.facebook.imagepipeline.cache.DefaultBitmapMemoryCacheParamsSupplier;
+import com.facebook.imagepipeline.cache.MemoryCacheParams;
+import com.facebook.common.internal.Supplier;
+import com.facebook.common.util.ByteConstants;
+import com.facebook.imagepipeline.core.ImagePipelineConfig;
 
 import java.util.Arrays;
 import java.util.List;
@@ -23,10 +32,23 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
+      Context context = getApplicationContext();
+        
+      // This is the Fresco config, do anything custom you want here
+      ImagePipelineConfig frescoConfig = ImagePipelineConfig
+              .newBuilder(context)
+              .setBitmapMemoryCacheParamsSupplier(new CustomBitmapMemoryCacheParamsSupplier(context))
+              .build();
+
+      MainPackageConfig appConfig = new MainPackageConfig
+              .Builder()
+              .setFrescoConfig(frescoConfig)
+              .build();
+
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new OrientationPackage(),
-        new AudioPackage()
+          new MainReactPackage(appConfig),
+          new OrientationPackage(),
+          new RNSoundPackage()
       );
     }
   };

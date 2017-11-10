@@ -75,15 +75,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\Choosicles\react-native-audio-toolkit\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="67ebccccbf5d32f2f0b9a3d5c847052b43d2b6cc">
-        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\Choosicles-react-native-audio-toolkit-unspecified_36925ea9da2b436f55703758a68559113b99f2da.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Andrew\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
@@ -102,12 +93,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
+        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\Choosicles\react-native-sound\unspecified\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_16a7d29c460440c03ad9ed6813f19976e03458e1.jar" />
+        sha1="7928ca2aee98dbdd5120ff66393d67402b5b719c">
+        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\Choosicles-react-native-sound-unspecified_001c07a67bde9e587a20d56e82ed2c15cc30271f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -117,6 +108,15 @@
         revision="23.0.1"
         sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
         <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_2b5b9a71bd06cb7ac61a0eaa9b2088c29fc787a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_16a7d29c460440c03ad9ed6813f19976e03458e1.jar" />
     </item>
     <item
         is-multidex="false"

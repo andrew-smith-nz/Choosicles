@@ -1,6 +1,7 @@
 package com.choosicles;
 
 import com.facebook.react.ReactActivity;
+import com.zmxv.RNSound.RNSoundPackage;
 import android.content.Intent; // <--- import 
 import android.content.res.Configuration; // <--- import 
  

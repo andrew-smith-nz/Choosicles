@@ -1,4 +1,4 @@
-import { CHANGE_PAGE, BACKTRACK, CLEAR_HISTORY, CHANGE_NAME, INCREMENT_PAGE_COUNTER, RESET_PAGE_COUNTERS, SET_ACTIVE_BOOK } from '../actions/book.js'
+import { CHANGE_PAGE, BACKTRACK, CLEAR_HISTORY, CHANGE_NAME, INCREMENT_PAGE_COUNTER, RESET_PAGE_COUNTERS, SET_ACTIVE_BOOK, CHANGE_TEXT } from '../actions/book.js'
 
 import Reactotron from 'reactotron-react-native';
 
@@ -51,7 +51,7 @@ export function changeName(state = { name: "" }, action)
     }
 }
 
-export function changePage(state = { activeBookId: null, pageData: null, pageHistory:[], direction: 'forward' }, action)
+export function changePage(state = { activeBookId: null, pageData: null, pageHistory:[], direction: 'forward', currentText: 0 }, action)
 {
     switch(action.type)
     {
@@ -70,12 +70,16 @@ export function changePage(state = { activeBookId: null, pageData: null, pageHis
                     history = state.pageHistory.slice();
                 if (history.length === 0 || history[history.length - 1].id != action.pageId)
                     history.push(pageData);
-                return { ...state, pageData: pageData, pageHistory: history, direction: 'forward' };  
+                return { ...state, pageData: pageData, pageHistory: history, direction: 'forward', currentText: 0 };  
             }
             else
             {
                 return state;
             }
+        }
+        case CHANGE_TEXT:
+        {
+            return {...state, currentText:state.currentText + action.increment};   
         }
         case BACKTRACK: 
         {
@@ -83,7 +87,8 @@ export function changePage(state = { activeBookId: null, pageData: null, pageHis
             if (history.length > 0)
             {
                 history.pop();
-                return { ...state, pageData: history[history.length - 1], pageHistory: history, direction: 'backward' };  
+                var currentText = history[history.length - 1].texts.length - 1;
+                return { ...state, pageData: history[history.length - 1], pageHistory: history, direction: 'backward', currentText: history[history.length - 1].texts.length - 1 };  
             }
             else
             {

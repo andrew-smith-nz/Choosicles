@@ -55,8 +55,8 @@ class Settings extends Component
 
     render()
     {
-        return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
-                    <Image source={require("../../img/settings.png")} resizeMode='contain' style={style.topText} />
+        return  <Image id="wallpaper" source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
+                    <Image id="header" source={require("../../img/settings.png")} resizeMode='contain' style={style.topText} />
                     <View style={{height:'80%', flexDirection:'row', backgroundColor:'transparent'}}>
                         <View style={{flex:1, flexDirection:'column', backgroundColor:'transparent'}}>
                             <View style={style.padding10}>

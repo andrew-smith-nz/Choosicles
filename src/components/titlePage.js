@@ -52,9 +52,6 @@ class TitlePage extends Component
     {
         return  (<View style={{flex:1}}>
                     <Image source={getCoverForBook(this.props.book.id, true)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
-                    <TouchableOpacity style={style.topLeftButton} onPress={() => this.backtrack()}>
-                        <Image source={require('../../img/back.png')} resizeMode="contain" style={{width:'100%', height:'100%'}}  />
-                    </TouchableOpacity>
                     <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.startBook()}>
                         <Image style={style.fill} source={require('../../img/start_button.png')} resizeMode="contain" />
                     </TouchableOpacity>

@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getEndForBook, getEndSoundForBook } from './resourceManager.js'
-import { Player } from 'react-native-audio-toolkit';
+var Sound = require('react-native-sound');
 
 
 function mapStateToProps(state) {
@@ -38,8 +38,8 @@ class EndPage extends Component
     }
     
     loadSoundEffect(){                
-        var player = new Player(getEndSoundForBook(this.props.book.id), { autoDestroy:false });
-        player.prepare(() => {this.setState({soundEffect: player})});
+        var sound = new Sound(getEndSoundForBook(this.props.book.id), Sound.MAIN_BUNDLE);
+        this.setState({soundEffect: sound});
     }   
 
     playSound()
@@ -57,13 +57,13 @@ class EndPage extends Component
                     <TouchableOpacity style={style.topLeftButton} onPress={() => this.backtrack()}>
                         <Image source={require('../../img/back.png')} resizeMode="contain" style={{width:'100%', height:'100%'}}  />
                     </TouchableOpacity>
-                    <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
-                        <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
-                    </TouchableOpacity>
+                    <TouchableOpacity style={style.middleLeftButton} onPress={() => this.backtrack()}>
+                        <Image source={require('../../img/arrow_back.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                    </TouchableOpacity> 
                     {this.props.enableSoundEffects ? 
                         <View style={style.bottomRightButton}>
                             <TouchableOpacity onPress={() => this.playSound()}>
-                                <Image source={require('../../img/sound_effect.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                                <Image source={require('../../img/speaker_on.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                             </TouchableOpacity>
                         </View> 
                     : null}     
