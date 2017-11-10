@@ -611,7 +611,7 @@
                         },
                         {
                             "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
-                            "text": "Your pet monster can hear very well and listens for the rustling of leaves on branches so it knows where to swing to while its doing its amazing acrobat tricks. ",
+                            "text": "Your pet monster can hear very well and listens for the rustling of leaves on branches so it knows where to swing to while it's doing its amazing acrobat tricks. ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -803,8 +803,6 @@
                         {
                             "id": "d886b789-9823-4452-a348-a65832084b80",
                             "text": "After a while, you need to lie on the ground and wait for everything to stop spinning!",
-                            "order": 5,
-                            "audioTrack": null,
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         }
@@ -995,8 +993,8 @@
         },
         {
             "id": "A588E22D-D984-D28D-4690-D8AD87A14D63",
-            "owned": false,
-            "comingSoon": true,
+            "owned": true,
+            "comingSoon": false,
             "title": "Your Very Own Sea Creature",
             "coverImage": null,
             "author": "Meg Price",
@@ -1004,7 +1002,952 @@
             "datePublished": "2017",
             "recommendedAgeRange": "2 to 6",
             "description": "",
-            "pages": []
+            "defaultOpacity": 0.8,
+            "pages": [
+                {
+                    "id": "AEDC706C-A30B-35A9-475D-5415AFA48631",
+                    "pageNumber": 1,
+                    "assetCode": "seacreature_1",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "text": "You are an underwater explorer! While driving your fun blue submarine underwater, you discovered a brand-new kind of sea creature. A creature that has never been seen before. "
+                        },
+                        {
+                            "text": "It’s lucky you have pictures of this amazing underwater sea creature because otherwise people might not believe that you saw it! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "text": "Tell me about the sea creature. Does it have tentacles or does it have a tail?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "4E45B2D7-93AD-2CA7-4716-5923D41093AC",
+                            "order": 1,
+                            "targetPageId": "25CEDC33-7FA5-E999-4E06-8FA50CF3DFEE"
+                        },
+                        {
+                            "id": "A81DC27E-8D15-3B86-4047-629EA268110C",
+                            "order": 2,
+                            "targetPageId": "78A1BF40-A600-7AA7-4675-56D049C40746"
+                        }
+                    ]
+                },
+                {
+                    "id": "25CEDC33-7FA5-E999-4E06-8FA50CF3DFEE",
+                    "pageNumber": 2,
+                    "assetCode": "seacreature_2",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "text": "The amazing new sea creature you found has tentacles! Its tentacles have little suckers on the bottom for grabbing onto things. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "text": "The sea creature swims by wriggling its tentacles. It can swim very fast and you had to race along in your submarine to follow it as it swam all the way to its home. "
+                        },
+                        {
+                            "text": "Tell me about the sea creature. Does it live inside a shipwreck or inside an underwater cave?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "848d3a2d-bb63-40ee-b19d-9e7fad1b63f6",
+                            "order": 1,
+                            "targetPageId": "DC394A1F-EF6B-AE8C-49AC-0AB78ECF3099"
+                        },
+                        {
+                            "id": "05b409f5-3f10-4dc3-ae9e-7da1ba37152c",
+                            "order": 2,
+                            "targetPageId": "254A0E98-E213-5CA4-42F1-69826EFFB79E"
+                        }
+                    ]
+                },
+                {
+                    "id": "78A1BF40-A600-7AA7-4675-56D049C40746",
+                    "pageNumber": 3,
+                    "assetCode": "seacreature_3",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "bf0fc24e-b390-4613-b81f-2f4061a309e4",
+                            "text": "The amazing new sea creature you found has a tail, but it’s definitely not an ordinary fish! "
+                        },
+                        {
+                            "id": "20adc15b-3d7e-4560-be68-2b8e5118c756",
+                            "text": "You didn’t spot the creature at first because you were looking through the window of your submarine at its amazing home. Then suddenly, you saw a tail poking out and waving in the water. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "de8e18ba-b92d-4a20-87cc-ca728b0b71d2",
+                            "text": "Tell me about the sea creature. Does it live in a big underwater castle, or does it live tucked inside a beautiful coloured coral reef?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "71204434-5ee0-4e38-baee-dc73ef1c806c",
+                            "order": 1,
+                            "targetPageId": "D71E5075-A84F-51B1-4765-4BDFB7FDB026"
+                        },
+                        {
+                            "id": "aec46899-d4f8-4041-97cf-4c93cbbba1c3",
+                            "order": 2,
+                            "targetPageId": "1096E9EC-75F4-47B0-4678-DFE27CE844F6"
+                        }
+                    ]
+                },
+                {
+                    "id": "DC394A1F-EF6B-AE8C-49AC-0AB78ECF3099",
+                    "pageNumber": 4,
+                    "assetCode": "seacreature_4",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "6184b034-66f3-4162-baf7-d8c911179926",
+                            "text": "The sea creature lives inside a shipwreck! It’s a giant wooden ship that sits on the bottom of the sea. "
+                        },
+                        {
+                            "id": "d3a239e2-18e9-4316-8a4b-2bf01f772a86",
+                            "text": "It’s like a maze that you had to carefully move your submarine through as you followed the sea creature. There were so many rooms to explore in the big shipwreck, but the creature knew exactly where it was taking you. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "f10bb303-15ab-464b-8341-3e91aaace49c",
+                            "text": "Tell me about the sea creature. Is it dark purple with big eyes, or is it a strange sparkly blue?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "45864074-fd47-4241-b442-3e5c8e30d6d6",
+                            "order": 1,
+                            "targetPageId": "599D8236-5858-0EBB-4B00-6E830EF098B7"
+                        },
+                        {
+                            "id": "ae4aafaa-4d50-42f0-979c-1b1f4d15493b",
+                            "order": 2,
+                            "targetPageId": "D224077B-663F-5387-4DAC-5EE93C079489"
+                        }
+                    ]
+                },
+                {
+                    "id": "254A0E98-E213-5CA4-42F1-69826EFFB79E",
+                    "pageNumber": 5,
+                    "assetCode": "seacreature_5",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "3ce3bd1d-8611-43b2-9297-5b4fd1f44ed6",
+                            "text": "You followed the sea creature all the way to its home in an underwater cave. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "40a70169-ac59-429e-bd51-deb4b9555914",
+                            "text": "The cave was big enough for you to drive your submarine right inside. It’s lucky that your submarine has lights, otherwise it would have been too dark to see!"
+                        },
+                        {
+                            "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
+                            "text": "Tell me about the sea creature. Does it look like a round ball with tentacles all over, or does it have two long legs and four tentacle arms? ",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "5eafb343-638a-4885-8a12-4c446d776e21",
+                            "order": 1,
+                            "targetPageId": "929339B8-4A12-A99E-4D15-DBAD37AC097D"
+                        },
+                        {
+                            "id": "d51c4f55-8cd0-4447-bb0f-d6e6485ee419",
+                            "order": 2,
+                            "targetPageId": "B8EBA124-8568-0F9A-4533-F096117E1B93"
+                        }
+                    ]
+                },
+                {
+                    "id": "D71E5075-A84F-51B1-4765-4BDFB7FDB026",
+                    "pageNumber": 6,
+                    "assetCode": "seacreature_6",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "f5546212-728d-4330-aa4c-1f3075b90ae8",
+                            "text": "The sea creature lives in a giant underwater castle! It has towers and windows and a big front door. "
+                        },
+                        {
+                            "id": "61da30af-bef1-42f6-874a-231527f95e37",
+                            "text": "There were visitors to the castle swimming everywhere, fish and dolphins and lots of other sea creatures. The castle is amazing, just like the creature that lives inside it. "
+                        },
+                        {
+                            "id": "157afa0e-e885-4db2-bc2a-9c655c9fadac",
+                            "text": "Tell me about the sea creature. Is it just like a mermaid but with tails instead of hands, or is it a backwards mermaid with a fishy head and people legs?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "5122b92f-754c-418e-8c9b-75319c1daede",
+                            "order": 1,
+                            "targetPageId": "9271C5A1-AD83-999D-423B-60A1EC416CDA"
+                        },
+                        {
+                            "id": "85746df1-5bf5-4f6e-b3e4-cd5452038add",
+                            "order": 2,
+                            "targetPageId": "1B15D4D3-C766-C29E-4384-EE15B3277CA7"
+                        }
+                    ]
+                },
+                {
+                    "id": "1096E9EC-75F4-47B0-4678-DFE27CE844F6",
+                    "pageNumber": 7,
+                    "assetCode": "seacreature_7",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "864a8479-c105-4ca3-8f2a-05472edf4b6a",
+                            "text": "The sea creature lives inside a beautiful coloured coral reef! You were busy looking at the amazing coral with its bright colours and strange shapes when you saw the tail of the sea creature poking out. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "d3105689-6436-4d84-9d1d-3d992676037d",
+                            "text": "You drove your submarine closer thinking it was just a big fish, but it turned out to be something very different! "
+                        },
+                        {
+                            "id": "62617d57-ee5c-4be3-8d10-695634fbf5be",
+                            "text": "Tell me about the sea creature. Does it have two fishy tails, one at each end, or does it have a fishy tail and a long trunk like an elephant?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "093d310a-6db6-436c-a7c3-25fe01dee5c2",
+                            "order": 1,
+                            "targetPageId": "C5211099-F4DC-D8BD-4780-051FDF0C8A73"
+                        },
+                        {
+                            "id": "960df619-6211-4efb-8fba-1b71231b2aed",
+                            "order": 2,
+                            "targetPageId": "FAAB7864-8EB9-88A9-4EA0-BC4946A9695F"
+                        }
+                    ]
+                },
+                {
+                    "id": "599D8236-5858-0EBB-4B00-6E830EF098B7",
+                    "pageNumber": 8,
+                    "assetCode": "seacreature_8",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "715b2925-fde3-41d6-9989-6b955b522854",
+                            "text": "The sea creature you discovered is dark purple with big eyes. It has four long skinny tentacles that stretch out like a starfish. "
+                        },
+                        {
+                            "id": "ef70bcbc-90c7-4d30-9895-ae84db061088",
+                            "text": "Its big green eyes can see very well in the dark. You had quite an adventure following the strange looking creature through the rooms of the wooden shipwreck. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9d37a454-d4a1-49dd-b9df-95116583a1c1",
+                            "text": "Tell me about the sea creature. Does it squirt clouds of ink when it’s scared, or is it hiding pirate treasure?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "09eb8663-f4a2-4ff9-8498-77a08df2baf4",
+                            "order": 1,
+                            "targetPageId": "1CB9601D-A243-63BD-4A2B-45A2EB95508F"
+                        },
+                        {
+                            "id": "fe2dde9f-5bd8-4a1d-9bc9-14d605924a9a",
+                            "order": 2,
+                            "targetPageId": "CDAEC680-9967-30B7-4EC8-15CB29F5C376"
+                        }
+                    ]
+                },
+                {
+                    "id": "D224077B-663F-5387-4DAC-5EE93C079489",
+                    "pageNumber": 9,
+                    "assetCode": "seacreature_9",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "6e61cc26-7351-4749-8afa-f64b003734d0",
+                            "text": "The sea creature is a strange sparkly blue colour that twinkles underwater! It has a body like a jellyfish but instead of tentacles drooping downwards, the tentacles are on top of its head! "
+                        },
+                        {
+                            "id": "fc4b2f82-3047-4306-8222-fd8de1c00cb7",
+                            "text": "Because of its sparkly colour, it was very easy to follow the creature as it swam through the big wooden shipwreck. "
+                        },
+                        {
+                            "id": "ba0c6794-6ab0-4f73-a86c-9b70fc3942e0",
+                            "text": "Tell me about the sea creature. oes it like to play hide and seek, or does it build jigsaws for fun? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "6ac02e48-444e-43ad-a340-08182b9da719",
+                            "order": 1,
+                            "targetPageId": "5FE6F036-6B1C-3CAB-4AF9-11872E2C6457"
+                        },
+                        {
+                            "id": "07c42063-2135-4fe6-bd06-9186333bfdb2",
+                            "order": 2,
+                            "targetPageId": "235D7A41-10EA-3C9E-4D25-785823C017DD"
+                        }
+                    ]
+                },
+                {
+                    "id": "929339B8-4A12-A99E-4D15-DBAD37AC097D",
+                    "pageNumber": 10,
+                    "assetCode": "seacreature_10",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "ca7300ea-103d-4e31-b47d-3372394e2654",
+                            "text": "The sea creature looks like a round ball with tentacles all over! Some tentacles are long for grabbing things, others are short for shuffling along the sandy bottom of the sea. "
+                        },
+                        {
+                            "id": "b152c088-d4fe-4c10-9e18-2db50403f77d",
+                            "text": "It uses the suckers on its long tentacles to pick up and move shells and crabs out of the cave to keep its home tidy. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "feeadb24-f124-403e-b788-64463849ba3a",
+                            "text": "Tell me about the sea creature. Does it eat moss and mud, or can it squeeze through very tiny gaps between rocks?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "0a9c37a1-27f2-417e-b714-e0d838301c6d",
+                            "order": 1,
+                            "targetPageId": "3B5E812B-AB22-BEB0-40D3-E4B5542ACCC8"
+                        },
+                        {
+                            "id": "987cb7de-0a0d-431c-85d3-1b5ce23656bc",
+                            "order": 2,
+                            "targetPageId": "6BEAEAE6-E03F-C98C-4869-5C44790C0B48"
+                        }
+                    ]
+                },
+                {
+                    "id": "B8EBA124-8568-0F9A-4533-F096117E1B93",
+                    "pageNumber": 11,
+                    "assetCode": "seacreature_11",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "03f6f3c4-582c-4157-b5ec-506e960a8a5e",
+                            "text": "The sea creature that you discovered has two long legs and four tentacle arms! Its legs have funny knobbly knees. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "b1e44e21-5342-45a9-828d-6ec4212e4823",
+                            "text": "It wriggles all of its tentacle arms to swim, but it can also use its long legs to walk along the sandy bottom of the sea. Having two legs and four arms means the creature is very good at cartwheels. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "71a898b7-d25b-4391-b237-7296e58706be",
+                            "text": "Tell me about the sea creature. Does it sleep upside down like a bat, or does it like dancing to underwater musical beats? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "13678635-338f-4125-9647-ec638fee0fbc",
+                            "order": 1,
+                            "targetPageId": "2B76F98E-9B05-DD85-4D4D-21CE13FA4913"
+                        },
+                        {
+                            "id": "fdadbd4a-ebc1-480b-b0fa-8d6d87d663de",
+                            "order": 2,
+                            "targetPageId": "3849EFA5-639E-CCB8-467D-186B468E9079"
+                        }
+                    ]
+                },
+                {
+                    "id": "9271C5A1-AD83-999D-423B-60A1EC416CDA",
+                    "pageNumber": 12,
+                    "assetCode": "seacreature_12",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "0414a045-48b1-42f8-81e8-3bff64e5298d",
+                            "text": "The sea creature is just like a mermaid but with tails instead of hands! Just like a regular mermaid, it has the body and face of a person and long flowing hair. "
+                        },
+                        {
+                            "id": "b4a2d14d-5e7f-4b97-91e4-76c633f376f5",
+                            "text": "But instead of only one beautiful tail, the creature has three! By using all three tails, it could swim so fast your submarine had trouble keeping up! "
+                        },
+                        {
+                            "id": "1f22fd2d-dda5-40a6-bc61-e0ed46fdd159",
+                            "text": "Tell me about the sea creature. Does it have other human friends, or can it make big underwater whirlpools?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "b75f8376-ee48-4026-bf66-e8a93e259ef9",
+                            "order": 1,
+                            "targetPageId": "418B0D28-AB28-9B9A-4200-0132AACE4EB2"
+                        },
+                        {
+                            "id": "2e010b74-fd55-4a0c-832f-e5dde6c6ed65",
+                            "order": 2,
+                            "targetPageId": "81B649FF-352D-BEA7-4ADA-CDD311A4BB9F"
+                        }
+                    ]
+                },
+                {
+                    "id": "1B15D4D3-C766-C29E-4384-EE15B3277CA7",
+                    "pageNumber": 13,
+                    "assetCode": "seacreature_13",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "65753ae0-3726-4092-9854-ffc2c73c45d5",
+                            "text": "The sea creature is a backwards mermaid with a fishy head and people legs! "
+                        },
+                        {
+                            "id": "f51644c5-6a58-4ee6-a0f6-0f2812541999",
+                            "text": "You watched it swim with its legs tucked up to its scaly chest while its tail wriggled to move it through the water. You also saw it walking on its legs, but walking was much slower than swimming. "
+                        },
+                        {
+                            "id": "b99e5d59-2b56-4fd3-b521-a91f18692ce6",
+                            "text": "Tell me about the sea creature. Does it like to decorate its castle, or does it like to go exploring?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "ee860c11-4837-43ac-88a1-52c425d5191b",
+                            "order": 1,
+                            "targetPageId": "8D4A540E-E50E-6296-4954-3C4C54F2C454"
+                        },
+                        {
+                            "id": "56790092-913b-4b68-bf8c-f99bed6671e1",
+                            "order": 2,
+                            "targetPageId": "1C5FCFA0-4332-F7B9-4835-5A64A2CFAB48"
+                        }
+                    ]
+                },
+                {
+                    "id": "C5211099-F4DC-D8BD-4780-051FDF0C8A73",
+                    "pageNumber": 14,
+                    "assetCode": "seacreature_14",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "150b33b4-8099-4f41-ac87-e3de3089449e",
+                            "text": "The sea creature has two fishy tails, one at each end! Because it has a tail at the top and the bottom of its body, the sea creature can change the direction of its swimming just by changing which tail it wriggles. "
+                        },
+                        {
+                            "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
+                            "text": "You watched it swim along in a crazy zig-zag pattern which was very tricky to follow in your submarine. "
+                        },
+                        {
+                            "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
+                            "text": "Tell me about the sea creature. Is it best friends with a giant eel, or does it make strange underwater barking noises? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "25dde654-85dc-41f7-9df5-131995fdd39a",
+                            "order": 1,
+                            "targetPageId": "5C44A0E9-0A3C-B38E-431D-D8E829CF81C6"
+                        },
+                        {
+                            "id": "7bd61cd9-b3ab-492d-9a1d-05762a1e5346",
+                            "order": 2,
+                            "targetPageId": "A65E14EF-0E3E-3CAD-4A3E-FB9949F798F1"
+                        }
+                    ]
+                },
+                {
+                    "id": "FAAB7864-8EB9-88A9-4EA0-BC4946A9695F",
+                    "pageNumber": 15,
+                    "assetCode": "seacreature_15",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
+                            "text": "The sea creature has a fishy tail and a long trunk like an elephant. Its body is big and blobby like a jellyfish. You were surprised to find out that the creature breathes air! "
+                        },
+                        {
+                            "id": "dfc20654-6412-4f3a-abf6-675cc28c6eb8",
+                            "text": "You watched it swim close to the surface and poke its trunk above the water to breathe, just like using a snorkel. Then it held its breath and swam back to the bottom of the sea. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "f952f04d-299a-4179-ac24-ad5da07028fe",
+                            "text": "Tell me about the sea creature. Does it like having swimming races, or does it have an amazing shell collection?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "4a619fbc-fbfc-4f03-a734-7ca3bed4899f",
+                            "order": 1,
+                            "targetPageId": "0BBBEFC9-28A5-FDBC-4FD8-D83CC33E9793"
+                        },
+                        {
+                            "id": "11ed8d6a-ef93-4fe2-b358-02b1dfe610d8",
+                            "order": 2,
+                            "targetPageId": "8DEDF121-7FFA-2E9A-4B5D-493DF861B7B2"
+                        }
+                    ]
+                },
+                {
+                    "id": "1CB9601D-A243-63BD-4A2B-45A2EB95508F",
+                    "pageNumber": 16,
+                    "assetCode": "seacreature_16",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
+                            "text": "The sea creature squirts clouds of ink when it’s scared, just like a squid! But the sea creature’s ink isn’t black like a squid’s, it’s strangely coloured. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "593b3b3f-1b82-4a67-9e26-6f409a799c0d",
+                            "text": "You were following the creature through the shipwreck when your blue submarine bumped into a table and knocked it over. The table hit the floor with a bang and the creature got such a fright that it squirted a big cloud of dark ink with blobs of colour in it. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
+                            "text": "The cloud of coloured ink stuck to the window of your submarine and made it very difficult to see where you were going. Luckily, the creature was nice and used its tentacles to wipe the ink off the submarine’s window so you could drive home safely. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "CDAEC680-9967-30B7-4EC8-15CB29F5C376",
+                    "pageNumber": 17,
+                    "assetCode": "seacreature_17",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "db128fd8-a649-4223-84ef-67c1a8886d48",
+                            "text": "The sea creature is hiding pirate treasure! You followed the purple creature though its shipwreck home until it swam into a room and quickly shut the door before you could go inside. "
+                        },
+                        {
+                            "id": "474afb0a-4b9d-4e3a-83ce-6fbec975ccf3",
+                            "text": "You had to drive your submarine out of the shipwreck and look inside all of the windows to find the right room. When you found the right window, you saw that the underwater sea creature had a big wooden chest full of pirate treasure! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9fc4621e-a4f3-494d-b298-57a81fb1ff18",
+                            "text": "The creature was protecting the treasure and was worried that you might steal it. You explained that you would never steal its treasure and that you would keep it a secret. "
+                        },
+                        {
+                            "id": "eabda3b7-1670-cdb2-4ba5-d2f12ee51982",
+                            "text": "So the creature let you inside the treasure room so that you could look at all of the sparkling jewels and gold coins. What an amazing find!",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "5FE6F036-6B1C-3CAB-4AF9-11872E2C6457",
+                    "pageNumber": 18,
+                    "assetCode": "seacreature_18",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
+                            "text": "The underwater sea creature likes to play hide and seek. You like hide and seek too, so you agreed to play. Because your submarine is big and the sea creature is a bright sparkly blue, you both found it very difficult to hide when it was your turn! "
+                        },
+                        {
+                            "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
+                            "text": "The creature would hide behind tables and benches inside the shipwreck. When it was your turn, you would hide your submarine inside big empty rooms and make your engine go quiet. Even though you were able to find each other very easily, it was still a lot of fun. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
+                            "text": "The creature had such a good time playing with you that it wants you to come back soon and play more hide and seek. Hopefully you can find the creature’s shipwreck again the next time you take your submarine for a drive! "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "235D7A41-10EA-3C9E-4D25-785823C017DD",
+                    "pageNumber": 19,
+                    "assetCode": "seacreature_19",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "4f1c5178-67e6-4455-a632-bf7765076984",
+                            "text": "The sea creature builds jigsaws for fun! It must be very smart to have worked out how. You watched as it used coloured underwater clay to paint pictures on the wood before breaking the picture into small pieces to make a jigsaw. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "It mixed all the pieces up with its tentacles and spread them out. Then it had to work out how to put the picture back together again. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "The creature told you that making jigsaws is easy, all you need to do is colour a picture on some paper and rip it into pieces. You explained to the creature that at your house, you didn’t use coloured clay because you have pencils and crayons instead. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "a3fe0e4e-610d-4797-a07b-bb7249c988dc",
+                            "text": "When the creature asked if it could have some pencils, you had to explain that pencils don’t work very well underwater!",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "3B5E812B-AB22-BEB0-40D3-E4B5542ACCC8",
+                    "pageNumber": 20,
+                    "assetCode": "seacreature_20",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "c1fc38dd-2a22-4b23-8afc-e8e696a893ca",
+                            "text": "The sea creature you found eats moss and mud for its dinner, yuck! After showing you inside its cave, the creature wanted to leave because it got hungry. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ddbb503c-e63e-4a5a-933a-7f1fb98b0ba0",
+                            "text": "You followed while it crawled along the bottom of the sea on its short tentacles. It used its long tentacles to pick up dirty rocks and stones and put them in its mouth. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "beb24ea5-e65a-46dc-8638-370634a598f2",
+                            "text": "At first you thought it was eating the rocks, but then you saw the creature spit clean rocks back out. You realised that the creature was sucking the moss and mud right off the rocks! It was funny to watch so you helped the creature find more dirty rocks for its dinner. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "07511351-f6e9-4391-b803-efa420aea2df",
+                            "text": "When you got home after spending the day with the creature, you must have been very pleased to have regular food to eat at dinner time and not dirty rocks!"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "6BEAEAE6-E03F-C98C-4869-5C44790C0B48",
+                    "pageNumber": 21,
+                    "assetCode": "seacreature_21",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "2b0216e1-d942-4ccc-845c-42a2ce4101ff",
+                            "text": "The sea creature can squeeze through very tiny gaps between rocks. You nearly lost the creature while you were following it along the bottom of the sea because it disappeared inside a big pile of rocks. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9b351093-742d-4b11-9343-a32ec9fa43ef",
+                            "text": "You had to drive your submarine to the other side of the rocks to look for the creature. A minute later, you saw a tentacle poke out through a gap in the rocks and wave at you. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ff035dce-37b1-4c77-8893-6b6ea1e6c815",
+                            "text": "Then you watched as the creature squeezed and squiggled, wriggled and jiggled its whole body through the tiny gap. It looked a bit like toothpaste squeezing out of a tube! Then the creature popped back to its normal shape and size. What an amazing trick! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ca394226-bba0-43df-b103-15ab418966c5",
+                            "text": "The creature asked you to try squeezing through, but your submarine can’t squish and squeeze, it would break! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "2B76F98E-9B05-DD85-4D4D-21CE13FA4913",
+                    "pageNumber": 22,
+                    "assetCode": "seacreature_22",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
+                            "text": "The sea creature sleeps upside down like a bat! After spending all afternoon watching the sea creature do cartwheels on its long legs and tentacle arms, it was time for the creature to go back to its underwater cave to rest. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "1985ce22-3331-4897-b10d-399376fd6946",
+                            "text": "You followed it back to the cave and were surprised to see the creature turn upside down and hook its legs over the edge of a rock. It looked like it was hanging upside-down from monkey bars in a playground. "
+                        },
+                        {
+                            "id": "62d6db0d-7fcd-4853-b2a0-014772418990",
+                            "text": "Then the creature closed its eyes and fell asleep with its head and tentacle arms hanging to the floor. What a funny way to sleep! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "33944d41-051e-484a-a30c-de6c03970c37",
+                            "text": "When you got home you tried to copy the creature by going upside-down and hooking your legs over the edge of your bed with your head on the floor. It was very uncomfortable! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "3849EFA5-639E-CCB8-467D-186B468E9079",
+                    "pageNumber": 23,
+                    "assetCode": "seacreature_23",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "09aef51f-55fd-4cff-80c4-83f576c1d215",
+                            "text": "The sea creature likes dancing to underwater musical beats! After it was finished doing cartwheels, it swam over to some rocks and coral. "
+                        },
+                        {
+                            "id": "1ad76f1c-0b0e-41ce-a901-8c84f8c66e4d",
+                            "text": "The creature began to tap on the rocks and coral with its long tentacle arms, making a fun musical beat. Then it started to dance, hopping about on its legs in time to the beat. "
+                        },
+                        {
+                            "id": "b1f355b3-ea2d-4378-ab42-221c92583634",
+                            "text": "The creature is a fantastic dancer and played the coral drums very well. You joined in the dancing by moving your blue submarine around in time to the beat. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "b141d174-332c-4d50-a28c-077ed0d424f7",
+                            "text": "You had to stop when all the bouncing made you dizzy, but the creature continued to play the coral drums and dance all afternoon! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "c0a98855-07ef-cc95-41f3-98f558308918",
+                            "text": "When it was finally tired, it waved to you as it walked off along the sandy bottom of the sea on its way back to its cave to rest.",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "418B0D28-AB28-9B9A-4200-0132AACE4EB2",
+                    "pageNumber": 24,
+                    "assetCode": "seacreature_24",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "7a723379-6975-4dfc-8424-2d319082ea8a",
+                            "text": "The sea creature likes to decorate its underwater castle. You watched while it collected shells and long pieces of green seaweed from the sandy bottom of the sea. It picked things up with its mouth and toes. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ba978ff7-b9a2-4116-bfab-7b5148b8b3ee",
+                            "text": "You followed the creature in and out of the castle many times until the creature had a big pile of things on the floor inside. Then it hung the seaweed up above the castle windows like curtains! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "3e0f672b-12ad-4852-9124-6e8e736cc036",
+                            "text": "It used the shells as decorations on the walls. The sea creature liked to make each of the rooms in its castle beautiful. There were so many rooms in the castle that it would take the creature a very long time to decorate them all. "
+                        },
+                        {
+                            "id": "ddf49217-ba48-4229-8f9e-8a035992b86c",
+                            "text": "It told you that after it finished the whole castle, it would start all over again from the beginning! "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "81B649FF-352D-BEA7-4ADA-CDD311A4BB9F",
+                    "pageNumber": 25,
+                    "assetCode": "seacreature_25",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "37c91963-76fd-4594-9653-1e3e66163119",
+                            "text": "The sea creature likes to go exploring! After it showed you through its amazing underwater castle, it wanted to show you something else. "
+                        },
+                        {
+                            "id": "2c03a901-5ac1-40ef-9975-5ec7f0e91bf6",
+                            "text": "You followed it in your blue submarine past coral reefs and giant boulders. It took you all the way to a giant hole in the bottom of the sandy sea floor.",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "53d47300-fcae-470e-9887-64e74e537013",
+                            "text": "It was very dark down in the hole and a bit scary. But the creature wasn’t afraid, it loved exploring new places. You followed the creature as it swam slowly down inside the hole, tucking its legs up out of the way."
+                        },
+                        {
+                            "id": "0e1925b9-f838-cca6-4728-bfc79d5e9707",
+                            "text": "The walls of the giant hole were covered in beautiful sparkles which were so bright you didn’t need to use your lights. "
+                        },                        
+                        {
+                            "id": "d886b789-9823-4452-a348-a65832084b80",
+                            "text": "You were very pleased that you were brave enough to go exploring too, because it wasn’t scary after all – it was beautiful! The creature promised that you could go exploring again when you next visit. "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "8D4A540E-E50E-6296-4954-3C4C54F2C454",
+                    "pageNumber": 26,
+                    "assetCode": "seacreature_26",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "4597b993-e21d-4bbd-a356-50e0ef1aad3d",
+                            "text": "The sea creature has other human friends and it wanted you to meet them! With extra tails on its arms, it could swim very fast and you did you best to keep up as you both raced through the water. "
+                        },
+                        {
+                            "id": "ebdb120b-bff6-4bf8-9342-a66c5b0170d0",
+                            "text": "The creature took you to a place where there were other people scuba diving! The scuba divers waved at you in your submarine and you waved back. "
+                        },
+                        {
+                            "id": "8d98dc21-547d-4014-bd58-5300ba44e2b3",
+                            "text": "The creature was very happy to see you all getting along and invited everyone back to the castle. You knew that the scuba divers wouldn’t be able to swim as fast as the creature so you told them to hang on tight to your submarine so you could pull them along. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "2f2f598e-1b36-4cc0-bad1-1b5a23618d99",
+                            "text": "After spending all afternoon in the castle with the creature, you gave the scuba divers another ride back to their boat on your way home. You hope that you see them again next time. "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "1C5FCFA0-4332-F7B9-4835-5A64A2CFAB48",
+                    "pageNumber": 27,
+                    "assetCode": "seacreature_27",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "9ad07932-c9cf-4123-a1be-4f869c3ba525",
+                            "text": "The sea creature can make big underwater whirlpools. Using its two extra tails, the creature can spin around and around, faster and faster, until it makes an underwater whirlpool! "
+                        },
+                        {
+                            "id": "8c450315-eba0-44f6-b8c3-4cdaf56c5502",
+                            "text": "The whirlpool sucks up sand from the bottom of the sea along with shells and rocks, bits of seaweed and even tiny fish. It all spins like a very fast merry-go-round. "
+                        },
+                        {
+                            "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
+                            "text": "You tried spinning your blue submarine around in circles to create your own whirlpool, but it wouldn’t spin fast enough. Maybe your submarine needs three tails too! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
+                            "text": "When you got home, you started to notice whirlpools everywhere. There’s one when you flush the toilet and another when you pull the plug out of the bath. "
+                        },
+                        {
+                            "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
+                            "text": "They’re much smaller than the whirlpools the sea creature makes, but they’re still fun to watch.",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "5C44A0E9-0A3C-B38E-431D-D8E829CF81C6",
+                    "pageNumber": 28,
+                    "assetCode": "seacreature_28",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "d83fdd28-f8c1-4eb0-ac86-16113797ae70",
+                            "text": "The sea creature is best friends with a giant eel. You didn’t know that until you followed the strange two-tailed creature to a patch of coral not far from its home. "
+                        },
+                        {
+                            "id": "74d901da-49f5-4a98-a7b9-7494378fdee9",
+                            "text": "Before you reached the coral, a giant eel swam out to meet you. At first you were worried, but then you realised the creature and the giant eel were best friends and very happy to see each other. "
+                        },
+                        {
+                            "id": "a27cc549-f47e-4d5a-98f7-612159e1699e",
+                            "text": "When you drove your submarine closer, you saw that the eel was protecting something inside the coral. There were hundreds of two-tailed sea creature babies! The eel was looking after them while the creature was away. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
+                            "text": "The babies had never seen a submarine before and were very excited to meet you. You were surprised to find out that there isn’t just one strange, two-tailed sea creature, there are hundreds! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "A65E14EF-0E3E-3CAD-4A3E-FB9949F798F1",
+                    "pageNumber": 29,
+                    "assetCode": "seacreature_29",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "3d092c81-3b9a-42f8-a9d4-3d637577b76f",
+                            "text": "The sea creature makes strange underwater barking noises! As you followed along behind it while it swam in a crazy zig-zag pattern, you heard a strange barking noise. "
+                        },
+                        {
+                            "id": "317037c8-f513-46ef-a120-79fc213cb42f",
+                            "text": "You realised the barking was coming from the two-tailed creature! It sounded a bit like a dog barking, but different because the noise was underwater. "
+                        },
+                        {
+                            "id": "d670a84b-ef99-48d4-b824-01b8b1ff6732",
+                            "text": "You tried barking too, but the noise echoed inside your submarine and hurt your ears! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
+                            "text": "The creature swam closely to the sandy sea floor and barked so loudly that the sand puffed up in a cloud. Then you watched as the creature zig-zagged around eating the cloud of sand. It’s a very interesting way to make dinner! "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "0BBBEFC9-28A5-FDBC-4FD8-D83CC33E9793",
+                    "pageNumber": 30,
+                    "assetCode": "seacreature_30",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "68d48745-3122-4874-b8f1-ea471ba4bfbf",
+                            "text": "The sea creature likes to have swimming races! Because it needs to spend a lot of time near the surface so it can breathe, it has become friends with the seagulls who spend their time flying above the sea. "
+                        },
+                        {
+                            "id": "0f3a7ca9-fe79-45f4-bc20-6b3611cd39a5",
+                            "text": "You watched from your submarine as the creature waved to a seagull with its trunk. The seagull flew closer until it was right above the creature. Then they set off on a race! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
+                            "text": "The creature swam through the water wriggling its tail fast and keeping its trunk above the water, while the seagull flew through the air. They were racing towards a big rock that had other seagulls sitting on it. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "0ea6a82d-5e13-491f-98e4-374849c6c24f",
+                            "text": "You and the other seagulls cheered as the racers got closer and closer to the finish line. Just before they both reached the rock, a big gust of wind slowed the seagull down and the sea creature won!"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "8DEDF121-7FFA-2E9A-4B5D-493DF861B7B2",
+                    "pageNumber": 31,
+                    "assetCode": "seacreature_31",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "5a08da89-9e74-42e1-8de0-2982d77b610a",
+                            "text": "The sea creature has an amazing shell collection. As you drove your submarine around the beautiful coloured coral where it lived, you saw lots of shells in pretty patterns in the sand. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "137becab-86d8-4f8a-980a-3a19ff2ad3b3",
+                            "text": "When the creature went back to the surface to take another breath of air through its trunk, you followed so that you could show the creature where the beach was. "
+                        },
+                        {
+                            "id": "049bb1df-2ad6-ef86-4ebb-5cb26cf05418",
+                            "text": "The beach was covered in hundreds of shells. The creature was very excited and it swam close enough to the beach to reach the shells with its trunk. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "fd7ec425-6e6a-49aa-b38a-5dd050842589",
+                            "text": "It picked them up and tucked them under the flaps of its jellyfish body to carry them back to its wonderful underwater collection. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "b9917fc9-d82c-4753-b0c9-78d22f2720fe",
+                            "text": "The next time you visit the creature, you’re going to help it sort its shells from biggest to smallest. It might take all day!",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                }
+            ]
         }
     ]
 }

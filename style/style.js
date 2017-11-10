@@ -25,10 +25,10 @@ export default StyleSheet.create({
     ,groupBoxHeader: {position:'absolute', paddingLeft:5 * global.WIDTH_RATIO, paddingRight:5 * global.WIDTH_RATIO, left: 10 * global.WIDTH_RATIO, top: -10 * global.WIDTH_RATIO, 
             backgroundColor: '#FBC61E'}
 
-    ,choiceButtonView: { flexDirection:'row', justifyContent:'space-between', marginBottom:5 * global.HEIGHT_RATIO, width:180 * global.WIDTH_RATIO }
-    ,choiceButton: { marginTop:5 * global.HEIGHT_RATIO, height:60 * global.HEIGHT_RATIO, width:80 * global.WIDTH_RATIO }
+    ,choiceButtonView: { flexDirection:'row', justifyContent:'space-between', marginBottom:-2 * global.HEIGHT_RATIO, width:180 * global.WIDTH_RATIO }
+    ,choiceButton: { marginTop:5 * global.HEIGHT_RATIO, height:45 * global.HEIGHT_RATIO, width:80 * global.WIDTH_RATIO }
     ,choiceCounterView: {position:'absolute', borderColor:'black', borderWidth:0.5 * global.WIDTH_RATIO, borderRadius:15 * global.WIDTH_RATIO, padding:2 * global.WIDTH_RATIO, 
-            right:3 * global.WIDTH_RATIO, top:12  * global.WIDTH_RATIO, backgroundColor:'white', zIndex: 0 }
+            right:3 * global.WIDTH_RATIO, top:5  * global.WIDTH_RATIO, backgroundColor:'white', zIndex: 0 }
 
     ,topText: { marginTop: 20 * global.HEIGHT_RATIO, height: 40 * global.HEIGHT_RATIO, width: '100%', marginBottom: 10 * global.HEIGHT_RATIO }
     ,textInput: { flex:1, height: 40 * global.HEIGHT_RATIO, margin:5 * global.HEIGHT_RATIO, padding:5 * global.HEIGHT_RATIO, borderColor:'black', borderWidth:0.5 * global.HEIGHT_RATIO, borderRadius:5 * global.HEIGHT_RATIO }
@@ -43,7 +43,7 @@ export default StyleSheet.create({
     ,bookSelectItem: { borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black', width:'80%', backgroundColor:'#FBC61E', alignItems:'center', marginBottom:5 * global.HEIGHT_RATIO }
 
     ,pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold', marginTop:5 * global.HEIGHT_RATIO,
-        borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO }
+        borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
 
     ,topLeftButton: {position:'absolute', left:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,topRightButton: {position:'absolute', right:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
