@@ -56,12 +56,14 @@ class Page extends Component
             nameMonsterVisible: false,
             tabletMode: false,
             paused: false,
-            currentPlayingSoundIndex: 0            
+            currentPlayingSoundIndex: 0,
+            audioIsLoaded: false          
         };
         this._slideProgress = new Animated.Value(0);
     }
 
-    loadReadingAudio(props, partId){    
+    loadReadingAudio(props, partId){ 
+        this.stopReading();
         this.setState({playingSound: []})
         var numToLoad = props.pageData.texts.length;
         var numLoaded = 0;
@@ -70,24 +72,16 @@ class Page extends Component
         {
             for (i = 1; i <= props.pageData.texts.length; i++)
             {                
-                Reactotron.log("adding player " + i + " for text " + partId + " (currentText = " + this.props.currentText + ")");
                 players.push(new Sound(props.pageData.assetCode + '_' + i + '_audio.mp3', Sound.MAIN_BUNDLE, 
-                    () => { numLoaded++; if (props.enableAutoplayAudio && numLoaded === numToLoad) { this.startAudio() }}));
+                    () => { numLoaded++; if (props.enableAutoplayAudio && numLoaded === numToLoad) { this.toggleReading(true); }}));
             }
         }
         else
         {
-            Reactotron.log("adding player for text " + partId + " (currentText = " + this.props.currentText + ")");
             players.push(new Sound(props.pageData.assetCode + '_' + (partId + 1) + '_audio.mp3', Sound.MAIN_BUNDLE,
-                () => {if (props.enableAutoplayAudio) { this.startAudio() }}));            
+                () => {if (props.enableAutoplayAudio) { this.toggleReading(true); }}));            
         }
-        Reactotron.log(players);
         this.setState({playingSound: players})
-    }
-
-    startAudio()
-    {
-        this.toggleReading(true);
     }
     
     loadSoundEffect(newProps){                
@@ -105,7 +99,6 @@ class Page extends Component
 
     playReading(i)
     {
-        Reactotron.log("playing reading " + i);
         this.setState({currentPlayingSoundIndex: i});
         if ((i + 1) < this.state.playingSound.length)
         {
@@ -132,12 +125,12 @@ class Page extends Component
 
     stopReading()
     {        
-        this.setState({paused:false, speaker:false});
+        this.setState({paused:false, speaker:false, audioIsLoaded:false});
         if (this.state.playingSound)
         {
             for (i = 0; i < this.state.playingSound.length; i++)
             {
-                this.state.playingSound[this.state.currentPlayingSoundIndex].stop();
+                this.state.playingSound[this.state.currentPlayingSoundIndex].release();
             }
         }
     }
@@ -174,13 +167,13 @@ class Page extends Component
 
     componentWillMount()
     {
-        this.loadReadingAudio(this.props, 0);
+        //this.loadReadingAudio(this.props, 0);
         this.loadSoundEffect(this.props);
     }
 
     componentWillUnmount()
     {
-        this.setState({playingSound: []});
+        this.stopReading();
     }
 
     componentWillReceiveProps(newProps)
@@ -194,9 +187,11 @@ class Page extends Component
         //     () => this.animateIn());   
         if (newProps.pageData.id != this.props.pageData.id)
         {
+            Reactotron.log("Audio is loaded: " + this.state.audioIsLoaded);
             // we've navigated to a fresh page, load the audio
-            this.stopReading();
-            this.loadReadingAudio(newProps, newProps.currentText);
+            if (!this.state.audioIsLoaded)
+                this.setState({audioIsLoaded: true}, () => this.loadReadingAudio(newProps, newProps.currentText));
+            
             this.loadSoundEffect(newProps);
         }
     }
@@ -239,20 +234,20 @@ class Page extends Component
     {
         if ((this.props.currentText < this.props.pageData.texts.length - 1))
         {            
+            this.stopReading();
             this.loadReadingAudio(this.props, this.props.currentText + 1);      
             this.props.changeText(1);
             this.setState({ paused: false, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
-            this.stopReading();
         }
         else
         {
+            this.stopReading();
             this.props.navigation.navigate("EndPage");
         }
     }
     
     back()
     {
-        Reactotron.log("currenttext = " + this.props.currentText )
         if (this.props.currentText == 0 || this.props.enableNoText)
         {
             this.setState({currentPlayingSoundIndex: 0});
@@ -304,9 +299,17 @@ class Page extends Component
 
     home()
     {
-        this.toggleReading(false); 
+        this.stopReading();
         this.props.clearHistory();
         this.props.navigation.navigate("MainMenu"); 
+    }
+
+    choose(targetPageId)
+    {
+        this.stopReading();
+        this.setState({currentPlayingSoundIndex: 0}); 
+        this.props.incrementPageCounter(targetPageId); 
+        this.props.choose(targetPageId); 
     }
 
     render()
@@ -342,7 +345,7 @@ class Page extends Component
                                 <View style={[style.centeredContent, style.choiceButtonView]}>  
                                     {hasDecision ? 
                                         this.props.pageData.navigationLinks.map((nav) => 
-                                            <TouchableOpacity key={nav.id} onPress={() => { this.setState({currentPlayingSoundIndex: 0}); this.props.incrementPageCounter(nav.targetPageId); this.props.choose(nav.targetPageId); } }>
+                                            <TouchableOpacity key={nav.id} onPress={() => { this.choose(nav.targetPageId) } }>
                                                 <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={style.choiceButton} />
                                                 {this.props.showChoiceCounters ? 
                                                     <View style={style.choiceCounterView}>
