@@ -41,7 +41,6 @@ class MainMenu extends Component
     {
         this.props.clearHistory();
         this.props.setActiveBook(book);
-        this.props.changePage(book.pages[0].id);
         this.props.navigation.navigate("TitlePage");
     }
 
@@ -57,10 +56,10 @@ class MainMenu extends Component
 
     componentDidMount()
     {
-        var book = bookData.books[0];
-        this.props.setActiveBook(book);
-        this.props.changePage(book.pages[0].id);
-        this.props.navigation.navigate("Page");
+        // var book = bookData.books[0];
+        // this.props.setActiveBook(book);
+        // this.props.changePage(book.pages[0].id);
+        // this.props.navigation.navigate("Page");
 
     }
 

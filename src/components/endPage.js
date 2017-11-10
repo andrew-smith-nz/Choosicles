@@ -49,6 +49,12 @@ class EndPage extends Component
             this.state.soundEffect.play();
         }
     } 
+    
+    startBook()
+    {
+        this.props.changePage(this.props.book.pages[0].id)
+        this.props.navigation.navigate("Page");
+    }
 
     render()
     {
@@ -67,7 +73,9 @@ class EndPage extends Component
                             </TouchableOpacity>
                         </View> 
                     : null}     
-                    
+                    <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.startBook()}>
+                        <Image style={style.fill} source={require('../../img/start_button.png')} resizeMode="contain" />
+                    </TouchableOpacity>
                 </View>);
     }
 }
