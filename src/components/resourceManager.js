@@ -20,6 +20,8 @@ _resourcesByBook = [
 ]
 
 _resourcesByPage = [
+
+    // Monster
     {
         pageId: 'b09b639d-6e09-4d58-96e3-44b810df4170', 
         pageNumber: '1', 
@@ -294,6 +296,283 @@ _resourcesByPage = [
         pageId: 'df8c6c19-33d9-4014-a5a8-873054150d0b', 
         pageNumber: '31', 
         image: require('../../img/pages/monster/page31.jpg')
+        },
+        
+        // Sea creature
+        {
+        pageId: 'AEDC706C-A30B-35A9-475D-5415AFA48631', 
+        pageNumber: '1', 
+        image: require('../../img/pages/seacreature/page1.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice2.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice3.png'),
+            }
+        ]
+        },
+        {
+        pageId: '25CEDC33-7FA5-E999-4E06-8FA50CF3DFEE', 
+        pageNumber: '2', 
+        image: require('../../img/pages/seacreature/page2.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice4.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice5.png'),
+            }
+        ]
+        },
+        {
+        pageId: '78A1BF40-A600-7AA7-4675-56D049C40746', 
+        pageNumber: '3', 
+        image: require('../../img/pages/seacreature/page3.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice6.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice7.png'),
+            }
+        ]
+        },
+        {
+        pageId: 'DC394A1F-EF6B-AE8C-49AC-0AB78ECF3099', 
+        pageNumber: '4', 
+        image: require('../../img/pages/seacreature/page4.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice8.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice9.png'),
+            }
+        ]
+        },
+        {
+        pageId: '254A0E98-E213-5CA4-42F1-69826EFFB79E', 
+        pageNumber: '5', 
+        image: require('../../img/pages/seacreature/page5.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice10.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice11.png'),
+            }
+        ]
+        },
+        {
+        pageId: 'D71E5075-A84F-51B1-4765-4BDFB7FDB026', 
+        pageNumber: '6', 
+        image: require('../../img/pages/seacreature/page6.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice12.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice13.png'),
+            }
+        ]
+        },
+        {
+        pageId: '1096E9EC-75F4-47B0-4678-DFE27CE844F6', 
+        pageNumber: '7', 
+        image: require('../../img/pages/seacreature/page7.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice14.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice15.png'),
+            }
+        ]
+        },
+        {
+        pageId: '599D8236-5858-0EBB-4B00-6E830EF098B7', 
+        pageNumber: '8', 
+        image: require('../../img/pages/seacreature/page8.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice16.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice17.png'),
+            }
+        ]
+        },
+        {
+        pageId: 'D224077B-663F-5387-4DAC-5EE93C079489', 
+        pageNumber: '9', 
+        image: require('../../img/pages/seacreature/page9.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice18.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice19.png'),
+            }
+        ]
+        },
+        {
+        pageId: '929339B8-4A12-A99E-4D15-DBAD37AC097D', 
+        pageNumber: '10', 
+        image: require('../../img/pages/seacreature/page10.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice20.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice21.png'),
+            }
+        ]
+        },
+        {
+        pageId: 'B8EBA124-8568-0F9A-4533-F096117E1B93', 
+        pageNumber: '11', 
+        image: require('../../img/pages/seacreature/page11.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice22.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice23.png'),
+            }
+        ]
+        },
+        {
+        pageId: '9271C5A1-AD83-999D-423B-60A1EC416CDA', 
+        pageNumber: '12', 
+        image: require('../../img/pages/seacreature/page12.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice24.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice25.png'),
+            }
+        ]
+        },
+        {
+        pageId: '1B15D4D3-C766-C29E-4384-EE15B3277CA7', 
+        pageNumber: '13', 
+        image: require('../../img/pages/seacreature/page13.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice26.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice27.png'),
+            }
+        ]
+        },
+        {
+        pageId: 'C5211099-F4DC-D8BD-4780-051FDF0C8A73', 
+        pageNumber: '14', 
+        image: require('../../img/pages/seacreature/page14.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice28.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice29.png'),
+            }
+        ]
+        },
+        {
+        pageId: 'FAAB7864-8EB9-88A9-4EA0-BC4946A9695F', 
+        pageNumber: '15', 
+        image: require('../../img/pages/seacreature/page15.jpg'),
+        choiceImages: [
+            {
+                image: require('../../img/pages/seacreature/choice30.png'),
+            },
+            {
+                image: require('../../img/pages/seacreature/choice31.png'),
+            }
+        ]
+        },
+        {
+        pageId: '1CB9601D-A243-63BD-4A2B-45A2EB95508F', 
+        pageNumber: '16', 
+        image: require('../../img/pages/seacreature/page16.jpg')
+        },
+        {
+        pageId: 'CDAEC680-9967-30B7-4EC8-15CB29F5C376', 
+        pageNumber: '17', 
+        image: require('../../img/pages/seacreature/page17.jpg')
+        },
+        {
+        pageId: '5FE6F036-6B1C-3CAB-4AF9-11872E2C6457', 
+        pageNumber: '18', 
+        image: require('../../img/pages/seacreature/page18.jpg')
+        },
+        {
+        pageId: '235D7A41-10EA-3C9E-4D25-785823C017DD', 
+        pageNumber: '19', 
+        image: require('../../img/pages/seacreature/page19.jpg')
+        },
+        {
+        pageId: '3B5E812B-AB22-BEB0-40D3-E4B5542ACCC8', 
+        pageNumber: '20', 
+        image: require('../../img/pages/seacreature/page20.jpg')
+        },
+        {
+        pageId: '6BEAEAE6-E03F-C98C-4869-5C44790C0B48', 
+        pageNumber: '21', 
+        image: require('../../img/pages/seacreature/page21.jpg')
+        },
+        {
+        pageId: '2B76F98E-9B05-DD85-4D4D-21CE13FA4913', 
+        pageNumber: '22', 
+        image: require('../../img/pages/seacreature/page22.jpg')
+        },
+        {
+        pageId: '3849EFA5-639E-CCB8-467D-186B468E9079', 
+        pageNumber: '23', 
+        image: require('../../img/pages/seacreature/page23.jpg')
+        },
+        {
+        pageId: '418B0D28-AB28-9B9A-4200-0132AACE4EB2', 
+        pageNumber: '24', 
+        image: require('../../img/pages/seacreature/page24.jpg')
+        },
+        {
+        pageId: '81B649FF-352D-BEA7-4ADA-CDD311A4BB9F', 
+        pageNumber: '25', 
+        image: require('../../img/pages/seacreature/page25.jpg')
+        },
+        {
+        pageId: '8D4A540E-E50E-6296-4954-3C4C54F2C454', 
+        pageNumber: '26', 
+        image: require('../../img/pages/seacreature/page26.jpg')
+        },
+        {
+        pageId: '1C5FCFA0-4332-F7B9-4835-5A64A2CFAB48', 
+        pageNumber: '27', 
+        image: require('../../img/pages/seacreature/page27.jpg')
+        },
+        {
+        pageId: '5C44A0E9-0A3C-B38E-431D-D8E829CF81C6', 
+        pageNumber: '28', 
+        image: require('../../img/pages/seacreature/page28.jpg')
+        },
+        {
+        pageId: 'A65E14EF-0E3E-3CAD-4A3E-FB9949F798F1', 
+        pageNumber: '29', 
+        image: require('../../img/pages/seacreature/page29.jpg')
+        },
+        {
+        pageId: '0BBBEFC9-28A5-FDBC-4FD8-D83CC33E9793', 
+        pageNumber: '30', 
+        image: require('../../img/pages/seacreature/page30.jpg')
+        },
+        {
+        pageId: '8DEDF121-7FFA-2E9A-4B5D-493DF861B7B2', 
+        pageNumber: '31', 
+        image: require('../../img/pages/seacreature/page31.jpg')
         },                    
 ]
 

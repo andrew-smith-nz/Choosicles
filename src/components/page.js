@@ -314,6 +314,7 @@ class Page extends Component
         let hasDecision = this.props.enableNoText || (this.props.currentText == (this.props.pageData.texts.length - 1) && this.props.pageData.navigationLinks.length > 0);
         let textPosition = this.props.pageData.texts[this.props.currentText].textPosition;
         let backgroundOpacity = this.props.pageData.texts[this.props.currentText].backgroundOpacity;
+        if (!backgroundOpacity) backgroundOpacity = this.props.pageData.backgroundOpacity;
         if (!backgroundOpacity) backgroundOpacity = 0.6;
         if (!textPosition) textPosition = 'bottom';
         let leftPosition = '13%';
@@ -331,7 +332,7 @@ class Page extends Component
                     translateX: this.state.slideX
                     }
                 ]}]}>
-                    <Image style={{flex:1, width:"100%", height:"100%"}} source={getImageForPage(this.props.pageData.id)} resizeMode={"cover"}>
+                    <Image style={{flex:1, width:"100%", height:"100%", backgroundColor:'black'}} source={getImageForPage(this.props.pageData.id)} resizeMode="contain">
                         <View style={{position:'absolute', left:leftPosition, top:topPosition, width:width}}>
                                {(textPosition == 'top') ? pageTextView : null}
                         </View>
