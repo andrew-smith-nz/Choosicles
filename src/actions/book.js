@@ -1,4 +1,5 @@
 export const CHANGE_PAGE = "CHANGE_PAGE";
+export const CHANGE_TEXT = "CHANGE_TEXT";
 export const BACKTRACK = "BACKTRACK";
 export const CLEAR_HISTORY = "CLEAR_HISTORY";
 export const CHANGE_NAME = "CHANGE_NAME";
@@ -52,5 +53,13 @@ export function setActiveBook(book)
     return {
         type: SET_ACTIVE_BOOK,
         book
+    }
+}
+
+export function changeText(increment)
+{
+    return {
+        type: CHANGE_TEXT,
+        increment
     }
 }

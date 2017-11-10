@@ -223,26 +223,7 @@ _resourcesByPage = [
         {
         pageId: 'bb43f739-6936-4ac9-ab74-ff492fc0473e', 
         pageNumber: '17', 
-        image: require('../../img/pages/monster/page17.jpg'),
-        soundEffect: require('../../audio/fart.mp3'),
-        readings: [
-          {
-            part: 1,
-            audio: 'monster_page17_reading1.mp3'
-          },
-          {
-            part: 2,
-            audio: 'monster_page17_reading2.mp3'
-          },
-          {
-            part: 3,
-            audio: 'monster_page17_reading3.mp3'
-          },
-          {
-            part: 4,
-            audio: 'monster_page17_reading4.mp3'
-          },
-        ]
+        image: require('../../img/pages/monster/page17.jpg')
         },
         {
         pageId: '93abeebb-e4a2-4266-845f-debc2e09f4d0', 

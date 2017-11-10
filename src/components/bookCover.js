@@ -21,11 +21,10 @@ export default class BookCover extends Component
         var src = this.props.offset == 0 ? getCoverForBook(this.props.bookInfo.id) : getHalfCoverForBook(this.props.bookInfo.id, this.props.offset == 1);
 
         return  <View style={[style.bookCoverView, ]}>
-                    <Image source={src} style={[coverStyle, style.blackBorder, { opacity: opacity } ]} resizeMode="contain">
-                    </Image>
+                    <Image id="cover" source={src} style={[coverStyle, style.blackBorder, { opacity: opacity } ]} resizeMode="contain" />
                         { this.props.bookInfo.comingSoon && this.props.offset == 0 ? 
                         <View style={[style.fill, {position:'absolute', left:0, top:0, padding:30 * global.HEIGHT_RATIO}]}>
-                            <Image style={[style.fill]} source={require("../../img/coming_soon.png")} resizeMode="contain" /> 
+                            <Image id="coming_soon" style={[style.fill]} source={require("../../img/coming_soon.png")} resizeMode="contain" /> 
                         </View> 
                         : null }
                 </View>;
