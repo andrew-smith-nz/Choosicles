@@ -46,7 +46,11 @@ class MainMenu extends Component
 
     settings()
     {
-        this.props.navigation.navigate("Settings");
+        if (!this.state.navigating)
+        {
+            this.setState({navigating:true});        
+            this.props.navigation.navigate("Settings");
+        }
     }
 
     store()

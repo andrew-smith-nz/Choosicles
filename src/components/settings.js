@@ -4,6 +4,7 @@ import style from '../../style/style.js';
 import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud, setAutoplayAudio, setNoText } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
 import { connect } from 'react-redux';
+import { NavigationActions } from 'react-navigation';
 
 const bookData = require('../../books.json');
 
@@ -51,6 +52,14 @@ class Settings extends Component
              c += counters[i].count;
         }
         return c;
+    }
+    
+    home()
+    {
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'MainMenu'})]
+                }));
     }
 
     render()
@@ -120,7 +129,7 @@ class Settings extends Component
                             </TouchableOpacity>
                         </Modal>
                     </View>
-                    <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
+                    <TouchableOpacity style={style.topRightButton} onPress={() => this.home()}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                     </TouchableOpacity>
                 </Image>;

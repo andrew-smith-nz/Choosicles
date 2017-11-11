@@ -7,7 +7,7 @@ import { backtrack, clearHistory, changePage} from '../actions/book.js';
 import { getStartAudioForBook } from './resourceManager.js'
 var Sound = require('react-native-sound');
 import Reactotron from 'reactotron-react-native';
-
+import { NavigationActions } from 'react-navigation';
 
 function mapStateToProps(state) {
     return { 
@@ -33,43 +33,80 @@ class TitlePage extends Component
         super();
         this.backtrack = this.backtrack.bind(this);
         this.backHandler = this.backHandler.bind(this);
+        this.pauseAudio = this.pauseAudio.bind(this);
+        this.setCanRestartAudio = this.setCanRestartAudio.bind(this);
         BackHandler.addEventListener('hardwareBackPress', () => this.backHandler());
-        this.state = {speaker:false}
+        this.state = {audioPaused:!props.enableAutoplayAudio, canRestartAudio: false}
     }
 
     loadAudio()
     {
-        var sound = new Sound(getStartAudioForBook(this.props.book.id), Sound.MAIN_BUNDLE, 
-            () => { if (this.props.enableAutoplayAudio) { this.setState({speaker:true}); sound.play(); }});  
-        this.setState({sound: sound});
-    }
+        if (this.state.initialisingAudio) return;
+        this.setState({initialisingAudio: true});
 
-    toggleReading(status)
-    {
-        if (status == null)
-            status = !this.state.speaker;
-        this.setState({speaker: status});
-        var restarted = false;
-        if (this.state.sound)
-        {
-            if (status)
-            {                
-                this.state.sound.play();
-            }
-            else
-            {
-                this.setState({paused: true});
-                this.state.sound.pause();
-            }
-        }
+        var sound = new Sound(getStartAudioForBook(this.props.book.id), Sound.MAIN_BUNDLE, 
+            () => { if (this.props.enableAutoplayAudio) { sound.play(); }});  
+        
+        this.setState({audioPlayers: [ sound ], initialisingAudio: false});
     }
     
-    restartReading()
+    componentWillUnmount()
     {
-        if (this.state.sound)
+        if (this.state.audioPlayers)
+            this.state.audioPlayers[0].release();
+    }
+
+    setCanRestartAudio()
+    {        
+        this.setState({canRestartAudio: false});
+        if (this.state.audioPlayers)
         {
-            this.state.sound.setCurrentTime(0);
-            this.toggleReading();
+            for (i = 0; i < this.state.audioPlayers.length; i++)
+                this.state.audioPlayers[i].getCurrentTime(function(seconds, isPlaying) { if (seconds > 0) this.setState({canRestartAudio: true}) }.bind(this))
+        }
+    }
+
+    toggleAudio()
+    {
+        if (this.state.audioPaused)
+        {
+            this.playAudio(0);
+        }
+        else
+        {
+            this.pauseAudio();
+        }
+    }
+
+    playAudio(i)
+    {
+        this.setState({currentPlayingAudioIndex: i});
+        if (this.state.audioPlayers)
+        {
+            this.setState({audioPaused:false});
+            this.state.audioPlayers[i].play(() => { 
+                if (this.state.audioPlayers.length > i + 1) 
+                    this.playAudio(i + 1); 
+                })
+        }
+    }
+
+    pauseAudio(){
+        if (this.state.audioPlayers)
+        {
+            for (i = 0; i < this.state.audioPlayers.length; i++)
+                this.state.audioPlayers[i].pause(() => { this.setState({audioPaused:true})});
+        }
+        this.setCanRestartAudio();
+    }
+
+    restartAudio()
+    {
+        if (this.state.audioPlayers)
+        {
+            this.state.audioPlayers[0].setCurrentTime(0).stop(() => this.playAudio(0));
+            for (i = 1; i < this.state.audioPlayers.length; i++)
+                this.state.audioPlayers[i].setCurrentTime(0).stop();
         }
     }
     
@@ -92,7 +129,10 @@ class TitlePage extends Component
         if (this.state.sound)
             this.state.sound.release();
         this.props.changePage(this.props.book.pages[0].id)
-        this.props.navigation.navigate("Page");
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'Page'})]
+                }));
     }
 
     componentWillMount(){
@@ -103,7 +143,10 @@ class TitlePage extends Component
     {
         if (this.state.sound)
             this.state.sound.release();
-        this.props.navigation.navigate("MainMenu")
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'MainMenu'})]
+                }));
     }
 
     render()
@@ -118,15 +161,15 @@ class TitlePage extends Component
                     </TouchableOpacity>
                     {this.props.enableReadAloud ? 
                             <View style={style.bottomLeftButton}>
-                                <TouchableOpacity onPress={() => { this.toggleReading(); }}>
-                                    {this.state.speaker ? <Image source={require('../../img/pause.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
-                                                        : <Image source={require('../../img/play.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />}
+                                <TouchableOpacity onPress={() => { this.toggleAudio(); }}>
+                                    {this.state.audioPaused ? <Image source={require('../../img/play.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
+                                                        : <Image source={require('../../img/pause.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />}
                                 </TouchableOpacity> 
                             </View> 
                         : null}   
-                    {this.props.enableReadAloud && this.state.paused ? 
+                    {this.props.enableReadAloud && this.state.audioPaused && this.state.canRestartAudio ? 
                         <View style={style.bottomLeftUpButton}>
-                            <TouchableOpacity onPress={() => { this.restartReading(); }}>
+                            <TouchableOpacity onPress={() => { this.restartAudio(); }}>
                                 <Image source={require('../../img/restart.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
                             </TouchableOpacity> 
                         </View> 
