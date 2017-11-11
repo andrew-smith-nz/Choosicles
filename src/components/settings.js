@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler, Alert } from 'react-native';
 import style from '../../style/style.js';
-import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud, setAutoplayAudio, setNoText } from '../actions/settings.js';
+import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud, setAutoplayAudio, setShowText, setSilentMode, resetToDefaults } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
@@ -16,7 +16,8 @@ function mapStateToProps(state) {
         enableSoundEffects: state.changeSettings.enableSoundEffects,
         enableReadAloud: state.changeSettings.enableReadAloud,
         enableAutoplayAudio: state.changeSettings.enableAutoplayAudio,
-        enableNoText: state.changeSettings.enableNoText,
+        enableShowText: state.changeSettings.enableShowText,
+        enableSilentMode: state.changeSettings.enableSilentMode,
     }
 }
 
@@ -27,9 +28,11 @@ function mapDispatchToProps(dispatch)
         setEnableSoundEffects: (enabled) => dispatch(setEnableSoundEffects(enabled)),
         setEnableReadAloud: (enabled) => dispatch(setEnableReadAloud(enabled)),
         setAutoplayAudio: (enabled) => dispatch(setAutoplayAudio(enabled)),
-        setNoText: (enabled) => dispatch(setNoText(enabled)),
+        setShowText: (enabled) => dispatch(setShowText(enabled)),
+        setSilentMode: (enabled) => dispatch(setSilentMode(enabled)),
         toggleDisplayChoiceCounters: () => dispatch(toggleDisplayChoiceCounters()),
-        resetPageCounters: (pages) => dispatch(resetPageCounters(pages))
+        resetPageCounters: (pages) => dispatch(resetPageCounters(pages)),
+        resetToDefaults: () => dispatch(resetToDefaults())
     };
 }
 
@@ -71,20 +74,30 @@ class Settings extends Component
                             <View style={style.padding10}>
                                 <GroupBox title="Options">
                                     <View style={style.switchView}>
+                                        <Text style={style.boldText16}>Silent Mode</Text>
+                                        <Switch onValueChange={(value) => {this.props.setSilentMode(value)}} value={this.props.enableSilentMode} style={style.switch} />
+                                    </View>
+                                    <View style={style.switchView}>
                                         <Text style={style.boldText16}>Enable Audio Track</Text>
                                         <Switch onValueChange={(value) => {this.props.setEnableReadAloud(value)}} value={this.props.enableReadAloud} style={style.switch} />
                                     </View>
                                     <View style={style.switchView}>
                                         <Text style={style.boldText16}>Auto-Play Audio Track</Text>
-                                        <Switch onValueChange={(value) => {this.props.setAutoplayAudio(value)}} value={this.props.enableAutoplayAudio} style={style.switch} disabled={this.props.enableNoText} />
+                                        <Switch onValueChange={(value) => {this.props.setAutoplayAudio(value)}} value={this.props.enableAutoplayAudio} style={style.switch} />
                                     </View>
                                     <View style={style.switchView}>
                                         <Text style={style.boldText16}>Enable Sound Effects</Text>
                                         <Switch onValueChange={(value) => {this.props.setEnableSoundEffects(value)}} value={this.props.enableSoundEffects} style={style.switch} />
                                     </View>
                                     <View style={style.switchView}>
-                                        <Text style={style.boldText16}>Hide Text</Text>
-                                        <Switch onValueChange={(value) => {this.props.setNoText(value)}} value={this.props.enableNoText} style={style.switch} />
+                                        <Text style={style.boldText16}>Show Text</Text>
+                                        <Switch onValueChange={(value) => {this.props.setShowText(value)}} value={this.props.enableShowText} style={style.switch} />
+                                    </View>
+                                    <View style={[style.marginTop10, {alignItems:'center', width:'100%'}]}>
+                                        <TouchableOpacity style={[style.blackBorder, style.padding10, {backgroundColor: '#FBC61E', borderRadius:20}]} 
+                                                            onPress={() => this.props.resetToDefaults() }>
+                                            <Text style={style.boldText16}>Reset to Defaults</Text>
+                                        </TouchableOpacity>
                                     </View>
                                 </GroupBox>
                             </View>
@@ -98,7 +111,7 @@ class Settings extends Component
                                         <Switch onValueChange={() => this.props.toggleDisplayChoiceCounters()} value={this.props.countersEnabled} style={style.switch} />
                                     </View>
                                     <View style={[style.marginTop10, {alignItems:'center', width:'100%'}]}>
-                                        <TouchableOpacity style={[style.blackBorder, style.padding10, {backgroundColor: '#FBC61E'}]} 
+                                        <TouchableOpacity style={[style.blackBorder, style.padding10, {backgroundColor: '#FBC61E', borderRadius:20}]} 
                                                             onPress={() => this.setState({ resetCountersModalVisible:true })}>
                                             <Text style={style.boldText16}>Reset Choice Counters</Text>
                                         </TouchableOpacity>
@@ -142,7 +155,7 @@ class BookSelect extends Component
         return (
             <TouchableOpacity onPress={() => this.props.callback()} style={style.bookSelectItem}>
                 <Text style={style.boldText14}>{this.props.title}</Text>
-                <Text style={style.boldText10}>{this.props.totalChoices || 0} choice{this.props.totalChoices != 1 ? 's' : ''} made.</Text>
+                {(this.props.title != "All Books") ? <Text style={style.boldText10}>{this.props.totalChoices || 0} choice{this.props.totalChoices != 1 ? 's' : ''} made.</Text> : null}
             </TouchableOpacity>
         );
     }

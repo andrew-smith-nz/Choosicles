@@ -3,13 +3,16 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getEndForBook, getEndSoundForBook } from './resourceManager.js'
+import { backtrack, changePage, clearHistory } from '../actions/book.js';
 var Sound = require('react-native-sound');
+import { NavigationActions } from 'react-navigation';
 
 
 function mapStateToProps(state) {
     return { 
         book: state.changePage.activeBook,
-        enableSoundEffects: state.changeSettings.enableSoundEffects
+        enableSoundEffects: state.changeSettings.enableSoundEffects,
+        enableAutoplayAudio: state.changeSettings.enableAutoplayAudio
     }
 }
 
@@ -17,6 +20,8 @@ function mapDispatchToProps(dispatch)
 {
     return { 
         backtrack: () => dispatch(backtrack()),
+        clearHistory: () => dispatch(clearHistory()),
+        changePage: (id) => dispatch(changePage(id))
     };
 }
 
@@ -38,7 +43,8 @@ class EndPage extends Component
     }
     
     loadSoundEffect(){                
-        var sound = new Sound(getEndSoundForBook(this.props.book.id), Sound.MAIN_BUNDLE);
+        var sound = new Sound(getEndSoundForBook(this.props.book.id), Sound.MAIN_BUNDLE, 
+        () => { if (this.props.enableAutoplayAudio) { sound.play(); } } );  
         this.setState({soundEffect: sound});
     }   
 
@@ -52,8 +58,12 @@ class EndPage extends Component
     
     startBook()
     {
+        this.props.clearHistory();
         this.props.changePage(this.props.book.pages[0].id)
-        this.props.navigation.navigate("Page");
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'Page'})]
+                }));
     }
 
     render()
@@ -70,8 +80,8 @@ class EndPage extends Component
                             </TouchableOpacity>
                         </View> 
                     : null}     
-                    <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.startBook()}>
-                        <Image style={style.fill} source={require('../../img/start_button.png')} resizeMode="contain" />
+                    <TouchableOpacity style={style.centerBottomLargerButton} onPress={() => this.startBook()}>
+                        <Image style={style.fill} source={require('../../img/start_again.png')} resizeMode="contain" />
                     </TouchableOpacity>
                 </View>);
     }

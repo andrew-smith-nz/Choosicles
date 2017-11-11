@@ -9,6 +9,7 @@ _resourcesByBook = [
         coverImageLeftHalf: require("../../img/pages/monster/cover_lefthalf.png"),
         coverImageRightHalf: require("../../img/pages/monster/cover_righthalf.png"),
         startAudio: 'monster_start_audio.mp3',
+        startSoundEffect: 'monster_start_soundEffect.mp3',
         endImage:  require("../../img/pages/monster/end.png"),
         endAudio: 'monster_end_audio.mp3'
     },
@@ -601,6 +602,13 @@ export function getStartAudioForBook(bookId)
     var book = _resourcesByBook.filter(b => b.bookId === bookId)[0];
     return book.startAudio;
 }
+
+export function getStartSoundEffectForBook(bookId)
+{
+    var book = _resourcesByBook.filter(b => b.bookId === bookId)[0];
+    return book.startSoundEffect;
+}
+
 
 export function getReadingForPage(pageId, partId)
 {
