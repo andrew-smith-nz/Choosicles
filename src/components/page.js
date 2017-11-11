@@ -48,7 +48,7 @@ class Page extends Component
         this.fadeInText = this.fadeInText.bind(this);
         this.getPageText = this.getPageText.bind(this);
         this.getPageCount = this.getPageCount.bind(this);
-        this.loadReadingAudio = this.loadReadingAudio.bind(this);
+        //this.loadReadingAudio = this.loadReadingAudio.bind(this);
         this.state = { 
             speaker: false, 
             slideX: new Animated.Value(Dimensions.get('window').width), 
@@ -61,106 +61,29 @@ class Page extends Component
         };
         this._slideProgress = new Animated.Value(0);
     }
-
-    loadReadingAudio(props, partId){ 
-        this.stopReading();
-        this.setState({playingSound: []})
-        var numToLoad = props.pageData.texts.length;
-        var numLoaded = 0;
-        var players = [];
-        if (this.props.enableNoText)
-        {
-            for (i = 1; i <= props.pageData.texts.length; i++)
-            {                
-                players.push(new Sound(props.pageData.assetCode + '_' + i + '_audio.mp3', Sound.MAIN_BUNDLE, 
-                    () => { numLoaded++; if (props.enableAutoplayAudio && numLoaded === numToLoad) { this.toggleReading(true); }}));
-            }
-        }
-        else
-        {
-            players.push(new Sound(props.pageData.assetCode + '_' + (partId + 1) + '_audio.mp3', Sound.MAIN_BUNDLE,
-                () => {if (props.enableAutoplayAudio) { this.toggleReading(true); }}));            
-        }
-        this.setState({playingSound: players})
-    }
     
-    loadSoundEffect(newProps){                
-        var player = new Sound(newProps.pageData.assetCode + '_soundeffect.mp3', Sound.MAIN_BUNDLE,
-            () => {this.setState({soundEffect: player})});
+    loadSoundEffect(assetCode){                
+        var player = new Sound(assetCode + '_soundeffect.mp3', Sound.MAIN_BUNDLE, () => {this.setState({soundEffect: player})});
     }   
-    
-    playSound()
-    {
-        if (this.state.soundEffect)
-        {
-            this.state.soundEffect.play();
-        }
-    } 
 
-    playReading(i)
-    {
-        this.setState({currentPlayingSoundIndex: i});
-        if ((i + 1) < this.state.playingSound.length)
-        {
-            this.state.playingSound[i].play(() => this.playReading(i + 1));
-        }
-        else
-        {
-            this.state.playingSound[i].play(() => this.setState({speaker: false, currentPlayingSoundIndex: 0}));
-        }
-    }
-
-    restartReading()
-    {
-        if (this.state.playingSound)
-        {
-            for (i = 0; i < this.state.playingSound.length; i++)
-            {
-                this.state.playingSound[i].setCurrentTime(0);
-            }
-            this.setState({paused: false, speaker: true});
-            this.playReading(0);
-        }
-    }
-
-    stopReading()
+    stopAllPlayers()
     {        
-        this.setState({paused:false, speaker:false, audioIsLoaded:false});
-        if (this.state.playingSound)
+        if (this.state.audioPlayers)
         {
-            for (i = 0; i < this.state.playingSound.length; i++)
+            for (i = 0; i < this.state.audioPlayers.length; i++)
             {
-                this.state.playingSound[this.state.currentPlayingSoundIndex].release();
+                this.state.audioPlayers[i].stop();
             }
         }
     }
-
-    toggleReading(status)
-    {
-        if (status == null)
-            status = !this.state.speaker;
-        this.setState({speaker: status});
-        var restarted = false;
-        if (this.state.playingSound)
+    
+    stopAndReleaseAllPlayers()
+    {        
+        if (this.state.audioPlayers)
         {
-            if (status)
+            for (i = 0; i < this.state.audioPlayers.length; i++)
             {
-                this.setState({paused: false});
-                for (i = 0; i < this.state.playingSound.length; i++)
-                {
-                    this.playReading(this.state.currentPlayingSoundIndex);
-                    restarted = true;
-                }
-                if (!restarted)
-                    this.restartReading();
-            }
-            else
-            {
-                this.setState({paused: true});
-                for (i = 0; i < this.state.playingSound.length; i++)
-                {
-                    this.state.playingSound[this.state.currentPlayingSoundIndex].pause();
-                }
+                this.state.audioPlayers[i].release();
             }
         }
     }
@@ -168,31 +91,63 @@ class Page extends Component
     componentWillMount()
     {
         //this.loadReadingAudio(this.props, 0);
-        this.loadSoundEffect(this.props);
+        //this.loadSoundEffect(this.props);
     }
 
     componentWillUnmount()
     {
-        this.stopReading();
+        this.stopAllReading();
     }
 
     componentWillReceiveProps(newProps)
     {
-        // this.setState({ 
-        //         paused:false,
-        //         currentText: 0, 
-        //         speaker: false, 
-        //         slideX: new Animated.Value  ((newProps.panDirection == "forward" ? 1 : -1) * Dimensions.get('window').width) 
-        //     },
-        //     () => this.animateIn());   
+        //this.stopAllPlayers();
+        var players = [];
+        var numLoaded = 0;
+        Reactotron.log("new props! currentText="+ newProps.currentText);
+        if (this.props.enableNoText)
+        {
+            for (i = 1; i <= newProps.pageData.texts.length; i++)
+            {     
+                var sound = new Sound(newProps.pageData.assetCode + '_' + i + '_audio.mp3', Sound.MAIN_BUNDLE, () => { numLoaded++; });
+                players.push(sound);
+            }
+        }
+        else
+        {
+            var sound = new Sound(newProps.pageData.assetCode + '_' + (newProps.currentText + 1) + '_audio.mp3', Sound.MAIN_BUNDLE, 
+                () => { 
+                    Reactotron.log("loaded sound for " + newProps.currentText); 
+                    players.push(sound);
+                    if (this.props.enableAutoplayAudio) 
+                        this.playAudio(0); 
+                    });
+        }
+        this.setState({audioPlayers: players});
+        
+        // if it's a new page, load the sound effect
         if (newProps.pageData.id != this.props.pageData.id)
         {
-            Reactotron.log("Audio is loaded: " + this.state.audioIsLoaded);
-            // we've navigated to a fresh page, load the audio
-            if (!this.state.audioIsLoaded)
-                this.setState({audioIsLoaded: true}, () => this.loadReadingAudio(newProps, newProps.currentText));
-            
             this.loadSoundEffect(newProps);
+        }
+    }
+
+    playAudio(i)
+    {
+        Reactotron.log(this.state.audioPlayers[i]);
+        //this.stopAllPlayers();
+        if (this.state.audioPlayers)
+        {
+            this.state.audioPlayers[i].play(() => { if (this.state.audioPlayers.length > i + 1) this.playAudio(i + 1); })
+        }
+    }
+
+    toggleAudio()
+    {
+        this.playAudio(0);
+        if (this.state.audioPaused)
+        {
+            //this.playAudio(0);
         }
     }
 
@@ -234,14 +189,14 @@ class Page extends Component
     {
         if ((this.props.currentText < this.props.pageData.texts.length - 1))
         {            
-            this.stopReading();
-            this.loadReadingAudio(this.props, this.props.currentText + 1);      
+            // this.stopReading();
+            // this.loadReadingAudio(this.props, this.props.currentText + 1);      
             this.props.changeText(1);
-            this.setState({ paused: false, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
+            this.setState({ textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
         }
         else
         {
-            this.stopReading();
+            //this.stopReading();
             this.props.navigation.navigate("EndPage");
         }
     }
@@ -255,10 +210,10 @@ class Page extends Component
         }
         else
         {
-            this.stopReading();
-            this.loadReadingAudio(this.props, this.props.currentText - 1);
+            //this.stopReading();
+            //this.loadReadingAudio(this.props, this.props.currentText - 1);
             this.props.changeText(-1);
-            this.setState({paused: false, textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());
+            this.setState({textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText());
         }
     }
 
@@ -266,13 +221,13 @@ class Page extends Component
     {
         if (this.props.pageHistory.length == 1)
         {
-            this.stopReading();
+            //this.stopReading();
             BackHandler.removeEventListener('hardwareBackPress', () => this.backHandler());
             this.props.navigation.navigate("TitlePage");
         }
         else
         {            
-            this.stopReading();
+            //this.stopReading();
             this.props.backtrack();
         }
     }
@@ -299,7 +254,7 @@ class Page extends Component
 
     home()
     {
-        this.stopReading();
+        //this.stopReading();
         this.props.clearHistory();
         this.props.navigation.navigate("MainMenu"); 
     }
@@ -383,7 +338,7 @@ class Page extends Component
                         </View> : null}        
                         {this.props.enableReadAloud ? 
                             <View style={style.bottomLeftButton}>
-                                <TouchableOpacity onPress={() => { this.toggleReading(); }}>
+                                <TouchableOpacity onPress={() => { this.toggleAudio(); }}>
                                     {this.state.speaker ? <Image source={require('../../img/pause.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
                                                         : <Image source={require('../../img/play.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />}
                                 </TouchableOpacity> 
