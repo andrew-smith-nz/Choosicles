@@ -4,7 +4,7 @@ import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getCoverForBook } from './resourceManager.js';
 import { backtrack, clearHistory, changePage} from '../actions/book.js';
-import { getStartAudioForBook } from './resourceManager.js'
+import { getStartAudioForBook, getStartSoundEffectForBook } from './resourceManager.js'
 var Sound = require('react-native-sound');
 import Reactotron from 'reactotron-react-native';
 import { NavigationActions } from 'react-navigation';
@@ -13,7 +13,7 @@ function mapStateToProps(state) {
     return { 
         book: state.changePage.activeBook,
         enableReadAloud: state.changeSettings.enableReadAloud,
-        enableAutoplayAudio: state.changeSettings.enableAutoplayAudio
+        enableSoundEffects: state.changeSettings.enableSoundEffects
     }
 }
 
@@ -36,7 +36,20 @@ class TitlePage extends Component
         this.pauseAudio = this.pauseAudio.bind(this);
         this.setCanRestartAudio = this.setCanRestartAudio.bind(this);
         BackHandler.addEventListener('hardwareBackPress', () => this.backHandler());
-        this.state = {audioPaused:!props.enableAutoplayAudio, canRestartAudio: false}
+        this.state = {audioPaused:!props.enableReadAloud, canRestartAudio: false}
+    }
+    
+    loadSoundEffect(){    
+        var player = new Sound(getStartSoundEffectForBook(this.props.book.id), Sound.MAIN_BUNDLE, () => {this.setState({soundEffect: player})});
+        this.setState({soundEffect: player});
+    }   
+    
+    playSoundEffect(i)
+    {
+        if (this.state.soundEffect)
+        {
+            this.state.soundEffect.play();
+        }
     }
 
     loadAudio()
@@ -45,7 +58,7 @@ class TitlePage extends Component
         this.setState({initialisingAudio: true});
 
         var sound = new Sound(getStartAudioForBook(this.props.book.id), Sound.MAIN_BUNDLE, 
-            () => { if (this.props.enableAutoplayAudio) { sound.play(); }});  
+            () => { if (this.props.enableReadAloud) { sound.play(); }});  
         
         this.setState({audioPlayers: [ sound ], initialisingAudio: false});
     }
@@ -137,6 +150,7 @@ class TitlePage extends Component
 
     componentWillMount(){
         this.loadAudio();
+        this.loadSoundEffect();
     }
 
     home()
@@ -173,7 +187,13 @@ class TitlePage extends Component
                                 <Image source={require('../../img/restart.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} /> 
                             </TouchableOpacity> 
                         </View> 
-                    : null}     
+                    : null}   
+                    {this.props.enableSoundEffects ? 
+                    <View style={style.bottomRightButton}>
+                        <TouchableOpacity onPress={() => this.playSoundEffect()}>
+                            <Image source={require('../../img/speaker_on.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                        </TouchableOpacity>
+                    </View> : null}       
                 </View>);
     }
 }

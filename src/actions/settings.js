@@ -3,7 +3,9 @@ export const SET_DISPLAY_MODE = "SET_DISPLAY_MODE";
 export const SET_ENABLE_SOUND_EFFECTS = "SET_ENABLE_SOUND_EFFECTS";
 export const SET_ENABLE_READ_ALOUD = "SET_ENABLE_READ_ALOUD";
 export const SET_AUTOPLAY_AUDIO = "SET_AUTOPLAY_AUDIO";
-export const SET_NO_TEXT = "SET_NO_TEXT";
+export const SET_SHOW_TEXT = "SET_SHOW_TEXT";
+export const SET_SILENT_MODE = "SET_SILENT_MODE";
+export const RESET_TO_DEFAULTS = "RESET_TO_DEFAULTS";
 
 export function toggleDisplayChoiceCounters()
 {
@@ -44,10 +46,25 @@ export function setAutoplayAudio(enabled)
         };
 }
 
-export function setNoText(enabled)
+export function setShowText(enabled)
 {
     return {
-            type: SET_NO_TEXT,
+            type: SET_SHOW_TEXT,
             enabled
+        };
+}
+
+export function setSilentMode(enabled)
+{
+    return {
+            type: SET_SILENT_MODE,
+            enabled
+        };
+}
+
+export function resetToDefaults()
+{
+    return {
+            type: RESET_TO_DEFAULTS
         };
 }

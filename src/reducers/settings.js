@@ -1,6 +1,6 @@
-import { TOGGLE_DISPLAY_CHOICE_COUNTERS, SET_DISPLAY_MODE, SET_ENABLE_SOUND_EFFECTS, SET_ENABLE_READ_ALOUD, SET_AUTOPLAY_AUDIO, SET_NO_TEXT } from '../actions/settings.js'
+import { TOGGLE_DISPLAY_CHOICE_COUNTERS, SET_DISPLAY_MODE, SET_ENABLE_SOUND_EFFECTS, SET_ENABLE_READ_ALOUD, SET_AUTOPLAY_AUDIO, SET_SHOW_TEXT, SET_SILENT_MODE, RESET_TO_DEFAULTS } from '../actions/settings.js'
 
-export function changeSettings(state = { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: false, enableNoText: false }, action)
+export function changeSettings(state = { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: false, enableShowText: true, enableSilentMode: false }, action)
 {
     switch (action.type)
     {
@@ -14,19 +14,30 @@ export function changeSettings(state = { showChoiceCounters: true, displayMode: 
         }
         case SET_ENABLE_SOUND_EFFECTS:
         {
-            return { ...state, enableSoundEffects: action.enabled };
+            return { ...state, enableSoundEffects: action.enabled, enableSilentMode: (state.enableSilentMode && !action.enabled)  };
         }
         case SET_ENABLE_READ_ALOUD:
         {
-            return { ...state, enableReadAloud: action.enabled };
+            return { ...state, enableReadAloud: action.enabled, enableAutoplayAudio: state.enableAutoplayAudio && action.enabled, enableSilentMode: (state.enableSilentMode && !action.enabled)  };
         }
         case SET_AUTOPLAY_AUDIO:
         {
-            return { ...state, enableAutoplayAudio: action.enabled };
+            return { ...state, enableAutoplayAudio: action.enabled, enableReadAloud: true, enableSilentMode: (state.enableSilentMode && !action.enabled) };
         }
-        case SET_NO_TEXT:
+        case SET_SHOW_TEXT:
         {
-            return { ...state, enableNoText: action.enabled, enableAutoplayAudio: action.enabled || state.enableAutoplayAudio };
+            return { ...state, enableSilentMode: state.enableSilentMode && action.enabled, enableShowText: action.enabled, enableReadAloud: !action.enabled || state.enableReadAloud };
+        }
+        case SET_SILENT_MODE:
+        {
+            if (action.enabled)
+                return { ...state, enableSilentMode: true, enableSoundEffects: false, enableReadAloud: false, enableAutoplayAudio: false, enableShowText: true}
+            else
+                return { ...state, enableSilentMode: false, enableSoundEffects: true, enableReadAloud: true}
+        }
+        case RESET_TO_DEFAULTS:
+        {
+            return { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: false, enableShowText: true, enableSilentMode: false };
         }
         default: 
         {

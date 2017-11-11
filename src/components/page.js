@@ -22,7 +22,7 @@ function mapStateToProps(state) {
         displayMode: state.changeSettings.displayMode,
         enableSoundEffects: state.changeSettings.enableSoundEffects,
         enableReadAloud: state.changeSettings.enableReadAloud,
-        enableNoText: state.changeSettings.enableNoText,
+        enableShowText: state.changeSettings.enableShowText,
         enableAutoplayAudio: state.changeSettings.enableAutoplayAudio
     }
 }
@@ -96,7 +96,16 @@ class Page extends Component
         this.setState({initialisingAudio: true, audioPaused: !this.props.enableAutoplayAudio, canRestartAudio: false});
         var players = [];
         this.releaseAllPlayers();
-        if (props.enableNoText)
+        if (props.enableShowText)
+        {
+            var sound = new Sound(props.pageData.assetCode + '_' + (props.currentText + 1) + '_audio.mp3', Sound.MAIN_BUNDLE, 
+                () => { 
+                    players.push(sound);
+                    if (props.enableAutoplayAudio) 
+                        this.playAudio(0); 
+                    });
+        }
+        else
         {
             for (i = 1; i <= props.pageData.texts.length; i++)
             {     
@@ -108,15 +117,6 @@ class Page extends Component
                         this.playAudio(0); 
                     });
             }
-        }
-        else
-        {
-            var sound = new Sound(props.pageData.assetCode + '_' + (props.currentText + 1) + '_audio.mp3', Sound.MAIN_BUNDLE, 
-                () => { 
-                    players.push(sound);
-                    if (props.enableAutoplayAudio) 
-                        this.playAudio(0); 
-                    });
         }
         this.setState({audioPlayers: players, initialisingAudio: false});
 
@@ -253,7 +253,7 @@ class Page extends Component
 
     forward()
     {
-        if (this.props.currentText < this.props.pageData.texts.length - 1 && !(this.props.enableNoText && this.props.pageData.navigationLinks.length == 0))
+        if (this.props.currentText < this.props.pageData.texts.length - 1 && !(!this.props.enableShowText && this.props.pageData.navigationLinks.length == 0))
         {            
             this.props.changeText(1);
             this.setState({ textFadeOpacity: new Animated.Value(0) }, () => this.fadeInText()); 
@@ -272,7 +272,7 @@ class Page extends Component
     
     back()
     {
-        if (this.props.currentText == 0 || this.props.enableNoText)
+        if (this.props.currentText == 0 || !this.props.enableShowText)
         {
             this.backtrack();
         }
@@ -343,7 +343,7 @@ class Page extends Component
 
     render()
     {
-        let hasDecision = this.props.enableNoText || (this.props.currentText == (this.props.pageData.texts.length - 1) && this.props.pageData.navigationLinks.length > 0);
+        let hasDecision = !this.props.enableShowText || (this.props.currentText == (this.props.pageData.texts.length - 1) && this.props.pageData.navigationLinks.length > 0);
         let textPosition = this.props.pageData.texts[this.props.currentText].textPosition;
         let backgroundOpacity = this.props.pageData.texts[this.props.currentText].backgroundOpacity;
         if (!backgroundOpacity) backgroundOpacity = this.props.pageData.backgroundOpacity;
@@ -354,7 +354,7 @@ class Page extends Component
         let topPosition = '0%';
         let width = '74%';
         var backgroundColor = 'rgba(255,255,255,' + backgroundOpacity.toString() + ')';
-        let pageTextView = this.props.enableNoText ? null : ( 
+        let pageTextView = !this.props.enableShowText ? null : ( 
             <Animated.Text style={[ style.pageText, {backgroundColor:backgroundColor, opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor }]}>
                 {this.getPageText()}
             </Animated.Text> );
@@ -398,7 +398,7 @@ class Page extends Component
                                 </TouchableOpacity> 
                         </View>
                         <View style={style.middleRightButton}>
-                            {(this.props.enableNoText && (this.props.pageData.navigationLinks.length == 0)) || (!this.props.enableNoText && ((this.props.pageData.navigationLinks.length == 0) || (this.props.currentText < this.props.pageData.texts.length - 1))) ? 
+                            {(!this.props.enableShowText && (this.props.pageData.navigationLinks.length == 0)) || (this.props.enableShowText && ((this.props.pageData.navigationLinks.length == 0) || (this.props.currentText < this.props.pageData.texts.length - 1))) ? 
                                 <TouchableOpacity onPress={() => this.forward()}>
                                     <Image source={require('../../img/arrow_forward.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                                 </TouchableOpacity>

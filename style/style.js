@@ -21,8 +21,9 @@ export default StyleSheet.create({
     ,padding20: { padding: 20 * global.WIDTH_RATIO }
     ,marginTop10: { marginTop: 10 * global.HEIGHT_RATIO }
 
-    ,groupBoxContainer:  {borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black', padding:10 * global.HEIGHT_RATIO, paddingTop: 20 * global.HEIGHT_RATIO, backgroundColor:'#F7E19E'}
-    ,groupBoxHeader: {position:'absolute', paddingLeft:5 * global.WIDTH_RATIO, paddingRight:5 * global.WIDTH_RATIO, left: 10 * global.WIDTH_RATIO, top: -10 * global.WIDTH_RATIO, 
+    ,groupBoxContainer:  {borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black', padding:10 * global.HEIGHT_RATIO, paddingTop: 20 * global.HEIGHT_RATIO, 
+            backgroundColor:'#F7E19E', borderRadius:30}
+    ,groupBoxHeader: {position:'absolute', paddingLeft:7 * global.WIDTH_RATIO, paddingRight:7 * global.WIDTH_RATIO, left: 10 * global.WIDTH_RATIO, top: -10 * global.WIDTH_RATIO, 
             backgroundColor: '#FBC61E'}
 
     ,choiceButtonView: { flexDirection:'row', justifyContent:'space-between', marginBottom:-2 * global.HEIGHT_RATIO, width:180 * global.WIDTH_RATIO }
@@ -55,6 +56,7 @@ export default StyleSheet.create({
 
     ,centerRightLargeButton: {position:'absolute', width:120 * global.WIDTH_RATIO, height:100 * global.HEIGHT_RATIO, top: 130 * global.HEIGHT_RATIO, right: 16 * global.WIDTH_RATIO}
     ,centerBottomLargeButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 250 * global.WIDTH_RATIO}
+    ,centerBottomLargerButton: {position:'absolute', width:185 * global.WIDTH_RATIO, height:80 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 228 * global.WIDTH_RATIO}
     ,centerBottomLongButton: {position:'absolute', width:150 * global.WIDTH_RATIO, height:45 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 245 * global.WIDTH_RATIO}
                                  
     ,...Platform.select({
