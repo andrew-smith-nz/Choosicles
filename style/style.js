@@ -62,12 +62,12 @@ export default StyleSheet.create({
                 {
                     pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily:'Berrylicious', fontWeight:'bold', marginTop:5 * global.HEIGHT_RATIO,
                     borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
-            
+                    ,bookInfoPadding: {paddingLeft:10 * global.HEIGHT_RATIO}
                     ,summerJoy: {fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h1: { fontSize:36 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h2: { fontSize:30 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h3: { fontSize:24 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,h4: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
+                    ,h4: { fontSize:16 * global.WIDTH_RATIO,lineHeight:32 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,title: { fontSize:48 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,plainText: { fontSize:12 * global.WIDTH_RATIO, fontFamily: 'Helvetica', backgroundColor:'transparent' }
                     ,smallPlainText: { fontSize:10 * global.WIDTH_RATIO, fontFamily: 'Helvetica', backgroundColor:'transparent' }
@@ -76,7 +76,7 @@ export default StyleSheet.create({
                     ,text12: { fontSize:12 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
                     ,boldText12: { fontSize:12 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
                     ,text14: { fontSize:14 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
-                    ,boldText14: { fontSize:14 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
+                    ,boldText14: { fontSize:14 * global.WIDTH_RATIO,lineHeight:24 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
                     ,text16: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
                     ,boldText16: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
                     ,boldText24: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
@@ -84,7 +84,7 @@ export default StyleSheet.create({
                 android: {
                     pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold', marginTop:5 * global.HEIGHT_RATIO,
                     borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
-            
+                    ,bookInfoPadding: {padding:10 * global.HEIGHT_RATIO}                    
                     ,summerJoy: {fontFamily: 'summer_joy' }
                     ,h1: { fontSize:36 * global.WIDTH_RATIO, fontFamily: 'summer_joy' }
                     ,h2: { fontSize:30 * global.WIDTH_RATIO, fontFamily: 'summer_joy' }
