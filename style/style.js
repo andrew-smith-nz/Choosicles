@@ -43,9 +43,7 @@ export default StyleSheet.create({
 
     ,bookSelectItem: { borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black', width:'80%', backgroundColor:'#FBC61E', alignItems:'center', marginBottom:5 * global.HEIGHT_RATIO }
 
-    ,pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold', marginTop:5 * global.HEIGHT_RATIO,
-        borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
-
+    
     ,topLeftButton: {position:'absolute', left:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,topRightButton: {position:'absolute', right:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,bottomLeftButton: {position:'absolute', left:5 * global.WIDTH_RATIO, bottom:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
@@ -62,7 +60,10 @@ export default StyleSheet.create({
     ,...Platform.select({
                 ios:
                 {
-                    summerJoy: {fontFamily: 'SummerJoy', backgroundColor:'transparent' }
+                    pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily:'Berrylicious', fontWeight:'bold', marginTop:5 * global.HEIGHT_RATIO,
+                    borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
+            
+                    ,summerJoy: {fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h1: { fontSize:36 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h2: { fontSize:30 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h3: { fontSize:24 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
@@ -81,7 +82,10 @@ export default StyleSheet.create({
                     ,boldText24: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
                 },
                 android: {
-                    summerJoy: {fontFamily: 'summer_joy' }
+                    pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold', marginTop:5 * global.HEIGHT_RATIO,
+                    borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
+            
+                    ,summerJoy: {fontFamily: 'summer_joy' }
                     ,h1: { fontSize:36 * global.WIDTH_RATIO, fontFamily: 'summer_joy' }
                     ,h2: { fontSize:30 * global.WIDTH_RATIO, fontFamily: 'summer_joy' }
                     ,h3: { fontSize:24 * global.WIDTH_RATIO, fontFamily: 'summer_joy' }
