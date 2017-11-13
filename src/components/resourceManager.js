@@ -9,7 +9,7 @@ _resourcesByBook = [
         coverImageLeftHalf: require("../../img/pages/monster/cover_lefthalf.png"),
         coverImageRightHalf: require("../../img/pages/monster/cover_righthalf.png"),
         startAudio: 'monster_start_audio.mp3',
-        startSoundEffect: 'monster_start_soundEffect.mp3',
+        startSoundEffect: 'monster_start_soundeffect.mp3',
         endImage:  require("../../img/pages/monster/end.png"),
         endAudio: 'monster_end_audio.mp3'
     },
