@@ -61,8 +61,8 @@ export function changePage(state = { activeBookId: null, pageData: null, pageHis
         }
         case CHANGE_PAGE: 
         {
-            let pageData = getPageData(action.pageId);
-            //let pageData = getPageByNumber(31);
+            //let pageData = getPageData(action.pageId);
+            let pageData = getPageByNumber(31);
             if (pageData)
             {
                 let history = [];
