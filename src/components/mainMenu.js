@@ -104,7 +104,7 @@ class MainMenu extends Component
                         <View style={{flexDirection:'column', flex:32, alignItems:'center', padding:10, backgroundColor:'rgba(255,255,255,0.4)', borderRadius:30}}>                 
                             <Image id="yourbooks" style={{flex:1}} resizeMode='contain' source={require('../../img/your_books.png')} />     
                             <View style={{flexDirection:'row', flex:7, justifyContent:'center', alignItems:'center'}}>  
-                                <View style={{width:50 * global.WIDTH_RATIO, flexDirection:'row', height:'100%', alignItems:'center', marginTop:-25 * global.HEIGHT_RATIO}}> 
+                                <View style={{zIndex: 99, width:50 * global.WIDTH_RATIO, flexDirection:'row', height:'100%', alignItems:'center', marginTop:-25 * global.HEIGHT_RATIO}}> 
                                     {(this.state.myBooksIndex > 0) ? 
                                     <TouchableOpacity style={{width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex - 1})}>               
                                         <Image id="back" source={require('../../img/arrow_back.png')} resizeMode="contain" style={{width:'100%', height:'100%', padding:5}} />
@@ -127,7 +127,7 @@ class MainMenu extends Component
                                         : null}
                                     </View>
                                 </View>               
-                                <View style={{width:50 * global.WIDTH_RATIO, flexDirection:'row', height:'100%', alignItems:'center', marginTop:-25 * global.HEIGHT_RATIO}}> 
+                                <View style={{zIndex: 99, width:50 * global.WIDTH_RATIO, flexDirection:'row', height:'100%', alignItems:'center', marginTop:-25 * global.HEIGHT_RATIO}}> 
                                     {this.state.myBooksIndex < bookData.books.length - 1 ? 
                                      <TouchableOpacity style={{width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex + 1})}>
                                         <Image id="forward" source={require('../../img/arrow_forward.png')} resizeMode="contain" style={[style.fill, { padding:5 }]} />
