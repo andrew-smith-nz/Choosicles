@@ -993,8 +993,8 @@
         },
         {
             "id": "A588E22D-D984-D28D-4690-D8AD87A14D63",
-            "owned": true,
-            "comingSoon": false,
+            "owned": false,
+            "comingSoon": true,
             "title": "Your Very Own Sea Creature",
             "coverImage": null,
             "author": "Meg Price",
