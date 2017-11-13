@@ -389,7 +389,7 @@
                         },
                         {
                             "id": "b4a2d14d-5e7f-4b97-91e4-76c633f376f5",
-                            "text": "Unfortunately, your pet monster is a sore loser and sulks whenever you come in first. But it’s even worse when it wins because dances and cheers every time it comes in first! What a silly monster. ",
+                            "text": "Unfortunately, your pet monster is a sore loser and sulks whenever you come in first. But it’s even worse when it wins because it dances and cheers every time it comes in first! What a silly monster. ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -993,8 +993,8 @@
         },
         {
             "id": "A588E22D-D984-D28D-4690-D8AD87A14D63",
-            "owned": false,
-            "comingSoon": true,
+            "owned": true,
+            "comingSoon": false,
             "title": "Your Very Own Sea Creature",
             "coverImage": null,
             "author": "Meg Price",
