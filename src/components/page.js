@@ -92,6 +92,7 @@ class Page extends Component
     
     initialiseAudio(props, initSoundEffect)
     {
+        Reactotron.log("init audio");
         if (this.state.initialisingAudio) return;
         this.setState({initialisingAudio: true, audioPaused: !this.props.enableAutoplayAudio, canRestartAudio: false});
         var players = [];
@@ -165,6 +166,8 @@ class Page extends Component
 
     playAudio(i)
     {
+        Reactotron.log("Playing audio " + i);
+        Reactotron.log(this.state.audioPlayers);
         this.setState({currentPlayingAudioIndex: i});
         if (this.state.audioPlayers)
         {
@@ -336,7 +339,7 @@ class Page extends Component
     choose(targetPageId)
     {
         this.releaseAllPlayers();
-        this.setState({currentPlayingSoundIndex: 0}); 
+        this.setState({currentPlayingAudioIndex: 0, audioPaused: false}); 
         this.props.incrementPageCounter(targetPageId); 
         this.props.choose(targetPageId); 
     }
