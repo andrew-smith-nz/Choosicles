@@ -30,7 +30,7 @@
                     ],
                     "navigationLinks": [
                         {
-                            "id": "9a414150-05a9-4998-a19-b1dd3c458996",
+                            "id": "9a414150-05a9-4998-a19d-b1dd3c458996",
                             "order": 1,
                             "targetPageId": "7ff0aa4d-0c52-4b2b-b563-50e0e3764431"
                         },
@@ -993,8 +993,8 @@
         },
         {
             "id": "A588E22D-D984-D28D-4690-D8AD87A14D63",
-            "owned": false,
-            "comingSoon": true,
+            "owned": true,
+            "comingSoon": false,
             "title": "Your Very Own Sea Creature",
             "coverImage": null,
             "author": "Meg Price",
@@ -1392,12 +1392,12 @@
                         {
                             "id": "b75f8376-ee48-4026-bf66-e8a93e259ef9",
                             "order": 1,
-                            "targetPageId": "418B0D28-AB28-9B9A-4200-0132AACE4EB2"
+                            "targetPageId": "8D4A540E-E50E-6296-4954-3C4C54F2C454"
                         },
                         {
                             "id": "2e010b74-fd55-4a0c-832f-e5dde6c6ed65",
                             "order": 2,
-                            "targetPageId": "81B649FF-352D-BEA7-4ADA-CDD311A4BB9F"
+                            "targetPageId": "1C5FCFA0-4332-F7B9-4835-5A64A2CFAB48"
                         }
                     ]
                 },
@@ -1425,12 +1425,12 @@
                         {
                             "id": "ee860c11-4837-43ac-88a1-52c425d5191b",
                             "order": 1,
-                            "targetPageId": "8D4A540E-E50E-6296-4954-3C4C54F2C454"
+                            "targetPageId": "418B0D28-AB28-9B9A-4200-0132AACE4EB2"
                         },
                         {
                             "id": "56790092-913b-4b68-bf8c-f99bed6671e1",
                             "order": 2,
-                            "targetPageId": "1C5FCFA0-4332-F7B9-4835-5A64A2CFAB48"
+                            "targetPageId": "81B649FF-352D-BEA7-4ADA-CDD311A4BB9F"
                         }
                     ]
                 },

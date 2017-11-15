@@ -51,10 +51,10 @@ class Store extends Component
                         </View>)}
                     </View>      
                     <View style={{flex:3}} />            
-                    <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.setState({ codeEntryVisible:true })}>
+                    {/* <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.setState({ codeEntryVisible:true })}>
                         <Image style={style.fill} source={require('../../img/giftcode_button.png')} resizeMode="contain">
                         </Image>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                     <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={style.fill} />
                     </TouchableOpacity>
@@ -65,13 +65,13 @@ class Store extends Component
                                 </View>
                             </View>
                     </Modal>                    
-                    <Modal transparent={true} visible={this.state.codeEntryVisible} onRequestClose={() => this.setState({ codeEntryVisible:false })} supportedOrientations={['landscape-left', 'landscape-right']}>
+                    {/* <Modal transparent={true} visible={this.state.codeEntryVisible} onRequestClose={() => this.setState({ codeEntryVisible:false })} supportedOrientations={['landscape-left', 'landscape-right']}>
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                 <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>
                                         <CodeEntry cancelCallback={() => this.setState({ codeEntryVisible:false })} />
                                 </View>
                             </View>
-                    </Modal>
+                    </Modal> */}
                 </Image>
     }
 }

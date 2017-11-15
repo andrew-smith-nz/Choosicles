@@ -8,6 +8,7 @@ _resourcesByBook = [
         coverImage: require("../../img/pages/monster/cover.png"),
         coverImageLeftHalf: require("../../img/pages/monster/cover_lefthalf.png"),
         coverImageRightHalf: require("../../img/pages/monster/cover_righthalf.png"),
+        startImage:  require("../../img/pages/monster/cover.png"),
         startAudio: 'monster_start_audio.mp3',
         startSoundEffect: 'monster_start_soundeffect.mp3',
         endImage:  require("../../img/pages/monster/end.png"),
@@ -17,12 +18,16 @@ _resourcesByBook = [
       bookId: 'A588E22D-D984-D28D-4690-D8AD87A14D63',
       coverImage: require("../../img/pages/seacreature/cover.png"),
       coverImageLeftHalf: require("../../img/pages/seacreature/cover_lefthalf.png"),
-      coverImageRightHalf: require("../../img/pages/seacreature/cover_righthalf.png")
+      coverImageRightHalf: require("../../img/pages/seacreature/cover_righthalf.png"),
+      startImage:  require("../../img/pages/seacreature/cover.png"),
+      startAudio: 'seacreature_start_audio.mp3',
+      startSoundEffect: 'seacreature_start_soundeffect.mp3',
+      endImage:  require("../../img/pages/seacreature/end.png"),
+      endAudio: 'seacreature_end_audio.mp3'
     }
 ]
 
 _resourcesByPage = [
-
     // Monster
     {
         pageId: 'b09b639d-6e09-4d58-96e3-44b810df4170', 
@@ -450,10 +455,10 @@ _resourcesByPage = [
         image: require('../../img/pages/seacreature/page12.jpg'),
         choiceImages: [
             {
-                image: require('../../img/pages/seacreature/choice24.png'),
+                image: require('../../img/pages/seacreature/choice26.png'),
             },
             {
-                image: require('../../img/pages/seacreature/choice25.png'),
+                image: require('../../img/pages/seacreature/choice27.png'),
             }
         ]
         },
@@ -463,10 +468,10 @@ _resourcesByPage = [
         image: require('../../img/pages/seacreature/page13.jpg'),
         choiceImages: [
             {
-                image: require('../../img/pages/seacreature/choice26.png'),
+                image: require('../../img/pages/seacreature/choice24.png'),
             },
             {
-                image: require('../../img/pages/seacreature/choice27.png'),
+                image: require('../../img/pages/seacreature/choice25.png'),
             }
         ]
         },
@@ -597,6 +602,12 @@ export function getEndSoundForBook(bookId)
     return book.endAudio;
 }
 
+export function getStartImageForBook(bookId)
+{
+    var book = _resourcesByBook.filter(b => b.bookId === bookId)[0];
+    return book.startImage;
+}
+
 export function getStartAudioForBook(bookId)
 {
     var book = _resourcesByBook.filter(b => b.bookId === bookId)[0];
@@ -607,12 +618,6 @@ export function getStartSoundEffectForBook(bookId)
 {
     var book = _resourcesByBook.filter(b => b.bookId === bookId)[0];
     return book.startSoundEffect;
-}
-
-
-export function getReadingForPage(pageId, partId)
-{
-    return 'Sound effect page ' + _resourcesByPage.filter(p => p.pageId === pageId)[0].pageNumber + '.mp3';
 }
 
 export function getCoverForBook(bookId)

@@ -1,6 +1,6 @@
 import { TOGGLE_DISPLAY_CHOICE_COUNTERS, SET_DISPLAY_MODE, SET_ENABLE_SOUND_EFFECTS, SET_ENABLE_READ_ALOUD, SET_AUTOPLAY_AUDIO, SET_SHOW_TEXT, SET_SILENT_MODE, RESET_TO_DEFAULTS } from '../actions/settings.js'
 
-export function changeSettings(state = { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: false, enableShowText: true, enableSilentMode: false }, action)
+export function changeSettings(state = { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: true, enableShowText: true, enableSilentMode: false }, action)
 {
     switch (action.type)
     {
@@ -37,7 +37,7 @@ export function changeSettings(state = { showChoiceCounters: true, displayMode: 
         }
         case RESET_TO_DEFAULTS:
         {
-            return { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: false, enableShowText: true, enableSilentMode: false };
+            return { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: true, enableShowText: true, enableSilentMode: false };
         }
         default: 
         {

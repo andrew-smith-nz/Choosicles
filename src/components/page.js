@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler } from 'react-native';
 import style from '../../style/style.js';
-import { getImageForPage, getSoundEffectForPage, getReadingForPage, getChoiceImageForPage } from './resourceManager.js'
+import { getImageForPage, getSoundEffectForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter, changeText } from '../actions/book.js';
 import { connect } from 'react-redux';
 import NameMonster from './nameMonster.js';
@@ -60,7 +60,8 @@ class Page extends Component
             currentPlayingAudioIndex: 0,
             audioIsLoaded: false,
             initialisingAudio: false,
-            canRestartAudio: false       
+            canRestartAudio: false ,
+            soundEffects: []      
         };
         this._slideProgress = new Animated.Value(0);
     }
@@ -92,7 +93,6 @@ class Page extends Component
     
     initialiseAudio(props, initSoundEffect)
     {
-        Reactotron.log("init audio");
         if (this.state.initialisingAudio) return;
         this.setState({initialisingAudio: true, audioPaused: !this.props.enableAutoplayAudio, canRestartAudio: false});
         var players = [];
@@ -122,7 +122,7 @@ class Page extends Component
         this.setState({audioPlayers: players, initialisingAudio: false});
 
         if (initSoundEffect)
-            this.loadSoundEffect(props.pageData.assetCode);
+            this.loadSoundEffects(props.pageData.assetCode);
     }
     
     setCanRestartAudio()
@@ -135,10 +135,14 @@ class Page extends Component
         }
     }
     
-    loadSoundEffect(assetCode){    
-        Reactotron.log(assetCode);       
-        var player = new Sound(assetCode + '_soundeffect.mp3', Sound.MAIN_BUNDLE, () => {this.setState({soundEffect: player})});
-        this.setState({soundEffect: player});
+    loadSoundEffects(assetCode){    
+        this.setState({soundEffects: []});
+        var i = 1;
+        while (i <= 3)
+        {
+            let player = new Sound(assetCode + '_' + i + '_soundeffect.mp3', Sound.MAIN_BUNDLE, () => {this.state.soundEffects.push(player)});
+            i++;
+        }
     }   
 
     stopAllPlayers()
@@ -161,21 +165,32 @@ class Page extends Component
                 this.state.audioPlayers[i].release();
             }
         }
+        if (this.state.soundEffects)
+        {
+            for (i = 0; i < this.state.soundEffects.length; i++)
+            {
+                this.state.soundEffects[i].release();
+            }
+        }
         this.setState({audioPaused: !this.props.enableAutoplayAudio});
     }
 
     playAudio(i)
     {
-        Reactotron.log("Playing audio " + i);
-        Reactotron.log(this.state.audioPlayers);
         this.setState({currentPlayingAudioIndex: i});
-        if (this.state.audioPlayers)
+        if (this.state.audioPlayers && this.state.audioPlayers[i])
         {
             this.setState({audioPaused:false});
             this.state.audioPlayers[i].play(() => { 
-                if (this.state.audioPlayers.length > i + 1) 
+                if (this.props.enableShowText && this.props.currentText < this.props.pageData.texts.length - 1)
+                {                    
+                    this.forward();
+                }
+                else if (!this.props.enableShowText && this.state.audioPlayers.length > i + 1) 
                     this.playAudio(i + 1); 
-                })
+                else
+                    this.setState({audioPaused: true});
+            })
         }
     }
 
@@ -197,22 +212,53 @@ class Page extends Component
                 this.state.audioPlayers[i].setCurrentTime(0).stop();
         }
     }
-
-    outputAudioData()
-    {
-        if (this.state.audioPlayers)
-        {
-            for (i = 0; i < this.state.audioPlayers.length; i++)
-            Reactotron.log("Audio[" + i + "]: Current Time " + this.state.audioPlayers[i].getCurrentTime() );
-        }
-    }
     
     playSoundEffect(i)
     {
-        if (this.state.soundEffect)
+        if (this.state.soundEffects.length > 0)
         {
-            this.state.soundEffect.play();
+            var order = [];
+            for (i = 0; i < this.state.soundEffects.length; i++)
+            {
+                order.push(i);
+            }
+            order = this.shuffle(order);
+            this.trySoundEffect(order, 0);
         }
+    }
+
+    shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+      
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+      
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+      
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }     
+        return array;
+      }
+
+    trySoundEffect(order, i)
+    {
+        if (i >= order.length) return;
+        let effect = this.state.soundEffects[order[i]];
+        effect.getCurrentTime((seconds, isPlaying) => { 
+             if (!isPlaying)
+             {
+                 this.state.soundEffects[order[i]].play();
+             }
+             else
+             {
+                this.trySoundEffect(order, i + 1);
+             }
+        });
     }
 
     toggleAudio()
@@ -410,7 +456,7 @@ class Page extends Component
                         {this.props.enableSoundEffects ? 
                         <View style={style.bottomRightButton}>
                             <TouchableOpacity onPress={() => this.playSoundEffect()}>
-                                <Image source={require('../../img/speaker_on.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                                <Image source={require('../../img/speaker.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                             </TouchableOpacity>
                         </View> : null}        
                         {this.props.enableReadAloud ? 
