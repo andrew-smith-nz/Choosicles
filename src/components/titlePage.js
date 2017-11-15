@@ -4,7 +4,7 @@ import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getCoverForBook } from './resourceManager.js';
 import { backtrack, clearHistory, changePage} from '../actions/book.js';
-import { getStartAudioForBook, getStartSoundEffectForBook } from './resourceManager.js'
+import { getStartAudioForBook, getStartSoundEffectForBook, getStartImageForBook } from './resourceManager.js'
 var Sound = require('react-native-sound');
 import Reactotron from 'reactotron-react-native';
 import { NavigationActions } from 'react-navigation';
@@ -166,7 +166,7 @@ class TitlePage extends Component
     render()
     {
         return  (<View style={{flex:1}}>
-                    <Image source={getCoverForBook(this.props.book.id, true)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
+                    <Image source={getStartImageForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
                     <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.startBook()}>
                         <Image style={style.fill} source={require('../../img/start_button.png')} resizeMode="contain" />
                     </TouchableOpacity>
@@ -191,7 +191,7 @@ class TitlePage extends Component
                     {this.props.enableSoundEffects ? 
                     <View style={style.bottomRightButton}>
                         <TouchableOpacity onPress={() => this.playSoundEffect()}>
-                            <Image source={require('../../img/speaker_on.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                            <Image source={require('../../img/speaker.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                         </TouchableOpacity>
                     </View> : null}       
                 </View>);

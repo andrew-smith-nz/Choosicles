@@ -76,7 +76,7 @@ class EndPage extends Component
                     {this.props.enableSoundEffects ? 
                         <View style={style.bottomRightButton}>
                             <TouchableOpacity onPress={() => this.playSound()}>
-                                <Image source={require('../../img/speaker_on.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                                <Image source={require('../../img/speaker.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                             </TouchableOpacity>
                         </View> 
                     : null}     

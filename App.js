@@ -38,11 +38,6 @@ export default class App extends React.Component {
   componentDidMount()
   {
     AppState.addEventListener('change', this.setLandscape);
-    // Reactotron.log("WIDTH_RATIO = " + WIDTH_RATIO);
-    // Reactotron.log("HEIGHT_RATIO = " + HEIGHT_RATIO);
-    // Reactotron.log("Pixel Ratio = " + PixelRatio.get());
-    // Reactotron.log("Screen width = " + Dimensions.get('window').width);
-    // Reactotron.log("Screen height = " + Dimensions.get('window').height);
   }
 
   setLandscape()
@@ -90,12 +85,3 @@ const Navigator = StackNavigator({
     cardStyle:{ backgroundColor:'white', margin:0, padding:0 }
   }
 );
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }
-});
