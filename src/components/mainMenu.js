@@ -8,10 +8,12 @@ import { setOwnedProducts } from '../actions/store.js';
 import { GroupBox } from './settings.js';
 import Reactotron from 'reactotron-react-native';
 import global from '../../global.js'
+import DeviceInfo from 'react-native-device-info';
 
 
 const bookData = require('../../books.json');
 const InAppBilling = require("react-native-billing");
+
 
 function mapStateToProps(state) {
     return { 
@@ -67,6 +69,8 @@ class MainMenu extends Component
 
     componentDidMount()
     {
+        Reactotron.log(DeviceInfo.getUniqueID())
+
         if (Platform.OS === "android")
         {
             InAppBilling.open().then(

@@ -1,4 +1,4 @@
-import { SET_OWNED_PRODUCTS, ADD_OWNED_PRODUCT } from '../actions/store.js'
+import { SET_OWNED_PRODUCTS, ADD_OWNED_PRODUCT, TRY_SYNC_WITH_WEBSITE, SET_SYNC_COMPLETE } from '../actions/store.js'
 import Reactotron from 'reactotron-react-native';
 
 const bookData = require('../../books.json');
@@ -25,6 +25,25 @@ export function products(state = { ownedBooks: [] }, action)
             if (book)
                 ownedBooks.push(book.id);
             return { ...state, ownedBooks: ownedBooks }
+        }
+        default: return state;
+    }
+}
+
+export function sync(state = { syncResult: "", syncInProgress: false, syncComplete: false }, action)
+{
+    switch (action.type)
+    {
+        case TRY_SYNC_WITH_WEBSITE:
+        {
+            Reactotron.log("trysync " + action.email + ", " + action.password);
+            return { ...state, syncComplete: true, syncResult: "Doneburgers" };
+            
+            // do some websitey stuff   
+        }
+        case SET_SYNC_COMPLETE:
+        {
+            return { ...state, syncComplete: action.complete };
         }
         default: return state;
     }

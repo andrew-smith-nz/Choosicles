@@ -176,6 +176,8 @@
 		BD53677C8AA8490D83730B3A /* berrylicious.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0BA94D754B74932B58D4CEC /* berrylicious.ttf */; };
 		C3149C15D070432899C37CD0 /* berrylicious_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC1ECD1902B54A1ABDABBD0A /* berrylicious_bold.ttf */; };
 		F50D75E4067C4A3180F7E3A6 /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FB66AFB29C44CC94811670 /* libRCTOrientation.a */; };
+		FA34C97AEBC74D9DB4BD8774 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 223DB6AE6D634C7980B195F7 /* libRNDeviceInfo.a */; };
+		B0BB37E6F93747888C623483 /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4798EF0718EF4FFA9FDDA279 /* libRNDeviceInfo-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -575,6 +577,9 @@
 		BC1ECD1902B54A1ABDABBD0A /* berrylicious_bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = berrylicious_bold.ttf; path = ../fonts/berrylicious_bold.ttf; sourceTree = "<group>"; };
 		C077FF59BD3D46C499A77796 /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTOrientation.xcodeproj; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; };
 		E0BA94D754B74932B58D4CEC /* berrylicious.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = berrylicious.ttf; path = ../fonts/berrylicious.ttf; sourceTree = "<group>"; };
+		C99CDB741EDA4E10BE00765B /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; name = "RNDeviceInfo.xcodeproj"; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		223DB6AE6D634C7980B195F7 /* libRNDeviceInfo.a */ = {isa = PBXFileReference; name = "libRNDeviceInfo.a"; path = "libRNDeviceInfo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		4798EF0718EF4FFA9FDDA279 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; name = "libRNDeviceInfo-tvOS.a"; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -595,6 +600,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				F50D75E4067C4A3180F7E3A6 /* libRCTOrientation.a in Frameworks */,
 				25FF405ADB334B8F905DD575 /* libRNSound.a in Frameworks */,
+				FA34C97AEBC74D9DB4BD8774 /* libRNDeviceInfo.a in Frameworks */,
+				B0BB37E6F93747888C623483 /* libRNDeviceInfo-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +760,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				C077FF59BD3D46C499A77796 /* RCTOrientation.xcodeproj */,
 				4000A620FAD94E4F9FC2D43D /* RNSound.xcodeproj */,
+				C99CDB741EDA4E10BE00765B /* RNDeviceInfo.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1496,6 +1504,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
+					"$(SRCROOT)\..\node_modules\react-native-device-info\RNDeviceInfo",
 				);
 				INFOPLIST_FILE = Choosicles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1510,6 +1519,11 @@
 				PROVISIONING_PROFILE_SPECIFIER = com.choosicles.app;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Choosicles\"",
+					"\"$(SRCROOT)/Choosicles\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1526,6 +1540,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
+					"$(SRCROOT)\..\node_modules\react-native-device-info\RNDeviceInfo",
 				);
 				INFOPLIST_FILE = Choosicles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1541,6 +1556,11 @@
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Choosicles\"",
+					"\"$(SRCROOT)/Choosicles\"",
+				);
 			};
 			name = Release;
 		};

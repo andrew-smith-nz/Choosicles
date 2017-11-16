@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import BookCover from './bookCover.js';
 import BookInfo from './bookInfo.js';
 import CodeEntry from './codeEntry.js';
+import Sync from './sync.js';
 import Reactotron from 'reactotron-react-native';
 import { addOwnedProduct } from '../actions/store.js';
 
@@ -29,7 +30,7 @@ class Store extends Component
     constructor(props)
     {
         super();
-        this.state = { codeEntryVisible:false, bookInfoVisible: false, book: null, priceData: [] };
+        this.state = { codeEntryVisible:false, bookInfoVisible: false, book: null, priceData: [], syncVisible:false };
         BackHandler.addEventListener('hardwareBackPress', () => this.props.navigation.navigate("MainMenu"));
         //bookData.books.push(bookData.books.slice());
     }
@@ -116,13 +117,23 @@ class Store extends Component
                     <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={style.fill} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.setState({ syncVisible:true})}>
+                        <Image source={require('../../img/sync.png')} resizeMode="contain" style={style.fill} />
+                    </TouchableOpacity>
                     <Modal transparent={true} visible={this.state.bookInfoVisible} onRequestClose={() => this.setState({ bookInfoVisible:false, book:null })} supportedOrientations={['landscape-left', 'landscape-right']}>
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                 <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>
                                         <BookInfo bookInfo={this.state.book} owned={this.isBookOwned(this.state.book)} price={this.getBookPrice(this.state.book)} callback={() => this.purchaseBook(this.state.book)} cancelCallback={() => this.setState({ bookInfoVisible:false, book:null })} />
                                 </View>
                             </View>
-                    </Modal>                    
+                    </Modal>    
+                    <Modal transparent={true} visible={this.state.syncVisible} onRequestClose={() => this.setState({ syncVisible:false })} supportedOrientations={['landscape-left', 'landscape-right']}>
+                            <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
+                                <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>
+                                    <Sync cancelCallback={() => this.setState({ syncVisible:false })} />
+                                </View>
+                            </View>
+                    </Modal>                  
                     {/* <Modal transparent={true} visible={this.state.codeEntryVisible} onRequestClose={() => this.setState({ codeEntryVisible:false })} supportedOrientations={['landscape-left', 'landscape-right']}>
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                 <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>
