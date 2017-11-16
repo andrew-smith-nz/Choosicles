@@ -18,6 +18,7 @@ import com.facebook.imagepipeline.cache.MemoryCacheParams;
 import com.facebook.common.internal.Supplier;
 import com.facebook.common.util.ByteConstants;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
+import com.idehub.Billing.InAppBillingBridgePackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -48,7 +49,8 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(appConfig),
           new OrientationPackage(),
-          new RNSoundPackage()
+          new RNSoundPackage(),
+          new InAppBillingBridgePackage()
       );
     }
   };

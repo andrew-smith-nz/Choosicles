@@ -11,12 +11,13 @@ import { StackNavigator } from 'react-navigation';
 import { compose, createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { changePage, changeName, pageCounters } from './src/reducers/book.js'
+import { products } from './src/reducers/store.js'
 import { changeSettings } from './src/reducers/settings.js'
 import { persistStore, autoRehydrate, applyMiddleware } from 'redux-persist';
 import Orientation from 'react-native-orientation';
 import Reactotron from 'reactotron-react-native';
 
-let store = createStore(combineReducers({changePage, changeName, pageCounters, changeSettings}), compose(autoRehydrate({log:true})));
+let store = createStore(combineReducers({changePage, changeName, pageCounters, changeSettings, products}), compose(autoRehydrate({log:true})));
 
 export default class App extends React.Component {
 
@@ -31,7 +32,7 @@ export default class App extends React.Component {
   componentWillMount()
   {
     Orientation.lockToLandscape();    
-    const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings']}, () => { this.setState({ rehydrated: true })});
+    const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings', 'products']}, () => { this.setState({ rehydrated: true })});
     setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 0);
   }
 

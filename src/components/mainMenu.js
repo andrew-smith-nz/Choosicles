@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, BackHandler } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, BackHandler, Platform } from 'react-native';
 import style from '../../style/style.js';
 import BookCover from './bookCover.js';
 import { connect } from 'react-redux';
 import { changePage, setActiveBook, clearHistory } from '../actions/book.js';
+import { setOwnedProducts } from '../actions/store.js';
 import { GroupBox } from './settings.js';
 import Reactotron from 'reactotron-react-native';
 import global from '../../global.js'
 
 
 const bookData = require('../../books.json');
+const InAppBilling = require("react-native-billing");
 
 function mapStateToProps(state) {
     return { 
-        pageId: state.pageId,
-        pageData: state.pageData
+        ownedBooks: state.products.ownedBooks
     }
 }
 
@@ -23,7 +24,8 @@ function mapDispatchToProps(dispatch)
     return { 
         clearHistory: () => dispatch(clearHistory()),
         changePage: (pageId) => dispatch(changePage(pageId)),
-        setActiveBook: (book) => dispatch(setActiveBook(book))
+        setActiveBook: (book) => dispatch(setActiveBook(book)),
+        setOwnedProducts: (productIds) => dispatch(setOwnedProducts(productIds))
     };
 }
 
@@ -58,43 +60,37 @@ class MainMenu extends Component
         this.props.navigation.navigate("Store");
     }
 
+    setOwnedProducts(productIds)
+    {
+        this.props.setOwnedProducts(productIds);
+    }
+
     componentDidMount()
     {
+        if (Platform.OS === "android")
+        {
+            InAppBilling.open().then(
+            () => 
+                InAppBilling.listOwnedProducts()
+                    .then(function (response) { 
+                        //response.push("pet_monster");
+                        this.setOwnedProducts(response); 
+                        InAppBilling.close();
+                    }.bind(this))
+                    .catch(() => InAppBilling.close()))
+                .catch(() => InAppBilling.close());
+        }
         //  var book = bookData.books[0];
         //  this.props.setActiveBook(book);
         //  this.props.changePage(book.pages[0].id);
         //  this.props.navigation.navigate("Page");
 
     }
-
-    // Testing my books scroll
-     componentWillMount()
-    {
-        //for (i = 0; i < 6; i++)
-        //{
-            // var book = JSON.parse(JSON.stringify(bookData.books[0]));
-            // book.owned = false;
-            // bookData.books.push(book);
-            // book = JSON.parse(JSON.stringify(bookData.books[0]));
-            // book.owned = false;
-            // book.comingSoon = true;
-            // bookData.books.push(book);
-        //}
-    }
-/*
-    guid() {
-        function s4() {
-          return Math.floor((1 + Math.random()) * 0x10000)
-            .toString(16)
-            .substring(1);
-        }
-        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
-          s4() + '-' + s4() + s4() + s4();
-      } */
     
     render()
     {
         var book = bookData.books[this.state.myBooksIndex];
+        var bookOwned = this.props.ownedBooks.filter(b => b === book.id).length > 0;
         var prevBook = (this.state.myBooksIndex > 0) ? bookData.books[this.state.myBooksIndex - 1] : null;        
         var nextBook = (this.state.myBooksIndex < bookData.books.length - 1) ? bookData.books[this.state.myBooksIndex + 1] : null;
 
@@ -117,8 +113,8 @@ class MainMenu extends Component
                                         : null}
                                     </View>
                                     <View style={[style.bookList, {flex:2, flexDirection:"column"}]}>
-                                        <TouchableOpacity key={book.id} onPress={() => { if (book.owned) this.selectBook(bookData.books[this.state.myBooksIndex]) }}>
-                                            <BookCover key={book.id} bookInfo={book} offset={0} owned={book.owned} mode="menu" />
+                                        <TouchableOpacity key={book.id} onPress={() => { if (bookOwned) this.selectBook(bookData.books[this.state.myBooksIndex]) }}>
+                                            <BookCover key={book.id} bookInfo={book} offset={0} owned={bookOwned} mode="menu" />
                                         </TouchableOpacity>
                                     </View>
                                     <View style={[style.bookList, {flex:1, flexDirection:"column"}]}>
