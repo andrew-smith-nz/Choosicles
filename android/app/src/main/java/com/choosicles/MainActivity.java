@@ -2,6 +2,9 @@ package com.choosicles;
 
 import com.facebook.react.ReactActivity;
 import com.zmxv.RNSound.RNSoundPackage;
+import com.github.yamill.orientation.OrientationPackage;
+import com.idehub.Billing.InAppBillingBridgePackage;
+import com.zmxv.RNSound.RNSoundPackage;
 import android.content.Intent; // <--- import 
 import android.content.res.Configuration; // <--- import 
  

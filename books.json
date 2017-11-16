@@ -11,6 +11,8 @@
             "illustrator": "Sophie Wood",
             "datePublished": "2017",
             "recommendedAgeRange": "2 to 6",
+            "androidIAPCode": "pet_monster",
+            "iosIAPCode": "monster",
             "description": "You have a pet monster! Tell me about your pet monster. With this interactive children’s book, you get to choose your very own pet monster.  What does it look like? Where does it sleep? What does it do for fun? There are 16 different monsters to discover.",
             "pages": [
                 {
@@ -1001,6 +1003,8 @@
             "illustrator": "Asia Horne",
             "datePublished": "2017",
             "recommendedAgeRange": "2 to 6",
+            "androidIAPCode": "sea_creature",
+            "iosIAPCode": "seacreature",
             "description": "",
             "defaultOpacity": 0.8,
             "pages": [

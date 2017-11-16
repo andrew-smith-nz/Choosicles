@@ -1,22 +1,26 @@
 import React, { Component } from 'react';
-import { View, Text, Image, TouchableOpacity, Modal, Alert, BackHandler } from 'react-native';
+import { View, Text, Image, TouchableOpacity, Modal, Alert, BackHandler, Platform } from 'react-native';
 import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import BookCover from './bookCover.js';
 import BookInfo from './bookInfo.js';
 import CodeEntry from './codeEntry.js';
 import Reactotron from 'reactotron-react-native';
+import { addOwnedProduct } from '../actions/store.js';
 
 const bookData = require('../../books.json');
+const InAppBilling = require("react-native-billing");
 
 function mapStateToProps(state) {
     return { 
+        ownedBooks: state.products.ownedBooks
     }
 }
 
 function mapDispatchToProps(dispatch)
 {
-    return { 
+    return {         
+        addOwnedProduct: (productId) => dispatch(addOwnedProduct(productId)),
     };
 }
 
@@ -25,15 +29,69 @@ class Store extends Component
     constructor(props)
     {
         super();
-        this.state = { codeEntryVisible:false, bookInfoVisible: false, book: null };
+        this.state = { codeEntryVisible:false, bookInfoVisible: false, book: null, priceData: [] };
         BackHandler.addEventListener('hardwareBackPress', () => this.props.navigation.navigate("MainMenu"));
         //bookData.books.push(bookData.books.slice());
     }
 
-    selectBook()
+    purchaseBook(book)
     {
-        // Call out to Google Play API
-        Alert.alert("Thanks for buying " + this.state.book.title + "!");
+        if (Platform.OS === "android")
+        {
+            // Call out to Google Play API
+            InAppBilling.open().then(
+                () => {
+                    // InAppBilling.purchase(book.androidIAPCode).then((response) => 
+                    InAppBilling.purchase("android.test.purchased").then((response) => 
+                    {
+                        if (response.purchaseState == "PurchasedSuccessfully")
+                        {
+                            //this.props.addOwnedProduct(response.productId);
+                            this.props.addOwnedProduct(book.androidIAPCode);
+                        }
+                        InAppBilling.close();
+                    }).catch(() => InAppBilling.close());
+                }
+            ).catch(() => InAppBilling.close());
+        }
+        else
+        {
+            Alert.alert("Apple App Store purchases coming soon!");
+        }
+    }
+
+    componentWillMount()
+    {        
+        var priceData = [];
+        InAppBilling.open().then(
+            () => {
+                  for (i = 0; i < bookData.books.length; i++)
+                  {
+                    InAppBilling.getProductDetails(bookData.books[i].androidIAPCode).then(
+                        (response) => { 
+                            this.state.priceData.push({ code: response.productId, price: response.priceText });
+                            this.forceUpdate();
+                        }).catch(() => InAppBilling.close());
+                  }
+                  InAppBilling.close();
+               }).catch(() => InAppBilling.close());
+    }
+
+    getBookPrice(book)
+    {
+        var price = "Loading";
+        if (book)
+        {
+            var priceData = this.state.priceData.filter(p => p.code == book.androidIAPCode)[0];
+            if (priceData) price = priceData.price;
+        }
+        return price;
+    }
+
+    isBookOwned(book)
+    {
+        if (book)
+            return this.props.ownedBooks.filter(b => b === book.id).length > 0;
     }
 
     render()
@@ -45,8 +103,8 @@ class Store extends Component
                         <View style={[style.bookCoverView, {flex:1, flexDirection:'row'}]} key={book.id} >
                             <TouchableOpacity style={{flex:1, flexDirection:'column'}} key={book.id} 
                                               onPress={() => this.setState({ bookInfoVisible:true, book:book })}>
-                                <BookCover key={book.id} bookInfo={book} offset={0} mode="store" />
-                                <Text style={[style.boldText24, {color:'transparent', textAlign:'center'}]}>$5.99</Text>
+                                <BookCover key={book.id} bookInfo={book} offset={0} owned={this.props.ownedBooks.filter(b => b === book.id).length > 0} mode="store" />
+                                <Text style={[style.boldText24, {color:'black', textAlign:'center'}]}>{this.isBookOwned(book) ? "Purchased" : this.getBookPrice(book)}</Text>
                             </TouchableOpacity>
                         </View>)}
                     </View>      
@@ -61,7 +119,7 @@ class Store extends Component
                     <Modal transparent={true} visible={this.state.bookInfoVisible} onRequestClose={() => this.setState({ bookInfoVisible:false, book:null })} supportedOrientations={['landscape-left', 'landscape-right']}>
                             <View style={{flex:1, backgroundColor:'#00000080', alignItems: 'center', justifyContent:'center'}}>
                                 <View style={{height:'80%', width:'80%', alignItems: 'center', justifyContent:'center'}}>
-                                        <BookInfo bookInfo={this.state.book} callback={() => this.selectBook()} cancelCallback={() => this.setState({ bookInfoVisible:false, book:null })} />
+                                        <BookInfo bookInfo={this.state.book} owned={this.isBookOwned(this.state.book)} price={this.getBookPrice(this.state.book)} callback={() => this.purchaseBook(this.state.book)} cancelCallback={() => this.setState({ bookInfoVisible:false, book:null })} />
                                 </View>
                             </View>
                     </Modal>                    
