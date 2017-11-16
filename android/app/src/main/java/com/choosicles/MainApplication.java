@@ -6,6 +6,8 @@ import android.content.Context;
 import android.os.Build;
 
 import com.facebook.react.ReactApplication;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.github.yamill.orientation.OrientationPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -48,6 +50,7 @@ public class MainApplication extends Application implements ReactApplication {
 
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(appConfig),
+          new RNDeviceInfo(),
           new OrientationPackage(),
           new RNSoundPackage(),
           new InAppBillingBridgePackage()
