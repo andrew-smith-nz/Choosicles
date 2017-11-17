@@ -63,8 +63,8 @@ class Sync extends Component {
                 this.setState({syncInProgress: false});
             }.bind(this))
             .catch(function(error) {
-                this.setState({syncComplete: true, syncSuccess: false, syncResult: ["Sorry, something went wrong.  Please check your internet connection and try again in a few minutes.  If this error persists please contact us."] });
-            });
+                this.setState({syncInProgress: false, syncComplete: true, syncSuccess: false, syncResult: ["Sorry, something went wrong.  Please check your internet connection and try again in a few minutes.  If this error persists please contact us."] });
+            }.bind(this));
     }
 
     displayMessages()
