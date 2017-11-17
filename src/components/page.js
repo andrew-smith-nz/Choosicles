@@ -227,7 +227,9 @@ class Page extends Component
             var order = [];
             for (i = 0; i < this.state.soundEffects.length; i++)
             {
-                order.push(i);
+                // iOS loads non-existent sounds for some reason, so we have to check if there's actually anything there
+                if (this.state.soundEffects[i]._duration > 0)
+                    order.push(i);
             }
             order = this.shuffle(order);
             this.trySoundEffect(order, 0);

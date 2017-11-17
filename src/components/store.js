@@ -92,7 +92,7 @@ class Store extends Component
 
     getBookPrice(book)
     {
-        var price = "Loading";
+        var price = "Price Unavailable";
         if (book)
         {
             var priceData = this.state.priceData.filter(p => p.code == book.androidIAPCode)[0];
