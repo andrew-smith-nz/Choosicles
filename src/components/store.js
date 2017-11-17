@@ -73,18 +73,21 @@ class Store extends Component
     componentWillMount()
     {        
         var priceData = [];
-        InAppBilling.open().then(
-            () => {
-                  for (i = 0; i < bookData.books.length; i++)
-                  {
-                    InAppBilling.getProductDetails(bookData.books[i].androidIAPCode).then(
-                        (response) => { 
-                            this.state.priceData.push({ code: response.productId, price: response.priceText });
-                            this.forceUpdate();
-                        }).catch(() => InAppBilling.close());
-                  }
-                  InAppBilling.close();
-               }).catch(() => InAppBilling.close());
+        if (Platform.OS === "android")
+        {
+            InAppBilling.open().then(
+                () => {
+                    for (i = 0; i < bookData.books.length; i++)
+                    {
+                        InAppBilling.getProductDetails(bookData.books[i].androidIAPCode).then(
+                            (response) => { 
+                                this.state.priceData.push({ code: response.productId, price: response.priceText });
+                                this.forceUpdate();
+                            }).catch(() => InAppBilling.close());
+                    }
+                    InAppBilling.close();
+                }).catch(() => InAppBilling.close());
+        }
     }
 
     getBookPrice(book)
