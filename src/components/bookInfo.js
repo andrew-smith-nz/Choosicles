@@ -17,7 +17,9 @@ export default class BookInfo extends Component
     render()
     {
         return  <View style={[style.blackBorder, {flex:1 ,flexDirection:'row', alignItems:'stretch', justifyContent:'space-between', padding: 10 * global.HEIGHT_RATIO, backgroundColor:'#F7E19E'}]}>
-                    <Image style={[style.fill, style.blackBorder, {flex:7}]} source={getCoverForBook(this.props.bookInfo.id, false)} resizeMode='contain' />
+                    <View style={[style.bookInfoPadding, {flex:7}]}>
+                        <Image style={[style.blackBorder, {width:'100%', height:'40%'}]} source={getCoverForBook(this.props.bookInfo.id, false)} resizeMode='contain' />
+                    </View>
                     <View style={{flex:13, flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between'}}>
                         <View style={[ style.bookInfoPadding, {flex:5, flexDirection:'column', alignItems:'flex-start', justifyContent:'flex-start'}]}>
                             <Text style={style.h4}>{this.props.bookInfo.title}</Text>

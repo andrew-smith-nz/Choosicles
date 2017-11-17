@@ -34,7 +34,10 @@ class EndPage extends Component
     
     backtrack()
     {
-        this.props.navigation.navigate("Page");
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'Page'})]
+                }));
     }
 
     componentWillMount()
