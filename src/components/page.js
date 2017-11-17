@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler, Alert } from 'react-native';
 import style from '../../style/style.js';
 import { getImageForPage, getSoundEffectForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter, changeText } from '../actions/book.js';
@@ -222,12 +222,14 @@ class Page extends Component
     
     playSoundEffect(i)
     {
+        Reactotron.log(this.state.soundEffects);
         if (this.state.soundEffects.length > 0)
         {
             var order = [];
             for (i = 0; i < this.state.soundEffects.length; i++)
             {
-                order.push(i);
+                if (this.state.soundEffects[i]._duration > 0)
+                    order.push(i);
             }
             order = this.shuffle(order);
             this.trySoundEffect(order, 0);
@@ -260,14 +262,14 @@ class Page extends Component
              if (!isPlaying)
              {
                  this.state.soundEffects[order[i]].play(
-                    //  (success) => {
-                    // if (success) {
-                    //     Reactotron.log('successfully finished playing');
-                    // } else {
-                    //     Reactotron.log('playback failed due to audio decoding errors');
-                    //   // reset the player to its uninitialized state (android only)
-                    //   // this is the only option to recover after an error occured and use the player again
-                    //   //whoosh.reset();
+                      //(success) => {
+                    //if (success) {
+                    //     Alert.alert('successfully finished playing');
+                     //} else {
+                    //     Alert.alert('playback failed due to audio decoding errors');
+                       // reset the player to its uninitialized state (android only)
+                       // this is the only option to recover after an error occured and use the player again
+                       //whoosh.reset();
                     // }}
                 );
              }

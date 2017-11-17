@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, BackHandler, Platform } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, BackHandler, Platform, Alert } from 'react-native';
 import style from '../../style/style.js';
 import BookCover from './bookCover.js';
 import { connect } from 'react-redux';
