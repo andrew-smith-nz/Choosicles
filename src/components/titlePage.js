@@ -4,7 +4,7 @@ import style from '../../style/style.js';
 import { connect } from 'react-redux';
 import { getCoverForBook } from './resourceManager.js';
 import { backtrack, clearHistory, changePage} from '../actions/book.js';
-import { getStartAudioForBook, getStartSoundEffectForBook, getStartImageForBook } from './resourceManager.js'
+import { getStartAudioForBook, getEndAudioForBook, getStartSoundEffectForBook, getStartImageForBook } from './resourceManager.js'
 var Sound = require('react-native-sound');
 import Reactotron from 'reactotron-react-native';
 import { NavigationActions } from 'react-navigation';
@@ -58,7 +58,7 @@ class TitlePage extends Component
         this.setState({initialisingAudio: true});
 
         var sound = new Sound(getStartAudioForBook(this.props.book.id), Sound.MAIN_BUNDLE, 
-            () => { if (this.props.enableReadAloud) { sound.play(); }});  
+            () => { if (this.props.enableReadAloud) { this.playAudio(0); }});  
         
         this.setState({audioPlayers: [ sound ], initialisingAudio: false});
     }
@@ -98,6 +98,7 @@ class TitlePage extends Component
         {
             this.setState({audioPaused:false});
             this.state.audioPlayers[i].play(() => { 
+                this.setState({audioPaused: true});
                 if (this.state.audioPlayers.length > i + 1) 
                     this.playAudio(i + 1); 
                 })
