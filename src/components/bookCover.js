@@ -27,6 +27,11 @@ export default class BookCover extends Component
                             <Image id="coming_soon" style={[style.fill]} source={require("../../img/coming_soon.png")} resizeMode="contain" /> 
                         </View> 
                         : null }
+                         { !this.props.owned && !this.props.bookInfo.comingSoon && this.props.mode != "store" && this.props.offset == 0 ? 
+                        <View style={[style.fill, {position:'absolute', left:0, top:0, padding:30 * global.HEIGHT_RATIO}]}>
+                            <Image id="available" style={[style.fill]} source={require("../../img/available.png")} resizeMode="contain" /> 
+                        </View> 
+                        : null }
                 </View>;
     }
 }

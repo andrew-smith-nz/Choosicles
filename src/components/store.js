@@ -8,6 +8,7 @@ import CodeEntry from './codeEntry.js';
 import Sync from './sync.js';
 import Reactotron from 'reactotron-react-native';
 import { addOwnedProduct } from '../actions/store.js';
+import { NavigationActions } from 'react-navigation';
 
 const bookData = require('../../books.json');
 const InAppBilling = require("react-native-billing");
@@ -31,8 +32,16 @@ class Store extends Component
     {
         super();
         this.state = { codeEntryVisible:false, bookInfoVisible: false, book: null, priceData: [], syncVisible:false };
-        BackHandler.addEventListener('hardwareBackPress', () => this.props.navigation.navigate("MainMenu"));
+        BackHandler.addEventListener('hardwareBackPress', () => this.home());
         //bookData.books.push(bookData.books.slice());
+    }
+
+    home()
+    {        
+        this.props.navigation.dispatch(NavigationActions.reset({
+            index: 0,
+            actions: [ NavigationActions.navigate({ routeName: 'MainMenu'})]
+            }));
     }
 
     purchaseBook(book)
@@ -42,13 +51,13 @@ class Store extends Component
             // Call out to Google Play API
             InAppBilling.open().then(
                 () => {
-                    // InAppBilling.purchase(book.androidIAPCode).then((response) => 
-                    InAppBilling.purchase("android.test.purchased").then((response) => 
+                    InAppBilling.purchase(book.androidIAPCode).then((response) => 
+                    //InAppBilling.purchase("android.test.purchased").then((response) => 
                     {
                         if (response.purchaseState == "PurchasedSuccessfully")
                         {
-                            //this.props.addOwnedProduct(response.productId);
-                            this.props.addOwnedProduct(book.androidIAPCode);
+                            this.props.addOwnedProduct(response.productId);
+                            //this.props.addOwnedProduct(book.androidIAPCode);
                         }
                         InAppBilling.close();
                     }).catch(() => InAppBilling.close());
@@ -114,7 +123,7 @@ class Store extends Component
                         <Image style={style.fill} source={require('../../img/giftcode_button.png')} resizeMode="contain">
                         </Image>
                     </TouchableOpacity> */}
-                    <TouchableOpacity style={style.topRightButton} onPress={() => this.props.navigation.navigate("MainMenu")}>
+                    <TouchableOpacity style={style.topRightButton} onPress={() => this.home()}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={style.fill} />
                     </TouchableOpacity>
                     <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.setState({ syncVisible:true})}>

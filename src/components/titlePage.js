@@ -134,7 +134,10 @@ class TitlePage extends Component
         if (this.state.sound)
             this.state.sound.release();
         this.props.clearHistory();
-        this.props.navigation.navigate("MainMenu");
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'MainMenu'})]
+                }));
     }
 
     startBook()

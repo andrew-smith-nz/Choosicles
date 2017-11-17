@@ -994,7 +994,7 @@
             ]
         },
         {
-            "id": "A588E22D-D984-D28D-4690-D8AD87A14D63",
+            "id": "a588e22d-d984-d28d-4690-d8ad87a14d63",
             "owned": true,
             "comingSoon": false,
             "title": "Your Very Own Sea Creature",
@@ -1005,7 +1005,7 @@
             "recommendedAgeRange": "2 to 6",
             "androidIAPCode": "sea_creature",
             "iosIAPCode": "seacreature",
-            "description": "",
+            "description": "You are an underwater explorer! You have found a brand-new underwater sea creature.  With this interactive children’s book, you get to choose your very own underwater sea creature. What does it look like? Where does it sleep? What secrets is it hiding? There are 16 different sea creatures to discover.",
             "defaultOpacity": 0.8,
             "pages": [
                 {

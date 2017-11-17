@@ -40,6 +40,8 @@ export default StyleSheet.create({
     ,fill: { width:'100%', height:'100%' }
     ,blackBorder: {borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black'}
     ,centeredContent: {alignItems:'center', justifyContent:'center'}
+    ,syncLabel: {width:150 * global.WIDTH_RATIO}
+    ,buttonText:  { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO}
 
     ,bookSelectItem: { borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black', width:'80%', backgroundColor:'#FBC61E', alignItems:'center', marginBottom:5 * global.HEIGHT_RATIO }
 

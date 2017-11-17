@@ -81,7 +81,8 @@ class Page extends Component
 
     componentWillUnmount()
     {
-        this.releaseAllPlayers();
+        this.releaseAudioPlayers();
+        this.releaseSoundEffects();
     }
     
     componentDidMount()
@@ -96,7 +97,9 @@ class Page extends Component
         if (this.state.initialisingAudio) return;
         this.setState({initialisingAudio: true, audioPaused: !this.props.enableAutoplayAudio, canRestartAudio: false});
         var players = [];
-        this.releaseAllPlayers();
+        this.releaseAudioPlayers();
+        if (initSoundEffect)
+            this.releaseSoundEffects();
         if (props.enableShowText)
         {
             var sound = new Sound(props.pageData.assetCode + '_' + (props.currentText + 1) + '_audio.mp3', Sound.MAIN_BUNDLE, 
@@ -156,7 +159,7 @@ class Page extends Component
         }
     }
     
-    releaseAllPlayers()
+    releaseAudioPlayers()
     {        
         if (this.state.audioPlayers)
         {
@@ -165,6 +168,11 @@ class Page extends Component
                 this.state.audioPlayers[i].release();
             }
         }
+        this.setState({audioPaused: !this.props.enableAutoplayAudio});
+    }
+
+    releaseSoundEffects()
+    {
         if (this.state.soundEffects)
         {
             for (i = 0; i < this.state.soundEffects.length; i++)
@@ -172,7 +180,6 @@ class Page extends Component
                 this.state.soundEffects[i].release();
             }
         }
-        this.setState({audioPaused: !this.props.enableAutoplayAudio});
     }
 
     playAudio(i)
@@ -252,7 +259,17 @@ class Page extends Component
         effect.getCurrentTime((seconds, isPlaying) => { 
              if (!isPlaying)
              {
-                 this.state.soundEffects[order[i]].play();
+                 this.state.soundEffects[order[i]].play(
+                    //  (success) => {
+                    // if (success) {
+                    //     Reactotron.log('successfully finished playing');
+                    // } else {
+                    //     Reactotron.log('playback failed due to audio decoding errors');
+                    //   // reset the player to its uninitialized state (android only)
+                    //   // this is the only option to recover after an error occured and use the player again
+                    //   //whoosh.reset();
+                    // }}
+                );
              }
              else
              {
@@ -336,7 +353,8 @@ class Page extends Component
     {
         if (this.props.pageHistory.length == 1)
         {
-            this.releaseAllPlayers();
+            this.releaseAudioPlayers();
+            this.releaseSoundEffects();
             BackHandler.removeEventListener('hardwareBackPress', () => this.backHandler());
             this.props.navigation.dispatch(NavigationActions.reset(
                 {
@@ -362,7 +380,10 @@ class Page extends Component
         if (!this.props.pageData)
         {
             // either something has gone wrong, or we've navigated back to the home screen
-            this.props.navigation.navigate("MainMenu");
+        this.props.navigation.dispatch(NavigationActions.reset({
+            index: 0,
+            actions: [ NavigationActions.navigate({ routeName: 'MainMenu'})]
+            }));
         }
     }
 
@@ -374,7 +395,8 @@ class Page extends Component
 
     home()
     {
-        this.releaseAllPlayers();
+        this.releaseAudioPlayers();
+        this.releaseSoundEffects();
         this.props.clearHistory();
         this.props.navigation.dispatch(NavigationActions.reset({
                index: 0,
@@ -384,7 +406,8 @@ class Page extends Component
 
     choose(targetPageId)
     {
-        this.releaseAllPlayers();
+        this.releaseAudioPlayers();
+        this.releaseSoundEffects();
         this.setState({currentPlayingAudioIndex: 0, audioPaused: false}); 
         this.props.incrementPageCounter(targetPageId); 
         this.props.choose(targetPageId); 

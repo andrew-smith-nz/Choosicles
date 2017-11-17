@@ -15,7 +15,7 @@ _resourcesByBook = [
         endAudio: 'monster_end_audio.mp3'
     },
     {
-      bookId: 'A588E22D-D984-D28D-4690-D8AD87A14D63',
+      bookId: 'a588e22d-d984-d28d-4690-d8ad87a14d63',
       coverImage: require("../../img/pages/seacreature/cover.png"),
       coverImageLeftHalf: require("../../img/pages/seacreature/cover_lefthalf.png"),
       coverImageRightHalf: require("../../img/pages/seacreature/cover_righthalf.png"),

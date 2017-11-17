@@ -9,6 +9,7 @@ import { GroupBox } from './settings.js';
 import Reactotron from 'reactotron-react-native';
 import global from '../../global.js'
 import DeviceInfo from 'react-native-device-info';
+import { NavigationActions } from 'react-navigation';
 
 
 const bookData = require('../../books.json');
@@ -45,7 +46,10 @@ class MainMenu extends Component
     {
         this.props.clearHistory();
         this.props.setActiveBook(book);
-        this.props.navigation.navigate("TitlePage");
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'TitlePage'})]
+                }));
     }
 
     settings()
@@ -53,13 +57,19 @@ class MainMenu extends Component
         if (!this.state.navigating)
         {
             this.setState({navigating:true});        
-            this.props.navigation.navigate("Settings");
+            this.props.navigation.dispatch(NavigationActions.reset({
+                    index: 0,
+                    actions: [ NavigationActions.navigate({ routeName: 'Settings'})]
+                    }));
         }
     }
 
     store()
     {
-        this.props.navigation.navigate("Store");
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'Store'})]
+                }));
     }
 
     setOwnedProducts(productIds)
@@ -69,8 +79,6 @@ class MainMenu extends Component
 
     componentDidMount()
     {
-        Reactotron.log(DeviceInfo.getUniqueID())
-
         if (Platform.OS === "android")
         {
             InAppBilling.open().then(
