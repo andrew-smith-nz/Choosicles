@@ -19,7 +19,7 @@ _resourcesByBook = [
       coverImage: require("../../img/pages/seacreature/cover.png"),
       coverImageLeftHalf: require("../../img/pages/seacreature/cover_lefthalf.png"),
       coverImageRightHalf: require("../../img/pages/seacreature/cover_righthalf.png"),
-      startImage:  require("../../img/pages/seacreature/cover.png"),
+      startImage:  require("../../img/pages/seacreature/start.png"),
       startAudio: 'seacreature_start_audio.mp3',
       startSoundEffect: 'seacreature_start_soundeffect.mp3',
       endImage:  require("../../img/pages/seacreature/end.png"),
@@ -596,7 +596,7 @@ export function getChoiceImageForPage(pageId, index)
     return choiceImage ? choiceImage.image : null;
 }
 
-export function getEndSoundForBook(bookId)
+export function getEndAudioForBook(bookId)
 {
     var book = _resourcesByBook.filter(b => b.bookId === bookId)[0];
     return book.endAudio;
