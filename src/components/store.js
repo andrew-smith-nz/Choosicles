@@ -12,6 +12,7 @@ import { NavigationActions } from 'react-navigation';
 
 const bookData = require('../../books.json');
 const InAppBilling = require("react-native-billing");
+const InAppUtils = require('NativeModules').InAppUtils;
 
 function mapStateToProps(state) {
     return { 
@@ -87,6 +88,14 @@ class Store extends Component
                     }
                     InAppBilling.close();
                 }).catch(() => InAppBilling.close());
+        }
+        else
+        {
+            var products = ['monster', 'seacreature'];
+            InAppUtils.loadProducts(products, (error, products) => {
+                                    Reactotron.log(error);
+                                    Reactotron.log(products);
+                                    });
         }
     }
 

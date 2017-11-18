@@ -16,7 +16,6 @@
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
@@ -354,8 +353,12 @@
 		49FC2D911FBF87C1008E2EBF /* monster_2_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2C451FBF87C0008E2EBF /* monster_2_3_audio.mp3 */; };
 		49FC2D921FBF87C1008E2EBF /* seacreature_3_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2C461FBF87C0008E2EBF /* seacreature_3_1_audio.mp3 */; };
 		49FC2D931FBF87C1008E2EBF /* seacreature_10_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2C471FBF87C0008E2EBF /* seacreature_10_1_soundeffect.mp3 */; };
+		49FC2DCD1FBF9CA1008E2EBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2DCB1FBF9CA1008E2EBF /* LaunchScreen.xib */; };
+		49FC2DCF1FBF9D45008E2EBF /* choosicles_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2DCE1FBF9D45008E2EBF /* choosicles_logo.png */; };
+		49FC2DD11FBF9EB8008E2EBF /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2DD01FBF9EB8008E2EBF /* splash.png */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A556CC980E1946DAB3CE5E29 /* libInAppUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEAB8F437CF44F48B4E5581B /* libInAppUtils.a */; };
 		BD53677C8AA8490D83730B3A /* berrylicious.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0BA94D754B74932B58D4CEC /* berrylicious.ttf */; };
 		C3149C15D070432899C37CD0 /* berrylicious_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC1ECD1902B54A1ABDABBD0A /* berrylicious_bold.ttf */; };
 		F50D75E4067C4A3180F7E3A6 /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FB66AFB29C44CC94811670 /* libRCTOrientation.a */; };
@@ -566,6 +569,20 @@
 			remoteGlobalIDString = E72EC1401F7ABB5A0001BC90;
 			remoteInfo = "RNDeviceInfo-tvOS";
 		};
+		49FC2DC71FBF935C008E2EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E777026E0CED45C284C8F2D6 /* InAppUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46E694321B289730000B634E;
+			remoteInfo = InAppUtils;
+		};
+		49FC2DC91FBF935C008E2EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E777026E0CED45C284C8F2D6 /* InAppUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46E6943D1B289730000B634E;
+			remoteInfo = InAppUtilsTests;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -608,7 +625,6 @@
 		13B07F961A680F5B00A75B9A /* Choosicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Choosicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Choosicles/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Choosicles/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Choosicles/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Choosicles/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Choosicles/main.m; sourceTree = "<group>"; };
@@ -949,6 +965,9 @@
 		49FC2C451FBF87C0008E2EBF /* monster_2_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_2_3_audio.mp3; path = ../android/app/src/main/res/raw/monster_2_3_audio.mp3; sourceTree = "<group>"; };
 		49FC2C461FBF87C0008E2EBF /* seacreature_3_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seacreature_3_1_audio.mp3; path = ../android/app/src/main/res/raw/seacreature_3_1_audio.mp3; sourceTree = "<group>"; };
 		49FC2C471FBF87C0008E2EBF /* seacreature_10_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seacreature_10_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/seacreature_10_1_soundeffect.mp3; sourceTree = "<group>"; };
+		49FC2DCC1FBF9CA1008E2EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Choosicles/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		49FC2DCE1FBF9D45008E2EBF /* choosicles_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = choosicles_logo.png; path = ../img/choosicles_logo.png; sourceTree = "<group>"; };
+		49FC2DD01FBF9EB8008E2EBF /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../img/splash.png; sourceTree = "<group>"; };
 		51FB66AFB29C44CC94811670 /* libRCTOrientation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTOrientation.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6FF8F37D69464DAB81BBB75F /* summer_joy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = summer_joy.ttf; path = ../fonts/summer_joy.ttf; sourceTree = "<group>"; };
@@ -958,6 +977,8 @@
 		C077FF59BD3D46C499A77796 /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTOrientation.xcodeproj; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; };
 		C99CDB741EDA4E10BE00765B /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		E0BA94D754B74932B58D4CEC /* berrylicious.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = berrylicious.ttf; path = ../fonts/berrylicious.ttf; sourceTree = "<group>"; };
+		E777026E0CED45C284C8F2D6 /* InAppUtils.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = InAppUtils.xcodeproj; path = "../node_modules/react-native-in-app-utils/InAppUtils.xcodeproj"; sourceTree = "<group>"; };
+		FEAB8F437CF44F48B4E5581B /* libInAppUtils.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libInAppUtils.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -979,6 +1000,7 @@
 				F50D75E4067C4A3180F7E3A6 /* libRCTOrientation.a in Frameworks */,
 				25FF405ADB334B8F905DD575 /* libRNSound.a in Frameworks */,
 				FA34C97AEBC74D9DB4BD8774 /* libRNDeviceInfo.a in Frameworks */,
+				A556CC980E1946DAB3CE5E29 /* libInAppUtils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1048,12 +1070,12 @@
 		13B07FAE1A68108700A75B9A /* Choosicles */ = {
 			isa = PBXGroup;
 			children = (
+				49FC2DCB1FBF9CA1008E2EBF /* LaunchScreen.xib */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = Choosicles;
@@ -1081,10 +1103,13 @@
 		49E755CE1FBA29B6009DBC6A /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				49FC2DD01FBF9EB8008E2EBF /* splash.png */,
+				49FC2DCE1FBF9D45008E2EBF /* choosicles_logo.png */,
 				51FB66AFB29C44CC94811670 /* libRCTOrientation.a */,
 				38FF9BC624E1499CA6FA7EE4 /* libRNSound.a */,
 				223DB6AE6D634C7980B195F7 /* libRNDeviceInfo.a */,
 				4798EF0718EF4FFA9FDDA279 /* libRNDeviceInfo-tvOS.a */,
+				FEAB8F437CF44F48B4E5581B /* libInAppUtils.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1110,6 +1135,15 @@
 			children = (
 				49FC2ABA1FBF8282008E2EBF /* libRNDeviceInfo.a */,
 				49FC2ABC1FBF8282008E2EBF /* libRNDeviceInfo-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49FC2DC31FBF935C008E2EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49FC2DC81FBF935C008E2EBF /* libInAppUtils.a */,
+				49FC2DCA1FBF935C008E2EBF /* InAppUtilsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1149,6 +1183,7 @@
 				C077FF59BD3D46C499A77796 /* RCTOrientation.xcodeproj */,
 				4000A620FAD94E4F9FC2D43D /* RNSound.xcodeproj */,
 				C99CDB741EDA4E10BE00765B /* RNDeviceInfo.xcodeproj */,
+				E777026E0CED45C284C8F2D6 /* InAppUtils.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1574,6 +1609,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 49FC2DC31FBF935C008E2EBF /* Products */;
+					ProjectRef = E777026E0CED45C284C8F2D6 /* InAppUtils.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -1841,6 +1880,20 @@
 			remoteRef = 49FC2ABB1FBF8282008E2EBF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		49FC2DC81FBF935C008E2EBF /* libInAppUtils.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libInAppUtils.a;
+			remoteRef = 49FC2DC71FBF935C008E2EBF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		49FC2DCA1FBF935C008E2EBF /* InAppUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = InAppUtilsTests.xctest;
+			remoteRef = 49FC2DC91FBF935C008E2EBF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1897,7 +1950,6 @@
 				49FC2C931FBF87C1008E2EBF /* monster_3_3_audio.mp3 in Resources */,
 				49FC2D6C1FBF87C1008E2EBF /* seacreature_27_4_audio.mp3 in Resources */,
 				49FC2C711FBF87C1008E2EBF /* monster_22_2_audio.mp3 in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				49FC2C921FBF87C1008E2EBF /* seacreature_31_5_audio.mp3 in Resources */,
 				49FC2D461FBF87C1008E2EBF /* monster_13_3_audio.mp3 in Resources */,
 				49FC2D3A1FBF87C1008E2EBF /* monster_26_3_audio.mp3 in Resources */,
@@ -1967,6 +2019,7 @@
 				49FC2CFA1FBF87C1008E2EBF /* seacreature_22_1_audio.mp3 in Resources */,
 				49FC2D061FBF87C1008E2EBF /* monster_18_1_soundeffect.mp3 in Resources */,
 				49FC2C6B1FBF87C1008E2EBF /* seacreature_2_1_soundeffect.mp3 in Resources */,
+				49FC2DCF1FBF9D45008E2EBF /* choosicles_logo.png in Resources */,
 				49FC2CBE1FBF87C1008E2EBF /* seacreature_11_3_audio.mp3 in Resources */,
 				49FC2CD91FBF87C1008E2EBF /* monster_9_2_audio.mp3 in Resources */,
 				49FC2CC41FBF87C1008E2EBF /* monster_5_3_audio.mp3 in Resources */,
@@ -1975,6 +2028,7 @@
 				49FC2CFD1FBF87C1008E2EBF /* monster_27_1_soundeffect.mp3 in Resources */,
 				49FC2D1C1FBF87C1008E2EBF /* seacreature_5_1_audio.mp3 in Resources */,
 				49FC2CC61FBF87C1008E2EBF /* monster_7_1_soundeffect.mp3 in Resources */,
+				49FC2DCD1FBF9CA1008E2EBF /* LaunchScreen.xib in Resources */,
 				49FC2D081FBF87C1008E2EBF /* monster_7_2_soundeffect.mp3 in Resources */,
 				49FC2C521FBF87C1008E2EBF /* monster_28_1_audio.mp3 in Resources */,
 				49FC2D141FBF87C1008E2EBF /* seacreature_1_2_audio.mp3 in Resources */,
@@ -2035,6 +2089,7 @@
 				49FC2D2E1FBF87C1008E2EBF /* monster_15_3_audio.mp3 in Resources */,
 				49FC2C811FBF87C1008E2EBF /* seacreature_23_4_audio.mp3 in Resources */,
 				49FC2C641FBF87C1008E2EBF /* monster_7_1_audio.mp3 in Resources */,
+				49FC2DD11FBF9EB8008E2EBF /* splash.png in Resources */,
 				49FC2D921FBF87C1008E2EBF /* seacreature_3_1_audio.mp3 in Resources */,
 				49FC2CAA1FBF87C1008E2EBF /* monster_16_4_audio.mp3 in Resources */,
 				49FC2D151FBF87C1008E2EBF /* monster_28_5_audio.mp3 in Resources */,
@@ -2248,13 +2303,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+		49FC2DCB1FBF9CA1008E2EBF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				13B07FB21A68108700A75B9A /* Base */,
+				49FC2DCC1FBF9CA1008E2EBF /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = Choosicles;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2275,11 +2329,13 @@
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)..\node_modules\neact-native-device-infoRNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-in-app-utils/InAppUtils",
 				);
 				INFOPLIST_FILE = Choosicles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Choosicles\"",
 					"\"$(SRCROOT)/Choosicles\"",
 					"\"$(SRCROOT)/Choosicles\"",
 				);
@@ -2311,11 +2367,13 @@
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)..\node_modules\neact-native-device-infoRNDeviceInfo",
+					"$(SRCROOT)/../node_modules/react-native-in-app-utils/InAppUtils",
 				);
 				INFOPLIST_FILE = Choosicles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Choosicles\"",
 					"\"$(SRCROOT)/Choosicles\"",
 					"\"$(SRCROOT)/Choosicles\"",
 				);
