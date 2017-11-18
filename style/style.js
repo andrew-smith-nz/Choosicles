@@ -34,7 +34,7 @@ export default StyleSheet.create({
     ,topText: { marginTop: 20 * global.HEIGHT_RATIO, height: 40 * global.HEIGHT_RATIO, width: '100%', marginBottom: 10 * global.HEIGHT_RATIO }
     ,textInput: { flex:1, height: 40 * global.HEIGHT_RATIO, margin:5 * global.HEIGHT_RATIO, padding:5 * global.HEIGHT_RATIO, borderColor:'black', borderWidth:0.5 * global.HEIGHT_RATIO, borderRadius:5 * global.HEIGHT_RATIO }
     ,textWithSwitch: { marginRight: 10 * global.WIDTH_RATIO }
-    ,switch: { transform: [{scaleX: global.WIDTH_RATIO}, {scaleY: global.HEIGHT_RATIO}], marginRight: 10 * global.WIDTH_RATIO }
+    ,switch: {  marginRight: 10 * global.WIDTH_RATIO }
     ,switchView: {flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5 * global.WIDTH_RATIO}
 
     ,fill: { width:'100%', height:'100%' }
