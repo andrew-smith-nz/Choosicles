@@ -13,12 +13,19 @@ export default class BookInfo extends Component
     {
         super();
     }
+    
+    getNicePrice()
+    {
+        if (this.props.price === "Price Unavailable")
+            return "";
+        return this.props.price;
+    }
 
     render()
     {
-        return  <View style={[style.blackBorder, {flex:1 ,flexDirection:'row', alignItems:'stretch', justifyContent:'space-between', padding: 10 * global.HEIGHT_RATIO, backgroundColor:'#F7E19E'}]}>
+        return  <View style={[{borderColor:'black', borderWidth:0.5, borderRadius:10, flex:1 ,flexDirection:'row', alignItems:'stretch', justifyContent:'space-between', padding: 10 * global.HEIGHT_RATIO, backgroundColor:'#F7E19E'}]}>
                     <View style={[style.bookInfoPadding, {flex:7}]}>
-                        <Image style={[style.blackBorder, {width:'100%', height:'40%'}]} source={getCoverForBook(this.props.bookInfo.id, false)} resizeMode='contain' />
+                        <Image style={[{width:'100%', height:'40%'}]} source={getCoverForBook(this.props.bookInfo.id, false)} resizeMode='contain' />
                     </View>
                     <View style={{flex:13, flexDirection:'column', alignItems:'flex-start', justifyContent:'space-between'}}>
                         <View style={[ style.bookInfoPadding, {flex:5, flexDirection:'column', alignItems:'flex-start', justifyContent:'flex-start'}]}>
@@ -34,7 +41,7 @@ export default class BookInfo extends Component
                                 {!this.props.owned ? <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center', padding:1}}
                                                     onPress={() => this.props.callback()}>
                                     <Image style={{width:'100%', alignItems:'center', justifyContent:'center'}} source={require('../../img/tall_button.png')} resizeMode="contain">
-                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO} ]}>Buy now {this.props.price}</Text>
+                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO} ]}>Buy now {this.getNicePrice()}</Text>
                                     </Image>
                                 </TouchableOpacity> : <View style={{width:'30%', alignItems:'center', justifyContent:'center', padding:1}} />}
                                 <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center', padding:1}}
