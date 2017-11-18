@@ -34,9 +34,9 @@ export default StyleSheet.create({
     ,topText: { marginTop: 20 * global.HEIGHT_RATIO, height: 40 * global.HEIGHT_RATIO, width: '100%', marginBottom: 10 * global.HEIGHT_RATIO }
     ,textInput: { flex:1, height: 40 * global.HEIGHT_RATIO, margin:5 * global.HEIGHT_RATIO, padding:5 * global.HEIGHT_RATIO, borderColor:'black', borderWidth:0.5 * global.HEIGHT_RATIO, borderRadius:5 * global.HEIGHT_RATIO }
     ,textWithSwitch: { marginRight: 10 * global.WIDTH_RATIO }
-    ,switch: {  marginRight: 10 * global.WIDTH_RATIO }
-    ,switchView: {flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5 * global.WIDTH_RATIO}
 
+    ,switchView: {flexDirection:'row', alignItems:'center', justifyContent:'space-between', marginTop:5 * global.WIDTH_RATIO}
+    
     ,fill: { width:'100%', height:'100%' }
     ,blackBorder: {borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black'}
     ,centeredContent: {alignItems:'center', justifyContent:'center'}
@@ -62,7 +62,8 @@ export default StyleSheet.create({
     ,...Platform.select({
                 ios:
                 {
-                    pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily:'Berrylicious', fontWeight:'bold', marginTop:5 * global.HEIGHT_RATIO,
+                    switch: {  marginRight: 10 * global.WIDTH_RATIO }
+                    ,pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily:'Berrylicious', fontWeight:'bold', marginTop:5 * global.HEIGHT_RATIO,
                     borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
                     ,bookInfoPadding: {paddingLeft:10 * global.HEIGHT_RATIO}
                     ,summerJoy: {fontFamily: 'SummerJoy', backgroundColor:'transparent' }
@@ -84,7 +85,8 @@ export default StyleSheet.create({
                     ,boldText24: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
                 },
                 android: {
-                    pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold', marginTop:5 * global.HEIGHT_RATIO,
+                    switch: { transform: [{scaleX: global.WIDTH_RATIO}, {scaleY: global.HEIGHT_RATIO}], marginRight: 10 * global.WIDTH_RATIO }                    
+                    ,pageText: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold', marginTop:5 * global.HEIGHT_RATIO,
                     borderRadius:30 * global.WIDTH_RATIO, textAlign:'center', padding:5 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO, paddingLeft:7 * global.WIDTH_RATIO }
                     ,bookInfoPadding: {padding:10 * global.HEIGHT_RATIO}                    
                     ,summerJoy: {fontFamily: 'summer_joy' }
