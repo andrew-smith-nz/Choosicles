@@ -125,7 +125,7 @@ class MainMenu extends Component
                                         : null}
                                     </View>
                                     <View style={[style.bookList, {flex:2, flexDirection:"column"}]}>
-                                        <TouchableOpacity key={book.id} onPress={() => { if (bookOwned) this.selectBook(bookData.books[this.state.myBooksIndex]) }}>
+                                        <TouchableOpacity key={book.id} onPress={() => { if (bookOwned) { this.selectBook(bookData.books[this.state.myBooksIndex]); } else { this.store(); } }}>
                                             <BookCover key={book.id} bookInfo={book} offset={0} owned={bookOwned} mode="menu" />
                                         </TouchableOpacity>
                                     </View>
