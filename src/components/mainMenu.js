@@ -14,7 +14,7 @@ import { NavigationActions } from 'react-navigation';
 
 const bookData = require('../../books.json');
 const InAppBilling = require("react-native-billing");
-
+const InAppUtils = require('NativeModules').InAppUtils;
 
 function mapStateToProps(state) {
     return { 
