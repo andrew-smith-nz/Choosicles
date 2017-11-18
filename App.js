@@ -1,6 +1,6 @@
 import './reactotronConfig';
 import React from 'react';
-import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar, AppState, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, AsyncStorage, Image, StatusBar, AppState, Dimensions, Platform } from 'react-native';
 import MainMenu from './src/components/mainMenu.js';
 import Page from './src/components/page.js';
 import Settings from './src/components/settings.js';
@@ -33,7 +33,14 @@ export default class App extends React.Component {
   {
     Orientation.lockToLandscape();    
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings', 'products']}, () => { this.setState({ rehydrated: true })});
-    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 0);
+    if (Platform.OS == "android")
+    {
+    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 1000);
+    }
+    else
+    {
+      this.setState({ showSplash: false });
+    }
   }
 
   componentDidMount()
