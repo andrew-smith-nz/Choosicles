@@ -67,7 +67,16 @@ class Store extends Component
         }
         else
         {
-            Alert.alert("Apple App Store purchases coming soon!");
+            var productIdentifier = [ book.iosIAPCode ];
+            InAppUtils.loadProducts(productIdentifier, (error, products) => {
+            InAppUtils.purchaseProduct(products[0].identifier, (error, response) => {
+                   // NOTE for v3.0: User can cancel the payment which will be available as error object here.
+                   if(response && response.productIdentifier) {
+                       this.props.addOwnedProduct(productIdentifier);
+                   }
+                   });
+                });
+
         }
     }
 
@@ -91,21 +100,37 @@ class Store extends Component
         }
         else
         {
-            var products = ['monster', 'seacreature'];
-            InAppUtils.loadProducts(products, (error, products) => {
-                                    Reactotron.log(error);
-                                    Reactotron.log(products);
-                                    });
+            var productList = ['monster', 'seacreature'];
+            InAppUtils.loadProducts(productList, (error, products) => {
+                                    console.log("product count = " + products.length);
+                for (i = 0; i < products.length; i++)
+                {
+                    console.log(products[i].identifier + " costs " + products[i].priceString);
+                                    this.state.priceData.push({ code: products[i].identifier, price: products[i].priceString});
+                                    this.forceUpdate();
+                }
+            });
         }
     }
 
     getBookPrice(book)
     {
-        var price = "Price Unavailable";
-        if (book)
+        var price = "Loading Price";
+        if (Platform.OS === "android")
         {
-            var priceData = this.state.priceData.filter(p => p.code == book.androidIAPCode)[0];
-            if (priceData) price = priceData.price;
+            if (book)
+            {
+                var priceData = this.state.priceData.filter(p => p.code == book.androidIAPCode)[0];
+                if (priceData) price = priceData.price;
+            }
+        }
+        else
+        {
+            if (book)
+            {
+                var priceData = this.state.priceData.filter(p => p.code == book.iosIAPCode)[0];
+                if (priceData) price = priceData.price;
+            }
         }
         return price;
     }

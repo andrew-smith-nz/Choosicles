@@ -33,7 +33,7 @@ export default class App extends React.Component {
   {
     Orientation.lockToLandscape();    
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings', 'products']}, () => { this.setState({ rehydrated: true })});
-    if (Platform.OS == "android")
+    if (Platform.OS === "android")
     {
     setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 1000);
     }

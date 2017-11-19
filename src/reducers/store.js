@@ -21,7 +21,7 @@ export function products(state = { ownedBooks: [] }, action)
         case ADD_OWNED_PRODUCT:
         {
             var ownedBooks = state.ownedBooks.slice();
-            var book = bookData.books.filter(b => b.androidIAPCode === action.productId)[0];
+            var book = bookData.books.filter(b => b.androidIAPCode === action.productId || b.iosIAPCode == action.productId)[0];
             if (book)
                 ownedBooks.push(book.id);
             return { ...state, ownedBooks: ownedBooks }
