@@ -44,7 +44,7 @@ export default StyleSheet.create({
     ,buttonText:  { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO}
 
     ,bookSelectItem: { borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black', width:'80%', backgroundColor:'#FBC61E', alignItems:'center', marginBottom:5 * global.HEIGHT_RATIO }
-
+    ,bookInfoBuyButton: { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO }
     
     ,topLeftButton: {position:'absolute', left:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}
     ,topRightButton: {position:'absolute', right:5 * global.WIDTH_RATIO, top:5 * global.HEIGHT_RATIO, width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}

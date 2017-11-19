@@ -21,6 +21,7 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		25FF405ADB334B8F905DD575 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FF9BC624E1499CA6FA7EE4 /* libRNSound.a */; };
 		2E6243A5CCBF41FAB398EE30 /* summer_joy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FF8F37D69464DAB81BBB75F /* summer_joy.ttf */; };
+		49E0A8251FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49E0A8011FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 */; };
 		49FC2C481FBF87C1008E2EBF /* seacreature_11_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2AFC1FBF8798008E2EBF /* seacreature_11_2_soundeffect.mp3 */; };
 		49FC2C491FBF87C1008E2EBF /* monster_27_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2AFD1FBF8798008E2EBF /* monster_27_3_audio.mp3 */; };
 		49FC2C4A1FBF87C1008E2EBF /* seacreature_6_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2AFE1FBF8798008E2EBF /* seacreature_6_1_soundeffect.mp3 */; };
@@ -633,6 +634,7 @@
 		38FF9BC624E1499CA6FA7EE4 /* libRNSound.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSound.a; sourceTree = "<group>"; };
 		4000A620FAD94E4F9FC2D43D /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
 		4798EF0718EF4FFA9FDDA279 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
+		49E0A8011FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seacreature_start_soundeffect.mp3; path = ../android/app/src/main/res/raw/seacreature_start_soundeffect.mp3; sourceTree = "<group>"; };
 		49FC2AFC1FBF8798008E2EBF /* seacreature_11_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seacreature_11_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/seacreature_11_2_soundeffect.mp3; sourceTree = "<group>"; };
 		49FC2AFD1FBF8798008E2EBF /* monster_27_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_27_3_audio.mp3; path = ../android/app/src/main/res/raw/monster_27_3_audio.mp3; sourceTree = "<group>"; };
 		49FC2AFE1FBF8798008E2EBF /* seacreature_6_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seacreature_6_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/seacreature_6_1_soundeffect.mp3; sourceTree = "<group>"; };
@@ -1221,6 +1223,7 @@
 		F2C75C046D6648259F37D554 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				49E0A8011FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 */,
 				49FC2B0E1FBF879A008E2EBF /* monster_1_1_audio.mp3 */,
 				49FC2B2E1FBF879E008E2EBF /* monster_1_1_soundeffect.mp3 */,
 				49FC2B051FBF8799008E2EBF /* monster_1_2_audio.mp3 */,
@@ -2100,6 +2103,7 @@
 				49FC2C7C1FBF87C1008E2EBF /* monster_27_2_audio.mp3 in Resources */,
 				49FC2CBB1FBF87C1008E2EBF /* seacreature_8_2_soundeffect.mp3 in Resources */,
 				49FC2C6D1FBF87C1008E2EBF /* seacreature_13_3_audio.mp3 in Resources */,
+				49E0A8251FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 in Resources */,
 				49FC2C481FBF87C1008E2EBF /* seacreature_11_2_soundeffect.mp3 in Resources */,
 				49FC2CDD1FBF87C1008E2EBF /* monster_8_2_audio.mp3 in Resources */,
 				49FC2CA91FBF87C1008E2EBF /* monster_5_1_soundeffect.mp3 in Resources */,
@@ -2318,8 +2322,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Full Stack Development Limited (6BVEZ9LV96)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -2346,8 +2350,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.choosicles.app;
 				PRODUCT_NAME = Choosicles;
-				PROVISIONING_PROFILE = "8dd0bd7f-04aa-489c-b08a-9b9a8c5a9899";
-				PROVISIONING_PROFILE_SPECIFIER = com.choosicles.app;
+				PROVISIONING_PROFILE = "839e7248-5a7b-44b3-a273-8ebf81175342";
+				PROVISIONING_PROFILE_SPECIFIER = DevNew;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2357,7 +2361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Full Stack Development Limited (6BVEZ9LV96)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2386,7 +2390,7 @@
 				PRODUCT_NAME = Choosicles;
 				PROVISIONING_PROFILE = "8dd0bd7f-04aa-489c-b08a-9b9a8c5a9899";
 				PROVISIONING_PROFILE_SPECIFIER = com.choosicles.app;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = com.choosicles.app;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -2409,8 +2413,9 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Full Stack Development Limited (6BVEZ9LV96)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 6BVEZ9LV96;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2431,6 +2436,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = DevNew;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2467,7 +2473,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = com.choosicles.app;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=*]" = com.choosicles.app;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2483,7 +2490,7 @@
 				13B07F951A680F5B00A75B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Choosicles" */ = {
 			isa = XCConfigurationList;
@@ -2492,7 +2499,7 @@
 				83CBBA211A601CBA00E9B192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

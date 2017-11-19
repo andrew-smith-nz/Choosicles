@@ -16,8 +16,8 @@ export default class BookInfo extends Component
     
     getNicePrice()
     {
-        if (this.props.price === "Price Unavailable")
-            return "";
+        if (this.props.price === "Loading Price")
+            return "$4.99";
         return this.props.price;
     }
 
@@ -38,16 +38,16 @@ export default class BookInfo extends Component
                         </View>
                         <View style={{flex:2, width:'100%'}}>
                             <View style={{flex:1, flexDirection:'row', justifyContent:'space-between', paddingLeft:20 * global.HEIGHT_RATIO, paddingRight:20 * global.HEIGHT_RATIO}}>
-                                {!this.props.owned ? <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center', padding:1}}
+                                {!this.props.owned ? <TouchableOpacity style={{width:'40%', alignItems:'center', justifyContent:'center', padding:1}}
                                                     onPress={() => this.props.callback()}>
                                     <Image style={{width:'100%', alignItems:'center', justifyContent:'center'}} source={require('../../img/tall_button.png')} resizeMode="contain">
-                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO} ]}>Buy now {this.getNicePrice()}</Text>
+                                        <Text style={[style.boldText16, style.bookInfoBuyButton ]}>Buy now{"\n"} {this.getNicePrice()}</Text>
                                     </Image>
                                 </TouchableOpacity> : <View style={{width:'30%', alignItems:'center', justifyContent:'center', padding:1}} />}
-                                <TouchableOpacity style={{width:'30%', alignItems:'center', justifyContent:'center', padding:1}}
+                                <TouchableOpacity style={{width:'40%', alignItems:'center', justifyContent:'center', padding:1}}
                                                     onPress={() => this.props.cancelCallback()}>
                                     <Image style={{width:'100%', alignItems:'center', justifyContent:'center'}} source={require('../../img/tall_button.png')} resizeMode="contain">
-                                        <Text style={[style.boldText16, { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO} ]}>Close</Text>
+                                        <Text style={[style.boldText16, style.bookInfoBuyButton ]}>Close</Text>
                                     </Image>
                                 </TouchableOpacity>
                             </View>
