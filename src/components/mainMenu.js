@@ -66,10 +66,20 @@ class MainMenu extends Component
 
     store()
     {
+        if (Platform.OS == "ios")
+        {
         this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'ParentalGate'})]
+                }));
+            }
+        else
+        {
+            this.props.navigation.dispatch(NavigationActions.reset({
                 index: 0,
                 actions: [ NavigationActions.navigate({ routeName: 'Store'})]
                 }));
+        }
     }
 
     setOwnedProducts(productIds)

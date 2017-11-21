@@ -7,6 +7,7 @@ import Settings from './src/components/settings.js';
 import Store from './src/components/store.js';
 import TitlePage from './src/components/titlePage.js';
 import EndPage from './src/components/endPage.js';
+import ParentalGate from './src/components/parentalGate.js';
 import { StackNavigator } from 'react-navigation';
 import { compose, createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
@@ -35,7 +36,7 @@ export default class App extends React.Component {
     const persistor = persistStore(store, {storage: AsyncStorage, whitelist:['pageCounters', 'changeSettings', 'products']}, () => { this.setState({ rehydrated: true })});
     if (Platform.OS === "android")
     {
-    setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 1000);
+      setTimeout(function(){ this.setState({ showSplash: false })}.bind(this), 1000);
     }
     else
     {
@@ -86,6 +87,9 @@ const Navigator = StackNavigator({
     },
     EndPage: {
       screen: EndPage
+    },
+    ParentalGate: {
+      screen: ParentalGate
     }
   },
   {
