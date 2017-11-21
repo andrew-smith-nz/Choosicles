@@ -13,7 +13,7 @@ export function products(state = { ownedBooks: [] }, action)
             for (i = 0; i < action.productIds.length; i++)
             {
                 var book = bookData.books.filter(b => b.androidIAPCode === action.productIds[i])[0];
-                if (book && ownedBooks.filter(b => b.id === book.id).length == 0)
+                if (book && ownedBooks.filter(b => b === book.id).length == 0)
                     ownedBooks.push(book.id);
             }
             return { ...state, ownedBooks: ownedBooks }
@@ -22,8 +22,10 @@ export function products(state = { ownedBooks: [] }, action)
         {
             var ownedBooks = state.ownedBooks.slice();
             var book = bookData.books.filter(b => b.androidIAPCode === action.productId || b.iosIAPCode == action.productId)[0];
-            if (book && ownedBooks.filter(b => b.id == book.id).Length == 0)
+            if (book && !ownedBooks.filter(b => b === book.id)[0])
+            {
                 ownedBooks.push(book.id);
+            }
             return { ...state, ownedBooks: ownedBooks }
         }
         case ADD_BOOKS_BY_ID:
