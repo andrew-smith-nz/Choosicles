@@ -56,6 +56,8 @@ export default StyleSheet.create({
 
     ,centerRightLargeButton: {position:'absolute', width:120 * global.WIDTH_RATIO, height:100 * global.HEIGHT_RATIO, top: 130 * global.HEIGHT_RATIO, right: 16 * global.WIDTH_RATIO}
     ,centerBottomLargeButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 250 * global.WIDTH_RATIO}
+    ,centerBottomLeftButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 330 * global.WIDTH_RATIO}
+    ,centerBottomRightButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 170 * global.WIDTH_RATIO}
     ,centerBottomLargerButton: {position:'absolute', width:185 * global.WIDTH_RATIO, height:80 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 228 * global.WIDTH_RATIO}
     ,centerBottomLongButton: {position:'absolute', width:150 * global.WIDTH_RATIO, height:45 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 245 * global.WIDTH_RATIO}
                                  

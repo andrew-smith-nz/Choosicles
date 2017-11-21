@@ -9,6 +9,7 @@ import Sync from './sync.js';
 import Reactotron from 'reactotron-react-native';
 import { addOwnedProduct } from '../actions/store.js';
 import { NavigationActions } from 'react-navigation';
+import global from '../../global.js'
 
 const bookData = require('../../books.json');
 const InAppBilling = require("react-native-billing");
@@ -113,6 +114,29 @@ class Store extends Component
         }
     }
 
+    restorePurchases()
+    {
+        if (Platform.OS == "ios")
+        {
+            InAppUtils.restorePurchases((error, response) => {
+                if(error) {
+                   Alert.alert('itunes Error', 'Could not connect to itunes store.');
+                } else {
+                   Alert.alert('Restore Successful', 'Successfully restores all your purchases.');
+                   
+                   if (response.length === 0) {
+                     Alert.alert('No Purchases', "We didn't find any purchases to restore.");
+                     return;
+                   }
+             
+                   response.forEach((purchase) => {
+                     this.props.addOwnedProduct(productIdentifier);                        
+                   });
+                }
+             });
+        }
+    }
+
     getBookPrice(book)
     {
         var price = "Loading Price";
@@ -163,7 +187,10 @@ class Store extends Component
                     <TouchableOpacity style={style.topRightButton} onPress={() => this.home()}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={style.fill} />
                     </TouchableOpacity>
-                    <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.setState({ syncVisible:true})}>
+                    <TouchableOpacity style={style.centerBottomLeftButton} onPress={() => this.restorePurchases()}>
+                        <Image source={require('../../img/restore_purchases.png')} resizeMode="contain" style={[style.fill, {paddingRight:20 * global.WIDTH_RATIO}]} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={style.centerBottomRightButton} onPress={() => this.setState({ syncVisible:true})}>
                         <Image source={require('../../img/sync.png')} resizeMode="contain" style={style.fill} />
                     </TouchableOpacity>
                     <Modal transparent={true} visible={this.state.bookInfoVisible} onRequestClose={() => this.setState({ bookInfoVisible:false, book:null })} supportedOrientations={['landscape-left', 'landscape-right']}>
