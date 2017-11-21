@@ -70,7 +70,7 @@ export default StyleSheet.create({
                     ,h1: { fontSize:36 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h2: { fontSize:30 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,h3: { fontSize:24 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
-                    ,h4: { fontSize:16 * global.WIDTH_RATIO,lineHeight:32 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
+                    ,h4: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,title: { fontSize:48 * global.WIDTH_RATIO, fontFamily: 'SummerJoy', backgroundColor:'transparent' }
                     ,plainText: { fontSize:12 * global.WIDTH_RATIO, fontFamily: 'Helvetica', backgroundColor:'transparent' }
                     ,smallPlainText: { fontSize:10 * global.WIDTH_RATIO, fontFamily: 'Helvetica', backgroundColor:'transparent' }
