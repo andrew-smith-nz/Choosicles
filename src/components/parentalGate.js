@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Image, Platform, TextInput, Alert } from 'react-native';
 import style from '../../style/style.js';
 import { NavigationActions } from 'react-navigation';
+import global from '../../global.js'
 
 export default class ParentalGate extends Component
 {
@@ -44,11 +45,12 @@ export default class ParentalGate extends Component
                     <View style={{flex:1, width:'100%', alignItems:'center', justifyContent:'center', marginTop:10, marginBottom:10}}>
                         <Image source={require('../../img/ask_your_parents.png')} resizeMode="contain" style={style.topText} />
                     </View>
-                    <View style={{flex:1, width:'100%', alignItems:'center', justifyContent:'center'}}>
-                        <Text style={style.h4}>Please answer the following question</Text>
+                    <View style={{flex:1, width:'100%', alignItems:'center', justifyContent:'center',
+                        }}>
+        <Text style={[style.h4, {paddingTop:10 * global.HEIGHT_RATIO, paddingBottom:10 * global.HEIGHT_RATIO}]}>Please answer the following question</Text>
                     </View>
-                    <View style={{flex:2, width:'100%', alignItems:'center', justifyContent:'center'}}>
-                        <Text style={style.h2}>What is {this.state.x} + {this.state.y}?</Text>
+                    <View style={{flex:2, width:'100%', alignItems:'center', justifyContent:'center'	}}>
+                        <Text style={[style.h2, {paddingTop:10 * global.HEIGHT_RATIO}]}>What is {this.state.x} + {this.state.y}?</Text>
                     </View>
                     <View style={{flex:2, width:'100%', alignItems:'center', justifyContent:'center'}}>
                         <TextInput underlineColorAndroid='transparent' style={[style.textInput, style.h2, {width:'50%', backgroundColor:'white', textAlign:'center'}]} 
