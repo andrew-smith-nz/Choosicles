@@ -14,7 +14,7 @@ export default class ParentalGate extends Component
 
     getRandomNumber()
     {
-        return Math.floor(Math.random() * 50) + 15 ;
+        return Math.floor(Math.random() * 35) + 15 ;
     }
 
     home()
@@ -54,7 +54,7 @@ export default class ParentalGate extends Component
                     </View>
                     <View style={{flex:2, width:'100%', alignItems:'center', justifyContent:'center'}}>
                         <TextInput underlineColorAndroid='transparent' style={[style.textInput, style.h2, {width:'50%', backgroundColor:'white', textAlign:'center'}]} 
-                                onChangeText={(text) => { this.setState({answer: text })}} value={this.state.answer} keyboardType="numeric" />
+                                onChangeText={(text) => { this.setState({answer: text })}} value={this.state.answer} keyboardType="numbers-and-punctuation" />
                     </View>
                     <View style={{flex:2, width:'100%', alignItems:'center', justifyContent:'center'}}>
                         <TouchableOpacity style={{width:'20%', alignItems:'center', justifyContent:'center', padding:1}} onPress={() => this.validateAnswer()}>
