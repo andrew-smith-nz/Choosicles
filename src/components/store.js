@@ -120,14 +120,14 @@ class Store extends Component
         {
             InAppUtils.restorePurchases((error, response) => {
                 if(error) {
-                   Alert.alert('itunes Error', 'Could not connect to itunes store.');
+                   Alert.alert('Error', 'Could not connect to app store.');
                 } else {
-                   Alert.alert('Restore Successful', 'Successfully restored your purchases.');
                    
                    if (response.length === 0) {
                      Alert.alert('No Purchases', "We didn't find any purchases to restore.");
                      return;
                    }
+                   Alert.alert('Restore Successful', 'Successfully restored your purchases.');
                    response.forEach((purchase) => {
                      this.props.addOwnedProduct(purchase.productIdentifier);
                    });
