@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "411031507954",
+    "firebase_url": "https://choosicles.firebaseio.com",
+    "project_id": "choosicles",
+    "storage_bucket": "choosicles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411031507954:android:62ed8d763ea4aa28",
+        "android_client_info": {
+          "package_name": "com.choosicles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411031507954-09ncm2kslou1dqkhtiniet5etf8hcqei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAipVlr798dZaAX2QoJiJQNdcH1Pps1swU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
