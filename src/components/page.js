@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler, Alert } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler, Alert, Platform } from 'react-native';
 import style from '../../style/style.js';
 import { getImageForPage, getSoundEffectForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter, changeText } from '../actions/book.js';
@@ -8,6 +8,7 @@ import NameMonster from './nameMonster.js';
 import ShadowText from './shadowText.js';
 import Reactotron from 'reactotron-react-native';
 import { NavigationActions } from 'react-navigation';
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 var Sound = require('react-native-sound');
 
 function mapStateToProps(state) {
@@ -16,6 +17,7 @@ function mapStateToProps(state) {
         pageHistory: state.changePage.pageHistory,
         currentText: state.changePage.currentText,
         name: state.changeName.name,
+        isOwned: state.changePage.isOwned,
         panDirection: state.changePage.direction,
         pageCounters: state.pageCounters.pageCounters,
         showChoiceCounters: state.changeSettings.showChoiceCounters,
@@ -23,7 +25,8 @@ function mapStateToProps(state) {
         enableSoundEffects: state.changeSettings.enableSoundEffects,
         enableReadAloud: state.changeSettings.enableReadAloud,
         enableShowText: state.changeSettings.enableShowText,
-        enableAutoplayAudio: state.changeSettings.enableAutoplayAudio
+        enableAutoplayAudio: state.changeSettings.enableAutoplayAudio,
+        enableAutoplaySoundEffects: state.changeSettings.autoplaySoundEffects
     }
 }
 
@@ -61,9 +64,23 @@ class Page extends Component
             audioIsLoaded: false,
             initialisingAudio: false,
             canRestartAudio: false ,
-            soundEffects: []      
+            soundEffects: []   ,
+            soundEffectIsPlaying: false   
         };
         this._slideProgress = new Animated.Value(0);
+    }
+
+    onSwipeRight(gestureState) {
+        console.log('backswipe')
+        this.back();
+    }
+
+    onSwipeLeft(gestureState) {
+        console.log('foreswipe')
+        if ((!this.props.enableShowText && (this.props.pageData.navigationLinks.length == 0)) 
+        || (this.props.enableShowText && ((this.props.pageData.navigationLinks.length == 0) 
+        || (this.props.currentText < this.props.pageData.texts.length - 1))))
+            this.forward();
     }
 
     componentWillMount()
@@ -141,9 +158,24 @@ class Page extends Component
     loadSoundEffects(assetCode){    
         this.setState({soundEffects: []});
         var i = 1;
+        var playedASound = false;
         while (i <= 3)
         {
-            let player = new Sound(assetCode + '_' + i + '_soundeffect.mp3', Sound.MAIN_BUNDLE, () => {this.state.soundEffects.push(player)});
+            let player = new Sound(assetCode + '_' + i + '_soundeffect.mp3', Sound.MAIN_BUNDLE, () => {
+                this.state.soundEffects.push(player); 
+                if (!playedASound) 
+                {
+                    playedASound = true;
+                    if (this.props.enableAutoplaySoundEffects)
+                    {
+                        player.play(
+                            (success) => { 
+                               this.setState({ soundEffectIsPlaying: false });
+                           });
+                        this.setState({ soundEffectIsPlaying: true });
+                    }
+                }
+            });
             i++;
         }
     }   
@@ -223,18 +255,39 @@ class Page extends Component
     playSoundEffect(i)
     {
         Reactotron.log(this.state.soundEffects);
-        if (this.state.soundEffects.length > 0)
+        if (this.state.soundEffectIsPlaying)
         {
-            var order = [];
             for (i = 0; i < this.state.soundEffects.length; i++)
             {
-                // iOS loads non-existent sounds for some reason, so we have to check if there's actually anything there
                 if (this.state.soundEffects[i]._duration > 0)
-                    order.push(i);
+                {
+                    this.state.soundEffects[i].stop();
+                }
             }
-            order = this.shuffle(order);
-            this.trySoundEffect(order, 0);
         }
+        else
+        {
+            if (this.state.soundEffects.length > 0)
+            {
+                var soundIsPlaying = false;
+                var order = [];
+                for (i = 0; i < this.state.soundEffects.length; i++)
+                {
+                    let index = i;
+                    // iOS loads non-existent sounds for some reason, so we have to check if there's actually anything there
+                    if (this.state.soundEffects[i]._duration > 0)
+                    {
+                        order.push(i);
+                    }
+                }
+                if (!soundIsPlaying)
+                {
+                    order = this.shuffle(order);
+                    this.trySoundEffect(order, 0);
+                }
+            }
+        }
+        this.setState({ soundEffectIsPlaying: !this.state.soundEffectIsPlaying });
     }
 
     shuffle(array) {
@@ -263,15 +316,9 @@ class Page extends Component
              if (!isPlaying)
              {
                  this.state.soundEffects[order[i]].play(
-                      //(success) => {
-                    //if (success) {
-                    //     Alert.alert('successfully finished playing');
-                     //} else {
-                    //     Alert.alert('playback failed due to audio decoding errors');
-                       // reset the player to its uninitialized state (android only)
-                       // this is the only option to recover after an error occured and use the player again
-                       //whoosh.reset();
-                    // }}
+                     (success) => { 
+                        this.setState({ soundEffectIsPlaying: false });
+                    }
                 );
              }
              else
@@ -416,6 +463,35 @@ class Page extends Component
         this.props.choose(targetPageId); 
     }
 
+    isEndOfSample()
+    {
+        if (!this.props.isOwned && this.props.pageData.pageNumber > 1)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    
+    store()
+    {
+        if (Platform.OS == "ios")
+        {
+        this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'ParentalGate'})]
+                }));
+            }
+        else
+        {
+            this.props.navigation.dispatch(NavigationActions.reset({
+                index: 0,
+                actions: [ NavigationActions.navigate({ routeName: 'Store', params: { bookId: 'monster' }})]
+                }));
+        }
+    }
+
+
     render()
     {
         let hasDecision = !this.props.enableShowText || (this.props.currentText == (this.props.pageData.texts.length - 1) && this.props.pageData.navigationLinks.length > 0);
@@ -429,11 +505,24 @@ class Page extends Component
         let topPosition = '0%';
         let width = '74%';
         var backgroundColor = 'rgba(255,255,255,' + backgroundOpacity.toString() + ')';
+        const swipeConfig = {
+            velocityThreshold: 0.3,
+            directionalOffsetThreshold: 80
+          };
         let pageTextView = !this.props.enableShowText ? null : ( 
             <Animated.Text style={[ style.pageText, {backgroundColor:backgroundColor, opacity:this.state.textFadeOpacity, color:this.props.pageData.textColor }]}>
                 {this.getPageText()}
             </Animated.Text> );
         return (
+            <GestureRecognizer
+        onSwipeLeft={(state) => this.onSwipeLeft(state)}
+        onSwipeRight={(state) => this.onSwipeRight(state)}
+        config={swipeConfig}
+        style={{
+          flex: 1,
+          backgroundColor: this.state.backgroundColor
+        }}
+        >
                 <Animated.View style={[style.pageView, {transform: [
                     {
                     translateX: this.state.slideX
@@ -443,11 +532,10 @@ class Page extends Component
                         <View style={{position:'absolute', left:leftPosition, top:topPosition, width:width}}>
                                {(textPosition == 'top') ? pageTextView : null}
                         </View>
-                                    
                         <View style={{flexDirection:'column', position:'absolute', bottom:bottomPosition, left:leftPosition, width:width, padding:5, alignItems:'center', justifyContent:'center'}}>                          
                                     {(textPosition == 'bottom') ? pageTextView : null}
                                 <View style={[style.centeredContent, style.choiceButtonView]}>  
-                                    {hasDecision ? 
+                                    {hasDecision & !this.isEndOfSample() ? 
                                         this.props.pageData.navigationLinks.map((nav) => 
                                             <TouchableOpacity key={nav.id} onPress={() => { this.choose(nav.targetPageId) } }>
                                                 <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={style.choiceButton} />
@@ -458,7 +546,16 @@ class Page extends Component
                                                 : null }
                                             </TouchableOpacity>
                                             )
-                                    : null}
+                                    : null}                                    
+                                    {hasDecision & this.isEndOfSample() ? 
+                                    <View>
+                                        <Text style={[ style.pageText, {backgroundColor:backgroundColor, opacity:0.8, color:this.props.pageData.textColor }]}>
+                                        To continue your story, buy the full book in the store!
+                                        </Text>
+                                        <TouchableOpacity style={{marginBottom:30}} onPress={() => this.store()}>            
+                                            <Image id="store" source={require('../../img/buybooks_long.png')} resizeMode='contain' style={style.fill}/>
+                                        </TouchableOpacity>
+                                    </View> :     null }
                                 </View>
                         </View>
                         {false?
@@ -482,7 +579,8 @@ class Page extends Component
                         {this.props.enableSoundEffects ? 
                         <View style={style.bottomRightButton}>
                             <TouchableOpacity onPress={() => this.playSoundEffect()}>
-                                <Image source={require('../../img/speaker.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                            {this.state.soundEffectIsPlaying ? <Image source={require('../../img/speaker_off.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                            :<Image source={require('../../img/speaker.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />}
                             </TouchableOpacity>
                         </View> : null}        
                         {this.props.enableReadAloud ? 
@@ -507,6 +605,7 @@ class Page extends Component
                         </View>
                     </Image>
                 </Animated.View>
+                </GestureRecognizer>
         );
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Switch, TouchableOpacity, Modal, ScrollView, BackHandler, Alert } from 'react-native';
 import style from '../../style/style.js';
-import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setEnableReadAloud, setAutoplayAudio, setShowText, setSilentMode, resetToDefaults } from '../actions/settings.js';
+import { toggleDisplayChoiceCounters, setDisplayMode, setEnableSoundEffects, setAutoplaySoundEffects, setEnableReadAloud, setAutoplayAudio, setShowText, setSilentMode, resetToDefaults } from '../actions/settings.js';
 import { resetPageCounters } from '../actions/book.js';
 import { connect } from 'react-redux';
 import { NavigationActions } from 'react-navigation';
@@ -14,6 +14,7 @@ function mapStateToProps(state) {
         pageCounters: state.pageCounters.pageCounters,
         displayMode: state.changeSettings.displayMode,
         enableSoundEffects: state.changeSettings.enableSoundEffects,
+        autoplaySoundEffects: state.changeSettings.autoplaySoundEffects,
         enableReadAloud: state.changeSettings.enableReadAloud,
         enableAutoplayAudio: state.changeSettings.enableAutoplayAudio,
         enableShowText: state.changeSettings.enableShowText,
@@ -26,6 +27,7 @@ function mapDispatchToProps(dispatch)
     return { 
         setDisplayMode: (mode) => dispatch(setDisplayMode(mode)),
         setEnableSoundEffects: (enabled) => dispatch(setEnableSoundEffects(enabled)),
+        setAutoplaySoundEffects: (enabled) => dispatch(setAutoplaySoundEffects(enabled)),
         setEnableReadAloud: (enabled) => dispatch(setEnableReadAloud(enabled)),
         setAutoplayAudio: (enabled) => dispatch(setAutoplayAudio(enabled)),
         setShowText: (enabled) => dispatch(setShowText(enabled)),
@@ -88,6 +90,10 @@ class Settings extends Component
                                     <View style={style.switchView}>
                                         <Text style={style.boldText16}>Enable Sound Effects</Text>
                                         <Switch onValueChange={(value) => {this.props.setEnableSoundEffects(value)}} value={this.props.enableSoundEffects} style={style.switch} />
+                                    </View>
+                                    <View style={style.switchView}>
+                                        <Text style={style.boldText16}>Auto-Play Sound Effects</Text>
+                                        <Switch onValueChange={(value) => {this.props.setAutoplaySoundEffects(value)}} value={this.props.autoplaySoundEffects} style={style.switch} />
                                     </View>
                                     <View style={style.switchView}>
                                         <Text style={style.boldText16}>Show Text</Text>

@@ -135,6 +135,16 @@ class EndPage extends Component
                 actions: [ NavigationActions.navigate({ routeName: 'Page'})]
                 }));
     }
+    
+    home()
+    {
+        this.releaseAudioPlayers();
+        this.props.clearHistory();
+        this.props.navigation.dispatch(NavigationActions.reset({
+               index: 0,
+               actions: [ NavigationActions.navigate({ routeName: 'MainMenu'})]
+             }));
+    }
 
     render()
     {
@@ -165,9 +175,19 @@ class EndPage extends Component
                             </TouchableOpacity> 
                         </View> 
                     : null}   
-                    <TouchableOpacity style={style.centerBottomLargerButton} onPress={() => this.startBook()}>
-                        <Image style={style.fill} source={require('../../img/start_again.png')} resizeMode="contain" />
-                    </TouchableOpacity>
+                    <View style={{flexDirection:'column', padding:5, alignItems:'center', justifyContent:'center'}}>                          
+                        <TouchableOpacity style={style.centerBottomLeftLargerButton} onPress={() => this.startBook()}>
+                            <Image style={style.fill} source={require('../../img/start_again.png')} resizeMode="contain" />
+                        </TouchableOpacity>  
+                        <TouchableOpacity style={style.centerBottomRightLargerButton} onPress={() => this.home()}>
+                            <Image style={style.fill} source={require('../../img/read_another.png')} resizeMode="contain" />
+                        </TouchableOpacity>       
+                    </View>               
+                    <View style={style.topRightButton}>
+                        <TouchableOpacity onPress={() => this.home()}>
+                            <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
+                        </TouchableOpacity>
+                    </View>
                 </View>);
     }
 }
