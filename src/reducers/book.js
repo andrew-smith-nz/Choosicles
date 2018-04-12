@@ -51,13 +51,21 @@ export function changeName(state = { name: "" }, action)
     }
 }
 
-export function changePage(state = { activeBookId: null, pageData: null, pageHistory:[], direction: 'forward', currentText: 0 }, action)
+export function changePage(state = { activeBookId: null, pageData: null, pageHistory:[], direction: 'forward', currentText: 0, isOwned:false }, action)
 {
     switch(action.type)
     {
         case SET_ACTIVE_BOOK:
         {
-            return { ...state, activeBook: action.book }
+            var owned = false;
+            for (i = 0; i < bookData.books.length; i++)
+            {
+                if (bookData.books[i].id === action.book.id)
+                {
+                    owned = bookData.books[i].owned;
+                }
+            }
+            return { ...state, activeBook: action.book, isOwned: owned }
         }
         case CHANGE_PAGE: 
         {

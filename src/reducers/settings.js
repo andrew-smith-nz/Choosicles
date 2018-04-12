@@ -1,4 +1,4 @@
-import { TOGGLE_DISPLAY_CHOICE_COUNTERS, SET_DISPLAY_MODE, SET_ENABLE_SOUND_EFFECTS, SET_ENABLE_READ_ALOUD, SET_AUTOPLAY_AUDIO, SET_SHOW_TEXT, SET_SILENT_MODE, RESET_TO_DEFAULTS } from '../actions/settings.js'
+import { TOGGLE_DISPLAY_CHOICE_COUNTERS, SET_DISPLAY_MODE, SET_ENABLE_SOUND_EFFECTS, SET_AUTOPLAY_SOUND_EFFECTS, SET_ENABLE_READ_ALOUD, SET_AUTOPLAY_AUDIO, SET_SHOW_TEXT, SET_SILENT_MODE, RESET_TO_DEFAULTS } from '../actions/settings.js'
 
 export function changeSettings(state = { showChoiceCounters: true, displayMode: 'tablet', enableSoundEffects: true, enableReadAloud: true, enableAutoplayAudio: true, enableShowText: true, enableSilentMode: false }, action)
 {
@@ -14,7 +14,11 @@ export function changeSettings(state = { showChoiceCounters: true, displayMode: 
         }
         case SET_ENABLE_SOUND_EFFECTS:
         {
-            return { ...state, enableSoundEffects: action.enabled, enableSilentMode: (state.enableSilentMode && !action.enabled)  };
+            return { ...state, enableSoundEffects: action.enabled, enableSilentMode: (state.enableSilentMode && !action.enabled), autoplaySoundEffects: (state.autoplaySoundEffects && action.enabled) };
+        }
+        case SET_AUTOPLAY_SOUND_EFFECTS:
+        {
+            return { ...state, autoplaySoundEffects: action.enabled, enableSilentMode: (state.enableSilentMode && !action.enabled)  };
         }
         case SET_ENABLE_READ_ALOUD:
         {

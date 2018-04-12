@@ -8,6 +8,7 @@ import { getStartAudioForBook, getEndAudioForBook, getStartSoundEffectForBook, g
 var Sound = require('react-native-sound');
 import Reactotron from 'reactotron-react-native';
 import { NavigationActions } from 'react-navigation';
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 
 function mapStateToProps(state) {
     return { 
@@ -38,6 +39,15 @@ class TitlePage extends Component
         BackHandler.addEventListener('hardwareBackPress', () => this.backHandler());
         this.state = {audioPaused:!props.enableReadAloud, canRestartAudio: false}
     }
+
+    onSwipeRight(gestureState) {
+        this.home();
+    }
+
+    onSwipeLeft(gestureState) {
+        this.startBook();
+    }
+
     
     loadSoundEffect(){    
         var player = new Sound(getStartSoundEffectForBook(this.props.book.id), Sound.MAIN_BUNDLE, () => {this.setState({soundEffect: player})});
@@ -169,7 +179,20 @@ class TitlePage extends Component
 
     render()
     {
-        return  (<View style={{flex:1}}>
+        const swipeConfig = {
+            velocityThreshold: 0.3,
+            directionalOffsetThreshold: 80
+          };
+        return  (
+            <GestureRecognizer
+        onSwipeLeft={(state) => this.onSwipeLeft(state)}
+        onSwipeRight={(state) => this.onSwipeRight(state)}
+        config={swipeConfig}
+        style={{
+          flex: 1,
+          backgroundColor: this.state.backgroundColor
+        }}
+        ><View style={{flex:1}}>
                     <Image source={getStartImageForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
                     <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.startBook()}>
                         <Image style={style.fill} source={require('../../img/start_button.png')} resizeMode="contain" />
@@ -198,7 +221,8 @@ class TitlePage extends Component
                             <Image source={require('../../img/speaker.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                         </TouchableOpacity>
                     </View> : null}       
-                </View>);
+                </View>
+                </GestureRecognizer>);
     }
 }
 

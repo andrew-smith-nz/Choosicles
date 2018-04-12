@@ -1,6 +1,7 @@
 export const TOGGLE_DISPLAY_CHOICE_COUNTERS = "TOGGLE_DISPLAY_CHOICE_COUNTERS";
 export const SET_DISPLAY_MODE = "SET_DISPLAY_MODE";
 export const SET_ENABLE_SOUND_EFFECTS = "SET_ENABLE_SOUND_EFFECTS";
+export const SET_AUTOPLAY_SOUND_EFFECTS = "SET_AUTOPLAY_SOUND_EFFECTS";
 export const SET_ENABLE_READ_ALOUD = "SET_ENABLE_READ_ALOUD";
 export const SET_AUTOPLAY_AUDIO = "SET_AUTOPLAY_AUDIO";
 export const SET_SHOW_TEXT = "SET_SHOW_TEXT";
@@ -26,6 +27,14 @@ export function setEnableSoundEffects(enabled)
 {
     return {
             type: SET_ENABLE_SOUND_EFFECTS,
+            enabled
+        };
+}
+
+export function setAutoplaySoundEffects(enabled)
+{
+    return {
+            type: SET_AUTOPLAY_SOUND_EFFECTS,
             enabled
         };
 }
