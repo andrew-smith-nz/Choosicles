@@ -17,7 +17,8 @@ const InAppUtils = require('NativeModules').InAppUtils;
 
 function mapStateToProps(state) {
     return { 
-        ownedBooks: state.products.ownedBooks
+        ownedBooks: state.products.ownedBooks,
+        activePurchase: state.products.activePurchase
     }
 }
 
@@ -111,6 +112,18 @@ class Store extends Component
                                     this.forceUpdate();
                 }
             });
+        }
+        
+        if (this.props.activePurchase)
+        {
+            for (i = 0; i < bookData.books.length; i++)
+            {
+                if (bookData.books[i].id === this.props.activePurchase)
+                {
+                    this.setState({bookInfoVisible: true, book: bookData.books[i]});
+                    break;
+                }
+            }
         }
     }
 

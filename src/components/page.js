@@ -3,6 +3,7 @@ import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, 
 import style from '../../style/style.js';
 import { getImageForPage, getSoundEffectForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter, changeText } from '../actions/book.js';
+import { setActivePurchase } from '../actions/store.js';
 import { connect } from 'react-redux';
 import NameMonster from './nameMonster.js';
 import ShadowText from './shadowText.js';
@@ -37,7 +38,8 @@ function mapDispatchToProps(dispatch)
         clearHistory: () => dispatch(clearHistory()),
         changeText: (increment) => dispatch(changeText(increment)),
         choose: (pageId) => dispatch(changePage(pageId)),
-        incrementPageCounter: (pageId) => dispatch(incrementPageCounter(pageId))
+        incrementPageCounter: (pageId) => dispatch(incrementPageCounter(pageId)),
+        setActivePurchase: (pageId) => dispatch(setActivePurchase(pageId))
     };
 }
 
@@ -475,13 +477,14 @@ class Page extends Component
     
     store()
     {
+        this.props.setActivePurchase(this.props.pageData.id);
         if (Platform.OS == "ios")
         {
-        this.props.navigation.dispatch(NavigationActions.reset({
+            this.props.navigation.dispatch(NavigationActions.reset({
                 index: 0,
                 actions: [ NavigationActions.navigate({ routeName: 'ParentalGate'})]
                 }));
-            }
+        }
         else
         {
             this.props.navigation.dispatch(NavigationActions.reset({
