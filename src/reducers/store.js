@@ -1,9 +1,9 @@
-import { SET_OWNED_PRODUCTS, ADD_OWNED_PRODUCT, ADD_BOOKS_BY_ID } from '../actions/store.js'
+import { SET_OWNED_PRODUCTS, ADD_OWNED_PRODUCT, ADD_BOOKS_BY_ID, SET_ACTIVE_PURCHASE } from '../actions/store.js'
 import Reactotron from 'reactotron-react-native';
 
 const bookData = require('../../books.json');
 
-export function products(state = { ownedBooks: [] }, action)
+export function products(state = { ownedBooks: [], activePurchase: null }, action)
 {
     switch (action.type)
     {
@@ -37,6 +37,22 @@ export function products(state = { ownedBooks: [] }, action)
                     ownedBooks.push(action.books[i].Id);
             }
             return {...state, ownedBooks};
+        }
+        case SET_ACTIVE_PURCHASE:
+        {
+            var bookId;
+            for (i = 0; i < bookData.books.length; i++)
+            {
+                for (j = 0; j < bookData.books[i].pages.length; j++)
+                {
+                    if (bookData.books[i].pages[j].id === action.pageId)
+                    {
+                        bookId = bookData.books[i].id;
+                    }
+                }
+            }
+
+            return { ...state, activePurchase: bookId }
         }
         default: return state;
     }
