@@ -1952,6 +1952,967 @@
                     "navigationLinks": []
                 }
             ]
+        },        
+        {
+            "id": "afb09354-0bb9-72b1-45fe-7239bb8c8a62",
+            "owned": true,
+            "comingSoon": false,
+            "title": "Your Very Own Friendly Alien",
+            "coverImage": null,
+            "author": "Meg Price",
+            "illustrator": "Chloé Elimam",
+            "datePublished": "2018",
+            "recommendedAgeRange": "2 to 6",
+            "androidIAPCode": "alien",
+            "iosIAPCode": "alien",
+            "description": "You are an astronaut exploring outer space! On one of your stops on a far-away planet, you meet a friendly alien. With this interactive children’s book, you get to choose your very own friendly alien. What does it look like? Where does it live? What fun thing do you do together? There are 16 different friendly aliens to discover.",
+            "defaultOpacity": 0.8,
+            "pages": [
+                {
+                    "id": "6668D4F6-26BF-12A3-407C-9CBEE69C6B94",
+                    "pageNumber": 1,
+                    "assetCode": "alien_1",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "text": "You are an astronaut exploring outer space! On one of your stops on a far-away planet, you meet a friendly alien. "
+                        },
+                        {
+                            "text": "The alien is very excited to show you around its planet which is very different from Earth, where you live. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "text": "Tell me about the friendly alien. Does it have legs and walk around, or does it crawl around on its belly like a snail?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "BCE15B0D-58A2-BABE-4F95-2A2583D60D89",
+                            "order": 1,
+                            "targetPageId": "9793EA7F-766D-46B9-430A-6AD586624CF3"
+                        },
+                        {
+                            "id": "9C5EF264-9F4B-30BC-4C20-1336B856F582",
+                            "order": 2,
+                            "targetPageId": "4E03D489-1B33-20A0-4B4D-78C36817FBFE"
+                        }
+                    ]
+                },
+                {
+                    "id": "9793EA7F-766D-46B9-430A-6AD586624CF3",
+                    "pageNumber": 2,
+                    "assetCode": "alien_2",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "text": "The friendly alien has legs. But it doesn’t look very much like a person from Earth. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "text": "The alien can walk, run and jump, but it can’t stand on its tippy toes because it doesn’t have any toes to be tippy on! After the friendly alien looks inside your spaceship, you follow the alien to see its house. "
+                        },
+                        {
+                            "text": "Tell me about the friendly alien. Does it live in a house that looks like a big bubble, or does it live on top of a very tall tower?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "BCE15B0D-58A2-BABE-4F95-2A2583D60D89",
+                            "order": 1,
+                            "targetPageId": "DFD85366-26EE-AFA2-4BF6-D6D5059C711F"
+                        },
+                        {
+                            "id": "589CD616-AC37-94AE-4BF5-65D645EF5676",
+                            "order": 2,
+                            "targetPageId": "5A62DAAC-8ACC-10BE-471F-04A78347D0BC"
+                        }
+                    ]
+                },
+                {
+                    "id": "4E03D489-1B33-20A0-4B4D-78C36817FBFE",
+                    "pageNumber": 3,
+                    "assetCode": "alien_3",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "5E619B1B-5F5F-1B95-4862-5D634D1F4312",
+                            "text": "The friendly alien crawls around on its belly like a snail. But it's much bigger than a snail from Earth, the alien is as big as a person! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "F30FC071-D59C-51A5-42C8-AB65197914A2",
+                            "text": "It wriggles and squiggles and shuffles and squirms. Look at it go! The friendly alien crawls on its belly so fast you need your spaceship to keep up! "
+                        },
+                        {
+                            "id": "EA98E8B2-5788-6AAE-41B7-AA7F54C5A515",
+                            "text": "Tell me about the friendly alien. Does it live in place covered in heavy wet clouds, or does it live in a big flat sandy desert?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "71204434-5ee0-4e38-baee-dc73ef1c806c",
+                            "order": 1,
+                            "targetPageId": "BBFF5212-9A29-D790-4C6E-C7E58AA20DE2"
+                        },
+                        {
+                            "id": "aec46899-d4f8-4041-97cf-4c93cbbba1c3",
+                            "order": 2,
+                            "targetPageId": "54DE8313-BB2F-F487-4781-407DE0B60909"
+                        }
+                    ]
+                },
+                {
+                    "id": "DFD85366-26EE-AFA2-4BF6-D6D5059C711F",
+                    "pageNumber": 4,
+                    "assetCode": "alien_4",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "6184b034-66f3-4162-baf7-d8c911179926",
+                            "text": "The friendly alien lives in a house like a big bubble. You see a whole alien town full of big bubble houses. When you touch the alien’s house it wibbles and wobbles! "
+                        },
+                        {
+                            "id": "d3a239e2-18e9-4316-8a4b-2bf01f772a86",
+                            "text": "It’s lucky there isn’t any wind on this planet or the big bubble houses might float up and away! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "f10bb303-15ab-464b-8341-3e91aaace49c",
+                            "text": "Tell me about the friendly alien. Does it have big sponges for hands, or is it made of bubbles too?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "45864074-fd47-4241-b442-3e5c8e30d6d6",
+                            "order": 1,
+                            "targetPageId": "4D724AD8-B192-19B2-442B-1F6ED5249BBF"
+                        },
+                        {
+                            "id": "ae4aafaa-4d50-42f0-979c-1b1f4d15493b",
+                            "order": 2,
+                            "targetPageId": "26FBD9BE-4D52-62A5-4075-7A8A1C6E2B31"
+                        }
+                    ]
+                },
+                {
+                    "id": "5A62DAAC-8ACC-10BE-471F-04A78347D0BC",
+                    "pageNumber": 5,
+                    "assetCode": "alien_5",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "3ce3bd1d-8611-43b2-9297-5b4fd1f44ed6",
+                            "text": "The friendly alien lives on top of a very tall tower. There are hundreds of steps to get to the top! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "40a70169-ac59-429e-bd51-deb4b9555914",
+                            "text": "Looking high in the sky you can see the tippy top of the tower. It’s the tallest building you’ve ever seen. The steps wind around the outside of the tower instead of inside, how strange!"
+                        },
+                        {
+                            "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
+                            "text": "Tell me about the friendly alien. Does it have six legs, or four legs? ",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "5eafb343-638a-4885-8a12-4c446d776e21",
+                            "order": 1,
+                            "targetPageId": "731F2059-98E6-71BB-4E08-F85D563F3A0F"
+                        },
+                        {
+                            "id": "d51c4f55-8cd0-4447-bb0f-d6e6485ee419",
+                            "order": 2,
+                            "targetPageId": "B0072B48-0DEE-6C91-4550-B2AEA50533AF"
+                        }
+                    ]
+                },
+                {
+                    "id": "BBFF5212-9A29-D790-4C6E-C7E58AA20DE2",
+                    "pageNumber": 6,
+                    "assetCode": "alien_6",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "f5546212-728d-4330-aa4c-1f3075b90ae8",
+                            "text": "The friendly alien lives in a place covered in heavy wet clouds. The clouds sit down on the ground rather than high in the sky. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "61da30af-bef1-42f6-874a-231527f95e37",
+                            "text": "It’s so foggy and gloopy, and wet and spooky inside the clouds, you can hardly see a thing! Your alien friend likes living inside the heavy wet clouds because heavy wet clouds are cosy and snuggly. "
+                        },
+                        {
+                            "id": "157afa0e-e885-4db2-bc2a-9c655c9fadac",
+                            "text": "Tell me about the friendly alien. Does it have two mouths, or does it have bumpy skin like a golf ball?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "5122b92f-754c-418e-8c9b-75319c1daede",
+                            "order": 1,
+                            "targetPageId": "CA2A2185-7924-4C9E-4A57-FCBE84CE9EEA"
+                        },
+                        {
+                            "id": "85746df1-5bf5-4f6e-b3e4-cd5452038add",
+                            "order": 2,
+                            "targetPageId": "EC45B537-8D25-8BB6-4B80-413A593D4FBB"
+                        }
+                    ]
+                },
+                {
+                    "id": "54DE8313-BB2F-F487-4781-407DE0B60909",
+                    "pageNumber": 7,
+                    "assetCode": "alien_7",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "864a8479-c105-4ca3-8f2a-05472edf4b6a",
+                            "text": "The friendly alien lives in a big flat sandy desert. The desert is very dry and very hot. That’s because there isn’t just one big happy sun shining down on the desert, there are two! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "d3105689-6436-4d84-9d1d-3d992676037d",
+                            "text": "Planet Earth only has one sun, so for you, two suns feel like one sun too many. The suns even go to bed at different times, so one is always shining. There is no night time on this bright alien planet. "
+                        },
+                        {
+                            "id": "62617d57-ee5c-4be3-8d10-695634fbf5be",
+                            "text": "Tell me about the friendly alien. Does it have telescope eyes, or does its body have lots of different colours? "
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "093d310a-6db6-436c-a7c3-25fe01dee5c2",
+                            "order": 1,
+                            "targetPageId": "D33FB159-A2B0-FAAC-4540-B1ECA99038B0"
+                        },
+                        {
+                            "id": "960df619-6211-4efb-8fba-1b71231b2aed",
+                            "order": 2,
+                            "targetPageId": "EB32FA60-1AA7-EBB2-4040-0C1F49CD7C5C"
+                        }
+                    ]
+                },
+                {
+                    "id": "4D724AD8-B192-19B2-442B-1F6ED5249BBF",
+                    "pageNumber": 8,
+                    "assetCode": "alien_8",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "715b2925-fde3-41d6-9989-6b955b522854",
+                            "text": "The friendly alien has big sponges for hands! The sponges don’t have any thumbs so grabbing and gripping things is very tricky. "
+                        },
+                        {
+                            "id": "ef70bcbc-90c7-4d30-9895-ae84db061088",
+                            "text": "The friendly alien eats balls covered in spikes. The spikes are so spikey they stick to the sponges! The alien chomps and chews and eats the balls, yummy scrummy, spikes and all. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9d37a454-d4a1-49dd-b9df-95116583a1c1",
+                            "text": "Tell me about the friendly alien. Does it like to clean, or does it like to play sports? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "09eb8663-f4a2-4ff9-8498-77a08df2baf4",
+                            "order": 1,
+                            "targetPageId": "38AD2B90-8122-0FBC-4341-643C527A2B4E"
+                        },
+                        {
+                            "id": "fe2dde9f-5bd8-4a1d-9bc9-14d605924a9a",
+                            "order": 2,
+                            "targetPageId": "63A33859-1D9D-62A7-46EB-EF4E50490D45"
+                        }
+                    ]
+                },
+                {
+                    "id": "26FBD9BE-4D52-62A5-4075-7A8A1C6E2B31",
+                    "pageNumber": 9,
+                    "assetCode": "alien_9",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "6e61cc26-7351-4749-8afa-f64b003734d0",
+                            "text": "The friendly alien is made of bubbles too! It can even walk through the walls of its bubble house. It pushes and squeezes and walks right inside. "
+                        },
+                        {
+                            "id": "fc4b2f82-3047-4306-8222-fd8de1c00cb7",
+                            "text": "None of the bubble houses have any doors. You try pushing and squeezing and walking inside, but the bubble house just wibbles and wobbles and won’t let you in!",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "ba0c6794-6ab0-4f73-a86c-9b70fc3942e0",
+                            "text": "Tell me about the friendly alien. Does it grow alien vegetables, or does it play tricks, like hiding inside your spaceship? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "6ac02e48-444e-43ad-a340-08182b9da719",
+                            "order": 1,
+                            "targetPageId": "59D0874A-18FA-778A-4257-3A69200F809D"
+                        },
+                        {
+                            "id": "07c42063-2135-4fe6-bd06-9186333bfdb2",
+                            "order": 2,
+                            "targetPageId": "43BC9332-C103-0892-489A-BE01698FEF28"
+                        }
+                    ]
+                },
+                {
+                    "id": "731F2059-98E6-71BB-4E08-F85D563F3A0F",
+                    "pageNumber": 10,
+                    "assetCode": "alien_10",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "ca7300ea-103d-4e31-b47d-3372394e2654",
+                            "text": "The friendly alien has six legs! But it only uses two legs at a time. The alien walks and runs until its two legs get tired, then it tucks the tired legs away and uses two others! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "b152c088-d4fe-4c10-9e18-2db50403f77d",
+                            "text": "The alien climbs hundreds of steps to the tippy top of its tall tower and changes legs many times. You huff and puff up the stairs wishing you had six legs too! "
+                        },
+                        {
+                            "id": "feeadb24-f124-403e-b788-64463849ba3a",
+                            "text": "Tell me about the friendly alien. Does it wear a backpack with a parachute inside or does it have a big red button at the top of its tower? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "0a9c37a1-27f2-417e-b714-e0d838301c6d",
+                            "order": 1,
+                            "targetPageId": "CF7ED794-79BC-E098-454D-4B42E5A68479"
+                        },
+                        {
+                            "id": "987cb7de-0a0d-431c-85d3-1b5ce23656bc",
+                            "order": 2,
+                            "targetPageId": "74C9C830-00CE-A88D-43DD-4AA53D631B48"
+                        }
+                    ]
+                },
+                {
+                    "id": "B0072B48-0DEE-6C91-4550-B2AEA50533AF",
+                    "pageNumber": 11,
+                    "assetCode": "alien_11",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "03f6f3c4-582c-4157-b5ec-506e960a8a5e",
+                            "text": "The friendly alien has four legs! There’s a leg that goes up and a leg that goes down. There’s a leg on its face and a leg on its bum! "
+                        },
+                        {
+                            "id": "b1e44e21-5342-45a9-828d-6ec4212e4823",
+                            "text": "The alien walks by tipping forward onto one leg at a time, rolling over and over like a bicycle wheel without a tire! If you walked like that, you would be very dizzy! "
+                        },
+                        {
+                            "id": "71a898b7-d25b-4391-b237-7296e58706be",
+                            "text": "Tell me about the friendly alien. Does it have a set of pretend legs for you to borrow, or does it want to show you how to eat space bugs? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "13678635-338f-4125-9647-ec638fee0fbc",
+                            "order": 1,
+                            "targetPageId": "A34DB6A1-1CC2-29AD-476F-BCBAC75DCEB4"
+                        },
+                        {
+                            "id": "fdadbd4a-ebc1-480b-b0fa-8d6d87d663de",
+                            "order": 2,
+                            "targetPageId": "98E2B30F-A51F-54B1-4836-11D74824FEC1"
+                        }
+                    ]
+                },
+                {
+                    "id": "CA2A2185-7924-4C9E-4A57-FCBE84CE9EEA",
+                    "pageNumber": 12,
+                    "assetCode": "alien_12",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "0414a045-48b1-42f8-81e8-3bff64e5298d",
+                            "text": "The friendly alien has two mouths! One mouth has teeth for chomping and chewing while the other mouth has a big tongue for slurping and burping. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "b4a2d14d-5e7f-4b97-91e4-76c633f376f5",
+                            "text": "Because it has two mouths, it can eat dinner and drink water all at the same time! "
+                        },
+                        {
+                            "id": "1f22fd2d-dda5-40a6-bc61-e0ed46fdd159",
+                            "text": "Tell me about the friendly alien. Does it want to read your book about different planets or can it turn invisible? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "b75f8376-ee48-4026-bf66-e8a93e259ef9",
+                            "order": 1,
+                            "targetPageId": "75160F4C-FCC4-43B0-4CE5-C67AB0353BA3"
+                        },
+                        {
+                            "id": "2e010b74-fd55-4a0c-832f-e5dde6c6ed65",
+                            "order": 2,
+                            "targetPageId": "0AFDB757-00B3-A98A-45CE-C1FE6EA36614"
+                        }
+                    ]
+                },
+                {
+                    "id": "EC45B537-8D25-8BB6-4B80-413A593D4FBB",
+                    "pageNumber": 13,
+                    "assetCode": "alien_13",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "65753ae0-3726-4092-9854-ffc2c73c45d5",
+                            "text": "The friendly alien has bumpy skin like a golf ball! There are lots of little dents all over the alien, like tiny little bird baths. The alien looks like a giant scoop of ice-cream with all of the chocolate chips picked out! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "f51644c5-6a58-4ee6-a0f6-0f2812541999",
+                            "text": "When it rains inside the alien’s cloudy home, all of its little bumps fill with water for the alien to drink. "
+                        },
+                        {
+                            "id": "b99e5d59-2b56-4fd3-b521-a91f18692ce6",
+                            "text": "Tell me about the friendly alien. Does it make funny spots on the ground when it rolls around, or does it use long bendy straws to eat dinner? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "ee860c11-4837-43ac-88a1-52c425d5191b",
+                            "order": 1,
+                            "targetPageId": "B69F91DF-E1EA-AF87-4EAB-EE02A5F31F83"
+                        },
+                        {
+                            "id": "56790092-913b-4b68-bf8c-f99bed6671e1",
+                            "order": 2,
+                            "targetPageId": "F0AC7403-A3A6-77A4-4150-29201AAB3D71"
+                        }
+                    ]
+                },
+                {
+                    "id": "D33FB159-A2B0-FAAC-4540-B1ECA99038B0",
+                    "pageNumber": 14,
+                    "assetCode": "alien_14",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "150b33b4-8099-4f41-ac87-e3de3089449e",
+                            "text": "The friendly alien has telescope eyes. It stretches its eyes all the way out to see things very far away. It uses a whole different set of eyes to see things very close up. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
+                            "text": "Its eyes are so amazing they can even smell smells! The alien stretches out its eyes to sniff and peep and snort and squint. "
+                        },
+                        {
+                            "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
+                            "text": "Tell me about the friendly alien. Does it curl into a circle when it wants to move fast, or does it chase bouncy fluffy puffs across the desert? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "25dde654-85dc-41f7-9df5-131995fdd39a",
+                            "order": 1,
+                            "targetPageId": "1E5CB178-D949-38B4-4FC0-8E6EBD6D5FFF"
+                        },
+                        {
+                            "id": "7bd61cd9-b3ab-492d-9a1d-05762a1e5346",
+                            "order": 2,
+                            "targetPageId": "8469A2CA-AFD8-B6A7-4EA3-85E8FFEF3037"
+                        }
+                    ]
+                },
+                {
+                    "id": "EB32FA60-1AA7-EBB2-4040-0C1F49CD7C5C",
+                    "pageNumber": 15,
+                    "assetCode": "alien_15",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
+                            "text": "The friendly alien’s body has lots of different colours! It crawls on its belly very fast which makes the alien look like a squiggly wiggly, moving rainbow! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "dfc20654-6412-4f3a-abf6-675cc28c6eb8",
+                            "text": "You find pictures of rainbows in a book on your spaceship and invite your alien friend to take a look. The alien is amazed and likes Earth rainbows very much. "
+                        },
+                        {
+                            "id": "f952f04d-299a-4179-ac24-ad5da07028fe",
+                            "text": "Tell me about the friendly alien. Does it hide in a cave full of purple rocks or can it come apart like a jigsaw puzzle? ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "4a619fbc-fbfc-4f03-a734-7ca3bed4899f",
+                            "order": 1,
+                            "targetPageId": "0AE2EDCF-930A-3093-455B-6492915140A2"
+                        },
+                        {
+                            "id": "11ed8d6a-ef93-4fe2-b358-02b1dfe610d8",
+                            "order": 2,
+                            "targetPageId": "7DAFE264-DEC5-9493-4BF4-34887B02609D"
+                        }
+                    ]
+                },
+                {
+                    "id": "38AD2B90-8122-0FBC-4341-643C527A2B4E",
+                    "pageNumber": 16,
+                    "assetCode": "alien_16",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
+                            "text": "The friendly alien likes to clean. It has sticky tippy toes for walking up the side of the big bubble house. Then the alien uses its big wet tongue and soft spongy hands to scrub, scrub, scrub. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "593b3b3f-1b82-4a67-9e26-6f409a799c0d",
+                            "text": "Its sticky tippy toes are so sticky the alien can even clean the big bubble house inside and upside down! All of the aliens in the bubble town like cleaning so much that they clean their big bubble houses every single day. "
+                        },
+                        {
+                            "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
+                            "text": "When your new friend finishes cleaning its home, it walks over to your spaceship and keeps right on cleaning. It scrubs your spaceship inside, outside, topside and underneath. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
+                            "text": "Its big wet tongue slurps and slops and its spongy hands scrub and mop. When the alien is finished, your spaceship is wonderfully, sparkling clean! "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "63A33859-1D9D-62A7-46EB-EF4E50490D45",
+                    "pageNumber": 17,
+                    "assetCode": "alien_17",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "db128fd8-a649-4223-84ef-67c1a8886d48",
+                            "text": "The friendly alien likes to play sports. Its favourite game is a mix of racing and ball kicking. Two aliens line up to play and when a loud whistle blows , they start running. They kick a ball back and forth and forth and back while running as fast as they can. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "474afb0a-4b9d-4e3a-83ce-6fbec975ccf3",
+                            "text": "They race past houses and trees and family and friends. You watch the two aliens zoom past while you cheer and clap your hands. The two aliens kick and run and run and kick, faster and faster. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9fc4621e-a4f3-494d-b298-57a81fb1ff18",
+                            "text": "The alien who reaches the finish line first is the winner. Then it’s your turn to try. You run as fast as you can in your spacesuit, but your big space boots are very heavy. "
+                        },
+                        {
+                            "id": "eabda3b7-1670-cdb2-4ba5-d2f12ee51982",
+                            "text": "When you kick the ball, your heavy boots hit it so hard it flies right over the bubble houses and is lost out in space! Oh no! It’s all okay though, you can find the ball using your spaceship. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "59D0874A-18FA-778A-4257-3A69200F809D",
+                    "pageNumber": 18,
+                    "assetCode": "alien_18",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
+                            "text": "The friendly alien grows alien vegetables. It has a special big bubble house just for growing things. Some vegetables grow out of the ground and some hang from the ceiling. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
+                            "text": "There are vegetables that look like jellyfish and vegetables that look like trumpets. You can’t go inside the big garden bubble because there’s no door for you to use. But you can see through the walls all the amazing things growing like a strange bubble jungle. "
+                        },
+                        {
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
+                            "text": "The friendly alien picks a tasty blue bubble-squirt for you to try. It pokes the bubble-squirt at the helmet of your spacesuit to put it in your mouth. "
+                        },
+                        {
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
+                            "text": "But your helmet is just like a bubble house with no door! You can’t eat with your helmet on, so you put the blue bubble-squirt in your pocket to taste when you get home. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "43BC9332-C103-0892-489A-BE01698FEF28",
+                    "pageNumber": 19,
+                    "assetCode": "alien_19",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "4f1c5178-67e6-4455-a632-bf7765076984",
+                            "text": "The friendly alien likes to play tricks, like hiding inside your spaceship! It sneakily sneaks on board when you’re not looking. When you’re ready to go home you feel sad because you can’t find your new alien friend to say goodbye! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "It’s time to leave so you sit in the captain’s chair of your spaceship and boop the buttons and lift the levers to make the spaceship take off. But you don’t know the alien is hiding on board as you start heading home! "
+                        },
+                        {
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "You are almost halfway to Earth when the alien jumps out to surprise you, ta-da! You get such a fright! What a naughty alien. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "a3fe0e4e-610d-4797-a07b-bb7249c988dc",
+                            "text": "You have to turn your spaceship around and fly all the way back to the alien’s planet to take your silly friend home. You say your goodbyes and promise to visit again soon. "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "CF7ED794-79BC-E098-454D-4B42E5A68479",
+                    "pageNumber": 20,
+                    "assetCode": "alien_20",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "c1fc38dd-2a22-4b23-8afc-e8e696a893ca",
+                            "text": "The friendly alien wears a backpack with a parachute inside. It uses the parachute to get down from its tower. When the alien is ready, it stands at the edge of the tippy top of its tall tower and jumps! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ddbb503c-e63e-4a5a-933a-7f1fb98b0ba0",
+                            "text": "Then a big pretty parachute puffs up out of the backpack. The alien floats slowly and gently all the way to the ground. It pushes the parachute back inside the backpack, ready for next time. "
+                        },
+                        {
+                            "id": "beb24ea5-e65a-46dc-8638-370634a598f2",
+                            "text": "When the weather is windy the ride down can get loopy. Sometimes the wind swoops up the alien and its parachute and swishes it far away! Then the alien has to use its six short legs to walk all the way home. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "07511351-f6e9-4391-b803-efa420aea2df",
+                            "text": "After a long walk, the alien has to rest before it can climb the hundreds of stairs up to the tippy top of the tall tower. It’s all very tiring! "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "74C9C830-00CE-A88D-43DD-4AA53D631B48",
+                    "pageNumber": 21,
+                    "assetCode": "alien_21",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "2b0216e1-d942-4ccc-845c-42a2ce4101ff",
+                            "text": "The friendly alien has a big red button at the top of its tower. The button is round and even bigger than you! Your alien friend jumps onto the button and just like that, the hundreds of stairs are no longer there! Instead there is a giant slide! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9b351093-742d-4b11-9343-a32ec9fa43ef",
+                            "text": "The slide twists and turns around the tower. It goes all the way from the tippy top of the tower to the dusty desert ground. The alien cheers and sits on the slide to woosh and swoosh all the way down. "
+                        },
+                        {
+                            "id": "ff035dce-37b1-4c77-8893-6b6ea1e6c815",
+                            "text": "Sliding down slides is more fun than walking down stairs, so you sit on the slide too. The slide is long and you speed along faster and faster. The slide is loopy and you swoop around and around the tower. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ca394226-bba0-43df-b103-15ab418966c5",
+                            "text": "When the bottom is just ahead, you land on the ground with two feet and a very dizzy head! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "A34DB6A1-1CC2-29AD-476F-BCBAC75DCEB4",
+                    "pageNumber": 22,
+                    "assetCode": "alien_22",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
+                            "text": "The friendly alien has a set of pretend legs for you to borrow. They’re curly and bouncy and stick to your spacesuit. The legs are yellow just like your space boots! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "1985ce22-3331-4897-b10d-399376fd6946",
+                            "text": "To walk like your new friend, you need a leg that goes up and a leg that goes down, a leg on your belly and a leg on your bum! The alien legs are springy, just like a spring. You jump and you bounce and you roll up the stairs. "
+                        },
+                        {
+                            "id": "62d6db0d-7fcd-4853-b2a0-014772418990",
+                            "text": "You tip upside down and downside up. Every time you tip forward to use the leg on your head, you worry that you’ll wobble and tip off the stairs instead! But your friend is there to help and to keep you safe. "
+                        },
+                        {
+                            "id": "33944d41-051e-484a-a30c-de6c03970c37",
+                            "text": "You roll higher and higher getting dizzier and dizzier. When you reach the tippy top of the tall tower you have to sit down for a minute for your head to stop spinning. But there’s a leg on your bum which keeps right on springing! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "98E2B30F-A51F-54B1-4836-11D74824FEC1",
+                    "pageNumber": 23,
+                    "assetCode": "alien_23",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "09aef51f-55fd-4cff-80c4-83f576c1d215",
+                            "text": "The friendly alien wants to show you how to eat space bugs! The alien is like a vacuum cleaner with four hoses. Its legs are also trunks made for slurping up bugs! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "1ad76f1c-0b0e-41ce-a901-8c84f8c66e4d",
+                            "text": "It walks up the stairs from one leg to the next while it sucks and it slurps and gobbles its lunch. There are so many stairs and so many bugs that by the time the alien reaches the tippy top of the tall tower, it is full enough to burst! "
+                        },
+                        {
+                            "id": "b1f355b3-ea2d-4378-ab42-221c92583634",
+                            "text": "Sometimes the stairs are covered in dust. When your alien friend walks and slurps dust up its trunks, it sneezes AH CHOO! It doesn’t just sneeze out of one trunk leg, it sneezes out of all four at the same time. AH CHOO, CHOO, CHOO, CHOO, it sounds like a train. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "b141d174-332c-4d50-a28c-077ed0d424f7",
+                            "text": "A train with four trunks. Trunks that are legs. Legs for walking up hundreds of stairs. Legs that are trunks that also eat bugs! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "75160F4C-FCC4-43B0-4CE5-C67AB0353BA3",
+                    "pageNumber": 24,
+                    "assetCode": "alien_24",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "7a723379-6975-4dfc-8424-2d319082ea8a",
+                            "text": "The friendly alien wants to read your book about different planets. You spend all day telling the alien about planet Earth. Your new friend wants to see a picture of Earth, so you find your big book of planets. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ba978ff7-b9a2-4116-bfab-7b5148b8b3ee",
+                            "text": "You flip through the pages of planets until you find Earth. It’s a beautiful blue and glorious green colour. You flip through the pages of planets until you find the alien’s home. It’s a pretty purple and rocking orange colour. The planets are very different. "
+                        },
+                        {
+                            "id": "3e0f672b-12ad-4852-9124-6e8e736cc036",
+                            "text": "Your alien friend wants to come home with you to see planet Earth, but the spaceship only has one seat. Instead, you leave your big book of planets with the alien so it can see the pictures and practice reading. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ddf49217-ba48-4229-8f9e-8a035992b86c",
+                            "text": "You promise to visit again soon with more big books full of interesting things. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "0AFDB757-00B3-A98A-45CE-C1FE6EA36614",
+                    "pageNumber": 25,
+                    "assetCode": "alien_25",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "37c91963-76fd-4594-9653-1e3e66163119",
+                            "text": "The friendly alien can turn invisible! You’re walking through the heavy wet clouds that cover the ground, but the alien disappears when you turn around. "
+                        },
+                        {
+                            "id": "2c03a901-5ac1-40ef-9975-5ec7f0e91bf6",
+                            "text": "The invisible alien watches as you look everywhere. It giggles and jiggles because you’re so near! The cheeky alien decides to eat lunch while you look. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "53d47300-fcae-470e-9887-64e74e537013",
+                            "text": "You keep walking further and further away until you hear noises. There’s lots of crunching and slurping and biting and burping! You follow the yucky sounds until you bump into your invisible friend, but you still can’t see them! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "0e1925b9-f838-cca6-4728-bfc79d5e9707",
+                            "text": "Then your friend giggles and jiggles loudly and you know that it’s there! The alien changes so you can see it again. Your alien friend played a trick on you! At first you’re a bit grumpy, but the alien laughs and then you think it’s funny. "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "B69F91DF-E1EA-AF87-4EAB-EE02A5F31F83",
+                    "pageNumber": 26,
+                    "assetCode": "alien_26",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "4597b993-e21d-4bbd-a356-50e0ef1aad3d",
+                            "text": "The friendly alien makes funny spots on the ground when it rolls around. The spots are like footprints, but the alien doesn’t have feet! If the footprints aren’t from a foot, what do you call them? ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ebdb120b-bff6-4bf8-9342-a66c5b0170d0",
+                            "text": "The alien is round with no arms, legs or feet. So the prints must be body prints, left on the ground as the alien rolls around. There are little bumps in the dirt everywhere the alien goes. "
+                        },
+                        {
+                            "id": "8d98dc21-547d-4014-bd58-5300ba44e2b3",
+                            "text": "You try to play hide and seek, but the alien is too easy to find. You just follow the spots on the ground. You sneak along and creep along, following the spots. Your big space boots squish the spots as you step on them. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "2f2f598e-1b36-4cc0-bad1-1b5a23618d99",
+                            "text": "When you reach a big rock, you know the alien is hiding behind it. You take one last step around the rock and find your friend. The alien is surprised you found it so fast. It forgets about the spots it makes on the ground whenever it rolls around. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "F0AC7403-A3A6-77A4-4150-29201AAB3D71",
+                    "pageNumber": 27,
+                    "assetCode": "alien_27",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "9ad07932-c9cf-4123-a1be-4f869c3ba525",
+                            "text": "The friendly alien uses long bendy straws to eat dinner. The alien says that bendy straws are more fun than straight straws. It has two different bendy straws, one for drinking and one for eating. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "8c450315-eba0-44f6-b8c3-4cdaf56c5502",
+                            "text": "Whenever it rains, water sits in the bumps on its skin. The alien uses a bendy straw to drink the water off its own back! When the alien is hungry it eats dirt. It sucks the dirt right off the ground using the other bendy straw. "
+                        },
+                        {
+                            "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
+                            "text": "The alien can eat and drink at the same time! The water gurgles through one straw while dirt wriggles though the other straw. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
+                            "text": "The alien asks if you would like to share its dinner, but you don’t want to drink water off its back or eat dirt off the ground! You say “No, thank you.” The alien doesn’t mind. It gurgles and slurps and sucks on its bendy straws until it’s all full. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "1E5CB178-D949-38B4-4FC0-8E6EBD6D5FFF",
+                    "pageNumber": 28,
+                    "assetCode": "alien_28",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "d83fdd28-f8c1-4eb0-ac86-16113797ae70",
+                            "text": "The friendly alien curls into a circle when it wants to move fast. It looks like a wheel as it rolls along as fast as a race car! The alien likes to chase space puppies all over the desert, just for fun. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "74d901da-49f5-4a98-a7b9-7494378fdee9",
+                            "text": "It stretches out its telescope eyes to squint and sniff and snort and look for space puppies running around the desert. When it sees or sniffs one, the alien curls into a big ball and rolls after the space puppy. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "a27cc549-f47e-4d5a-98f7-612159e1699e",
+                            "text": "The alien zigs and zags and zooms and vrooms all over the dusty desert. It keeps one eye pointed at the space puppy so it knows where to roll. The alien doesn’t get dizzy as its body spins around and around in the sand. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
+                            "text": "You try to follow the alien by doing rolly pollys. You tuck your helmet to your belly and roll over and over again. But you can’t roll as fast as the alien and the dusty desert makes your spacesuit all dirty! Instead you wait for the alien to catch a space puppy for you to pat. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "8469A2CA-AFD8-B6A7-4EA3-85E8FFEF3037",
+                    "pageNumber": 29,
+                    "assetCode": "alien_29",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "3d092c81-3b9a-42f8-a9d4-3d637577b76f",
+                            "text": "The friendly alien chases bouncy fluffy puffs across the desert! The fluffy puffs bounce out of holes in the ground. The alien uses its telescope eyes to see and sniff how many fluffy puffs it can spy. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "317037c8-f513-46ef-a120-79fc213cb42f",
+                            "text": "Nobody knows what makes fluffy puffs bounce. They bounce up in the air where they float and they flutter. The alien runs out to catch them to have them as supper! "
+                        },
+                        {
+                            "id": "d670a84b-ef99-48d4-b824-01b8b1ff6732",
+                            "text": "You eat one of the fluffy puffs just to try it. You decide that they’re tasty and you like it. The puffs are all fluffy like cotton candy. Or maybe the fluff is all puffy like a marshmallow. The strange alien food is yummy either way. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
+                            "text": "Maybe you could grow some back on Earth? It’s impossible to say. The alien gives you some fluffy puffs to take on your spaceship. When you get home, you’ll dig holes where the fluffy puffs can stay. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "0AE2EDCF-930A-3093-455B-6492915140A2",
+                    "pageNumber": 30,
+                    "assetCode": "alien_30",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "68d48745-3122-4874-b8f1-ea471ba4bfbf",
+                            "text": "The friendly alien hides in a cave full of purple rocks. The cave is cold, so the alien snuggles and squishes its body together. The alien’s ears stick up because they don’t fold down. It makes it much easier to hear what’s around. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "0f3a7ca9-fe79-45f4-bc20-6b3611cd39a5",
+                            "text": ". It’s always hot out in the desert but sometimes the alien likes being cold. So it hides inside the big chilly cave away from the two suns. The alien looks for a smooth patch of ground between the purple rocks, then folds itself down like a pile of blocks. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
+                            "text": "When it’s all squished and squeezed into half its normal size, the alien reminds you of the coloured stacking blocks you like to play with. All of the colours fit inside each other. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "0ea6a82d-5e13-491f-98e4-374849c6c24f",
+                            "text": "When the alien is ready to stretch back out to full size, it unfolds one colour at a time, pop, pop, pop! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "7DAFE264-DEC5-9493-4BF4-34887B02609D",
+                    "pageNumber": 31,
+                    "assetCode": "alien_31",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "5a08da89-9e74-42e1-8de0-2982d77b610a",
+                            "text": "The friendly alien can come apart like a jigsaw puzzle! The alien has pieces in all different colours. Some pieces have spots and others have scales. Some pieces are smooth and other pieces are hairy! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "137becab-86d8-4f8a-980a-3a19ff2ad3b3",
+                            "text": "The alien leaves its pieces lying around in the desert. Sometimes the alien even forgets where it leaves the pieces and has to search for them. One of the puzzle pieces is fluffy and the same colour as the dusty desert. When that piece is lost, it’s very tricky to find! "
+                        },
+                        {
+                            "id": "049bb1df-2ad6-ef86-4ebb-5cb26cf05418",
+                            "text": "Your new friend needs your help to find all of its pieces. You walk back and forth and forth and back, all over the dusty desert looking for the pieces of puzzle the alien left lying around. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "fd7ec425-6e6a-49aa-b38a-5dd050842589",
+                            "text": "The alien has ten puzzle pieces, so you count the pieces as you find them. The first nine are easy but the last one is tricky. Finally, you find the final fluffy piece. The alien puts its pieces back together and is very pleased. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                }
+            ]
         }
     ]
 }

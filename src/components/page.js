@@ -67,18 +67,19 @@ class Page extends Component
             initialisingAudio: false,
             canRestartAudio: false ,
             soundEffects: []   ,
-            soundEffectIsPlaying: false   
+            soundEffectIsPlaying: false,
+            lastPlayedSoundEffect: -1   
         };
         this._slideProgress = new Animated.Value(0);
     }
 
     onSwipeRight(gestureState) {
-        console.log('backswipe')
+        Reactotron.log('backswipe')
         this.back();
     }
 
     onSwipeLeft(gestureState) {
-        console.log('foreswipe')
+        Reactotron.log('foreswipe')
         if ((!this.props.enableShowText && (this.props.pageData.navigationLinks.length == 0)) 
         || (this.props.enableShowText && ((this.props.pageData.navigationLinks.length == 0) 
         || (this.props.currentText < this.props.pageData.texts.length - 1))))
@@ -160,22 +161,16 @@ class Page extends Component
     loadSoundEffects(assetCode){    
         this.setState({soundEffects: []});
         var i = 1;
+        var loadedSounds = 0;
         var playedASound = false;
         while (i <= 3)
         {
-            let player = new Sound(assetCode + '_' + i + '_soundeffect.mp3', Sound.MAIN_BUNDLE, () => {
+            let player = new Sound(assetCode + '_' + i + '_soundeffect.mp3', Sound.MAIN_BUNDLE, (error) => {
+                loadedSounds++;
                 this.state.soundEffects.push(player); 
-                if (!playedASound) 
+                if (loadedSounds == 3 && this.props.enableAutoplaySoundEffects) 
                 {
-                    playedASound = true;
-                    if (this.props.enableAutoplaySoundEffects)
-                    {
-                        player.play(
-                            (success) => { 
-                               this.setState({ soundEffectIsPlaying: false });
-                           });
-                        this.setState({ soundEffectIsPlaying: true });
-                    }
+                    this.playSoundEffect();
                 }
             });
             i++;
@@ -256,7 +251,6 @@ class Page extends Component
     
     playSoundEffect(i)
     {
-        Reactotron.log(this.state.soundEffects);
         if (this.state.soundEffectIsPlaying)
         {
             for (i = 0; i < this.state.soundEffects.length; i++)
@@ -273,11 +267,12 @@ class Page extends Component
             {
                 var soundIsPlaying = false;
                 var order = [];
+                Reactotron.log(this.state.lastPlayedSoundEffect)
                 for (i = 0; i < this.state.soundEffects.length; i++)
                 {
                     let index = i;
                     // iOS loads non-existent sounds for some reason, so we have to check if there's actually anything there
-                    if (this.state.soundEffects[i]._duration > 0)
+                    if (this.state.soundEffects[i]._duration > 0 && i !== this.state.lastPlayedSoundEffect)
                     {
                         order.push(i);
                     }
@@ -317,9 +312,10 @@ class Page extends Component
         effect.getCurrentTime((seconds, isPlaying) => { 
              if (!isPlaying)
              {
+                 this.setState({ lastPlayedSoundEffect: order[i] })
                  this.state.soundEffects[order[i]].play(
                      (success) => { 
-                        this.setState({ soundEffectIsPlaying: false });
+                        this.setState({ soundEffectIsPlaying: false});
                     }
                 );
              }
@@ -460,7 +456,7 @@ class Page extends Component
     {
         this.releaseAudioPlayers();
         this.releaseSoundEffects();
-        this.setState({currentPlayingAudioIndex: 0, audioPaused: false}); 
+        this.setState({currentPlayingAudioIndex: 0, audioPaused: false, soundEffectIsPlaying: false}); 
         this.props.incrementPageCounter(targetPageId); 
         this.props.choose(targetPageId); 
     }
@@ -509,7 +505,7 @@ class Page extends Component
         let width = '74%';
         var backgroundColor = 'rgba(255,255,255,' + backgroundOpacity.toString() + ')';
         const swipeConfig = {
-            velocityThreshold: 0.3,
+            velocityThreshold: 0.1,
             directionalOffsetThreshold: 80
           };
         let pageTextView = !this.props.enableShowText ? null : ( 
