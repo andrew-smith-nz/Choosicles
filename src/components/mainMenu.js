@@ -102,11 +102,12 @@ class MainMenu extends Component
                     .catch(() => InAppBilling.close()))
                 .catch(() => InAppBilling.close());
         }
-        //  var book = bookData.books[0];
-        //  this.props.setActiveBook(book);
-        //  this.props.changePage(book.pages[0].id);
-        //  this.props.navigation.navigate("Page");
-
+        ////uncomment to nav straight to specific page
+        // var pageNo = 31;
+        // var book = bookData.books[2];
+        // this.props.setActiveBook(book);
+        // this.props.changePage(book.pages[pageNo - 1].id);
+        // this.props.navigation.navigate("Page");
     }
     
     render()
