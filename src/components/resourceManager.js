@@ -31,10 +31,10 @@ _resourcesByBook = [
       coverImageLeftHalf: require("../../img/pages/alien/cover_lefthalf.png"),
       coverImageRightHalf: require("../../img/pages/alien/cover_righthalf.png"),
       startImage:  require("../../img/pages/alien/cover.png"),
-      startAudio: 'seacreature_start_audio.mp3',
+      startAudio: 'alien_intro_audio.mp3',
       startSoundEffect: 'seacreature_start_soundeffect.mp3',
       endImage:  require("../../img/pages/alien/end.png"),
-      endAudio: 'seacreature_end_audio.mp3'
+      endAudio: 'alien_end_audio.mp3'
     }
 ]
 

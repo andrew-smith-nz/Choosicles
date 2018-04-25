@@ -13,7 +13,7 @@
             "recommendedAgeRange": "2 to 6",
             "androidIAPCode": "pet_monster",
             "iosIAPCode": "monster",
-            "description": "You have a pet monster! Tell me about your pet monster. With this interactive children’s book, you get to choose your very own pet monster.  What does it look like? Where does it sleep? What does it do for fun? There are 16 different monsters to discover.",
+            "description": "You have a pet monster! Tell me about your pet monster. With this interactive children's book, you get to choose your very own pet monster.  What does it look like? Where does it sleep? What does it do for fun? There are 16 different monsters to discover.",
             "pages": [
                 {
                     "id": "b09b639d-6e09-4d58-96e3-44b810df4170",
@@ -21,10 +21,10 @@
                     "assetCode": "monster_1",
                     "texts": [
                         {
-                            "text": "You have a pet monster, a wonderful friendly pet monster. Even though it’s your pet, it doesn’t live in your house. It lives outside. "
+                            "text": "You have a pet monster, a wonderful friendly pet monster. Even though it's your pet, it doesn't live in your house. It lives outside. "
                         },
                         {
-                            "text": "You love doing fun things when you’re spending time with your pet monster. But all monsters are different. "
+                            "text": "You love doing fun things when you're spending time with your pet monster. But all monsters are different. "
                         },
                         {
                             "text": "Tell me about your pet monster. Does it have wings or does it have big sharp claws?"
@@ -118,7 +118,7 @@
                         },
                         {
                             "id": "d3a239e2-18e9-4316-8a4b-2bf01f772a86",
-                            "text": "It snatches them up with its little fingers. When your pet monster isn’t sleeping on its tree branch, what does it do for fun? "
+                            "text": "It snatches them up with its little fingers. When your pet monster isn't sleeping on its tree branch, what does it do for fun? "
                         },
                         {
                             "id": "f10bb303-15ab-464b-8341-3e91aaace49c",
@@ -146,15 +146,15 @@
                     "texts": [
                         {
                             "id": "3ce3bd1d-8611-43b2-9297-5b4fd1f44ed6",
-                            "text": "Your pet monster sleeps on the roof of a building. Sometimes it’s naughty because it bites off pieces of plastic and metal from rain gutters and aerials. "
+                            "text": "Your pet monster sleeps on the roof of a building. Sometimes it's naughty because it bites off pieces of plastic and metal from rain gutters and aerials. "
                         },
                         {
                             "id": "40a70169-ac59-429e-bd51-deb4b9555914",
-                            "text": "Whenever someone’s television goes a bit funny, it’s probably because your pet monster has taken a bite out of the aerial on their roof! "
+                            "text": "Whenever someone's television goes a bit funny, it's probably because your pet monster has taken a bite out of the aerial on their roof! "
                         },
                         {
                             "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
-                            "text": "When your pet monster isn’t eating things, what does it do for fun? Tell me about your pet monster. "
+                            "text": "When your pet monster isn't eating things, what does it do for fun? Tell me about your pet monster. "
                         },
                         {
                             "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
@@ -187,7 +187,7 @@
                         },
                         {
                             "id": "61da30af-bef1-42f6-874a-231527f95e37",
-                            "text": "But your pet monster doesn’t sleep very much, it has lots of energy and loves to play. Your pet monster especially likes to play when you’re around. "
+                            "text": "But your pet monster doesn't sleep very much, it has lots of energy and loves to play. Your pet monster especially likes to play when you're around. "
                         },
                         {
                             "id": "157afa0e-e885-4db2-bc2a-9c655c9fadac",
@@ -220,7 +220,7 @@
                         },
                         {
                             "id": "d3105689-6436-4d84-9d1d-3d992676037d",
-                            "text": "Digging the cave made a bit of mess with rocks and stones everywhere. But that’s okay because your pet monster likes to eat rocks and it gobbled up all the mess! "
+                            "text": "Digging the cave made a bit of mess with rocks and stones everywhere. But that's okay because your pet monster likes to eat rocks and it gobbled up all the mess! "
                         },
                         {
                             "id": "62617d57-ee5c-4be3-8d10-695634fbf5be",
@@ -252,7 +252,7 @@
                         },
                         {
                             "id": "ef70bcbc-90c7-4d30-9895-ae84db061088",
-                            "text": "When you throw or hit a tennis ball, your pet monster likes to hang onto the brightly coloured fuzz on the ball and ride it like a horse! It’s your pet monster’s favourite game. ",
+                            "text": "When you throw or hit a tennis ball, your pet monster likes to hang onto the brightly coloured fuzz on the ball and ride it like a horse! It's your pet monster's favourite game. ",
                             "textPosition": "top"
                         },
                         {
@@ -316,12 +316,12 @@
                     "texts": [
                         {
                             "id": "ca7300ea-103d-4e31-b47d-3372394e2654",
-                            "text": "Your pet monster loves visiting playgrounds and swinging on the swings. But whenever it goes on the slide, it doesn’t need to climb the ladder to get to the top because it can fly. ",
+                            "text": "Your pet monster loves visiting playgrounds and swinging on the swings. But whenever it goes on the slide, it doesn't need to climb the ladder to get to the top because it can fly. ",
                             "backgroundOpacity": 0.7
                         },
                         {
                             "id": "b152c088-d4fe-4c10-9e18-2db50403f77d",
-                            "text": "Sometimes your pet monster is naughty and doesn’t wait for its turn – while you’re climbing the ladder to the top of the slide for your turn, your cheeky pet monster flies right over your head and pushes in front! ",
+                            "text": "Sometimes your pet monster is naughty and doesn't wait for its turn – while you're climbing the ladder to the top of the slide for your turn, your cheeky pet monster flies right over your head and pushes in front! ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -391,12 +391,12 @@
                         },
                         {
                             "id": "b4a2d14d-5e7f-4b97-91e4-76c633f376f5",
-                            "text": "Unfortunately, your pet monster is a sore loser and sulks whenever you come in first. But it’s even worse when it wins because it dances and cheers every time it comes in first! What a silly monster. ",
+                            "text": "Unfortunately, your pet monster is a sore loser and sulks whenever you come in first. But it's even worse when it wins because it dances and cheers every time it comes in first! What a silly monster. ",
                             "backgroundOpacity": 0.7
                         },
                         {
                             "id": "1f22fd2d-dda5-40a6-bc61-e0ed46fdd159",
-                            "text": "Tell me about your pet monster. Does it sometimes get big splinters in its feet or does it sometimes fall over when it’s running?",
+                            "text": "Tell me about your pet monster. Does it sometimes get big splinters in its feet or does it sometimes fall over when it's running?",
                             "backgroundOpacity": 0.7
                         }
                     ],
@@ -460,7 +460,7 @@
                         },
                         {
                             "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
-                            "text": "Your pet monster also has other toys that it likes to play with sometimes when you’re visiting. ",
+                            "text": "Your pet monster also has other toys that it likes to play with sometimes when you're visiting. ",
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         },
@@ -491,7 +491,7 @@
                     "texts": [
                         {
                             "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
-                            "text": "Your pet monster is as big as a beach ball but much, much heavier! It’s always cold and spends most of its day sleeping, especially when it’s snowing outside. ",
+                            "text": "Your pet monster is as big as a beach ball but much, much heavier! It's always cold and spends most of its day sleeping, especially when it's snowing outside. ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -526,7 +526,7 @@
                     "texts": [
                         {
                             "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
-                            "text": "Your pet monster is covered in feathers! But it’s not a bird, it doesn’t look anything like a bird. It has a big wide grin full of little teeth for chomping on insects. ",
+                            "text": "Your pet monster is covered in feathers! But it's not a bird, it doesn't look anything like a bird. It has a big wide grin full of little teeth for chomping on insects. ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -541,7 +541,7 @@
                         },
                         {
                             "id": "d5244959-b91f-4653-9b06-9d5f8f2577b1",
-                            "text": "Now it’s your very own pet monster that you can visit outside as often as you like.",
+                            "text": "Now it's your very own pet monster that you can visit outside as often as you like.",
                             "backgroundOpacity": 0.7
                         }
                     ],
@@ -554,7 +554,7 @@
                     "texts": [
                         {
                             "id": "db128fd8-a649-4223-84ef-67c1a8886d48",
-                            "text": "Your pet monster is wonderfully fluffy and cuddly. When it’s asleep you can put your fluffy pet monster in your hand like a soft, tickly little ball. ",
+                            "text": "Your pet monster is wonderfully fluffy and cuddly. When it's asleep you can put your fluffy pet monster in your hand like a soft, tickly little ball. ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -564,7 +564,7 @@
                         },
                         {
                             "id": "9fc4621e-a4f3-494d-b298-57a81fb1ff18",
-                            "text": "Your pet monster reminds you of a turtle because whenever it gets cold or scared, it wraps its fluffy wings around its body and curls into a fuzzy little ball to hide and keep warm. It’s never scared of you though because you’re its best friend.",
+                            "text": "Your pet monster reminds you of a turtle because whenever it gets cold or scared, it wraps its fluffy wings around its body and curls into a fuzzy little ball to hide and keep warm. It's never scared of you though because you're its best friend.",
                             "backgroundOpacity": 0.7
                         }
                     ],
@@ -582,7 +582,7 @@
                         },
                         {
                             "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
-                            "text": "Your pet monster wasn’t always a wonderful acrobat, you had to show it how to swing on branches. It loved the game so much that it started swinging on branches even when you weren’t there to watch. ",
+                            "text": "Your pet monster wasn't always a wonderful acrobat, you had to show it how to swing on branches. It loved the game so much that it started swinging on branches even when you weren't there to watch. ",
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         },
@@ -594,7 +594,7 @@
                         },
                         {
                             "id": "6bf521fa-e5c8-4338-a197-33173cd88d8b",
-                            "text": " Your pet monster likes to share its dinner with you. If it finds a nice juicy caterpillar crawling on a tree branch, it will fly down to where you are sitting and give the caterpillar to you. Your pet monster never remembers that you don’t like eating bugs! ",
+                            "text": " Your pet monster likes to share its dinner with you. If it finds a nice juicy caterpillar crawling on a tree branch, it will fly down to where you are sitting and give the caterpillar to you. Your pet monster never remembers that you don't like eating bugs! ",
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         }
@@ -608,7 +608,7 @@
                     "texts": [
                         {
                             "id": "4f1c5178-67e6-4455-a632-bf7765076984",
-                            "text": "Not all monsters have two eyes like people, some monsters have lots and other monsters have only one. Your pet monster doesn’t have any eyes at all! ",
+                            "text": "Not all monsters have two eyes like people, some monsters have lots and other monsters have only one. Your pet monster doesn't have any eyes at all! ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -637,7 +637,7 @@
                     "texts": [
                         {
                             "id": "c1fc38dd-2a22-4b23-8afc-e8e696a893ca",
-                            "text": "Your pet monster is always making grunting and growling noises when it moves around. It’s not very sneaky because you can always hear it coming! "
+                            "text": "Your pet monster is always making grunting and growling noises when it moves around. It's not very sneaky because you can always hear it coming! "
                         },
                         {
                             "id": "ddbb503c-e63e-4a5a-933a-7f1fb98b0ba0",
@@ -671,12 +671,12 @@
                         },
                         {
                             "id": "9b351093-742d-4b11-9343-a32ec9fa43ef",
-                            "text": "Sometimes you wish your pet monster could talk but the only noise it can make is whistling. You can always tell when it’s happy or sad by the sound of its whistling. ",
+                            "text": "Sometimes you wish your pet monster could talk but the only noise it can make is whistling. You can always tell when it's happy or sad by the sound of its whistling. ",
                             "backgroundOpacity": 0.7
                         },
                         {
                             "id": "ff035dce-37b1-4c77-8893-6b6ea1e6c815",
-                            "text": "Your pet monster is trying to teach you how to whistle but it’s very difficult. You have to make your lips into a circle like you’re blowing a kiss and then slowly blow out air. You practice together every time you go to the playground. ",
+                            "text": "Your pet monster is trying to teach you how to whistle but it's very difficult. You have to make your lips into a circle like you're blowing a kiss and then slowly blow out air. You practice together every time you go to the playground. ",
                             "backgroundOpacity": 0.7,
                             "textPosition": "top"
                         },
@@ -695,17 +695,17 @@
                     "texts": [
                         {
                             "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
-                            "text": "Your pet monster makes terrible stinky farts! When you’re reading or drawing, your pet monster likes to give you a fright by letting out very loud farts. "
+                            "text": "Your pet monster makes terrible stinky farts! When you're reading or drawing, your pet monster likes to give you a fright by letting out very loud farts. "
                         },
                         {
                             "id": "1985ce22-3331-4897-b10d-399376fd6946",
-                            "text": "You’ve tried explaining to your pet monster that it has to go outside before it farts, but it never listens. ",
+                            "text": "You've tried explaining to your pet monster that it has to go outside before it farts, but it never listens. ",
                             "textPosition": "top",
                             "backgroundOpacity": 0.8
                         },
                         {
                             "id": "62d6db0d-7fcd-4853-b2a0-014772418990",
-                            "text": "It’s not so bad in the summer when you can leave the windows wide open. But during the winter when it’s cold and all the windows need to stay shut, it’s terribly stinky. "
+                            "text": "It's not so bad in the summer when you can leave the windows wide open. But during the winter when it's cold and all the windows need to stay shut, it's terribly stinky. "
                         },
                         {
                             "id": "33944d41-051e-484a-a30c-de6c03970c37",
@@ -713,7 +713,7 @@
                         },
                         {
                             "id": "6a20cf6a-b1fd-4203-b46e-efa2dec192db",
-                            "text": "Maybe you should tell your pet monster to not eat so many bits of plastic and metal, it must make your pet monster’s tummy very upset. That could be why it farts so much."
+                            "text": "Maybe you should tell your pet monster to not eat so many bits of plastic and metal, it must make your pet monster's tummy very upset. That could be why it farts so much."
                         }
                     ],
                     "navigationLinks": []
@@ -735,13 +735,13 @@
                         },
                         {
                             "id": "b1f355b3-ea2d-4378-ab42-221c92583634",
-                            "text": "Sometimes your pet monster gets so relaxed while you’re brushing its long hair, it falls asleep! ",
+                            "text": "Sometimes your pet monster gets so relaxed while you're brushing its long hair, it falls asleep! ",
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         },
                         {
                             "id": "b141d174-332c-4d50-a28c-077ed0d424f7",
-                            "text": "While your pet monster is asleep on the floor, it’s a good time to clean up any painting mess and tidy away toys and books. That way, when your pet monster wakes up, it can fly straight back to its bed on top of a building.",
+                            "text": "While your pet monster is asleep on the floor, it's a good time to clean up any painting mess and tidy away toys and books. That way, when your pet monster wakes up, it can fly straight back to its bed on top of a building.",
                             "backgroundOpacity": 0.7
                         }
                     ],
@@ -759,7 +759,7 @@
                         },
                         {
                             "id": "ba978ff7-b9a2-4116-bfab-7b5148b8b3ee",
-                            "text": "If it wasn’t for its long claws, you would find your pet monster some shoes to wear, but the claws make wearing normal shoes impossible! ",
+                            "text": "If it wasn't for its long claws, you would find your pet monster some shoes to wear, but the claws make wearing normal shoes impossible! ",
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         },
@@ -770,7 +770,7 @@
                         },
                         {
                             "id": "ddf49217-ba48-4229-8f9e-8a035992b86c",
-                            "text": "It’s always a good idea to bring a plaster with you every time you visit your pet monster outside. That way you can help fix your pet monster’s foot whenever it gets a splinter or thorn stuck in it. ",
+                            "text": "It's always a good idea to bring a plaster with you every time you visit your pet monster outside. That way you can help fix your pet monster's foot whenever it gets a splinter or thorn stuck in it. ",
                             "backgroundOpacity": 0.7
                         },
                         {
@@ -788,7 +788,7 @@
                     "texts": [
                         {
                             "id": "37c91963-76fd-4594-9653-1e3e66163119",
-                            "text": "Your pet monster is very fast but also very clumsy. Sometimes when you’re having a running race it will fall over and land on its hands and knees. "
+                            "text": "Your pet monster is very fast but also very clumsy. Sometimes when you're having a running race it will fall over and land on its hands and knees. "
                         },
                         {
                             "id": "2c03a901-5ac1-40ef-9975-5ec7f0e91bf6",
@@ -800,7 +800,7 @@
                         },
                         {
                             "id": "d886b789-9823-4452-a348-a65832084b80",
-                            "text": "Now whenever your pet monster falls over it does a somersault on purpose and starts a roly-poly game! It doesn’t take long for both of you to get very dizzy doing somersaults together. "
+                            "text": "Now whenever your pet monster falls over it does a somersault on purpose and starts a roly-poly game! It doesn't take long for both of you to get very dizzy doing somersaults together. "
                         },
                         {
                             "id": "d886b789-9823-4452-a348-a65832084b80",
@@ -847,7 +847,7 @@
                     "texts": [
                         {
                             "id": "9ad07932-c9cf-4123-a1be-4f869c3ba525",
-                            "text": "Because your pet monster likes to get dirty, when it’s not building mud castles it likes to slide down big muddy hills. "
+                            "text": "Because your pet monster likes to get dirty, when it's not building mud castles it likes to slide down big muddy hills. "
                         },
                         {
                             "id": "8c450315-eba0-44f6-b8c3-4cdaf56c5502",
@@ -855,12 +855,12 @@
                         },
                         {
                             "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
-                            "text": "It’s even more fun when your pet monster builds a mud castle at the bottom of the mud slide so it can crash into it. It makes a big muddy mess. Then your pet monster will rebuild its mud castle just to knock it over again on the next slide down. ",
+                            "text": "It's even more fun when your pet monster builds a mud castle at the bottom of the mud slide so it can crash into it. It makes a big muddy mess. Then your pet monster will rebuild its mud castle just to knock it over again on the next slide down. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
-                            "text": "You need to make sure you stand back when your pet monster crashes into its mud castle, otherwise you’ll get covered in mud from head to toe! "
+                            "text": "You need to make sure you stand back when your pet monster crashes into its mud castle, otherwise you'll get covered in mud from head to toe! "
                         },
                         {
                             "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
@@ -880,7 +880,7 @@
                         },
                         {
                             "id": "74d901da-49f5-4a98-a7b9-7494378fdee9",
-                            "text": "Sometimes the shows are easy to understand, but most of the time you have no idea what is going on because your pet monster doesn’t talk! "
+                            "text": "Sometimes the shows are easy to understand, but most of the time you have no idea what is going on because your pet monster doesn't talk! "
                         },
                         {
                             "id": "a27cc549-f47e-4d5a-98f7-612159e1699e",
@@ -896,7 +896,7 @@
                         },
                         {
                             "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
-                            "text": "Sometimes you have people watching you, sometimes it’s just you and your pet monster having fun together. "
+                            "text": "Sometimes you have people watching you, sometimes it's just you and your pet monster having fun together. "
                         }
                     ],
                     "navigationLinks": []
@@ -908,7 +908,7 @@
                     "texts": [
                         {
                             "id": "3d092c81-3b9a-42f8-a9d4-3d637577b76f",
-                            "text": "Your pet monster doesn’t like being dirty and likes to have a bath every time it finishes making a new statue or mask. When it was your pet monster’s birthday, you gave it the best present ever. ",
+                            "text": "Your pet monster doesn't like being dirty and likes to have a bath every time it finishes making a new statue or mask. When it was your pet monster's birthday, you gave it the best present ever. ",
                             "backgroundOpacity": 0.8
                         },
                         {
@@ -924,7 +924,7 @@
                         },
                         {
                             "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
-                            "text": "Because the squirt toy is shaped like a rock, your pet monster can leave it on the ground and the other outdoor creatures will think it’s just a normal rock and leave it alone. ",
+                            "text": "Because the squirt toy is shaped like a rock, your pet monster can leave it on the ground and the other outdoor creatures will think it's just a normal rock and leave it alone. ",
                             "backgroundOpacity": 0.8
                         },
                         {
@@ -951,12 +951,12 @@
                         },
                         {
                             "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
-                            "text": "When you asked the rock if it needed a tissue, it woke up and smiled at you. You’ve been best friends ever since. ",
+                            "text": "When you asked the rock if it needed a tissue, it woke up and smiled at you. You've been best friends ever since. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "0ea6a82d-5e13-491f-98e4-374849c6c24f",
-                            "text": "You spend a lot of time trying to teach your pet monster how to wipe its nose with leaves because it doesn’t have any tissues. But because it has big sharp claws, it finds wiping its nose very tricky!"
+                            "text": "You spend a lot of time trying to teach your pet monster how to wipe its nose with leaves because it doesn't have any tissues. But because it has big sharp claws, it finds wiping its nose very tricky!"
                         }
                     ],
                     "navigationLinks": []
@@ -968,7 +968,7 @@
                     "texts": [
                         {
                             "id": "5a08da89-9e74-42e1-8de0-2982d77b610a",
-                            "text": "Your pet monster has a long tongue which hangs out like a dog’s whenever it’s sleeping. Sometimes that’s a problem because when your pet monster rolls onto its tummy while it’s sleeping, its tongue falls right into the dirt! ",
+                            "text": "Your pet monster has a long tongue which hangs out like a dog's whenever it's sleeping. Sometimes that's a problem because when your pet monster rolls onto its tummy while it's sleeping, its tongue falls right into the dirt! ",
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         },
@@ -984,7 +984,7 @@
                         },
                         {
                             "id": "b9917fc9-d82c-4753-b0c9-78d22f2720fe",
-                            "text": "Your pet monster didn’t like the game very much at all. It would much rather spend its time sleeping. You will just have to think of a new game to play whenever you visit your pet monster.",
+                            "text": "Your pet monster didn't like the game very much at all. It would much rather spend its time sleeping. You will just have to think of a new game to play whenever you visit your pet monster.",
                             "textPosition": "top",
                             "backgroundOpacity": 0.7
                         }
@@ -1005,7 +1005,7 @@
             "recommendedAgeRange": "2 to 6",
             "androidIAPCode": "sea_creature",
             "iosIAPCode": "seacreature",
-            "description": "You are an underwater explorer! You have found a brand-new underwater sea creature.  With this interactive children’s book, you get to choose your very own underwater sea creature. What does it look like? Where does it sleep? What secrets is it hiding? There are 16 different sea creatures to discover.",
+            "description": "You are an underwater explorer! You have found a brand-new underwater sea creature.  With this interactive children's book, you get to choose your very own underwater sea creature. What does it look like? Where does it sleep? What secrets is it hiding? There are 16 different sea creatures to discover.",
             "defaultOpacity": 0.8,
             "pages": [
                 {
@@ -1018,7 +1018,7 @@
                             "text": "You are an underwater explorer! While driving your fun blue submarine underwater, you discovered a brand-new kind of sea creature. A creature that has never been seen before. "
                         },
                         {
-                            "text": "It’s lucky you have pictures of this amazing underwater sea creature because otherwise people might not believe that you saw it! ",
+                            "text": "It's lucky you have pictures of this amazing underwater sea creature because otherwise people might not believe that you saw it! ",
                             "textPosition": "top"
                         },
                         {
@@ -1077,11 +1077,11 @@
                     "texts": [
                         {
                             "id": "bf0fc24e-b390-4613-b81f-2f4061a309e4",
-                            "text": "The amazing new sea creature you found has a tail, but it’s definitely not an ordinary fish! "
+                            "text": "The amazing new sea creature you found has a tail, but it's definitely not an ordinary fish! "
                         },
                         {
                             "id": "20adc15b-3d7e-4560-be68-2b8e5118c756",
-                            "text": "You didn’t spot the creature at first because you were looking through the window of your submarine at its amazing home. Then suddenly, you saw a tail poking out and waving in the water. ",
+                            "text": "You didn't spot the creature at first because you were looking through the window of your submarine at its amazing home. Then suddenly, you saw a tail poking out and waving in the water. ",
                             "textPosition":"top"
                         },
                         {
@@ -1111,11 +1111,11 @@
                     "texts": [
                         {
                             "id": "6184b034-66f3-4162-baf7-d8c911179926",
-                            "text": "The sea creature lives inside a shipwreck! It’s a giant wooden ship that sits on the bottom of the sea. "
+                            "text": "The sea creature lives inside a shipwreck! It's a giant wooden ship that sits on the bottom of the sea. "
                         },
                         {
                             "id": "d3a239e2-18e9-4316-8a4b-2bf01f772a86",
-                            "text": "It’s like a maze that you had to carefully move your submarine through as you followed the sea creature. There were so many rooms to explore in the big shipwreck, but the creature knew exactly where it was taking you. ",
+                            "text": "It's like a maze that you had to carefully move your submarine through as you followed the sea creature. There were so many rooms to explore in the big shipwreck, but the creature knew exactly where it was taking you. ",
                             "textPosition":"top"
                         },
                         {
@@ -1149,7 +1149,7 @@
                         },
                         {
                             "id": "40a70169-ac59-429e-bd51-deb4b9555914",
-                            "text": "The cave was big enough for you to drive your submarine right inside. It’s lucky that your submarine has lights, otherwise it would have been too dark to see!"
+                            "text": "The cave was big enough for you to drive your submarine right inside. It's lucky that your submarine has lights, otherwise it would have been too dark to see!"
                         },
                         {
                             "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
@@ -1253,7 +1253,7 @@
                         },
                         {
                             "id": "9d37a454-d4a1-49dd-b9df-95116583a1c1",
-                            "text": "Tell me about the sea creature. Does it squirt clouds of ink when it’s scared, or is it hiding pirate treasure?",
+                            "text": "Tell me about the sea creature. Does it squirt clouds of ink when it's scared, or is it hiding pirate treasure?",
                             "textPosition": "top"
                         }
                     ],
@@ -1513,7 +1513,7 @@
                     "texts": [
                         {
                             "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
-                            "text": "The sea creature squirts clouds of ink when it’s scared, just like a squid! But the sea creature’s ink isn’t black like a squid’s, it’s strangely coloured. ",
+                            "text": "The sea creature squirts clouds of ink when it's scared, just like a squid! But the sea creature's ink isn't black like a squid's, it's strangely coloured. ",
                             "textPosition": "top"
                         },
                         {
@@ -1523,7 +1523,7 @@
                         },
                         {
                             "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
-                            "text": "The cloud of coloured ink stuck to the window of your submarine and made it very difficult to see where you were going. Luckily, the creature was nice and used its tentacles to wipe the ink off the submarine’s window so you could drive home safely. ",
+                            "text": "The cloud of coloured ink stuck to the window of your submarine and made it very difficult to see where you were going. Luckily, the creature was nice and used its tentacles to wipe the ink off the submarine's window so you could drive home safely. ",
                             "textPosition": "top"
                         }
                     ],
@@ -1573,7 +1573,7 @@
                         },
                         {
                             "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
-                            "text": "The creature had such a good time playing with you that it wants you to come back soon and play more hide and seek. Hopefully you can find the creature’s shipwreck again the next time you take your submarine for a drive! "
+                            "text": "The creature had such a good time playing with you that it wants you to come back soon and play more hide and seek. Hopefully you can find the creature's shipwreck again the next time you take your submarine for a drive! "
                         }
                     ],
                     "navigationLinks": []
@@ -1596,12 +1596,12 @@
                         },
                         {
                             "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
-                            "text": "The creature told you that making jigsaws is easy, all you need to do is colour a picture on some paper and rip it into pieces. You explained to the creature that at your house, you didn’t use coloured clay because you have pencils and crayons instead. ",
+                            "text": "The creature told you that making jigsaws is easy, all you need to do is colour a picture on some paper and rip it into pieces. You explained to the creature that at your house, you didn't use coloured clay because you have pencils and crayons instead. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "a3fe0e4e-610d-4797-a07b-bb7249c988dc",
-                            "text": "When the creature asked if it could have some pencils, you had to explain that pencils don’t work very well underwater!",
+                            "text": "When the creature asked if it could have some pencils, you had to explain that pencils don't work very well underwater!",
                             "textPosition": "top"
                         }
                     ],
@@ -1658,7 +1658,7 @@
                         },
                         {
                             "id": "ca394226-bba0-43df-b103-15ab418966c5",
-                            "text": "The creature asked you to try squeezing through, but your submarine can’t squish and squeeze, it would break! ",
+                            "text": "The creature asked you to try squeezing through, but your submarine can't squish and squeeze, it would break! ",
                             "textPosition": "top"
                         }
                     ],
@@ -1768,15 +1768,15 @@
                         },
                         {
                             "id": "53d47300-fcae-470e-9887-64e74e537013",
-                            "text": "It was very dark down in the hole and a bit scary. But the creature wasn’t afraid, it loved exploring new places. You followed the creature as it swam slowly down inside the hole, tucking its legs up out of the way."
+                            "text": "It was very dark down in the hole and a bit scary. But the creature wasn't afraid, it loved exploring new places. You followed the creature as it swam slowly down inside the hole, tucking its legs up out of the way."
                         },
                         {
                             "id": "0e1925b9-f838-cca6-4728-bfc79d5e9707",
-                            "text": "The walls of the giant hole were covered in beautiful sparkles which were so bright you didn’t need to use your lights. "
+                            "text": "The walls of the giant hole were covered in beautiful sparkles which were so bright you didn't need to use your lights. "
                         },                        
                         {
                             "id": "d886b789-9823-4452-a348-a65832084b80",
-                            "text": "You were very pleased that you were brave enough to go exploring too, because it wasn’t scary after all – it was beautiful! The creature promised that you could go exploring again when you next visit. "
+                            "text": "You were very pleased that you were brave enough to go exploring too, because it wasn't scary after all – it was beautiful! The creature promised that you could go exploring again when you next visit. "
                         }
                     ],
                     "navigationLinks": []
@@ -1797,7 +1797,7 @@
                         },
                         {
                             "id": "8d98dc21-547d-4014-bd58-5300ba44e2b3",
-                            "text": "The creature was very happy to see you all getting along and invited everyone back to the castle. You knew that the scuba divers wouldn’t be able to swim as fast as the creature so you told them to hang on tight to your submarine so you could pull them along. ",
+                            "text": "The creature was very happy to see you all getting along and invited everyone back to the castle. You knew that the scuba divers wouldn't be able to swim as fast as the creature so you told them to hang on tight to your submarine so you could pull them along. ",
                             "textPosition": "top"
                         },
                         {
@@ -1823,16 +1823,16 @@
                         },
                         {
                             "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
-                            "text": "You tried spinning your blue submarine around in circles to create your own whirlpool, but it wouldn’t spin fast enough. Maybe your submarine needs three tails too! ",
+                            "text": "You tried spinning your blue submarine around in circles to create your own whirlpool, but it wouldn't spin fast enough. Maybe your submarine needs three tails too! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
-                            "text": "When you got home, you started to notice whirlpools everywhere. There’s one when you flush the toilet and another when you pull the plug out of the bath. "
+                            "text": "When you got home, you started to notice whirlpools everywhere. There's one when you flush the toilet and another when you pull the plug out of the bath. "
                         },
                         {
                             "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
-                            "text": "They’re much smaller than the whirlpools the sea creature makes, but they’re still fun to watch.",
+                            "text": "They're much smaller than the whirlpools the sea creature makes, but they're still fun to watch.",
                             "textPosition": "top"
                         }
                     ],
@@ -1846,7 +1846,7 @@
                     "texts": [
                         {
                             "id": "d83fdd28-f8c1-4eb0-ac86-16113797ae70",
-                            "text": "The sea creature is best friends with a giant eel. You didn’t know that until you followed the strange two-tailed creature to a patch of coral not far from its home. "
+                            "text": "The sea creature is best friends with a giant eel. You didn't know that until you followed the strange two-tailed creature to a patch of coral not far from its home. "
                         },
                         {
                             "id": "74d901da-49f5-4a98-a7b9-7494378fdee9",
@@ -1859,7 +1859,7 @@
                         },
                         {
                             "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
-                            "text": "The babies had never seen a submarine before and were very excited to meet you. You were surprised to find out that there isn’t just one strange, two-tailed sea creature, there are hundreds! ",
+                            "text": "The babies had never seen a submarine before and were very excited to meet you. You were surprised to find out that there isn't just one strange, two-tailed sea creature, there are hundreds! ",
                             "textPosition": "top"
                         }
                     ],
@@ -1886,7 +1886,7 @@
                         },
                         {
                             "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
-                            "text": "The creature swam closely to the sandy sea floor and barked so loudly that the sand puffed up in a cloud. Then you watched as the creature zig-zagged around eating the cloud of sand. It’s a very interesting way to make dinner! "
+                            "text": "The creature swam closely to the sandy sea floor and barked so loudly that the sand puffed up in a cloud. Then you watched as the creature zig-zagged around eating the cloud of sand. It's a very interesting way to make dinner! "
                         }
                     ],
                     "navigationLinks": []
@@ -1945,7 +1945,7 @@
                         },
                         {
                             "id": "b9917fc9-d82c-4753-b0c9-78d22f2720fe",
-                            "text": "The next time you visit the creature, you’re going to help it sort its shells from biggest to smallest. It might take all day!",
+                            "text": "The next time you visit the creature, you're going to help it sort its shells from biggest to smallest. It might take all day!",
                             "textPosition": "top"
                         }
                     ],
@@ -1965,7 +1965,7 @@
             "recommendedAgeRange": "2 to 6",
             "androidIAPCode": "alien",
             "iosIAPCode": "alien",
-            "description": "You are an astronaut exploring outer space! On one of your stops on a far-away planet, you meet a friendly alien. With this interactive children’s book, you get to choose your very own friendly alien. What does it look like? Where does it live? What fun thing do you do together? There are 16 different friendly aliens to discover.",
+            "description": "You are an astronaut exploring outer space! On one of your stops on a far-away planet, you meet a friendly alien. With this interactive children's book, you get to choose your very own friendly alien. What does it look like? Where does it live? What fun thing do you do together? There are 16 different friendly aliens to discover.",
             "defaultOpacity": 0.8,
             "pages": [
                 {
@@ -2005,11 +2005,11 @@
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
-                            "text": "The friendly alien has legs. But it doesn’t look very much like a person from Earth. ",
+                            "text": "The friendly alien has legs. But it doesn't look very much like a person from Earth. ",
                             "textPosition":"top"
                         },
                         {
-                            "text": "The alien can walk, run and jump, but it can’t stand on its tippy toes because it doesn’t have any toes to be tippy on! After the friendly alien looks inside your spaceship, you follow the alien to see its house. "
+                            "text": "The alien can walk, run and jump, but it can't stand on its tippy toes because it doesn't have any toes to be tippy on! After the friendly alien looks inside your spaceship, you follow the alien to see its house. "
                         },
                         {
                             "text": "Tell me about the friendly alien. Does it live in a house that looks like a big bubble, or does it live on top of a very tall tower?",
@@ -2071,11 +2071,11 @@
                     "texts": [
                         {
                             "id": "6184b034-66f3-4162-baf7-d8c911179926",
-                            "text": "The friendly alien lives in a house like a big bubble. You see a whole alien town full of big bubble houses. When you touch the alien’s house it wibbles and wobbles! "
+                            "text": "The friendly alien lives in a house like a big bubble. You see a whole alien town full of big bubble houses. When you touch the alien's house it wibbles and wobbles! "
                         },
                         {
                             "id": "d3a239e2-18e9-4316-8a4b-2bf01f772a86",
-                            "text": "It’s lucky there isn’t any wind on this planet or the big bubble houses might float up and away! ",
+                            "text": "It's lucky there isn't any wind on this planet or the big bubble houses might float up and away! ",
                             "textPosition":"top"
                         },
                         {
@@ -2109,7 +2109,7 @@
                         },
                         {
                             "id": "40a70169-ac59-429e-bd51-deb4b9555914",
-                            "text": "Looking high in the sky you can see the tippy top of the tower. It’s the tallest building you’ve ever seen. The steps wind around the outside of the tower instead of inside, how strange!"
+                            "text": "Looking high in the sky you can see the tippy top of the tower. It's the tallest building you've ever seen. The steps wind around the outside of the tower instead of inside, how strange!"
                         },
                         {
                             "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
@@ -2143,7 +2143,7 @@
                         },
                         {
                             "id": "61da30af-bef1-42f6-874a-231527f95e37",
-                            "text": "It’s so foggy and gloopy, and wet and spooky inside the clouds, you can hardly see a thing! Your alien friend likes living inside the heavy wet clouds because heavy wet clouds are cosy and snuggly. "
+                            "text": "It's so foggy and gloopy, and wet and spooky inside the clouds, you can hardly see a thing! Your alien friend likes living inside the heavy wet clouds because heavy wet clouds are cosy and snuggly. "
                         },
                         {
                             "id": "157afa0e-e885-4db2-bc2a-9c655c9fadac",
@@ -2172,7 +2172,7 @@
                     "texts": [
                         {
                             "id": "864a8479-c105-4ca3-8f2a-05472edf4b6a",
-                            "text": "The friendly alien lives in a big flat sandy desert. The desert is very dry and very hot. That’s because there isn’t just one big happy sun shining down on the desert, there are two! ",
+                            "text": "The friendly alien lives in a big flat sandy desert. The desert is very dry and very hot. That's because there isn't just one big happy sun shining down on the desert, there are two! ",
                             "textPosition":"top"
                         },
                         {
@@ -2205,7 +2205,7 @@
                     "texts": [
                         {
                             "id": "715b2925-fde3-41d6-9989-6b955b522854",
-                            "text": "The friendly alien has big sponges for hands! The sponges don’t have any thumbs so grabbing and gripping things is very tricky. "
+                            "text": "The friendly alien has big sponges for hands! The sponges don't have any thumbs so grabbing and gripping things is very tricky. "
                         },
                         {
                             "id": "ef70bcbc-90c7-4d30-9895-ae84db061088",
@@ -2243,7 +2243,7 @@
                         },
                         {
                             "id": "fc4b2f82-3047-4306-8222-fd8de1c00cb7",
-                            "text": "None of the bubble houses have any doors. You try pushing and squeezing and walking inside, but the bubble house just wibbles and wobbles and won’t let you in!",
+                            "text": "None of the bubble houses have any doors. You try pushing and squeezing and walking inside, but the bubble house just wibbles and wobbles and won't let you in!",
                             "textPosition":"top"
                         },
                         {
@@ -2307,7 +2307,7 @@
                     "texts": [
                         {
                             "id": "03f6f3c4-582c-4157-b5ec-506e960a8a5e",
-                            "text": "The friendly alien has four legs! There’s a leg that goes up and a leg that goes down. There’s a leg on its face and a leg on its bum! "
+                            "text": "The friendly alien has four legs! There's a leg that goes up and a leg that goes down. There's a leg on its face and a leg on its bum! "
                         },
                         {
                             "id": "b1e44e21-5342-45a9-828d-6ec4212e4823",
@@ -2379,7 +2379,7 @@
                         },
                         {
                             "id": "f51644c5-6a58-4ee6-a0f6-0f2812541999",
-                            "text": "When it rains inside the alien’s cloudy home, all of its little bumps fill with water for the alien to drink. "
+                            "text": "When it rains inside the alien's cloudy home, all of its little bumps fill with water for the alien to drink. "
                         },
                         {
                             "id": "b99e5d59-2b56-4fd3-b521-a91f18692ce6",
@@ -2442,7 +2442,7 @@
                     "texts": [
                         {
                             "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
-                            "text": "The friendly alien’s body has lots of different colours! It crawls on its belly very fast which makes the alien look like a squiggly wiggly, moving rainbow! ",
+                            "text": "The friendly alien's body has lots of different colours! It crawls on its belly very fast which makes the alien look like a squiggly wiggly, moving rainbow! ",
                             "textPosition": "top"
                         },
                         {
@@ -2513,11 +2513,11 @@
                         },
                         {
                             "id": "9fc4621e-a4f3-494d-b298-57a81fb1ff18",
-                            "text": "The alien who reaches the finish line first is the winner. Then it’s your turn to try. You run as fast as you can in your spacesuit, but your big space boots are very heavy. "
+                            "text": "The alien who reaches the finish line first is the winner. Then it's your turn to try. You run as fast as you can in your spacesuit, but your big space boots are very heavy. "
                         },
                         {
                             "id": "eabda3b7-1670-cdb2-4ba5-d2f12ee51982",
-                            "text": "When you kick the ball, your heavy boots hit it so hard it flies right over the bubble houses and is lost out in space! Oh no! It’s all okay though, you can find the ball using your spaceship. ",
+                            "text": "When you kick the ball, your heavy boots hit it so hard it flies right over the bubble houses and is lost out in space! Oh no! It's all okay though, you can find the ball using your spaceship. ",
                             "textPosition": "top"
                         }
                     ],
@@ -2536,7 +2536,7 @@
                         },
                         {
                             "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
-                            "text": "There are vegetables that look like jellyfish and vegetables that look like trumpets. You can’t go inside the big garden bubble because there’s no door for you to use. But you can see through the walls all the amazing things growing like a strange bubble jungle. "
+                            "text": "There are vegetables that look like jellyfish and vegetables that look like trumpets. You can't go inside the big garden bubble because there's no doors for you to use. But you can see through the walls all the amazing things growing like a strange bubble jungle. "
                         },
                         {
                             "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
@@ -2544,7 +2544,7 @@
                         },
                         {
                             "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
-                            "text": "But your helmet is just like a bubble house with no door! You can’t eat with your helmet on, so you put the blue bubble-squirt in your pocket to taste when you get home. ",
+                            "text": "But your helmet is just like a bubble house with no door! You can't eat with your helmet on, so you put the blue bubble-squirt in your pocket to taste when you get home. ",
                             "textPosition": "top"
                         }
                     ],
@@ -2558,12 +2558,12 @@
                     "texts": [
                         {
                             "id": "4f1c5178-67e6-4455-a632-bf7765076984",
-                            "text": "The friendly alien likes to play tricks, like hiding inside your spaceship! It sneakily sneaks on board when you’re not looking. When you’re ready to go home you feel sad because you can’t find your new alien friend to say goodbye! ",
+                            "text": "The friendly alien likes to play tricks, like hiding inside your spaceship! It sneakily sneaks on board when you're not looking. When you're ready to go home you feel sad because you can't find your new alien friend to say goodbye! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
-                            "text": "It’s time to leave so you sit in the captain’s chair of your spaceship and boop the buttons and lift the levers to make the spaceship take off. But you don’t know the alien is hiding on board as you start heading home! "
+                            "text": "It's time to leave so you sit in the captain's chair of your spaceship and boop the buttons and lift the levers to make the spaceship take off. But you don't know the alien is hiding on board as you start heading home! "
                         },
                         {
                             "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
@@ -2572,7 +2572,7 @@
                         },
                         {
                             "id": "a3fe0e4e-610d-4797-a07b-bb7249c988dc",
-                            "text": "You have to turn your spaceship around and fly all the way back to the alien’s planet to take your silly friend home. You say your goodbyes and promise to visit again soon. "
+                            "text": "You have to turn your spaceship around and fly all the way back to the alien's planet to take your silly friend home. You say your goodbyes and promise to visit again soon. "
                         }
                     ],
                     "navigationLinks": []
@@ -2599,7 +2599,7 @@
                         },
                         {
                             "id": "07511351-f6e9-4391-b803-efa420aea2df",
-                            "text": "After a long walk, the alien has to rest before it can climb the hundreds of stairs up to the tippy top of the tall tower. It’s all very tiring! "
+                            "text": "After a long walk, the alien has to rest before it can climb the hundreds of stairs up to the tippy top of the tall tower. It's all very tiring! "
                         }
                     ],
                     "navigationLinks": []
@@ -2640,7 +2640,7 @@
                     "texts": [
                         {
                             "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
-                            "text": "The friendly alien has a set of pretend legs for you to borrow. They’re curly and bouncy and stick to your spacesuit. The legs are yellow just like your space boots! ",
+                            "text": "The friendly alien has a set of pretend legs for you to borrow. They're curly and bouncy and stick to your spacesuit. The legs are yellow just like your space boots! ",
                             "textPosition": "top"
                         },
                         {
@@ -2649,11 +2649,11 @@
                         },
                         {
                             "id": "62d6db0d-7fcd-4853-b2a0-014772418990",
-                            "text": "You tip upside down and downside up. Every time you tip forward to use the leg on your head, you worry that you’ll wobble and tip off the stairs instead! But your friend is there to help and to keep you safe. "
+                            "text": "You tip upside down and downside up. Every time you tip forward to use the leg on your head, you worry that you'll wobble and tip off the stairs instead! But your friend is there to help and to keep you safe. "
                         },
                         {
                             "id": "33944d41-051e-484a-a30c-de6c03970c37",
-                            "text": "You roll higher and higher getting dizzier and dizzier. When you reach the tippy top of the tall tower you have to sit down for a minute for your head to stop spinning. But there’s a leg on your bum which keeps right on springing! ",
+                            "text": "You roll higher and higher getting dizzier and dizzier. When you reach the tippy top of the tall tower you have to sit down for a minute for your head to stop spinning. But there's a leg on your bum which keeps right on springing! ",
                             "textPosition": "top"
                         }
                     ],
@@ -2676,7 +2676,7 @@
                         },
                         {
                             "id": "b1f355b3-ea2d-4378-ab42-221c92583634",
-                            "text": "Sometimes the stairs are covered in dust. When your alien friend walks and slurps dust up its trunks, it sneezes AH CHOO! It doesn’t just sneeze out of one trunk leg, it sneezes out of all four at the same time. AH CHOO, CHOO, CHOO, CHOO, it sounds like a train. ",
+                            "text": "Sometimes the stairs are covered in dust. When your alien friend walks and slurps dust up its trunks, it sneezes AH CHOO! It doesn't just sneeze out of one trunk leg, it sneezes out of all four at the same time. AH CHOO, CHOO, CHOO, CHOO, it sounds like a train. ",
                             "textPosition": "top"
                         },
                         {
@@ -2700,7 +2700,7 @@
                         },
                         {
                             "id": "ba978ff7-b9a2-4116-bfab-7b5148b8b3ee",
-                            "text": "You flip through the pages of planets until you find Earth. It’s a beautiful blue and glorious green colour. You flip through the pages of planets until you find the alien’s home. It’s a pretty purple and rocking orange colour. The planets are very different. "
+                            "text": "You flip through the pages of planets until you find Earth. It's a beautiful blue and glorious green colour. You flip through the pages of planets until you find the alien's home. It's a pretty purple and rocking orange colour. The planets are very different. "
                         },
                         {
                             "id": "3e0f672b-12ad-4852-9124-6e8e736cc036",
@@ -2723,21 +2723,21 @@
                     "texts": [
                         {
                             "id": "37c91963-76fd-4594-9653-1e3e66163119",
-                            "text": "The friendly alien can turn invisible! You’re walking through the heavy wet clouds that cover the ground, but the alien disappears when you turn around. "
+                            "text": "The friendly alien can turn invisible! You're walking through the heavy wet clouds that cover the ground, but the alien disappears when you turn around. "
                         },
                         {
                             "id": "2c03a901-5ac1-40ef-9975-5ec7f0e91bf6",
-                            "text": "The invisible alien watches as you look everywhere. It giggles and jiggles because you’re so near! The cheeky alien decides to eat lunch while you look. ",
+                            "text": "The invisible alien watches as you look everywhere. It giggles and jiggles because you're so near! The cheeky alien decides to eat lunch while you look. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "53d47300-fcae-470e-9887-64e74e537013",
-                            "text": "You keep walking further and further away until you hear noises. There’s lots of crunching and slurping and biting and burping! You follow the yucky sounds until you bump into your invisible friend, but you still can’t see them! ",
+                            "text": "You keep walking further and further away until you hear noises. There's lots of crunching and slurping and biting and burping! You follow the yucky sounds until you bump into your invisible friend, but you still can't see them! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "0e1925b9-f838-cca6-4728-bfc79d5e9707",
-                            "text": "Then your friend giggles and jiggles loudly and you know that it’s there! The alien changes so you can see it again. Your alien friend played a trick on you! At first you’re a bit grumpy, but the alien laughs and then you think it’s funny. "
+                            "text": "Then your friend giggles and jiggles loudly and you know that it's there! The alien changes so you can see it again. Your alien friend played a trick on you! At first you're a bit grumpy, but the alien laughs and then you think it's funny. "
                         }
                     ],
                     "navigationLinks": []
@@ -2750,7 +2750,7 @@
                     "texts": [
                         {
                             "id": "4597b993-e21d-4bbd-a356-50e0ef1aad3d",
-                            "text": "The friendly alien makes funny spots on the ground when it rolls around. The spots are like footprints, but the alien doesn’t have feet! If the footprints aren’t from a foot, what do you call them? ",
+                            "text": "The friendly alien makes funny spots on the ground when it rolls around. The spots are like footprints, but the alien doesn't have feet! If the footprints aren't from a foot, what do you call them? ",
                             "textPosition": "top"
                         },
                         {
@@ -2792,7 +2792,7 @@
                         },
                         {
                             "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
-                            "text": "The alien asks if you would like to share its dinner, but you don’t want to drink water off its back or eat dirt off the ground! You say “No, thank you.” The alien doesn’t mind. It gurgles and slurps and sucks on its bendy straws until it’s all full. ",
+                            "text": "The alien asks if you would like to share its dinner, but you don't want to drink water off its back or eat dirt off the ground! You say “No, thank you.” The alien doesn't mind. It gurgles and slurps and sucks on its bendy straws until it's all full. ",
                             "textPosition": "top"
                         }
                     ],
@@ -2816,12 +2816,12 @@
                         },
                         {
                             "id": "a27cc549-f47e-4d5a-98f7-612159e1699e",
-                            "text": "The alien zigs and zags and zooms and vrooms all over the dusty desert. It keeps one eye pointed at the space puppy so it knows where to roll. The alien doesn’t get dizzy as its body spins around and around in the sand. ",
+                            "text": "The alien zigs and zags and zooms and vrooms all over the dusty desert. It keeps one eye pointed at the space puppy so it knows where to roll. The alien doesn't get dizzy as its body spins around and around in the sand. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
-                            "text": "You try to follow the alien by doing rolly pollys. You tuck your helmet to your belly and roll over and over again. But you can’t roll as fast as the alien and the dusty desert makes your spacesuit all dirty! Instead you wait for the alien to catch a space puppy for you to pat. ",
+                            "text": "You try to follow the alien by doing rolly pollys. You tuck your helmet to your belly and roll over and over again. But you can't roll as fast as the alien and the dusty desert makes your spacesuit all dirty! Instead you wait for the alien to catch a space puppy for you to pat. ",
                             "textPosition": "top"
                         }
                     ],
@@ -2844,12 +2844,12 @@
                         },
                         {
                             "id": "d670a84b-ef99-48d4-b824-01b8b1ff6732",
-                            "text": "You eat one of the fluffy puffs just to try it. You decide that they’re tasty and you like it. The puffs are all fluffy like cotton candy. Or maybe the fluff is all puffy like a marshmallow. The strange alien food is yummy either way. ",
+                            "text": "You eat one of the fluffy puffs just to try it. You decide that they're tasty and you like it. The puffs are all fluffy like cotton candy. Or maybe the fluff is all puffy like a marshmallow. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
-                            "text": "Maybe you could grow some back on Earth? It’s impossible to say. The alien gives you some fluffy puffs to take on your spaceship. When you get home, you’ll dig holes where the fluffy puffs can stay. ",
+                            "text": " The strange alien food is yummy either way. Maybe you could grow some back on Earth? It's impossible to say. The alien gives you some fluffy puffs to take on your spaceship. When you get home, you'll dig holes where the fluffy puffs can stay. ",
                             "textPosition": "top"
                         }
                     ],
@@ -2863,17 +2863,17 @@
                     "texts": [
                         {
                             "id": "68d48745-3122-4874-b8f1-ea471ba4bfbf",
-                            "text": "The friendly alien hides in a cave full of purple rocks. The cave is cold, so the alien snuggles and squishes its body together. The alien’s ears stick up because they don’t fold down. It makes it much easier to hear what’s around. ",
+                            "text": "The friendly alien hides in a cave full of purple rocks. The cave is cold, so the alien snuggles and squishes its body together. The alien's ears stick up because they don't fold down. It makes it much easier to hear what's around. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "0f3a7ca9-fe79-45f4-bc20-6b3611cd39a5",
-                            "text": ". It’s always hot out in the desert but sometimes the alien likes being cold. So it hides inside the big chilly cave away from the two suns. The alien looks for a smooth patch of ground between the purple rocks, then folds itself down like a pile of blocks. ",
+                            "text": ". It's always hot out in the desert but sometimes the alien likes being cold. So it hides inside the big chilly cave away from the two suns. The alien looks for a smooth patch of ground between the purple rocks, then folds itself down like a pile of blocks. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
-                            "text": "When it’s all squished and squeezed into half its normal size, the alien reminds you of the coloured stacking blocks you like to play with. All of the colours fit inside each other. ",
+                            "text": "When it's all squished and squeezed into half its normal size, the alien reminds you of the coloured stacking blocks you like to play with. All of the colours fit inside each other. ",
                             "textPosition": "top"
                         },
                         {
@@ -2897,7 +2897,7 @@
                         },
                         {
                             "id": "137becab-86d8-4f8a-980a-3a19ff2ad3b3",
-                            "text": "The alien leaves its pieces lying around in the desert. Sometimes the alien even forgets where it leaves the pieces and has to search for them. One of the puzzle pieces is fluffy and the same colour as the dusty desert. When that piece is lost, it’s very tricky to find! "
+                            "text": "The alien leaves its pieces lying around in the desert. Sometimes the alien even forgets where it leaves the pieces and has to search for them. One of the puzzle pieces is fluffy and the same colour as the dusty desert. When that piece is lost, it's very tricky to find! "
                         },
                         {
                             "id": "049bb1df-2ad6-ef86-4ebb-5cb26cf05418",
