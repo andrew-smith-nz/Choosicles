@@ -30,9 +30,9 @@ _resourcesByBook = [
       coverImage: require("../../img/pages/alien/cover.png"),
       coverImageLeftHalf: require("../../img/pages/alien/cover_lefthalf.png"),
       coverImageRightHalf: require("../../img/pages/alien/cover_righthalf.png"),
-      startImage:  require("../../img/pages/alien/cover.png"),
+      startImage:  require("../../img/pages/alien/title.png"),
       startAudio: 'alien_intro_audio.mp3',
-      startSoundEffect: 'seacreature_start_soundeffect.mp3',
+      startSoundEffect: 'alien_title_1_soundeffect.mp3',
       endImage:  require("../../img/pages/alien/end.png"),
       endAudio: 'alien_end_audio.mp3'
     }
