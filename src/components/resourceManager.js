@@ -35,6 +35,14 @@ _resourcesByBook = [
       startSoundEffect: 'alien_title_1_soundeffect.mp3',
       endImage:  require("../../img/pages/alien/end.png"),
       endAudio: 'alien_end_audio.mp3'
+    },
+    {
+      bookId: '915D33E3-109D-BCA7-4701-7FEDD4266F7C',
+      coverImage: require("../../img/double_pack.png")
+    },
+    {
+      bookId: 'DAC400B5-9135-4499-9D11-4BF95CFB5442',
+      coverImage: require("../../img/triple_pack.png")
     }
 ]
 

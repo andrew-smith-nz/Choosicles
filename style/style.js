@@ -9,6 +9,7 @@ export default StyleSheet.create({
     ,pageView: { flex:1, backgroundColor:'#FAFAFA', flexDirection:'column' }
 
     ,bookCoverView: { alignItems:'center', justifyContent:'center', margin:10 * global.WIDTH_RATIO, width: 250 * global.WIDTH_RATIO, height: 150 * global.HEIGHT_RATIO}
+    ,storeBookCoverView: { alignItems:'center', justifyContent:'center', margin:10 * global.WIDTH_RATIO, width: 175 * global.WIDTH_RATIO, height: 105 * global.HEIGHT_RATIO}
     ,bookCoverHalfView: { alignItems:'flex-start', justifyContent:'flex-start', margin:10 * global.WIDTH_RATIO, width: 80 * global.WIDTH_RATIO, height: 120 * global.HEIGHT_RATIO}
     ,pageFooterView: { alignItems: 'center', justifyContent:'space-between', flexDirection:'row', width:'100%', height:'20%'}
 
@@ -43,6 +44,7 @@ export default StyleSheet.create({
     ,syncLabel: {width:150 * global.WIDTH_RATIO}
     ,buttonText:  { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO}
 
+
     ,bookSelectItem: { borderWidth:0.5 * global.WIDTH_RATIO, borderColor:'black', width:'80%', backgroundColor:'#FBC61E', alignItems:'center', marginBottom:5 * global.HEIGHT_RATIO }
     ,bookInfoBuyButton: { textAlign:"center", lineHeight: 25 * global.HEIGHT_RATIO }
     
@@ -62,7 +64,10 @@ export default StyleSheet.create({
     ,centerBottomLeftLargerButton: {position:'absolute', width:185 * global.WIDTH_RATIO, height:80 * global.HEIGHT_RATIO, bottom: 20 * global.HEIGHT_RATIO, right: 305 * global.WIDTH_RATIO}
     ,centerBottomRightLargerButton: {position:'absolute', width:185 * global.WIDTH_RATIO, height:80 * global.HEIGHT_RATIO, bottom: 20 * global.HEIGHT_RATIO, left: 335 * global.WIDTH_RATIO}
     ,centerBottomLongButton: {position:'absolute', width:150 * global.WIDTH_RATIO, height:45 * global.HEIGHT_RATIO, bottom: 10 * global.HEIGHT_RATIO, right: 245 * global.WIDTH_RATIO}
-                                 
+    ,bottomLeftLargeButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, bottom: 5 * global.HEIGHT_RATIO, left: 5 * global.WIDTH_RATIO}
+    ,bottomRightLargeButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, bottom: 5 * global.HEIGHT_RATIO, right: 5 * global.WIDTH_RATIO}
+    ,topLeftLargeButton: {position:'absolute', width:140 * global.WIDTH_RATIO, height:60 * global.HEIGHT_RATIO, top: 5 * global.HEIGHT_RATIO, left: 5 * global.WIDTH_RATIO}
+                            
     ,...Platform.select({
                 ios:
                 {
@@ -87,6 +92,10 @@ export default StyleSheet.create({
                     ,text16: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', backgroundColor:'transparent' }
                     ,boldText16: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
                     ,boldText24: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'Berrylicious', fontWeight:'bold', backgroundColor:'transparent' }
+                    ,radioButton: { backgroundColor: '#FBC61E', marginRight:5 * global.WIDTH_RATIO, marginLeft:5 * global.WIDTH_RATIO, padding: 10 * global.WIDTH_RATIO, 
+                                    fontSize:16 * global.WIDTH_RATIO, fontFamily:'Berrylicious', fontWeight:'bold', borderWidth:1 * global.WIDTH_RATIO, borderColor:'black', borderBottomColor:'#FBC61E'}
+                    ,radioButtonDisabled: { backgroundColor: '#bbbbbb', marginRight:5 * global.WIDTH_RATIO, marginLeft:5 * global.WIDTH_RATIO, padding: 10 * global.WIDTH_RATIO, 
+                                    fontSize:16 * global.WIDTH_RATIO, fontFamily:'Berrylicious', borderWidth:1 * global.WIDTH_RATIO, borderColor:'black'}
                 },
                 android: {
                     switch: { transform: [{scaleX: global.WIDTH_RATIO}, {scaleY: global.HEIGHT_RATIO}], marginRight: 10 * global.WIDTH_RATIO }                    
@@ -110,6 +119,10 @@ export default StyleSheet.create({
                     ,text16: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'berrylicious' }
                     ,boldText16: { fontSize:16 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold' }
                     ,boldText24: { fontSize:18 * global.WIDTH_RATIO, fontFamily: 'berrylicious_bold' }
+                    ,radioButton: { backgroundColor: '#FBC61E', marginRight:5 * global.WIDTH_RATIO, marginLeft:5 * global.WIDTH_RATIO, padding: 10 * global.WIDTH_RATIO, 
+                                    fontSize:16 * global.WIDTH_RATIO, fontFamily:'berrylicious_bold', borderWidth:1 * global.WIDTH_RATIO, borderColor:'black', borderBottomColor:'#FBC61E'}
+                    ,radioButtonDisabled: { backgroundColor: '#bbbbbb', marginRight:5 * global.WIDTH_RATIO, marginLeft:5 * global.WIDTH_RATIO, padding: 10 * global.WIDTH_RATIO, 
+                                    fontSize:16 * global.WIDTH_RATIO, fontFamily:'berrylicious', borderWidth:1 * global.WIDTH_RATIO, borderColor:'black'}
                 }
             })
 });

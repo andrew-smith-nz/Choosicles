@@ -1,8 +1,8 @@
 Arguments: 
-  c:\program files\nodejs\node.exe C:\Users\Andrew\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-account-manager
+  c:\program files\nodejs\node.exe C:\Users\Andrew\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-checkbox
 
 PATH: 
-  c:\programdata\oracle\java\javapath;c:\python27\;c:\python27\scripts;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\users\andrew\.dnx\bin;c:\program files\microsoft dnx\dnvm\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files\microsoft sql server\client sdk\odbc\130\tools\binn\;c:\program files (x86)\microsoft sql server\130\tools\binn\;c:\program files\microsoft sql server\130\dts\binn\;c:\program files (x86)\microsoft sql server\client sdk\odbc\130\tools\binn\;c:\program files (x86)\microsoft sql server\130\dts\binn\;c:\program files (x86)\microsoft sql server\130\tools\binn\managementstudio\;c:\program files\git\cmd;c:\program files (x86)\microsoft sql server\110\dts\binn\;c:\program files (x86)\microsoft sql server\120\dts\binn\;c:\program files\microsoft\web platform installer\;c:\program files\dotnet\;c:\programdata\chocolatey\bin;c:\program files\nodejs\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Andrew\AppData\Local\Android\sdk\platform-tools;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\Users\Andrew\AppData\Local\Microsoft\WindowsApps;C:\Users\Andrew\AppData\Roaming\npm;C:\Users\Andrew\AppData\Local\atom\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Andrew\AppData\Local\Microsoft\WindowsApps;C:\Users\Andrew\AppData\Local\Programs\Fiddler
+  c:\programdata\oracle\java\javapath;c:\python27\;c:\python27\scripts;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\users\andrew\.dnx\bin;c:\program files\microsoft dnx\dnvm\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files\microsoft sql server\client sdk\odbc\130\tools\binn\;c:\program files (x86)\microsoft sql server\130\tools\binn\;c:\program files\microsoft sql server\130\dts\binn\;c:\program files (x86)\microsoft sql server\client sdk\odbc\130\tools\binn\;c:\program files (x86)\microsoft sql server\130\dts\binn\;c:\program files (x86)\microsoft sql server\130\tools\binn\managementstudio\;c:\program files\git\cmd;c:\program files (x86)\microsoft sql server\110\dts\binn\;c:\program files (x86)\microsoft sql server\120\dts\binn\;c:\program files\microsoft\web platform installer\;c:\program files\dotnet\;c:\programdata\chocolatey\bin;c:\program files\nodejs\;c:\users\andrew\appdata\local\android\sdk\platform-tools;c:\program files (x86)\microsoft emulator manager\1.0\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\WINDOWS\system32\windowspowershell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\GitExtensions\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Users\Andrew\AppData\Local\Microsoft\WindowsApps;C:\Users\Andrew\AppData\Roaming\npm;C:\Users\Andrew\AppData\Local\atom\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Andrew\AppData\Local\Android\sdk\platform-tools;;C:\Users\Andrew\AppData\Local\Programs\Fiddler;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps
 
 Yarn version: 
   0.27.5
@@ -37,8 +37,11 @@ npm manifest:
       "react": "16.0.0-alpha.12",
       "react-native": "^0.47.0",
       "react-native-billing": "^2.4.0",
+      "react-native-device-info": "^0.12.1",
+      "react-native-in-app-utils": "^6.0.0",
       "react-native-orientation": "^3.1.0",
       "react-native-sound": "^0.10.4",
+      "react-native-swipe-gestures": "^1.0.2",
       "react-navigation": "^1.0.0-beta.11",
       "react-redux": "^5.0.6",
       "redux": "^3.7.2",
@@ -3519,6 +3522,10 @@ Lockfile:
     version "2.4.0"
     resolved "https://registry.yarnpkg.com/react-native-billing/-/react-native-billing-2.4.0.tgz#956065bf8e9e639486315923360fd7f94589ce12"
   
+  react-native-device-info@^0.12.1:
+    version "0.12.1"
+    resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-0.12.1.tgz#659ed145caa5a86a4815904381b25e9ebe0c24f6"
+  
   react-native-dismiss-keyboard@1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/react-native-dismiss-keyboard/-/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"
@@ -3535,6 +3542,10 @@ Lockfile:
     dependencies:
       react-native-dismiss-keyboard "1.0.0"
   
+  react-native-in-app-utils@^6.0.0:
+    version "6.0.0"
+    resolved "https://registry.yarnpkg.com/react-native-in-app-utils/-/react-native-in-app-utils-6.0.0.tgz#9f0f1cf9b0cf2ef74d52c277ec2b58f6c9a153e2"
+  
   react-native-orientation@^3.1.0:
     version "3.1.0"
     resolved "https://registry.yarnpkg.com/react-native-orientation/-/react-native-orientation-3.1.0.tgz#ce470fe44a9a47df5be4995b01a1089d3f4a033e"
@@ -3542,6 +3553,10 @@ Lockfile:
   react-native-sound@^0.10.4:
     version "0.10.4"
     resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.10.4.tgz#242286558f457e023dbed42e8c6cbe52cfd313d4"
+  
+  react-native-swipe-gestures@^1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.2.tgz#914e1a72a94bc55b322b4622a01103ab879296dd"
   
   react-native-tab-view@^0.0.65:
     version "0.0.65"
