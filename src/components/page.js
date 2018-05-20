@@ -549,7 +549,7 @@ class Page extends Component
                                     {hasDecision & this.isEndOfSample() ? 
                                     <View>
                                         <Text style={[ style.pageText, {backgroundColor:backgroundColor, opacity:0.8, color:this.props.pageData.textColor }]}>
-                                        To continue your story, buy the full book in the store!
+                                        Keep reading! Find the full book in our store.
                                         </Text>
                                         <TouchableOpacity style={{marginBottom:30}} onPress={() => this.store()}>            
                                             <Image id="store" source={require('../../img/buybooks_long.png')} resizeMode='contain' style={style.fill}/>

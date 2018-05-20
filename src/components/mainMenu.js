@@ -4,7 +4,7 @@ import style from '../../style/style.js';
 import BookCover from './bookCover.js';
 import { connect } from 'react-redux';
 import { changePage, setActiveBook, clearHistory } from '../actions/book.js';
-import { setOwnedProducts } from '../actions/store.js';
+import { setOwnedProducts, setActivePurchase } from '../actions/store.js';
 import { GroupBox } from './settings.js';
 import Reactotron from 'reactotron-react-native';
 import global from '../../global.js'
@@ -28,7 +28,8 @@ function mapDispatchToProps(dispatch)
         clearHistory: () => dispatch(clearHistory()),
         changePage: (pageId) => dispatch(changePage(pageId)),
         setActiveBook: (book) => dispatch(setActiveBook(book)),
-        setOwnedProducts: (productIds) => dispatch(setOwnedProducts(productIds))
+        setOwnedProducts: (productIds) => dispatch(setOwnedProducts(productIds)),
+        setActivePurchase: (pageId) => dispatch(setActivePurchase(pageId))
     };
 }
 
@@ -66,6 +67,7 @@ class MainMenu extends Component
 
     store()
     {
+        this.props.setActivePurchase(null);
         if (Platform.OS == "ios")
         {
         this.props.navigation.dispatch(NavigationActions.reset({

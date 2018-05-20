@@ -21,10 +21,24 @@ export function products(state = { ownedBooks: [], activePurchase: null }, actio
         case ADD_OWNED_PRODUCT:
         {
             var ownedBooks = state.ownedBooks.slice();
-            var book = bookData.books.filter(b => b.androidIAPCode === action.productId || b.iosIAPCode == action.productId)[0];
-            if (book && !ownedBooks.filter(b => b === book.id)[0])
+            var splitIds = action.productId.split("_");
+            var wasMultiCode = false;
+            for (var i = 0; i < splitIds.length; i++)
             {
-                ownedBooks.push(book.id);
+                var index = parseInt(splitIds[i]);
+                if (isNaN(index)) continue;
+                Reactotron.log("purchasing " + bookData.books[splitIds[i] - 1].id)
+                ownedBooks.push(bookData.books[splitIds[i] - 1].id);
+                wasMultiCode = true;
+            }
+            Reactotron.log('passed loop');
+            if (!wasMultiCode)
+            {
+                var book = bookData.books.filter(b => b.androidIAPCode === action.productId || b.iosIAPCode == action.productId)[0];
+                if (book && !ownedBooks.filter(b => b === book.id)[0])
+                {
+                    ownedBooks.push(book.id);
+                }
             }
             return { ...state, ownedBooks: ownedBooks }
         }
@@ -43,16 +57,19 @@ export function products(state = { ownedBooks: [], activePurchase: null }, actio
             var bookId;
             for (i = 0; i < bookData.books.length; i++)
             {
-                for (j = 0; j < bookData.books[i].pages.length; j++)
+                if (bookData.books[i].pages)
                 {
-                    if (bookData.books[i].pages[j].id === action.pageId)
+                    for (j = 0; j < bookData.books[i].pages.length; j++)
                     {
-                        bookId = bookData.books[i].id;
+                        if (bookData.books[i].pages[j].id === action.pageId)
+                        {
+                            bookId = bookData.books[i].id;
+                            return { ...state, activePurchase: bookId }
+                        }
                     }
                 }
             }
-
-            return { ...state, activePurchase: bookId }
+            return { ...state, activePurchase: null }
         }
         default: return state;
     }

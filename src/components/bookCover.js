@@ -17,21 +17,36 @@ export default class BookCover extends Component
     render()
     {
         var opacity = ((this.props.owned && this.props.mode == "store") || (!this.props.owned && this.props.mode != "store") || this.props.offset != 0) ? 0.5 : 1;
-        var coverStyle = this.props.offset == 0 ? style.bookCoverView : style.bookCoverHalfView;
         var src = this.props.offset == 0 ? getCoverForBook(this.props.bookInfo.id) : getHalfCoverForBook(this.props.bookInfo.id, this.props.offset == 1);
-
-        return  <View style={[style.bookCoverView, ]}>
-                    <Image id="cover" source={src} style={[coverStyle, style.blackBorder, { opacity: opacity } ]} resizeMode="stretch" />
-                        { this.props.bookInfo.comingSoon && this.props.offset == 0 ? 
-                        <View style={[style.fill, {position:'absolute', left:0, top:0, padding:30 * global.HEIGHT_RATIO}]}>
-                            <Image id="coming_soon" style={[style.fill]} source={require("../../img/coming_soon.png")} resizeMode="contain" /> 
-                        </View> 
-                        : null }
-                         { !this.props.owned && !this.props.bookInfo.comingSoon && this.props.mode != "store" && this.props.offset == 0 ? 
-                        <View style={[style.fill, {position:'absolute', left:0, top:0}]}>
-                            <Image id="available" style={[style.fill]} source={require("../../img/available_in_the_store_black.png")} resizeMode="stretch" /> 
-                        </View> 
-                        : null }
-                </View>;
+        var backgroundColor = this.props.mode == "store" ? "white" : "transparent";
+        if (this.props.mode == "store")
+        {
+            var coverStyle = this.props.offset == 0 ? style.storeBookCoverView : style.bookCoverHalfView;
+            return  <View style={[style.bookCoverView]}>
+                <Image id="cover" source={src} style={[coverStyle, style.blackBorder, { opacity: opacity, backgroundColor:backgroundColor } ]} resizeMode="contain" />
+                    { this.props.bookInfo.comingSoon && this.props.offset == 0 ? 
+                    <View style={[style.fill, {position:'absolute', left:0, top:0, padding:30 * global.HEIGHT_RATIO}]}>
+                        <Image id="coming_soon" style={[style.fill]} source={require("../../img/coming_soon.png")} resizeMode="contain" /> 
+                    </View> 
+                    : null }
+            </View>;
+        }
+        else
+        {
+            var coverStyle = this.props.offset == 0 ? style.bookCoverView : style.bookCoverHalfView;
+            return  <View style={[style.bookCoverView]}>
+                <Image id="cover" source={src} style={[coverStyle, style.blackBorder, { opacity: opacity, backgroundColor:backgroundColor } ]} resizeMode="stretch" />
+                    { this.props.bookInfo.comingSoon && this.props.offset == 0 ? 
+                    <View style={[style.fill, {position:'absolute', left:0, top:0, padding:30 * global.HEIGHT_RATIO}]}>
+                        <Image id="coming_soon" style={[style.fill]} source={require("../../img/coming_soon.png")} resizeMode="contain" /> 
+                    </View> 
+                    : null }
+                    { !this.props.owned && !this.props.bookInfo.comingSoon && this.props.mode != "store" && this.props.offset == 0 ? 
+                    <View style={[style.fill, {position:'absolute', left:0, top:0}]}>
+                        <Image id="available" style={[style.fill]} source={require("../../img/available_in_the_store_black.png")} resizeMode="stretch" /> 
+                    </View> 
+                    : null }
+            </View>;
+        }
     }
 }
