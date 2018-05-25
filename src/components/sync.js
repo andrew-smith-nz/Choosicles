@@ -23,7 +23,8 @@ class Sync extends Component {
     constructor(props)
     {
         super(props);
-        this.state = { email: "", password: "", syncInProgress: false, syncComplete: false, syncResult: [], syncSuccess: false }
+        //this.state = { email: "", password: "", syncInProgress: false, syncComplete: false, syncResult: [], syncSuccess: false }
+        this.state = { email: "vulpesnz@gmail.com", password: "ajs123", syncInProgress: false, syncComplete: false, syncResult: [], syncSuccess: false }
     }
 
     startSync()
@@ -39,7 +40,7 @@ class Sync extends Component {
             DeviceUUID: DeviceInfo.getUniqueID(),
             DeviceOwnedBooks: this.props.ownedBooks
         };
-
+Reactotron.log(JSON.stringify(body));
         var url = 'http://www.choosicles.com/api/sync/';
         fetch(url, {
                 method: 'POST',
@@ -63,13 +64,15 @@ class Sync extends Component {
                 this.setState({syncInProgress: false});
             }.bind(this))
             .catch(function(error) {
+                Reactotron.log(error.message)
                 this.setState({syncInProgress: false, syncComplete: true, syncSuccess: false, syncResult: ["Sorry, something went wrong.  Please check your internet connection and try again in a few minutes.  If this error persists please contact us."] });
             }.bind(this));
     }
 
     displayMessages()
     {
-        return this.state.syncResult.map(s => { return <Text style={[style.boldText16]} key={s}>{s}</Text>; });
+        if (this.state.syncResult)
+            return this.state.syncResult.map(s => { return <Text style={[style.boldText16]} key={s}>{s}</Text>; });
     }
 
     render()

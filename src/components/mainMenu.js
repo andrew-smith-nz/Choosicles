@@ -98,6 +98,7 @@ class MainMenu extends Component
                 InAppBilling.listOwnedProducts()
                     .then(function (response) { 
                         //response.push("pet_monster");
+                        Reactotron.log(response)
                         this.setOwnedProducts(response); 
                         InAppBilling.close();
                     }.bind(this))

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler, Alert, Platform } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, Image, Animated, Dimensions, Modal, BackHandler, Alert, Platform, AppState } from 'react-native';
 import style from '../../style/style.js';
 import { getImageForPage, getSoundEffectForPage, getChoiceImageForPage } from './resourceManager.js'
 import { backtrack, changePage, clearHistory, incrementPageCounter, changeText } from '../actions/book.js';
@@ -101,6 +101,7 @@ class Page extends Component
 
     componentWillUnmount()
     {
+        this.stopAllPlayers();
         this.releaseAudioPlayers();
         this.releaseSoundEffects();
     }
@@ -110,6 +111,14 @@ class Page extends Component
         this.fadeInText();
         this.animateIn();
         BackHandler.addEventListener('hardwareBackPress', () => this.backHandler());
+        AppState.addEventListener('change', (state) => {
+          if(state === 'background'){
+            this.pauseAudio();
+          }
+          if(state === 'active'){
+            
+          }
+        })
     }
     
     initialiseAudio(props, initSoundEffect)
@@ -125,8 +134,10 @@ class Page extends Component
             var sound = new Sound(props.pageData.assetCode + '_' + (props.currentText + 1) + '_audio.mp3', Sound.MAIN_BUNDLE, 
                 () => { 
                     players.push(sound);
-                    if (props.enableAutoplayAudio) 
+                    if (props.enableAutoplayAudio)                         
+                    {
                         this.playAudio(0); 
+                    }
                     });
         }
         else
@@ -185,6 +196,7 @@ class Page extends Component
             {
                 this.state.audioPlayers[i].stop();
             }
+            this.setState({audioPaused: true});
         }
     }
     
@@ -267,7 +279,6 @@ class Page extends Component
             {
                 var soundIsPlaying = false;
                 var order = [];
-                Reactotron.log(this.state.lastPlayedSoundEffect)
                 for (i = 0; i < this.state.soundEffects.length; i++)
                 {
                     let index = i;
@@ -530,13 +541,24 @@ class Page extends Component
                     <Image style={{flex:1, width:"100%", height:"100%", backgroundColor:'black'}} source={getImageForPage(this.props.pageData.id)} resizeMode="contain">
                         <View style={{position:'absolute', left:leftPosition, top:topPosition, width:width}}>
                                {(textPosition == 'top') ? pageTextView : null}
-                        </View>
+                        </View>                        
+                        {hasDecision & this.isEndOfSample() ? 
+                        <View style={{width:'100%', height:'20%', flexDirection:'column', alignItems:'center', position:'absolute', top:'30%'}}>    
+                            <View style={{width:'30%'}}>                      
+                                    <Text style={[ style.pageText, {backgroundColor:backgroundColor, opacity:0.8, color:this.props.pageData.textColor }]}>
+                                    Keep reading! Find the full book in our store.
+                                    </Text>
+                                    <TouchableOpacity onPress={() => this.store()}>            
+                                        <Image id="store" source={require('../../img/buybooks_long.png')} resizeMode='contain' style={style.fill}/>
+                                    </TouchableOpacity>
+                            </View>
+                        </View> :     null }
                         <View style={{flexDirection:'column', position:'absolute', bottom:bottomPosition, left:leftPosition, width:width, padding:5, alignItems:'center', justifyContent:'center'}}>                          
                                     {(textPosition == 'bottom') ? pageTextView : null}
                                 <View style={[style.centeredContent, style.choiceButtonView]}>  
-                                    {hasDecision & !this.isEndOfSample() ? 
+                                    {hasDecision ? 
                                         this.props.pageData.navigationLinks.map((nav) => 
-                                            <TouchableOpacity key={nav.id} onPress={() => { this.choose(nav.targetPageId) } }>
+                                            <TouchableOpacity key={nav.id} onPress={() => { if (!this.isEndOfSample()) this.choose(nav.targetPageId) } }>
                                                 <Image source={getChoiceImageForPage(this.props.pageData.id, nav.order - 1)} resizeMode='contain' style={style.choiceButton} />
                                                 {this.props.showChoiceCounters ? 
                                                     <View style={style.choiceCounterView}>
@@ -545,17 +567,9 @@ class Page extends Component
                                                 : null }
                                             </TouchableOpacity>
                                             )
-                                    : null}                                    
-                                    {hasDecision & this.isEndOfSample() ? 
-                                    <View>
-                                        <Text style={[ style.pageText, {backgroundColor:backgroundColor, opacity:0.8, color:this.props.pageData.textColor }]}>
-                                        Keep reading! Find the full book in our store.
-                                        </Text>
-                                        <TouchableOpacity style={{marginBottom:30}} onPress={() => this.store()}>            
-                                            <Image id="store" source={require('../../img/buybooks_long.png')} resizeMode='contain' style={style.fill}/>
-                                        </TouchableOpacity>
-                                    </View> :     null }
+                                    : null}      
                                 </View>
+                                
                         </View>
                         {false?
                         <View style={style.topLeftButton}>

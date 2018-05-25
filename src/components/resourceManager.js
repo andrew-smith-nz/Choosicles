@@ -751,10 +751,10 @@ _resourcesByPage = [
             image: require('../../img/pages/alien/page12.png'),
             choiceImages: [
                 {
-                    image: require('../../img/pages/alien/choice26.png'),
+                    image: require('../../img/pages/alien/choice24.png'),
                 },
                 {
-                    image: require('../../img/pages/alien/choice27.png'),
+                    image: require('../../img/pages/alien/choice25.png'),
                 }
             ]
             },
@@ -764,10 +764,10 @@ _resourcesByPage = [
             image: require('../../img/pages/alien/page13.png'),
             choiceImages: [
                 {
-                    image: require('../../img/pages/alien/choice24.png'),
+                    image: require('../../img/pages/alien/choice26.png'),
                 },
                 {
-                    image: require('../../img/pages/alien/choice25.png'),
+                    image: require('../../img/pages/alien/choice27.png'),
                 }
             ]
             },
