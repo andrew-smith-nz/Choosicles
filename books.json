@@ -1955,7 +1955,7 @@
         },        
         {
             "id": "afb09354-0bb9-72b1-45fe-7239bb8c8a62",
-            "owned": true,
+            "owned": false,
             "comingSoon": false,
             "title": "Your Very Own Friendly Alien",
             "coverImage": null,

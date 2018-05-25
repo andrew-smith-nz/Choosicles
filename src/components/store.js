@@ -248,6 +248,7 @@ class Store extends Component
 
     toggleSelectBook(book, checked)
     {
+        if (this.isBookOwned(book)) return;
         var newBooks = [];
         Reactotron.log(checked );
         var checkedAlreadyExists = false;
@@ -326,7 +327,7 @@ class Store extends Component
                                         <View style={{flexDirection:'column'}}>
                                         {bookData.books.filter(b => !b.isMulti).map((book) => 
                                             <View key={'v' + book.id}>
-                                                <CheckBox key={'cb' + book.id} labelStyle={[style.boldText14, {color:'black'}]} label={book.title} onChange={(checked) => this.toggleSelectBook(book, checked)} check={this.selectedBooks && this.selectedBooks.filter(b => b.id == book.id).length > 0} />
+                                                <CheckBox key={'cb' + book.id} labelStyle={[style.boldText14, {color:(this.isBookOwned(book) ? 'grey' : 'black')}]} label={book.title + (this.isBookOwned(book) ? ' (Already owned)' : '')} onChange={(checked) => this.toggleSelectBook(book, checked)} check={this.selectedBooks && this.selectedBooks.filter(b => b.id == book.id).length > 0} />
                                             </View>
                                         )}
                                         </View>
