@@ -41,7 +41,7 @@ export default class ParentalGate extends Component
 
     render()
     {
-        return <Image id="wallpaper" source={require("../../img/wallpaper.png")} resizeMode='stretch' style={{flexDirection:'column', width:'100%', height:'100%'}}>
+        return <View resizeMode='stretch' style={{backgroundColor:'#00CAFF', flexDirection:'column', width:'100%', height:'100%'}}>
                     <View style={{flex:1, width:'100%', alignItems:'center', justifyContent:'center', marginTop:10, marginBottom:10}}>
                         <Image source={require('../../img/ask_your_parents.png')} resizeMode="contain" style={style.topText} />
                     </View>
@@ -65,6 +65,6 @@ export default class ParentalGate extends Component
                     <TouchableOpacity style={style.topRightButton} onPress={() => this.home()}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={style.fill} />
                     </TouchableOpacity>
-                </Image>
+                </View>
     }
 }

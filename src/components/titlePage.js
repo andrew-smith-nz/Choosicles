@@ -67,10 +67,8 @@ class TitlePage extends Component
         if (this.state.initialisingAudio) return;
         this.setState({initialisingAudio: true});
 
-        var sound = new Sound(getStartAudioForBook(this.props.book.id), Sound.MAIN_BUNDLE, 
-            () => { if (this.props.enableReadAloud) { this.playAudio(0); }});  
-        
-        this.setState({audioPlayers: [ sound ], initialisingAudio: false});
+       var sound = new Sound(getStartAudioForBook(this.props.book.id), Sound.MAIN_BUNDLE, 
+            () => { this.setState({audioPlayers: [ sound ], initialisingAudio: false}); if (this.props.enableReadAloud) { this.playAudio(0); }});  
     }
     
     componentWillUnmount()

@@ -15,6 +15,8 @@ var Sound = require('react-native-sound');
 function mapStateToProps(state) {
     return { 
         pageData: state.changePage.pageData,
+        ownedBooks: state.products.ownedBooks,
+        activeBook: state.changePage.activeBook,
         pageHistory: state.changePage.pageHistory,
         currentText: state.changePage.currentText,
         name: state.changeName.name,
@@ -169,17 +171,18 @@ class Page extends Component
         }
     }
     
-    loadSoundEffects(assetCode){    
-        this.setState({soundEffects: []});
+    loadSoundEffects(assetCode){  
+        this.setState({soundEffects: [], lastPlayedSoundEffect: null});
         var i = 1;
         var loadedSounds = 0;
         var playedASound = false;
         while (i <= 3)
         {
             let player = new Sound(assetCode + '_' + i + '_soundeffect.mp3', Sound.MAIN_BUNDLE, (error) => {
+                 
                 loadedSounds++;
                 this.state.soundEffects.push(player); 
-                if (loadedSounds == 3 && this.props.enableAutoplaySoundEffects) 
+                if (loadedSounds == this.props.pageData.numSoundEffects && this.props.enableAutoplaySoundEffects) 
                 {
                     this.playSoundEffect();
                 }
@@ -283,7 +286,7 @@ class Page extends Component
                 {
                     let index = i;
                     // iOS loads non-existent sounds for some reason, so we have to check if there's actually anything there
-                    if (this.state.soundEffects[i]._duration > 0 && i !== this.state.lastPlayedSoundEffect)
+                    if (this.state.soundEffects[i]._duration > 0 && (this.state.soundEffects.length == 1 || i !== this.state.lastPlayedSoundEffect))
                     {
                         order.push(i);
                     }
@@ -474,13 +477,8 @@ class Page extends Component
 
     isEndOfSample()
     {
-        if (!this.props.isOwned && this.props.pageData.pageNumber > 1)
-        {
-            return true;
-        }
-        return false;
+        return (!this.props.ownedBooks.filter(b => b === this.props.activeBook.id).length && this.props.pageData.pageNumber > 1)        
     }
-
     
     store()
     {
@@ -544,12 +542,12 @@ class Page extends Component
                         </View>                        
                         {hasDecision & this.isEndOfSample() ? 
                         <View style={{width:'100%', height:'20%', flexDirection:'column', alignItems:'center', position:'absolute', top:'30%'}}>    
-                            <View style={{width:'30%'}}>                      
-                                    <Text style={[ style.pageText, {backgroundColor:backgroundColor, opacity:0.8, color:this.props.pageData.textColor }]}>
+                            <View style={{width:'40%'}}>                      
+                                    <Text style={[ style.pageText, {backgroundColor:'white', opacity:1, color:this.props.pageData.textColor, paddingLeft:20 ,paddingRight:20 }]}>
                                     Keep reading! Find the full book in our store.
                                     </Text>
-                                    <TouchableOpacity onPress={() => this.store()}>            
-                                        <Image id="store" source={require('../../img/buybooks_long.png')} resizeMode='contain' style={style.fill}/>
+                                    <TouchableOpacity onPress={() => this.store()} style={{margin:30}}>            
+                                        <Image id="store" source={require('../../img/buy_my_book.png')} resizeMode='contain' style={style.fill}/>
                                     </TouchableOpacity>
                             </View>
                         </View> :     null }
