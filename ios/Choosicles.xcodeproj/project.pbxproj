@@ -21,6 +21,201 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		25FF405ADB334B8F905DD575 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FF9BC624E1499CA6FA7EE4 /* libRNSound.a */; };
 		2E6243A5CCBF41FAB398EE30 /* summer_joy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FF8F37D69464DAB81BBB75F /* summer_joy.ttf */; };
+		4980351320A25DA100880AEC /* alien_22_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980342D20A25D4C00880AEC /* alien_22_2_soundeffect.mp3 */; };
+		4980351420A25DA100880AEC /* alien_24_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345120A25D4C00880AEC /* alien_24_2_soundeffect.mp3 */; };
+		4980351520A25DA100880AEC /* alien_15_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345220A25D4D00880AEC /* alien_15_3_soundeffect.mp3 */; };
+		4980351620A25DA100880AEC /* alien_5_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345320A25D4D00880AEC /* alien_5_2_soundeffect.mp3 */; };
+		4980351720A25DA100880AEC /* alien_16_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345420A25D4E00880AEC /* alien_16_1_audio.mp3 */; };
+		4980351820A25DA100880AEC /* alien_17_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345520A25D4E00880AEC /* alien_17_2_audio.mp3 */; };
+		4980351920A25DA100880AEC /* alien_9_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345620A25D4F00880AEC /* alien_9_1_audio.mp3 */; };
+		4980351A20A25DA100880AEC /* alien_25_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345720A25D4F00880AEC /* alien_25_2_audio.mp3 */; };
+		4980351B20A25DA100880AEC /* alien_26_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345820A25D4F00880AEC /* alien_26_1_audio.mp3 */; };
+		4980351C20A25DA100880AEC /* alien_30_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345920A25D5000880AEC /* alien_30_3_soundeffect.mp3 */; };
+		4980351D20A25DA100880AEC /* alien_29_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345A20A25D5000880AEC /* alien_29_4_audio.mp3 */; };
+		4980351E20A25DA100880AEC /* alien_4_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345B20A25D5100880AEC /* alien_4_3_audio.mp3 */; };
+		4980351F20A25DA100880AEC /* alien_13_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345C20A25D5100880AEC /* alien_13_2_audio.mp3 */; };
+		4980352020A25DA100880AEC /* alien_3_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345D20A25D5100880AEC /* alien_3_2_audio.mp3 */; };
+		4980352120A25DA100880AEC /* alien_2_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345E20A25D5200880AEC /* alien_2_2_soundeffect.mp3 */; };
+		4980352220A25DA100880AEC /* alien_5_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345F20A25D5200880AEC /* alien_5_3_audio.mp3 */; };
+		4980352320A25DA100880AEC /* alien_10_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346020A25D5300880AEC /* alien_10_2_audio.mp3 */; };
+		4980352420A25DA100880AEC /* alien_27_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346120A25D5300880AEC /* alien_27_3_audio.mp3 */; };
+		4980352520A25DA100880AEC /* alien_21_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346220A25D5400880AEC /* alien_21_3_audio.mp3 */; };
+		4980352620A25DA100880AEC /* alien_22_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346320A25D5400880AEC /* alien_22_1_audio.mp3 */; };
+		4980352720A25DA100880AEC /* alien_6_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346420A25D5500880AEC /* alien_6_3_audio.mp3 */; };
+		4980352820A25DA100880AEC /* alien_30_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346520A25D5500880AEC /* alien_30_2_soundeffect.mp3 */; };
+		4980352920A25DA100880AEC /* alien_19_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346620A25D5500880AEC /* alien_19_3_soundeffect.mp3 */; };
+		4980352A20A25DA100880AEC /* alien_6_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346720A25D5500880AEC /* alien_6_2_audio.mp3 */; };
+		4980352B20A25DA100880AEC /* alien_19_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346820A25D5600880AEC /* alien_19_1_audio.mp3 */; };
+		4980352C20A25DA100880AEC /* alien_26_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346920A25D5600880AEC /* alien_26_3_audio.mp3 */; };
+		4980352D20A25DA100880AEC /* alien_22_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346A20A25D5600880AEC /* alien_22_4_audio.mp3 */; };
+		4980352E20A25DA100880AEC /* alien_25_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346B20A25D5700880AEC /* alien_25_3_audio.mp3 */; };
+		4980352F20A25DA100880AEC /* alien_25_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346C20A25D5700880AEC /* alien_25_3_soundeffect.mp3 */; };
+		4980353020A25DA100880AEC /* alien_19_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346D20A25D5700880AEC /* alien_19_3_audio.mp3 */; };
+		4980353120A25DA100880AEC /* alien_4_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346E20A25D5800880AEC /* alien_4_1_audio.mp3 */; };
+		4980353220A25DA100880AEC /* alien_13_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980346F20A25D5800880AEC /* alien_13_3_audio.mp3 */; };
+		4980353320A25DA100880AEC /* alien_12_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347020A25D5800880AEC /* alien_12_2_audio.mp3 */; };
+		4980353420A25DA100880AEC /* alien_16_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347120A25D5900880AEC /* alien_16_2_soundeffect.mp3 */; };
+		4980353520A25DA100880AEC /* alien_10_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347220A25D5A00880AEC /* alien_10_3_audio.mp3 */; };
+		4980353620A25DA100880AEC /* alien_20_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347320A25D5A00880AEC /* alien_20_1_soundeffect.mp3 */; };
+		4980353720A25DA100880AEC /* alien_17_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347420A25D5A00880AEC /* alien_17_4_audio.mp3 */; };
+		4980353820A25DA100880AEC /* alien_28_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347520A25D5B00880AEC /* alien_28_3_soundeffect.mp3 */; };
+		4980353920A25DA100880AEC /* alien_25_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347620A25D5B00880AEC /* alien_25_2_soundeffect.mp3 */; };
+		4980353A20A25DA100880AEC /* alien_30_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347720A25D5C00880AEC /* alien_30_1_soundeffect.mp3 */; };
+		4980353B20A25DA100880AEC /* alien_1_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347820A25D5C00880AEC /* alien_1_2_soundeffect.mp3 */; };
+		4980353C20A25DA100880AEC /* alien_3_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347920A25D5C00880AEC /* alien_3_1_audio.mp3 */; };
+		4980353D20A25DA100880AEC /* alien_26_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347A20A25D5D00880AEC /* alien_26_2_soundeffect.mp3 */; };
+		4980353E20A25DA100880AEC /* alien_27_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347B20A25D5D00880AEC /* alien_27_2_audio.mp3 */; };
+		4980353F20A25DA100880AEC /* alien_7_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347C20A25D5D00880AEC /* alien_7_1_soundeffect.mp3 */; };
+		4980354020A25DA100880AEC /* alien_8_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347D20A25D5E00880AEC /* alien_8_1_soundeffect.mp3 */; };
+		4980354120A25DA100880AEC /* alien_19_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347E20A25D5E00880AEC /* alien_19_4_audio.mp3 */; };
+		4980354220A25DA100880AEC /* alien_24_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980347F20A25D5E00880AEC /* alien_24_4_audio.mp3 */; };
+		4980354320A25DA100880AEC /* alien_3_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348020A25D5F00880AEC /* alien_3_3_audio.mp3 */; };
+		4980354420A25DA100880AEC /* alien_9_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348120A25D5F00880AEC /* alien_9_3_audio.mp3 */; };
+		4980354520A25DA100880AEC /* alien_31_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348220A25D5F00880AEC /* alien_31_1_audio.mp3 */; };
+		4980354620A25DA100880AEC /* alien_16_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348320A25D6000880AEC /* alien_16_4_audio.mp3 */; };
+		4980354720A25DA100880AEC /* alien_7_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348420A25D6100880AEC /* alien_7_3_audio.mp3 */; };
+		4980354820A25DA100880AEC /* alien_9_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348520A25D6100880AEC /* alien_9_1_soundeffect.mp3 */; };
+		4980354920A25DA100880AEC /* alien_12_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348620A25D6100880AEC /* alien_12_3_audio.mp3 */; };
+		4980354A20A25DA100880AEC /* alien_title_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348720A25D6200880AEC /* alien_title_2_soundeffect.mp3 */; };
+		4980354B20A25DA100880AEC /* alien_14_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348820A25D6200880AEC /* alien_14_1_soundeffect.mp3 */; };
+		4980354C20A25DA100880AEC /* alien_6_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348920A25D6200880AEC /* alien_6_1_soundeffect.mp3 */; };
+		4980354D20A25DA100880AEC /* alien_5_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348A20A25D6300880AEC /* alien_5_2_audio.mp3 */; };
+		4980354E20A25DA100880AEC /* alien_13_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348B20A25D6300880AEC /* alien_13_1_audio.mp3 */; };
+		4980354F20A25DA100880AEC /* alien_16_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348C20A25D6300880AEC /* alien_16_2_audio.mp3 */; };
+		4980355020A25DA100880AEC /* alien_25_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348D20A25D6300880AEC /* alien_25_4_audio.mp3 */; };
+		4980355120A25DA100880AEC /* alien_28_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348E20A25D6400880AEC /* alien_28_4_audio.mp3 */; };
+		4980355220A25DA100880AEC /* alien_2_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980348F20A25D6400880AEC /* alien_2_1_audio.mp3 */; };
+		4980355320A25DA100880AEC /* alien_22_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349020A25D6400880AEC /* alien_22_2_audio.mp3 */; };
+		4980355420A25DA100880AEC /* alien_18_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349120A25D6500880AEC /* alien_18_1_audio.mp3 */; };
+		4980355520A25DA100880AEC /* alien_29_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349220A25D6500880AEC /* alien_29_2_audio.mp3 */; };
+		4980355620A25DA100880AEC /* alien_7_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349320A25D6500880AEC /* alien_7_2_soundeffect.mp3 */; };
+		4980355720A25DA100880AEC /* alien_11_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349420A25D6600880AEC /* alien_11_1_soundeffect.mp3 */; };
+		4980355820A25DA100880AEC /* alien_18_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349520A25D6600880AEC /* alien_18_4_audio.mp3 */; };
+		4980355920A25DA100880AEC /* alien_29_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349620A25D6600880AEC /* alien_29_1_audio.mp3 */; };
+		4980355A20A25DA100880AEC /* alien_3_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349720A25D6700880AEC /* alien_3_1_soundeffect.mp3 */; };
+		4980355B20A25DA100880AEC /* alien_6_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349820A25D6700880AEC /* alien_6_3_soundeffect.mp3 */; };
+		4980355C20A25DA100880AEC /* alien_24_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349920A25D6700880AEC /* alien_24_1_soundeffect.mp3 */; };
+		4980355D20A25DA100880AEC /* alien_15_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349A20A25D6800880AEC /* alien_15_2_soundeffect.mp3 */; };
+		4980355E20A25DA100880AEC /* alien_30_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349B20A25D6800880AEC /* alien_30_4_audio.mp3 */; };
+		4980355F20A25DA100880AEC /* alien_31_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349C20A25D6800880AEC /* alien_31_2_soundeffect.mp3 */; };
+		4980356020A25DA100880AEC /* alien_16_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349D20A25D6900880AEC /* alien_16_3_soundeffect.mp3 */; };
+		4980356120A25DA100880AEC /* alien_23_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349E20A25D6900880AEC /* alien_23_4_audio.mp3 */; };
+		4980356220A25DA100880AEC /* alien_17_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980349F20A25D6900880AEC /* alien_17_3_audio.mp3 */; };
+		4980356320A25DA100880AEC /* alien_10_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A020A25D6900880AEC /* alien_10_1_soundeffect.mp3 */; };
+		4980356420A25DA100880AEC /* alien_15_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A120A25D6A00880AEC /* alien_15_3_audio.mp3 */; };
+		4980356520A25DA100880AEC /* alien_24_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A220A25D6A00880AEC /* alien_24_1_audio.mp3 */; };
+		4980356620A25DA100880AEC /* alien_20_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A320A25D6A00880AEC /* alien_20_2_audio.mp3 */; };
+		4980356720A25DA100880AEC /* alien_1_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A420A25D6B00880AEC /* alien_1_1_audio.mp3 */; };
+		4980356820A25DA100880AEC /* alien_14_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A520A25D6B00880AEC /* alien_14_2_audio.mp3 */; };
+		4980356920A25DA100880AEC /* alien_18_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A620A25D6B00880AEC /* alien_18_3_soundeffect.mp3 */; };
+		4980356A20A25DA100880AEC /* alien_16_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A720A25D6C00880AEC /* alien_16_1_soundeffect.mp3 */; };
+		4980356B20A25DA100880AEC /* alien_22_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A820A25D6C00880AEC /* alien_22_3_audio.mp3 */; };
+		4980356C20A25DA100880AEC /* alien_19_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034A920A25D6C00880AEC /* alien_19_2_soundeffect.mp3 */; };
+		4980356D20A25DA100880AEC /* alien_21_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034AA20A25D6D00880AEC /* alien_21_2_soundeffect.mp3 */; };
+		4980356E20A25DA100880AEC /* alien_30_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034AB20A25D6D00880AEC /* alien_30_1_audio.mp3 */; };
+		4980356F20A25DA100880AEC /* alien_31_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034AC20A25D6D00880AEC /* alien_31_2_audio.mp3 */; };
+		4980357020A25DA100880AEC /* alien_9_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034AD20A25D6E00880AEC /* alien_9_2_audio.mp3 */; };
+		4980357120A25DA100880AEC /* alien_20_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034AE20A25D6E00880AEC /* alien_20_3_soundeffect.mp3 */; };
+		4980357220A25DA100880AEC /* alien_18_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034AF20A25D6E00880AEC /* alien_18_1_soundeffect.mp3 */; };
+		4980357320A25DA100880AEC /* alien_21_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B020A25D6F00880AEC /* alien_21_2_audio.mp3 */; };
+		4980357420A25DA100880AEC /* alien_17_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B120A25D6F00880AEC /* alien_17_3_soundeffect.mp3 */; };
+		4980357520A25DA100880AEC /* alien_31_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B220A25D6F00880AEC /* alien_31_1_soundeffect.mp3 */; };
+		4980357620A25DA100880AEC /* alien_28_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B320A25D6F00880AEC /* alien_28_2_soundeffect.mp3 */; };
+		4980357720A25DA100880AEC /* alien_17_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B420A25D7000880AEC /* alien_17_2_soundeffect.mp3 */; };
+		4980357820A25DA100880AEC /* alien_20_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B520A25D7000880AEC /* alien_20_4_audio.mp3 */; };
+		4980357920A25DA100880AEC /* alien_31_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B620A25D7100880AEC /* alien_31_3_audio.mp3 */; };
+		4980357A20A25DA100880AEC /* alien_end_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B720A25D7100880AEC /* alien_end_audio.mp3 */; };
+		4980357B20A25DA100880AEC /* alien_12_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B820A25D7100880AEC /* alien_12_1_soundeffect.mp3 */; };
+		4980357C20A25DA100880AEC /* alien_11_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034B920A25D7200880AEC /* alien_11_2_soundeffect.mp3 */; };
+		4980357D20A25DA100880AEC /* alien_20_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034BA20A25D7200880AEC /* alien_20_1_audio.mp3 */; };
+		4980357E20A25DA100880AEC /* alien_23_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034BB20A25D7200880AEC /* alien_23_1_audio.mp3 */; };
+		4980357F20A25DA100880AEC /* alien_intro_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034BC20A25D7300880AEC /* alien_intro_audio.mp3 */; };
+		4980358020A25DA100880AEC /* alien_31_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034BD20A25D7300880AEC /* alien_31_3_soundeffect.mp3 */; };
+		4980358120A25DA100880AEC /* alien_18_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034BE20A25D7300880AEC /* alien_18_2_soundeffect.mp3 */; };
+		4980358220A25DA100880AEC /* alien_29_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034BF20A25D7400880AEC /* alien_29_3_soundeffect.mp3 */; };
+		4980358320A25DA100880AEC /* alien_23_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C020A25D7400880AEC /* alien_23_3_audio.mp3 */; };
+		4980358420A25DA100880AEC /* alien_15_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C120A25D7400880AEC /* alien_15_1_audio.mp3 */; };
+		4980358520A25DA100880AEC /* alien_2_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C220A25D7500880AEC /* alien_2_2_audio.mp3 */; };
+		4980358620A25DA100880AEC /* alien_8_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C320A25D7500880AEC /* alien_8_1_audio.mp3 */; };
+		4980358720A25DA100880AEC /* alien_8_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C420A25D7600880AEC /* alien_8_2_audio.mp3 */; };
+		4980358820A25DA100880AEC /* alien_15_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C520A25D7600880AEC /* alien_15_2_audio.mp3 */; };
+		4980358920A25DA100880AEC /* alien_18_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C620A25D7600880AEC /* alien_18_2_audio.mp3 */; };
+		4980358A20A25DA100880AEC /* alien_21_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C720A25D7700880AEC /* alien_21_4_audio.mp3 */; };
+		4980358B20A25DA100880AEC /* alien_16_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C820A25D7700880AEC /* alien_16_3_audio.mp3 */; };
+		4980358C20A25DA100880AEC /* alien_27_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034C920A25D7800880AEC /* alien_27_2_soundeffect.mp3 */; };
+		4980358D20A25DA100880AEC /* alien_13_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034CA20A25D7900880AEC /* alien_13_2_soundeffect.mp3 */; };
+		4980358E20A25DA100880AEC /* alien_29_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034CB20A25D7A00880AEC /* alien_29_2_soundeffect.mp3 */; };
+		4980358F20A25DA100880AEC /* alien_19_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034CC20A25D7A00880AEC /* alien_19_2_audio.mp3 */; };
+		4980359020A25DA100880AEC /* alien_24_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034CD20A25D7B00880AEC /* alien_24_3_audio.mp3 */; };
+		4980359120A25DA100880AEC /* alien_11_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034CE20A25D7C00880AEC /* alien_11_1_audio.mp3 */; };
+		4980359220A25DA100880AEC /* alien_10_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034CF20A25D7D00880AEC /* alien_10_2_soundeffect.mp3 */; };
+		4980359320A25DA100880AEC /* alien_24_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D020A25D7D00880AEC /* alien_24_3_soundeffect.mp3 */; };
+		4980359420A25DA100880AEC /* alien_title_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D120A25D7D00880AEC /* alien_title_1_soundeffect.mp3 */; };
+		4980359520A25DA100880AEC /* alien_5_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D220A25D7E00880AEC /* alien_5_1_soundeffect.mp3 */; };
+		4980359620A25DA100880AEC /* alien_28_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D320A25D7E00880AEC /* alien_28_3_audio.mp3 */; };
+		4980359720A25DA100880AEC /* alien_1_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D420A25D8000880AEC /* alien_1_2_audio.mp3 */; };
+		4980359820A25DA100880AEC /* alien_11_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D520A25D8100880AEC /* alien_11_2_audio.mp3 */; };
+		4980359920A25DA100880AEC /* alien_28_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D620A25D8100880AEC /* alien_28_1_soundeffect.mp3 */; };
+		4980359A20A25DA100880AEC /* alien_27_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D720A25D8100880AEC /* alien_27_3_soundeffect.mp3 */; };
+		4980359B20A25DA100880AEC /* alien_7_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D820A25D8200880AEC /* alien_7_2_audio.mp3 */; };
+		4980359C20A25DA100880AEC /* alien_10_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034D920A25D8200880AEC /* alien_10_1_audio.mp3 */; };
+		4980359D20A25DA100880AEC /* alien_4_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034DA20A25D8300880AEC /* alien_4_2_audio.mp3 */; };
+		4980359E20A25DA100880AEC /* alien_21_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034DB20A25D8300880AEC /* alien_21_1_audio.mp3 */; };
+		4980359F20A25DA100880AEC /* alien_30_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034DC20A25D8400880AEC /* alien_30_3_audio.mp3 */; };
+		498035A020A25DA100880AEC /* alien_25_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034DD20A25D8400880AEC /* alien_25_1_soundeffect.mp3 */; };
+		498035A120A25DA100880AEC /* alien_4_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034DE20A25D8400880AEC /* alien_4_1_soundeffect.mp3 */; };
+		498035A220A25DA100880AEC /* alien_9_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034DF20A25D8500880AEC /* alien_9_3_soundeffect.mp3 */; };
+		498035A320A25DA100880AEC /* alien_26_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E020A25D8A00880AEC /* alien_26_2_audio.mp3 */; };
+		498035A420A25DA100880AEC /* alien_17_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E120A25D8B00880AEC /* alien_17_1_soundeffect.mp3 */; };
+		498035A520A25DA100880AEC /* alien_14_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E220A25D8B00880AEC /* alien_14_1_audio.mp3 */; };
+		498035A620A25DA100880AEC /* alien_14_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E320A25D8C00880AEC /* alien_14_3_audio.mp3 */; };
+		498035A720A25DA100880AEC /* alien_19_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E420A25D8C00880AEC /* alien_19_1_soundeffect.mp3 */; };
+		498035A820A25DA100880AEC /* alien_23_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E520A25D8C00880AEC /* alien_23_3_soundeffect.mp3 */; };
+		498035A920A25DA100880AEC /* alien_28_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E620A25D8D00880AEC /* alien_28_2_audio.mp3 */; };
+		498035AA20A25DA100880AEC /* alien_27_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E720A25D8D00880AEC /* alien_27_1_audio.mp3 */; };
+		498035AB20A25DA100880AEC /* alien_3_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E820A25D8D00880AEC /* alien_3_4_audio.mp3 */; };
+		498035AC20A25DA100880AEC /* alien_1_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034E920A25D9000880AEC /* alien_1_1_soundeffect.mp3 */; };
+		498035AD20A25DA100880AEC /* alien_21_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034EA20A25D9000880AEC /* alien_21_1_soundeffect.mp3 */; };
+		498035AE20A25DA100880AEC /* alien_24_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034EB20A25D9000880AEC /* alien_24_2_audio.mp3 */; };
+		498035AF20A25DA100880AEC /* alien_9_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034EC20A25D9100880AEC /* alien_9_2_soundeffect.mp3 */; };
+		498035B020A25DA100880AEC /* alien_5_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034ED20A25D9200880AEC /* alien_5_1_audio.mp3 */; };
+		498035B120A25DA100880AEC /* alien_27_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034EE20A25D9200880AEC /* alien_27_1_soundeffect.mp3 */; };
+		498035B220A25DA100880AEC /* alien_2_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034EF20A25D9200880AEC /* alien_2_1_soundeffect.mp3 */; };
+		498035B320A25DA100880AEC /* alien_20_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F020A25D9300880AEC /* alien_20_3_audio.mp3 */; };
+		498035B420A25DA100880AEC /* alien_23_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F120A25D9300880AEC /* alien_23_2_audio.mp3 */; };
+		498035B520A25DA100880AEC /* alien_6_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F220A25D9300880AEC /* alien_6_2_soundeffect.mp3 */; };
+		498035B620A25DA100880AEC /* alien_30_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F320A25D9400880AEC /* alien_30_2_audio.mp3 */; };
+		498035B720A25DA100880AEC /* alien_27_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F420A25D9400880AEC /* alien_27_4_audio.mp3 */; };
+		498035B820A25DA100880AEC /* alien_1_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F520A25D9400880AEC /* alien_1_3_audio.mp3 */; };
+		498035B920A25DA100880AEC /* alien_23_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F620A25D9500880AEC /* alien_23_2_soundeffect.mp3 */; };
+		498035BA20A25DA100880AEC /* alien_26_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F720A25D9500880AEC /* alien_26_4_audio.mp3 */; };
+		498035BB20A25DA100880AEC /* alien_22_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F820A25D9600880AEC /* alien_22_1_soundeffect.mp3 */; };
+		498035BC20A25DA100880AEC /* alien_8_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034F920A25D9600880AEC /* alien_8_3_audio.mp3 */; };
+		498035BD20A25DA100880AEC /* alien_11_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034FA20A25D9700880AEC /* alien_11_3_audio.mp3 */; };
+		498035BE20A25DA100880AEC /* alien_3_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034FB20A25D9700880AEC /* alien_3_2_soundeffect.mp3 */; };
+		498035BF20A25DA100880AEC /* alien_25_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034FC20A25D9800880AEC /* alien_25_1_audio.mp3 */; };
+		498035C020A25DA100880AEC /* alien_28_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034FD20A25D9800880AEC /* alien_28_1_audio.mp3 */; };
+		498035C120A25DA100880AEC /* alien_29_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034FE20A25D9800880AEC /* alien_29_3_audio.mp3 */; };
+		498035C220A25DA100880AEC /* alien_12_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 498034FF20A25D9900880AEC /* alien_12_1_audio.mp3 */; };
+		498035C320A25DA100880AEC /* alien_31_4_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350020A25D9900880AEC /* alien_31_4_audio.mp3 */; };
+		498035C420A25DA100880AEC /* alien_18_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350120A25D9900880AEC /* alien_18_3_audio.mp3 */; };
+		498035C520A25DA100880AEC /* alien_4_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350220A25D9A00880AEC /* alien_4_3_soundeffect.mp3 */; };
+		498035C620A25DA100880AEC /* alien_7_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350320A25D9B00880AEC /* alien_7_1_audio.mp3 */; };
+		498035C720A25DA100880AEC /* alien_26_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350420A25D9B00880AEC /* alien_26_1_soundeffect.mp3 */; };
+		498035C820A25DA100880AEC /* alien_2_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350520A25D9C00880AEC /* alien_2_3_audio.mp3 */; };
+		498035C920A25DA100880AEC /* alien_14_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350620A25D9C00880AEC /* alien_14_2_soundeffect.mp3 */; };
+		498035CA20A25DA100880AEC /* alien_13_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350720A25D9C00880AEC /* alien_13_1_soundeffect.mp3 */; };
+		498035CB20A25DA100880AEC /* alien_15_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350820A25D9D00880AEC /* alien_15_1_soundeffect.mp3 */; };
+		498035CC20A25DA100880AEC /* alien_17_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350920A25D9D00880AEC /* alien_17_1_audio.mp3 */; };
+		498035CD20A25DA100880AEC /* alien_29_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350A20A25D9D00880AEC /* alien_29_1_soundeffect.mp3 */; };
+		498035CE20A25DA100880AEC /* alien_1_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350B20A25D9E00880AEC /* alien_1_3_soundeffect.mp3 */; };
+		498035CF20A25DA100880AEC /* alien_23_1_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350C20A25D9E00880AEC /* alien_23_1_soundeffect.mp3 */; };
+		498035D020A25DA100880AEC /* alien_21_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350D20A25D9E00880AEC /* alien_21_3_soundeffect.mp3 */; };
+		498035D120A25DA100880AEC /* alien_6_1_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350E20A25D9F00880AEC /* alien_6_1_audio.mp3 */; };
+		498035D220A25DA100880AEC /* alien_12_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980350F20A25D9F00880AEC /* alien_12_2_soundeffect.mp3 */; };
+		498035D320A25DA100880AEC /* alien_8_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980351020A25DA000880AEC /* alien_8_2_soundeffect.mp3 */; };
+		498035D420A25DA100880AEC /* alien_20_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980351120A25DA000880AEC /* alien_20_2_soundeffect.mp3 */; };
+		498035D520A25DA100880AEC /* alien_4_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980351220A25DA000880AEC /* alien_4_2_soundeffect.mp3 */; };
 		49E0A8251FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49E0A8011FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 */; };
 		49FC2C481FBF87C1008E2EBF /* seacreature_11_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2AFC1FBF8798008E2EBF /* seacreature_11_2_soundeffect.mp3 */; };
 		49FC2C491FBF87C1008E2EBF /* monster_27_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49FC2AFD1FBF8798008E2EBF /* monster_27_3_audio.mp3 */; };
@@ -634,6 +829,201 @@
 		38FF9BC624E1499CA6FA7EE4 /* libRNSound.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSound.a; sourceTree = "<group>"; };
 		4000A620FAD94E4F9FC2D43D /* RNSound.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
 		4798EF0718EF4FFA9FDDA279 /* libRNDeviceInfo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNDeviceInfo-tvOS.a"; sourceTree = "<group>"; };
+		4980342D20A25D4C00880AEC /* alien_22_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_22_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_22_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980345120A25D4C00880AEC /* alien_24_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_24_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980345220A25D4D00880AEC /* alien_15_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_15_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_15_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980345320A25D4D00880AEC /* alien_5_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_5_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_5_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980345420A25D4E00880AEC /* alien_16_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_16_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_16_1_audio.mp3; sourceTree = "<group>"; };
+		4980345520A25D4E00880AEC /* alien_17_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_17_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_17_2_audio.mp3; sourceTree = "<group>"; };
+		4980345620A25D4F00880AEC /* alien_9_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_9_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_9_1_audio.mp3; sourceTree = "<group>"; };
+		4980345720A25D4F00880AEC /* alien_25_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_25_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_25_2_audio.mp3; sourceTree = "<group>"; };
+		4980345820A25D4F00880AEC /* alien_26_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_26_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_26_1_audio.mp3; sourceTree = "<group>"; };
+		4980345920A25D5000880AEC /* alien_30_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_30_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_30_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980345A20A25D5000880AEC /* alien_29_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_29_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_29_4_audio.mp3; sourceTree = "<group>"; };
+		4980345B20A25D5100880AEC /* alien_4_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_4_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_4_3_audio.mp3; sourceTree = "<group>"; };
+		4980345C20A25D5100880AEC /* alien_13_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_13_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_13_2_audio.mp3; sourceTree = "<group>"; };
+		4980345D20A25D5100880AEC /* alien_3_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_3_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_3_2_audio.mp3; sourceTree = "<group>"; };
+		4980345E20A25D5200880AEC /* alien_2_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_2_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_2_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980345F20A25D5200880AEC /* alien_5_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_5_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_5_3_audio.mp3; sourceTree = "<group>"; };
+		4980346020A25D5300880AEC /* alien_10_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_10_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_10_2_audio.mp3; sourceTree = "<group>"; };
+		4980346120A25D5300880AEC /* alien_27_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_27_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_27_3_audio.mp3; sourceTree = "<group>"; };
+		4980346220A25D5400880AEC /* alien_21_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_21_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_21_3_audio.mp3; sourceTree = "<group>"; };
+		4980346320A25D5400880AEC /* alien_22_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_22_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_22_1_audio.mp3; sourceTree = "<group>"; };
+		4980346420A25D5500880AEC /* alien_6_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_6_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_6_3_audio.mp3; sourceTree = "<group>"; };
+		4980346520A25D5500880AEC /* alien_30_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_30_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_30_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980346620A25D5500880AEC /* alien_19_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_19_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_19_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980346720A25D5500880AEC /* alien_6_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_6_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_6_2_audio.mp3; sourceTree = "<group>"; };
+		4980346820A25D5600880AEC /* alien_19_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_19_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_19_1_audio.mp3; sourceTree = "<group>"; };
+		4980346920A25D5600880AEC /* alien_26_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_26_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_26_3_audio.mp3; sourceTree = "<group>"; };
+		4980346A20A25D5600880AEC /* alien_22_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_22_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_22_4_audio.mp3; sourceTree = "<group>"; };
+		4980346B20A25D5700880AEC /* alien_25_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_25_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_25_3_audio.mp3; sourceTree = "<group>"; };
+		4980346C20A25D5700880AEC /* alien_25_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_25_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_25_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980346D20A25D5700880AEC /* alien_19_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_19_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_19_3_audio.mp3; sourceTree = "<group>"; };
+		4980346E20A25D5800880AEC /* alien_4_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_4_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_4_1_audio.mp3; sourceTree = "<group>"; };
+		4980346F20A25D5800880AEC /* alien_13_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_13_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_13_3_audio.mp3; sourceTree = "<group>"; };
+		4980347020A25D5800880AEC /* alien_12_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_12_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_12_2_audio.mp3; sourceTree = "<group>"; };
+		4980347120A25D5900880AEC /* alien_16_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_16_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_16_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347220A25D5A00880AEC /* alien_10_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_10_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_10_3_audio.mp3; sourceTree = "<group>"; };
+		4980347320A25D5A00880AEC /* alien_20_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_20_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_20_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347420A25D5A00880AEC /* alien_17_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_17_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_17_4_audio.mp3; sourceTree = "<group>"; };
+		4980347520A25D5B00880AEC /* alien_28_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_28_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_28_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347620A25D5B00880AEC /* alien_25_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_25_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_25_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347720A25D5C00880AEC /* alien_30_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_30_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_30_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347820A25D5C00880AEC /* alien_1_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_1_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_1_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347920A25D5C00880AEC /* alien_3_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_3_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_3_1_audio.mp3; sourceTree = "<group>"; };
+		4980347A20A25D5D00880AEC /* alien_26_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_26_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_26_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347B20A25D5D00880AEC /* alien_27_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_27_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_27_2_audio.mp3; sourceTree = "<group>"; };
+		4980347C20A25D5D00880AEC /* alien_7_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_7_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_7_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347D20A25D5E00880AEC /* alien_8_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_8_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_8_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980347E20A25D5E00880AEC /* alien_19_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_19_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_19_4_audio.mp3; sourceTree = "<group>"; };
+		4980347F20A25D5E00880AEC /* alien_24_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_24_4_audio.mp3; sourceTree = "<group>"; };
+		4980348020A25D5F00880AEC /* alien_3_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_3_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_3_3_audio.mp3; sourceTree = "<group>"; };
+		4980348120A25D5F00880AEC /* alien_9_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_9_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_9_3_audio.mp3; sourceTree = "<group>"; };
+		4980348220A25D5F00880AEC /* alien_31_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_31_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_31_1_audio.mp3; sourceTree = "<group>"; };
+		4980348320A25D6000880AEC /* alien_16_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_16_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_16_4_audio.mp3; sourceTree = "<group>"; };
+		4980348420A25D6100880AEC /* alien_7_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_7_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_7_3_audio.mp3; sourceTree = "<group>"; };
+		4980348520A25D6100880AEC /* alien_9_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_9_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_9_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980348620A25D6100880AEC /* alien_12_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_12_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_12_3_audio.mp3; sourceTree = "<group>"; };
+		4980348720A25D6200880AEC /* alien_title_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_title_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_title_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980348820A25D6200880AEC /* alien_14_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_14_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_14_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980348920A25D6200880AEC /* alien_6_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_6_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_6_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980348A20A25D6300880AEC /* alien_5_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_5_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_5_2_audio.mp3; sourceTree = "<group>"; };
+		4980348B20A25D6300880AEC /* alien_13_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_13_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_13_1_audio.mp3; sourceTree = "<group>"; };
+		4980348C20A25D6300880AEC /* alien_16_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_16_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_16_2_audio.mp3; sourceTree = "<group>"; };
+		4980348D20A25D6300880AEC /* alien_25_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_25_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_25_4_audio.mp3; sourceTree = "<group>"; };
+		4980348E20A25D6400880AEC /* alien_28_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_28_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_28_4_audio.mp3; sourceTree = "<group>"; };
+		4980348F20A25D6400880AEC /* alien_2_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_2_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_2_1_audio.mp3; sourceTree = "<group>"; };
+		4980349020A25D6400880AEC /* alien_22_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_22_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_22_2_audio.mp3; sourceTree = "<group>"; };
+		4980349120A25D6500880AEC /* alien_18_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_18_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_18_1_audio.mp3; sourceTree = "<group>"; };
+		4980349220A25D6500880AEC /* alien_29_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_29_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_29_2_audio.mp3; sourceTree = "<group>"; };
+		4980349320A25D6500880AEC /* alien_7_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_7_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_7_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349420A25D6600880AEC /* alien_11_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_11_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_11_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349520A25D6600880AEC /* alien_18_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_18_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_18_4_audio.mp3; sourceTree = "<group>"; };
+		4980349620A25D6600880AEC /* alien_29_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_29_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_29_1_audio.mp3; sourceTree = "<group>"; };
+		4980349720A25D6700880AEC /* alien_3_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_3_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_3_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349820A25D6700880AEC /* alien_6_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_6_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_6_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349920A25D6700880AEC /* alien_24_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_24_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349A20A25D6800880AEC /* alien_15_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_15_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_15_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349B20A25D6800880AEC /* alien_30_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_30_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_30_4_audio.mp3; sourceTree = "<group>"; };
+		4980349C20A25D6800880AEC /* alien_31_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_31_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_31_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349D20A25D6900880AEC /* alien_16_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_16_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_16_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980349E20A25D6900880AEC /* alien_23_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_23_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_23_4_audio.mp3; sourceTree = "<group>"; };
+		4980349F20A25D6900880AEC /* alien_17_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_17_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_17_3_audio.mp3; sourceTree = "<group>"; };
+		498034A020A25D6900880AEC /* alien_10_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_10_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_10_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034A120A25D6A00880AEC /* alien_15_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_15_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_15_3_audio.mp3; sourceTree = "<group>"; };
+		498034A220A25D6A00880AEC /* alien_24_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_24_1_audio.mp3; sourceTree = "<group>"; };
+		498034A320A25D6A00880AEC /* alien_20_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_20_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_20_2_audio.mp3; sourceTree = "<group>"; };
+		498034A420A25D6B00880AEC /* alien_1_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_1_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_1_1_audio.mp3; sourceTree = "<group>"; };
+		498034A520A25D6B00880AEC /* alien_14_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_14_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_14_2_audio.mp3; sourceTree = "<group>"; };
+		498034A620A25D6B00880AEC /* alien_18_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_18_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_18_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034A720A25D6C00880AEC /* alien_16_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_16_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_16_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034A820A25D6C00880AEC /* alien_22_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_22_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_22_3_audio.mp3; sourceTree = "<group>"; };
+		498034A920A25D6C00880AEC /* alien_19_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_19_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_19_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034AA20A25D6D00880AEC /* alien_21_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_21_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_21_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034AB20A25D6D00880AEC /* alien_30_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_30_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_30_1_audio.mp3; sourceTree = "<group>"; };
+		498034AC20A25D6D00880AEC /* alien_31_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_31_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_31_2_audio.mp3; sourceTree = "<group>"; };
+		498034AD20A25D6E00880AEC /* alien_9_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_9_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_9_2_audio.mp3; sourceTree = "<group>"; };
+		498034AE20A25D6E00880AEC /* alien_20_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_20_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_20_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034AF20A25D6E00880AEC /* alien_18_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_18_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_18_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034B020A25D6F00880AEC /* alien_21_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_21_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_21_2_audio.mp3; sourceTree = "<group>"; };
+		498034B120A25D6F00880AEC /* alien_17_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_17_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_17_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034B220A25D6F00880AEC /* alien_31_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_31_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_31_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034B320A25D6F00880AEC /* alien_28_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_28_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_28_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034B420A25D7000880AEC /* alien_17_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_17_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_17_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034B520A25D7000880AEC /* alien_20_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_20_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_20_4_audio.mp3; sourceTree = "<group>"; };
+		498034B620A25D7100880AEC /* alien_31_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_31_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_31_3_audio.mp3; sourceTree = "<group>"; };
+		498034B720A25D7100880AEC /* alien_end_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_end_audio.mp3; path = ../android/app/src/main/res/raw/alien_end_audio.mp3; sourceTree = "<group>"; };
+		498034B820A25D7100880AEC /* alien_12_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_12_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_12_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034B920A25D7200880AEC /* alien_11_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_11_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_11_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034BA20A25D7200880AEC /* alien_20_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_20_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_20_1_audio.mp3; sourceTree = "<group>"; };
+		498034BB20A25D7200880AEC /* alien_23_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_23_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_23_1_audio.mp3; sourceTree = "<group>"; };
+		498034BC20A25D7300880AEC /* alien_intro_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_intro_audio.mp3; path = ../android/app/src/main/res/raw/alien_intro_audio.mp3; sourceTree = "<group>"; };
+		498034BD20A25D7300880AEC /* alien_31_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_31_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_31_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034BE20A25D7300880AEC /* alien_18_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_18_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_18_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034BF20A25D7400880AEC /* alien_29_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_29_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_29_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034C020A25D7400880AEC /* alien_23_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_23_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_23_3_audio.mp3; sourceTree = "<group>"; };
+		498034C120A25D7400880AEC /* alien_15_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_15_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_15_1_audio.mp3; sourceTree = "<group>"; };
+		498034C220A25D7500880AEC /* alien_2_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_2_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_2_2_audio.mp3; sourceTree = "<group>"; };
+		498034C320A25D7500880AEC /* alien_8_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_8_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_8_1_audio.mp3; sourceTree = "<group>"; };
+		498034C420A25D7600880AEC /* alien_8_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_8_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_8_2_audio.mp3; sourceTree = "<group>"; };
+		498034C520A25D7600880AEC /* alien_15_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_15_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_15_2_audio.mp3; sourceTree = "<group>"; };
+		498034C620A25D7600880AEC /* alien_18_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_18_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_18_2_audio.mp3; sourceTree = "<group>"; };
+		498034C720A25D7700880AEC /* alien_21_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_21_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_21_4_audio.mp3; sourceTree = "<group>"; };
+		498034C820A25D7700880AEC /* alien_16_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_16_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_16_3_audio.mp3; sourceTree = "<group>"; };
+		498034C920A25D7800880AEC /* alien_27_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_27_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_27_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034CA20A25D7900880AEC /* alien_13_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_13_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_13_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034CB20A25D7A00880AEC /* alien_29_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_29_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_29_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034CC20A25D7A00880AEC /* alien_19_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_19_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_19_2_audio.mp3; sourceTree = "<group>"; };
+		498034CD20A25D7B00880AEC /* alien_24_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_24_3_audio.mp3; sourceTree = "<group>"; };
+		498034CE20A25D7C00880AEC /* alien_11_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_11_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_11_1_audio.mp3; sourceTree = "<group>"; };
+		498034CF20A25D7D00880AEC /* alien_10_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_10_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_10_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034D020A25D7D00880AEC /* alien_24_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_24_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034D120A25D7D00880AEC /* alien_title_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_title_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_title_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034D220A25D7E00880AEC /* alien_5_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_5_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_5_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034D320A25D7E00880AEC /* alien_28_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_28_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_28_3_audio.mp3; sourceTree = "<group>"; };
+		498034D420A25D8000880AEC /* alien_1_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_1_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_1_2_audio.mp3; sourceTree = "<group>"; };
+		498034D520A25D8100880AEC /* alien_11_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_11_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_11_2_audio.mp3; sourceTree = "<group>"; };
+		498034D620A25D8100880AEC /* alien_28_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_28_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_28_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034D720A25D8100880AEC /* alien_27_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_27_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_27_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034D820A25D8200880AEC /* alien_7_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_7_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_7_2_audio.mp3; sourceTree = "<group>"; };
+		498034D920A25D8200880AEC /* alien_10_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_10_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_10_1_audio.mp3; sourceTree = "<group>"; };
+		498034DA20A25D8300880AEC /* alien_4_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_4_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_4_2_audio.mp3; sourceTree = "<group>"; };
+		498034DB20A25D8300880AEC /* alien_21_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_21_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_21_1_audio.mp3; sourceTree = "<group>"; };
+		498034DC20A25D8400880AEC /* alien_30_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_30_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_30_3_audio.mp3; sourceTree = "<group>"; };
+		498034DD20A25D8400880AEC /* alien_25_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_25_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_25_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034DE20A25D8400880AEC /* alien_4_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_4_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_4_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034DF20A25D8500880AEC /* alien_9_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_9_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_9_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034E020A25D8A00880AEC /* alien_26_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_26_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_26_2_audio.mp3; sourceTree = "<group>"; };
+		498034E120A25D8B00880AEC /* alien_17_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_17_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_17_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034E220A25D8B00880AEC /* alien_14_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_14_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_14_1_audio.mp3; sourceTree = "<group>"; };
+		498034E320A25D8C00880AEC /* alien_14_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_14_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_14_3_audio.mp3; sourceTree = "<group>"; };
+		498034E420A25D8C00880AEC /* alien_19_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_19_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_19_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034E520A25D8C00880AEC /* alien_23_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_23_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_23_3_soundeffect.mp3; sourceTree = "<group>"; };
+		498034E620A25D8D00880AEC /* alien_28_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_28_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_28_2_audio.mp3; sourceTree = "<group>"; };
+		498034E720A25D8D00880AEC /* alien_27_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_27_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_27_1_audio.mp3; sourceTree = "<group>"; };
+		498034E820A25D8D00880AEC /* alien_3_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_3_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_3_4_audio.mp3; sourceTree = "<group>"; };
+		498034E920A25D9000880AEC /* alien_1_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_1_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_1_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034EA20A25D9000880AEC /* alien_21_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_21_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_21_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034EB20A25D9000880AEC /* alien_24_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_24_2_audio.mp3; sourceTree = "<group>"; };
+		498034EC20A25D9100880AEC /* alien_9_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_9_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_9_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034ED20A25D9200880AEC /* alien_5_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_5_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_5_1_audio.mp3; sourceTree = "<group>"; };
+		498034EE20A25D9200880AEC /* alien_27_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_27_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_27_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034EF20A25D9200880AEC /* alien_2_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_2_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_2_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034F020A25D9300880AEC /* alien_20_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_20_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_20_3_audio.mp3; sourceTree = "<group>"; };
+		498034F120A25D9300880AEC /* alien_23_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_23_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_23_2_audio.mp3; sourceTree = "<group>"; };
+		498034F220A25D9300880AEC /* alien_6_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_6_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_6_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034F320A25D9400880AEC /* alien_30_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_30_2_audio.mp3; path = ../android/app/src/main/res/raw/alien_30_2_audio.mp3; sourceTree = "<group>"; };
+		498034F420A25D9400880AEC /* alien_27_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_27_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_27_4_audio.mp3; sourceTree = "<group>"; };
+		498034F520A25D9400880AEC /* alien_1_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_1_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_1_3_audio.mp3; sourceTree = "<group>"; };
+		498034F620A25D9500880AEC /* alien_23_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_23_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_23_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034F720A25D9500880AEC /* alien_26_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_26_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_26_4_audio.mp3; sourceTree = "<group>"; };
+		498034F820A25D9600880AEC /* alien_22_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_22_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_22_1_soundeffect.mp3; sourceTree = "<group>"; };
+		498034F920A25D9600880AEC /* alien_8_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_8_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_8_3_audio.mp3; sourceTree = "<group>"; };
+		498034FA20A25D9700880AEC /* alien_11_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_11_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_11_3_audio.mp3; sourceTree = "<group>"; };
+		498034FB20A25D9700880AEC /* alien_3_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_3_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_3_2_soundeffect.mp3; sourceTree = "<group>"; };
+		498034FC20A25D9800880AEC /* alien_25_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_25_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_25_1_audio.mp3; sourceTree = "<group>"; };
+		498034FD20A25D9800880AEC /* alien_28_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_28_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_28_1_audio.mp3; sourceTree = "<group>"; };
+		498034FE20A25D9800880AEC /* alien_29_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_29_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_29_3_audio.mp3; sourceTree = "<group>"; };
+		498034FF20A25D9900880AEC /* alien_12_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_12_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_12_1_audio.mp3; sourceTree = "<group>"; };
+		4980350020A25D9900880AEC /* alien_31_4_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_31_4_audio.mp3; path = ../android/app/src/main/res/raw/alien_31_4_audio.mp3; sourceTree = "<group>"; };
+		4980350120A25D9900880AEC /* alien_18_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_18_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_18_3_audio.mp3; sourceTree = "<group>"; };
+		4980350220A25D9A00880AEC /* alien_4_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_4_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_4_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350320A25D9B00880AEC /* alien_7_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_7_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_7_1_audio.mp3; sourceTree = "<group>"; };
+		4980350420A25D9B00880AEC /* alien_26_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_26_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_26_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350520A25D9C00880AEC /* alien_2_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_2_3_audio.mp3; path = ../android/app/src/main/res/raw/alien_2_3_audio.mp3; sourceTree = "<group>"; };
+		4980350620A25D9C00880AEC /* alien_14_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_14_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_14_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350720A25D9C00880AEC /* alien_13_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_13_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_13_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350820A25D9D00880AEC /* alien_15_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_15_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_15_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350920A25D9D00880AEC /* alien_17_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_17_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_17_1_audio.mp3; sourceTree = "<group>"; };
+		4980350A20A25D9D00880AEC /* alien_29_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_29_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_29_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350B20A25D9E00880AEC /* alien_1_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_1_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_1_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350C20A25D9E00880AEC /* alien_23_1_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_23_1_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_23_1_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350D20A25D9E00880AEC /* alien_21_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_21_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_21_3_soundeffect.mp3; sourceTree = "<group>"; };
+		4980350E20A25D9F00880AEC /* alien_6_1_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_6_1_audio.mp3; path = ../android/app/src/main/res/raw/alien_6_1_audio.mp3; sourceTree = "<group>"; };
+		4980350F20A25D9F00880AEC /* alien_12_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_12_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_12_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980351020A25DA000880AEC /* alien_8_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_8_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_8_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980351120A25DA000880AEC /* alien_20_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_20_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_20_2_soundeffect.mp3; sourceTree = "<group>"; };
+		4980351220A25DA000880AEC /* alien_4_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_4_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_4_2_soundeffect.mp3; sourceTree = "<group>"; };
 		49E0A8011FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seacreature_start_soundeffect.mp3; path = ../android/app/src/main/res/raw/seacreature_start_soundeffect.mp3; sourceTree = "<group>"; };
 		49FC2AFC1FBF8798008E2EBF /* seacreature_11_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = seacreature_11_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/seacreature_11_2_soundeffect.mp3; sourceTree = "<group>"; };
 		49FC2AFD1FBF8798008E2EBF /* monster_27_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = monster_27_3_audio.mp3; path = ../android/app/src/main/res/raw/monster_27_3_audio.mp3; sourceTree = "<group>"; };
@@ -1223,6 +1613,201 @@
 		F2C75C046D6648259F37D554 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				498034A420A25D6B00880AEC /* alien_1_1_audio.mp3 */,
+				498034E920A25D9000880AEC /* alien_1_1_soundeffect.mp3 */,
+				498034D420A25D8000880AEC /* alien_1_2_audio.mp3 */,
+				4980347820A25D5C00880AEC /* alien_1_2_soundeffect.mp3 */,
+				498034F520A25D9400880AEC /* alien_1_3_audio.mp3 */,
+				4980350B20A25D9E00880AEC /* alien_1_3_soundeffect.mp3 */,
+				4980348F20A25D6400880AEC /* alien_2_1_audio.mp3 */,
+				498034EF20A25D9200880AEC /* alien_2_1_soundeffect.mp3 */,
+				498034C220A25D7500880AEC /* alien_2_2_audio.mp3 */,
+				4980345E20A25D5200880AEC /* alien_2_2_soundeffect.mp3 */,
+				4980350520A25D9C00880AEC /* alien_2_3_audio.mp3 */,
+				4980347920A25D5C00880AEC /* alien_3_1_audio.mp3 */,
+				4980349720A25D6700880AEC /* alien_3_1_soundeffect.mp3 */,
+				4980345D20A25D5100880AEC /* alien_3_2_audio.mp3 */,
+				498034FB20A25D9700880AEC /* alien_3_2_soundeffect.mp3 */,
+				4980348020A25D5F00880AEC /* alien_3_3_audio.mp3 */,
+				498034E820A25D8D00880AEC /* alien_3_4_audio.mp3 */,
+				4980346E20A25D5800880AEC /* alien_4_1_audio.mp3 */,
+				498034DE20A25D8400880AEC /* alien_4_1_soundeffect.mp3 */,
+				498034DA20A25D8300880AEC /* alien_4_2_audio.mp3 */,
+				4980351220A25DA000880AEC /* alien_4_2_soundeffect.mp3 */,
+				4980345B20A25D5100880AEC /* alien_4_3_audio.mp3 */,
+				4980350220A25D9A00880AEC /* alien_4_3_soundeffect.mp3 */,
+				498034ED20A25D9200880AEC /* alien_5_1_audio.mp3 */,
+				498034D220A25D7E00880AEC /* alien_5_1_soundeffect.mp3 */,
+				4980348A20A25D6300880AEC /* alien_5_2_audio.mp3 */,
+				4980345320A25D4D00880AEC /* alien_5_2_soundeffect.mp3 */,
+				4980345F20A25D5200880AEC /* alien_5_3_audio.mp3 */,
+				4980350E20A25D9F00880AEC /* alien_6_1_audio.mp3 */,
+				4980348920A25D6200880AEC /* alien_6_1_soundeffect.mp3 */,
+				4980346720A25D5500880AEC /* alien_6_2_audio.mp3 */,
+				498034F220A25D9300880AEC /* alien_6_2_soundeffect.mp3 */,
+				4980346420A25D5500880AEC /* alien_6_3_audio.mp3 */,
+				4980349820A25D6700880AEC /* alien_6_3_soundeffect.mp3 */,
+				4980350320A25D9B00880AEC /* alien_7_1_audio.mp3 */,
+				4980347C20A25D5D00880AEC /* alien_7_1_soundeffect.mp3 */,
+				498034D820A25D8200880AEC /* alien_7_2_audio.mp3 */,
+				4980349320A25D6500880AEC /* alien_7_2_soundeffect.mp3 */,
+				4980348420A25D6100880AEC /* alien_7_3_audio.mp3 */,
+				498034C320A25D7500880AEC /* alien_8_1_audio.mp3 */,
+				4980347D20A25D5E00880AEC /* alien_8_1_soundeffect.mp3 */,
+				498034C420A25D7600880AEC /* alien_8_2_audio.mp3 */,
+				4980351020A25DA000880AEC /* alien_8_2_soundeffect.mp3 */,
+				498034F920A25D9600880AEC /* alien_8_3_audio.mp3 */,
+				4980345620A25D4F00880AEC /* alien_9_1_audio.mp3 */,
+				4980348520A25D6100880AEC /* alien_9_1_soundeffect.mp3 */,
+				498034AD20A25D6E00880AEC /* alien_9_2_audio.mp3 */,
+				498034EC20A25D9100880AEC /* alien_9_2_soundeffect.mp3 */,
+				4980348120A25D5F00880AEC /* alien_9_3_audio.mp3 */,
+				498034DF20A25D8500880AEC /* alien_9_3_soundeffect.mp3 */,
+				498034D920A25D8200880AEC /* alien_10_1_audio.mp3 */,
+				498034A020A25D6900880AEC /* alien_10_1_soundeffect.mp3 */,
+				4980346020A25D5300880AEC /* alien_10_2_audio.mp3 */,
+				498034CF20A25D7D00880AEC /* alien_10_2_soundeffect.mp3 */,
+				4980347220A25D5A00880AEC /* alien_10_3_audio.mp3 */,
+				498034CE20A25D7C00880AEC /* alien_11_1_audio.mp3 */,
+				4980349420A25D6600880AEC /* alien_11_1_soundeffect.mp3 */,
+				498034D520A25D8100880AEC /* alien_11_2_audio.mp3 */,
+				498034B920A25D7200880AEC /* alien_11_2_soundeffect.mp3 */,
+				498034FA20A25D9700880AEC /* alien_11_3_audio.mp3 */,
+				498034FF20A25D9900880AEC /* alien_12_1_audio.mp3 */,
+				498034B820A25D7100880AEC /* alien_12_1_soundeffect.mp3 */,
+				4980347020A25D5800880AEC /* alien_12_2_audio.mp3 */,
+				4980350F20A25D9F00880AEC /* alien_12_2_soundeffect.mp3 */,
+				4980348620A25D6100880AEC /* alien_12_3_audio.mp3 */,
+				4980348B20A25D6300880AEC /* alien_13_1_audio.mp3 */,
+				4980350720A25D9C00880AEC /* alien_13_1_soundeffect.mp3 */,
+				4980345C20A25D5100880AEC /* alien_13_2_audio.mp3 */,
+				498034CA20A25D7900880AEC /* alien_13_2_soundeffect.mp3 */,
+				4980346F20A25D5800880AEC /* alien_13_3_audio.mp3 */,
+				498034E220A25D8B00880AEC /* alien_14_1_audio.mp3 */,
+				4980348820A25D6200880AEC /* alien_14_1_soundeffect.mp3 */,
+				498034A520A25D6B00880AEC /* alien_14_2_audio.mp3 */,
+				4980350620A25D9C00880AEC /* alien_14_2_soundeffect.mp3 */,
+				498034E320A25D8C00880AEC /* alien_14_3_audio.mp3 */,
+				498034C120A25D7400880AEC /* alien_15_1_audio.mp3 */,
+				4980350820A25D9D00880AEC /* alien_15_1_soundeffect.mp3 */,
+				498034C520A25D7600880AEC /* alien_15_2_audio.mp3 */,
+				4980349A20A25D6800880AEC /* alien_15_2_soundeffect.mp3 */,
+				498034A120A25D6A00880AEC /* alien_15_3_audio.mp3 */,
+				4980345220A25D4D00880AEC /* alien_15_3_soundeffect.mp3 */,
+				4980345420A25D4E00880AEC /* alien_16_1_audio.mp3 */,
+				498034A720A25D6C00880AEC /* alien_16_1_soundeffect.mp3 */,
+				4980348C20A25D6300880AEC /* alien_16_2_audio.mp3 */,
+				4980347120A25D5900880AEC /* alien_16_2_soundeffect.mp3 */,
+				498034C820A25D7700880AEC /* alien_16_3_audio.mp3 */,
+				4980349D20A25D6900880AEC /* alien_16_3_soundeffect.mp3 */,
+				4980348320A25D6000880AEC /* alien_16_4_audio.mp3 */,
+				4980350920A25D9D00880AEC /* alien_17_1_audio.mp3 */,
+				498034E120A25D8B00880AEC /* alien_17_1_soundeffect.mp3 */,
+				4980345520A25D4E00880AEC /* alien_17_2_audio.mp3 */,
+				498034B420A25D7000880AEC /* alien_17_2_soundeffect.mp3 */,
+				4980349F20A25D6900880AEC /* alien_17_3_audio.mp3 */,
+				498034B120A25D6F00880AEC /* alien_17_3_soundeffect.mp3 */,
+				4980347420A25D5A00880AEC /* alien_17_4_audio.mp3 */,
+				4980349120A25D6500880AEC /* alien_18_1_audio.mp3 */,
+				498034AF20A25D6E00880AEC /* alien_18_1_soundeffect.mp3 */,
+				498034C620A25D7600880AEC /* alien_18_2_audio.mp3 */,
+				498034BE20A25D7300880AEC /* alien_18_2_soundeffect.mp3 */,
+				4980350120A25D9900880AEC /* alien_18_3_audio.mp3 */,
+				498034A620A25D6B00880AEC /* alien_18_3_soundeffect.mp3 */,
+				4980349520A25D6600880AEC /* alien_18_4_audio.mp3 */,
+				4980346820A25D5600880AEC /* alien_19_1_audio.mp3 */,
+				498034E420A25D8C00880AEC /* alien_19_1_soundeffect.mp3 */,
+				498034CC20A25D7A00880AEC /* alien_19_2_audio.mp3 */,
+				498034A920A25D6C00880AEC /* alien_19_2_soundeffect.mp3 */,
+				4980346D20A25D5700880AEC /* alien_19_3_audio.mp3 */,
+				4980346620A25D5500880AEC /* alien_19_3_soundeffect.mp3 */,
+				4980347E20A25D5E00880AEC /* alien_19_4_audio.mp3 */,
+				498034BA20A25D7200880AEC /* alien_20_1_audio.mp3 */,
+				4980347320A25D5A00880AEC /* alien_20_1_soundeffect.mp3 */,
+				498034A320A25D6A00880AEC /* alien_20_2_audio.mp3 */,
+				4980351120A25DA000880AEC /* alien_20_2_soundeffect.mp3 */,
+				498034F020A25D9300880AEC /* alien_20_3_audio.mp3 */,
+				498034AE20A25D6E00880AEC /* alien_20_3_soundeffect.mp3 */,
+				498034B520A25D7000880AEC /* alien_20_4_audio.mp3 */,
+				498034DB20A25D8300880AEC /* alien_21_1_audio.mp3 */,
+				498034EA20A25D9000880AEC /* alien_21_1_soundeffect.mp3 */,
+				498034B020A25D6F00880AEC /* alien_21_2_audio.mp3 */,
+				498034AA20A25D6D00880AEC /* alien_21_2_soundeffect.mp3 */,
+				4980346220A25D5400880AEC /* alien_21_3_audio.mp3 */,
+				4980350D20A25D9E00880AEC /* alien_21_3_soundeffect.mp3 */,
+				498034C720A25D7700880AEC /* alien_21_4_audio.mp3 */,
+				4980346320A25D5400880AEC /* alien_22_1_audio.mp3 */,
+				498034F820A25D9600880AEC /* alien_22_1_soundeffect.mp3 */,
+				4980349020A25D6400880AEC /* alien_22_2_audio.mp3 */,
+				4980342D20A25D4C00880AEC /* alien_22_2_soundeffect.mp3 */,
+				498034A820A25D6C00880AEC /* alien_22_3_audio.mp3 */,
+				4980346A20A25D5600880AEC /* alien_22_4_audio.mp3 */,
+				498034BB20A25D7200880AEC /* alien_23_1_audio.mp3 */,
+				4980350C20A25D9E00880AEC /* alien_23_1_soundeffect.mp3 */,
+				498034F120A25D9300880AEC /* alien_23_2_audio.mp3 */,
+				498034F620A25D9500880AEC /* alien_23_2_soundeffect.mp3 */,
+				498034C020A25D7400880AEC /* alien_23_3_audio.mp3 */,
+				498034E520A25D8C00880AEC /* alien_23_3_soundeffect.mp3 */,
+				4980349E20A25D6900880AEC /* alien_23_4_audio.mp3 */,
+				498034A220A25D6A00880AEC /* alien_24_1_audio.mp3 */,
+				4980349920A25D6700880AEC /* alien_24_1_soundeffect.mp3 */,
+				498034EB20A25D9000880AEC /* alien_24_2_audio.mp3 */,
+				4980345120A25D4C00880AEC /* alien_24_2_soundeffect.mp3 */,
+				498034CD20A25D7B00880AEC /* alien_24_3_audio.mp3 */,
+				498034D020A25D7D00880AEC /* alien_24_3_soundeffect.mp3 */,
+				4980347F20A25D5E00880AEC /* alien_24_4_audio.mp3 */,
+				498034FC20A25D9800880AEC /* alien_25_1_audio.mp3 */,
+				498034DD20A25D8400880AEC /* alien_25_1_soundeffect.mp3 */,
+				4980345720A25D4F00880AEC /* alien_25_2_audio.mp3 */,
+				4980347620A25D5B00880AEC /* alien_25_2_soundeffect.mp3 */,
+				4980346B20A25D5700880AEC /* alien_25_3_audio.mp3 */,
+				4980346C20A25D5700880AEC /* alien_25_3_soundeffect.mp3 */,
+				4980348D20A25D6300880AEC /* alien_25_4_audio.mp3 */,
+				4980345820A25D4F00880AEC /* alien_26_1_audio.mp3 */,
+				4980350420A25D9B00880AEC /* alien_26_1_soundeffect.mp3 */,
+				498034E020A25D8A00880AEC /* alien_26_2_audio.mp3 */,
+				4980347A20A25D5D00880AEC /* alien_26_2_soundeffect.mp3 */,
+				4980346920A25D5600880AEC /* alien_26_3_audio.mp3 */,
+				498034F720A25D9500880AEC /* alien_26_4_audio.mp3 */,
+				498034E720A25D8D00880AEC /* alien_27_1_audio.mp3 */,
+				498034EE20A25D9200880AEC /* alien_27_1_soundeffect.mp3 */,
+				4980347B20A25D5D00880AEC /* alien_27_2_audio.mp3 */,
+				498034C920A25D7800880AEC /* alien_27_2_soundeffect.mp3 */,
+				4980346120A25D5300880AEC /* alien_27_3_audio.mp3 */,
+				498034D720A25D8100880AEC /* alien_27_3_soundeffect.mp3 */,
+				498034F420A25D9400880AEC /* alien_27_4_audio.mp3 */,
+				498034FD20A25D9800880AEC /* alien_28_1_audio.mp3 */,
+				498034D620A25D8100880AEC /* alien_28_1_soundeffect.mp3 */,
+				498034E620A25D8D00880AEC /* alien_28_2_audio.mp3 */,
+				498034B320A25D6F00880AEC /* alien_28_2_soundeffect.mp3 */,
+				498034D320A25D7E00880AEC /* alien_28_3_audio.mp3 */,
+				4980347520A25D5B00880AEC /* alien_28_3_soundeffect.mp3 */,
+				4980348E20A25D6400880AEC /* alien_28_4_audio.mp3 */,
+				4980349620A25D6600880AEC /* alien_29_1_audio.mp3 */,
+				4980350A20A25D9D00880AEC /* alien_29_1_soundeffect.mp3 */,
+				4980349220A25D6500880AEC /* alien_29_2_audio.mp3 */,
+				498034CB20A25D7A00880AEC /* alien_29_2_soundeffect.mp3 */,
+				498034FE20A25D9800880AEC /* alien_29_3_audio.mp3 */,
+				498034BF20A25D7400880AEC /* alien_29_3_soundeffect.mp3 */,
+				4980345A20A25D5000880AEC /* alien_29_4_audio.mp3 */,
+				498034AB20A25D6D00880AEC /* alien_30_1_audio.mp3 */,
+				4980347720A25D5C00880AEC /* alien_30_1_soundeffect.mp3 */,
+				498034F320A25D9400880AEC /* alien_30_2_audio.mp3 */,
+				4980346520A25D5500880AEC /* alien_30_2_soundeffect.mp3 */,
+				498034DC20A25D8400880AEC /* alien_30_3_audio.mp3 */,
+				4980345920A25D5000880AEC /* alien_30_3_soundeffect.mp3 */,
+				4980349B20A25D6800880AEC /* alien_30_4_audio.mp3 */,
+				4980348220A25D5F00880AEC /* alien_31_1_audio.mp3 */,
+				498034B220A25D6F00880AEC /* alien_31_1_soundeffect.mp3 */,
+				498034AC20A25D6D00880AEC /* alien_31_2_audio.mp3 */,
+				4980349C20A25D6800880AEC /* alien_31_2_soundeffect.mp3 */,
+				498034B620A25D7100880AEC /* alien_31_3_audio.mp3 */,
+				498034BD20A25D7300880AEC /* alien_31_3_soundeffect.mp3 */,
+				4980350020A25D9900880AEC /* alien_31_4_audio.mp3 */,
+				498034B720A25D7100880AEC /* alien_end_audio.mp3 */,
+				498034BC20A25D7300880AEC /* alien_intro_audio.mp3 */,
+				498034D120A25D7D00880AEC /* alien_title_1_soundeffect.mp3 */,
+				4980348720A25D6200880AEC /* alien_title_2_soundeffect.mp3 */,
 				49E0A8011FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 */,
 				49FC2B0E1FBF879A008E2EBF /* monster_1_1_audio.mp3 */,
 				49FC2B2E1FBF879E008E2EBF /* monster_1_1_soundeffect.mp3 */,
@@ -1933,29 +2518,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				49FC2D181FBF87C1008E2EBF /* seacreature_5_3_audio.mp3 in Resources */,
+				498035CC20A25DA100880AEC /* alien_17_1_audio.mp3 in Resources */,
 				49FC2D1D1FBF87C1008E2EBF /* monster_15_1_audio.mp3 in Resources */,
 				49FC2CCA1FBF87C1008E2EBF /* seacreature_29_2_audio.mp3 in Resources */,
 				49FC2D271FBF87C1008E2EBF /* monster_2_1_soundeffect.mp3 in Resources */,
+				4980354920A25DA100880AEC /* alien_12_3_audio.mp3 in Resources */,
 				49FC2D8A1FBF87C1008E2EBF /* monster_7_3_audio.mp3 in Resources */,
 				49FC2D121FBF87C1008E2EBF /* monster_29_1_soundeffect.mp3 in Resources */,
 				49FC2D7F1FBF87C1008E2EBF /* monster_5_2_audio.mp3 in Resources */,
 				49FC2C981FBF87C1008E2EBF /* seacreature_30_2_audio.mp3 in Resources */,
 				49FC2CE01FBF87C1008E2EBF /* seacreature_23_2_soundeffect.mp3 in Resources */,
 				49FC2D501FBF87C1008E2EBF /* seacreature_27_5_audio.mp3 in Resources */,
+				4980351520A25DA100880AEC /* alien_15_3_soundeffect.mp3 in Resources */,
 				49FC2D861FBF87C1008E2EBF /* monster_17_2_audio.mp3 in Resources */,
+				4980358020A25DA100880AEC /* alien_31_3_soundeffect.mp3 in Resources */,
+				498035C320A25DA100880AEC /* alien_31_4_audio.mp3 in Resources */,
 				49FC2D601FBF87C1008E2EBF /* monster_1_3_audio.mp3 in Resources */,
 				49FC2CEB1FBF87C1008E2EBF /* seacreature_14_1_soundeffect.mp3 in Resources */,
 				49FC2D771FBF87C1008E2EBF /* monster_4_3_audio.mp3 in Resources */,
 				49FC2D611FBF87C1008E2EBF /* monster_10_2_audio.mp3 in Resources */,
 				49FC2D791FBF87C1008E2EBF /* seacreature_16_1_soundeffect.mp3 in Resources */,
+				4980357C20A25DA100880AEC /* alien_11_2_soundeffect.mp3 in Resources */,
 				49FC2C8E1FBF87C1008E2EBF /* seacreature_8_2_audio.mp3 in Resources */,
+				4980352120A25DA100880AEC /* alien_2_2_soundeffect.mp3 in Resources */,
+				498035D120A25DA100880AEC /* alien_6_1_audio.mp3 in Resources */,
+				4980351820A25DA100880AEC /* alien_17_2_audio.mp3 in Resources */,
+				4980355F20A25DA100880AEC /* alien_31_2_soundeffect.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				49FC2C931FBF87C1008E2EBF /* monster_3_3_audio.mp3 in Resources */,
+				4980352D20A25DA100880AEC /* alien_22_4_audio.mp3 in Resources */,
 				49FC2D6C1FBF87C1008E2EBF /* seacreature_27_4_audio.mp3 in Resources */,
+				4980356F20A25DA100880AEC /* alien_31_2_audio.mp3 in Resources */,
 				49FC2C711FBF87C1008E2EBF /* monster_22_2_audio.mp3 in Resources */,
+				4980359E20A25DA100880AEC /* alien_21_1_audio.mp3 in Resources */,
+				4980352920A25DA100880AEC /* alien_19_3_soundeffect.mp3 in Resources */,
 				49FC2C921FBF87C1008E2EBF /* seacreature_31_5_audio.mp3 in Resources */,
 				49FC2D461FBF87C1008E2EBF /* monster_13_3_audio.mp3 in Resources */,
 				49FC2D3A1FBF87C1008E2EBF /* monster_26_3_audio.mp3 in Resources */,
+				498035C720A25DA100880AEC /* alien_26_1_soundeffect.mp3 in Resources */,
+				4980357120A25DA100880AEC /* alien_20_3_soundeffect.mp3 in Resources */,
+				498035CE20A25DA100880AEC /* alien_1_3_soundeffect.mp3 in Resources */,
 				49FC2CE61FBF87C1008E2EBF /* seacreature_4_3_audio.mp3 in Resources */,
 				49FC2D031FBF87C1008E2EBF /* monster_12_2_soundeffect.mp3 in Resources */,
 				49FC2C491FBF87C1008E2EBF /* monster_27_3_audio.mp3 in Resources */,
@@ -1964,44 +2566,70 @@
 				49FC2D711FBF87C1008E2EBF /* monster_26_1_audio.mp3 in Resources */,
 				49FC2D4F1FBF87C1008E2EBF /* seacreature_26_1_soundeffect.mp3 in Resources */,
 				49FC2D7C1FBF87C1008E2EBF /* monster_18_1_audio.mp3 in Resources */,
+				498035C520A25DA100880AEC /* alien_4_3_soundeffect.mp3 in Resources */,
+				4980354420A25DA100880AEC /* alien_9_3_audio.mp3 in Resources */,
+				4980353E20A25DA100880AEC /* alien_27_2_audio.mp3 in Resources */,
 				49FC2D8C1FBF87C1008E2EBF /* monster_17_2_soundeffect.mp3 in Resources */,
 				49FC2CAB1FBF87C1008E2EBF /* monster_25_2_audio.mp3 in Resources */,
 				49FC2CBC1FBF87C1008E2EBF /* seacreature_24_1_audio.mp3 in Resources */,
 				49FC2CAC1FBF87C1008E2EBF /* monster_21_2_soundeffect.mp3 in Resources */,
 				49FC2D6E1FBF87C1008E2EBF /* monster_19_2_soundeffect.mp3 in Resources */,
+				4980352420A25DA100880AEC /* alien_27_3_audio.mp3 in Resources */,
+				498035A820A25DA100880AEC /* alien_23_3_soundeffect.mp3 in Resources */,
 				49FC2D0F1FBF87C1008E2EBF /* seacreature_23_1_soundeffect.mp3 in Resources */,
 				49FC2CCF1FBF87C1008E2EBF /* seacreature_22_3_audio.mp3 in Resources */,
+				498035B320A25DA100880AEC /* alien_20_3_audio.mp3 in Resources */,
 				49FC2C5A1FBF87C1008E2EBF /* monster_1_1_audio.mp3 in Resources */,
+				498035AA20A25DA100880AEC /* alien_27_1_audio.mp3 in Resources */,
 				49FC2D161FBF87C1008E2EBF /* seacreature_23_2_audio.mp3 in Resources */,
 				49FC2D471FBF87C1008E2EBF /* seacreature_4_1_audio.mp3 in Resources */,
+				4980353B20A25DA100880AEC /* alien_1_2_soundeffect.mp3 in Resources */,
 				49FC2CB51FBF87C1008E2EBF /* seacreature_3_1_soundeffect.mp3 in Resources */,
 				49FC2C821FBF87C1008E2EBF /* seacreature_9_3_audio.mp3 in Resources */,
+				4980352B20A25DA100880AEC /* alien_19_1_audio.mp3 in Resources */,
 				49FC2CD51FBF87C1008E2EBF /* monster_9_1_audio.mp3 in Resources */,
 				49FC2C7F1FBF87C1008E2EBF /* monster_8_3_audio.mp3 in Resources */,
+				4980358220A25DA100880AEC /* alien_29_3_soundeffect.mp3 in Resources */,
+				4980356C20A25DA100880AEC /* alien_19_2_soundeffect.mp3 in Resources */,
+				4980358B20A25DA100880AEC /* alien_16_3_audio.mp3 in Resources */,
+				4980357A20A25DA100880AEC /* alien_end_audio.mp3 in Resources */,
 				49FC2C5C1FBF87C1008E2EBF /* monster_23_3_audio.mp3 in Resources */,
+				498035B120A25DA100880AEC /* alien_27_1_soundeffect.mp3 in Resources */,
 				49FC2C651FBF87C1008E2EBF /* monster_21_2_audio.mp3 in Resources */,
+				4980354720A25DA100880AEC /* alien_7_3_audio.mp3 in Resources */,
+				498035BF20A25DA100880AEC /* alien_25_1_audio.mp3 in Resources */,
 				49FC2C5D1FBF87C1008E2EBF /* seacreature_31_2_soundeffect.mp3 in Resources */,
 				49FC2CC01FBF87C1008E2EBF /* monster_22_2_soundeffect.mp3 in Resources */,
+				4980359920A25DA100880AEC /* alien_28_1_soundeffect.mp3 in Resources */,
 				49FC2D1B1FBF87C1008E2EBF /* seacreature_20_3_audio.mp3 in Resources */,
 				49FC2C4F1FBF87C1008E2EBF /* monster_30_3_audio.mp3 in Resources */,
 				49FC2D441FBF87C1008E2EBF /* monster_12_3_audio.mp3 in Resources */,
 				49FC2CF21FBF87C1008E2EBF /* monster_31_2_soundeffect.mp3 in Resources */,
+				4980358720A25DA100880AEC /* alien_8_2_audio.mp3 in Resources */,
+				498035B520A25DA100880AEC /* alien_6_2_soundeffect.mp3 in Resources */,
 				49FC2CEC1FBF87C1008E2EBF /* seacreature_12_3_audio.mp3 in Resources */,
 				49FC2C771FBF87C1008E2EBF /* monster_29_2_soundeffect.mp3 in Resources */,
+				498035D420A25DA100880AEC /* alien_20_2_soundeffect.mp3 in Resources */,
 				49FC2CF51FBF87C1008E2EBF /* seacreature_27_1_soundeffect.mp3 in Resources */,
 				49FC2D351FBF87C1008E2EBF /* monster_11_2_soundeffect.mp3 in Resources */,
 				49FC2D2A1FBF87C1008E2EBF /* monster_22_1_audio.mp3 in Resources */,
+				4980358D20A25DA100880AEC /* alien_13_2_soundeffect.mp3 in Resources */,
+				4980351F20A25DA100880AEC /* alien_13_2_audio.mp3 in Resources */,
 				49FC2C4B1FBF87C1008E2EBF /* monster_4_1_soundeffect.mp3 in Resources */,
 				49FC2D6B1FBF87C1008E2EBF /* seacreature_22_2_audio.mp3 in Resources */,
 				49FC2C831FBF87C1008E2EBF /* seacreature_28_1_soundeffect.mp3 in Resources */,
 				49FC2CF11FBF87C1008E2EBF /* seacreature_17_2_soundeffect.mp3 in Resources */,
 				49FC2C891FBF87C1008E2EBF /* seacreature_20_2_soundeffect.mp3 in Resources */,
+				4980359520A25DA100880AEC /* alien_5_1_soundeffect.mp3 in Resources */,
 				49FC2C4A1FBF87C1008E2EBF /* seacreature_6_1_soundeffect.mp3 in Resources */,
 				49FC2CB21FBF87C1008E2EBF /* seacreature_18_3_audio.mp3 in Resources */,
+				4980355120A25DA100880AEC /* alien_28_4_audio.mp3 in Resources */,
 				49FC2CF61FBF87C1008E2EBF /* seacreature_18_2_audio.mp3 in Resources */,
+				4980358820A25DA100880AEC /* alien_15_2_audio.mp3 in Resources */,
 				49FC2CEF1FBF87C1008E2EBF /* seacreature_19_4_audio.mp3 in Resources */,
 				49FC2CC91FBF87C1008E2EBF /* monster_28_2_audio.mp3 in Resources */,
 				49FC2D091FBF87C1008E2EBF /* monster_24_5_audio.mp3 in Resources */,
+				4980351B20A25DA100880AEC /* alien_26_1_audio.mp3 in Resources */,
 				49FC2CAE1FBF87C1008E2EBF /* seacreature_19_2_audio.mp3 in Resources */,
 				49FC2CA11FBF87C1008E2EBF /* monster_23_2_soundeffect.mp3 in Resources */,
 				49FC2CD11FBF87C1008E2EBF /* seacreature_16_3_audio.mp3 in Resources */,
@@ -2010,31 +2638,64 @@
 				49FC2CFE1FBF87C1008E2EBF /* monster_19_4_audio.mp3 in Resources */,
 				49FC2D2B1FBF87C1008E2EBF /* seacreature_18_2_soundeffect.mp3 in Resources */,
 				49FC2D261FBF87C1008E2EBF /* seacreature_18_1_soundeffect.mp3 in Resources */,
+				4980352F20A25DA100880AEC /* alien_25_3_soundeffect.mp3 in Resources */,
 				49FC2C7A1FBF87C1008E2EBF /* monster_1_1_soundeffect.mp3 in Resources */,
 				49FC2D931FBF87C1008E2EBF /* seacreature_10_1_soundeffect.mp3 in Resources */,
+				4980354A20A25DA100880AEC /* alien_title_2_soundeffect.mp3 in Resources */,
 				49FC2C9E1FBF87C1008E2EBF /* seacreature_6_3_audio.mp3 in Resources */,
 				49FC2D811FBF87C1008E2EBF /* monster_3_1_soundeffect.mp3 in Resources */,
+				4980355320A25DA100880AEC /* alien_22_2_audio.mp3 in Resources */,
+				498035C120A25DA100880AEC /* alien_29_3_audio.mp3 in Resources */,
+				4980353D20A25DA100880AEC /* alien_26_2_soundeffect.mp3 in Resources */,
+				4980358120A25DA100880AEC /* alien_18_2_soundeffect.mp3 in Resources */,
+				4980353A20A25DA100880AEC /* alien_30_1_soundeffect.mp3 in Resources */,
+				4980352020A25DA100880AEC /* alien_3_2_audio.mp3 in Resources */,
 				49FC2D1A1FBF87C1008E2EBF /* monster_17_1_soundeffect.mp3 in Resources */,
 				49FC2D5D1FBF87C1008E2EBF /* seacreature_24_4_audio.mp3 in Resources */,
 				49FC2D621FBF87C1008E2EBF /* monster_26_4_audio.mp3 in Resources */,
+				498035B620A25DA100880AEC /* alien_30_2_audio.mp3 in Resources */,
+				4980359820A25DA100880AEC /* alien_11_2_audio.mp3 in Resources */,
+				4980358520A25DA100880AEC /* alien_2_2_audio.mp3 in Resources */,
 				49FC2D7A1FBF87C1008E2EBF /* monster_19_2_audio.mp3 in Resources */,
+				4980354F20A25DA100880AEC /* alien_16_2_audio.mp3 in Resources */,
 				49FC2CEA1FBF87C1008E2EBF /* seacreature_1_2_soundeffect.mp3 in Resources */,
+				4980354020A25DA100880AEC /* alien_8_1_soundeffect.mp3 in Resources */,
+				4980351920A25DA100880AEC /* alien_9_1_audio.mp3 in Resources */,
 				49FC2CFA1FBF87C1008E2EBF /* seacreature_22_1_audio.mp3 in Resources */,
 				49FC2D061FBF87C1008E2EBF /* monster_18_1_soundeffect.mp3 in Resources */,
 				49FC2C6B1FBF87C1008E2EBF /* seacreature_2_1_soundeffect.mp3 in Resources */,
 				49FC2DCF1FBF9D45008E2EBF /* choosicles_logo.png in Resources */,
 				49FC2CBE1FBF87C1008E2EBF /* seacreature_11_3_audio.mp3 in Resources */,
+				4980359D20A25DA100880AEC /* alien_4_2_audio.mp3 in Resources */,
 				49FC2CD91FBF87C1008E2EBF /* monster_9_2_audio.mp3 in Resources */,
+				498035BD20A25DA100880AEC /* alien_11_3_audio.mp3 in Resources */,
+				4980355520A25DA100880AEC /* alien_29_2_audio.mp3 in Resources */,
+				4980352820A25DA100880AEC /* alien_30_2_soundeffect.mp3 in Resources */,
 				49FC2CC41FBF87C1008E2EBF /* monster_5_3_audio.mp3 in Resources */,
 				49FC2C841FBF87C1008E2EBF /* seacreature_20_2_audio.mp3 in Resources */,
+				4980357720A25DA100880AEC /* alien_17_2_soundeffect.mp3 in Resources */,
+				4980359720A25DA100880AEC /* alien_1_2_audio.mp3 in Resources */,
 				49FC2D101FBF87C1008E2EBF /* seacreature_28_4_audio.mp3 in Resources */,
+				498035A220A25DA100880AEC /* alien_9_3_soundeffect.mp3 in Resources */,
+				4980353020A25DA100880AEC /* alien_19_3_audio.mp3 in Resources */,
+				4980354520A25DA100880AEC /* alien_31_1_audio.mp3 in Resources */,
 				49FC2CFD1FBF87C1008E2EBF /* monster_27_1_soundeffect.mp3 in Resources */,
+				4980352520A25DA100880AEC /* alien_21_3_audio.mp3 in Resources */,
+				4980354D20A25DA100880AEC /* alien_5_2_audio.mp3 in Resources */,
+				4980356320A25DA100880AEC /* alien_10_1_soundeffect.mp3 in Resources */,
 				49FC2D1C1FBF87C1008E2EBF /* seacreature_5_1_audio.mp3 in Resources */,
 				49FC2CC61FBF87C1008E2EBF /* monster_7_1_soundeffect.mp3 in Resources */,
+				4980355E20A25DA100880AEC /* alien_30_4_audio.mp3 in Resources */,
+				4980359320A25DA100880AEC /* alien_24_3_soundeffect.mp3 in Resources */,
 				49FC2DCD1FBF9CA1008E2EBF /* LaunchScreen.xib in Resources */,
+				498035B820A25DA100880AEC /* alien_1_3_audio.mp3 in Resources */,
+				498035D520A25DA100880AEC /* alien_4_2_soundeffect.mp3 in Resources */,
 				49FC2D081FBF87C1008E2EBF /* monster_7_2_soundeffect.mp3 in Resources */,
+				4980357820A25DA100880AEC /* alien_20_4_audio.mp3 in Resources */,
 				49FC2C521FBF87C1008E2EBF /* monster_28_1_audio.mp3 in Resources */,
 				49FC2D141FBF87C1008E2EBF /* seacreature_1_2_audio.mp3 in Resources */,
+				4980356B20A25DA100880AEC /* alien_22_3_audio.mp3 in Resources */,
+				4980356520A25DA100880AEC /* alien_24_1_audio.mp3 in Resources */,
 				49FC2CFF1FBF87C1008E2EBF /* monster_4_1_audio.mp3 in Resources */,
 				49FC2C8D1FBF87C1008E2EBF /* seacreature_14_1_audio.mp3 in Resources */,
 				49FC2D4C1FBF87C1008E2EBF /* monster_23_1_soundeffect.mp3 in Resources */,
@@ -2045,31 +2706,46 @@
 				49FC2D2C1FBF87C1008E2EBF /* monster_8_1_audio.mp3 in Resources */,
 				49FC2CCB1FBF87C1008E2EBF /* seacreature_27_2_audio.mp3 in Resources */,
 				49FC2CB31FBF87C1008E2EBF /* seacreature_30_1_audio.mp3 in Resources */,
+				4980357020A25DA100880AEC /* alien_9_2_audio.mp3 in Resources */,
 				49FC2CE51FBF87C1008E2EBF /* seacreature_28_2_audio.mp3 in Resources */,
+				4980356120A25DA100880AEC /* alien_23_4_audio.mp3 in Resources */,
 				49FC2CE11FBF87C1008E2EBF /* seacreature_8_1_soundeffect.mp3 in Resources */,
 				49FC2D521FBF87C1008E2EBF /* seacreature_9_1_soundeffect.mp3 in Resources */,
+				4980353920A25DA100880AEC /* alien_25_2_soundeffect.mp3 in Resources */,
+				498035BC20A25DA100880AEC /* alien_8_3_audio.mp3 in Resources */,
 				49FC2D0D1FBF87C1008E2EBF /* monster_14_3_audio.mp3 in Resources */,
+				4980355620A25DA100880AEC /* alien_7_2_soundeffect.mp3 in Resources */,
 				49FC2D451FBF87C1008E2EBF /* seacreature_1_3_audio.mp3 in Resources */,
 				49FC2D3C1FBF87C1008E2EBF /* monster_31_2_audio.mp3 in Resources */,
 				49FC2D301FBF87C1008E2EBF /* seacreature_2_3_audio.mp3 in Resources */,
+				498035C820A25DA100880AEC /* alien_2_3_audio.mp3 in Resources */,
+				4980357920A25DA100880AEC /* alien_31_3_audio.mp3 in Resources */,
+				4980351C20A25DA100880AEC /* alien_30_3_soundeffect.mp3 in Resources */,
 				49FC2D911FBF87C1008E2EBF /* monster_2_3_audio.mp3 in Resources */,
+				4980359B20A25DA100880AEC /* alien_7_2_audio.mp3 in Resources */,
 				49FC2D211FBF87C1008E2EBF /* seacreature_8_3_audio.mp3 in Resources */,
 				49FC2D801FBF87C1008E2EBF /* seacreature_31_4_audio.mp3 in Resources */,
+				4980353820A25DA100880AEC /* alien_28_3_soundeffect.mp3 in Resources */,
 				49FC2D041FBF87C1008E2EBF /* monster_30_1_audio.mp3 in Resources */,
+				4980359620A25DA100880AEC /* alien_28_3_audio.mp3 in Resources */,
 				49FC2CB91FBF87C1008E2EBF /* monster_10_1_soundeffect.mp3 in Resources */,
 				49FC2CE81FBF87C1008E2EBF /* seacreature_10_2_soundeffect.mp3 in Resources */,
 				49FC2D191FBF87C1008E2EBF /* seacreature_29_1_soundeffect.mp3 in Resources */,
+				4980355C20A25DA100880AEC /* alien_24_1_soundeffect.mp3 in Resources */,
 				49FC2D6D1FBF87C1008E2EBF /* seacreature_15_1_soundeffect.mp3 in Resources */,
 				49FC2D891FBF87C1008E2EBF /* monster_10_2_soundeffect.mp3 in Resources */,
 				49FC2C581FBF87C1008E2EBF /* monster_25_3_audio.mp3 in Resources */,
 				49FC2D651FBF87C1008E2EBF /* monster_16_1_soundeffect.mp3 in Resources */,
 				49FC2CB41FBF87C1008E2EBF /* monster_14_1_audio.mp3 in Resources */,
+				4980351320A25DA100880AEC /* alien_22_2_soundeffect.mp3 in Resources */,
+				4980358320A25DA100880AEC /* alien_23_3_audio.mp3 in Resources */,
 				49FC2D561FBF87C1008E2EBF /* seacreature_5_1_soundeffect.mp3 in Resources */,
 				49FC2C8A1FBF87C1008E2EBF /* seacreature_29_1_audio.mp3 in Resources */,
 				49FC2D381FBF87C1008E2EBF /* seacreature_31_2_audio.mp3 in Resources */,
 				49FC2CD31FBF87C1008E2EBF /* seacreature_11_1_audio.mp3 in Resources */,
 				49FC2C701FBF87C1008E2EBF /* seacreature_21_1_soundeffect.mp3 in Resources */,
 				49FC2D581FBF87C1008E2EBF /* seacreature_26_2_audio.mp3 in Resources */,
+				498035AE20A25DA100880AEC /* alien_24_2_audio.mp3 in Resources */,
 				49FC2CDC1FBF87C1008E2EBF /* seacreature_7_2_audio.mp3 in Resources */,
 				49FC2C801FBF87C1008E2EBF /* monster_25_4_audio.mp3 in Resources */,
 				49FC2D4B1FBF87C1008E2EBF /* monster_6_1_audio.mp3 in Resources */,
@@ -2080,18 +2756,27 @@
 				49FC2D6A1FBF87C1008E2EBF /* monster_25_1_soundeffect.mp3 in Resources */,
 				49FC2D401FBF87C1008E2EBF /* monster_31_3_audio.mp3 in Resources */,
 				49FC2D1F1FBF87C1008E2EBF /* monster_11_1_audio.mp3 in Resources */,
+				4980355220A25DA100880AEC /* alien_2_1_audio.mp3 in Resources */,
 				49FC2D591FBF87C1008E2EBF /* monster_16_2_audio.mp3 in Resources */,
+				4980352E20A25DA100880AEC /* alien_25_3_audio.mp3 in Resources */,
 				49FC2D5A1FBF87C1008E2EBF /* monster_30_4_audio.mp3 in Resources */,
 				49FC2C901FBF87C1008E2EBF /* monster_14_2_audio.mp3 in Resources */,
 				49FC2C951FBF87C1008E2EBF /* monster_28_2_soundeffect.mp3 in Resources */,
+				4980358620A25DA100880AEC /* alien_8_1_audio.mp3 in Resources */,
+				4980358A20A25DA100880AEC /* alien_21_4_audio.mp3 in Resources */,
 				49FC2D4D1FBF87C1008E2EBF /* monster_18_3_audio.mp3 in Resources */,
 				49FC2D531FBF87C1008E2EBF /* monster_25_5_audio.mp3 in Resources */,
 				49FC2CCE1FBF87C1008E2EBF /* seacreature_8_1_audio.mp3 in Resources */,
+				4980352320A25DA100880AEC /* alien_10_2_audio.mp3 in Resources */,
+				498035AF20A25DA100880AEC /* alien_9_2_soundeffect.mp3 in Resources */,
 				49FC2CC81FBF87C1008E2EBF /* seacreature_25_1_soundeffect.mp3 in Resources */,
+				4980358F20A25DA100880AEC /* alien_19_2_audio.mp3 in Resources */,
 				49FC2D2D1FBF87C1008E2EBF /* monster_10_3_audio.mp3 in Resources */,
 				49FC2D2E1FBF87C1008E2EBF /* monster_15_3_audio.mp3 in Resources */,
 				49FC2C811FBF87C1008E2EBF /* seacreature_23_4_audio.mp3 in Resources */,
+				498035A020A25DA100880AEC /* alien_25_1_soundeffect.mp3 in Resources */,
 				49FC2C641FBF87C1008E2EBF /* monster_7_1_audio.mp3 in Resources */,
+				498035BA20A25DA100880AEC /* alien_26_4_audio.mp3 in Resources */,
 				49FC2DD11FBF9EB8008E2EBF /* splash.png in Resources */,
 				49FC2D921FBF87C1008E2EBF /* seacreature_3_1_audio.mp3 in Resources */,
 				49FC2CAA1FBF87C1008E2EBF /* monster_16_4_audio.mp3 in Resources */,
@@ -2100,42 +2785,62 @@
 				49FC2C731FBF87C1008E2EBF /* seacreature_22_4_audio.mp3 in Resources */,
 				49FC2CA31FBF87C1008E2EBF /* monster_24_3_audio.mp3 in Resources */,
 				49FC2CED1FBF87C1008E2EBF /* seacreature_15_2_audio.mp3 in Resources */,
+				498035B420A25DA100880AEC /* alien_23_2_audio.mp3 in Resources */,
+				498035A420A25DA100880AEC /* alien_17_1_soundeffect.mp3 in Resources */,
 				49FC2C7C1FBF87C1008E2EBF /* monster_27_2_audio.mp3 in Resources */,
 				49FC2CBB1FBF87C1008E2EBF /* seacreature_8_2_soundeffect.mp3 in Resources */,
 				49FC2C6D1FBF87C1008E2EBF /* seacreature_13_3_audio.mp3 in Resources */,
+				498035CB20A25DA100880AEC /* alien_15_1_soundeffect.mp3 in Resources */,
 				49E0A8251FC0AA5900AB3C94 /* seacreature_start_soundeffect.mp3 in Resources */,
 				49FC2C481FBF87C1008E2EBF /* seacreature_11_2_soundeffect.mp3 in Resources */,
 				49FC2CDD1FBF87C1008E2EBF /* monster_8_2_audio.mp3 in Resources */,
 				49FC2CA91FBF87C1008E2EBF /* monster_5_1_soundeffect.mp3 in Resources */,
 				49FC2D421FBF87C1008E2EBF /* seacreature_7_1_audio.mp3 in Resources */,
+				4980359A20A25DA100880AEC /* alien_27_3_soundeffect.mp3 in Resources */,
 				49FC2CA01FBF87C1008E2EBF /* monster_2_2_audio.mp3 in Resources */,
 				49FC2C611FBF87C1008E2EBF /* monster_28_1_soundeffect.mp3 in Resources */,
 				49FC2C541FBF87C1008E2EBF /* monster_24_2_soundeffect.mp3 in Resources */,
+				498035A120A25DA100880AEC /* alien_4_1_soundeffect.mp3 in Resources */,
 				49FC2CE91FBF87C1008E2EBF /* monster_12_1_audio.mp3 in Resources */,
+				4980352220A25DA100880AEC /* alien_5_3_audio.mp3 in Resources */,
 				49FC2D511FBF87C1008E2EBF /* monster_14_4_audio.mp3 in Resources */,
 				49FC2D7B1FBF87C1008E2EBF /* monster_27_5_audio.mp3 in Resources */,
 				49FC2D171FBF87C1008E2EBF /* monster_16_1_audio.mp3 in Resources */,
+				4980351A20A25DA100880AEC /* alien_25_2_audio.mp3 in Resources */,
 				49FC2D0C1FBF87C1008E2EBF /* monster_18_2_audio.mp3 in Resources */,
 				49FC2D541FBF87C1008E2EBF /* monster_29_1_audio.mp3 in Resources */,
+				4980359420A25DA100880AEC /* alien_title_1_soundeffect.mp3 in Resources */,
 				49FC2D721FBF87C1008E2EBF /* seacreature_1_1_soundeffect.mp3 in Resources */,
 				49FC2CB01FBF87C1008E2EBF /* seacreature_7_1_soundeffect.mp3 in Resources */,
 				49FC2CA71FBF87C1008E2EBF /* monster_21_4_audio.mp3 in Resources */,
+				4980352C20A25DA100880AEC /* alien_26_3_audio.mp3 in Resources */,
+				4980358420A25DA100880AEC /* alien_15_1_audio.mp3 in Resources */,
 				49FC2C961FBF87C1008E2EBF /* monster_start_soundeffect.mp3 in Resources */,
+				4980359020A25DA100880AEC /* alien_24_3_audio.mp3 in Resources */,
 				49FC2C8B1FBF87C1008E2EBF /* seacreature_3_3_audio.mp3 in Resources */,
+				4980354620A25DA100880AEC /* alien_16_4_audio.mp3 in Resources */,
+				4980358C20A25DA100880AEC /* alien_27_2_soundeffect.mp3 in Resources */,
 				49FC2CC71FBF87C1008E2EBF /* monster_21_3_audio.mp3 in Resources */,
 				49FC2D681FBF87C1008E2EBF /* monster_28_4_audio.mp3 in Resources */,
 				49FC2C7E1FBF87C1008E2EBF /* monster_7_2_audio.mp3 in Resources */,
 				49FC2D431FBF87C1008E2EBF /* monster_end_audio.mp3 in Resources */,
+				498035B720A25DA100880AEC /* alien_27_4_audio.mp3 in Resources */,
 				49FC2D7D1FBF87C1008E2EBF /* seacreature_12_2_audio.mp3 in Resources */,
 				49FC2D4A1FBF87C1008E2EBF /* monster_15_1_soundeffect.mp3 in Resources */,
+				498035AB20A25DA100880AEC /* alien_3_4_audio.mp3 in Resources */,
 				49FC2CF01FBF87C1008E2EBF /* seacreature_22_1_soundeffect.mp3 in Resources */,
+				4980352A20A25DA100880AEC /* alien_6_2_audio.mp3 in Resources */,
 				49FC2D331FBF87C1008E2EBF /* monster_12_2_audio.mp3 in Resources */,
 				49FC2D001FBF87C1008E2EBF /* monster_5_1_audio.mp3 in Resources */,
+				4980355920A25DA100880AEC /* alien_29_1_audio.mp3 in Resources */,
 				49FC2CC51FBF87C1008E2EBF /* seacreature_30_3_audio.mp3 in Resources */,
 				49FC2D551FBF87C1008E2EBF /* seacreature_4_2_soundeffect.mp3 in Resources */,
+				4980351E20A25DA100880AEC /* alien_4_3_audio.mp3 in Resources */,
+				4980354220A25DA100880AEC /* alien_24_4_audio.mp3 in Resources */,
 				49FC2C871FBF87C1008E2EBF /* seacreature_11_1_soundeffect.mp3 in Resources */,
 				49FC2C741FBF87C1008E2EBF /* monster_11_2_audio.mp3 in Resources */,
 				49FC2D7E1FBF87C1008E2EBF /* seacreature_10_2_audio.mp3 in Resources */,
+				498035A520A25DA100880AEC /* alien_14_1_audio.mp3 in Resources */,
 				49FC2CA61FBF87C1008E2EBF /* monster_6_2_soundeffect.mp3 in Resources */,
 				49FC2CCD1FBF87C1008E2EBF /* seacreature_6_2_audio.mp3 in Resources */,
 				49FC2D291FBF87C1008E2EBF /* monster_16_2_soundeffect.mp3 in Resources */,
@@ -2145,60 +2850,105 @@
 				49FC2C9B1FBF87C1008E2EBF /* monster_2_1_audio.mp3 in Resources */,
 				49FC2CFC1FBF87C1008E2EBF /* seacreature_24_3_audio.mp3 in Resources */,
 				49FC2CA41FBF87C1008E2EBF /* monster_28_3_audio.mp3 in Resources */,
+				498035A620A25DA100880AEC /* alien_14_3_audio.mp3 in Resources */,
+				4980356820A25DA100880AEC /* alien_14_2_audio.mp3 in Resources */,
 				49FC2C5B1FBF87C1008E2EBF /* seacreature_30_4_audio.mp3 in Resources */,
 				49FC2CFB1FBF87C1008E2EBF /* seacreature_24_2_audio.mp3 in Resources */,
+				4980356E20A25DA100880AEC /* alien_30_1_audio.mp3 in Resources */,
 				49FC2D251FBF87C1008E2EBF /* seacreature_19_1_audio.mp3 in Resources */,
+				498035A320A25DA100880AEC /* alien_26_2_audio.mp3 in Resources */,
+				4980354E20A25DA100880AEC /* alien_13_1_audio.mp3 in Resources */,
 				49FC2C7B1FBF87C1008E2EBF /* monster_6_3_audio.mp3 in Resources */,
 				49FC2D901FBF87C1008E2EBF /* seacreature_21_1_audio.mp3 in Resources */,
 				49FC2C911FBF87C1008E2EBF /* monster_29_4_audio.mp3 in Resources */,
 				49FC2C8C1FBF87C1008E2EBF /* seacreature_13_1_audio.mp3 in Resources */,
+				4980355B20A25DA100880AEC /* alien_6_3_soundeffect.mp3 in Resources */,
 				49FC2D071FBF87C1008E2EBF /* seacreature_end_audio.mp3 in Resources */,
 				49FC2C5F1FBF87C1008E2EBF /* monster_23_1_audio.mp3 in Resources */,
+				498035B920A25DA100880AEC /* alien_23_2_soundeffect.mp3 in Resources */,
+				4980357E20A25DA100880AEC /* alien_23_1_audio.mp3 in Resources */,
+				4980353520A25DA100880AEC /* alien_10_3_audio.mp3 in Resources */,
 				49FC2C8F1FBF87C1008E2EBF /* monster_13_1_audio.mp3 in Resources */,
 				49FC2CE71FBF87C1008E2EBF /* seacreature_29_4_audio.mp3 in Resources */,
+				4980351620A25DA100880AEC /* alien_5_2_soundeffect.mp3 in Resources */,
+				4980357F20A25DA100880AEC /* alien_intro_audio.mp3 in Resources */,
 				49FC2CD61FBF87C1008E2EBF /* seacreature_3_2_audio.mp3 in Resources */,
 				49FC2C561FBF87C1008E2EBF /* monster_5_4_audio.mp3 in Resources */,
 				49FC2C621FBF87C1008E2EBF /* seacreature_20_3_soundeffect.mp3 in Resources */,
+				4980357D20A25DA100880AEC /* alien_20_1_audio.mp3 in Resources */,
+				498035CD20A25DA100880AEC /* alien_29_1_soundeffect.mp3 in Resources */,
+				498035CA20A25DA100880AEC /* alien_13_1_soundeffect.mp3 in Resources */,
+				4980355820A25DA100880AEC /* alien_18_4_audio.mp3 in Resources */,
 				49FC2D0A1FBF87C1008E2EBF /* seacreature_7_2_soundeffect.mp3 in Resources */,
 				49FC2C851FBF87C1008E2EBF /* seacreature_26_1_audio.mp3 in Resources */,
+				4980357320A25DA100880AEC /* alien_21_2_audio.mp3 in Resources */,
+				4980356720A25DA100880AEC /* alien_1_1_audio.mp3 in Resources */,
 				C3149C15D070432899C37CD0 /* berrylicious_bold.ttf in Resources */,
 				49FC2C9C1FBF87C1008E2EBF /* seacreature_16_2_soundeffect.mp3 in Resources */,
 				49FC2CDE1FBF87C1008E2EBF /* monster_20_4_audio.mp3 in Resources */,
 				BD53677C8AA8490D83730B3A /* berrylicious.ttf in Resources */,
 				49FC2D881FBF87C1008E2EBF /* monster_10_1_audio.mp3 in Resources */,
+				4980359C20A25DA100880AEC /* alien_10_1_audio.mp3 in Resources */,
+				4980353120A25DA100880AEC /* alien_4_1_audio.mp3 in Resources */,
 				49FC2D571FBF87C1008E2EBF /* monster_6_2_audio.mp3 in Resources */,
 				49FC2CBA1FBF87C1008E2EBF /* monster_20_3_audio.mp3 in Resources */,
+				4980355720A25DA100880AEC /* alien_11_1_soundeffect.mp3 in Resources */,
+				4980351D20A25DA100880AEC /* alien_29_4_audio.mp3 in Resources */,
 				49FC2D8D1FBF87C1008E2EBF /* monster_18_4_audio.mp3 in Resources */,
 				49FC2D131FBF87C1008E2EBF /* monster_25_1_audio.mp3 in Resources */,
+				4980356420A25DA100880AEC /* alien_15_3_audio.mp3 in Resources */,
 				49FC2D3E1FBF87C1008E2EBF /* monster_22_5_audio.mp3 in Resources */,
 				49FC2D391FBF87C1008E2EBF /* seacreature_4_2_audio.mp3 in Resources */,
+				4980357B20A25DA100880AEC /* alien_12_1_soundeffect.mp3 in Resources */,
 				49FC2CE41FBF87C1008E2EBF /* seacreature_28_1_audio.mp3 in Resources */,
+				4980354820A25DA100880AEC /* alien_9_1_soundeffect.mp3 in Resources */,
 				49FC2C791FBF87C1008E2EBF /* seacreature_25_4_audio.mp3 in Resources */,
 				49FC2CBF1FBF87C1008E2EBF /* seacreature_25_5_audio.mp3 in Resources */,
 				49FC2D5F1FBF87C1008E2EBF /* seacreature_7_3_audio.mp3 in Resources */,
+				4980354320A25DA100880AEC /* alien_3_3_audio.mp3 in Resources */,
 				49FC2CF91FBF87C1008E2EBF /* monster_16_3_audio.mp3 in Resources */,
+				498035BE20A25DA100880AEC /* alien_3_2_soundeffect.mp3 in Resources */,
+				4980353C20A25DA100880AEC /* alien_3_1_audio.mp3 in Resources */,
+				498035D320A25DA100880AEC /* alien_8_2_soundeffect.mp3 in Resources */,
 				49FC2D5C1FBF87C1008E2EBF /* seacreature_31_1_audio.mp3 in Resources */,
 				49FC2D691FBF87C1008E2EBF /* seacreature_5_2_audio.mp3 in Resources */,
 				49FC2CD01FBF87C1008E2EBF /* seacreature_25_1_audio.mp3 in Resources */,
 				49FC2CE31FBF87C1008E2EBF /* seacreature_25_3_audio.mp3 in Resources */,
 				49FC2D701FBF87C1008E2EBF /* monster_20_1_soundeffect.mp3 in Resources */,
+				4980353220A25DA100880AEC /* alien_13_3_audio.mp3 in Resources */,
+				4980354C20A25DA100880AEC /* alien_6_1_soundeffect.mp3 in Resources */,
 				49FC2D011FBF87C1008E2EBF /* seacreature_15_3_audio.mp3 in Resources */,
+				4980354B20A25DA100880AEC /* alien_14_1_soundeffect.mp3 in Resources */,
+				4980356620A25DA100880AEC /* alien_20_2_audio.mp3 in Resources */,
 				49FC2C881FBF87C1008E2EBF /* monster_11_1_soundeffect.mp3 in Resources */,
+				4980356920A25DA100880AEC /* alien_18_3_soundeffect.mp3 in Resources */,
+				4980356D20A25DA100880AEC /* alien_21_2_soundeffect.mp3 in Resources */,
 				49FC2D841FBF87C1008E2EBF /* monster_24_4_audio.mp3 in Resources */,
 				49FC2D5E1FBF87C1008E2EBF /* monster_23_4_audio.mp3 in Resources */,
+				4980352620A25DA100880AEC /* alien_22_1_audio.mp3 in Resources */,
+				4980353720A25DA100880AEC /* alien_17_4_audio.mp3 in Resources */,
+				4980355020A25DA100880AEC /* alien_25_4_audio.mp3 in Resources */,
 				49FC2D751FBF87C1008E2EBF /* seacreature_15_1_audio.mp3 in Resources */,
 				49FC2CCC1FBF87C1008E2EBF /* monster_6_1_soundeffect.mp3 in Resources */,
+				4980353420A25DA100880AEC /* alien_16_2_soundeffect.mp3 in Resources */,
 				49FC2D0B1FBF87C1008E2EBF /* seacreature_1_1_audio.mp3 in Resources */,
+				4980354120A25DA100880AEC /* alien_19_4_audio.mp3 in Resources */,
 				49FC2CE21FBF87C1008E2EBF /* seacreature_23_3_audio.mp3 in Resources */,
 				49FC2CDF1FBF87C1008E2EBF /* seacreature_20_1_audio.mp3 in Resources */,
+				4980355D20A25DA100880AEC /* alien_15_2_soundeffect.mp3 in Resources */,
 				49FC2D671FBF87C1008E2EBF /* seacreature_10_3_audio.mp3 in Resources */,
+				498035C620A25DA100880AEC /* alien_7_1_audio.mp3 in Resources */,
+				498035B020A25DA100880AEC /* alien_5_1_audio.mp3 in Resources */,
 				49FC2C501FBF87C1008E2EBF /* seacreature_13_1_soundeffect.mp3 in Resources */,
+				4980359F20A25DA100880AEC /* alien_30_3_audio.mp3 in Resources */,
 				49FC2D821FBF87C1008E2EBF /* seacreature_26_4_audio.mp3 in Resources */,
+				4980358E20A25DA100880AEC /* alien_29_2_soundeffect.mp3 in Resources */,
 				49FC2C761FBF87C1008E2EBF /* monster_15_2_soundeffect.mp3 in Resources */,
 				49FC2C571FBF87C1008E2EBF /* seacreature_18_1_audio.mp3 in Resources */,
 				49FC2D341FBF87C1008E2EBF /* monster_3_1_audio.mp3 in Resources */,
 				49FC2CAD1FBF87C1008E2EBF /* monster_12_1_soundeffect.mp3 in Resources */,
 				49FC2CB81FBF87C1008E2EBF /* monster_3_2_audio.mp3 in Resources */,
+				4980358920A25DA100880AEC /* alien_18_2_audio.mp3 in Resources */,
 				49FC2CF71FBF87C1008E2EBF /* seacreature_24_2_soundeffect.mp3 in Resources */,
 				49FC2C6A1FBF87C1008E2EBF /* monster_start_audio.mp3 in Resources */,
 				49FC2C991FBF87C1008E2EBF /* monster_9_1_soundeffect.mp3 in Resources */,
@@ -2212,6 +2962,7 @@
 				49FC2D491FBF87C1008E2EBF /* seacreature_23_1_audio.mp3 in Resources */,
 				49FC2D111FBF87C1008E2EBF /* monster_20_2_audio.mp3 in Resources */,
 				49FC2CD71FBF87C1008E2EBF /* seacreature_19_2_soundeffect.mp3 in Resources */,
+				4980352720A25DA100880AEC /* alien_6_3_audio.mp3 in Resources */,
 				49FC2D631FBF87C1008E2EBF /* monster_4_2_soundeffect.mp3 in Resources */,
 				49FC2C781FBF87C1008E2EBF /* seacreature_27_1_audio.mp3 in Resources */,
 				49FC2CBD1FBF87C1008E2EBF /* monster_31_4_audio.mp3 in Resources */,
@@ -2219,24 +2970,41 @@
 				49FC2D411FBF87C1008E2EBF /* seacreature_12_1_audio.mp3 in Resources */,
 				49FC2C5E1FBF87C1008E2EBF /* monster_22_3_audio.mp3 in Resources */,
 				49FC2CD21FBF87C1008E2EBF /* seacreature_31_1_soundeffect.mp3 in Resources */,
+				4980359120A25DA100880AEC /* alien_11_1_audio.mp3 in Resources */,
+				4980357520A25DA100880AEC /* alien_31_1_soundeffect.mp3 in Resources */,
+				498035C420A25DA100880AEC /* alien_18_3_audio.mp3 in Resources */,
+				4980353F20A25DA100880AEC /* alien_7_1_soundeffect.mp3 in Resources */,
+				4980356020A25DA100880AEC /* alien_16_3_soundeffect.mp3 in Resources */,
+				4980357220A25DA100880AEC /* alien_18_1_soundeffect.mp3 in Resources */,
 				49FC2D371FBF87C1008E2EBF /* monster_11_3_audio.mp3 in Resources */,
+				4980356220A25DA100880AEC /* alien_17_3_audio.mp3 in Resources */,
+				498035AC20A25DA100880AEC /* alien_1_1_soundeffect.mp3 in Resources */,
 				49FC2D4E1FBF87C1008E2EBF /* monster_31_1_audio.mp3 in Resources */,
 				49FC2CA51FBF87C1008E2EBF /* monster_29_2_audio.mp3 in Resources */,
 				49FC2CA21FBF87C1008E2EBF /* monster_14_1_soundeffect.mp3 in Resources */,
 				49FC2CB11FBF87C1008E2EBF /* seacreature_4_1_soundeffect.mp3 in Resources */,
 				49FC2C4C1FBF87C1008E2EBF /* seacreature_14_2_audio.mp3 in Resources */,
+				4980359220A25DA100880AEC /* alien_10_2_soundeffect.mp3 in Resources */,
+				498035D220A25DA100880AEC /* alien_12_2_soundeffect.mp3 in Resources */,
+				498035A720A25DA100880AEC /* alien_19_1_soundeffect.mp3 in Resources */,
 				49FC2C6E1FBF87C1008E2EBF /* monster_19_3_audio.mp3 in Resources */,
 				49FC2D221FBF87C1008E2EBF /* seacreature_19_1_soundeffect.mp3 in Resources */,
 				49FC2C631FBF87C1008E2EBF /* seacreature_20_1_soundeffect.mp3 in Resources */,
 				49FC2C691FBF87C1008E2EBF /* monster_24_1_soundeffect.mp3 in Resources */,
+				498035BB20A25DA100880AEC /* alien_22_1_soundeffect.mp3 in Resources */,
 				49FC2C9A1FBF87C1008E2EBF /* monster_21_1_soundeffect.mp3 in Resources */,
+				498035B220A25DA100880AEC /* alien_2_1_soundeffect.mp3 in Resources */,
 				49FC2D201FBF87C1008E2EBF /* seacreature_28_3_audio.mp3 in Resources */,
+				498035C220A25DA100880AEC /* alien_12_1_audio.mp3 in Resources */,
 				49FC2C601FBF87C1008E2EBF /* seacreature_20_4_audio.mp3 in Resources */,
 				2E6243A5CCBF41FAB398EE30 /* summer_joy.ttf in Resources */,
 				49FC2D761FBF87C1008E2EBF /* seacreature_13_2_audio.mp3 in Resources */,
 				49FC2CA81FBF87C1008E2EBF /* seacreature_24_1_soundeffect.mp3 in Resources */,
+				4980357420A25DA100880AEC /* alien_17_3_soundeffect.mp3 in Resources */,
+				4980353620A25DA100880AEC /* alien_20_1_soundeffect.mp3 in Resources */,
 				49FC2C4D1FBF87C1008E2EBF /* seacreature_17_3_audio.mp3 in Resources */,
 				49FC2CF81FBF87C1008E2EBF /* seacreature_9_1_audio.mp3 in Resources */,
+				498035C020A25DA100880AEC /* alien_28_1_audio.mp3 in Resources */,
 				49FC2C661FBF87C1008E2EBF /* monster_8_1_soundeffect.mp3 in Resources */,
 				49FC2D8B1FBF87C1008E2EBF /* monster_17_1_audio.mp3 in Resources */,
 				49FC2CDA1FBF87C1008E2EBF /* monster_29_3_audio.mp3 in Resources */,
@@ -2244,18 +3012,27 @@
 				49FC2C671FBF87C1008E2EBF /* monster_17_3_audio.mp3 in Resources */,
 				49FC2D321FBF87C1008E2EBF /* seacreature_start_audio.mp3 in Resources */,
 				49FC2D0E1FBF87C1008E2EBF /* monster_23_2_audio.mp3 in Resources */,
+				498035AD20A25DA100880AEC /* alien_21_1_soundeffect.mp3 in Resources */,
+				4980353320A25DA100880AEC /* alien_12_2_audio.mp3 in Resources */,
 				49FC2D8E1FBF87C1008E2EBF /* seacreature_21_2_audio.mp3 in Resources */,
 				49FC2C6C1FBF87C1008E2EBF /* monster_13_1_soundeffect.mp3 in Resources */,
 				49FC2C941FBF87C1008E2EBF /* monster_4_2_audio.mp3 in Resources */,
+				498035CF20A25DA100880AEC /* alien_23_1_soundeffect.mp3 in Resources */,
+				4980355420A25DA100880AEC /* alien_18_1_audio.mp3 in Resources */,
 				49FC2CDB1FBF87C1008E2EBF /* monster_29_5_audio.mp3 in Resources */,
 				49FC2C861FBF87C1008E2EBF /* monster_30_1_soundeffect.mp3 in Resources */,
+				4980351420A25DA100880AEC /* alien_24_2_soundeffect.mp3 in Resources */,
 				49FC2C511FBF87C1008E2EBF /* monster_1_2_audio.mp3 in Resources */,
+				498035C920A25DA100880AEC /* alien_14_2_soundeffect.mp3 in Resources */,
 				49FC2D021FBF87C1008E2EBF /* seacreature_17_2_audio.mp3 in Resources */,
 				49FC2C7D1FBF87C1008E2EBF /* monster_21_1_audio.mp3 in Resources */,
 				49FC2CB71FBF87C1008E2EBF /* seacreature_12_1_soundeffect.mp3 in Resources */,
+				4980355A20A25DA100880AEC /* alien_3_1_soundeffect.mp3 in Resources */,
 				49FC2D871FBF87C1008E2EBF /* monster_22_4_audio.mp3 in Resources */,
 				49FC2CAF1FBF87C1008E2EBF /* seacreature_26_3_audio.mp3 in Resources */,
 				49FC2D241FBF87C1008E2EBF /* seacreature_10_1_audio.mp3 in Resources */,
+				498035A920A25DA100880AEC /* alien_28_2_audio.mp3 in Resources */,
+				498035D020A25DA100880AEC /* alien_21_3_soundeffect.mp3 in Resources */,
 				49FC2D311FBF87C1008E2EBF /* seacreature_30_1_soundeffect.mp3 in Resources */,
 				49FC2D361FBF87C1008E2EBF /* seacreature_14_3_audio.mp3 in Resources */,
 				49FC2C681FBF87C1008E2EBF /* monster_19_1_audio.mp3 in Resources */,
@@ -2266,12 +3043,15 @@
 				49FC2C9D1FBF87C1008E2EBF /* seacreature_17_4_audio.mp3 in Resources */,
 				49FC2CF31FBF87C1008E2EBF /* seacreature_16_3_soundeffect.mp3 in Resources */,
 				49FC2D641FBF87C1008E2EBF /* monster_24_1_audio.mp3 in Resources */,
+				4980356A20A25DA100880AEC /* alien_16_1_soundeffect.mp3 in Resources */,
+				4980357620A25DA100880AEC /* alien_28_2_soundeffect.mp3 in Resources */,
 				49FC2C721FBF87C1008E2EBF /* seacreature_2_2_audio.mp3 in Resources */,
 				49FC2CB61FBF87C1008E2EBF /* monster_9_3_audio.mp3 in Resources */,
 				49FC2D741FBF87C1008E2EBF /* monster_26_1_soundeffect.mp3 in Resources */,
 				49FC2D3F1FBF87C1008E2EBF /* seacreature_23_5_audio.mp3 in Resources */,
 				49FC2D051FBF87C1008E2EBF /* seacreature_19_3_audio.mp3 in Resources */,
 				49FC2C551FBF87C1008E2EBF /* seacreature_25_2_audio.mp3 in Resources */,
+				4980351720A25DA100880AEC /* alien_16_1_audio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
