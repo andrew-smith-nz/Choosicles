@@ -89,6 +89,18 @@ class MainMenu extends Component
         this.props.setOwnedProducts(productIds);
     }
 
+    componentWillMount()
+    {
+        var readableBooks = [];
+        for (var i = 0; i < bookData.books.length; i++)
+        {
+            if (!bookData.books[i].isMulti)
+                readableBooks.push(bookData.books[i]);
+        }
+        this.setState({readableBooks: readableBooks});
+
+    }
+
     componentDidMount()
     {
         if (Platform.OS === "android")
@@ -115,12 +127,12 @@ class MainMenu extends Component
     
     render()
     {
-        var book = bookData.books[this.state.myBooksIndex];
+        var book = this.state.readableBooks[this.state.myBooksIndex];
         var bookOwned = this.props.ownedBooks.filter(b => b === book.id).length > 0;
-        var prevBook = (this.state.myBooksIndex > 0) ? bookData.books[this.state.myBooksIndex - 1] : null;        
-        var nextBook = (this.state.myBooksIndex < bookData.books.length - 1) ? bookData.books[this.state.myBooksIndex + 1] : null;
+        var prevBook = (this.state.myBooksIndex > 0) ? this.state.readableBooks[this.state.myBooksIndex - 1] : null;        
+        var nextBook = (this.state.myBooksIndex < this.state.readableBooks.length - 1) ? this.state.readableBooks[this.state.myBooksIndex + 1] : null;
 
-        return  <Image id="wallpaper" source={require("../../img/wallpaper.png")} resizeMode='stretch' style={style.mainMenuView}>
+        return  <View style={[style.mainMenuView, {backgroundColor: '#00CAFF'}]}>
                     <Image id="logo" source={require("../../img/choosicles_logo.png")} resizeMode="contain" style={{flex:2, marginTop:15 * global.HEIGHT_RATIO}} />
                     <View style={{flexDirection:'row', flex:12, margin:10 * global.HEIGHT_RATIO}}>
                         <View style={{flexDirection:'column', flex:32, alignItems:'center', padding:10, backgroundColor:'rgba(255,255,255,0.4)', borderRadius:30}}>                 
@@ -139,18 +151,18 @@ class MainMenu extends Component
                                         : null}
                                     </View>
                                     <View style={[style.bookList, {flex:2, flexDirection:"column"}]}>
-                                        <TouchableOpacity key={book.id} onPress={() => { this.selectBook(bookData.books[this.state.myBooksIndex]); } }>
+                                        <TouchableOpacity key={book.id} onPress={() => { this.selectBook(this.state.readableBooks[this.state.myBooksIndex]); } }>
                                             <BookCover key={book.id} bookInfo={book} offset={0} owned={bookOwned} mode="menu" />
                                         </TouchableOpacity>
                                     </View>
                                     <View style={[style.bookList, {flex:1, flexDirection:"column"}]}>
-                                        {this.state.myBooksIndex < bookData.books.length - 1 ?
+                                        {this.state.myBooksIndex < this.state.readableBooks.length - 1 ?
                                         <BookCover key={nextBook} bookInfo={nextBook} offset={1} />
                                         : null}
                                     </View>
                                 </View>               
                                 <View style={{zIndex: 99, width:50 * global.WIDTH_RATIO, flexDirection:'row', height:'100%', alignItems:'center', marginTop:-25 * global.HEIGHT_RATIO}}> 
-                                    {this.state.myBooksIndex < bookData.books.length - 1 ? 
+                                    {this.state.myBooksIndex < this.state.readableBooks.length - 1 ? 
                                      <TouchableOpacity style={{width:50 * global.WIDTH_RATIO, height:50 * global.HEIGHT_RATIO}} onPress={() => this.setState({myBooksIndex: this.state.myBooksIndex + 1})}>
                                         <Image id="forward" source={require('../../img/arrow_forward.png')} resizeMode="contain" style={[style.fill, { padding:5 }]} />
                                     </TouchableOpacity> : null }
@@ -165,7 +177,7 @@ class MainMenu extends Component
                     <TouchableOpacity style={style.centerBottomLongButton} onPress={() => this.store()}>            
                         <Image id="store" source={require('../../img/buybooks_long.png')} resizeMode='contain' style={style.fill}/>
                     </TouchableOpacity>
-                </Image>;
+                </View>;
     }
 }
 

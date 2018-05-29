@@ -143,12 +143,10 @@ class Store extends Component
                 }
             }
         }
-        for (var i = 0; i < bookData.books.length; i++)
-        {
-            //bookData.books[i].isMulti = false;
-        }
-        bookData.books.push({ id:"915D33E3-109D-BCA7-4701-7FEDD4266F7C", isMulti: true, title:"Double Pack", androidIAPCode:"1_2", iosIAPCode:"1_2", numBooks: 2});
-        bookData.books.push({ id:"DAC400B5-9135-4499-9D11-4BF95CFB5442", isMulti: true, title:"Triple Pack", androidIAPCode:"1_2_3", iosIAPCode:"1_2_3", numBooks: 3});
+        if (bookData.books.filter(b => b.title === "Double Pack").length == 0)
+            bookData.books.push({ id:"915D33E3-109D-BCA7-4701-7FEDD4266F7C", isMulti: true, title:"Double Pack", androidIAPCode:"1_2", iosIAPCode:"1_2", numBooks: 2});
+        if (bookData.books.filter(b => b.title === "Triple Pack").length == 0)
+            bookData.books.push({ id:"DAC400B5-9135-4499-9D11-4BF95CFB5442", isMulti: true, title:"Triple Pack", androidIAPCode:"1_2_3", iosIAPCode:"1_2_3", numBooks: 3});
     }
 
     restorePurchases()
@@ -248,9 +246,9 @@ class Store extends Component
 
     toggleSelectBook(book, checked)
     {
+        Reacotron.log('happening')
         if (this.isBookOwned(book)) return;
         var newBooks = [];
-        Reactotron.log(checked );
         var checkedAlreadyExists = false;
         for(var i = 0; i < this.state.selectedBooks.length; i++) {
             if(checked || this.state.selectedBooks[i].id !== book.id) {
@@ -266,7 +264,7 @@ class Store extends Component
 
     render()
     {
-        return  <Image source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
+        return  <View style={[style.mainMenuView, { backgroundColor: '#00CAFF', width:'100%', height:'100%', flexDirection:'column' } ]}>
                     <Image source={require("../../img/buy_more_books.png")} resizeMode='contain' style={style.topText} />
                     <View style={{flexDirection:'column', width:'95%', flex:1}} >
                         <View style={{flexDirection: 'row', marginBottom:-1, zIndex:99}}>
@@ -327,8 +325,9 @@ class Store extends Component
                                         <View style={{flexDirection:'column'}}>
                                         {bookData.books.filter(b => !b.isMulti).map((book) => 
                                             <View key={'v' + book.id}>
-                                                <CheckBox key={'cb' + book.id} labelStyle={[style.boldText14, {color:(this.isBookOwned(book) ? 'grey' : 'black')}]} label={book.title + (this.isBookOwned(book) ? ' (Already owned)' : '')} onChange={(checked) => this.toggleSelectBook(book, checked)} check={this.selectedBooks && this.selectedBooks.filter(b => b.id == book.id).length > 0} />
-                                            </View>
+                                            {this.isBookOwned(book) ? null :
+                                                <CheckBox key={'cb' + book.id} labelStyle={[style.boldText14, {color:(this.isBookOwned(book) ? 'grey' : 'black')}]} label={book.title + (this.isBookOwned(book) ? ' (Already owned)' : '')} onChange={ (checked) => this.toggleSelectBook(book, checked) } check={ this.selectedBooks && this.selectedBooks.filter(b => b.id == book.id).length > 0} />
+                                            }</View>
                                         )}
                                         </View>
                                         <View style={{flexDirection:'row'}}>
@@ -355,7 +354,7 @@ class Store extends Component
                                 </View>
                             </View>
                     </Modal> 
-                </Image>
+                </View>
     }
 }
 

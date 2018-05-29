@@ -69,7 +69,7 @@ class Settings extends Component
 
     render()
     {
-        return  <Image id="wallpaper" source={require("../../img/wallpaper.png")} resizeMode='stretch' style={[style.mainMenuView, { width:'100%', height:'100%', flexDirection:'column' } ]}>
+        return  <View style={[style.mainMenuView, { backgroundColor:'#00CAFF', width:'100%', height:'100%', flexDirection:'column' } ]}>
                     <Image id="header" source={require("../../img/settings.png")} resizeMode='contain' style={style.topText} />
                     <View style={{height:'80%', flexDirection:'row', backgroundColor:'transparent'}}>
                         <View style={{flex:1, flexDirection:'column', backgroundColor:'transparent'}}>
@@ -137,7 +137,7 @@ class Settings extends Component
                                                 <Text style={style.boldText16}>Reset Choice Counters for:</Text>
                                                 <ScrollView style={[style.padding10, {width:'100%', backgroundColor:'#F7E19E'}]} contentContainerStyle={{alignItems:'center'}}>
                                                     <BookSelect key="All" title="All Books" callback={() => { this.props.resetPageCounters([]); }} />
-                                                    {bookData.books.map((book) => 
+                                                    {bookData.books.filter(b => !b.isMulti).map((book) => 
                                                     <BookSelect key={book.id} 
                                                                 title={book.title.replace("\r\n", " ")} 
                                                                 totalChoices={this.getTotalChoicesForBook(book.id)} 
@@ -152,7 +152,7 @@ class Settings extends Component
                     <TouchableOpacity style={style.topRightButton} onPress={() => this.home()}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />
                     </TouchableOpacity>
-                </Image>;
+                </View>;
     }
 }
 

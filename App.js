@@ -59,9 +59,9 @@ export default class App extends React.Component {
       <Provider store={store}>
         <View style={{flex:1}}>
         <StatusBar hidden={true}/>
-          {this.state.showSplash ? <Image source={require("./img/wallpaper.png")} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
+          {this.state.showSplash ? <View style={{backgroundColor: '#00CAFF', width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch'>
             <Image source={require("./img/choosicles_logo.png")} resizeMode='contain' style={{height:'20%'}} />
-            </Image>
+            </View>
             : <Navigator /> }
         </View>
       </Provider>

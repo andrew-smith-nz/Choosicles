@@ -24,7 +24,7 @@ class Sync extends Component {
     {
         super(props);
         //this.state = { email: "", password: "", syncInProgress: false, syncComplete: false, syncResult: [], syncSuccess: false }
-        this.state = { email: "vulpesnz@gmail.com", password: "ajs123", syncInProgress: false, syncComplete: false, syncResult: [], syncSuccess: false }
+        this.state = { email: "", password: "", syncInProgress: false, syncComplete: false, syncResult: [], syncSuccess: false }
     }
 
     startSync()
