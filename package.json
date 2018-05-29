@@ -21,6 +21,7 @@
     "react": "16.0.0-alpha.12",
     "react-native": "^0.47.0",
     "react-native-billing": "^2.4.0",
+    "react-native-check-box": "^2.1.0",
     "react-native-checkbox": "^2.0.0",
     "react-native-device-info": "^0.12.1",
     "react-native-in-app-utils": "^6.0.0",
