@@ -102,21 +102,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
-        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.1.0_454dfd7c5accc9bbaba61a82934224ba649ac738.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="508f50705b4fde51a16259f29c854201a3044516">
         <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.1.0_7eb259c9358392b877d3ef209bfb76fc8917d141.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Dev\Apps\Choosicles\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="C:\Dev\Apps\Choosicles\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.1.0_454dfd7c5accc9bbaba61a82934224ba649ac738.jar" />
     </item>
     <item
         is-multidex="false"
