@@ -91,6 +91,10 @@ class Store extends Component
                        this.props.addOwnedProduct(productIdentifier);
                        this.home();
                    }
+                   if(error)
+                   {
+                       Reactotron.log(error);
+                   }
                    });
                 });
 
@@ -246,7 +250,6 @@ class Store extends Component
 
     toggleSelectBook(book, checked)
     {
-        Reacotron.log('happening')
         if (this.isBookOwned(book)) return;
         var newBooks = [];
         var checkedAlreadyExists = false;
