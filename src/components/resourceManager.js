@@ -37,6 +37,17 @@ _resourcesByBook = [
       endAudio: 'alien_end_audio.mp3'
     },
     {
+      bookId: '94185e9e-d5b0-e0a5-4d47-485f9994a562',
+      coverImage: require("../../img/pages/fairytale/cover.png"),
+      coverImageLeftHalf: require("../../img/pages/fairytale/cover_lefthalf.png"),
+      coverImageRightHalf: require("../../img/pages/fairytale/cover_righthalf.png"),
+      startImage:  require("../../img/pages/fairytale/title.png"),
+      startAudio: 'fairytale_intro_audio.mp3',
+      startSoundEffect: 'fairytale_title_1_soundeffect.mp3',
+      endImage:  require("../../img/pages/fairytale/end.png"),
+      endAudio: 'fairytale_end_audio.mp3'
+    },
+    {
       bookId: '915D33E3-109D-BCA7-4701-7FEDD4266F7C',
       coverImage: require("../../img/double_pack.png")
     },
@@ -876,7 +887,283 @@ _resourcesByPage = [
             pageId: '7DAFE264-DEC5-9493-4BF4-34887B02609D', 
             pageNumber: '31', 
             image: require('../../img/pages/alien/page31.png')
-            },                   
+            },  
+            // fairytale
+        {
+            pageId: '6A3AFEDE-9F67-86B6-4C53-4C7141871BB6', 
+            pageNumber: '1', 
+            image: require('../../img/pages/fairytale/page1.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice2.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice3.png'),
+                }
+            ]
+            },
+            {
+            pageId: '7CCB2C58-4CA9-16AD-4862-6D1EA00C256C', 
+            pageNumber: '2', 
+            image: require('../../img/pages/fairytale/page2.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice4.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice5.png'),
+                }
+            ]
+            },
+            {
+            pageId: '60FD729D-AC5C-5388-44DE-D186AFD16F71', 
+            pageNumber: '3', 
+            image: require('../../img/pages/fairytale/page3.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice6.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice7.png'),
+                }
+            ]
+            },
+            {
+            pageId: '4B558219-AA5C-E6BD-4E36-58D55F494366', 
+            pageNumber: '4', 
+            image: require('../../img/pages/fairytale/page4.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice8.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice9.png'),
+                }
+            ]
+            },
+            {
+            pageId: 'CB001CEB-E611-A9A7-46C4-9B911AE2C660', 
+            pageNumber: '5', 
+            image: require('../../img/pages/fairytale/page5.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice10.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice11.png'),
+                }
+            ]
+            },
+            {
+            pageId: 'A550B610-5805-8EA6-4F8B-0CDF7CAF62EF', 
+            pageNumber: '6', 
+            image: require('../../img/pages/fairytale/page6.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice12.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice13.png'),
+                }
+            ]
+            },
+            {
+            pageId: 'E6E39D2E-B541-6B93-4300-9A85CC13704F', 
+            pageNumber: '7', 
+            image: require('../../img/pages/fairytale/page7.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice14.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice15.png'),
+                }
+            ]
+            },
+            {
+            pageId: '5FA258B7-36F6-AB9A-46C8-697B2B38082D', 
+            pageNumber: '8', 
+            image: require('../../img/pages/fairytale/page8.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice16.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice17.png'),
+                }
+            ]
+            },
+            {
+            pageId: 'A24AC61C-D46E-549F-4D0E-0BF40B9FC958', 
+            pageNumber: '9', 
+            image: require('../../img/pages/fairytale/page9.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice18.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice19.png'),
+                }
+            ]
+            },
+            {
+            pageId: '1045B517-A82B-B2B0-4E53-B04526DE5EC8', 
+            pageNumber: '10', 
+            image: require('../../img/pages/fairytale/page10.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice20.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice21.png'),
+                }
+            ]
+            },
+            {
+            pageId: '70195C50-E285-68B7-49CB-2A07EF4F7885', 
+            pageNumber: '11', 
+            image: require('../../img/pages/fairytale/page11.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice22.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice23.png'),
+                }
+            ]
+            },
+            {
+            pageId: '9DCEC7DA-AE41-02B1-495E-56F7563A6A18', 
+            pageNumber: '12', 
+            image: require('../../img/pages/fairytale/page12.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice24.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice25.png'),
+                }
+            ]
+            },
+            {
+            pageId: '1948E15E-0965-CF8E-433A-82CF34F464E3', 
+            pageNumber: '13', 
+            image: require('../../img/pages/fairytale/page13.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice26.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice27.png'),
+                }
+            ]
+            },
+            {
+            pageId: '193746FE-4688-8096-4A56-3548757BD8AB', 
+            pageNumber: '14', 
+            image: require('../../img/pages/fairytale/page14.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice28.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice29.png'),
+                }
+            ]
+            },
+            {
+            pageId: '8DA7064A-E54C-96AF-4978-C7FFAD72B948', 
+            pageNumber: '15', 
+            image: require('../../img/pages/fairytale/page15.png'),
+            choiceImages: [
+                {
+                    image: require('../../img/pages/fairytale/choice30.png'),
+                },
+                {
+                    image: require('../../img/pages/fairytale/choice31.png'),
+                }
+            ]
+            },
+            {
+            pageId: 'D74B3303-1E12-0299-4843-C82D67997179', 
+            pageNumber: '16', 
+            image: require('../../img/pages/fairytale/page16.png')
+            },
+            {
+            pageId: '3C9DD4D3-BEA5-8882-4513-459099EACCD2', 
+            pageNumber: '17', 
+            image: require('../../img/pages/fairytale/page17.png')
+            },
+            {
+            pageId: 'CE3FC45F-03A8-D3AF-421A-9DD9855ED72F', 
+            pageNumber: '18', 
+            image: require('../../img/pages/fairytale/page18.png')
+            },
+            {
+            pageId: 'EEC2580F-7CEC-E086-4E33-08466686BBAF', 
+            pageNumber: '19', 
+            image: require('../../img/pages/fairytale/page19.png')
+            },
+            {
+            pageId: '6EC23AD0-B6BF-D49E-4A07-992322FD256C', 
+            pageNumber: '20', 
+            image: require('../../img/pages/fairytale/page20.png')
+            },
+            {
+            pageId: 'C1125F9A-1483-21B7-4487-665F90C78CBB', 
+            pageNumber: '21', 
+            image: require('../../img/pages/fairytale/page21.png')
+            },
+            {
+            pageId: '17059A7E-45A6-A6B7-446A-F51615850026', 
+            pageNumber: '22', 
+            image: require('../../img/pages/fairytale/page22.png')
+            },
+            {
+            pageId: 'F8BEF9B5-85B2-6BB2-49BA-77322DA257F7', 
+            pageNumber: '23', 
+            image: require('../../img/pages/fairytale/page23.png')
+            },
+            {
+            pageId: '8C5FF07E-8903-2D93-417D-56B6E04EECEA', 
+            pageNumber: '24', 
+            image: require('../../img/pages/fairytale/page24.png')
+            },
+            {
+            pageId: '488D1C44-6DF5-75B1-44B8-AFFB78A9EE34', 
+            pageNumber: '25', 
+            image: require('../../img/pages/fairytale/page25.png')
+            },
+            {
+            pageId: 'E3FC6095-A610-F1B9-4034-5D13EAE264F2', 
+            pageNumber: '26', 
+            image: require('../../img/pages/fairytale/page26.png')
+            },
+            {
+            pageId: 'BB7D86CB-18AC-19BE-489D-851D370F2FF2', 
+            pageNumber: '27', 
+            image: require('../../img/pages/fairytale/page27.png')
+            },
+            {
+            pageId: 'F5514FB2-AA8A-9BA7-446A-193E4A80120F', 
+            pageNumber: '28', 
+            image: require('../../img/pages/fairytale/page28.png')
+            },
+            {
+            pageId: 'D373D2A1-CB85-7CA0-49EB-176C55713325', 
+            pageNumber: '29', 
+            image: require('../../img/pages/fairytale/page29.png')
+            },
+            {
+            pageId: '84AB1497-9D03-E1A8-4A51-F382E5588344', 
+            pageNumber: '30', 
+            image: require('../../img/pages/fairytale/page30.png')
+            },
+            {
+            pageId: '9089C68F-62DB-8991-4BE4-CD50FBF4C028', 
+            pageNumber: '31', 
+            image: require('../../img/pages/fairytale/page31.png')
+            },                       
 ]
 
 export function getImageForPage(pageId)
