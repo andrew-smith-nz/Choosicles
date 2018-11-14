@@ -2960,7 +2960,7 @@
                         },
                         {
                             "id": "0f3a7ca9-fe79-45f4-bc20-6b3611cd39a5",
-                            "text": ". It's always hot out in the desert but sometimes the alien likes being cold. So it hides inside the big chilly cave away from the two suns. The alien looks for a smooth patch of ground between the purple rocks, then folds itself down like a pile of blocks. ",
+                            "text": "It's always hot out in the desert but sometimes the alien likes being cold. So it hides inside the big chilly cave away from the two suns. The alien looks for a smooth patch of ground between the purple rocks, then folds itself down like a pile of blocks. ",
                             "textPosition": "top"
                         },
                         {
@@ -3009,7 +3009,7 @@
         },
         {
             "id": "94185e9e-d5b0-e0a5-4d47-485f9994a562",
-            "owned": false,
+            "owned": true,
             "comingSoon": false,
             "title": "Your Very Own Fairytale Character",
             "coverImage": null,
@@ -3030,14 +3030,11 @@
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
-                            "text": "You are an astronaut exploring outer space! On one of your stops on a far-away planet, you meet a friendly fairytale. "
+                            "text": "You have a magic wand! Your magic wand opens a door into a magical kingdom from your bedroom. Inside is your very own fairytale guide, it can be anything you want it to be! ",
+                            "textPosition":"top"
                         },
                         {
-                            "text": "The fairytale is very excited to show you around its planet which is very different from Earth, where you live. ",
-                            "textPosition": "top"
-                        },
-                        {
-                            "text": "Tell me about the friendly fairytale. Does it have legs and walk around, or does it crawl around on its belly like a snail?"
+                            "text": "Tell me about your fairytale character, is it very big or very small? "
                         }
                     ],
                     "navigationLinks": [
@@ -3056,19 +3053,19 @@
                 {
                     "id": "7CCB2C58-4CA9-16AD-4862-6D1EA00C256C",
                     "pageNumber": 2,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_2",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
-                            "text": "The friendly fairytale has legs. But it doesn't look very much like a person from Earth. ",
+                            "text": "Your fairytale character is very big. It’s huge, it’s enormous, it’s gigantic! Your fairytale friend may be large, but it is extra lovable and wants to show you around this magical kingdom. ",
                             "textPosition":"top"
                         },
                         {
-                            "text": "The fairytale can walk, run and jump, but it can't stand on its tippy toes because it doesn't have any toes to be tippy on! After the friendly fairytale looks inside your spaceship, you follow the fairytale to see its house. "
+                            "text": "You want to start your adventure from the fairytale character’s home, so your guide points the way! "
                         },
                         {
-                            "text": "Tell me about the friendly fairytale. Does it live in a house that looks like a big bubble, or does it live on top of a very tall tower?",
+                            "text": "Tell me about your fairytale character, does it live beside a magical river or in a magical forest? ",
                             "textPosition":"top"
                         }
                     ],
@@ -3088,23 +3085,22 @@
                 {
                     "id": "60FD729D-AC5C-5388-44DE-D186AFD16F71",
                     "pageNumber": 3,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_3",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "5E619B1B-5F5F-1B95-4862-5D634D1F4312",
-                            "text": "The friendly fairytale crawls around on its belly like a snail. But it's much bigger than a snail from Earth, the fairytale is as big as a person! ",
+                            "text": "Your fairytale character is very small. It’s a teeny tiny, itty bitty, wee little thing! ",
                             "textPosition":"top"
                         },
                         {
                             "id": "F30FC071-D59C-51A5-42C8-AB65197914A2",
-                            "text": "It wriggles and squiggles and shuffles and squirms. Look at it go! The friendly fairytale crawls on its belly so fast you need your spaceship to keep up! "
+                            "text": "Your little fairytale friend can fit in your pocket, but has a giant personality and wants to show you around this magical kingdom. First stop, your fairytale character’s home! "
                         },
                         {
                             "id": "EA98E8B2-5788-6AAE-41B7-AA7F54C5A515",
-                            "text": "Tell me about the friendly fairytale. Does it live in place covered in heavy wet clouds, or does it live in a big flat sandy desert?",
-                            "textPosition":"top"
+                            "text": "Tell me about your fairytale character, does it live in a green grassy field or does it have green glowing skin?"
                         }
                     ],
                     "navigationLinks": [
@@ -3129,16 +3125,16 @@
                     "texts": [
                         {
                             "id": "6184b034-66f3-4162-baf7-d8c911179926",
-                            "text": "The friendly fairytale lives in a house like a big bubble. You see a whole fairytale town full of big bubble houses. When you touch the fairytale's house it wibbles and wobbles! "
+                            "text": "Your fairytale character lives beside a magical river. You can hear the water, splash splish splosh. Go for a swim or sit in the sun, there’s so much to do and it’s all so much fun! "
                         },
                         {
                             "id": "d3a239e2-18e9-4316-8a4b-2bf01f772a86",
-                            "text": "It's lucky there isn't any wind on this planet or the big bubble houses might float up and away! ",
+                            "text": "Your fairytale friend jumps in the river and you do too. But you hop right back out onto the shore because, brrrrrr! The water is cold! It’s a good thing the sun is shining big and bright to warm you back up. ",
                             "textPosition":"top"
                         },
                         {
                             "id": "f10bb303-15ab-464b-8341-3e91aaace49c",
-                            "text": "Tell me about the friendly fairytale. Does it have big sponges for hands, or is it made of bubbles too?"
+                            "text": "Tell me about the fairytale character, is its head up in the clouds or under a bridge? "
                         }
                     ],
                     "navigationLinks": [
@@ -3157,23 +3153,22 @@
                 {
                     "id": "CB001CEB-E611-A9A7-46C4-9B911AE2C660",
                     "pageNumber": 5,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_5",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "2D0B9685-7146-2781-4337-CB885A55E1B1",
-                            "text": "The friendly fairytale lives on top of a very tall tower. There are hundreds of steps to get to the top! ",
-                            "textPosition":"top"
+                            "text": "Your fairytale character lives in a magical forest. Everything you see sparkles and shines. This is the most enchanted forest in the whole fairytale kingdom. "
                         },
                         {
                             "id": "894FC664-1CA3-558F-4D40-B2CC19934CB2",
-                            "text": "Looking high in the sky you can see the tippy top of the tower. It's the tallest building you've ever seen. The steps wind around the outside of the tower instead of inside, how strange!"
+                            "text": "Light is everywhere, in all the flowers and trees. Reach out and grab the vines, they glow when your fingers touch them! ",
+                            "textPosition":"top"
                         },
                         {
                             "id": "3f2720eb-ab1d-4b3b-bec7-605c8e737527",
-                            "text": "Tell me about the friendly fairytale. Does it have six legs, or four legs? ",
-                            "textPosition":"top"
+                            "text": "Tell me about the fairytale character, does it have branches and leaves or does it have a magical horn? "
                         }
                     ],
                     "navigationLinks": [
@@ -3198,16 +3193,16 @@
                     "texts": [
                         {
                             "id": "F17B2A09-6909-D387-4290-F29C219096B0",
-                            "text": "The friendly fairytale lives in a place covered in heavy wet clouds. The clouds sit down on the ground rather than high in the sky. ",
+                            "text": "Your fairytale character lives in a green grassy field. It feels wonderful to be surrounded by bright flowers, happy birds, and a shining fairytale sky! ",
                             "textPosition":"top"
                         },
                         {
                             "id": "61da30af-bef1-42f6-874a-231527f95e37",
-                            "text": "It's so foggy and gloopy, and wet and spooky inside the clouds, you can hardly see a thing! Your fairytale friend likes living inside the heavy wet clouds because heavy wet clouds are cosy and snuggly. "
+                            "text": "Your itsy bitsy fairytale friend loves to wiggle their toes in the soft grass around it’s home. Take off your shoes and try it out! "
                         },
                         {
                             "id": "157afa0e-e885-4db2-bc2a-9c655c9fadac",
-                            "text": "Tell me about the friendly fairytale. Does it have two mouths, or does it have bumpy skin like a golf ball?",
+                            "text": "Tell me about your fairytale character, does it wear a pointy hat, or does it sparkle?",
                             "textPosition":"top"
                         }
                     ],
@@ -3227,22 +3222,21 @@
                 {
                     "id": "E6E39D2E-B541-6B93-4300-9A85CC13704F",
                     "pageNumber": 7,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_7",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "864a8479-c105-4ca3-8f2a-05472edf4b6a",
-                            "text": "The friendly fairytale lives in a big flat sandy desert. The desert is very dry and very hot. That's because there isn't just one big happy sun shining down on the desert, there are two! ",
-                            "textPosition":"top"
+                            "text": "Your fairytale character has green glowing skin! Green is the best color for your little fairytale character because he can blend into the grass and trees in the magical forest. Or he can stand out big and bright against the bold blue sky. "
                         },
                         {
                             "id": "d3105689-6436-4d84-9d1d-3d992676037d",
-                            "text": "Planet Earth only has one sun, so for you, two suns feel like one sun too many. The suns even go to bed at different times, so one is always shining. There is no night time on this bright fairytale planet. "
+                            "text": "The big rocks in the field are perfect for hide and seek and your fairytale friend is fantastic at hiding. See if you can spot him! "
                         },
                         {
                             "id": "62617d57-ee5c-4be3-8d10-695634fbf5be",
-                            "text": "Tell me about the friendly fairytale. Does it have telescope eyes, or does its body have lots of different colours? "
+                            "text": "Tell me about your fairytale character, does he wear a crown or have pointy ears? "
                         }
                     ],
                     "navigationLinks": [
@@ -3261,23 +3255,22 @@
                 {
                     "id": "5FA258B7-36F6-AB9A-46C8-697B2B38082D",
                     "pageNumber": 8,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_8",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "715b2925-fde3-41d6-9989-6b955b522854",
-                            "text": "The friendly fairytale has big sponges for hands! The sponges don't have any thumbs so grabbing and gripping things is very tricky. "
+                            "text": "Your fairytale character has its head up in the clouds. That’s because he’s a giant! Giants love to live at the top of tall bendy beanstalks. So climb on up, but don’t fall! "
                         },
                         {
                             "id": "ef70bcbc-90c7-4d30-9895-ae84db061088",
-                            "text": "The friendly fairytale eats balls covered in spikes. The spikes are so spikey they stick to the sponges! The fairytale chomps and chews and eats the balls, yummy scrummy, spikes and all. ",
+                            "text": "From the top of the bendy beanstalk you can catch some clouds and see birds fly by. Reach out and grab a piece of cloud and pop it in your mouth. The clouds taste like cotton candy! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "9d37a454-d4a1-49dd-b9df-95116583a1c1",
-                            "text": "Tell me about the friendly fairytale. Does it like to clean, or does it like to play sports? ",
-                            "textPosition": "top"
+                            "text": "Tell me about your fairytale character, does he have one big eye or bright blue hair?"
                         }
                     ],
                     "navigationLinks": [
@@ -3302,16 +3295,16 @@
                     "texts": [
                         {
                             "id": "6e61cc26-7351-4749-8afa-f64b003734d0",
-                            "text": "The friendly fairytale is made of bubbles too! It can even walk through the walls of its bubble house. It pushes and squeezes and walks right inside. "
+                            "text": "Your fairytale character has its head under a bridge. That’s because he’s a bridge troll! It’s dark and stinky and wet and muddy under the bridge, but that’s how he likes it. "
                         },
                         {
                             "id": "fc4b2f82-3047-4306-8222-fd8de1c00cb7",
-                            "text": "None of the bubble houses have any doors. You try pushing and squeezing and walking inside, but the bubble house just wibbles and wobbles and won't let you in!",
+                            "text": "Instead of walking from one side of the bridge to the other, your tiny troll rolls in the muck and comes out all dirty and dusty. What a funny, mucky troll! ",
                             "textPosition":"top"
                         },
                         {
                             "id": "ba0c6794-6ab0-4f73-a86c-9b70fc3942e0",
-                            "text": "Tell me about the friendly fairytale. Does it grow fairytale vegetables, or does it play tricks, like hiding inside your spaceship? ",
+                            "text": "Tell me about your fairytale character, is he a grumpy troll or a happy troll?",
                             "textPosition": "top"
                         }
                     ],
@@ -3331,23 +3324,22 @@
                 {
                     "id": "1045B517-A82B-B2B0-4E53-B04526DE5EC8",
                     "pageNumber": 10,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_10",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "ca7300ea-103d-4e31-b47d-3372394e2654",
-                            "text": "The friendly fairytale has six legs! But it only uses two legs at a time. The fairytale walks and runs until its two legs get tired, then it tucks the tired legs away and uses two others! ",
-                            "textPosition":"top"
+                            "text": "Your fairytale character has branches and leaves. It also has eyes and a mouth! Have you ever met a talking tree before? "
                         },
                         {
                             "id": "b152c088-d4fe-4c10-9e18-2db50403f77d",
-                            "text": "The fairytale climbs hundreds of steps to the tippy top of its tall tower and changes legs many times. You huff and puff up the stairs wishing you had six legs too! "
+                            "text": "Your fairytale friend is part of the magical forest and even though its roots hold tight to the ground, its branches sway and swing and dance in the wind. ",
+                            "textPosition": "top"
                         },
                         {
                             "id": "feeadb24-f124-403e-b788-64463849ba3a",
-                            "text": "Tell me about the friendly fairytale. Does it wear a backpack with a parachute inside or does it have a big red button at the top of its tower? ",
-                            "textPosition": "top"
+                            "text": "Tell me about your fairytale character, does it like to play with its forest animal friends, or does it teach its friends to move with the music?"
                         }
                     ],
                     "navigationLinks": [
@@ -3366,21 +3358,21 @@
                 {
                     "id": "70195C50-E285-68B7-49CB-2A07EF4F7885",
                     "pageNumber": 11,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_11",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "03f6f3c4-582c-4157-b5ec-506e960a8a5e",
-                            "text": "The friendly fairytale has four legs! There's a leg that goes up and a leg that goes down. There's a leg on its face and a leg on its bum! "
+                            "text": "Your fairytale character has a magical horn! It’s the only unicorn in the whole kingdom with a horn so shiny and bright. It lights up the magical forest with happiness. "
                         },
                         {
                             "id": "b1e44e21-5342-45a9-828d-6ec4212e4823",
-                            "text": "The fairytale walks by tipping forward onto one leg at a time, rolling over and over like a bicycle wheel without a tire! If you walked like that, you would be very dizzy! "
+                            "text": "Your fairytale friend shows you all the butterflies dancing in the trees and birds singing along with the wind. "
                         },
                         {
                             "id": "71a898b7-d25b-4391-b237-7296e58706be",
-                            "text": "Tell me about the friendly fairytale. Does it have a set of pretend legs for you to borrow, or does it want to show you how to eat space bugs? ",
+                            "text": "Tell me about your fairytale character, does it have wings, or does it stay close to the ground?",
                             "textPosition": "top"
                         }
                     ],
@@ -3400,22 +3392,22 @@
                 {
                     "id": "9DCEC7DA-AE41-02B1-495E-56F7563A6A18",
                     "pageNumber": 12,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_12",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "0414a045-48b1-42f8-81e8-3bff64e5298d",
-                            "text": "The friendly fairytale has two mouths! One mouth has teeth for chomping and chewing while the other mouth has a big tongue for slurping and burping. ",
+                            "text": "Your fairytale character wears a pointy hat. That’s because he’s a gnome! Gnomes love to travel around the fairytale kingdom and your new friend is the perfect guide. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "b4a2d14d-5e7f-4b97-91e4-76c633f376f5",
-                            "text": "Because it has two mouths, it can eat dinner and drink water all at the same time! "
+                            "text": "If you ever want to know how a gnome is feeling, just look at their rosy cheeks and easy smiles. You will see that gnomes love to laugh! "
                         },
                         {
                             "id": "1f22fd2d-dda5-40a6-bc61-e0ed46fdd159",
-                            "text": "Tell me about the friendly fairytale. Does it want to read your book about different planets or can it turn invisible? ",
+                            "text": "Tell me about your fairytale character, does he work in a beautiful flower garden, or does he hunt for jewels?",
                             "textPosition": "top"
                         }
                     ],
@@ -3435,23 +3427,22 @@
                 {
                     "id": "1948E15E-0965-CF8E-433A-82CF34F464E3",
                     "pageNumber": 13,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_13",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "65753ae0-3726-4092-9854-ffc2c73c45d5",
-                            "text": "The friendly fairytale has bumpy skin like a golf ball! There are lots of little dents all over the fairytale, like tiny little bird baths. The fairytale looks like a giant scoop of ice-cream with all of the chocolate chips picked out! ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character sparkles! It also has sparkly wings that are made for flying around the magical forest. From the tops of the tall leafy trees to swooshing through flowers and fields of grass. "
                         },
                         {
                             "id": "f51644c5-6a58-4ee6-a0f6-0f2812541999",
-                            "text": "When it rains inside the fairytale's cloudy home, all of its little bumps fill with water for the fairytale to drink. "
+                            "text": "Your fairy friend loves to flap her shiny wings in the sunshine and even at night in sparkling starlight. ",
+                            "textPosition": "top"
                         },
                         {
                             "id": "b99e5d59-2b56-4fd3-b521-a91f18692ce6",
-                            "text": "Tell me about the friendly fairytale. Does it make funny spots on the ground when it rolls around, or does it use long bendy straws to eat dinner? ",
-                            "textPosition": "top"
+                            "text": "Tell me about your fairytale character, does she like sharing fairy dust or flying higher than the birds?"
                         }
                     ],
                     "navigationLinks": [
@@ -3470,23 +3461,22 @@
                 {
                     "id": "193746FE-4688-8096-4A56-3548757BD8AB",
                     "pageNumber": 14,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_14",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "150b33b4-8099-4f41-ac87-e3de3089449e",
-                            "text": "The friendly fairytale has telescope eyes. It stretches its eyes all the way out to see things very far away. It uses a whole different set of eyes to see things very close up. ",
+                            "text": "Your fairytale character wears a crown! He looks just like a frog, but is he really? The crown he wears is gleaming gold and covered with jewels. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
-                            "text": "Its eyes are so amazing they can even smell smells! The fairytale stretches out its eyes to sniff and peep and snort and squint. "
+                            "text": "This is no ordinary fairytale frog. He can sing and dance and loves to talk. He’s a chatty fairytale frog with stories galore! "
                         },
                         {
                             "id": "9a451a17-eaa4-4828-9f3d-6d220c68a551",
-                            "text": "Tell me about the friendly fairytale. Does it curl into a circle when it wants to move fast, or does it chase bouncy fluffy puffs across the desert? ",
-                            "textPosition": "top"
+                            "text": "Tell me about your fairytale character, does he have a party at the pond or does he meet a princess?"
                         }
                     ],
                     "navigationLinks": [
@@ -3511,17 +3501,16 @@
                     "texts": [
                         {
                             "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
-                            "text": "The friendly fairytale's body has lots of different colours! It crawls on its belly very fast which makes the fairytale look like a squiggly wiggly, moving rainbow! ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character has pointy ears. That’s because he’s a friendly fairytale goblin! Goblins are green and giddy and quick. They love to dance, explore, and play tricks. "
                         },
                         {
                             "id": "dfc20654-6412-4f3a-abf6-675cc28c6eb8",
-                            "text": "You find pictures of rainbows in a book on your spaceship and invite your fairytale friend to take a look. The fairytale is amazed and likes Earth rainbows very much. "
+                            "text": "Every day is an adventure for your fairytale friend. He wants you to help him find new places for fun in the magical kingdom. ",
+                            "textPosition": "top"
                         },
                         {
                             "id": "f952f04d-299a-4179-ac24-ad5da07028fe",
-                            "text": "Tell me about the friendly fairytale. Does it hide in a cave full of purple rocks or can it come apart like a jigsaw puzzle? ",
-                            "textPosition": "top"
+                            "text": "Tell me about your fairytale character, does he use magic or build things with rocks?"
                         }
                     ],
                     "navigationLinks": [
@@ -3546,21 +3535,20 @@
                     "texts": [
                         {
                             "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
-                            "text": "The friendly fairytale likes to clean. It has sticky tippy toes for walking up the side of the big bubble house. Then the fairytale uses its big wet tongue and soft spongy hands to scrub, scrub, scrub. ",
+                            "text": "Your fairytale character has one big eye. Your giant is a cyclops! There is so much to see from the top of a beanstalk and your fairytale friend can look at every corner of the magical kingdom with his big beautiful eye. "
+                        },
+                        {
+                            "id": "593b3b3f-1b82-4a67-9e26-6f409a799c0d",
+                            "text": "Peek over the walls of the magic castle and see through the trees in the fantastic forest. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "593b3b3f-1b82-4a67-9e26-6f409a799c0d",
-                            "text": "Its sticky tippy toes are so sticky the fairytale can even clean the big bubble house inside and upside down! All of the fairytales in the bubble town like cleaning so much that they clean their big bubble houses every single day. "
+                            "text": "From the tippy top of the tallest bendy beanstalk your gigantic giant can see all the way to the door from the magical kingdom back to your bedroom! "
                         },
                         {
                             "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
-                            "text": "When your new friend finishes cleaning its home, it walks over to your spaceship and keeps right on cleaning. It scrubs your spaceship inside, outside, topside and underneath. ",
-                            "textPosition": "top"
-                        },
-                        {
-                            "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
-                            "text": "Its big wet tongue slurps and slops and its spongy hands scrub and mop. When the fairytale is finished, your spaceship is wonderfully, sparkling clean! "
+                            "text": "Anytime you want to visit him, just walk through the door and he will leap down from the beanstalk, cross the river and land next to you to show you around. Your fairytale friend is the best cyclops ever. "
                         }
                     ],
                     "navigationLinks": []
@@ -3574,22 +3562,15 @@
                     "texts": [
                         {
                             "id": "db128fd8-a649-4223-84ef-67c1a8886d48",
-                            "text": "The friendly fairytale likes to play sports. Its favourite game is a mix of racing and ball kicking. Two fairytales line up to play and when a loud whistle blows , they start running. They kick a ball back and forth and forth and back while running as fast as they can. ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character has bright blue hair. That’s because he’s a frost giant! It’s cold at the tippy top of the tall bendy beanstalk, but that doesn’t bother your frosty friend. He’s used to the chilly wind and the shivering sky and the sharp icy clouds. "
                         },
                         {
                             "id": "474afb0a-4b9d-4e3a-83ce-6fbec975ccf3",
-                            "text": "They race past houses and trees and family and friends. You watch the two fairytales zoom past while you cheer and clap your hands. The two fairytales kick and run and run and kick, faster and faster. ",
-                            "textPosition": "top"
+                            "text": "Since it’s your first time here, he offers to lend you a fuzzy, warm sweater, but he’s so big you only fit inside the pocket! Everything in your frost giant’s home is bright blue, just like his hair. "
                         },
                         {
                             "id": "9fc4621e-a4f3-494d-b298-57a81fb1ff18",
-                            "text": "The fairytale who reaches the finish line first is the winner. Then it's your turn to try. You run as fast as you can in your spacesuit, but your big space boots are very heavy. "
-                        },
-                        {
-                            "id": "eabda3b7-1670-cdb2-4ba5-d2f12ee51982",
-                            "text": "When you kick the ball, your heavy boots hit it so hard it flies right over the bubble houses and is lost out in space! Oh no! It's all okay though, you can find the ball using your spaceship. ",
-                            "textPosition": "top"
+                            "text": "As far as you can see, and that’s pretty far from way up here, there are blue clouds, the blue sky, sparkling blue snow, and deep blue water down below. It’s lucky that the frost giant’s favourite colour is blue, it’s everywhere! "
                         }
                     ],
                     "navigationLinks": []
@@ -3603,21 +3584,20 @@
                     "texts": [
                         {
                             "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
-                            "text": "The friendly fairytale grows fairytale vegetables. It has a special big bubble house just for growing things. Some vegetables grow out of the ground and some hang from the ceiling. ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character is a grumpy troll. That’s because he’s a toll troll! He waits all day for magical creatures to come by and try to use his bridge. "
                         },
                         {
                             "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
-                            "text": "There are vegetables that look like jellyfish and vegetables that look like trumpets. You can't go inside the big garden bubble because there's no doors for you to use. But you can see through the walls all the amazing things growing like a strange bubble jungle. "
-                        },
-                        {
-                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
-                            "text": "The friendly fairytale picks a tasty blue bubble-squirt for you to try. It pokes the bubble-squirt at the helmet of your spacesuit to put it in your mouth. "
-                        },
-                        {
-                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
-                            "text": "But your helmet is just like a bubble house with no door! You can't eat with your helmet on, so you put the blue bubble-squirt in your pocket to taste when you get home. ",
+                            "text": "When they want to cross over to the other side of the magical river, they have to pay your fuzzy fairytale troll a toll. ",
                             "textPosition": "top"
+                        },
+                        {
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
+                            "text": "They can pay with gold, jewels, or even magic stones, but not with flowers, sticks, or boring old rocks. None of the magical creatures like to pay the toll, so they cry and yell and try to creep across the bridge. But it doesn’t matter, your toll troll sticks to the rules and does his job very well. "
+                        },
+                        {
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
+                            "text": "He’s your friend though, so sometimes he lets you sneak past and cross the bridge for free. Maybe he’s not so grumpy after all! "
                         }
                     ],
                     "navigationLinks": []
@@ -3631,21 +3611,21 @@
                     "texts": [
                         {
                             "id": "4f1c5178-67e6-4455-a632-bf7765076984",
-                            "text": "The friendly fairytale likes to play tricks, like hiding inside your spaceship! It sneakily sneaks on board when you're not looking. When you're ready to go home you feel sad because you can't find your new fairytale friend to say goodbye! ",
+                            "text": "Your fairytale character is a happy troll. That’s because he’s a dancing troll! All day, every day your fairytale friend leaps and twirls and jumps and spins. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
-                            "text": "It's time to leave so you sit in the captain's chair of your spaceship and boop the buttons and lift the levers to make the spaceship take off. But you don't know the fairytale is hiding on board as you start heading home! "
+                            "text": "The magical creatures in the magical kingdom love to come and join in the fun with your lively, happy dancing troll. When the bunnies from the forest show up, the real party starts. "
                         },
                         {
                             "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
-                            "text": "You are almost halfway to Earth when the fairytale jumps out to surprise you, ta-da! You get such a fright! What a naughty fairytale. ",
+                            "text": "You can see them shaking their poofy white tails and you can’t help but hop to the rhythm too! There’s only a problem when your dancing troll friend tries to sing. ",
                             "textPosition": "top"
                         },
                         {
-                            "id": "a3fe0e4e-610d-4797-a07b-bb7249c988dc",
-                            "text": "You have to turn your spaceship around and fly all the way back to the fairytale's planet to take your silly friend home. You say your goodbyes and promise to visit again soon. "
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "He’s not very good, and he’s very, very loud! It’s a little bit tricky to dance when you have to hold your hands over your ears. But the happy dancing troll is so much fun to be around, you really don’t mind."
                         }
                     ],
                     "navigationLinks": []
@@ -3659,21 +3639,21 @@
                     "texts": [
                         {
                             "id": "c1fc38dd-2a22-4b23-8afc-e8e696a893ca",
-                            "text": "The friendly fairytale wears a backpack with a parachute inside. It uses the parachute to get down from its tower. When the fairytale is ready, it stands at the edge of the tippy top of its tall tower and jumps! ",
+                            "text": "Your fairytale character likes to play with its forest animal friends. His favourite kind of playing is giving the animals a friendly fright! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "ddbb503c-e63e-4a5a-933a-7f1fb98b0ba0",
-                            "text": "Then a big pretty parachute puffs up out of the backpack. The fairytale floats slowly and gently all the way to the ground. It pushes the parachute back inside the backpack, ready for next time. "
+                            "text": "For your leafy friend, there’s nothing more fun than pretending to be a regular tree by standing very still and quiet in the magical forest for a long time. "
                         },
                         {
                             "id": "beb24ea5-e65a-46dc-8638-370634a598f2",
-                            "text": "When the weather is windy the ride down can get loopy. Sometimes the wind swoops up the fairytale and its parachute and swishes it far away! Then the fairytale has to use its six short legs to walk all the way home. ",
+                            "text": "Then, when another fairytale creature walks by thinking he is a harmless tree, the sneaky tree reaches out with willowy branches to tap his friends on the shoulder, making them jump high into the air in surprise! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "07511351-f6e9-4391-b803-efa420aea2df",
-                            "text": "After a long walk, the fairytale has to rest before it can climb the hundreds of stairs up to the tippy top of the tall tower. It's all very tiring! "
+                            "text": "Sometimes they are mad at first, but when they see the talking tree laughing they can’t help but laugh along with him. He tries to trick you too, but you watched him play all day long, and you know better than to fall for it! "
                         }
                     ],
                     "navigationLinks": []
@@ -3687,21 +3667,21 @@
                     "texts": [
                         {
                             "id": "2b0216e1-d942-4ccc-845c-42a2ce4101ff",
-                            "text": "The friendly fairytale has a big red button at the top of its tower. The button is round and even bigger than you! Your fairytale friend jumps onto the button and just like that, the hundreds of stairs are no longer there! Instead there is a giant slide! ",
+                            "text": "Your fairytale character teaches its friends to move with the music. That’s because he teaches an awesome exercise and dance class! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "9b351093-742d-4b11-9343-a32ec9fa43ef",
-                            "text": "The slide twists and turns around the tower. It goes all the way from the tippy top of the tower to the dusty desert ground. The fairytale cheers and sits on the slide to woosh and swoosh all the way down. "
-                        },
-                        {
-                            "id": "ff035dce-37b1-4c77-8893-6b6ea1e6c815",
-                            "text": "Sliding down slides is more fun than walking down stairs, so you sit on the slide too. The slide is long and you speed along faster and faster. The slide is loopy and you swoop around and around the tower. ",
+                            "text": "Your talking tree calls out for big bends and stretches to help keep all the fairytale creatures in the magical kingdom fit and healthy. You join in as they dance and sway along with music from the best bands in the fairytale kingdom. ",
                             "textPosition": "top"
                         },
                         {
+                            "id": "ff035dce-37b1-4c77-8893-6b6ea1e6c815",
+                            "text": "You haven’t heard any of the songs before, but you like what you hear and bend and twist with everyone else. It feels good to move around and work out with your new friends. "
+                        },
+                        {
                             "id": "ca394226-bba0-43df-b103-15ab418966c5",
-                            "text": "When the bottom is just ahead, you land on the ground with two feet and a very dizzy head! ",
+                            "text": "Branches reach into the sky alongside hooves, paws, and arms - but legs and roots stay stuck to the ground, because even fairytale trees can’t kick!",
                             "textPosition": "top"
                         }
                     ],
@@ -3710,27 +3690,26 @@
                 {
                     "id": "17059A7E-45A6-A6B7-446A-F51615850026",
                     "pageNumber": 22,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_22",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
-                            "text": "The friendly fairytale has a set of pretend legs for you to borrow. They're curly and bouncy and stick to your spacesuit. The legs are yellow just like your space boots! ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character has wings! The unicorn can fly! Explore the sky with your very own fairytale unicorn. The wind is yours to ride around and see the earth from up high. "
                         },
                         {
                             "id": "1985ce22-3331-4897-b10d-399376fd6946",
-                            "text": "To walk like your new friend, you need a leg that goes up and a leg that goes down, a leg on your belly and a leg on your bum! The fairytale legs are springy, just like a spring. You jump and you bounce and you roll up the stairs. "
+                            "text": "Swoop above the clouds and swing down towards the ground when you see a friend you want to visit. From all the way up here you can see the tippy tops of the bendy beanstalks where the giants live. "
                         },
                         {
                             "id": "62d6db0d-7fcd-4853-b2a0-014772418990",
-                            "text": "You tip upside down and downside up. Every time you tip forward to use the leg on your head, you worry that you'll wobble and tip off the stairs instead! But your friend is there to help and to keep you safe. "
+                            "text": "You also see the snowy peaks of all the magical mountains where dwarves are digging for jewels. ",
+                            "textPosition": "top"
                         },
                         {
                             "id": "33944d41-051e-484a-a30c-de6c03970c37",
-                            "text": "You roll higher and higher getting dizzier and dizzier. When you reach the tippy top of the tall tower you have to sit down for a minute for your head to stop spinning. But there's a leg on your bum which keeps right on springing! ",
-                            "textPosition": "top"
+                            "text": "When you and your unicorn friend feel sleepy from all your adventures of flying and gliding here and there, you can take a nap on a soft comfy cloud and dream of far away places and sparkling sights to see tomorrow. "
                         }
                     ],
                     "navigationLinks": []
@@ -3744,22 +3723,20 @@
                     "texts": [
                         {
                             "id": "09aef51f-55fd-4cff-80c4-83f576c1d215",
-                            "text": "The friendly fairytale wants to show you how to eat space bugs! The fairytale is like a vacuum cleaner with four hoses. Its legs are also trunks made for slurping up bugs! ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character stays close to the ground. That way it can do all the things unicorns love, like run and leap and jump and race around the magical forest with all its enchanted friends. "
                         },
                         {
                             "id": "1ad76f1c-0b0e-41ce-a901-8c84f8c66e4d",
-                            "text": "It walks up the stairs from one leg to the next while it sucks and it slurps and gobbles its lunch. There are so many stairs and so many bugs that by the time the fairytale reaches the tippy top of the tall tower, it is full enough to burst! "
+                            "text": "Those enchanted forest friends are your friends too! Every path is made for running and every part of the magical forest is filled with new trails to find and explore together. "
                         },
                         {
                             "id": "b1f355b3-ea2d-4378-ab42-221c92583634",
-                            "text": "Sometimes the stairs are covered in dust. When your fairytale friend walks and slurps dust up its trunks, it sneezes AH CHOO! It doesn't just sneeze out of one trunk leg, it sneezes out of all four at the same time. AH CHOO, CHOO, CHOO, CHOO, it sounds like a train. ",
+                            "text": "Your unicorn is the fastest creature around and always wins a race. But that won’t stop you from trying to win one, running with the wind is so much fun! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "b141d174-332c-4d50-a28c-077ed0d424f7",
-                            "text": "A train with four trunks. Trunks that are legs. Legs for walking up hundreds of stairs. Legs that are trunks that also eat bugs! ",
-                            "textPosition": "top"
+                            "text": "There are cool rivers to cross and high rocky mountains to climb. There are so many adventures to be found in this magical kingdom. Your fairytale friend will show you the way! Come on!"
                         }
                     ],
                     "navigationLinks": []
@@ -3773,21 +3750,21 @@
                     "texts": [
                         {
                             "id": "7a723379-6975-4dfc-8424-2d319082ea8a",
-                            "text": "The friendly fairytale wants to read your book about different planets. You spend all day telling the fairytale about planet Earth. Your new friend wants to see a picture of Earth, so you find your big book of planets. ",
+                            "text": "Your fairytale character works in a beautiful flower garden. That’s because it’s a garden gnome! Garden gnomes grow big, pretty flowers all around the magical kingdom. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "ba978ff7-b9a2-4116-bfab-7b5148b8b3ee",
-                            "text": "You flip through the pages of planets until you find Earth. It's a beautiful blue and glorious green colour. You flip through the pages of planets until you find the fairytale's home. It's a pretty purple and rocking orange colour. The planets are very different. "
-                        },
-                        {
-                            "id": "3e0f672b-12ad-4852-9124-6e8e736cc036",
-                            "text": "Your fairytale friend wants to come home with you to see planet Earth, but the spaceship only has one seat. Instead, you leave your big book of planets with the fairytale so it can see the pictures and practice reading. ",
+                            "text": "They decorate the magic castle with special trees of every shape and size and every kind and color of pretty plant you can imagine. There are lots of plants you have never even seen before! ",
                             "textPosition": "top"
                         },
                         {
+                            "id": "3e0f672b-12ad-4852-9124-6e8e736cc036",
+                            "text": "Many of the plants your tiny fairytale friend takes care of grow so amazingly tall, they reach past your head up into the big blue sky! "
+                        },
+                        {
                             "id": "ddf49217-ba48-4229-8f9e-8a035992b86c",
-                            "text": "You promise to visit again soon with more big books full of interesting things. ",
+                            "text": "Creating a beautiful garden is a lot of work, but your garden gnome friend makes it look easy. All garden gnomes in this magical kingdom use love and sparkles to grow magical flowers and plants! ",
                             "textPosition": "top"
                         }
                     ],
@@ -3802,21 +3779,21 @@
                     "texts": [
                         {
                             "id": "37c91963-76fd-4594-9653-1e3e66163119",
-                            "text": "The friendly fairytale can turn invisible! You're walking through the heavy wet clouds that cover the ground, but the fairytale disappears when you turn around. "
+                            "text": "Your fairytale character hunts for jewels deep underground. Bright red rubies and deep blue diamonds are your gnome’s favourite treasures and he wants to show them to you! "
                         },
                         {
                             "id": "2c03a901-5ac1-40ef-9975-5ec7f0e91bf6",
-                            "text": "The invisible fairytale watches as you look everywhere. It giggles and jiggles because you're so near! The cheeky fairytale decides to eat lunch while you look. ",
+                            "text": "Gnomes use special secret doors to reach the deep underground places where jewels are buried. It helps to be a teensy tiny gnome to squeeze into all the little caves and caverns underneath the magical earth. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "53d47300-fcae-470e-9887-64e74e537013",
-                            "text": "You keep walking further and further away until you hear noises. There's lots of crunching and slurping and biting and burping! You follow the yucky sounds until you bump into your invisible friend, but you still can't see them! ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character friend is especially good at finding the prettiest and shiniest jewels in the magic fairytale kingdom. "
                         },
                         {
                             "id": "0e1925b9-f838-cca6-4728-bfc79d5e9707",
-                            "text": "Then your friend giggles and jiggles loudly and you know that it's there! The fairytale changes so you can see it again. Your fairytale friend played a trick on you! At first you're a bit grumpy, but the fairytale laughs and then you think it's funny. "
+                            "text": "He makes beautiful jewelry from the stones he finds and gives sparkling crowns, bright bracelets, and glittering rings to all his fairytale friends. These gomes are the best dressed and fanciest characters in the whole kingdom. ",
+                            "textPosition": "top"
                         }
                     ],
                     "navigationLinks": []
@@ -3824,28 +3801,26 @@
                 {
                     "id": "E3FC6095-A610-F1B9-4034-5D13EAE264F2",
                     "pageNumber": 26,
-                    "numSoundEffects": 2,
+                    "numSoundEffects": 3,
                     "assetCode": "fairytale_26",
                     "backgroundOpacity": 0.8,
                     "texts": [
                         {
                             "id": "4597b993-e21d-4bbd-a356-50e0ef1aad3d",
-                            "text": "The friendly fairytale makes funny spots on the ground when it rolls around. The spots are like footprints, but the fairytale doesn't have feet! If the footprints aren't from a foot, what do you call them? ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character likes sharing fairy dust. That’s because it’s so much more fun to fly with friends! Just a few flakes of fairy dust will make any creature fly for a little while. "
                         },
                         {
                             "id": "ebdb120b-bff6-4bf8-9342-a66c5b0170d0",
-                            "text": "The fairytale is round with no arms, legs or feet. So the prints must be body prints, left on the ground as the fairytale rolls around. There are little bumps in the dirt everywhere the fairytale goes. "
+                            "text": "Your fancy fairy friend likes to share some of her sunshine and float around the forest with other fairytale characters. ",
+                            "textPosition": "top"
                         },
                         {
                             "id": "8d98dc21-547d-4014-bd58-5300ba44e2b3",
-                            "text": "You try to play hide and seek, but the fairytale is too easy to find. You just follow the spots on the ground. You sneak along and creep along, following the spots. Your big space boots squish the spots as you step on them. ",
-                            "textPosition": "top"
+                            "text": "They float up above the glittering green trees in the magical forest and across the bright blue rivers and streams that flow all around. The other creatures flap their arms up and down pretending to be birds with wings. "
                         },
                         {
                             "id": "2f2f598e-1b36-4cc0-bad1-1b5a23618d99",
-                            "text": "When you reach a big rock, you know the fairytale is hiding behind it. You take one last step around the rock and find your friend. The fairytale is surprised you found it so fast. It forgets about the spots it makes on the ground whenever it rolls around. ",
-                            "textPosition": "top"
+                            "text": "But it’s really the fairy dust that makes them fly through the warm sunshine and around the cool clouds in the sky. Now that you’re friends with the sparkly fun fairytale character, you get to go flying with her too!"
                         }
                     ],
                     "navigationLinks": []
@@ -3859,21 +3834,21 @@
                     "texts": [
                         {
                             "id": "9ad07932-c9cf-4123-a1be-4f869c3ba525",
-                            "text": "The friendly fairytale uses long bendy straws to eat dinner. The fairytale says that bendy straws are more fun than straight straws. It has two different bendy straws, one for drinking and one for eating. ",
+                            "text": "Your fairytale character likes flying higher than the birds. Just because she can! It’s so peaceful soaring up above the clouds and the tippy tops of the tall trees. There’s no one else for miles around. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "8c450315-eba0-44f6-b8c3-4cdaf56c5502",
-                            "text": "Whenever it rains, water sits in the bumps on its skin. The fairytale uses a bendy straw to drink the water off its own back! When the fairytale is hungry it eats dirt. It sucks the dirt right off the ground using the other bendy straw. "
-                        },
-                        {
-                            "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
-                            "text": "The fairytale can eat and drink at the same time! The water gurgles through one straw while dirt wriggles though the other straw. ",
+                            "text": "She will fly for hours to every corner of the fairytale kingdom, visiting friends or enjoying the peace and quiet that happens when she swishes through a fluffy white cloud. ",
                             "textPosition": "top"
                         },
                         {
+                            "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
+                            "text": "When she gets sleepy and her wee little wings get tired from flying up so high, she needs to rest on the way down. "
+                        },
+                        {
                             "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
-                            "text": "The fairytale asks if you would like to share its dinner, but you don't want to drink water off its back or eat dirt off the ground! You say “No, thank you.” The fairytale doesn't mind. It gurgles and slurps and sucks on its bendy straws until it's all full. ",
+                            "text": "That’s when her best bird friend swoops in to say hello and gives her a ride on his feathery back down to the flowery ground where she can sleep and rest to fly again tomorrow. ",
                             "textPosition": "top"
                         }
                     ],
@@ -3888,22 +3863,21 @@
                     "texts": [
                         {
                             "id": "d83fdd28-f8c1-4eb0-ac86-16113797ae70",
-                            "text": "The friendly fairytale curls into a circle when it wants to move fast. It looks like a wheel as it rolls along as fast as a race car! The fairytale likes to chase space puppies all over the desert, just for fun. ",
+                            "text": "Your fairytale character has a party at the pond! It’s fun to be king of the frogs, so why bother changing into anything else? ",
                             "textPosition": "top"
                         },
                         {
                             "id": "74d901da-49f5-4a98-a7b9-7494378fdee9",
-                            "text": "It stretches out its telescope eyes to squint and sniff and snort and look for space puppies running around the desert. When it sees or sniffs one, the fairytale curls into a big ball and rolls after the space puppy. ",
+                            "text": "There are too many fairytale friends for this frog king to be worried about anything but having a good time in the enchanted forest. He spends time with all the other fairytale characters, like his buddy the bear, the rabbit, the deer, the duck, and so many more! ",
                             "textPosition": "top"
                         },
                         {
                             "id": "a27cc549-f47e-4d5a-98f7-612159e1699e",
-                            "text": "The fairytale zigs and zags and zooms and vrooms all over the dusty desert. It keeps one eye pointed at the space puppy so it knows where to roll. The fairytale doesn't get dizzy as its body spins around and around in the sand. ",
-                            "textPosition": "top"
+                            "text": "Splish splash all day with your froggy fairytale friend, diving into magical ponds, lakes, and rivers where the water is always cool and the sun is always warm. "
                         },
                         {
                             "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
-                            "text": "You try to follow the fairytale by doing rolly pollys. You tuck your helmet to your belly and roll over and over again. But you can't roll as fast as the fairytale and the dusty desert makes your spacesuit all dirty! Instead you wait for the fairytale to catch a space puppy for you to pat. ",
+                            "text": "Take turns throwing shiny stones to the bottom of the pool and hold your breath to swim down deep to find them. There’s nothing better than swimming with the fancy froggy prince!",
                             "textPosition": "top"
                         }
                     ],
@@ -3918,22 +3892,20 @@
                     "texts": [
                         {
                             "id": "3d092c81-3b9a-42f8-a9d4-3d637577b76f",
-                            "text": "The friendly fairytale chases bouncy fluffy puffs across the desert! The fluffy puffs bounce out of holes in the ground. The fairytale uses its telescope eyes to see and sniff how many fluffy puffs it can spy. ",
-                            "textPosition": "top"
+                            "text": "Your fairytale character meets a princess! What a wonderful and magical world you’ve found! "
                         },
                         {
                             "id": "317037c8-f513-46ef-a120-79fc213cb42f",
-                            "text": "Nobody knows what makes fluffy puffs bounce. They bounce up in the air where they float and they flutter. The fairytale runs out to catch them to have them as supper! "
+                            "text": "You thought your little green fairytale friend was a fancy frog. But it turns out he was a prince in disguise. When he met the princess he fell in love at first sight and knew that he wanted to turn back into the prince he was inside all along. "
                         },
                         {
                             "id": "d670a84b-ef99-48d4-b824-01b8b1ff6732",
-                            "text": "You eat one of the fluffy puffs just to try it. You decide that they're tasty and you like it. The puffs are all fluffy like cotton candy. Or maybe the fluff is all puffy like a marshmallow. ",
+                            "text": "It was fun being a frog and living life in the forest with all his fairytale animal friends. But now it’s time for him to return to the his kingdom as a prince with his new princess. They invite you to come along too. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
-                            "text": " The strange fairytale food is yummy either way. Maybe you could grow some back on Earth? It's impossible to say. The fairytale gives you some fluffy puffs to take on your spaceship. When you get home, you'll dig holes where the fluffy puffs can stay. ",
-                            "textPosition": "top"
+                            "text": "You learn that you can’t tell what a person is like just by looking at them. Everyone is different, and you never know who is inside a friendly face!"
                         }
                     ],
                     "navigationLinks": []
@@ -3947,22 +3919,21 @@
                     "texts": [
                         {
                             "id": "68d48745-3122-4874-b8f1-ea471ba4bfbf",
-                            "text": "The friendly fairytale hides in a cave full of purple rocks. The cave is cold, so the fairytale snuggles and squishes its body together. The fairytale's ears stick up because they don't fold down. It makes it much easier to hear what's around. ",
+                            "text": "Your fairytale character uses magic. He’s a cheeky goblin who does funny, friendly tricks! He thinks he is being clever when he uses magic to steal an acorn from his furry friends. But not everyone finds it very funny. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "0f3a7ca9-fe79-45f4-bc20-6b3611cd39a5",
-                            "text": ". It's always hot out in the desert but sometimes the fairytale likes being cold. So it hides inside the big chilly cave away from the two suns. The fairytale looks for a smooth patch of ground between the purple rocks, then folds itself down like a pile of blocks. ",
+                            "text": "The poor squirrel looks around and runs in circles looking for his acorn. Where could it be? Your goblin friend knows, it’s hidden behind his back! "
+                        },
+                        {
+                            "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
+                            "text": "The fuzzy squirrel can’t help but be happy when he sees his friend holding his acorn. No need to worry about hurting anyone’s feelings, a trick is just a joke. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
-                            "text": "When it's all squished and squeezed into half its normal size, the fairytale reminds you of the coloured stacking blocks you like to play with. All of the colours fit inside each other. ",
-                            "textPosition": "top"
-                        },
-                        {
-                            "id": "0ea6a82d-5e13-491f-98e4-374849c6c24f",
-                            "text": "When the fairytale is ready to stretch back out to full size, it unfolds one colour at a time, pop, pop, pop! ",
+                            "text": "In the end your mini friendly goblin always gives back whatever he takes. What he really likes about playing silly tricks is making his friends laugh out loud and smiling along with them!",
                             "textPosition": "top"
                         }
                     ],
@@ -3977,22 +3948,21 @@
                     "texts": [
                         {
                             "id": "5a08da89-9e74-42e1-8de0-2982d77b610a",
-                            "text": "The friendly fairytale can come apart like a jigsaw puzzle! The fairytale has pieces in all different colours. Some pieces have spots and others have scales. Some pieces are smooth and other pieces are hairy! ",
+                            "text": "Your fairytale character builds amazing things with rocks. He’s a builder goblin! It’s a busy, dusty job but your goblin loves to build big buildings. In fact, he built the castle and all the buildings inside the magical kingdom. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "137becab-86d8-4f8a-980a-3a19ff2ad3b3",
-                            "text": "The fairytale leaves its pieces lying around in the desert. Sometimes the fairytale even forgets where it leaves the pieces and has to search for them. One of the puzzle pieces is fluffy and the same colour as the dusty desert. When that piece is lost, it's very tricky to find! "
+                            "text": "Stacking rocks, one on top of the other, to make tall towers is fun. So is building long roads made of colorful painted stones across the magical world to connect all the fairytale creatures. "
                         },
                         {
                             "id": "049bb1df-2ad6-ef86-4ebb-5cb26cf05418",
-                            "text": "Your new friend needs your help to find all of its pieces. You walk back and forth and forth and back, all over the dusty desert looking for the pieces of puzzle the fairytale left lying around. ",
+                            "text": "The roads make it easy to travel to each of the buildings he builds. He even built the magical door between your room and the enchanted kingdom, so he’s been waiting a long time to meet you. ",
                             "textPosition": "top"
                         },
                         {
                             "id": "fd7ec425-6e6a-49aa-b38a-5dd050842589",
-                            "text": "The fairytale has ten puzzle pieces, so you count the pieces as you find them. The first nine are easy but the last one is tricky. Finally, you find the final fluffy piece. The fairytale puts its pieces back together and is very pleased. ",
-                            "textPosition": "top"
+                            "text": "Watching his work start small with just a few stones to start, then watching it grow into something big is his favorite thing in the world!"
                         }
                     ],
                     "navigationLinks": []

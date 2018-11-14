@@ -54,6 +54,10 @@ _resourcesByBook = [
     {
       bookId: 'DAC400B5-9135-4499-9D11-4BF95CFB5442',
       coverImage: require("../../img/triple_pack.png")
+    },
+    {
+      bookId: '20B88B40-2426-F8A5-4923-008103C53E15',
+      coverImage: require("../../img/triple_pack.png")
     }
 ]
 

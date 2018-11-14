@@ -151,6 +151,8 @@ class Store extends Component
             bookData.books.push({ id:"915D33E3-109D-BCA7-4701-7FEDD4266F7C", isMulti: true, title:"Double Pack", androidIAPCode:"1_2", iosIAPCode:"1_2", numBooks: 2});
         if (bookData.books.filter(b => b.title === "Triple Pack").length == 0)
             bookData.books.push({ id:"DAC400B5-9135-4499-9D11-4BF95CFB5442", isMulti: true, title:"Triple Pack", androidIAPCode:"1_2_3", iosIAPCode:"1_2_3", numBooks: 3});
+        if (bookData.books.filter(b => b.title === "Quadruple Pack").length == 0)
+            bookData.books.push({ id:"20B88B40-2426-F8A5-4923-008103C53E15", isMulti: true, title:"Quadruple Pack", androidIAPCode:"1_2_3_4", iosIAPCode:"1_2_3_4", numBooks: 4});
     }
 
     restorePurchases()
