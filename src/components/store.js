@@ -130,7 +130,6 @@ class Store extends Component
             InAppUtils.loadProducts(productList, (error, products) => {
                 for (i = 0; i < products.length; i++)
                 {
-                    console.log(products[i].identifier + " costs " + products[i].priceString);
                     this.state.priceData.push({ code: products[i].identifier, price: products[i].priceString});
                     this.forceUpdate();
                 }
