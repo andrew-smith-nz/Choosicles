@@ -57,7 +57,7 @@ _resourcesByBook = [
     },
     {
       bookId: '20B88B40-2426-F8A5-4923-008103C53E15',
-      coverImage: require("../../img/triple_pack.png")
+      coverImage: require("../../img/quad_pack.png")
     }
 ]
 

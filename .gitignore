@@ -6,3 +6,4 @@ npm-debug.*
 
 ios/build/
 android/app/build/*
+*.apk
