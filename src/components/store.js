@@ -126,7 +126,10 @@ class Store extends Component
         }
         else
         {
-            var productList = ['monster', 'seacreature', 'alien', '1_2', '1_3', '2_3', '1_2_3'];
+            var productList = ['monster', 'seacreature', 'alien', 'fairytale',
+                '1_2', '1_3', '2_3', '1_4', '2_4', '3_4',
+                '1_2_3', '1_2_4', '1_3_4', '2_3_4',
+                '1_2_3_4'];
             InAppUtils.loadProducts(productList, (error, products) => {
                 for (i = 0; i < products.length; i++)
                 {
@@ -202,7 +205,7 @@ class Store extends Component
     {
         if (book)
         {
-            if (book.androidIAPCode === "1_2" || book.androidIAPCode === "1_2_3")
+            if (book.androidIAPCode === "1_2" || book.androidIAPCode === "1_2_3" || book.androidIAPCode === "1_2_3_4")
             return false;
 
             return this.props.ownedBooks.filter(b => b === book.id).length > 0;
@@ -230,6 +233,7 @@ class Store extends Component
             if (bookId == "c08310da-aa1e-4c28-a29d-510ef4b44d97") indexes.push(1);
             if (bookId == "a588e22d-d984-d28d-4690-d8ad87a14d63") indexes.push(2);
             if (bookId == "afb09354-0bb9-72b1-45fe-7239bb8c8a62") indexes.push(3);
+            if (bookId == "94185e9e-d5b0-e0a5-4d47-485f9994a562") indexes.push(4);
         }
         indexes = indexes.sort((a, b) => a - b);
         var code = "";
