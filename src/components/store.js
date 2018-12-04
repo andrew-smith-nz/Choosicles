@@ -62,41 +62,44 @@ class Store extends Component
     {
         if (Platform.OS === "android")
         {
+            this.props.addOwnedProduct(androidCode);
             // Call out to Google Play API
-            InAppBilling.open().then(
-                () => {
-                    InAppBilling.purchase(androidCode).then((response) => 
-                    //InAppBilling.purchase("android.test.purchased").then((response) => 
-                    {
-                        if (response.purchaseState == "PurchasedSuccessfully")
-                        {
-                            this.props.addOwnedProduct(response.productId);
-                            //this.props.addOwnedProduct(androidCode);
-                            this.home();
-                        }
-                        InAppBilling.close();
-                    }).catch((error) => {
-                        Reactotron.log(error); InAppBilling.close();});
-                }
-            ).catch((error) => {
-                Reactotron.log(error); InAppBilling.close();});
+            // InAppBilling.open().then(
+            //     () => {
+            //         InAppBilling.purchase(androidCode).then((response) => 
+            //         //InAppBilling.purchase("android.test.purchased").then((response) => 
+            //         {
+            //             if (response.purchaseState == "PurchasedSuccessfully")
+            //             {
+            //                 this.props.addOwnedProduct(response.productId);
+            //                 //this.props.addOwnedProduct(androidCode);
+            //                 this.home();
+            //             }
+            //             InAppBilling.close();
+            //         }).catch((error) => {
+            //             Reactotron.log(error); InAppBilling.close();});
+            //     }
+            // ).catch((error) => {
+            //     Reactotron.log(error); InAppBilling.close();});
         }
         else
         {
-            var productIdentifier = [ iosCode ];
-            InAppUtils.loadProducts(productIdentifier, (error, products) => {
-            InAppUtils.purchaseProduct(products[0].identifier, (error, response) => {
-                   // NOTE for v3.0: User can cancel the payment which will be available as error object here.
-                   if(response && response.productIdentifier) {
-                       this.props.addOwnedProduct(productIdentifier);
-                       this.home();
-                   }
-                   if(error)
-                   {
-                       Reactotron.log(error);
-                   }
-                   });
-                });
+            
+            this.props.addOwnedProduct(iosCode);
+            // var productIdentifier = [ iosCode ];
+            // InAppUtils.loadProducts(productIdentifier, (error, products) => {
+            // InAppUtils.purchaseProduct(products[0].identifier, (error, response) => {
+            //        // NOTE for v3.0: User can cancel the payment which will be available as error object here.
+            //        if(response && response.productIdentifier) {
+            //            this.props.addOwnedProduct(productIdentifier);
+            //            this.home();
+            //        }
+            //        if(error)
+            //        {
+            //            Reactotron.log(error);
+            //        }
+            //        });
+            //     });
 
         }
     }
@@ -127,7 +130,7 @@ class Store extends Component
         else
         {
             var productList = ['monster', 'seacreature', 'alien', 'fairytale',
-                '1_2', '1_3', '2_3', '1_4', '2_4', '3_4',
+                '1_2', '1_3', '1_4', '2_3', '2_4', '3_4',
                 '1_2_3', '1_2_4', '1_3_4', '2_3_4',
                 '1_2_3_4'];
             InAppUtils.loadProducts(productList, (error, products) => {
