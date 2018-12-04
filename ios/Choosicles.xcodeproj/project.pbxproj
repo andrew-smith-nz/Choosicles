@@ -220,6 +220,7 @@
 		4914384921A3915000C4F428 /* fairytale_3_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4914378221A3914F00C4F428 /* fairytale_3_3_audio.mp3 */; };
 		4914384A21A3915000C4F428 /* fairytale_11_3_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4914378321A3914F00C4F428 /* fairytale_11_3_audio.mp3 */; };
 		4914384B21A3915000C4F428 /* fairytale_9_2_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4914378421A3914F00C4F428 /* fairytale_9_2_audio.mp3 */; };
+		4914384D21B4933B00C4F428 /* fairytale_end_audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4914384C21B4933A00C4F428 /* fairytale_end_audio.mp3 */; };
 		4980351320A25DA100880AEC /* alien_22_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980342D20A25D4C00880AEC /* alien_22_2_soundeffect.mp3 */; };
 		4980351420A25DA100880AEC /* alien_24_2_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345120A25D4C00880AEC /* alien_24_2_soundeffect.mp3 */; };
 		4980351520A25DA100880AEC /* alien_15_3_soundeffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4980345220A25D4D00880AEC /* alien_15_3_soundeffect.mp3 */; };
@@ -1227,6 +1228,7 @@
 		4914378221A3914F00C4F428 /* fairytale_3_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fairytale_3_3_audio.mp3; path = ../android/app/src/main/res/raw/fairytale_3_3_audio.mp3; sourceTree = "<group>"; };
 		4914378321A3914F00C4F428 /* fairytale_11_3_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fairytale_11_3_audio.mp3; path = ../android/app/src/main/res/raw/fairytale_11_3_audio.mp3; sourceTree = "<group>"; };
 		4914378421A3914F00C4F428 /* fairytale_9_2_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fairytale_9_2_audio.mp3; path = ../android/app/src/main/res/raw/fairytale_9_2_audio.mp3; sourceTree = "<group>"; };
+		4914384C21B4933A00C4F428 /* fairytale_end_audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fairytale_end_audio.mp3; path = ../android/app/src/main/res/raw/fairytale_end_audio.mp3; sourceTree = "<group>"; };
 		4980342D20A25D4C00880AEC /* alien_22_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_22_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_22_2_soundeffect.mp3; sourceTree = "<group>"; };
 		4980345120A25D4C00880AEC /* alien_24_2_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_24_2_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_24_2_soundeffect.mp3; sourceTree = "<group>"; };
 		4980345220A25D4D00880AEC /* alien_15_3_soundeffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alien_15_3_soundeffect.mp3; path = ../android/app/src/main/res/raw/alien_15_3_soundeffect.mp3; sourceTree = "<group>"; };
@@ -2011,6 +2013,7 @@
 		F2C75C046D6648259F37D554 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4914384C21B4933A00C4F428 /* fairytale_end_audio.mp3 */,
 				4914376621A3914700C4F428 /* fairytale_1_1_audio.mp3 */,
 				4914372521A3913600C4F428 /* fairytale_1_1_soundeffect.mp3 */,
 				4914372221A3913500C4F428 /* fairytale_1_2_audio.mp3 */,
@@ -3788,6 +3791,7 @@
 				49FC2C4D1FBF87C1008E2EBF /* seacreature_17_3_audio.mp3 in Resources */,
 				49FC2CF81FBF87C1008E2EBF /* seacreature_9_1_audio.mp3 in Resources */,
 				498035C020A25DA100880AEC /* alien_28_1_audio.mp3 in Resources */,
+				4914384D21B4933B00C4F428 /* fairytale_end_audio.mp3 in Resources */,
 				49FC2C661FBF87C1008E2EBF /* monster_8_1_soundeffect.mp3 in Resources */,
 				49FC2D8B1FBF87C1008E2EBF /* monster_17_1_audio.mp3 in Resources */,
 				49FC2CDA1FBF87C1008E2EBF /* monster_29_3_audio.mp3 in Resources */,
