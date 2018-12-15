@@ -127,9 +127,11 @@ class Store extends Component
         else
         {
             var productList = ['monster', 'seacreature', 'alien', 'fairytale',
-                '1_2', '1_3', '1_4', '2_3', '2_4', '3_4',
-                '1_2_3', '1_2_4', '1_3_4', '2_3_4',
-                '1_2_3_4'];
+                '1_2', '1_3', '1_4', '2_3', '2_4', '3_4', '1_5', '2_5', '3_5', '4_5',
+                '1_2_3', '1_2_4', '1_3_4', '2_3_4', '1_2_5', '1_3_5', '1_4_5', '2_3_5', '2_4_5', '3_4_5',
+                '1_2_3_4', '1_2_3_5', '1_2_4_5', '1_3_4_5', '2_3_4_5',
+                '1_2_3_4_5'
+            ];
             InAppUtils.loadProducts(productList, (error, products) => {
                 for (i = 0; i < products.length; i++)
                 {
@@ -155,6 +157,8 @@ class Store extends Component
             bookData.books.push({ id:"DAC400B5-9135-4499-9D11-4BF95CFB5442", isMulti: true, title:"Triple Pack", androidIAPCode:"1_2_3", iosIAPCode:"1_2_3", numBooks: 3});
         if (bookData.books.filter(b => b.title === "Quadruple Pack").length == 0)
             bookData.books.push({ id:"20B88B40-2426-F8A5-4923-008103C53E15", isMulti: true, title:"Quadruple Pack", androidIAPCode:"1_2_3_4", iosIAPCode:"1_2_3_4", numBooks: 4});
+        if (bookData.books.filter(b => b.title === "Five Pack").length == 0)
+            bookData.books.push({ id:"B8D8EE65-E149-C58B-409F-76D712AAAD9D", isMulti: true, title:"Quadruple Pack", androidIAPCode:"1_2_3_4_5", iosIAPCode:"1_2_3_4_5", numBooks: 5});
     }
 
     restorePurchases()
@@ -234,6 +238,7 @@ class Store extends Component
             if (bookId == "a588e22d-d984-d28d-4690-d8ad87a14d63") indexes.push(2);
             if (bookId == "afb09354-0bb9-72b1-45fe-7239bb8c8a62") indexes.push(3);
             if (bookId == "94185e9e-d5b0-e0a5-4d47-485f9994a562") indexes.push(4);
+            if (bookId == "A79381F6-455E-D78C-4C38-659E79B6CAAA") indexes.push(5);
         }
         indexes = indexes.sort((a, b) => a - b);
         var code = "";

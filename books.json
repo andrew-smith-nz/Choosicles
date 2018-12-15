@@ -3968,6 +3968,988 @@
                     "navigationLinks": []
                 }
             ]
+        },
+        {
+            "id": "a79381f6-455e-d78c-4c38-659e79b6caaa",
+            "owned": true,
+            "comingSoon": false,
+            "title": "Your Very Own Awesome Dinosaur",
+            "coverImage": null,
+            "author": "Meg Price",
+            "illustrator": "Jhea Dela Cruz",
+            "datePublished": "2018",
+            "recommendedAgeRange": "2 to 6",
+            "androidIAPCode": "dinosaur",
+            "iosIAPCode": "dinosaur",
+            "description": "Discover and learn about Your Very Own Awesome Dinosaur! Is it spiky and sweet or long and strong? It’s up to you to find out!",
+            "defaultOpacity": 0.8,            
+            "pages": [
+                {
+                    "id": "B23FF616-1E26-DAB0-44D5-2DDD1647FC33",
+                    "pageNumber": 1,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_1",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "text": "You are a brave explorer with a very fancy time machine. You used your time machine to travel back millions of years, back to the time of dinosaurs! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "text": "While you were exploring, you met an awesome dinosaur who was excited to show you around. "
+                        },
+                        {
+                            "text": "Tell me about the awesome dinosaur, does it eat meat or does it eat plants?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "84B2A1C9-A6CE-B988-4454-6081AD0CEFEA",
+                            "order": 1,
+                            "targetPageId": "1E4C10AF-25D7-B593-4F3E-BEE6C8F33860"
+                        },
+                        {
+                            "id": "AD86F17F-4064-588E-43FF-60469FA181FA",
+                            "order": 2,
+                            "targetPageId": "586AE500-8AC4-D381-47FA-1B1AFAB34091"
+                        }
+                    ]
+                },
+                {
+                    "id": "1E4C10AF-25D7-B593-4F3E-BEE6C8F33860",
+                    "pageNumber": 2,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_2",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "text": "The awesome dinosaur eats meat. It doesn’t like eating plants. The dinosaur has sharp pointy teeth for biting and big nostrils for sniffing. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "text": "It can sniff and search for something tasty to chew. Eating meat fills the dinosaur’s belly so much that it doesn’t need to eat every day! "
+                        },
+                        {
+                            "text": "Tell me about the awesome dinosaur, is it very, very big or is it rather small?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "CA4096B8-4212-CCAF-4985-8F88E9868AD0",
+                            "order": 1,
+                            "targetPageId": "4B3234D3-8460-37A9-43D2-CEA10137EBDF"
+                        },
+                        {
+                            "id": "10908776-0758-FBB0-49A3-B6D3A6BEDDA9",
+                            "order": 2,
+                            "targetPageId": "B2E408BC-3F40-8B92-417D-BA248FF2A251"
+                        }
+                    ]
+                },
+                {
+                    "id": "586AE500-8AC4-D381-47FA-1B1AFAB34091",
+                    "pageNumber": 3,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_3",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "18730363-219F-CBAA-43AB-7312A31E34CB",
+                            "text": "The awesome dinosaur eats plants. Dinosaurs who only eat plants are called herbivores. Because the dinosaur is so big, it has to eat a lot of plants to get full! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "20CB0396-E257-A386-4F77-2E9391D4FB30",
+                            "text": "It spends most of its day chomping and chewing. The dinosaur eats all kinds of plants. It likes bushes and trees and berries and leaves. "
+                        },
+                        {
+                            "id": "CA35FFD1-D350-F0A7-49DC-22E305856C96",
+                            "text": "Tell me about the awesome dinosaur, does it have sharp spikes or does it have a super strong tail?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "A3A2231C-BDC1-37B8-4EF5-F8071EC1D2D6",
+                            "order": 1,
+                            "targetPageId": "B23286B4-1714-7795-4C8A-05BC26294211"
+                        },
+                        {
+                            "id": "65B9B6DA-8971-5191-4FB3-A71D58B051FF",
+                            "order": 2,
+                            "targetPageId": "430143E0-449E-28AA-4A86-AC9891CAC66D"
+                        }
+                    ]
+                },
+                {
+                    "id": "4B3234D3-8460-37A9-43D2-CEA10137EBDF",
+                    "pageNumber": 4,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_4",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "678385E9-C7F3-5D9C-4FAD-FEFAA187428C",
+                            "text": "The awesome dinosaur is very, very big! The dinosaur is so big it’s head sticks out above the trees! When the dinosaur walks, you feel the ground shudder and shake. "
+                        },
+                        {
+                            "id": "E82A9637-8E3B-1084-497B-749111BC276F",
+                            "text": "You wibble and wobble on the shakey ground as you run after the dinosaur. Its legs are so long and it’s footprints are so large! ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "E9E3F0A7-B383-4787-46A0-707204B391EC",
+                            "text": "Tell me about the awesome dinosaur, does it have a big body with small arms or does it have a giant sail on its back?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "8565FFB2-0D43-92A3-4D82-6E4EFC6159DB",
+                            "order": 1,
+                            "targetPageId": "74CFD18D-55C8-95B1-403E-B9F55E83A482"
+                        },
+                        {
+                            "id": "0FCE2E14-09E9-61A3-4088-BDA30046811E",
+                            "order": 2,
+                            "targetPageId": "9D210C8D-F847-8AAA-4D1C-F7178F58EEE0"
+                        }
+                    ]
+                },
+                {
+                    "id": "B2E408BC-3F40-8B92-417D-BA248FF2A251",
+                    "pageNumber": 5,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_5",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "E8C82BF4-10B2-1289-43E4-3DACEF5BAAB4",
+                            "text": "The awesome dinosaur is rather small. But it’s only small for a dinosaur. It still looks like a big animal to you because it’s almost the same size as you! "
+                        },
+                        {
+                            "id": "00BE4AF5-0431-2EAD-40C5-06C3447743B9",
+                            "text": "The dinosaur has a long tail and stands up on its back legs, using its strong tail to balance. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "CFB10D20-E43C-F6A9-4B2B-595522315F27",
+                            "text": "Tell me about the awesome dinosaur, does it live in a group or does it have a long neck like a giraffe? "
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "805C7E98-85D8-AF85-4F52-C93475B3DE79",
+                            "order": 1,
+                            "targetPageId": "0E214BD1-F4EF-469A-47B9-644FEE747E4F"
+                        },
+                        {
+                            "id": "DD287839-2013-93A1-4C59-C4556DAB41FA",
+                            "order": 2,
+                            "targetPageId": "D1BA3D93-7714-809E-4A87-3090DBABE5D1"
+                        }
+                    ]
+                },
+                {
+                    "id": "B23286B4-1714-7795-4C8A-05BC26294211",
+                    "pageNumber": 6,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_6",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "9F985DD5-4CED-2EAB-4D9D-C5225EBBEBDC",
+                            "text": "The awesome dinosaur has sharp spikes. The dinosaur uses its spikes for all sorts of reasons. It uses them to poke other dinosaurs when there is an argument. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "84B6DFC2-376B-2291-4E66-BC59DFB6EA91",
+                            "text": "It uses them to scratch trees and break off bark and branches. It even uses its spikes to dig and scratch the ground to make a comfy sleeping spot. "
+                        },
+                        {
+                            "id": "CFDF5635-6292-F194-4B65-FFDF4F15FE23",
+                            "text": "Tell me about the awesome dinosaur, does it look like it has a big heavy fan on its head or does it look like it has kites all over its back?",
+                            "textPosition":"top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "B2933B70-2079-0C91-4D88-63F923AC0E4E",
+                            "order": 1,
+                            "targetPageId": "EBFFB7CF-6099-DE95-4508-EA516264A987"
+                        },
+                        {
+                            "id": "693FD108-7CF5-A9B1-4722-7A94A1762932",
+                            "order": 2,
+                            "targetPageId": "43582364-6238-D39B-4F07-2925BBC6B16D"
+                        }
+                    ]
+                },
+                {
+                    "id": "430143E0-449E-28AA-4A86-AC9891CAC66D",
+                    "pageNumber": 7,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_7",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "8AC9A40E-F744-E48D-4E43-71999DB46A58",
+                            "text": "The awesome dinosaur has a super strong tail! It can use its tail to crash into anything. Its tail is so long, you can see it stretching from one side of a stream to the other. "
+                        },
+                        {
+                            "id": "D94F2A61-C3A2-5EB0-4274-9B414A97AA22",
+                            "text": "You can’t even see the end of it hiding in the trees. The dinosaur’s tail is so strong it could knock one of those trees right over! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "19642D8E-B750-A7BF-4070-44DB101A11E5",
+                            "text": "Tell me about the awesome dinosaur, does it have a suit of spiky armour like a knight or is it bigger and longer than all of the other dinosaurs? "
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "AF256C9E-54CE-D580-4C91-8F872A981593",
+                            "order": 1,
+                            "targetPageId": "B19743BB-A556-C58B-4F34-4ACEE2949E3E"
+                        },
+                        {
+                            "id": "1A485E2C-16D5-D48B-42CF-F458C9CF3A8B",
+                            "order": 2,
+                            "targetPageId": "F5BD013A-D53D-5BB0-47D3-F3B18860CD4A"
+                        }
+                    ]
+                },
+                {
+                    "id": "74CFD18D-55C8-95B1-403E-B9F55E83A482",
+                    "pageNumber": 8,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_8",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "1A8A3CEF-1E9C-729D-40DD-B2C2537CF168",
+                            "text": "The awesome dinosaur has a big body with small arms. It’s a Tyrannosaurus Rex! You can call it T-Rex for short. The T-Rex might have long legs for running, but it has very short arms for grabbing. "
+                        },
+                        {
+                            "id": "00E04AB2-717D-218C-4126-6A404537B8E8",
+                            "text": "That’s why the T-Rex uses its mouth to pick things up instead of its hands. It has a big mouth and a big smile. It’s very happy to meet you! "
+                        },
+                        {
+                            "id": "EB4D38EF-21AE-2DB2-4427-601DB114DEB2",
+                            "text": "Tell me about the awesome dinosaur, do you help it scratch its nose or do you help it build a nest for its eggs?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "6D847795-31AC-59BA-443B-99F37B12C7B6",
+                            "order": 1,
+                            "targetPageId": "67FD4C54-6478-2EA4-405C-0509F73ACA82"
+                        },
+                        {
+                            "id": "F0EE3128-46B6-EFB4-4907-8A6145144F39",
+                            "order": 2,
+                            "targetPageId": "0A4B4307-4AEA-9391-4EEE-293D38186CEF"
+                        }
+                    ]
+                },
+                {
+                    "id": "9D210C8D-F847-8AAA-4D1C-F7178F58EEE0",
+                    "pageNumber": 9,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_9",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "40AEA9F5-EA8D-EC8F-4B31-AC0F33B11C8A",
+                            "text": "The awesome dinosaur has a giant sail on its back. It’s a Spinosaurus! Spines are a row of bones down the middle of your back. "
+                        },
+                        {
+                            "id": "4C5B097C-C677-5182-47E4-13814E433923",
+                            "text": "The Spinosaurus has a row of bones that stick straight out and look like a big curved sail right on its back. ",
+                            "textPosition":"top"
+                        },
+                        {
+                            "id": "B0FBF6F9-B587-B5AD-469C-B45845E43BD6",
+                            "text": "Tell me about the awesome dinosaur, does it make you a pretend sail to wear on your back or do you get to ride it like a wind surfer?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "327E2788-2F5A-D18C-476D-74329DFE8CA3",
+                            "order": 1,
+                            "targetPageId": "96A661BA-F15A-1A8E-456F-A352EB66F4DF"
+                        },
+                        {
+                            "id": "D86830FC-C485-FB9B-4D6E-61EDF444D556",
+                            "order": 2,
+                            "targetPageId": "98C75B11-C441-358F-4D34-CB12EEBBAC04"
+                        }
+                    ]
+                },
+                {
+                    "id": "0E214BD1-F4EF-469A-47B9-644FEE747E4F",
+                    "pageNumber": 10,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_10",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "B3651EA2-0E2B-92BA-426B-8BB16D0ABEA8",
+                            "text": "The awesome dinosaur lives in a group. It’s a Velociraptor! The group of dinosaurs is called a raptor pack. The pack likes to look for food together and keep each other safe. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9660DAC0-73F5-1CB4-4F7A-123A7D7E4CB9",
+                            "text": "You join the raptor pack for the day as the Velociraptor and its friends show you around. You learn to growl and scratch and sniff just like your new friends. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "C59F5B7D-1EE4-8CB0-47B6-1B8AB4776E94",
+                            "text": "Tell me about the awesome dinosaur, does it like having dance parties or does it teach you how to hide in the jungle?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "4A4E4568-640C-AF8B-4B26-9158B6251339",
+                            "order": 1,
+                            "targetPageId": "998B62BB-19A4-CFA4-4BDC-06D8297FE90A"
+                        },
+                        {
+                            "id": "D798ECBF-4EE9-00AD-4DF4-18201A84A53C",
+                            "order": 2,
+                            "targetPageId": "4CD18EBF-0A20-E78E-402C-89C447F59F62"
+                        }
+                    ]
+                },
+                {
+                    "id": "D1BA3D93-7714-809E-4A87-3090DBABE5D1",
+                    "pageNumber": 11,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_11",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "28EB792C-1913-54BA-4C2B-676851652111",
+                            "text": "The awesome dinosaur has a long neck like a giraffe. It’s a Troodon! The Troodon has a big brain and is very smart. It also has big eyes and can see very well, even when it’s dark. "
+                        },
+                        {
+                            "id": "15563599-9ABC-D381-4050-13D3302BACD1",
+                            "text": "The awesome dinosaur teaches you how to say its name - true-oh-don. It’s a fun name to say, Troodon. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "F5C3C74D-28EF-8193-4C66-CFE39D8C8157",
+                            "text": "Tell me about the awesome dinosaur, does it help you build a wagon to ride in or is it going on a hunt for fat flying beetles?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "EF1C0610-8331-A489-4A1F-25402EDC0303",
+                            "order": 1,
+                            "targetPageId": "7D93D7B3-36C7-939A-4B89-8B2886B62629"
+                        },
+                        {
+                            "id": "E81312E3-0943-8B8A-428C-3F74F100EB18",
+                            "order": 2,
+                            "targetPageId": "23E95EB7-B6FF-4F84-4778-D5B611F74860"
+                        }
+                    ]
+                },
+                {
+                    "id": "EBFFB7CF-6099-DE95-4508-EA516264A987",
+                    "pageNumber": 12,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_12",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "91A8F045-5C09-ED97-43AA-B7AC2BBBF6CC",
+                            "text": "The awesome dinosaur looks like it has a big heavy fan on its head. It’s a Triceratops! Its spikes are on the edge of the Triceratops’s fan. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "6923A575-D832-33A4-4441-4A7FA47D6953",
+                            "text": "They match the three big horns on its face. There are two horns on the Triceratops’s head and a big horn on its nose like a rhinoceros! "
+                        },
+                        {
+                            "id": "2A0F973C-E730-CBB9-42A4-9D2CCA09814C",
+                            "text": "Tell me about the awesome dinosaur, does it have to move its home because of flying noisy neighbours or because there is a volcano?",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "B0554D0C-943D-1396-47ED-6341664A9ECA",
+                            "order": 1,
+                            "targetPageId": "B3D15B46-585C-CCAD-43DA-2B43FABA53C9"
+                        },
+                        {
+                            "id": "1F25B2BE-B762-D383-4E8F-3C8EE2B325B3",
+                            "order": 2,
+                            "targetPageId": "936147D0-BFDF-BFB8-459F-12179E29EB5E"
+                        }
+                    ]
+                },
+                {
+                    "id": "43582364-6238-D39B-4F07-2925BBC6B16D",
+                    "pageNumber": 13,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_13",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "223992B8-FBAE-3ABB-4E5E-0347099E04CE",
+                            "text": "The awesome dinosaur looks like it has kites all over its back. It’s a Stegosaurus! Kites are a diamond shape, just like the spikes on the Stegosaurus’s back. "
+                        },
+                        {
+                            "id": "0823BA4D-DB8F-64AA-4A1D-8C42BA6F3164",
+                            "text": " The spikes are very hard like rock. The amazing dinosaur also has pointy spikes on its tail. It has spikes just about everywhere! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "6F83CBDC-8F58-6AA0-4E54-8702A79F44AC",
+                            "text": "Tell me about the awesome dinosaur, does it need a new sunhat or does it help you reach some tasty apples?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "EC0101FE-309A-01BB-4014-01A5DD6AB2D8",
+                            "order": 1,
+                            "targetPageId": "9EF1ECD6-41E7-AC9B-45E3-0D40CC854F9F"
+                        },
+                        {
+                            "id": "56ABCD5B-D194-5784-42D4-279EDE54DD08",
+                            "order": 2,
+                            "targetPageId": "B9F12FA3-6D97-5F92-4CA8-0F954B09E0D3"
+                        }
+                    ]
+                },
+                {
+                    "id": "B19743BB-A556-C58B-4F34-4ACEE2949E3E",
+                    "pageNumber": 14,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_14",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "2D648190-2468-B39C-4B84-3BA2A78AC56E",
+                            "text": "The awesome dinosaur has a suit of spiky armour like a knight. It’s an Ankylosaurus! The Ankylosaurus has hard plates on its back. Some of the plates are spiky. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "DB68E0D2-B6AE-C58A-4323-E9C27E9A9C3C",
+                            "text": "The armour stops other dinosaurs from scratching or biting the Ankylosaurus. The strong armour keeps it safe, just like a knight’s armour! "
+                        },
+                        {
+                            "id": "06AD152B-0456-1C97-446D-814208BD2D73",
+                            "text": "Tell me about the awesome dinosaur, does it build bridges out of trees or does it have eggs that are ready to hatch?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "5102A0C3-5C25-C6B2-422F-16B287937EAF",
+                            "order": 1,
+                            "targetPageId": "F49A142D-9807-3F98-482F-6A2797E59BD5"
+                        },
+                        {
+                            "id": "EB58EDE0-5255-9B94-413E-E9E81F3DD056",
+                            "order": 2,
+                            "targetPageId": "DC779BEC-3DD2-C6B1-4FC8-0C860FF2249E"
+                        }
+                    ]
+                },
+                {
+                    "id": "F5BD013A-D53D-5BB0-47D3-F3B18860CD4A",
+                    "pageNumber": 15,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_15",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "30d8908d-2f65-46be-948d-b85a2ea789ac",
+                            "text": "The awesome dinosaur is bigger and longer than all of the other dinosaurs. It’s an Apatosaurus! The Apatosaurus is so long, it is the same as the height of four giraffes standing one on top of another! "
+                        },
+                        {
+                            "id": "dfc20654-6412-4f3a-abf6-675cc28c6eb8",
+                            "text": "The awesome dinosaur doesn’t just have a long tail, it also has a very long neck and a giant body. It’s the biggest animal ever to walk on land. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "f952f04d-299a-4179-ac24-ad5da07028fe",
+                            "text": "Tell me about the awesome dinosaur, does it make a fun slide or does it make a perfect umbrella?"
+                        }
+                    ],
+                    "navigationLinks": [
+                        {
+                            "id": "13E5DB7C-318F-D7A1-46D9-E33D83787B0D",
+                            "order": 1,
+                            "targetPageId": "70C7788F-603B-9CB2-4C29-3E284EF05507"
+                        },
+                        {
+                            "id": "364609A5-4ADC-1DB2-4080-544F8F832D9B",
+                            "order": 2,
+                            "targetPageId": "25CC70EE-C75E-F7A1-4D72-1E41176D0B22"
+                        }
+                    ]
+                },
+                {
+                    "id": "67FD4C54-6478-2EA4-405C-0509F73ACA82",
+                    "pageNumber": 16,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_16",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "238c45f3-8e8c-4c51-843b-5b5ed9d584e8",
+                            "text": "You help the awesome dinosaur scratch its nose! The poor T-Rex has an itch on its nose that it just can’t reach. It stretches and strains with its short arms to reach and scratch, but it just doesn’t work. "
+                        },
+                        {
+                            "id": "593b3b3f-1b82-4a67-9e26-6f409a799c0d",
+                            "text": "The T-Rex tried to scratch its nose on a rock but that hurt too much. It tried to scratch its nose on a tree but the leaves tickled and made it sneeze! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "593b3b3f-1b82-4a67-9e26-6f409a799c0d",
+                            "text": "The T-Rex even tried scratching its nose on the back of another dinosaur, but the other dinosaur wasn’t very pleased about being used as a tissue! "
+                        },
+                        {
+                            "id": "a1db0fc1-1ce9-400d-adb7-060a1da026fa",
+                            "text": "Luckily you are here to help. The T-Rex bends down so you can climb onto its big nose and scratch, scratch, scratch. Its nose is so big you need to use both of your hands. You’re very careful not to get too close to those perfectly pointed teeth!"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "0A4B4307-4AEA-9391-4EEE-293D38186CEF",
+                    "pageNumber": 17,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_17",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "db128fd8-a649-4223-84ef-67c1a8886d48",
+                            "text": "You help the awesome dinosaur build a nest for its eggs. It is nearly time for the T-Rex to lay her eggs and she needs somewhere safe to keep them. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "474afb0a-4b9d-4e3a-83ce-6fbec975ccf3",
+                            "text": "You help the T-Rex find a nice spot near some trees. Then you dig and scrape and scratch a big hole in the ground. You want the nest to be comfortable for the eggs, so you fill it with leaves and twigs. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9fc4621e-a4f3-494d-b298-57a81fb1ff18",
+                            "text": "You even find some giant leaves which you will put in the nest at the very end because they look smooth and soft. "
+                        },
+                        {
+                            "id": "7c75edc8-2609-be89-4c82-0c5f4ae629fd",
+                            "text": "The T-Rex is a big dinosaur and she needs a very big nest. Her eggs will also be big and you don’t know how many there will be. There might be three or four eggs, or there might be as many as fifteen! You will both have to wait and see. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "96A661BA-F15A-1A8E-456F-A352EB66F4DF",
+                    "pageNumber": 18,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_18",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
+                            "text": "The awesome dinosaur makes you a pretend sail to wear on your back! The awesome dinosaur uses big sticks and giant leaves to make a sail just like its own. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "688c932e-178b-4718-b4b0-d284c5e290c5",
+                            "text": "You strap it to your back using vines from a tree, and now you look just like the Spinosaurus! But the big sticks and giant leaves are heavy. Your pretend sail is so heavy that you have trouble just standing up! You practice walking with your new pointy spine. "
+                        },
+                        {
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
+                            "text": "You walk and wobble and try not to tip over. The Spinosaurus has to catch you before you tumble into some clover. After practicing all day, you finally feel ready. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "273794a4-84fb-40b1-b963-c2a2b5925185",
+                            "text": "You’re ready to run and to keep steady. The Spinosaurus watches you run with your pretend sail waving in the wind. It’s a very fun day for you both. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "98C75B11-C441-358F-4D34-CB12EEBBAC04",
+                    "pageNumber": 19,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_19",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "4f1c5178-67e6-4455-a632-bf7765076984",
+                            "text": "You get to ride the awesome dinosaur like a wind surfer! Instead of standing on a board in the water, you stand on the Spinosaurus’s back. "
+                        },
+                        {
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "Then instead of holding onto a plastic sail, you hold on tight to the boney sail which sticks out of the dinosaur’s back. You hold on as tight as you can with wind blowing in your face and almost tugging your explorer hat right off your head! "
+                        },
+                        {
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "When the Spinosaurus reached the edge of a river, you thought it would stop. Instead the dinosaur jumped high with its two strong back legs. It’s like you’re both flying! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "d116e2d1-0e84-464d-ba8c-a3efb02ee3e8",
+                            "text": "When you land on the other side of the river, puffing and panting, you call out to the dinosaur to keep running, but the Spinosaurus is out of breath. It’s rest time now, but there will be more running very soon."
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "998B62BB-19A4-CFA4-4BDC-06D8297FE90A",
+                    "pageNumber": 20,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_20",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "c1fc38dd-2a22-4b23-8afc-e8e696a893ca",
+                            "text": "The awesome dinosaur likes having dance parties! After dinner, the raptor pack pulls out drums and other instruments to start making music. The Velociraptor and its friends dance until their feet get tired! "
+                        },
+                        {
+                            "id": "ddbb503c-e63e-4a5a-933a-7f1fb98b0ba0",
+                            "text": "You dance too but you have to watch out for the Velociraptors’ tails. The tails swish and swoosh through the air as they boogy woogy. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "beb24ea5-e65a-46dc-8638-370634a598f2",
+                            "text": "You don’t want one of their tails to accidentally hit you! So you jump over the tails like using a skipping rope. Or you duck under the tails like they’re a tree branch. You still manage to do the boogy woogy in between all of the jumping and ducking. "
+                        },
+                        {
+                            "id": "07511351-f6e9-4391-b803-efa420aea2df",
+                            "text": "When you feel puffed and out of breath, you take a turn banging on the drums. You sit on the ground making a ratta tat tat on the drums and watch the dancing of the friendly raptor pack."
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "4CD18EBF-0A20-E78E-402C-89C447F59F62",
+                    "pageNumber": 21,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_21",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "2b0216e1-d942-4ccc-845c-42a2ce4101ff",
+                            "text": "The awesome dinosaur teaches you how to hide in the jungle! The Velociraptor and its raptor pack helps you cover up with moss and leaves so you look just like one of the plants in the jungle. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "9b351093-742d-4b11-9343-a32ec9fa43ef",
+                            "text": "The Velociraptors like to hide in the jungle and watch other animals walk past. You all hold your breath and stay very still. Usually the other animals walk right past and never even notice you! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ff035dce-37b1-4c77-8893-6b6ea1e6c815",
+                            "text": "The raptor pack is very good at hiding and now you are too. You learn how to sneak along very sneakily and creep along very creepily. No one ever spots you when you’re hiding. "
+                        },
+                        {
+                            "id": "ca394226-bba0-43df-b103-15ab418966c5",
+                            "text": "The Velociraptor is very proud of how quickly you have learned to hide in the jungle. You’re pleased you’re not tall like an adult yet, otherwise hiding would be much trickier!",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "7D93D7B3-36C7-939A-4B89-8B2886B62629",
+                    "pageNumber": 22,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_22",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "b79bb9c1-529c-4dfa-8011-f4ae04338bd2",
+                            "text": "The awesome dinosaur helps you build a wagon to ride in. After a long morning of being a brave explorer, you feel a bit tired. The Troodon has a wonderful idea. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "1985ce22-3331-4897-b10d-399376fd6946",
+                            "text": "You should build a wagon together and take each other for rides! You search the jungle until you find a big piece of bark which has come off the side of a tree. Then you find some smooth round logs for wheels. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "62d6db0d-7fcd-4853-b2a0-014772418990",
+                            "text": "Finally, you find some jungle vines to use as a rope. It takes a long time, but you and the Troodon work together to make the best wagon. You jump inside the wagon and the awesome dinosaur pulls the wagon along. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "33944d41-051e-484a-a30c-de6c03970c37",
+                            "text": "After you have your turn, you get out so the Troodon can jump inside the wagon and have a turn. You’re the same size as the awesome dinosaur so pulling it around is easy! ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "23E95EB7-B6FF-4F84-4778-D5B611F74860",
+                    "pageNumber": 23,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_23",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "09aef51f-55fd-4cff-80c4-83f576c1d215",
+                            "text": "The awesome dinosaur is going on a hunt for fat flying beetles. The Troodon loves beetles and promises to share them with you for dinner. You don’t want any beetles for dinner, but you do want to know how to find them. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "1ad76f1c-0b0e-41ce-a901-8c84f8c66e4d",
+                            "text": "The awesome dinosaur is smart and knows that the best place to find fat flying beetles is inside soft, rotten logs. The Troodon has long claws for scratching and breaking open the logs. "
+                        },
+                        {
+                            "id": "b1f355b3-ea2d-4378-ab42-221c92583634",
+                            "text": "Your finger nails aren’t as sharp or as long as claws, so you have to use a stick. Whenever you make a big hole in a soft rotten log the fat flying beetles with their pointy black wings crawl out. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "b141d174-332c-4d50-a28c-077ed0d424f7",
+                            "text": "The awesome dinosaur snatches them up and gobbles them down, crunch, squish, slurp!",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "B3D15B46-585C-CCAD-43DA-2B43FABA53C9",
+                    "pageNumber": 24,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_24",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "7a723379-6975-4dfc-8424-2d319082ea8a",
+                            "text": "The awesome dinosaur has to move its home because of flying noisy neighbours. The awesome dinosaur’s home is under a big shady tree. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ba978ff7-b9a2-4116-bfab-7b5148b8b3ee",
+                            "text": "It’s a lovely spot, but now a family of Pterodactyls have moved in! Pterodactyls are big flying dinosaurs with long beaks. They’re very noisy and they poop absolutely everywhere! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "3e0f672b-12ad-4852-9124-6e8e736cc036",
+                            "text": "The Triceratops doesn’t want its sleeping spot to get pooped on, so it has to move. You walk with the awesome dinosaur to another tree far away from the noisy flying Pterodactyls. You help the Triceratops find brand new giant leaves which are soft and cozy for sleeping on. "
+                        },
+                        {
+                            "id": "ddf49217-ba48-4229-8f9e-8a035992b86c",
+                            "text": "You also help the dinosaur find new tasty bushes and trees and grasses and leaves for its dinner. By the time you’re finished, the Triceratops’s new home is perfect. ",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "936147D0-BFDF-BFB8-459F-12179E29EB5E",
+                    "pageNumber": 25,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_25",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "37c91963-76fd-4594-9653-1e3e66163119",
+                            "text": "The awesome dinosaur has to move its home because there is a volcano! There has been no trouble with the volcano for a long time. But now there is a rumbling sound and a big puff of smoke is coming out the top of the volcano! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "2c03a901-5ac1-40ef-9975-5ec7f0e91bf6",
+                            "text": "The Triceratops knows it’s time to move before the volcano erupts. There might be lava and sizzling hot flying rocks. You don’t want to be around when that happens! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "53d47300-fcae-470e-9887-64e74e537013",
+                            "text": "You set off with the Triceratops looking for somewhere far away from the volcano. You meet another Triceratops along the way and tell them about the volcano. "
+                        },
+                        {
+                            "id": "0e1925b9-f838-cca6-4728-bfc79d5e9707",
+                            "text": "You tell them there might be lava and sizzling hot flying rocks. The other Triceratops decides to move too!",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "9EF1ECD6-41E7-AC9B-45E3-0D40CC854F9F",
+                    "pageNumber": 26,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_26",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "4597b993-e21d-4bbd-a356-50e0ef1aad3d",
+                            "text": "The awesome dinosaur needs a new sunhat. When the weather is sunny outside, the Stegosaurus likes to wear hats. It has tried using so many things to make a hat. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ebdb120b-bff6-4bf8-9342-a66c5b0170d0",
+                            "text": "It used leaves, but they blew away in the breeze. It used rocks, but they weren’t the right shape. It used mud but the mud melted and dripped into its eyes. Ouch! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "8d98dc21-547d-4014-bd58-5300ba44e2b3",
+                            "text": "The poor Stegosaurus is sad that it can’t find anything to wear on its head when the sun gets hot and bright. You have an amazing idea. You see that some of the dinosaur’s kite-shaped spikes have fallen out. "
+                        },
+                        {
+                            "id": "2f2f598e-1b36-4cc0-bad1-1b5a23618d99",
+                            "text": "The spikes are heavy so they won’t blow away. The spikes are flat so they’re they right shape. The spikes are hard so they won’t melt and drip into its eyes. You use the spikes to make the perfect sunhat for the Stegosaurus. Well done.",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "B9F12FA3-6D97-5F92-4CA8-0F954B09E0D3",
+                    "pageNumber": 27,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_27",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "9ad07932-c9cf-4123-a1be-4f869c3ba525",
+                            "text": "The awesome dinosaur helps you reach some tasty apples. It has been a long day exploring and now you’re hungry, but you don’t want to eat leaves and grass like the Stegosaurus. "
+                        },
+                        {
+                            "id": "8c450315-eba0-44f6-b8c3-4cdaf56c5502",
+                            "text": "Luckily, you see a big tree full of bright red apples. Unluckily, the apples are very high up and you can’t reach them. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "0cd12b75-d553-45c9-abd8-d42ff14e35e0",
+                            "text": "The Stegosaurus knows how to help. It stands on its back legs so that its kite-shaped spikes stick out. You can use the spikes just like a ladder! You step onto the dinosaur’s tail very carefully. Then you climb the spikes all the way up the dinosaur’s back. "
+                        },
+                        {
+                            "id": "c6b50c51-9812-44b7-93e3-aec7c08dd6f0",
+                            "text": "When you reach the bright red apples, you pick two, one for you and one for the helpful Stegosaurus. The apples are enormous, as big at your head. Everything in this world seems to be big, especially your spiky friend. "
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "F49A142D-9807-3F98-482F-6A2797E59BD5",
+                    "pageNumber": 28,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_28",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "d83fdd28-f8c1-4eb0-ac86-16113797ae70",
+                            "text": "The awesome dinosaur builds bridges out of trees. It likes to be helpful. Not all of the animals are as big as dinosaurs and sometimes they have trouble crossing rivers and streams. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "74d901da-49f5-4a98-a7b9-7494378fdee9",
+                            "text": "The Ankylosaurus helps by knocking down trees with its giant tail hammer. It chooses trees right near the edge of the water. That way, when the tree falls down, it lands right across the water. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "a27cc549-f47e-4d5a-98f7-612159e1699e",
+                            "text": "Other animals can walk across the tree, using it as a bridge to get to the other side! Sometimes its plan doesn’t work very well. Sometimes the Ankylosaurus will accidentally hit the tree on the wrong side! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "fcca14d2-b643-4c99-a9ba-1677f5d49579",
+                            "text": "This makes the tree fall in the wrong direction, landing on the ground instead of across the water. Lucky there are lots of trees around so that the awesome dinosaur can try again.",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "DC779BEC-3DD2-C6B1-4FC8-0C860FF2249E",
+                    "pageNumber": 29,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_29",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "3d092c81-3b9a-42f8-a9d4-3d637577b76f",
+                            "text": "The awesome dinosaur has eggs that are ready to hatch! It invites you to watch as all of the baby Ankylosauruses crack open their shells. You count five eggs; one, two, three, four, five. "
+                        },
+                        {
+                            "id": "317037c8-f513-46ef-a120-79fc213cb42f",
+                            "text": "One by one, they all crack open and you can see some little eyes and noses poking out. One of the baby dinosaurs broke its egg using its foot. Another baby dinosaur used its super strong tail. "
+                        },
+                        {
+                            "id": "d670a84b-ef99-48d4-b824-01b8b1ff6732",
+                            "text": "It takes the babies a long time to break their eggs and crawl out. You have to sit patiently. You want to help the babies but the adult Ankylosaurus says that the tiny dinosaurs need to break the eggs themselves. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "13afd62a-4109-4f41-999b-8f5b78dae08b",
+                            "text": "That way they can learn how to be strong. It won’t take long for the babies to eat lots of plants and grow up to be as big as your Ankylosaurus friend!"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "70C7788F-603B-9CB2-4C29-3E284EF05507",
+                    "pageNumber": 30,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_30",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "68d48745-3122-4874-b8f1-ea471ba4bfbf",
+                            "text": "The awesome dinosaur makes a fun slide. It doesn’t make a slide using trees or rocks. It makes a slide using its own body and tail! ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "0f3a7ca9-fe79-45f4-bc20-6b3611cd39a5",
+                            "text": "The Apatosaurus helps lift you way up high onto its back. From there, you can slide down all the way to the end of its long, strong tail. "
+                        },
+                        {
+                            "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
+                            "text": "You found out that the awesome dinosaur was a fun slide by accident. You were sitting on its back which was high enough to see in all different directions. Then you lost your balance and slipped, sliding all the way down the awesome dinosaur’s long tail. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "ce716ead-d186-42fb-a5cd-594ee6130775",
+                            "text": "The Apatosaurus was worried you were hurt, but you weren’t hurt, you were excited! You told the awesome dinosaur that sliding is a lot of fun. Now you’re sliding down its back over and over again. Both of you are having so much fun.",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                },
+                {
+                    "id": "25CC70EE-C75E-F7A1-4D72-1E41176D0B22",
+                    "pageNumber": 31,
+                    "numSoundEffects": 3,
+                    "assetCode": "dinosaur_31",
+                    "backgroundOpacity": 0.8,
+                    "texts": [
+                        {
+                            "id": "5a08da89-9e74-42e1-8de0-2982d77b610a",
+                            "text": "The awesome dinosaur makes a perfect umbrella. You are a busy explorer looking at everything in this new land. You follow the Apatosaurus through fields and trees. You sit high on the dinosaur’s back as it walks through rivers on its long legs. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "137becab-86d8-4f8a-980a-3a19ff2ad3b3",
+                            "text": "This long day makes you very tired. The Apatosaurus suggests you should both take a nap. You think that is a very good idea. "
+                        },
+                        {
+                            "id": "049bb1df-2ad6-ef86-4ebb-5cb26cf05418",
+                            "text": "Just as you’re trying to get comfortable in the grass, it starts raining! You know that you won’t be able to sleep if you’re getting splashed in the face with raindrops. ",
+                            "textPosition": "top"
+                        },
+                        {
+                            "id": "fd7ec425-6e6a-49aa-b38a-5dd050842589",
+                            "text": "The Apatosaurus is so big, it can’t fit under any of the trees to stay dry, so it has learnt to not mind getting wet. The amazing dinosaur uses its long, strong tail as a perfect umbrella to keep you warm and dry. It’s perfect!",
+                            "textPosition": "top"
+                        }
+                    ],
+                    "navigationLinks": []
+                }
+            ]
         }
     ]
 }

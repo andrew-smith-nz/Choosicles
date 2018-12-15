@@ -3,15 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\vulpe\.gradle\caches\modules-2\files-2.1\com.anjlab.android.iab.v3\library\1.0.43\284f67b1696b074391c52c8eb4cfe94501943d49\library-1.0.43.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="284f67b1696b074391c52c8eb4cfe94501943d49">
-        <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\library-1.0.43_739dfcb699f6e3f8a60c91e2e0bd215a668148d6.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Dev\apps\choosicles\android\app\build\intermediates\exploded-aar\Choosicles\react-native-device-info\unspecified\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -88,7 +79,7 @@
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="e2fcab0d0d71c4e3fdbc17b3695823040a70b85b">
+        sha1="8679aa7de0e199d8dbbade3aed2d1ff2c3ca58c2">
         <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\Choosicles-react-native-billing-unspecified_13ef5e2d20897e3462cea82d749eba16fae4c6f1.jar" />
     </item>
     <item
@@ -133,7 +124,7 @@
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="7928ca2aee98dbdd5120ff66393d67402b5b719c">
+        sha1="2d1c34c1cab3be4e7fbfa2a8e4dcabcf941f22a0">
         <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\Choosicles-react-native-sound-unspecified_c3c440b41e4c6b68547cd58da6e8800489a64a0c.jar" />
     </item>
     <item
@@ -255,21 +246,21 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\vulpe\.gradle\caches\modules-2\files-2.1\com.anjlab.android.iab.v3\library\1.0.44\add169444f38ac23ffae27326c75e33fedef73ba\library-1.0.44.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="add169444f38ac23ffae27326c75e33fedef73ba">
+        <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\library-1.0.44_b9788afdec9590b121d042a3923453007003da96.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\vulpe\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
         <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_07040193dfb9fe83e7251a13ee6d023ce0befe8c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\vulpe\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_719b28f114cbce7bab29a858f2ebcdf95fda8a69.jar" />
     </item>
     <item
         is-multidex="false"
@@ -304,8 +295,17 @@
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="810e79419722bde9111f9931e72a77934a30c33c">
+        sha1="50f028419d2afa2553ede352855d5fcb848f9559">
         <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\Choosicles-react-native-orientation-unspecified_20b14c01e3ac562f04a212366109c97f27d9ce6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vulpe\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Dev\apps\choosicles\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_a2720a3b68d62a9d44b2f90f4a6b30fb70afac51.jar" />
     </item>
     <item
         is-multidex="false"

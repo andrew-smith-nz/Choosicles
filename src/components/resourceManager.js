@@ -48,6 +48,17 @@ _resourcesByBook = [
       endAudio: 'fairytale_end_audio.mp3'
     },
     {
+      bookId: 'a79381f6-455e-d78c-4c38-659e79b6caaa',
+      coverImage: require("../../img/pages/dinosaur/cover.png"),
+      coverImageLeftHalf: require("../../img/pages/dinosaur/cover_lefthalf.png"),
+      coverImageRightHalf: require("../../img/pages/dinosaur/cover_righthalf.png"),
+      startImage:  require("../../img/pages/dinosaur/title.png"),
+      startAudio: 'dinosaur_intro_audio.mp3',
+      startSoundEffect: 'dinosaur_title_1_soundeffect.mp3',
+      endImage:  require("../../img/pages/dinosaur/end.png"),
+      endAudio: 'dinosaur_end_audio.mp3'
+    },
+    {
       bookId: '915D33E3-109D-BCA7-4701-7FEDD4266F7C',
       coverImage: require("../../img/double_pack.png")
     },
@@ -58,6 +69,10 @@ _resourcesByBook = [
     {
       bookId: '20B88B40-2426-F8A5-4923-008103C53E15',
       coverImage: require("../../img/quad_pack.png")
+    },
+    {
+      bookId: 'B8D8EE65-E149-C58B-409F-76D712AAAD9D',
+      coverImage: require("../../img/five_pack.png")
     }
 ]
 
@@ -1167,7 +1182,283 @@ _resourcesByPage = [
             pageId: '9089C68F-62DB-8991-4BE4-CD50FBF4C028', 
             pageNumber: '31', 
             image: require('../../img/pages/fairytale/page31.png')
-            },                       
+            },    
+            // DINOSAUR 
+            {
+                pageId: 'B23FF616-1E26-DAB0-44D5-2DDD1647FC33', 
+                pageNumber: '1', 
+                image: require('../../img/pages/dinosaur/page1.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice2.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice3.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '1E4C10AF-25D7-B593-4F3E-BEE6C8F33860', 
+                pageNumber: '2', 
+                image: require('../../img/pages/dinosaur/page2.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice4.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice5.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '586AE500-8AC4-D381-47FA-1B1AFAB34091', 
+                pageNumber: '3', 
+                image: require('../../img/pages/dinosaur/page3.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice6.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice7.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '4B3234D3-8460-37A9-43D2-CEA10137EBDF', 
+                pageNumber: '4', 
+                image: require('../../img/pages/dinosaur/page4.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice8.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice9.png'),
+                    }
+                ]
+                },
+                {
+                pageId: 'B2E408BC-3F40-8B92-417D-BA248FF2A251', 
+                pageNumber: '5', 
+                image: require('../../img/pages/dinosaur/page5.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice10.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice11.png'),
+                    }
+                ]
+                },
+                {
+                pageId: 'B23286B4-1714-7795-4C8A-05BC26294211', 
+                pageNumber: '6', 
+                image: require('../../img/pages/dinosaur/page6.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice12.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice13.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '430143E0-449E-28AA-4A86-AC9891CAC66D', 
+                pageNumber: '7', 
+                image: require('../../img/pages/dinosaur/page7.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice14.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice15.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '74CFD18D-55C8-95B1-403E-B9F55E83A482', 
+                pageNumber: '8', 
+                image: require('../../img/pages/dinosaur/page8.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice16.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice17.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '9D210C8D-F847-8AAA-4D1C-F7178F58EEE0', 
+                pageNumber: '9', 
+                image: require('../../img/pages/dinosaur/page9.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice18.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice19.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '0E214BD1-F4EF-469A-47B9-644FEE747E4F', 
+                pageNumber: '10', 
+                image: require('../../img/pages/dinosaur/page10.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice20.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice21.png'),
+                    }
+                ]
+                },
+                {
+                pageId: 'D1BA3D93-7714-809E-4A87-3090DBABE5D1', 
+                pageNumber: '11', 
+                image: require('../../img/pages/dinosaur/page11.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice22.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice23.png'),
+                    }
+                ]
+                },
+                {
+                pageId: 'EBFFB7CF-6099-DE95-4508-EA516264A987', 
+                pageNumber: '12', 
+                image: require('../../img/pages/dinosaur/page12.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice24.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice25.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '43582364-6238-D39B-4F07-2925BBC6B16D', 
+                pageNumber: '13', 
+                image: require('../../img/pages/dinosaur/page13.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice26.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice27.png'),
+                    }
+                ]
+                },
+                {
+                pageId: 'B19743BB-A556-C58B-4F34-4ACEE2949E3E', 
+                pageNumber: '14', 
+                image: require('../../img/pages/dinosaur/page14.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice28.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice29.png'),
+                    }
+                ]
+                },
+                {
+                pageId: 'F5BD013A-D53D-5BB0-47D3-F3B18860CD4A', 
+                pageNumber: '15', 
+                image: require('../../img/pages/dinosaur/page15.png'),
+                choiceImages: [
+                    {
+                        image: require('../../img/pages/dinosaur/choice30.png'),
+                    },
+                    {
+                        image: require('../../img/pages/dinosaur/choice31.png'),
+                    }
+                ]
+                },
+                {
+                pageId: '67FD4C54-6478-2EA4-405C-0509F73ACA82', 
+                pageNumber: '16', 
+                image: require('../../img/pages/dinosaur/page16.png')
+                },
+                {
+                pageId: '0A4B4307-4AEA-9391-4EEE-293D38186CEF', 
+                pageNumber: '17', 
+                image: require('../../img/pages/dinosaur/page17.png')
+                },
+                {
+                pageId: '96A661BA-F15A-1A8E-456F-A352EB66F4DF', 
+                pageNumber: '18', 
+                image: require('../../img/pages/dinosaur/page18.png')
+                },
+                {
+                pageId: '98C75B11-C441-358F-4D34-CB12EEBBAC04', 
+                pageNumber: '19', 
+                image: require('../../img/pages/dinosaur/page19.png')
+                },
+                {
+                pageId: '998B62BB-19A4-CFA4-4BDC-06D8297FE90A', 
+                pageNumber: '20', 
+                image: require('../../img/pages/dinosaur/page20.png')
+                },
+                {
+                pageId: '4CD18EBF-0A20-E78E-402C-89C447F59F62', 
+                pageNumber: '21', 
+                image: require('../../img/pages/dinosaur/page21.png')
+                },
+                {
+                pageId: '7D93D7B3-36C7-939A-4B89-8B2886B62629', 
+                pageNumber: '22', 
+                image: require('../../img/pages/dinosaur/page22.png')
+                },
+                {
+                pageId: '23E95EB7-B6FF-4F84-4778-D5B611F74860', 
+                pageNumber: '23', 
+                image: require('../../img/pages/dinosaur/page23.png')
+                },
+                {
+                pageId: 'B3D15B46-585C-CCAD-43DA-2B43FABA53C9', 
+                pageNumber: '24', 
+                image: require('../../img/pages/dinosaur/page24.png')
+                },
+                {
+                pageId: '936147D0-BFDF-BFB8-459F-12179E29EB5E', 
+                pageNumber: '25', 
+                image: require('../../img/pages/dinosaur/page25.png')
+                },
+                {
+                pageId: '9EF1ECD6-41E7-AC9B-45E3-0D40CC854F9F', 
+                pageNumber: '26', 
+                image: require('../../img/pages/dinosaur/page26.png')
+                },
+                {
+                pageId: 'B9F12FA3-6D97-5F92-4CA8-0F954B09E0D3', 
+                pageNumber: '27', 
+                image: require('../../img/pages/dinosaur/page27.png')
+                },
+                {
+                pageId: 'F49A142D-9807-3F98-482F-6A2797E59BD5', 
+                pageNumber: '28', 
+                image: require('../../img/pages/dinosaur/page28.png')
+                },
+                {
+                pageId: 'DC779BEC-3DD2-C6B1-4FC8-0C860FF2249E', 
+                pageNumber: '29', 
+                image: require('../../img/pages/dinosaur/page29.png')
+                },
+                {
+                pageId: '70C7788F-603B-9CB2-4C29-3E284EF05507', 
+                pageNumber: '30', 
+                image: require('../../img/pages/dinosaur/page30.png')
+                },
+                {
+                pageId: '25CC70EE-C75E-F7A1-4D72-1E41176D0B22', 
+                pageNumber: '31', 
+                image: require('../../img/pages/dinosaur/page31.png')
+                },                    
 ]
 
 export function getImageForPage(pageId)

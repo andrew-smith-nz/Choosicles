@@ -177,10 +177,10 @@ class EndPage extends Component
                     : null}   
                     <View style={{flexDirection:'column', padding:5, alignItems:'center', justifyContent:'center'}}>                          
                         <TouchableOpacity style={style.centerBottomLeftLargerButton} onPress={() => this.startBook()}>
-                            <Image style={style.fill} source={require('../../img/start_again.png')} resizeMode="contain" />
+                            <Image style={style.fill} source={require('../../img/play_large.png')} resizeMode="contain" />
                         </TouchableOpacity>  
                         <TouchableOpacity style={style.centerBottomRightLargerButton} onPress={() => this.home()}>
-                            <Image style={style.fill} source={require('../../img/read_another.png')} resizeMode="contain" />
+                            <Image style={style.fill} source={require('../../img/home_large.png')} resizeMode="contain" />
                         </TouchableOpacity>       
                     </View>               
                     <View style={style.topRightButton}>

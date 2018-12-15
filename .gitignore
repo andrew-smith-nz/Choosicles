@@ -9,3 +9,4 @@ android/app/build/*
 *.apk
 /android/.gradle/
 /android/.gradle
+/build/choosicles.apk

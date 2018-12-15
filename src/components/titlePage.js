@@ -193,7 +193,7 @@ class TitlePage extends Component
         ><View style={{flex:1}}>
                     <Image source={getStartImageForBook(this.props.book.id)} style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}} resizeMode='stretch' />
                     <TouchableOpacity style={style.centerBottomLargeButton} onPress={() => this.startBook()}>
-                        <Image style={style.fill} source={require('../../img/start_button.png')} resizeMode="contain" />
+                        <Image style={style.fill} source={require('../../img/play_large.png')} resizeMode="contain" />
                     </TouchableOpacity>
                     <TouchableOpacity style={style.topRightButton} onPress={() => this.home()}>
                         <Image source={require('../../img/home.png')} resizeMode="contain" style={{width:'100%', height:'100%'}} />

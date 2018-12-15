@@ -119,7 +119,7 @@ class MainMenu extends Component
         }
         ////uncomment to nav straight to specific page
         // var pageNo = 31;
-        // var book = bookData.books[3];
+        // var book = bookData.books[4];
         // this.props.setActiveBook(book);
         // this.props.changePage(book.pages[pageNo - 1].id);
         // this.props.navigation.navigate("Page");
