@@ -7,3 +7,5 @@ npm-debug.*
 ios/build/
 android/app/build/*
 *.apk
+/android/.gradle/
+/android/.gradle
