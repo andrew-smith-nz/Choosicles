@@ -27,13 +27,13 @@ _resourcesByBook = [
     },
     {
       bookId: 'afb09354-0bb9-72b1-45fe-7239bb8c8a62',
-      coverImage: require("../../img/pages/alien/cover.png"),
+      coverImage: require("../../img/pages/alien/cover.jpg"),
       coverImageLeftHalf: require("../../img/pages/alien/cover_lefthalf.png"),
       coverImageRightHalf: require("../../img/pages/alien/cover_righthalf.png"),
-      startImage:  require("../../img/pages/alien/title.png"),
+      startImage:  require("../../img/pages/alien/title.jpg"),
       startAudio: 'alien_intro_audio.mp3',
       startSoundEffect: 'alien_title_1_soundeffect.mp3',
-      endImage:  require("../../img/pages/alien/end.png"),
+      endImage:  require("../../img/pages/alien/end.jpg"),
       endAudio: 'alien_end_audio.mp3'
     },
     {
@@ -635,7 +635,7 @@ _resourcesByPage = [
         {
             pageId: '6668D4F6-26BF-12A3-407C-9CBEE69C6B94', 
             pageNumber: '1', 
-            image: require('../../img/pages/alien/page1.png'),
+            image: require('../../img/pages/alien/page1.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice2.png'),
@@ -648,7 +648,7 @@ _resourcesByPage = [
             {
             pageId: '9793EA7F-766D-46B9-430A-6AD586624CF3', 
             pageNumber: '2', 
-            image: require('../../img/pages/alien/page2.png'),
+            image: require('../../img/pages/alien/page2.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice4.png'),
@@ -661,7 +661,7 @@ _resourcesByPage = [
             {
             pageId: '4E03D489-1B33-20A0-4B4D-78C36817FBFE', 
             pageNumber: '3', 
-            image: require('../../img/pages/alien/page3.png'),
+            image: require('../../img/pages/alien/page3.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice6.png'),
@@ -674,7 +674,7 @@ _resourcesByPage = [
             {
             pageId: 'DFD85366-26EE-AFA2-4BF6-D6D5059C711F', 
             pageNumber: '4', 
-            image: require('../../img/pages/alien/page4.png'),
+            image: require('../../img/pages/alien/page4.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice8.png'),
@@ -687,7 +687,7 @@ _resourcesByPage = [
             {
             pageId: '5A62DAAC-8ACC-10BE-471F-04A78347D0BC', 
             pageNumber: '5', 
-            image: require('../../img/pages/alien/page5.png'),
+            image: require('../../img/pages/alien/page5.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice10.png'),
@@ -700,7 +700,7 @@ _resourcesByPage = [
             {
             pageId: 'BBFF5212-9A29-D790-4C6E-C7E58AA20DE2', 
             pageNumber: '6', 
-            image: require('../../img/pages/alien/page6.png'),
+            image: require('../../img/pages/alien/page6.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice12.png'),
@@ -713,7 +713,7 @@ _resourcesByPage = [
             {
             pageId: '54DE8313-BB2F-F487-4781-407DE0B60909', 
             pageNumber: '7', 
-            image: require('../../img/pages/alien/page7.png'),
+            image: require('../../img/pages/alien/page7.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice14.png'),
@@ -726,7 +726,7 @@ _resourcesByPage = [
             {
             pageId: '4D724AD8-B192-19B2-442B-1F6ED5249BBF', 
             pageNumber: '8', 
-            image: require('../../img/pages/alien/page8.png'),
+            image: require('../../img/pages/alien/page8.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice16.png'),
@@ -739,7 +739,7 @@ _resourcesByPage = [
             {
             pageId: '26FBD9BE-4D52-62A5-4075-7A8A1C6E2B31', 
             pageNumber: '9', 
-            image: require('../../img/pages/alien/page9.png'),
+            image: require('../../img/pages/alien/page9.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice18.png'),
@@ -752,7 +752,7 @@ _resourcesByPage = [
             {
             pageId: '731F2059-98E6-71BB-4E08-F85D563F3A0F', 
             pageNumber: '10', 
-            image: require('../../img/pages/alien/page10.png'),
+            image: require('../../img/pages/alien/page10.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice20.png'),
@@ -765,7 +765,7 @@ _resourcesByPage = [
             {
             pageId: 'B0072B48-0DEE-6C91-4550-B2AEA50533AF', 
             pageNumber: '11', 
-            image: require('../../img/pages/alien/page11.png'),
+            image: require('../../img/pages/alien/page11.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice22.png'),
@@ -778,7 +778,7 @@ _resourcesByPage = [
             {
             pageId: 'CA2A2185-7924-4C9E-4A57-FCBE84CE9EEA', 
             pageNumber: '12', 
-            image: require('../../img/pages/alien/page12.png'),
+            image: require('../../img/pages/alien/page12.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice24.png'),
@@ -791,7 +791,7 @@ _resourcesByPage = [
             {
             pageId: 'EC45B537-8D25-8BB6-4B80-413A593D4FBB', 
             pageNumber: '13', 
-            image: require('../../img/pages/alien/page13.png'),
+            image: require('../../img/pages/alien/page13.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice26.png'),
@@ -804,7 +804,7 @@ _resourcesByPage = [
             {
             pageId: 'D33FB159-A2B0-FAAC-4540-B1ECA99038B0', 
             pageNumber: '14', 
-            image: require('../../img/pages/alien/page14.png'),
+            image: require('../../img/pages/alien/page14.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice28.png'),
@@ -817,7 +817,7 @@ _resourcesByPage = [
             {
             pageId: 'EB32FA60-1AA7-EBB2-4040-0C1F49CD7C5C', 
             pageNumber: '15', 
-            image: require('../../img/pages/alien/page15.png'),
+            image: require('../../img/pages/alien/page15.jpg'),
             choiceImages: [
                 {
                     image: require('../../img/pages/alien/choice30.png'),
@@ -830,82 +830,82 @@ _resourcesByPage = [
             {
             pageId: '38AD2B90-8122-0FBC-4341-643C527A2B4E', 
             pageNumber: '16', 
-            image: require('../../img/pages/alien/page16.png')
+            image: require('../../img/pages/alien/page16.jpg')
             },
             {
             pageId: '63A33859-1D9D-62A7-46EB-EF4E50490D45', 
             pageNumber: '17', 
-            image: require('../../img/pages/alien/page17.png')
+            image: require('../../img/pages/alien/page17.jpg')
             },
             {
             pageId: '59D0874A-18FA-778A-4257-3A69200F809D', 
             pageNumber: '18', 
-            image: require('../../img/pages/alien/page18.png')
+            image: require('../../img/pages/alien/page18.jpg')
             },
             {
             pageId: '43BC9332-C103-0892-489A-BE01698FEF28', 
             pageNumber: '19', 
-            image: require('../../img/pages/alien/page19.png')
+            image: require('../../img/pages/alien/page19.jpg')
             },
             {
             pageId: 'CF7ED794-79BC-E098-454D-4B42E5A68479', 
             pageNumber: '20', 
-            image: require('../../img/pages/alien/page20.png')
+            image: require('../../img/pages/alien/page20.jpg')
             },
             {
             pageId: '74C9C830-00CE-A88D-43DD-4AA53D631B48', 
             pageNumber: '21', 
-            image: require('../../img/pages/alien/page21.png')
+            image: require('../../img/pages/alien/page21.jpg')
             },
             {
             pageId: 'A34DB6A1-1CC2-29AD-476F-BCBAC75DCEB4', 
             pageNumber: '22', 
-            image: require('../../img/pages/alien/page22.png')
+            image: require('../../img/pages/alien/page22.jpg')
             },
             {
             pageId: '98E2B30F-A51F-54B1-4836-11D74824FEC1', 
             pageNumber: '23', 
-            image: require('../../img/pages/alien/page23.png')
+            image: require('../../img/pages/alien/page23.jpg')
             },
             {
             pageId: '75160F4C-FCC4-43B0-4CE5-C67AB0353BA3', 
             pageNumber: '24', 
-            image: require('../../img/pages/alien/page24.png')
+            image: require('../../img/pages/alien/page24.jpg')
             },
             {
             pageId: '0AFDB757-00B3-A98A-45CE-C1FE6EA36614', 
             pageNumber: '25', 
-            image: require('../../img/pages/alien/page25.png')
+            image: require('../../img/pages/alien/page25.jpg')
             },
             {
             pageId: 'B69F91DF-E1EA-AF87-4EAB-EE02A5F31F83', 
             pageNumber: '26', 
-            image: require('../../img/pages/alien/page26.png')
+            image: require('../../img/pages/alien/page26.jpg')
             },
             {
             pageId: 'F0AC7403-A3A6-77A4-4150-29201AAB3D71', 
             pageNumber: '27', 
-            image: require('../../img/pages/alien/page27.png')
+            image: require('../../img/pages/alien/page27.jpg')
             },
             {
             pageId: '1E5CB178-D949-38B4-4FC0-8E6EBD6D5FFF', 
             pageNumber: '28', 
-            image: require('../../img/pages/alien/page28.png')
+            image: require('../../img/pages/alien/page28.jpg')
             },
             {
             pageId: '8469A2CA-AFD8-B6A7-4EA3-85E8FFEF3037', 
             pageNumber: '29', 
-            image: require('../../img/pages/alien/page29.png')
+            image: require('../../img/pages/alien/page29.jpg')
             },
             {
             pageId: '0AE2EDCF-930A-3093-455B-6492915140A2', 
             pageNumber: '30', 
-            image: require('../../img/pages/alien/page30.png')
+            image: require('../../img/pages/alien/page30.jpg')
             },
             {
             pageId: '7DAFE264-DEC5-9493-4BF4-34887B02609D', 
             pageNumber: '31', 
-            image: require('../../img/pages/alien/page31.png')
+            image: require('../../img/pages/alien/page31.jpg')
             },  
             // fairytale
         {
